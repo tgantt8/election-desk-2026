@@ -106,6 +106,10 @@ def build(replay_2024=False):
             card = card_from_records(crec[0].get("contest_name") or cid, cid, crec, prec, calls, src, scope.get(cid))
             if str(cid).startswith("macomb-"):
                 tier1.append(card)
+                units = [r for r in crec if r.get("unit") and r.get("unit") != "county" and r.get("candidate") is not None and r.get("votes") is not None]
+                if units:  # precinct (or other unit) rows from a hand entry or a detail feed fill the Macomb detail table
+                    detail[f"{cid} ({src})"] = {"rows": [{"unit": r["unit"], "mode": r.get("mode", "TOTAL"), "candidate": r["candidate"], "votes": r["votes"], "complete": bool(r.get("complete"))} for r in units],
+                                                "source": src, "as_of": card["as_of"]}
             elif re.match(r"^(us-senate|gov|us-house)-", str(cid)):
                 m = re.match(r"^(?:us-senate|gov|us-house)-([A-Z]{2})", str(cid))
                 if m and not card["title"].startswith(m.group(1)):

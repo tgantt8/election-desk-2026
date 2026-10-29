@@ -1,0 +1,1522 @@
+{
+ "_layer": "baselines",
+ "cycle": 2022,
+ "election": "2022-11-08 General",
+ "contest": "hd58",
+ "line_vintage": "2022 MICRC maps (same division as 2024; precincts consolidated from 35 to 31 by 2024)",
+ "source": {
+  "file": "fixtures/macomb_2022_hd58_precincts.csv",
+  "url": "https://pastelections.macombgov.org/api/download_contest/685_table.csv?split_party=false&vote_channels=all",
+  "name": "Macomb County Clerk Past Elections database (Civera ElectionStats), contest 685, vote_channels=all"
+ },
+ "tie_out": "PASS",
+ "channels": [
+  "ED",
+  "AVCB",
+  "PBT"
+ ],
+ "candidates": [
+  {
+   "name": "Nate Shannon",
+   "party": "Democratic"
+  },
+  {
+   "name": "Michelle Smith",
+   "party": "Republican"
+  }
+ ],
+ "district": {
+  "unit_type": "State Legislature District",
+  "unit": "58",
+  "values": {
+   "Nate Shannon": {
+    "ED": 9082,
+    "AVCB": 9040,
+    "EV": 0,
+    "PBT": 0,
+    "TOTAL": 18122
+   },
+   "Michelle Smith": {
+    "ED": 11949,
+    "AVCB": 5234,
+    "EV": 0,
+    "PBT": 0,
+    "TOTAL": 17183
+   },
+   "Total Votes Cast": {
+    "ED": 21031,
+    "AVCB": 14274,
+    "EV": 0,
+    "PBT": 0,
+    "TOTAL": 35305
+   },
+   "Overvotes/Undervotes": {
+    "ED": 0,
+    "AVCB": 0,
+    "EV": 0,
+    "PBT": 0,
+    "TOTAL": 0
+   },
+   "Total Ballots Cast": {
+    "ED": 0,
+    "AVCB": 0,
+    "EV": 0,
+    "PBT": 36996,
+    "TOTAL": 36996
+   }
+  }
+ },
+ "precincts": [
+  {
+   "unit_type": "Precinct",
+   "unit": "Shelby Township, Precinct 4",
+   "values": {
+    "Nate Shannon": {
+     "ED": 159,
+     "AVCB": 241,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 400
+    },
+    "Michelle Smith": {
+     "ED": 431,
+     "AVCB": 297,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 728
+    },
+    "Total Votes Cast": {
+     "ED": 590,
+     "AVCB": 538,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1128
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1196,
+     "TOTAL": 1196
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Shelby Township, Precinct 6",
+   "values": {
+    "Nate Shannon": {
+     "ED": 225,
+     "AVCB": 205,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 430
+    },
+    "Michelle Smith": {
+     "ED": 380,
+     "AVCB": 117,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 497
+    },
+    "Total Votes Cast": {
+     "ED": 605,
+     "AVCB": 322,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 927
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 967,
+     "TOTAL": 967
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Shelby Township, Precinct 9",
+   "values": {
+    "Nate Shannon": {
+     "ED": 258,
+     "AVCB": 159,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 417
+    },
+    "Michelle Smith": {
+     "ED": 288,
+     "AVCB": 106,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 394
+    },
+    "Total Votes Cast": {
+     "ED": 546,
+     "AVCB": 265,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 811
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 845,
+     "TOTAL": 845
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Shelby Township, Precinct 10",
+   "values": {
+    "Nate Shannon": {
+     "ED": 151,
+     "AVCB": 194,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 345
+    },
+    "Michelle Smith": {
+     "ED": 412,
+     "AVCB": 209,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 621
+    },
+    "Total Votes Cast": {
+     "ED": 563,
+     "AVCB": 403,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 966
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1018,
+     "TOTAL": 1018
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Shelby Township, Precinct 21",
+   "values": {
+    "Nate Shannon": {
+     "ED": 255,
+     "AVCB": 189,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 444
+    },
+    "Michelle Smith": {
+     "ED": 171,
+     "AVCB": 69,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 240
+    },
+    "Total Votes Cast": {
+     "ED": 426,
+     "AVCB": 258,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 684
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 711,
+     "TOTAL": 711
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 18",
+   "values": {
+    "Nate Shannon": {
+     "ED": 201,
+     "AVCB": 263,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 464
+    },
+    "Michelle Smith": {
+     "ED": 405,
+     "AVCB": 180,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 585
+    },
+    "Total Votes Cast": {
+     "ED": 606,
+     "AVCB": 443,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1049
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1103,
+     "TOTAL": 1103
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 19",
+   "values": {
+    "Nate Shannon": {
+     "ED": 198,
+     "AVCB": 206,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 404
+    },
+    "Michelle Smith": {
+     "ED": 311,
+     "AVCB": 91,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 402
+    },
+    "Total Votes Cast": {
+     "ED": 509,
+     "AVCB": 297,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 806
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 846,
+     "TOTAL": 846
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 20",
+   "values": {
+    "Nate Shannon": {
+     "ED": 302,
+     "AVCB": 227,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 529
+    },
+    "Michelle Smith": {
+     "ED": 363,
+     "AVCB": 108,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 471
+    },
+    "Total Votes Cast": {
+     "ED": 665,
+     "AVCB": 335,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1000
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1053,
+     "TOTAL": 1053
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 21",
+   "values": {
+    "Nate Shannon": {
+     "ED": 307,
+     "AVCB": 272,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 579
+    },
+    "Michelle Smith": {
+     "ED": 428,
+     "AVCB": 142,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 570
+    },
+    "Total Votes Cast": {
+     "ED": 735,
+     "AVCB": 414,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1149
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1211,
+     "TOTAL": 1211
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 22",
+   "values": {
+    "Nate Shannon": {
+     "ED": 222,
+     "AVCB": 369,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 591
+    },
+    "Michelle Smith": {
+     "ED": 312,
+     "AVCB": 213,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 525
+    },
+    "Total Votes Cast": {
+     "ED": 534,
+     "AVCB": 582,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1116
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1150,
+     "TOTAL": 1150
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 23",
+   "values": {
+    "Nate Shannon": {
+     "ED": 295,
+     "AVCB": 342,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 637
+    },
+    "Michelle Smith": {
+     "ED": 449,
+     "AVCB": 195,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 644
+    },
+    "Total Votes Cast": {
+     "ED": 744,
+     "AVCB": 537,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1281
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1345,
+     "TOTAL": 1345
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 24",
+   "values": {
+    "Nate Shannon": {
+     "ED": 281,
+     "AVCB": 383,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 664
+    },
+    "Michelle Smith": {
+     "ED": 475,
+     "AVCB": 235,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 710
+    },
+    "Total Votes Cast": {
+     "ED": 756,
+     "AVCB": 618,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1374
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1437,
+     "TOTAL": 1437
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 25",
+   "values": {
+    "Nate Shannon": {
+     "ED": 169,
+     "AVCB": 166,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 335
+    },
+    "Michelle Smith": {
+     "ED": 233,
+     "AVCB": 77,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 310
+    },
+    "Total Votes Cast": {
+     "ED": 402,
+     "AVCB": 243,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 645
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 671,
+     "TOTAL": 671
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 26",
+   "values": {
+    "Nate Shannon": {
+     "ED": 351,
+     "AVCB": 308,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 659
+    },
+    "Michelle Smith": {
+     "ED": 418,
+     "AVCB": 153,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 571
+    },
+    "Total Votes Cast": {
+     "ED": 769,
+     "AVCB": 461,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1230
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1288,
+     "TOTAL": 1288
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 27",
+   "values": {
+    "Nate Shannon": {
+     "ED": 225,
+     "AVCB": 244,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 469
+    },
+    "Michelle Smith": {
+     "ED": 429,
+     "AVCB": 176,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 605
+    },
+    "Total Votes Cast": {
+     "ED": 654,
+     "AVCB": 420,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1074
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1125,
+     "TOTAL": 1125
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 31",
+   "values": {
+    "Nate Shannon": {
+     "ED": 346,
+     "AVCB": 348,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 694
+    },
+    "Michelle Smith": {
+     "ED": 474,
+     "AVCB": 201,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 675
+    },
+    "Total Votes Cast": {
+     "ED": 820,
+     "AVCB": 549,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1369
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1425,
+     "TOTAL": 1425
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 32",
+   "values": {
+    "Nate Shannon": {
+     "ED": 252,
+     "AVCB": 271,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 523
+    },
+    "Michelle Smith": {
+     "ED": 392,
+     "AVCB": 156,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 548
+    },
+    "Total Votes Cast": {
+     "ED": 644,
+     "AVCB": 427,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1071
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1112,
+     "TOTAL": 1112
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 33",
+   "values": {
+    "Nate Shannon": {
+     "ED": 207,
+     "AVCB": 159,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 366
+    },
+    "Michelle Smith": {
+     "ED": 282,
+     "AVCB": 119,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 401
+    },
+    "Total Votes Cast": {
+     "ED": 489,
+     "AVCB": 278,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 767
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 792,
+     "TOTAL": 792
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 34",
+   "values": {
+    "Nate Shannon": {
+     "ED": 303,
+     "AVCB": 378,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 681
+    },
+    "Michelle Smith": {
+     "ED": 368,
+     "AVCB": 169,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 537
+    },
+    "Total Votes Cast": {
+     "ED": 671,
+     "AVCB": 547,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1218
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1271,
+     "TOTAL": 1271
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 36",
+   "values": {
+    "Nate Shannon": {
+     "ED": 306,
+     "AVCB": 380,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 686
+    },
+    "Michelle Smith": {
+     "ED": 417,
+     "AVCB": 211,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 628
+    },
+    "Total Votes Cast": {
+     "ED": 723,
+     "AVCB": 591,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1314
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1375,
+     "TOTAL": 1375
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 39",
+   "values": {
+    "Nate Shannon": {
+     "ED": 301,
+     "AVCB": 268,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 569
+    },
+    "Michelle Smith": {
+     "ED": 423,
+     "AVCB": 186,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 609
+    },
+    "Total Votes Cast": {
+     "ED": 724,
+     "AVCB": 454,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1178
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1254,
+     "TOTAL": 1254
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 40",
+   "values": {
+    "Nate Shannon": {
+     "ED": 385,
+     "AVCB": 248,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 633
+    },
+    "Michelle Smith": {
+     "ED": 308,
+     "AVCB": 102,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 410
+    },
+    "Total Votes Cast": {
+     "ED": 693,
+     "AVCB": 350,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1043
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1099,
+     "TOTAL": 1099
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 41",
+   "values": {
+    "Nate Shannon": {
+     "ED": 166,
+     "AVCB": 183,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 349
+    },
+    "Michelle Smith": {
+     "ED": 216,
+     "AVCB": 89,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 305
+    },
+    "Total Votes Cast": {
+     "ED": 382,
+     "AVCB": 272,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 654
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 685,
+     "TOTAL": 685
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 42",
+   "values": {
+    "Nate Shannon": {
+     "ED": 374,
+     "AVCB": 471,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 845
+    },
+    "Michelle Smith": {
+     "ED": 331,
+     "AVCB": 203,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 534
+    },
+    "Total Votes Cast": {
+     "ED": 705,
+     "AVCB": 674,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1379
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1436,
+     "TOTAL": 1436
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Utica City, Precinct 1",
+   "values": {
+    "Nate Shannon": {
+     "ED": 120,
+     "AVCB": 84,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 204
+    },
+    "Michelle Smith": {
+     "ED": 163,
+     "AVCB": 40,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 203
+    },
+    "Total Votes Cast": {
+     "ED": 283,
+     "AVCB": 124,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 407
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 430,
+     "TOTAL": 430
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Utica City, Precinct 2",
+   "values": {
+    "Nate Shannon": {
+     "ED": 166,
+     "AVCB": 151,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 317
+    },
+    "Michelle Smith": {
+     "ED": 358,
+     "AVCB": 111,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 469
+    },
+    "Total Votes Cast": {
+     "ED": 524,
+     "AVCB": 262,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 786
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 833,
+     "TOTAL": 833
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Utica City, Precinct 3",
+   "values": {
+    "Nate Shannon": {
+     "ED": 224,
+     "AVCB": 230,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 454
+    },
+    "Michelle Smith": {
+     "ED": 304,
+     "AVCB": 150,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 454
+    },
+    "Total Votes Cast": {
+     "ED": 528,
+     "AVCB": 380,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 908
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 951,
+     "TOTAL": 951
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 38",
+   "values": {
+    "Nate Shannon": {
+     "ED": 318,
+     "AVCB": 257,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 575
+    },
+    "Michelle Smith": {
+     "ED": 286,
+     "AVCB": 141,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 427
+    },
+    "Total Votes Cast": {
+     "ED": 604,
+     "AVCB": 398,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1002
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1043,
+     "TOTAL": 1043
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 39",
+   "values": {
+    "Nate Shannon": {
+     "ED": 314,
+     "AVCB": 329,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 643
+    },
+    "Michelle Smith": {
+     "ED": 177,
+     "AVCB": 110,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 287
+    },
+    "Total Votes Cast": {
+     "ED": 491,
+     "AVCB": 439,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 930
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 953,
+     "TOTAL": 953
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 42",
+   "values": {
+    "Nate Shannon": {
+     "ED": 414,
+     "AVCB": 348,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 762
+    },
+    "Michelle Smith": {
+     "ED": 370,
+     "AVCB": 229,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 599
+    },
+    "Total Votes Cast": {
+     "ED": 784,
+     "AVCB": 577,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1361
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1426,
+     "TOTAL": 1426
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 48",
+   "values": {
+    "Nate Shannon": {
+     "ED": 272,
+     "AVCB": 208,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 480
+    },
+    "Michelle Smith": {
+     "ED": 277,
+     "AVCB": 96,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 373
+    },
+    "Total Votes Cast": {
+     "ED": 549,
+     "AVCB": 304,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 853
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 908,
+     "TOTAL": 908
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 49",
+   "values": {
+    "Nate Shannon": {
+     "ED": 239,
+     "AVCB": 290,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 529
+    },
+    "Michelle Smith": {
+     "ED": 335,
+     "AVCB": 215,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 550
+    },
+    "Total Votes Cast": {
+     "ED": 574,
+     "AVCB": 505,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1079
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1136,
+     "TOTAL": 1136
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 50",
+   "values": {
+    "Nate Shannon": {
+     "ED": 347,
+     "AVCB": 286,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 633
+    },
+    "Michelle Smith": {
+     "ED": 396,
+     "AVCB": 125,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 521
+    },
+    "Total Votes Cast": {
+     "ED": 743,
+     "AVCB": 411,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 1154
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1214,
+     "TOTAL": 1214
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 51",
+   "values": {
+    "Nate Shannon": {
+     "ED": 145,
+     "AVCB": 150,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 295
+    },
+    "Michelle Smith": {
+     "ED": 207,
+     "AVCB": 96,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 303
+    },
+    "Total Votes Cast": {
+     "ED": 352,
+     "AVCB": 246,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 598
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 631,
+     "TOTAL": 631
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 52",
+   "values": {
+    "Nate Shannon": {
+     "ED": 284,
+     "AVCB": 233,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 517
+    },
+    "Michelle Smith": {
+     "ED": 360,
+     "AVCB": 117,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 477
+    },
+    "Total Votes Cast": {
+     "ED": 644,
+     "AVCB": 350,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 994
+    },
+    "Overvotes/Undervotes": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 0,
+     "TOTAL": 0
+    },
+    "Total Ballots Cast": {
+     "ED": 0,
+     "AVCB": 0,
+     "EV": 0,
+     "PBT": 1056,
+     "TOTAL": 1056
+    }
+   }
+  }
+ ],
+ "suppressed_cells": {},
+ "summary": {
+  "ballots_cast": 36996,
+  "votes_cast": 35305,
+  "undervote_rate": 0.0457,
+  "dem_two_party_share_by_mode": {
+   "TOTAL": 51.33,
+   "AVCB": 63.33,
+   "ED": 43.18
+  },
+  "mode_mix_of_votes_cast": {
+   "AVCB": 0.4043,
+   "ED": 0.5957
+  }
+ },
+ "note": "2022 had no early in-person voting; the ballots count sits in the source's Poll Book Totals column (PBT) and is not split by mode. Overvotes/undervotes are not reported per mode in this file (zeros)."
+}

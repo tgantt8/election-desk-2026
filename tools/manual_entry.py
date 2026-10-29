@@ -16,7 +16,26 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import DATA, append_jsonl, ops_log, record_snapshot, utcnow  # noqa: E402
+from common import DATA, append_jsonl, load_json, ops_log, record_snapshot, utcnow  # noqa: E402
+
+_PARTY = {"DEM": "D", "REP": "R", "LIB": "L", "GRN": "G", "UST": "U", "NLP": "N", "WC": "W", "WCP": "W", "NPA": "I",
+          "D": "D", "R": "R", "L": "L", "G": "G", "U": "U", "I": "I", "W": "W", "N": "N"}
+
+
+def norm_party(p):
+    return _PARTY.get((p or "").strip().upper())
+
+
+def match_party(contest, candidate):
+    """Party from data/contests/macomb_2026.json by last-name match (ticket names like "Benson / Brinks" match either name)."""
+    toks = [t.lower().strip(".,") for t in (candidate or "").replace("/", " ").split() if len(t) > 2]
+    if not toks:
+        return None
+    for k in contest.get("candidates", []):
+        names = [t.lower().strip(".,") for t in k["name"].replace("/", " ").split()]
+        if toks[-1] in names:
+            return k.get("party")
+    return None
 
 
 def main():
@@ -53,8 +72,17 @@ def main():
             n += 1
         print(f"{a.layer} appended: {n} records (manual capture; snapshot {snap['id']})")
     else:
+        contests = {c["id"]: c for c in load_json(os.path.join(DATA, "contests", "macomb_2026.json"), {"contests": []})["contests"]}
         n = 0
         for r in payload.get("records", []):
+            r.setdefault("contest_id", payload.get("contest_id"))
+            r.setdefault("mode", payload.get("mode") or "TOTAL")
+            c = contests.get(r.get("contest_id"))
+            if c:
+                r.setdefault("contest_name", c.get("office"))
+                r["county_scope"] = c.get("county_scope")
+            if r.get("candidate") is not None:
+                r["party"] = norm_party(r.get("party")) or (match_party(c, r["candidate"]) if c else None)
             r.update({"source_id": source_id, "snapshot_id": snap["id"], "as_of": payload.get("as_of") or snap["fetched_at"], "unofficial": True, "entered_by": payload.get("entered_by", "manual")})
             append_jsonl(os.path.join(DATA, "results", f"{source_id}.jsonl"), r)
             n += 1

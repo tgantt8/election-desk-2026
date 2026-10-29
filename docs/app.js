@@ -254,7 +254,7 @@ function renderMacomb() {
   table($("macomb-table"), [{h:"Precinct",f:x=>x.unit},{h:"Mode",f:x=>x.mode},{h:"Candidate",f:x=>x.candidate},{h:"Votes",num:true,f:x=>fmt.n(x.votes)},{h:"Complete",f:x=>x.complete?"✓":""}], c?.rows||[], "No precinct rows yet.");
   $("macomb-timeline").innerHTML = (res?.macomb_snapshots||[]).slice(-30).reverse().map(s=>`${fmt.t(s.fetched_at)} · ${s.parse_status} · <span class="mono">${(s.raw_hash||"").slice(0,10)}</span>`).join("<br>") || '<span class="muted">No snapshots.</span>';
   const an = S.data.anomalies?.records || [];
-  $("anomalies").innerHTML = an.length ? an.map(a=>`<div class="flag"><strong>${a.type}</strong> — ${a.unit} <span class="status">${a.status}</span><div class="small">${a.detail} Data changed — confirm with the Clerk.</div><div class="small muted">${fmt.t(a.at)}</div></div>`).join("") : '<p class="muted">No open flags.</p>';
+  $("anomalies").innerHTML = an.length ? an.map(a=>`<div class="flag"><strong>${a.type}</strong> — ${a.contest ? a.contest + " · " : ""}${a.unit} <span class="status">${a.status}</span><div class="small">${a.detail}</div><div class="small muted">${fmt.t(a.at)}</div></div>`).join("") : '<p class="muted">No open flags.</p>';
 }
 function renderOps() {
   const m = S.data.meta;
@@ -265,13 +265,34 @@ function renderAll() { staleCheck(); renderChambers(); renderMap(); renderPolls(
 
 // ---------- manual panels ----------
 function parsePaste() {
-  const txt = $("paste").value; const rows = [];
+  // First text-only line = column names as the source shows them (unit, candidates, optional "Total Ballots" / "Total Votes");
+  // every later line with numbers = one unit (precinct). With a contest id the paste becomes unit-level records that reach the
+  // Macomb detail table and the anomaly rules; without one only the raw rows are kept in the snapshot.
+  const txt = $("paste").value; const rows = []; const records = []; let header = null;
+  const contestId = ($("paste-contest").value || "").trim(); const mode = $("paste-mode").value || "TOTAL";
   for (const line of txt.split(/\r?\n/)) {
-    const cells = line.includes(",") ? line.split(",") : line.trim().split(/\s{2,}|\t/);
-    const nums = cells.map(c=>c.trim().replace(/,/g,"")).filter(c=>/^\d+$/.test(c));
-    if (cells.length >= 2 && nums.length) rows.push({ label: cells[0].trim(), numbers: nums.map(Number) });
+    if (!line.trim()) continue;
+    const cells = (line.includes("\t") ? line.split("\t") : line.includes(",") ? line.split(",") : line.trim().split(/\s{2,}/)).map(c=>c.trim().replace(/,/g,""));
+    const nums = cells.filter(c=>/^\d+$/.test(c));
+    if (!header && cells.length >= 2 && !nums.length) { header = cells; continue; }
+    if (cells.length < 2 || !nums.length) continue;
+    rows.push({ label: cells[0], numbers: nums.map(Number) });
+    if (!header || !contestId) continue;
+    let ballots = null, total = null;
+    cells.forEach((c, j) => {
+      const name = (header[j] || "").trim(); if (!j || !name || !/^\d+$/.test(c)) return;
+      if (/ballots/i.test(name)) ballots = Number(c);
+      else if (/total votes|votes cast|^total$/i.test(name)) total = Number(c);
+      else if (!/reporting|percent|%|registered|turnout|over|under/i.test(name)) {
+        const m = name.match(/^(.*?)\s*[\(\[]?\b(D|R|L|G|U|I|DEM|REP|LIB|GRN|UST|NPA|WC|WCP)\b[\)\]]?\s*$/i);
+        records.push({ contest_id: contestId, unit: cells[0], mode, candidate: m ? m[1].trim() : name, party: m ? m[2].toUpperCase() : null, votes: Number(c) });
+      }
+    });
+    if (ballots != null || total != null) records.push({ contest_id: contestId, unit: cells[0], mode, candidate: null, votes: total, ballots });
   }
-  const out = { layer: "results", entered_by: "manual-paste", entered_at: new Date().toISOString(), note: "Manual entry — verify against the source before use. UNOFFICIAL.", rows };
+  const out = { layer: "results", entered_by: "manual-paste", entered_at: new Date().toISOString(), note: "Manual entry — verify against the source before use. UNOFFICIAL.", contest_id: contestId || null, mode, header, rows, records };
+  if (header && !contestId) out.warning = "set the contest id (e.g. macomb-hd58) to turn these rows into precinct records";
+  if (!header) out.warning = "no column-name line found: paste the table with its header row so candidates can be named";
   $("paste-out").textContent = JSON.stringify(out, null, 1); return out;
 }
 function callJson() {

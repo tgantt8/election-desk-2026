@@ -124,8 +124,9 @@
   <section id="view-ops" class="view">
     <div class="card"><h2>Source health</h2><div id="ops-health"></div></div>
     <div class="card"><h2>Manual entry</h2>
-      <p class="small muted">Paste results text or CSV here to build a manual snapshot. Nothing is committed from the browser; use the "copy as JSON" button and commit through the <code>manual-entry</code> workflow or the overlay.</p>
-      <textarea id="paste" class="paste" placeholder="Paste a results table or CSV…"></textarea>
+      <p class="small muted">Paste a results table (copied from the Clerk's detail page, tab- or comma-separated) with its header line: unit name first, then the candidates as the source names them, optionally "Total Votes" and "Total Ballots" columns. Set the contest id and the mode and the rows become precinct records (they reach the Macomb detail table and the anomaly rules). Nothing is committed from the browser; use "Copy as JSON" and commit through the <code>manual-entry</code> workflow (layer <code>results</code>).</p>
+      <div class="row" style="margin-bottom:6px"><input id="paste-contest" class="sel" placeholder="contest id (macomb-hd58, macomb-sd24, macomb-mi10, macomb-gov, macomb-ussen)"><select id="paste-mode" class="sel"><option value="TOTAL">TOTAL (combined)</option><option value="AVCB">AVCB (absent voter counting boards)</option><option value="ED">ED (Election Day)</option><option value="EV">EV (early in-person)</option></select></div>
+      <textarea id="paste" class="paste" placeholder="Precinct&#9;Manetta (D)&#9;Robinson (R)&#9;Total Ballots&#10;Sterling Heights, Precinct 18&#9;…"></textarea>
       <div class="row" style="margin-top:6px"><button class="btn" id="paste-parse">Parse</button><button class="btn" id="paste-copy">Copy as JSON</button></div>
       <pre id="paste-out" class="small mono muted"></pre>
     </div>

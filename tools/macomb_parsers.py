@@ -20,6 +20,10 @@ import re
 from collections import OrderedDict
 
 MODES = ("TOTAL", "AVCB", "ED", "EV")
+# Precinct-CSV vote channels (vote_channels=all). 2024 files carry Election Day / Absentee / Early; 2022 files (before early
+# in-person voting existed) carry Poll Book Totals / Election Day / Absentee, with the ballots count in the Poll Book column.
+CHANNELS = {"Election Day": "ED", "Absentee": "AVCB", "Early": "EV", "Poll Book Totals": "PBT"}
+ALL_MODES = ("ED", "AVCB", "EV", "PBT")
 NUM = r"-?[\d,]+"
 ROW_RE = re.compile(rf"^(?P<label>.+?)\s+(?P<a>{NUM})\s+(?P<b>{NUM})\s+(?P<c>{NUM})\s+(?P<d>{NUM})$")
 PARTY_RE = re.compile(r"^(?P<party>DEM|REP|LIB|UST|GRN|NLP|WCP|NPA|WC)\s+(?P<name>.+)$")
@@ -130,7 +134,8 @@ def parse_precinct_csv(path):
     cand_row, party_row, mode_row = rows[0], rows[1], rows[2]
     cols = []
     for i in range(2, len(cand_row)):
-        cols.append((cand_row[i].strip(), party_row[i].strip() or None, {"Election Day": "ED", "Absentee": "AVCB", "Early": "EV"}[mode_row[i].strip()]))
+        cols.append((cand_row[i].strip(), party_row[i].strip() or None, CHANNELS[mode_row[i].strip()]))
+    present = sorted({m for _, _, m in cols}, key=ALL_MODES.index)
     names = []
     for c, p, m in cols:
         if c not in names:
@@ -140,12 +145,12 @@ def parse_precinct_csv(path):
 
     def unpack(row):
         # "*" = suppressed by the Clerk (small-precinct privacy); kept as None and excluded from exact tie-out.
-        out = {n: {"ED": 0, "AVCB": 0, "EV": 0} for n in names}
+        out = {n: {m: 0 for m in ALL_MODES if m in present or m in ("ED", "AVCB", "EV")} for n in names}
         for (c, p, m), v in zip(cols, row[2:]):
             v = v.strip()
             out[c][m] = None if v == "*" else (_n(v) if v else 0)
         for n in names:
-            parts = [out[n][m] for m in ("ED", "AVCB", "EV")]
+            parts = [out[n][m] for m in out[n]]
             out[n]["TOTAL"] = None if any(x is None for x in parts) else sum(parts)
         return out
 
@@ -166,7 +171,7 @@ def parse_precinct_csv(path):
     # == Total Votes Cast wherever every cell is known.
     suppressed = {}
     for n in names:
-        for m in MODES:
+        for m in list(present) + ["TOTAL"]:
             vals = [p["values"][n][m] for p in precincts]
             known = sum(v for v in vals if v is not None)
             n_sup = sum(1 for v in vals if v is None)
@@ -179,7 +184,7 @@ def parse_precinct_csv(path):
                     raise TieOutError(f"{path}: {n} [{m}] known precinct sum {known} exceeds district total {dist} with {n_sup} suppressed cells")
                 suppressed[f"{n}|{m}"] = {"suppressed_precincts": n_sup, "residual_votes": dist - known}
     for rec in [district] + precincts:
-        for m in MODES:
+        for m in present:
             cells = [rec["values"][c][m] for c in candidates] + [rec["values"].get("Write-In", {}).get(m, 0)]
             tvc = rec["values"]["Total Votes Cast"][m]
             if any(x is None for x in cells) or tvc is None:
@@ -188,7 +193,7 @@ def parse_precinct_csv(path):
                 raise TieOutError(f"{path}: {rec['unit']} [{m}] candidates {sum(cells)} != Total Votes Cast {tvc}")
     party = {c: next((p for (cc, p, m) in cols if cc == c and p), None) for c in candidates}
     return {"source_file": path, "district": district, "precincts": precincts, "candidates": [{"name": c, "party": party[c]} for c in candidates],
-            "n_precincts": len(precincts), "suppressed_cells": suppressed, "tie_out": "PASS"}
+            "n_precincts": len(precincts), "suppressed_cells": suppressed, "tie_out": "PASS", "channels": present}
 
 
 def mode_shares(contest_or_district, dem_name=None):

@@ -21,6 +21,8 @@ jobs:
       - run: pip install -q -r requirements.txt
       - name: Poll all active sources (one pass)
         run: python3 tools/poll_all.py || true
+      - name: Anomaly rules (Macomb results, last two snapshots)
+        run: python3 tools/run_anomalies.py || true
       - name: Rebuild site data
         run: |
           python3 tools/build_polls_site.py && python3 tools/build_results_site.py

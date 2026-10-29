@@ -35,6 +35,9 @@ jobs:
           curl -sS -o /tmp/wa.json -w "WA election object HTTP %{http_code} %{size_download} bytes\n" -A "election-desk-2026/0.1 (public results desk; info@ganttformichigan.com)" https://results.votewa.gov/results/public/api/elections/washington/20261103
           head -c 400 /tmp/wa.json; echo
           if [ -f tools/poll_enhanced_voting.py ]; then python3 tools/poll_enhanced_voting.py --host results.votewa.gov --slug washington --election 20261103 --state WA --source-id enr_wa_enhanced_voting || echo "ev poller exit $?"; fi
+      - name: Anomaly rules
+        continue-on-error: true
+        run: python3 tools/run_anomalies.py
       - name: Rebuild site data
         run: python3 tools/build_site_data.py
       - name: Hygiene

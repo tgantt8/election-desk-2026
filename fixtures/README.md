@@ -12,6 +12,8 @@ Public source documents used as parser test fixtures. Each entry lists its sourc
   fetched 2026-10-29 via workbench; 32237 bytes; server Last-Modified: n/a
 - `macomb_2024_hd58_precincts.csv` — source: <https://pastelections.macombgov.org/api/download_contest/11815_table.csv?split_party=false&vote_channels=all>  
   fetched 2026-10-29 via workbench; 3901 bytes; server Last-Modified: n/a
+- `macomb_2022_hd58_precincts.csv` — source: <https://pastelections.macombgov.org/api/download_contest/685_table.csv?split_party=false&vote_channels=all>  
+  fetched 2026-10-29 via workbench; 3631 bytes; server Last-Modified: n/a. 2022 general, HD-58 (Past Elections contest 685, division 779 — the same district definition as the 2024 contest 11815); 35 precincts; channels Poll Book Totals / Election Day / Absentee (no early in-person voting in 2022).
 - `macomb_2026_official_candidate_list.pdf` — source: <https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf>  
   fetched 2026-10-29 via workbench; 190054 bytes; server Last-Modified: Fri, 18 Sep 2026 14:45:40 GMT
 

@@ -21,7 +21,7 @@ never goes in this repository. A hygiene check runs on every commit.
 - **No synthetic data.** A missing baseline is shown as "no baseline".
 - **Source terms respected.** Cook Political Report: label, date and link only (Senate, Governor and Michigan House labels are stored; other House districts link out). Inside Elections: label, date and link from its public cached JSON. UF Election Lab early-vote figures are shown unmodified with attribution (CC BY-NC-ND) and never blended. AP's data API is licensed and is not scraped. Bot-walled hosts (Cook from GitHub runners, Sabato, michigan.gov) are never worked around: hand entry or an off-runner fetch with the real bytes hashed.
 - **Simulator outputs are the `scenarios` layer**: model estimates from polls and ratings, labeled internal in the UI, never written to `results` or `calls`. House districts without a 2024-on-2026-lines baseline or a stored rating read "no baseline".
-- **Neutral anomaly language:** "data changed — confirm with the Clerk."
+- **Neutral anomaly language:** "data changed — confirm with the Clerk." Flags come from `tools/run_anomalies.py` (decrease, votes > ballots, complete-then-changed, stall, over/undervote spike) over the last two snapshots of every Macomb contest; they open review items and never change a number.
 
 ## Layout
 
@@ -35,7 +35,7 @@ never goes in this repository. A hygiene check runs on every commit.
 | `data/snapshots/index.jsonl` | Every pull: source, time, raw hash, parse status. |
 | `data/raw/` | Gzip'd raw payloads, deduplicated by hash. |
 | `data/anomalies.jsonl`, `data/ops_log.jsonl` | Anomaly queue and operations log. |
-| `tools/` | Pollers (`poll_votehub`, `poll_enhanced_voting`, `poll_ratings`, `poll_early_vote`, `poll_macomb_pdf`, `poll_clarity`), parsers, the simulator (`simulate.py`, with `--backtest`), the site-data builders, the hygiene check. |
+| `tools/` | Pollers (`poll_votehub`, `poll_enhanced_voting`, `poll_ratings`, `poll_early_vote`, `poll_macomb_pdf`, `poll_clarity`), parsers, the anomaly rules (`anomalies.py`) and the step that runs them after every poll or entry (`run_anomalies.py` → `data/anomalies.jsonl`), the simulator (`simulate.py`, with `--backtest`), the site-data builders, the hygiene check. |
 | `fixtures/` | Public source documents used as parser fixtures. |
 | `.github/workflows/` | `hygiene` (every push), `poll-scheduled` (pre-election cadence), `election-night` (manual loop), `manual-entry` (results, calls, ratings or early-vote hand entry), `fetch-fixtures` (manual, several files per run), `reach` (manual runner reachability test), `probe`. |
 
