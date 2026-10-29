@@ -44,8 +44,10 @@ def build():
     write("meta.json", {
         "built_at": utcnow(), "latest_snapshot_at": latest, "expected_cadence_min": cadence,
         "snapshot_count": len(snaps),
-        "sources": [{"id": s["id"], "name": s["name"], "layer": s["layer"], "url": s["url"], "terms_note": s.get("terms_note", ""),
-                     "last_success_at": s.get("last_success_at"), "last_error": s.get("last_error", ""), "health": health(s)} for s in sources],
+        "sources": [{"id": s["id"], "name": s["name"], "layer": s["layer"], "url": s["url"], "terms_note": s.get("terms_note", ""), "status": s.get("status"),
+                     "poller": s.get("poller"), "decision_needed": s.get("decision_needed"),
+                     "last_success_at": s.get("last_success_at"), "last_error": s.get("last_error", ""), "health": health(s)}
+                    for s in sources if s.get("status") != "EXCLUDED"],
         "disclaimer": "All figures UNOFFICIAL until certified. Every record carries its source and timestamp.",
     })
 

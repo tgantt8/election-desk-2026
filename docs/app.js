@@ -205,7 +205,7 @@ function renderMacomb() {
 }
 function renderOps() {
   const m = S.data.meta;
-  $("ops-health").innerHTML = m?.sources?.length ? `<div class="tablewrap"><table><tr><th></th><th>Source</th><th>Layer</th><th>Last success</th><th>Error</th></tr>${m.sources.map(s=>`<tr><td><i class="health ${s.health}"></i></td><td><a href="${s.url}" target="_blank" rel="noopener">${s.name}</a><div class="small muted">${s.terms_note||""}</div></td><td>${s.layer}</td><td class="small">${fmt.t(s.last_success_at)}</td><td class="small muted">${s.last_error||""}</td></tr>`).join("")}</table></div>` : '<p class="muted">Source registry not published yet.</p>';
+  $("ops-health").innerHTML = m?.sources?.length ? `<div class="tablewrap"><table><tr><th></th><th>Source</th><th>Layer</th><th>Status</th><th>Last success</th><th>Error</th></tr>${m.sources.map(s=>`<tr><td><i class="health ${s.health}"></i></td><td><a href="${s.url}" target="_blank" rel="noopener">${s.name}</a><div class="small muted">${s.terms_note||""}</div></td><td>${s.layer}</td><td class="small">${s.status||""}<div class="muted">${s.poller||""}</div></td><td class="small">${fmt.t(s.last_success_at)}</td><td class="small muted">${s.last_error||""}</td></tr>`).join("")}</table></div>` : '<p class="muted">Source registry not published yet.</p>';
   $("exports").innerHTML = DATA_FILES.map(f=>`<a class="btn" href="data/${f}.json" download>${f}.json</a>`).join("");
 }
 function renderAll() { staleCheck(); renderChambers(); renderMap(); renderPolls(); renderRatings(); renderResults(); renderMacomb(); renderOps(); }
