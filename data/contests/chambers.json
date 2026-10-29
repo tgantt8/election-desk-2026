@@ -1,35 +1,64 @@
 {
-  "_layer": "contests",
-  "_note": "Starting balance of the 119th Congress before the Nov 3 2026 election. Verified from primary sources; do not hardcode from prototypes.",
-  "verified_at": "2026-10-29T17:05:00Z",
-  "senate": {
-    "total": 100,
-    "republican": 53,
-    "democrat": 45,
-    "independent": 2,
-    "independents_caucus": {"Angus King (I-ME)": "D", "Bernie Sanders (I-VT)": "D"},
-    "democratic_caucus": 47,
-    "republican_caucus": 53,
-    "vacancies": 0,
-    "majority_leader_party": "R",
-    "vp_tiebreak_party": "R",
-    "source": {"name": "U.S. Senate contact information XML (senators_cfm.xml)", "url": "https://www.senate.gov/general/contact_information/senators_cfm.xml", "retrieved_at": "2026-10-29T17:05:00Z"},
-    "cross_check": {"name": "Ballotpedia, United States Senate partisan breakdown (via search summary)", "value": "53 R / 45 D / 2 I / 0 vacant"}
+ "_layer": "contests",
+ "_note": "Starting balance of the 119th Congress before the Nov 3 2026 election. Verified from primary sources; do not hardcode from prototypes.",
+ "verified_at": "2026-10-29T17:05:00Z",
+ "senate": {
+  "total": 100,
+  "republican": 53,
+  "democrat": 45,
+  "independent": 2,
+  "independents_caucus": {
+   "Angus King (I-ME)": "D",
+   "Bernie Sanders (I-VT)": "D"
   },
-  "house": {
-    "total": 435,
-    "republican": 218,
-    "democrat": 214,
-    "independent": 1,
-    "independents": [{"member": "Kevin Kiley", "district": "CA-3", "note": "Left the Republican Party in 2026; still sits with the House Republican Conference per Congress Countdown. Counted here as I; shown as 'I (sits with R)'."}],
-    "vacancies": 2,
-    "vacant_seats": [
-      {"district": "FL-20", "note": "Vacant per Clerk member list 2026-10-29; cause and special-election status to be confirmed."},
-      {"district": "TX-23", "note": "Vacant per Clerk member list 2026-10-29; cause and special-election status to be confirmed."}
-    ],
-    "non_voting_delegates": 6,
-    "majority_threshold": 218,
-    "source": {"name": "Clerk of the U.S. House, Member List (voting members only; delegates and the Resident Commissioner excluded)", "url": "https://clerk.house.gov/Members/ViewMemberList", "retrieved_at": "2026-10-29T17:05:00Z"},
-    "cross_check": {"name": "Congress Countdown party breakdown (as of 2026-10-26)", "value": "218 R / 214 D / 1 I / 2 vacant"}
+  "democratic_caucus": 47,
+  "republican_caucus": 53,
+  "vacancies": 0,
+  "majority_leader_party": "R",
+  "vp_tiebreak_party": "R",
+  "source": {
+   "name": "U.S. Senate contact information XML (senators_cfm.xml)",
+   "url": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
+   "retrieved_at": "2026-10-29T17:05:00Z"
+  },
+  "cross_check": {
+   "name": "Ballotpedia, United States Senate partisan breakdown (via search summary)",
+   "value": "53 R / 45 D / 2 I / 0 vacant"
   }
+ },
+ "house": {
+  "total": 435,
+  "republican": 218,
+  "democrat": 214,
+  "independent": 1,
+  "independents": [
+   {
+    "member": "Kevin Kiley",
+    "district": "CA-3",
+    "note": "Left the Republican Party 2026-03-09 and registered as an independent (CBS News via Wikipedia timeline); Congress Countdown reports he still sits with the House Republican Conference. Counted as I here; the bar shows him as I."
+   }
+  ],
+  "vacancies": 2,
+  "vacant_seats": [
+   {
+    "district": "FL-20",
+    "note": "Sheila Cherfilus-McCormick (D) resigned 2026-04-21; no special election before the Nov 3 2026 general (seat filled by the general election). Source: Wikipedia, 119th United States Congress, membership changes table, read 2026-10-29."
+   },
+   {
+    "district": "TX-23",
+    "note": "Tony Gonzales (R) resigned 2026-04-14; special election date TBD per the same table, read 2026-10-29."
+   }
+  ],
+  "non_voting_delegates": 6,
+  "majority_threshold": 218,
+  "source": {
+   "name": "Clerk of the U.S. House, Member List (voting members only; delegates and the Resident Commissioner excluded)",
+   "url": "https://clerk.house.gov/Members/ViewMemberList",
+   "retrieved_at": "2026-10-29T17:05:00Z"
+  },
+  "cross_check": {
+   "name": "Congress Countdown party breakdown (as of 2026-10-26)",
+   "value": "218 R / 214 D / 1 I / 2 vacant"
+  }
+ }
 }
