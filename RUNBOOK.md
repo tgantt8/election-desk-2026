@@ -4,6 +4,10 @@ All times ET. Michigan polls close 8:00 PM (Upper Peninsula CT counties 9:00 PM 
 UNOFFICIAL until certified (Macomb canvass ~Nov 17; state canvass ~Nov 23).
 
 ## Before
+- **Ratings refresh (Cook):** cookpolitical.com challenges GitHub runners, so Cook is not polled from Actions. To refresh: a Code session fetches the print pages through the drafting workbench and runs `python3 tools/poll_ratings.py --source-id ratings_cook_<office> --file <pdf>` (Senate, Governor; House via `--words-json`, Michigan districts only), or a person enters label + date + link through desk → Ops → Rating capture → **manual-entry** (layer `ratings`). Inside Elections refreshes on every scheduled pass. Sabato is hand entry only.
+- **Early vote:** North Carolina, Florida and the UF display-only file refresh on every scheduled pass. Michigan's dashboard is a hand capture: desk → Ops → Early-vote capture → Copy JSON → **manual-entry** (layer `early_vote`), twice a day through Mon Nov 2.
+- **Georgia and Idaho:** each scheduled pass checks `/jurisdictions/<slug>` for the Nov 3 election object and switches the poller on by itself when exactly one appears (ops event `ev_discovered`). Nothing to do unless the ops log shows `ev_discover_pending` on Nov 3 morning — then set `ev.election_id` by hand in `data/sources.json`.
+- **Simulator:** `tools/simulate.py` runs after every pass and writes the `scenarios` layer; `--backtest` recalibrates the error scales from the 2018/2022 fixtures. Its outputs are internal estimates, never calls.
 - **Mon Nov 2, 11:59 PM — code freeze.** No pushes to `main` after this except data commits by the workflows.
 - **7:30 PM Tue** — Source health check: open the desk → Ops. Every results source green or amber; red → note it and plan the fallback below.
 - **7:50 PM** — Fire the election-night loop: GitHub → Actions → **election-night** → Run workflow (interval 3, duration 340, layers `results,calls`).
