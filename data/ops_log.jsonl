@@ -1,2 +1,15 @@
 {"at": "2026-10-29T17:06:28Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-10-29T17:06:29Z", "bytes": 142083, "event": "pdf_pull", "parse_status": "unparsed", "snapshot": "macomb_clerk_unofficial_summary_pdf:2026-10-29T17:06:29Z:d7331c75283f", "source_id": "macomb_clerk_unofficial_summary_pdf"}
+{"at": "2026-10-29T17:14:23Z", "event": "poller_not_implemented", "poller": "votehub_polls", "source_id": "polls_votehub_api"}
+{"at": "2026-10-29T17:14:23Z", "event": "poller_not_implemented", "poller": "cook_ratings", "source_id": "ratings_cook_senate"}
+{"at": "2026-10-29T17:14:23Z", "event": "poller_not_implemented", "poller": "cook_ratings", "source_id": "ratings_cook_house"}
+{"at": "2026-10-29T17:14:23Z", "event": "poller_not_implemented", "poller": "cook_ratings", "source_id": "ratings_cook_governor"}
+{"at": "2026-10-29T17:14:23Z", "event": "poller_not_implemented", "poller": "nc_s3", "source_id": "ev_nc_absentee_counts_csv"}
+{"at": "2026-10-29T17:14:23Z", "error": "No module named 'poll_enhanced_voting'", "event": "poller_missing_module", "source_id": "enr_ga_ev"}
+{"at": "2026-10-29T17:14:23Z", "error": "No module named 'poll_enhanced_voting'", "event": "poller_missing_module", "source_id": "enr_id_ev"}
+{"at": "2026-10-29T17:14:23Z", "error": "No module named 'poll_enhanced_voting'", "event": "poller_missing_module", "source_id": "enr_va_ev"}
+{"at": "2026-10-29T17:14:23Z", "error": "No module named 'poll_enhanced_voting'", "event": "poller_missing_module", "source_id": "enr_ut_ev"}
+{"at": "2026-10-29T17:14:23Z", "error": "No module named 'poll_enhanced_voting'", "event": "poller_missing_module", "source_id": "enr_wa_ev"}
+{"at": "2026-10-29T17:14:23Z", "event": "poller_not_implemented", "poller": "nc_s3", "source_id": "enr_nc_s3_results"}
+{"at": "2026-10-29T17:14:23Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-10-29T17:14:26Z", "bytes": 190054, "event": "pdf_pull", "parse_status": "unparsed", "snapshot": "macomb_candidate_list_pdf:2026-10-29T17:14:26Z:b22065c6778d", "source_id": "macomb_candidate_list_pdf"}

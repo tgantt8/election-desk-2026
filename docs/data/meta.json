@@ -1,8 +1,8 @@
 {
- "built_at": "2026-10-29T17:13:18Z",
- "latest_snapshot_at": "2026-10-29T17:06:29Z",
+ "built_at": "2026-10-29T17:14:27Z",
+ "latest_snapshot_at": "2026-10-29T17:14:26Z",
  "expected_cadence_min": 60,
- "snapshot_count": 1,
+ "snapshot_count": 2,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -1223,7 +1223,7 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": "2026-10-29T17:06:28Z challenge: HTTP 202 empty body (WAF JavaScript challenge) from GitHub runner",
+   "last_error": "2026-10-29T17:14:23Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
    "health": "gray"
   },
   {
@@ -1235,7 +1235,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T17:06:29Z",
+   "last_success_at": "2026-10-29T17:14:25Z",
    "last_error": "",
    "health": "green"
   },
@@ -1274,9 +1274,9 @@
    "status": "VERIFIED",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": null,
+   "last_success_at": "2026-10-29T17:14:26Z",
    "last_error": "",
-   "health": "gray"
+   "health": "green"
   },
   {
    "id": "macomb_clerk_elections_page",
