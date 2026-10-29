@@ -2292,7 +2292,8 @@
    "decision_needed": null,
    "last_success_at": null,
    "last_error": "",
-   "active": true
+   "active": false,
+   "notes": " 2026-10-29: poller not written yet (every scheduled pass logged poller_not_implemented); switched off until it exists. Results scaffold reachable from the runner (reach run 40931499434)."
   },
   {
    "id": "enr_mi_cenr_mielections",
