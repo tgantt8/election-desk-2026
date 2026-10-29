@@ -42,7 +42,6 @@ def _find_tools_dir():
         os.environ.get("ELECTION_DESK_TOOLS"),
         here,
         os.path.join(os.path.dirname(here), "tools"),
-        "/home/user/election-desk-2026/tools",
     ]
     for c in candidates:
         if c and os.path.exists(os.path.join(c, "common.py")):
@@ -103,6 +102,24 @@ def fetch_ballot_items(host, slug, election_id, session, limiter=None, min_inter
 def fetch_jurisdiction(host, slug, session, limiter=None, min_interval_s=DEFAULT_MIN_INTERVAL_S):
     """Elections list for a jurisdiction (used to discover publicElectionId). Returns (raw_bytes, parsed_dict)."""
     return _get(f"{api_base(host)}/jurisdictions/{slug}", session, limiter, host, min_interval_s)
+
+
+def discover_election_id(host, slug, election_date, session, limiter=None, min_interval_s=DEFAULT_MIN_INTERVAL_S):
+    """Look up the publicElectionId of the election held on `election_date` (YYYY-MM-DD) in /jurisdictions/<slug>.
+
+    Returns (election_id or None, [candidate dicts]). Recounts are skipped. Used before Nov 3 for states (GA, ID) whose
+    Nov 3 election object is not published yet: the orchestrator calls this on every pass until an id appears, then
+    persists it in data/sources.json. Nothing is guessed: no id -> no polling."""
+    _raw, j = fetch_jurisdiction(host, slug, session, limiter, min_interval_s)
+    elections = (j or {}).get("elections") or []
+    cands = []
+    for e in elections:
+        if not isinstance(e, dict) or e.get("electionDate") != election_date:
+            continue
+        name = _text(e.get("name"))
+        cands.append({"publicElectionId": e.get("publicElectionId"), "name": name, "electionDate": e.get("electionDate")})
+    live = [c for c in cands if c["publicElectionId"] and not re.search(r"recount", c["name"] or "", re.I)]
+    return (live[0]["publicElectionId"] if len(live) == 1 else None), cands
 
 
 # --------------------------------------------------------------------------- parse helpers

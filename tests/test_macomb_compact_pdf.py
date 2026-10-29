@@ -6,7 +6,7 @@ import sys
 import pytest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-REPO = "/home/user/election-desk-2026"
+REPO = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(REPO, "tools"))
 import macomb_compact_pdf as mc  # noqa: E402

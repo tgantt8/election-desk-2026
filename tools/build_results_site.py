@@ -107,6 +107,9 @@ def build(replay_2024=False):
             if str(cid).startswith("macomb-"):
                 tier1.append(card)
             elif re.match(r"^(us-senate|gov|us-house)-", str(cid)):
+                m = re.match(r"^(?:us-senate|gov|us-house)-([A-Z]{2})", str(cid))
+                if m and not card["title"].startswith(m.group(1)):
+                    card["title"] = f"{m.group(1)} · {card['title']}"  # the feed's own contest name, prefixed with the state
                 national.append(card)  # state legislative, judicial and local items stay in the layer but off the national board
     if replay_2024:
         base = load_json(os.path.join(DATA, "baselines", "macomb_2024_general.json"))

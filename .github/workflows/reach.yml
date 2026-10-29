@@ -1,0 +1,31 @@
+name: reach
+# Manual reachability test from a GitHub runner: fetches each URL once with the desk's User-Agent and reports status,
+# content type and size. Bodies go into a workflow artifact (never committed). Used to decide poller vs. manual entry
+# for hosts that bot-wall the drafting sandbox (Sabato, Michigan SOS, Georgia, ...). Read-only; commits nothing.
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "URLs, one per line"
+        required: true
+jobs:
+  reach:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch
+        env:
+          URLS: ${{ inputs.urls }}
+        run: |
+          mkdir -p out; i=0
+          printf '%s\n' "$URLS" | while IFS= read -r u; do
+            [ -z "$u" ] && continue; i=$((i+1))
+            code=$(curl -sS -m 60 -L -o "out/$i.body" -w "%{http_code} %{content_type} %{size_download}B %{url_effective}" \
+              -A "election-desk-2026/0.1 (public results desk; contact info@ganttformichigan.com)" "$u" 2>&1) || true
+            echo "$i | $u | $code"; echo "$i | $u | $code" >> out/index.txt
+            head -c 300 "out/$i.body" | tr -d '\000' | tr '\n' ' '; echo; echo
+          done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reach-bodies
+          path: out/
+          retention-days: 3
