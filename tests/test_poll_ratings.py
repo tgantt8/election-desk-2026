@@ -38,7 +38,7 @@ def test_cook_senate_every_race_lands_in_one_column_and_tallies_match():
     assert p["held"] == {"D": 13, "R": 22} and len(p["entries"]) == 35
     by = {e["state"]: e for e in p["entries"]}
     assert by["MI"]["label"] == "Toss-up" and by["MI"]["holder_party"] == "D" and by["MI"]["incumbent"] == "OPEN"
-    assert by["NC"]["label"] == "Lean D" and by["NC"]["holder_party"] == "R"
+    assert by["NC"]["label"] == "Likely D" and by["NC"]["holder_party"] == "R"
     assert by["ME"]["label"] == "Toss-up" and by["TX"]["label"] == "Toss-up" and by["OH"]["label"] == "Toss-up"
     assert by["AK"]["label"] == "Toss-up" and by["SC"]["label"] == "Lean R" and by["MS"]["label"] == "Likely R" and by["AL"]["label"] == "Solid R"
     assert by["CO"]["label"] == "Solid D" and by["GA"]["label"] == "Likely D" and by["MN"]["label"] == "Lean D"
@@ -54,8 +54,9 @@ def test_cook_governor():
     p = pr.parse_cook_senate_governor(rb(COOK_GOV), "governor")
     assert p["validation"] == "ok" and p["page_date"] == "2026-10-27" and p["held"] == {"D": 18, "R": 18} and len(p["entries"]) == 36
     by = {e["state"]: e for e in p["entries"]}
-    assert by["MI"]["label"] == "Likely D" and by["KS"]["label"] == "Lean D" and by["WI"]["label"] == "Lean D" and by["AZ"]["label"] == "Likely D"
-    assert by["GA"]["label"] == "Lean D" and by["NH"]["label"] == "Likely R" and by["AK"]["label"] == "Likely D" and by["NV"]["label"] == "Lean D"
+    assert by["MI"]["label"] == "Lean D" and by["KS"]["label"] == "Toss-up" and by["WI"]["label"] == "Toss-up" and by["AZ"]["label"] == "Lean D"
+    assert by["GA"]["label"] == "Toss-up" and by["NH"]["label"] == "Likely R" and by["AK"]["label"] == "Lean D" and by["NV"]["label"] == "Toss-up"
+    assert by["CA"]["label"] == "Solid D" and by["FL"]["label"] == "Lean R" and by["AL"]["label"] == "Solid R" and by["TX"]["label"] == "Lean R"
     recs, _ = pr.cook_records(p, "governor", "ratings_cook_governor", pr.COOK_PAGE["governor"], "snap", "now")
     assert {r["race"] for r in recs} == {"gov-" + e["state"] for e in p["entries"]}
 

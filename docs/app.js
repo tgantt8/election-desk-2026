@@ -1,7 +1,7 @@
 /* Election Desk 2026 — static client. Reads ONLY the committed JSON under docs/data/.
    Layers never cross-write; the client only renders. */
 (() => {
-const DATA_FILES = ["meta","contests","ratings","polls","early_vote","results","calls","anomalies","baselines"];
+const DATA_FILES = ["meta","contests","ratings","polls","early_vote","results","calls","anomalies","baselines","scenarios"];
 const S = { data:{}, layer:"senate", colorby:"rating", tile:false, timer:null, lastFetch:null, geo:null };
 const $ = (id) => document.getElementById(id);
 const fmt = { n: (x) => x == null ? "—" : Number(x).toLocaleString("en-US"),
@@ -57,7 +57,7 @@ function renderChambers() {
   const c = S.data.contests?.chambers; const el = $("chambers");
   if (!c) { el.innerHTML = '<p class="muted">No chamber data.</p>'; return; }
   const res = S.data.results?.chamber_calls || { senate:{d:0,r:0,i:0}, house:{d:0,r:0,i:0} };
-  const sim = S.data.contests?.sim_chambers || null;
+  const sim = S.data.contests?.sim_chambers || null; // expected 2026 wins (polls-as-is preset); hatched = simulated, never a call
   // Seats not up in 2026 carry over: show them as "called" for the party holding them (holdovers), labeled.
   const hold = c.senate.holdovers || {d:0,r:0,i:0};
   const sen = { d: hold.d + (res.senate?.d||0), r: hold.r + (res.senate?.r||0), i: hold.i + (res.senate?.i||0) };
@@ -174,11 +174,64 @@ function renderPolls() {
   $("polls-dedupe").innerHTML = (p.dedupe_log||[]).slice(-20).map(x=>`${x.at}: ${x.note}`).join("<br>") || "No duplicates seen.";
 }
 function renderRatings() {
-  const r = S.data.ratings;
-  table($("ratings-table"), [{h:"Race",f:x=>x.race},{h:"Rater",f:x=>x.rater},{h:"Label",f:x=>x.label},{h:"Date",f:x=>x.date||""},{h:"",f:x=>x.url?`<a href="${x.url}" target="_blank" rel="noopener">link</a>`:""}], r?.latest||[], "Ratings layer not published yet.");
-  $("ratings-changes").innerHTML = (r?.changes||[]).slice(-30).reverse().map(c=>`${c.date}: ${c.race} — ${c.rater}: ${c.from||"—"} → ${c.to}`).join("<br>") || '<span class="muted">No changes logged.</span>';
-  const ev = S.data.early_vote;
-  table($("ev-table"), [{h:"Geography",f:x=>x.geography},{h:"Metric",f:x=>x.metric},{h:"Value",num:true,f:x=>fmt.n(x.value)},{h:"vs 2022",num:true,f:x=>x.vs_2022==null?'<span class="muted">no baseline</span>':fmt.n(x.vs_2022)},{h:"vs 2024",num:true,f:x=>x.vs_2024==null?'<span class="muted">no baseline</span>':fmt.n(x.vs_2024)},{h:"As of",f:x=>`${x.as_of||""}<div class="small muted">${x.source||""}</div>`}], ev?.records||[], "Early-vote layer not published yet.");
+  const r = S.data.ratings; const sel = $("ratings-rater");
+  const raters = r?.raters || [];
+  if (sel.options.length !== raters.length + 1) sel.innerHTML = '<option value="">all raters</option>' + raters.map(x=>`<option>${x}</option>`).join("");
+  const office = $("ratings-office").value, rater = sel.value;
+  const rows = (r?.latest||[]).filter(x => (!rater || x.rater===rater) && (!office || x.office===office)).sort((a,b)=> (a.office+a.race).localeCompare(b.office+b.race) || a.rater.localeCompare(b.rater));
+  $("ratings-scope").textContent = r?.scope_note || "";
+  table($("ratings-table"), [{h:"Race",f:x=>x.race},{h:"Rater",f:x=>x.rater},{h:"Label",f:x=>`${x.label}${x.label_lossy?' <span class="small muted" title="rater uses a finer scale">(rater: '+x.label_raw+')</span>':''}`},{h:"Date",f:x=>`${x.date||""}<div class="small muted">${x.date_kind==="page"?"page date":"rating date"}</div>`},{h:"",f:x=>x.url?`<a href="${x.url}" target="_blank" rel="noopener">link</a>`:""}], rows, "Ratings layer not published yet.");
+  $("ratings-changes").innerHTML = (r?.changes||[]).slice(-30).reverse().map(c=>`${c.date||c.seen_at}: ${c.race} — ${c.rater}: ${c.from||"—"} → ${c.to}`).join("<br>") || '<span class="muted">No changes logged since the first pull.</span>';
+  const ev = S.data.early_vote; const recs = ev?.records||[];
+  const ssel = $("ev-state"); const states = [...new Set(recs.map(x=>x.state).filter(Boolean))].sort();
+  if (ssel.options.length !== states.length + 1) ssel.innerHTML = '<option value="">all states</option>' + states.map(x=>`<option>${x}</option>`).join("");
+  const st = ssel.value, src = $("ev-src").value;
+  const evrows = recs.filter(x => (!st || x.state===st) && (src!=="official" || !x.display_only) && (src!=="display" || x.display_only));
+  $("ev-note").textContent = ev ? `${recs.length} state-level rows${ev.county_rows_in_layer?`; ${ev.county_rows_in_layer} county rows kept in the layer file`:""}` : "";
+  table($("ev-table"), [{h:"Geography",f:x=>x.geography},{h:"Metric",f:x=>`${x.metric}${x.party?` <span class="pill">${x.party}</span>`:""}${x.mode&&x.mode!=="total"?` <span class="small muted">${x.mode.replace("_"," ")}</span>`:""}`},{h:"Value",num:true,f:x=>fmt.n(x.value)},{h:"vs 2022",num:true,f:x=>x.vs_2022==null?'<span class="muted">no baseline</span>':`${fmt.n(x.vs_2022)}<div class="small muted" title="${x.vs_2022_source||""}">same point, official</div>`},{h:"vs 2024",num:true,f:x=>x.vs_2024==null?'<span class="muted">no baseline</span>':fmt.n(x.vs_2024)},{h:"As of",f:x=>`${x.as_of||x.as_of_raw||""}<div class="small muted">${x.url?`<a href="${x.url}" target="_blank" rel="noopener">${x.source||"source"}</a>`:(x.source||"")}${x.display_only?` · <span class="pill" title="${x.license||""}">display only</span>`:""}</div>`}], evrows, "Early-vote layer not published yet.");
+}
+// ---------- simulator (scenarios layer; same model as tools/simulate.py) ----------
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function gauss(rng){let u=0,v=0;while(u===0)u=rng();while(v===0)v=rng();return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v)}
+function simulateJS(inputs, params, shift, scale, nSims, hold){
+  const rng = mulberry32(20261103); const regions=[...new Set(inputs.map(r=>r.region))];
+  const wins=new Array(inputs.length).fill(0), sums=new Array(inputs.length).fill(0); const seats=[];
+  const senIdx=inputs.map((r,i)=>r.office==="senate"?i:-1).filter(i=>i>=0);
+  for(let s=0;s<nSims;s++){ const eN=gauss(rng)*params.s_nat*scale; const eR={}; regions.forEach(g=>eR[g]=gauss(rng)*params.s_reg*scale); let w=0;
+    for(let i=0;i<inputs.length;i++){ const m=inputs[i].mu+shift+eN+eR[inputs[i].region]+gauss(rng)*inputs[i].s_race*scale; sums[i]+=m; if(m>0){wins[i]++; if(inputs[i].office==="senate") w++;} }
+    seats.push(hold.d+hold.i+w); }
+  const p51=seats.filter(x=>x>=51).length/nSims, p50=seats.filter(x=>x===50).length/nSims, exp=seats.reduce((a,b)=>a+b,0)/nSims;
+  const sorted=[...seats].sort((a,b)=>a-b); const q=p=>sorted[Math.min(nSims-1,Math.floor(p*nSims))];
+  return { p51, p50, exp, q10:q(.1), q50:q(.5), q90:q(.9), races: inputs.map((r,i)=>({race:r.race, p:wins[i]/nSims, m:sums[i]/nSims})) };
+}
+function renderSim() {
+  const sc = S.data.scenarios; const el = $("sim-summary");
+  if (!sc || !sc.presets || !Object.keys(sc.presets).length) { el.innerHTML = '<p class="muted">Simulator has not run yet.</p>'; return; }
+  const base = sc.presets.polls_as_is; const sen = base.senate;
+  el.innerHTML = `<div class="kv"><dt>Built</dt><dd>${fmt.t(sc.built_at)} · ${sc.n_sims.toLocaleString()} draws · ${sc.inputs.length} races with a baseline, ${sc.excluded.length} without</dd>
+    <dt>Senate</dt><dd><strong>P(D caucus ≥ 51) ${(100*sen.p_dem_control_51).toFixed(0)}%</strong> · P(50–50, VP R) ${(100*sen.p_dem_50_tie_vp_r).toFixed(0)}% · expected D caucus ${sen.expected_dem_caucus} (80%: ${sen.dem_caucus_p10_p50_p90[0]}–${sen.dem_caucus_p10_p50_p90[2]}) · holdovers ${sen.holdovers.d}D + ${sen.holdovers.i}I / ${sen.holdovers.r}R</dd>
+    <dt>Governors</dt><dd>expected D wins ${base.governors.expected_dem_wins} of ${base.governors.races} (80%: ${base.governors.dem_wins_p10_p50_p90[0]}–${base.governors.dem_wins_p10_p50_p90[2]})</dd>
+    <dt>House</dt><dd>${sc.house_baselines.note}</dd>
+    <dt>Tipping point</dt><dd>${sen.tipping_point.map(t=>`${t.race} ${(100*t.share).toFixed(0)}%`).join(" · ")}</dd>
+    <dt>Error scales</dt><dd class="mono">nat ${sc.params.s_nat} · region ${sc.params.s_reg} · race ${sc.params.s_base} + poll ${sc.params.s_poll}/√n · rating-only ${sc.params.s_rating} <span class="muted">(${sc.params_source})</span></dd></div>
+    <p class="small"><strong>Internal estimate — not a call — do not share.</strong></p>`;
+  table($("sim-presets"), [{h:"Preset",f:x=>x[0].replace(/_/g," ")},{h:"Shift",num:true,f:x=>fmt.m(x[1].shift)},{h:"P(D ≥ 51)",num:true,f:x=>fmt.pct(100*x[1].senate.p_dem_control_51,0)},{h:"P(50–50)",num:true,f:x=>fmt.pct(100*x[1].senate.p_dem_50_tie_vp_r,0)},{h:"E[D caucus]",num:true,f:x=>x[1].senate.expected_dem_caucus},{h:"80% range",f:x=>`${x[1].senate.dem_caucus_p10_p50_p90[0]}–${x[1].senate.dem_caucus_p10_p50_p90[2]}`},{h:"E[D gov wins]",num:true,f:x=>x[1].governors.expected_dem_wins}], Object.entries(sc.presets));
+  const w = sc.what_has_to_be_true;
+  $("sim-whtbt").innerHTML = `Target: ${w.target}. ${w.shift_needed==null ? `<strong>${w.note||""}</strong>` : `A uniform national shift of <strong>${fmt.m(w.shift_needed)}</strong> from the polls-as-is inputs puts P(D ≥ 51) at 50%` } — i.e. the polls would have to be off by that much, in that direction, everywhere at once. Seats that most often decide it: ${sen.tipping_point.map(t=>t.race).join(", ")}.`;
+  const office = $("sim-office").value;
+  table($("sim-races"), [{h:"Race",f:x=>x.race},{h:"Basis",f:x=>`${x.basis}${x.basis.includes("rating")?` <span class="small muted">${(sc.inputs.find(i=>i.race===x.race)||{}).rating_label||""}</span>`:""}`},{h:"μ",num:true,f:x=>fmt.m(x.mu)},{h:"P(D)",num:true,f:x=>fmt.pct(100*x.p_dem,0)},{h:"80% margin",f:x=>`${fmt.m(x.margin_p10_p50_p90[0])} … ${fmt.m(x.margin_p10_p50_p90[2])}`},{h:"σ race",num:true,f:x=>x.s_race}], base.races.filter(x=>!office||x.office===office).sort((a,b)=>Math.abs(a.mu)-Math.abs(b.mu)));
+  const bt = sc.backtest_summary;
+  $("sim-backtest").innerHTML = bt && bt.chosen_metrics ? `${bt.n_races} Senate and Governor races, 2018 and 2022 (FiveThirtyEight raw polls, official results; CC BY 4.0). RMSE ${bt.chosen_metrics.rmse} pts · 80% interval coverage ${(100*bt.chosen_metrics.coverage_80).toFixed(0)}% · 95% ${(100*bt.chosen_metrics.coverage_95).toFixed(0)}% · Brier ${bt.chosen_metrics.brier} · right call ${(100*bt.chosen_metrics.right_call_rate).toFixed(0)}%. Mean poll miss (actual − polls): 2018 ${fmt.m(bt.by_year["2018"].all.mean_signed_error_actual_minus_polls)}, 2022 ${fmt.m(bt.by_year["2022"].all.mean_signed_error_actual_minus_polls)} — those two numbers are the "repeat" presets.` : '<span class="muted">No backtest file.</span>';
+  if (sc.excluded.length) $("sim-backtest").innerHTML += `<div class="muted" style="margin-top:6px">No baseline (not simulated): ${sc.excluded.map(e=>e.race).join(", ")}</div>`;
+}
+function runSimLive() {
+  const sc = S.data.scenarios; if (!sc?.inputs?.length) return;
+  const shift = Number($("sim-shift").value), scale = Number($("sim-scale").value);
+  const hold = sc.presets.polls_as_is.senate.holdovers; const t0 = performance.now();
+  const r = simulateJS(sc.inputs, sc.params, shift, scale, sc.n_sims, hold);
+  const closest = r.races.filter(x=>sc.inputs.find(i=>i.race===x.race).office==="senate").sort((a,b)=>Math.abs(a.p-0.5)-Math.abs(b.p-0.5)).slice(0,6);
+  $("sim-live").innerHTML = `<div class="kv"><dt>Shift ${fmt.m(shift)}, scale ×${scale}</dt><dd><strong>P(D ≥ 51) ${(100*r.p51).toFixed(0)}%</strong> · P(50–50) ${(100*r.p50).toFixed(0)}% · E[D caucus] ${r.exp.toFixed(2)} (80%: ${r.q10}–${r.q90}) · ${(performance.now()-t0).toFixed(0)} ms</dd>
+    <dt>Closest Senate races</dt><dd>${closest.map(x=>`${x.race} ${(100*x.p).toFixed(0)}%`).join(" · ")}</dd></div><p class="small"><strong>Internal estimate — not a call — do not share.</strong></p>`;
 }
 function raceCard(r) {
   const tot = (r.candidates||[]).reduce((s,c)=>s+(c.votes||0),0) || 1;
@@ -208,7 +261,7 @@ function renderOps() {
   $("ops-health").innerHTML = m?.sources?.length ? `<div class="tablewrap"><table><tr><th></th><th>Source</th><th>Layer</th><th>Status</th><th>Last success</th><th>Error</th></tr>${m.sources.map(s=>`<tr><td><i class="health ${s.health}"></i></td><td><a href="${s.url}" target="_blank" rel="noopener">${s.name}</a><div class="small muted">${s.terms_note||""}</div></td><td>${s.layer}</td><td class="small">${s.status||""}<div class="muted">${s.poller||""}</div></td><td class="small">${fmt.t(s.last_success_at)}</td><td class="small muted">${s.last_error||""}</td></tr>`).join("")}</table></div>` : '<p class="muted">Source registry not published yet.</p>';
   $("exports").innerHTML = DATA_FILES.map(f=>`<a class="btn" href="data/${f}.json" download>${f}.json</a>`).join("");
 }
-function renderAll() { staleCheck(); renderChambers(); renderMap(); renderPolls(); renderRatings(); renderResults(); renderMacomb(); renderOps(); }
+function renderAll() { staleCheck(); renderChambers(); renderMap(); renderPolls(); renderRatings(); renderSim(); renderResults(); renderMacomb(); renderOps(); }
 
 // ---------- manual panels ----------
 function parsePaste() {
@@ -226,6 +279,22 @@ function callJson() {
   $("call-out").textContent = JSON.stringify(out, null, 1); return out;
 }
 
+const CAP = { ev: [], rc: [] };
+function evcAdd() {
+  const row = { geography: $("evc-geo").value.trim(), geo_level: /county/i.test($("evc-geo").value) ? "county" : (/township|city|twp/i.test($("evc-geo").value) ? "municipality" : "state"), state: $("evc-state").value.trim().toUpperCase() || null,
+    metric: $("evc-metric").value, party: null, mode: /in-person/i.test($("evc-metric").value) ? "in_person" : (/mail/i.test($("evc-metric").value) ? "mail" : "total"),
+    value: Number($("evc-value").value), as_of: $("evc-asof").value || null, source: $("evc-source").value.trim(), url: $("evc-url").value.trim(), display_only: false,
+    note: "hand capture from the official dashboard; who voted, not how" };
+  if (!row.geography || !row.metric || !Number.isFinite(row.value) || !row.as_of || !row.source) { alert("geography, metric, value, as-of and source are required"); return; }
+  CAP.ev.push(row); $("evc-out").textContent = JSON.stringify({ layer: "early_vote", entered_by: "ops-panel", entered_at: new Date().toISOString(), records: CAP.ev }, null, 1);
+}
+function rcAdd() {
+  const row = { race: $("rc-race").value.trim(), rater: $("rc-rater").value.trim(), label: $("rc-label").value, label_raw: $("rc-label").value, date: $("rc-date").value || null, url: $("rc-url").value.trim(),
+    office: $("rc-race").value.startsWith("gov-") ? "governor" : $("rc-race").value.startsWith("us-house-") ? "house" : "senate", state: ($("rc-race").value.match(/-([A-Z]{2})/)||[])[1] || null, date_kind: "page" };
+  if (!row.race || !row.rater || !row.date || !row.url) { alert("race, rater, label, date and URL are required (label + date + link only)"); return; }
+  CAP.rc.push(row); $("rc-out").textContent = JSON.stringify({ layer: "ratings", entered_by: "ops-panel", entered_at: new Date().toISOString(), records: CAP.rc }, null, 1);
+}
+
 // ---------- wiring ----------
 document.querySelectorAll("nav.bottom button").forEach(b => b.onclick = () => { document.querySelectorAll("nav.bottom button").forEach(x=>x.classList.toggle("active", x===b)); document.querySelectorAll(".view").forEach(v=>v.classList.toggle("active", v.id==="view-"+b.dataset.view)); try{localStorage.setItem("desk.view",b.dataset.view)}catch(e){} });
 document.querySelectorAll("#layer-tabs button").forEach(b => b.onclick = () => { document.querySelectorAll("#layer-tabs button").forEach(x=>x.classList.toggle("active",x===b)); S.layer = b.dataset.layer; renderMap(); });
@@ -234,6 +303,10 @@ $("maptoggle").onclick = () => { S.tile = !S.tile; $("map-geo").style.display = 
 $("refresh").onclick = loadAll; $("interval").onchange = setTimer;
 $("theme").onclick = () => { const h = document.documentElement; const next = h.dataset.theme === "dark" ? "light" : "dark"; h.dataset.theme = next; try{localStorage.setItem("desk.theme",next)}catch(e){} };
 ["polls-race","polls-pop","polls-days"].forEach(id => $(id).onchange = renderPolls); $("macomb-contest").onchange = renderMacomb;
+["ratings-rater","ratings-office","ev-state","ev-src"].forEach(id => $(id).onchange = renderRatings); $("sim-office").onchange = renderSim;
+$("sim-shift").oninput = e => $("sim-shift-v").textContent = Number(e.target.value).toFixed(2); $("sim-scale").oninput = e => $("sim-scale-v").textContent = Number(e.target.value).toFixed(1); $("sim-run").onclick = runSimLive;
+$("evc-add").onclick = evcAdd; $("evc-copy").onclick = () => navigator.clipboard?.writeText($("evc-out").textContent); $("evc-clear").onclick = () => { CAP.ev = []; $("evc-out").textContent = ""; };
+$("rc-add").onclick = rcAdd; $("rc-copy").onclick = () => navigator.clipboard?.writeText($("rc-out").textContent); $("rc-clear").onclick = () => { CAP.rc = []; $("rc-out").textContent = ""; };
 $("paste-parse").onclick = parsePaste; $("paste-copy").onclick = () => navigator.clipboard?.writeText(JSON.stringify(parsePaste()));
 $("call-copy").onclick = () => navigator.clipboard?.writeText(JSON.stringify(callJson()));
 try { const iv = localStorage.getItem("desk.interval"); if (iv !== null) $("interval").value = iv; const th = localStorage.getItem("desk.theme"); if (th) document.documentElement.dataset.theme = th; const v = localStorage.getItem("desk.view"); if (v) document.querySelector(`nav.bottom button[data-view="${v}"]`)?.click(); } catch (e) {}

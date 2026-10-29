@@ -1,8 +1,8 @@
 {
- "built_at": "2026-10-29T18:46:40Z",
- "latest_snapshot_at": "2026-10-29T17:17:51Z",
+ "built_at": "2026-10-29T18:56:14Z",
+ "latest_snapshot_at": "2026-10-29T18:56:04Z",
  "expected_cadence_min": 60,
- "snapshot_count": 6,
+ "snapshot_count": 9,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -117,9 +117,9 @@
    "status": "VERIFIED",
    "poller": "cook_ratings",
    "decision_needed": null,
-   "last_success_at": null,
+   "last_success_at": "2026-10-29T18:53:22Z",
    "last_error": "",
-   "health": "gray"
+   "health": "green"
   },
   {
    "id": "ratings_cook_house",
@@ -130,9 +130,9 @@
    "status": "VERIFIED",
    "poller": "cook_ratings",
    "decision_needed": "Widen the stored House labels beyond Michigan only if Cook agrees in writing.",
-   "last_success_at": null,
+   "last_success_at": "2026-10-29T18:56:04Z",
    "last_error": "",
-   "health": "gray"
+   "health": "green"
   },
   {
    "id": "ratings_cook_governor",
@@ -143,9 +143,9 @@
    "status": "VERIFIED",
    "poller": "cook_ratings",
    "decision_needed": null,
-   "last_success_at": null,
+   "last_success_at": "2026-10-29T18:53:23Z",
    "last_error": "",
-   "health": "gray"
+   "health": "green"
   },
   {
    "id": "ratings_cook_rating_changes",

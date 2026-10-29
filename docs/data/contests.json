@@ -67,6 +67,15 @@
     "name": "Congress Countdown party breakdown (as of 2026-10-26)",
     "value": "218 R / 214 D / 1 I / 2 vacant"
    }
+  },
+  "sim_chambers": {
+   "senate": {
+    "d": 17,
+    "r": 18,
+    "note": "expected 2026 wins, polls-as-is preset"
+   },
+   "house": null,
+   "built_at": "2026-10-29T18:56:14Z"
   }
  },
  "senate_2026": [
@@ -96,9 +105,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.002,
+   "sim_basis": "polls+rating",
+   "poll_margin": -13.9,
+   "poll_n": 4
   },
   {
    "id": "us-senate-AK",
@@ -136,9 +161,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Toss-up",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 0,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Toss-up",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.565,
+   "sim_basis": "polls+rating",
+   "poll_margin": 1.1,
+   "poll_n": 5
   },
   {
    "id": "us-senate-AR",
@@ -171,9 +212,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.029,
+   "sim_basis": "polls+rating",
+   "poll_margin": -9.7,
+   "poll_n": 2
   },
   {
    "id": "us-senate-CO",
@@ -206,9 +263,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.989,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-DE",
@@ -236,9 +308,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.988,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-GA",
@@ -266,9 +353,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Likely D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -2,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Likely D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.981,
+   "sim_basis": "polls+rating",
+   "poll_margin": 9.6,
+   "poll_n": 7
   },
   {
    "id": "us-senate-ID",
@@ -306,9 +409,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.012,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-IL",
@@ -341,9 +459,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.991,
+   "sim_basis": "polls+rating",
+   "poll_margin": 16.2,
+   "poll_n": 2
   },
   {
    "id": "us-senate-IA",
@@ -376,9 +510,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Toss-up",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 0,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Toss-up",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.509,
+   "sim_basis": "polls+rating",
+   "poll_margin": 0.1,
+   "poll_n": 15
   },
   {
    "id": "us-senate-KS",
@@ -411,9 +561,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Toss-up",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 0,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Toss-up",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.495,
+   "sim_basis": "polls+rating",
+   "poll_margin": -0.1,
+   "poll_n": 3
   },
   {
    "id": "us-senate-KY",
@@ -446,9 +612,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.013,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-LA",
@@ -476,9 +657,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.011,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-ME",
@@ -506,9 +702,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Toss-up",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 0,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Toss-up",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.702,
+   "sim_basis": "polls+rating",
+   "poll_margin": 2.6,
+   "poll_n": 15
   },
   {
    "id": "us-senate-MA",
@@ -541,9 +753,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 1.0,
+   "sim_basis": "polls+rating",
+   "poll_margin": 26.8,
+   "poll_n": 4
   },
   {
    "id": "us-senate-MI",
@@ -581,9 +809,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Toss-up",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 0,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Toss-up",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.774,
+   "sim_basis": "polls+rating",
+   "poll_margin": 3.5,
+   "poll_n": 19
   },
   {
    "id": "us-senate-MN",
@@ -621,9 +865,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Lean D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -1,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Lean D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.758,
+   "sim_basis": "polls+rating",
+   "poll_margin": 3.3,
+   "poll_n": 5
   },
   {
    "id": "us-senate-MS",
@@ -656,9 +916,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Likely R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 2,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Likely R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.116,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-MT",
@@ -696,9 +971,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.0,
+   "sim_basis": "polls+rating",
+   "poll_margin": -21.5,
+   "poll_n": 4
   },
   {
    "id": "us-senate-NE",
@@ -731,9 +1022,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Likely R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 2,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Likely R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.113,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-NH",
@@ -761,9 +1067,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Lean D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -1,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Lean D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.888,
+   "sim_basis": "polls+rating",
+   "poll_margin": 7.1,
+   "poll_n": 4
   },
   {
    "id": "us-senate-NJ",
@@ -796,9 +1118,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.987,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-NM",
@@ -826,9 +1163,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.988,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-NC",
@@ -866,9 +1218,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Likely D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -2,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Likely D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.992,
+   "sim_basis": "polls+rating",
+   "poll_margin": 11.1,
+   "poll_n": 14
   },
   {
    "id": "us-senate-OK",
@@ -911,9 +1279,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.014,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-OR",
@@ -946,9 +1329,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.989,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-RI",
@@ -981,9 +1379,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.998,
+   "sim_basis": "polls+rating",
+   "poll_margin": 22.2,
+   "poll_n": 2
   },
   {
    "id": "us-senate-SC",
@@ -1016,9 +1430,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Lean R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 1,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Lean R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.343,
+   "sim_basis": "polls+rating",
+   "poll_margin": -1.1,
+   "poll_n": 3
   },
   {
    "id": "us-senate-SD",
@@ -1046,9 +1476,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.013,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-TN",
@@ -1116,9 +1561,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.014,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-TX",
@@ -1151,9 +1611,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Toss-up",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 0,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Toss-up",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.696,
+   "sim_basis": "polls+rating",
+   "poll_margin": 2.4,
+   "poll_n": 22
   },
   {
    "id": "us-senate-VA",
@@ -1181,9 +1657,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.987,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-WV",
@@ -1211,9 +1702,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.013,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-WY",
@@ -1241,9 +1747,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.013,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-FL-special",
@@ -1276,9 +1797,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.012,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "us-senate-OH-special",
@@ -1316,9 +1852,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Toss-up",
+     "date": "2026-10-20",
+     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    }
+   ],
+   "rating_scale": 0,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Toss-up",
+    "date": "2026-10-20",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+   },
+   "sim_p_dem": 0.495,
+   "sim_basis": "rating",
+   "poll_margin": null
   }
  ],
  "governors_2026": [
@@ -1345,9 +1896,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.038,
+   "sim_basis": "polls+rating",
+   "poll_margin": -6.8,
+   "poll_n": 3
   },
   {
    "id": "gov-AK",
@@ -1382,9 +1949,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Lean D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -1,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Lean D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.947,
+   "sim_basis": "polls+rating",
+   "poll_margin": 8.5,
+   "poll_n": 6
   },
   {
    "id": "gov-AZ",
@@ -1414,9 +1997,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Lean D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -1,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Lean D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.849,
+   "sim_basis": "polls+rating",
+   "poll_margin": 5.9,
+   "poll_n": 4
   },
   {
    "id": "gov-AR",
@@ -1446,9 +2045,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.011,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-CA",
@@ -1473,9 +2087,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 1.0,
+   "sim_basis": "polls+rating",
+   "poll_margin": 23.3,
+   "poll_n": 6
   },
   {
    "id": "gov-CO",
@@ -1510,9 +2140,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.988,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-CT",
@@ -1526,9 +2171,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.988,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-FL",
@@ -1583,9 +2243,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Lean R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 1,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Lean R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.168,
+   "sim_basis": "polls+rating",
+   "poll_margin": -4.2,
+   "poll_n": 14
   },
   {
    "id": "gov-GA",
@@ -1610,9 +2286,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Toss-up",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 0,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Toss-up",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.403,
+   "sim_basis": "polls+rating",
+   "poll_margin": -1.3,
+   "poll_n": 8
   },
   {
    "id": "gov-HI",
@@ -1637,9 +2329,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.989,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-ID",
@@ -1669,9 +2376,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.013,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-IL",
@@ -1685,9 +2407,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.987,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-IA",
@@ -1701,9 +2438,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Lean D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -1,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Lean D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.73,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-KS",
@@ -1717,9 +2469,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Toss-up",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 0,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Toss-up",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.512,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-ME",
@@ -1749,9 +2516,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.991,
+   "sim_basis": "polls+rating",
+   "poll_margin": 9.2,
+   "poll_n": 12
   },
   {
    "id": "gov-MD",
@@ -1781,9 +2564,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.989,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-MA",
@@ -1813,9 +2611,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.989,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-MI",
@@ -1840,9 +2653,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Lean D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -1,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Lean D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.95,
+   "sim_basis": "polls+rating",
+   "poll_margin": 7.7,
+   "poll_n": 12
   },
   {
    "id": "gov-MN",
@@ -1872,9 +2701,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.972,
+   "sim_basis": "polls+rating",
+   "poll_margin": 7.8,
+   "poll_n": 3
   },
   {
    "id": "gov-NE",
@@ -1904,9 +2749,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Lean R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 1,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Lean R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.183,
+   "sim_basis": "polls+rating",
+   "poll_margin": -5.9,
+   "poll_n": 3
   },
   {
    "id": "gov-NV",
@@ -1936,9 +2797,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Toss-up",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 0,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Toss-up",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.35,
+   "sim_basis": "polls+rating",
+   "poll_margin": -3.7,
+   "poll_n": 3
   },
   {
    "id": "gov-NH",
@@ -1952,9 +2829,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Likely R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 2,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Likely R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.112,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-NM",
@@ -1968,9 +2860,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.985,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-NY",
@@ -1995,9 +2902,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.999,
+   "sim_basis": "polls+rating",
+   "poll_margin": 15.1,
+   "poll_n": 5
   },
   {
    "id": "gov-OH",
@@ -2027,9 +2950,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Lean D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -1,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Lean D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.756,
+   "sim_basis": "polls+rating",
+   "poll_margin": 2.9,
+   "poll_n": 14
   },
   {
    "id": "gov-OK",
@@ -2069,9 +3008,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Likely R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 2,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Likely R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.118,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-OR",
@@ -2096,9 +3050,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Lean D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -1,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Lean D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.651,
+   "sim_basis": "polls+rating",
+   "poll_margin": 0.9,
+   "poll_n": 2
   },
   {
    "id": "gov-PA",
@@ -2128,9 +3098,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 1.0,
+   "sim_basis": "polls+rating",
+   "poll_margin": 22.1,
+   "poll_n": 4
   },
   {
    "id": "gov-RI",
@@ -2160,9 +3146,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid D",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": -3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid D",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.999,
+   "sim_basis": "polls+rating",
+   "poll_margin": 23.3,
+   "poll_n": 2
   },
   {
    "id": "gov-SC",
@@ -2187,9 +3189,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.021,
+   "sim_basis": "polls+rating",
+   "poll_margin": -11.7,
+   "poll_n": 2
   },
   {
    "id": "gov-SD",
@@ -2214,9 +3232,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.012,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-TN",
@@ -2306,9 +3339,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.02,
+   "sim_basis": "polls+rating",
+   "poll_margin": -11.8,
+   "poll_n": 2
   },
   {
    "id": "gov-TX",
@@ -2338,9 +3387,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Lean R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 1,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Lean R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.26,
+   "sim_basis": "polls+rating",
+   "poll_margin": -2.7,
+   "poll_n": 20
   },
   {
    "id": "gov-VT",
@@ -2375,9 +3440,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Likely R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 2,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Likely R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.218,
+   "sim_basis": "polls+rating",
+   "poll_margin": -2.0,
+   "poll_n": 2
   },
   {
    "id": "gov-WI",
@@ -2402,9 +3483,25 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Toss-up",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 0,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Toss-up",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.636,
+   "sim_basis": "polls+rating",
+   "poll_margin": 3.3,
+   "poll_n": 3
   },
   {
    "id": "gov-WY",
@@ -2429,9 +3526,24 @@
     "retrieved_at": "2026-10-29T17:40:00Z",
     "status": "UNVERIFIED — confirm against state SOS ballot"
    },
-   "ratings": [],
-   "rating_scale": null,
-   "rating_primary": null
+   "ratings": [
+    {
+     "rater": "Cook Political Report",
+     "label": "Solid R",
+     "date": "2026-10-27",
+     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    }
+   ],
+   "rating_scale": 3,
+   "rating_primary": {
+    "rater": "Cook Political Report",
+    "label": "Solid R",
+    "date": "2026-10-27",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+   },
+   "sim_p_dem": 0.013,
+   "sim_basis": "rating",
+   "poll_margin": null
   }
  ],
  "house_delegations": [
@@ -3284,5 +4396,14 @@
    "NJ",
    "NH"
   ]
+ },
+ "sim_chambers": {
+  "senate": {
+   "d": 17,
+   "r": 18,
+   "note": "expected 2026 wins, polls-as-is preset"
+  },
+  "house": null,
+  "built_at": "2026-10-29T18:56:14Z"
  }
 }

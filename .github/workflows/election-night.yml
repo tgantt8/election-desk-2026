@@ -42,7 +42,7 @@ jobs:
             pass=$((pass+1)); start=$(date +%s)
             echo "=== pass $pass $(date -u +%FT%TZ)"
             python3 tools/poll_all.py --layers "$LAYERS" || true
-            python3 tools/build_polls_site.py && python3 tools/build_results_site.py && python3 tools/build_site_data.py
+            python3 tools/build_polls_site.py && python3 tools/build_results_site.py && python3 tools/simulate.py && python3 tools/build_site_data.py
             python3 tools/hygiene_check.py --all
             git add data docs/data
             if git commit -q -m "election-night pass $pass $(date -u +%FT%TZ)"; then

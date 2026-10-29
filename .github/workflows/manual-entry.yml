@@ -35,7 +35,7 @@ jobs:
           NOTE: ${{ inputs.note }}
         run: python3 tools/manual_entry.py --layer "$LAYER" --note "$NOTE" --payload-env PAYLOAD
       - name: Rebuild site data
-        run: python3 tools/build_polls_site.py && python3 tools/build_results_site.py && python3 tools/build_site_data.py
+        run: python3 tools/build_polls_site.py && python3 tools/build_results_site.py && python3 tools/simulate.py && python3 tools/build_site_data.py
       - name: Hygiene
         run: python3 tools/hygiene_check.py --all
       - name: Commit

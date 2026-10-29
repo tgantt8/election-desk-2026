@@ -387,9 +387,15 @@ def run(source, dry_run=False, session=None, raw=None):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--source-id", required=True)
-    ap.add_argument("--file", help="parse a local file instead of fetching")
+    ap.add_argument("--file", help="parse a local file instead of fetching (the hash of these bytes is recorded)")
+    ap.add_argument("--words-json", help="Cook only: a {w,h,words:[[text,x0,x1,top],...]} dump of the print page's word positions made off-runner; "
+                                         "used for the House page, whose raw copy the repo never keeps (decision 5)")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
     srcs = {s["id"]: s for s in load_json(os.path.join(DATA, "sources.json"), {"sources": []})["sources"]}
     raw = open(a.file, "rb").read() if a.file else None
+    if a.words_json:
+        raw = open(a.words_json, "rb").read()
+        _dump = json.loads(raw)["words"]
+        _words = lambda b, _d=_dump: [{"t": t, "x0": x0, "x1": x1, "top": top} for t, x0, x1, top in _d]  # noqa: E731
     print(json.dumps(run(srcs[a.source_id], dry_run=a.dry_run, raw=raw), sort_keys=True))

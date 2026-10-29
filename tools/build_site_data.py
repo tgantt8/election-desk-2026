@@ -92,7 +92,28 @@ def build():
             up_i = sum(1 for r in senate if r.get("holder_party") == "I")
             hold = {"d": chambers["senate"]["democrat"] - up_d, "r": chambers["senate"]["republican"] - up_r, "i": chambers["senate"]["independent"] - up_i, "note": f"{n_up} seats up in 2026"}
             chambers["senate"]["holdovers"] = hold
-    write("contests.json", {"chambers": chambers, "senate_2026": senate, "governors_2026": govs, "house_delegations": house, "new_lines": new_lines})
+    scen = load_json(os.path.join(DATA, "scenarios", "latest.json"), None)
+    if scen:
+        base = (scen.get("presets") or {}).get("polls_as_is") or {}
+        p_by = {r["race"]: r for r in base.get("races", [])}
+        for race in senate + govs:
+            sr = p_by.get(race["id"])
+            race["sim_p_dem"] = sr["p_dem"] if sr else None
+            race["sim_basis"] = sr["basis"] if sr else "no baseline"
+            race["poll_margin"] = sr.get("poll_margin") if sr and sr.get("poll_margin") is not None else race.get("poll_margin")
+        sen = base.get("senate") or {}
+        exp = sen.get("expected_dem_wins_of_seats_up")
+        chambers["sim_chambers"] = {"senate": {"d": round(exp) if exp is not None else 0, "r": (sen.get("seats_up", 0) - round(exp)) if exp is not None else 0, "note": "expected 2026 wins, polls-as-is preset"},
+                                    "house": None, "built_at": scen.get("built_at")}
+    polls_site = load_json(os.path.join(DATA, "polls", "site.json"), {}) or {}
+    for race in senate + govs:
+        a = (polls_site.get("averages") or {}).get(race["id"])
+        if a and a.get("margin") is not None:
+            race["poll_margin"] = a["margin"]
+            race["poll_n"] = a.get("n_polls")
+    write("contests.json", {"chambers": chambers, "senate_2026": senate, "governors_2026": govs, "house_delegations": house, "new_lines": new_lines,
+                            "sim_chambers": chambers.get("sim_chambers")})
+    write("scenarios.json", scen or {"_layer": "scenarios", "built_at": None, "presets": {}, "inputs": [], "excluded": [], "note": "simulator has not run"})
 
     write("ratings.json", {"primary_rater": "Cook Political Report", "as_of": max((r.get("date") or "" for r in ratings_latest), default=None) or None,
                            "latest": ratings_latest, "changes": read_jsonl(os.path.join(DATA, "ratings", "changes.jsonl"))[-200:],

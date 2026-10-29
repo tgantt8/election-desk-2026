@@ -83,3 +83,7 @@ textarea.paste{width:100%;min-height:120px;background:var(--panel2);color:var(--
 .kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13px}
 .kv dt{color:var(--muted)}.kv dd{margin:0}
 .notice{font-size:12px;color:var(--muted);border:1px dashed var(--line);border-radius:8px;padding:8px;margin:8px 0}
+
+pre.mono,pre.small{white-space:pre-wrap;overflow-wrap:anywhere;max-width:100%}
+.row input.sel{max-width:100%;min-width:0}
+input[type=range]{max-width:140px}

@@ -75,11 +75,13 @@
   <!-- 3 Ratings & Early vote -->
   <section id="view-ratings" class="view">
     <div class="card"><h2>Ratings <span class="small muted">— expert judgment, label + date + link only</span></h2>
+      <div class="row small" style="margin:6px 0"><select id="ratings-rater" class="sel"><option value="">all raters</option></select><select id="ratings-office" class="sel"><option value="">all offices</option><option value="senate">Senate</option><option value="governor">Governor</option><option value="house">House (Michigan)</option></select><span id="ratings-scope" class="muted"></span></div>
       <div class="tablewrap"><table id="ratings-table"></table></div>
       <h3>Rating changes</h3><div id="ratings-changes" class="small"></div>
     </div>
     <div class="card"><h2>Early vote <span class="small muted">— turnout indicators</span></h2>
-      <div class="notice"><strong>Who voted, not how they voted.</strong> Ballots requested, returned and cast, and party registration where a state publishes it. Not vote choice.</div>
+      <div class="notice"><strong>Who voted, not how they voted.</strong> Ballots requested, returned and cast, and party registration where a state publishes it. Not vote choice. Modeled party from any vendor is never shown as registration.</div>
+      <div class="row small" style="margin:6px 0"><select id="ev-state" class="sel"><option value="">all states</option></select><select id="ev-src" class="sel"><option value="">official + display-only</option><option value="official">official state sources only</option><option value="display">display-only (UF Election Lab)</option></select><span id="ev-note" class="muted"></span></div>
       <div class="tablewrap"><table id="ev-table"></table></div>
     </div>
   </section>
@@ -87,8 +89,18 @@
   <!-- 4 Simulator -->
   <section id="view-sim" class="view">
     <div class="card"><h2>Blue Tsunami Simulator <span class="small muted">— scenarios layer</span></h2>
-      <div class="notice">Simulator outputs are <strong>Internal estimate — not a call — do not share</strong>. They read the polls, ratings and early-vote layers and write only to <code>scenarios</code>. Arrives in P2.</div>
-      <div id="sim"></div>
+      <div class="notice">Simulator outputs are <strong>Internal estimate — not a call — do not share</strong>. They read the polls, ratings and early-vote layers and write only to <code>scenarios</code>. House: no 2024-on-2026-lines baselines are loaded, so there is no House chamber number; districts without a public rating are "no baseline".</div>
+      <div id="sim-summary"></div>
+      <h3>Presets <span class="muted">(national shift in points, D+ positive)</span></h3><div class="tablewrap"><table id="sim-presets"></table></div>
+      <h3>What has to be true</h3><div id="sim-whtbt" class="small"></div>
+      <h3>Run in this browser <span class="muted">(same model, 10,000 draws, seeded)</span></h3>
+      <div class="row small"><label>National shift <input id="sim-shift" type="range" min="-8" max="8" step="0.25" value="0"> <span id="sim-shift-v" class="mono">0.0</span></label>
+        <label>Error scale × <input id="sim-scale" type="range" min="0.5" max="2" step="0.1" value="1"> <span id="sim-scale-v" class="mono">1.0</span></label>
+        <button class="btn" id="sim-run">Run</button></div>
+      <div id="sim-live" class="small"></div>
+      <h3>Races</h3><div class="row small"><select id="sim-office" class="sel"><option value="">all offices</option><option value="senate">Senate</option><option value="governor">Governor</option><option value="house">House (Michigan)</option></select></div>
+      <div class="tablewrap"><table id="sim-races"></table></div>
+      <h3>Backtest (2018 and 2022, real polls and results)</h3><div id="sim-backtest" class="small"></div>
     </div>
   </section>
 
@@ -128,6 +140,26 @@
         <button class="btn" id="call-copy">Copy call JSON</button>
       </div>
       <pre id="call-out" class="small mono muted"></pre>
+    </div>
+    <div class="card"><h2>Early-vote capture <span class="small muted">— Michigan Voting Dashboard and other hand captures</span></h2>
+      <p class="small muted">Type what the official dashboard shows (who voted, not how). Each row carries its geography, metric, value, as-of and source. Copy the JSON and commit it through the <code>manual-entry</code> workflow (layer <code>early_vote</code>).</p>
+      <div class="row">
+        <input id="evc-geo" class="sel" placeholder="geography (e.g. Macomb County, MI)"><input id="evc-state" class="sel" placeholder="state (MI)" style="width:70px">
+        <select id="evc-metric" class="sel"><option>Mail ballots requested</option><option>Mail ballots returned for tabulation</option><option>Early in-person ballots cast</option><option>Total early + mail ballots</option></select>
+        <input id="evc-value" class="sel" placeholder="value" type="number"><input id="evc-asof" class="sel" type="date">
+        <input id="evc-source" class="sel" placeholder="source (Michigan Voting Dashboard)" value="Michigan Department of State, Voting Dashboard"><input id="evc-url" class="sel" placeholder="URL" value="https://www.michigan.gov/sos/elections/election-results-and-data/voter-participation-dashboard">
+        <button class="btn" id="evc-add">Add row</button><button class="btn" id="evc-copy">Copy JSON</button><button class="btn" id="evc-clear">Clear</button>
+      </div>
+      <pre id="evc-out" class="small mono muted"></pre>
+    </div>
+    <div class="card"><h2>Rating capture <span class="small muted">— label + date + link only (Sabato's Crystal Ball, Cook refresh)</span></h2>
+      <div class="row">
+        <input id="rc-race" class="sel" placeholder="race id (us-senate-MI, gov-MI, us-house-MI-07)"><input id="rc-rater" class="sel" placeholder="rater" value="Sabato's Crystal Ball">
+        <select id="rc-label" class="sel"><option>Solid D</option><option>Likely D</option><option>Lean D</option><option>Toss-up</option><option>Lean R</option><option>Likely R</option><option>Solid R</option></select>
+        <input id="rc-date" class="sel" type="date"><input id="rc-url" class="sel" placeholder="URL of the rater's page">
+        <button class="btn" id="rc-add">Add row</button><button class="btn" id="rc-copy">Copy JSON</button><button class="btn" id="rc-clear">Clear</button>
+      </div>
+      <pre id="rc-out" class="small mono muted"></pre>
     </div>
     <div class="card"><h2>Export</h2>
       <div class="row" id="exports"></div>

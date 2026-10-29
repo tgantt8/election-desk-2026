@@ -1,17 +1,17 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-10-29T18:52:26Z",
+ "built_at": "2026-10-29T18:53:23Z",
  "source": {
   "name": "FiveThirtyEight pollster-ratings raw-polls.csv (2018 and 2022 Senate and Governor general-election polls, with official results)",
   "file": "fixtures/fivethirtyeight/raw-polls_2018-2022_senate-governor.csv",
   "license": "CC BY 4.0"
  },
- "method": "Per race: desk-style weighted average of polls in the final 60 days (half-life 14 d, sqrt(n), partisan x0.5; no ratings); P(D) = Phi(avg / s_total); s_total^2 = s_nat^2 + s_reg^2 + s_base^2 + s_poll^2 / min(n, 8). Grid over s_nat, s_base, s_poll; s_reg fixed at 1.5.",
+ "method": "Per race: desk-style weighted average of polls in the final 60 days (half-life 14 d, sqrt(n), partisan x0.5; no ratings); P(D) = Phi(avg / s_total); s_total^2 = s_nat^2 + s_reg^2 + s_base^2 + s_poll^2 / min(n, 8). Grid over s_base and s_poll; s_nat pinned at 2.5 and s_reg at 1.5 (shared error is not identifiable from per-race coverage and is set by judgment).",
  "n_races": 118,
  "chosen_params": {
-  "s_nat": 1.5,
+  "s_nat": 2.5,
   "s_reg": 1.5,
-  "s_base": 2.5,
+  "s_base": 1.5,
   "s_poll": 8.0,
   "s_rating": 6.0
  },
@@ -113,63 +113,12 @@
    "log_loss": 0.2107,
    "right_call_rate": 0.907,
    "params": {
-    "s_nat": 1.5,
+    "s_nat": 2.5,
     "s_reg": 1.5,
-    "s_base": 2.5,
+    "s_base": 1.5,
     "s_poll": 8.0
    },
    "calibration_loss": 0.0799
-  },
-  {
-   "n_races": 118,
-   "rmse": 5.4,
-   "mean_signed_error_actual_minus_polls": -0.74,
-   "coverage_80": 0.78,
-   "coverage_95": 0.949,
-   "brier": 0.0654,
-   "log_loss": 0.2096,
-   "right_call_rate": 0.907,
-   "params": {
-    "s_nat": 1.5,
-    "s_reg": 1.5,
-    "s_base": 3.5,
-    "s_poll": 6.0
-   },
-   "calibration_loss": 0.0864
-  },
-  {
-   "n_races": 118,
-   "rmse": 5.4,
-   "mean_signed_error_actual_minus_polls": -0.74,
-   "coverage_80": 0.822,
-   "coverage_95": 0.958,
-   "brier": 0.0658,
-   "log_loss": 0.2124,
-   "right_call_rate": 0.907,
-   "params": {
-    "s_nat": 1.5,
-    "s_reg": 1.5,
-    "s_base": 4.5,
-    "s_poll": 4.0
-   },
-   "calibration_loss": 0.0958
-  },
-  {
-   "n_races": 118,
-   "rmse": 5.4,
-   "mean_signed_error_actual_minus_polls": -0.74,
-   "coverage_80": 0.822,
-   "coverage_95": 0.958,
-   "brier": 0.0662,
-   "log_loss": 0.214,
-   "right_call_rate": 0.907,
-   "params": {
-    "s_nat": 3.5,
-    "s_reg": 1.5,
-    "s_base": 3.5,
-    "s_poll": 4.0
-   },
-   "calibration_loss": 0.0962
   },
   {
    "n_races": 118,
@@ -211,23 +160,6 @@
    "mean_signed_error_actual_minus_polls": -0.74,
    "coverage_80": 0.839,
    "coverage_95": 0.958,
-   "brier": 0.0661,
-   "log_loss": 0.2131,
-   "right_call_rate": 0.907,
-   "params": {
-    "s_nat": 3.5,
-    "s_reg": 1.5,
-    "s_base": 2.5,
-    "s_poll": 6.0
-   },
-   "calibration_loss": 0.1131
-  },
-  {
-   "n_races": 118,
-   "rmse": 5.4,
-   "mean_signed_error_actual_minus_polls": -0.74,
-   "coverage_80": 0.839,
-   "coverage_95": 0.958,
    "brier": 0.0665,
    "log_loss": 0.2157,
    "right_call_rate": 0.907,
@@ -249,9 +181,9 @@
    "log_loss": 0.2054,
    "right_call_rate": 0.907,
    "params": {
-    "s_nat": 1.5,
+    "s_nat": 2.5,
     "s_reg": 1.5,
-    "s_base": 2.5,
+    "s_base": 1.5,
     "s_poll": 6.0
    },
    "calibration_loss": 0.1196
@@ -272,6 +204,74 @@
     "s_poll": 4.0
    },
    "calibration_loss": 0.12
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.856,
+   "coverage_95": 0.949,
+   "brier": 0.0665,
+   "log_loss": 0.2144,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 2.5,
+    "s_reg": 1.5,
+    "s_base": 2.5,
+    "s_poll": 8.0
+   },
+   "calibration_loss": 0.1235
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.873,
+   "coverage_95": 0.966,
+   "brier": 0.0676,
+   "log_loss": 0.2203,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 2.5,
+    "s_reg": 1.5,
+    "s_base": 3.5,
+    "s_poll": 8.0
+   },
+   "calibration_loss": 0.1566
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.881,
+   "coverage_95": 0.966,
+   "brier": 0.0677,
+   "log_loss": 0.2203,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 2.5,
+    "s_reg": 1.5,
+    "s_base": 1.5,
+    "s_poll": 10.0
+   },
+   "calibration_loss": 0.1647
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.89,
+   "coverage_95": 0.966,
+   "brier": 0.0677,
+   "log_loss": 0.2205,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 2.5,
+    "s_reg": 1.5,
+    "s_base": 4.5,
+    "s_poll": 6.0
+   },
+   "calibration_loss": 0.1737
   }
  ],
  "races": [

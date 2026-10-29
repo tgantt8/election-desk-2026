@@ -24,3 +24,6 @@
 {"at": "2026-10-29T17:17:51Z", "ballot_items": 173, "election": "20261103", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 468, "snapshot": "enr_wa_ev:2026-10-29T17:17:51Z:88f35d7cca58", "source_id": "enr_wa_ev", "total_record_count": 173}
 {"at": "2026-10-29T17:17:52Z", "event": "poller_not_implemented", "poller": "nc_s3", "source_id": "enr_nc_s3_results"}
 {"at": "2026-10-29T17:17:52Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-10-29T18:53:22Z", "changes": 0, "entries": 35, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-20", "snapshot": "ratings_cook_senate:2026-10-29T18:53:22Z:984c36de2552", "source_id": "ratings_cook_senate", "stored": 35}
+{"at": "2026-10-29T18:53:23Z", "changes": 0, "entries": 36, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-27", "snapshot": "ratings_cook_governor:2026-10-29T18:53:23Z:ffa4aa628a9a", "source_id": "ratings_cook_governor", "stored": 36}
+{"at": "2026-10-29T18:56:04Z", "changes": 0, "entries": 81, "event": "ratings_pull", "link_only_skipped": 77, "page_date": "2026-10-23", "snapshot": "ratings_cook_house:2026-10-29T18:56:04Z:4c4c142ea952", "source_id": "ratings_cook_house", "stored": 4}

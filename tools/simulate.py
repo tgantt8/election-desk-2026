@@ -201,7 +201,7 @@ def what_has_to_be_true(races, noise, chambers, target=51, lo=-15.0, hi=15.0):
 # --------------------------------------------------------------------------- backtest (real 2018 and 2022 polls and results)
 
 BT_CSV = os.path.join(ROOT, "fixtures", "fivethirtyeight", "raw-polls_2018-2022_senate-governor.csv")
-GRID = {"s_nat": [1.5, 2.5, 3.5], "s_base": [2.5, 3.5, 4.5, 5.5], "s_poll": [4.0, 6.0, 8.0]}
+GRID = {"s_nat": [2.5], "s_base": [1.5, 2.5, 3.5, 4.5], "s_poll": [4.0, 6.0, 8.0, 10.0]}  # s_nat pinned: per-race coverage cannot split shared from race error; 2.5 is the shared miss seen in recent cycles
 
 
 def _phi(x):
@@ -280,7 +280,7 @@ def backtest(write=True):
     doc = {"_layer": "scenarios", "built_at": utcnow(), "source": {"name": "FiveThirtyEight pollster-ratings raw-polls.csv (2018 and 2022 Senate and Governor general-election polls, with official results)",
                                                                   "file": os.path.relpath(BT_CSV, ROOT), "license": "CC BY 4.0"},
            "method": "Per race: desk-style weighted average of polls in the final 60 days (half-life 14 d, sqrt(n), partisan x0.5; no ratings); P(D) = Phi(avg / s_total); "
-                     "s_total^2 = s_nat^2 + s_reg^2 + s_base^2 + s_poll^2 / min(n, 8). Grid over s_nat, s_base, s_poll; s_reg fixed at 1.5.",
+                     "s_total^2 = s_nat^2 + s_reg^2 + s_base^2 + s_poll^2 / min(n, 8). Grid over s_base and s_poll; s_nat pinned at 2.5 and s_reg at 1.5 (shared error is not identifiable from per-race coverage and is set by judgment).",
            "n_races": len(bt), "chosen_params": dict(DEFAULT_PARAMS, **best["params"]), "chosen_metrics": {k: v for k, v in best.items() if k != "params"},
            "default_metrics": score(bt, DEFAULT_PARAMS), "by_year": by_year, "grid_top10": results[:10],
            "races": bt}
