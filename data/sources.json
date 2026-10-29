@@ -1128,13 +1128,19 @@
    "election_night_cadence_min": 2,
    "coverage": "Georgia: statewide contests and county detail where published; 2026 Senate Class 2; Governor yes; polls close 19:00 ET",
    "status": "VERIFIED_PARTIAL",
-   "status_reason": "Enhanced Voting JSON API read 2026-10-29 (2024 election 200, 295 items); Nov 3 2026 election not yet listed. Poll /jurisdictions/Georgia and match electionDate 2026-11-03: election IDs are free text. Latest listed election 2026-08-25.",
+   "status_reason": "Enhanced Voting JSON API read 2026-10-29 (2024 election 200, 295 items); Nov 3 2026 election not yet listed. Poll /jurisdictions/Georgia and match electionDate 2026-11-03: election IDs are free text. Latest listed election 2026-08-25. | Nov 3 publicElectionId not published yet; poll /jurisdictions/<slug> for electionDate 2026-11-03 and set ev.election_id",
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
    "last_success_at": null,
    "last_error": "",
-   "active": true
+   "active": false,
+   "ev": {
+    "host": "results.sos.ga.gov",
+    "slug": "georgia",
+    "election_id": null,
+    "state": "GA"
+   }
   },
   {
    "id": "enr_nc_dashboard",
@@ -1569,13 +1575,19 @@
    "election_night_cadence_min": 2,
    "coverage": "Idaho: statewide contests and county detail where published; 2026 Senate Class 2; Governor yes; polls close 22:00 (Panhandle 23:00) ET",
    "status": "VERIFIED_PARTIAL",
-   "status_reason": "Jurisdiction API read: latest election may2026; no Nov 2026 entry yet.",
+   "status_reason": "Jurisdiction API read: latest election may2026; no Nov 2026 entry yet. | Nov 3 publicElectionId not published yet; poll /jurisdictions/<slug> for electionDate 2026-11-03 and set ev.election_id",
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
    "last_success_at": null,
    "last_error": "",
-   "active": true
+   "active": false,
+   "ev": {
+    "host": "results.voteidaho.gov",
+    "slug": "id",
+    "election_id": null,
+    "state": "ID"
+   }
   },
   {
    "id": "enr_il_sos",
@@ -1806,7 +1818,13 @@
    "decision_needed": null,
    "last_success_at": null,
    "last_error": "",
-   "active": true
+   "active": true,
+   "ev": {
+    "host": "enr.elections.virginia.gov",
+    "slug": "virginia",
+    "election_id": "2026-November-General",
+    "state": "VA"
+   }
   },
   {
    "id": "enr_wv_sos",
@@ -2121,7 +2139,13 @@
    "decision_needed": null,
    "last_success_at": null,
    "last_error": "",
-   "active": true
+   "active": true,
+   "ev": {
+    "host": "electionresults.utah.gov",
+    "slug": "utah",
+    "election_id": "General11032026",
+    "state": "UT"
+   }
   },
   {
    "id": "enr_vt_sos",
@@ -2162,8 +2186,14 @@
    "poller": "enhanced_voting",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": "",
-   "active": true
+   "last_error": "2026-10-29T17:17:09Z GET https://results.votewa.gov/results/public/api/elections/washington/20261103: ProxyError: HTTPSConnectionPool(host='results.votewa.gov', port=443): Max retries exceeded with url: /results/public/api/elections/washington/20261103 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+   "active": true,
+   "ev": {
+    "host": "results.votewa.gov",
+    "slug": "washington",
+    "election_id": "20261103",
+    "state": "WA"
+   }
   },
   {
    "id": "enr_wi_sos",

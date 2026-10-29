@@ -13,3 +13,4 @@
 {"at": "2026-10-29T17:14:23Z", "event": "poller_not_implemented", "poller": "nc_s3", "source_id": "enr_nc_s3_results"}
 {"at": "2026-10-29T17:14:23Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-10-29T17:14:26Z", "bytes": 190054, "event": "pdf_pull", "parse_status": "unparsed", "snapshot": "macomb_candidate_list_pdf:2026-10-29T17:14:26Z:b22065c6778d", "source_id": "macomb_candidate_list_pdf"}
+{"at": "2026-10-29T17:17:09Z", "error": "GET https://results.votewa.gov/results/public/api/elections/washington/20261103: ProxyError: HTTPSConnectionPool(host='results.votewa.gov', port=443): Max retries exceeded with url: /results/public/api/elections/washington/20261103 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel ", "event": "enhanced_voting_fetch_failed", "source_id": "enr_wa_ev"}
