@@ -40,3 +40,10 @@
 {"at": "2026-10-29T20:36:45Z", "changes": 0, "entries": 35, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-20", "snapshot": "ratings_cook_senate:2026-10-29T20:36:45Z:1e7dd6024b02", "source_id": "ratings_cook_senate", "stored": 0}
 {"at": "2026-10-29T20:36:46Z", "changes": 0, "entries": 36, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-27", "snapshot": "ratings_cook_governor:2026-10-29T20:36:46Z:48dc5c495946", "source_id": "ratings_cook_governor", "stored": 0}
 {"at": "2026-10-29T20:36:47Z", "changes": 0, "entries": 81, "event": "ratings_pull", "link_only_skipped": 77, "page_date": "2026-10-23", "snapshot": "ratings_cook_house:2026-10-29T20:36:47Z:407f68ccd970", "source_id": "ratings_cook_house", "stored": 0}
+{"at": "2026-10-29T20:57:24Z", "changes": 0, "entries": 35, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_senate:2026-10-29T20:57:24Z:e3c797af9587", "source_id": "ratings_ie_senate", "stored": 0}
+{"at": "2026-10-29T20:57:25Z", "changes": 0, "entries": 36, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_governor:2026-10-29T20:57:25Z:f6267a0bcfa4", "source_id": "ratings_ie_governor", "stored": 0}
+{"at": "2026-10-29T20:57:27Z", "changes": 0, "entries": 435, "event": "ratings_pull", "link_only_skipped": 422, "page_date": "2026-10-29", "snapshot": "ratings_ie_house:2026-10-29T20:57:27Z:2b90afd76943", "source_id": "ratings_ie_house", "stored": 0}
+{"at": "2026-10-29T20:57:31Z", "display_only": true, "event": "early_vote_pull", "records": 435, "snapshot": "ev_ufl_election_lab:2026-10-29T20:57:31Z:c7bb29363098", "source_id": "ev_ufl_election_lab"}
+{"at": "2026-10-29T20:57:32Z", "candidates": [], "event": "ev_discover_pending", "source_id": "enr_ga_ev"}
+{"at": "2026-10-29T20:57:33Z", "candidates": [], "event": "ev_discover_pending", "source_id": "enr_id_ev"}
+{"at": "2026-10-29T20:57:37Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}

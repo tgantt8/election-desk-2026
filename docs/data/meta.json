@@ -1,8 +1,8 @@
 {
- "built_at": "2026-10-29T20:43:04Z",
- "latest_snapshot_at": "2026-10-29T20:36:47Z",
+ "built_at": "2026-10-29T20:57:51Z",
+ "latest_snapshot_at": "2026-10-29T20:57:31Z",
  "expected_cadence_min": 60,
- "snapshot_count": 20,
+ "snapshot_count": 24,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -13,9 +13,9 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "votehub_polls",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T19:08:04Z",
+   "last_success_at": "2026-10-29T20:57:23Z",
    "last_error": "",
-   "health": "amber"
+   "health": "green"
   },
   {
    "id": "polls_nyt_siena",
@@ -208,7 +208,7 @@
    "status": "VERIFIED",
    "poller": "ie_ratings",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T19:08:06Z",
+   "last_success_at": "2026-10-29T20:57:24Z",
    "last_error": "",
    "health": "green"
   },
@@ -221,7 +221,7 @@
    "status": "VERIFIED",
    "poller": "ie_ratings",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T19:08:07Z",
+   "last_success_at": "2026-10-29T20:57:25Z",
    "last_error": "",
    "health": "green"
   },
@@ -234,7 +234,7 @@
    "status": "VERIFIED",
    "poller": "ie_ratings",
    "decision_needed": "House labels stored for Michigan only (same scope as Cook); widen if Tabu rules so.",
-   "last_success_at": "2026-10-29T19:08:08Z",
+   "last_success_at": "2026-10-29T20:57:27Z",
    "last_error": "",
    "health": "green"
   },
@@ -364,7 +364,7 @@
    "status": "VERIFIED",
    "poller": "ev_nc_s3",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T19:08:10Z",
+   "last_success_at": "2026-10-29T20:57:28Z",
    "last_error": "",
    "health": "green"
   },
@@ -377,7 +377,7 @@
    "status": "VERIFIED",
    "poller": "ev_fl_publicstats",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T19:08:12Z",
+   "last_success_at": "2026-10-29T20:57:29Z",
    "last_error": "",
    "health": "green"
   },
@@ -429,7 +429,7 @@
    "status": "VERIFIED",
    "poller": "ev_uf_csv",
    "decision_needed": "Confirmed display-only per decision 2 (2026-10-29). Written permission from the lab still needed before any normalization.",
-   "last_success_at": "2026-10-29T19:08:13Z",
+   "last_success_at": "2026-10-29T20:57:31Z",
    "last_error": "",
    "health": "green"
   },
@@ -975,7 +975,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T19:08:15Z",
+   "last_success_at": "2026-10-29T20:57:33Z",
    "last_error": "",
    "health": "green"
   },
@@ -1170,7 +1170,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T19:08:16Z",
+   "last_success_at": "2026-10-29T20:57:34Z",
    "last_error": "",
    "health": "green"
   },
@@ -1196,7 +1196,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T19:08:18Z",
+   "last_success_at": "2026-10-29T20:57:35Z",
    "last_error": "",
    "health": "green"
   },
@@ -1249,7 +1249,7 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": "2026-10-29T19:08:19Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_error": "2026-10-29T20:57:37Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
    "health": "gray"
   },
   {
@@ -1261,7 +1261,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T19:08:20Z",
+   "last_success_at": "2026-10-29T20:57:38Z",
    "last_error": "",
    "health": "green"
   },
@@ -1300,7 +1300,7 @@
    "status": "VERIFIED",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T19:08:21Z",
+   "last_success_at": "2026-10-29T20:57:39Z",
    "last_error": "",
    "health": "green"
   },
