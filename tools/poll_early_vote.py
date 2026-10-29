@@ -340,7 +340,7 @@ def run_uf(source, dry_run=False, session=None, raw=None):
     return {"status": "recorded", "records": len(recs), "snapshot_id": snap["id"], "source_id": sid}
 
 
-RUNNERS = {"nc_s3": run_nc, "fl_publicstats": run_fl, "uf_csv": run_uf}
+RUNNERS = {"ev_nc_s3": run_nc, "ev_fl_publicstats": run_fl, "ev_uf_csv": run_uf}  # keys = the `poller` names in data/sources.json
 
 
 def run(source, dry_run=False, session=None):

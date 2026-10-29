@@ -53,3 +53,12 @@ def test_recount_entries_are_ignored_and_ambiguity_blocks():
     s2 = _Session(_jur(("A", "November 3, 2026 - General", "2026-11-03"), ("B", "November 3, 2026 - Special", "2026-11-03")))
     eid2, cands2 = pev.discover_election_id("results.voteidaho.gov", "id", "2026-11-03", s2, min_interval_s=0)
     assert eid2 is None and len(cands2) == 2  # two live candidates: a person decides, nothing is guessed
+
+
+def test_every_active_source_has_an_implemented_poller():
+    import json
+    import poll_all
+    srcs = json.load(open(os.path.join(os.path.dirname(HERE), "data", "sources.json")))["sources"]
+    live = [s for s in srcs if s.get("active") and s.get("poller") not in (None, "none", "manual", "link_only")]
+    missing = [(s["id"], s["poller"]) for s in live if s["poller"] not in poll_all.IMPLEMENTED]
+    assert not missing, missing

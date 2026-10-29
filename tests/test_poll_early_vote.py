@@ -107,3 +107,10 @@ def test_uf_rows_are_display_only_and_unmodified():
     assert {r["metric"]: r["value"] for r in mi if r["party"] is None}["Mail ballots requested"] == 2_170_628
     assert not [r for r in mi if r["party"]]  # Michigan publishes no party registration → no party rows invented
     assert all(r["vs_2022"] is None and r["vs_2024"] is None for r in recs)  # no ratios: ND means unmodified display
+
+
+def test_registry_poller_names_resolve_to_runners():
+    import json
+    srcs = json.load(open(os.path.join(ROOT, "data", "sources.json")))["sources"]
+    active = [s for s in srcs if s["layer"] == "early_vote" and s.get("active") and s.get("poller") not in ("manual", "link_only", "none", "pdf_hash")]
+    assert active and all(s["poller"] in pev.RUNNERS for s in active), [s["poller"] for s in active]
