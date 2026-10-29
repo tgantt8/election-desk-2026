@@ -70,12 +70,12 @@
   },
   "sim_chambers": {
    "senate": {
-    "d": 17,
-    "r": 18,
+    "d": 18,
+    "r": 17,
     "note": "expected 2026 wins, polls-as-is preset"
    },
    "house": null,
-   "built_at": "2026-10-29T18:56:14Z"
+   "built_at": "2026-10-29T19:08:30Z"
   }
  },
  "senate_2026": [
@@ -111,6 +111,12 @@
      "label": "Solid R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-06-05",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 3,
@@ -120,7 +126,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.002,
+   "sim_p_dem": 0.003,
    "sim_basis": "polls+rating",
    "poll_margin": -13.9,
    "poll_n": 4
@@ -167,6 +173,12 @@
      "label": "Toss-up",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Toss-up",
+     "date": "2026-10-01",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 0,
@@ -176,7 +188,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.565,
+   "sim_p_dem": 0.569,
    "sim_basis": "polls+rating",
    "poll_margin": 1.1,
    "poll_n": 5
@@ -218,6 +230,12 @@
      "label": "Solid R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 3,
@@ -227,10 +245,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.029,
+   "sim_p_dem": 0.01,
    "sim_basis": "polls+rating",
-   "poll_margin": -9.7,
-   "poll_n": 2
+   "poll_margin": -12.0,
+   "poll_n": 3
   },
   {
    "id": "us-senate-CO",
@@ -269,6 +287,12 @@
      "label": "Solid D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -3,
@@ -278,7 +302,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.989,
+   "sim_p_dem": 0.986,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -314,6 +338,12 @@
      "label": "Solid D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -3,
@@ -323,7 +353,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.988,
+   "sim_p_dem": 0.987,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -359,6 +389,12 @@
      "label": "Likely D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Likely D",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -2,
@@ -368,7 +404,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.981,
+   "sim_p_dem": 0.983,
    "sim_basis": "polls+rating",
    "poll_margin": 9.6,
    "poll_n": 7
@@ -415,6 +451,12 @@
      "label": "Solid R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 3,
@@ -424,7 +466,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.012,
+   "sim_p_dem": 0.01,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -465,6 +507,12 @@
      "label": "Solid D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-04-23",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -3,
@@ -474,7 +522,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.991,
+   "sim_p_dem": 0.992,
    "sim_basis": "polls+rating",
    "poll_margin": 16.2,
    "poll_n": 2
@@ -516,6 +564,12 @@
      "label": "Toss-up",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Toss-up",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 0,
@@ -525,10 +579,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.509,
+   "sim_p_dem": 0.5,
    "sim_basis": "polls+rating",
-   "poll_margin": 0.1,
-   "poll_n": 15
+   "poll_margin": -0.1,
+   "poll_n": 16
   },
   {
    "id": "us-senate-KS",
@@ -567,6 +621,12 @@
      "label": "Toss-up",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Toss-up",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 0,
@@ -576,10 +636,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.495,
+   "sim_p_dem": 0.597,
    "sim_basis": "polls+rating",
-   "poll_margin": -0.1,
-   "poll_n": 3
+   "poll_margin": 2.0,
+   "poll_n": 4
   },
   {
    "id": "us-senate-KY",
@@ -618,6 +678,12 @@
      "label": "Solid R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-02-20",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 3,
@@ -627,7 +693,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.013,
+   "sim_p_dem": 0.012,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -663,6 +729,12 @@
      "label": "Solid R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Likely R",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 3,
@@ -672,7 +744,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.011,
+   "sim_p_dem": 0.012,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -708,6 +780,12 @@
      "label": "Toss-up",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Toss-up",
+     "date": "2026-09-17",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 0,
@@ -717,7 +795,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.702,
+   "sim_p_dem": 0.701,
    "sim_basis": "polls+rating",
    "poll_margin": 2.6,
    "poll_n": 15
@@ -759,6 +837,12 @@
      "label": "Solid D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -3,
@@ -770,8 +854,8 @@
    },
    "sim_p_dem": 1.0,
    "sim_basis": "polls+rating",
-   "poll_margin": 26.8,
-   "poll_n": 4
+   "poll_margin": 27.6,
+   "poll_n": 5
   },
   {
    "id": "us-senate-MI",
@@ -815,6 +899,12 @@
      "label": "Toss-up",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt D",
+     "date": "2026-10-01",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 0,
@@ -824,10 +914,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.774,
+   "sim_p_dem": 0.831,
    "sim_basis": "polls+rating",
-   "poll_margin": 3.5,
-   "poll_n": 19
+   "poll_margin": 4.5,
+   "poll_n": 21
   },
   {
    "id": "us-senate-MN",
@@ -871,6 +961,12 @@
      "label": "Lean D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Lean D",
+     "date": "2026-10-01",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -1,
@@ -880,7 +976,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.758,
+   "sim_p_dem": 0.766,
    "sim_basis": "polls+rating",
    "poll_margin": 3.3,
    "poll_n": 5
@@ -922,6 +1018,12 @@
      "label": "Likely R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Likely R",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 2,
@@ -931,7 +1033,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.116,
+   "sim_p_dem": 0.115,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -977,6 +1079,12 @@
      "label": "Solid R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2026-06-25",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 3,
@@ -1028,6 +1136,12 @@
      "label": "Likely R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt R",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 2,
@@ -1037,7 +1151,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.113,
+   "sim_p_dem": 0.122,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -1073,6 +1187,12 @@
      "label": "Lean D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt D",
+     "date": "2026-10-15",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -1,
@@ -1082,10 +1202,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.888,
+   "sim_p_dem": 0.896,
    "sim_basis": "polls+rating",
-   "poll_margin": 7.1,
-   "poll_n": 4
+   "poll_margin": 7.0,
+   "poll_n": 5
   },
   {
    "id": "us-senate-NJ",
@@ -1124,6 +1244,12 @@
      "label": "Solid D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -3,
@@ -1133,7 +1259,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.987,
+   "sim_p_dem": 0.988,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -1169,6 +1295,12 @@
      "label": "Solid D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -3,
@@ -1178,7 +1310,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.988,
+   "sim_p_dem": 0.987,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -1224,6 +1356,12 @@
      "label": "Likely D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Lean D",
+     "date": "2026-10-01",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -2,
@@ -1233,7 +1371,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.992,
+   "sim_p_dem": 0.993,
    "sim_basis": "polls+rating",
    "poll_margin": 11.1,
    "poll_n": 14
@@ -1285,6 +1423,12 @@
      "label": "Solid R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2026-04-23",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 3,
@@ -1294,7 +1438,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.014,
+   "sim_p_dem": 0.012,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -1335,6 +1479,12 @@
      "label": "Solid D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -3,
@@ -1344,7 +1494,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.989,
+   "sim_p_dem": 0.988,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -1385,6 +1535,12 @@
      "label": "Solid D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -3,
@@ -1394,7 +1550,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.998,
+   "sim_p_dem": 0.997,
    "sim_basis": "polls+rating",
    "poll_margin": 22.2,
    "poll_n": 2
@@ -1436,6 +1592,12 @@
      "label": "Lean R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt R",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 1,
@@ -1445,10 +1607,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.343,
+   "sim_p_dem": 0.283,
    "sim_basis": "polls+rating",
-   "poll_margin": -1.1,
-   "poll_n": 3
+   "poll_margin": -2.3,
+   "poll_n": 4
   },
   {
    "id": "us-senate-SD",
@@ -1482,6 +1644,12 @@
      "label": "Solid R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 3,
@@ -1567,6 +1735,12 @@
      "label": "Solid R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 3,
@@ -1576,7 +1750,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.014,
+   "sim_p_dem": 0.013,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -1617,6 +1791,12 @@
      "label": "Toss-up",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt D",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 0,
@@ -1626,10 +1806,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.696,
+   "sim_p_dem": 0.715,
    "sim_basis": "polls+rating",
-   "poll_margin": 2.4,
-   "poll_n": 22
+   "poll_margin": 2.7,
+   "poll_n": 25
   },
   {
    "id": "us-senate-VA",
@@ -1663,6 +1843,12 @@
      "label": "Solid D",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": -3,
@@ -1672,7 +1858,7 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.987,
+   "sim_p_dem": 0.986,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -1708,6 +1894,12 @@
      "label": "Solid R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-01-09",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 3,
@@ -1753,6 +1945,12 @@
      "label": "Solid R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-12-19",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 3,
@@ -1803,6 +2001,12 @@
      "label": "Solid R",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Likely R",
+     "date": "2026-10-15",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 3,
@@ -1858,6 +2062,12 @@
      "label": "Toss-up",
      "date": "2026-10-20",
      "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt D",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/senate/"
     }
    ],
    "rating_scale": 0,
@@ -1902,6 +2112,12 @@
      "label": "Solid R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 3,
@@ -1911,7 +2127,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.038,
+   "sim_p_dem": 0.04,
    "sim_basis": "polls+rating",
    "poll_margin": -6.8,
    "poll_n": 3
@@ -1955,6 +2171,12 @@
      "label": "Lean D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt D",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -1,
@@ -1964,7 +2186,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.947,
+   "sim_p_dem": 0.946,
    "sim_basis": "polls+rating",
    "poll_margin": 8.5,
    "poll_n": 6
@@ -2003,6 +2225,12 @@
      "label": "Lean D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt D",
+     "date": "2026-09-03",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -1,
@@ -2012,7 +2240,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.849,
+   "sim_p_dem": 0.838,
    "sim_basis": "polls+rating",
    "poll_margin": 5.9,
    "poll_n": 4
@@ -2051,6 +2279,12 @@
      "label": "Solid R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 3,
@@ -2060,7 +2294,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.011,
+   "sim_p_dem": 0.012,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -2093,6 +2327,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -2146,6 +2386,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -2155,7 +2401,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.988,
+   "sim_p_dem": 0.986,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -2177,6 +2423,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -2186,7 +2438,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.988,
+   "sim_p_dem": 0.987,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -2249,6 +2501,12 @@
      "label": "Lean R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Lean R",
+     "date": "2026-09-17",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 1,
@@ -2258,7 +2516,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.168,
+   "sim_p_dem": 0.17,
    "sim_basis": "polls+rating",
    "poll_margin": -4.2,
    "poll_n": 14
@@ -2292,6 +2550,12 @@
      "label": "Toss-up",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt D",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 0,
@@ -2301,7 +2565,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.403,
+   "sim_p_dem": 0.399,
    "sim_basis": "polls+rating",
    "poll_margin": -1.3,
    "poll_n": 8
@@ -2335,6 +2599,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -2344,7 +2614,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.989,
+   "sim_p_dem": 0.988,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -2382,6 +2652,12 @@
      "label": "Solid R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 3,
@@ -2391,7 +2667,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.013,
+   "sim_p_dem": 0.011,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -2413,6 +2689,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -2422,7 +2704,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.987,
+   "sim_p_dem": 0.988,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -2444,6 +2726,12 @@
      "label": "Lean D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Lean D",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -1,
@@ -2453,7 +2741,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.73,
+   "sim_p_dem": 0.727,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -2475,6 +2763,12 @@
      "label": "Toss-up",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt R",
+     "date": "2026-08-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 0,
@@ -2484,7 +2778,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.512,
+   "sim_p_dem": 0.504,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -2522,6 +2816,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2026-09-17",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -2531,7 +2831,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.991,
+   "sim_p_dem": 0.99,
    "sim_basis": "polls+rating",
    "poll_margin": 9.2,
    "poll_n": 12
@@ -2570,6 +2870,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -2579,7 +2885,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.989,
+   "sim_p_dem": 0.988,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -2617,6 +2923,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -2626,7 +2938,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.989,
+   "sim_p_dem": 0.988,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -2659,6 +2971,12 @@
      "label": "Lean D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Lean D",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -1,
@@ -2668,10 +2986,10 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.95,
+   "sim_p_dem": 0.97,
    "sim_basis": "polls+rating",
-   "poll_margin": 7.7,
-   "poll_n": 12
+   "poll_margin": 8.7,
+   "poll_n": 14
   },
   {
    "id": "gov-MN",
@@ -2707,6 +3025,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Likely D",
+     "date": "2026-01-16",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -2716,10 +3040,10 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.972,
+   "sim_p_dem": 0.985,
    "sim_basis": "polls+rating",
-   "poll_margin": 7.8,
-   "poll_n": 3
+   "poll_margin": 9.0,
+   "poll_n": 4
   },
   {
    "id": "gov-NE",
@@ -2755,6 +3079,12 @@
      "label": "Lean R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Likely R",
+     "date": "2026-10-15",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 1,
@@ -2764,7 +3094,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.183,
+   "sim_p_dem": 0.185,
    "sim_basis": "polls+rating",
    "poll_margin": -5.9,
    "poll_n": 3
@@ -2803,6 +3133,12 @@
      "label": "Toss-up",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Toss-up",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 0,
@@ -2812,7 +3148,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.35,
+   "sim_p_dem": 0.348,
    "sim_basis": "polls+rating",
    "poll_margin": -3.7,
    "poll_n": 3
@@ -2835,6 +3171,12 @@
      "label": "Likely R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 2,
@@ -2844,7 +3186,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.112,
+   "sim_p_dem": 0.114,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -2866,6 +3208,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Likely D",
+     "date": "2025-08-28",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -2875,7 +3223,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.985,
+   "sim_p_dem": 0.988,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -2908,6 +3256,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Likely D",
+     "date": "2025-08-28",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -2956,6 +3310,12 @@
      "label": "Lean D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt D",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -1,
@@ -3014,6 +3374,12 @@
      "label": "Likely R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Likely R",
+     "date": "2026-10-01",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 2,
@@ -3023,7 +3389,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.118,
+   "sim_p_dem": 0.117,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -3056,6 +3422,12 @@
      "label": "Lean D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt D",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -1,
@@ -3104,6 +3476,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2026-06-25",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -3152,6 +3530,12 @@
      "label": "Solid D",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid D",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": -3,
@@ -3195,6 +3579,12 @@
      "label": "Solid R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 3,
@@ -3204,7 +3594,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.021,
+   "sim_p_dem": 0.018,
    "sim_basis": "polls+rating",
    "poll_margin": -11.7,
    "poll_n": 2
@@ -3238,6 +3628,12 @@
      "label": "Solid R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 3,
@@ -3247,7 +3643,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.012,
+   "sim_p_dem": 0.013,
    "sim_basis": "rating",
    "poll_margin": null
   },
@@ -3345,6 +3741,12 @@
      "label": "Solid R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Likely R",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 3,
@@ -3393,6 +3795,12 @@
      "label": "Lean R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt R",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 1,
@@ -3402,10 +3810,10 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.26,
+   "sim_p_dem": 0.257,
    "sim_basis": "polls+rating",
-   "poll_margin": -2.7,
-   "poll_n": 20
+   "poll_margin": -2.6,
+   "poll_n": 22
   },
   {
    "id": "gov-VT",
@@ -3446,6 +3854,12 @@
      "label": "Likely R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Likely R",
+     "date": "2026-10-15",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 2,
@@ -3455,7 +3869,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.218,
+   "sim_p_dem": 0.217,
    "sim_basis": "polls+rating",
    "poll_margin": -2.0,
    "poll_n": 2
@@ -3489,6 +3903,12 @@
      "label": "Toss-up",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Tilt D",
+     "date": "2026-10-29",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 0,
@@ -3498,7 +3918,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.636,
+   "sim_p_dem": 0.634,
    "sim_basis": "polls+rating",
    "poll_margin": 3.3,
    "poll_n": 3
@@ -3532,6 +3952,12 @@
      "label": "Solid R",
      "date": "2026-10-27",
      "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
+    },
+    {
+     "rater": "Inside Elections",
+     "label": "Solid R",
+     "date": "2025-02-06",
+     "url": "https://insideelections.com/ratings/governor/"
     }
    ],
    "rating_scale": 3,
@@ -3541,7 +3967,7 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.013,
+   "sim_p_dem": 0.012,
    "sim_basis": "rating",
    "poll_margin": null
   }
@@ -4399,11 +4825,11 @@
  },
  "sim_chambers": {
   "senate": {
-   "d": 17,
-   "r": 18,
+   "d": 18,
+   "r": 17,
    "note": "expected 2026 wins, polls-as-is preset"
   },
   "house": null,
-  "built_at": "2026-10-29T18:56:14Z"
+  "built_at": "2026-10-29T19:08:30Z"
  }
 }

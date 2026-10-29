@@ -19,7 +19,7 @@
    "verified_at": "2026-10-29",
    "poller": "votehub_polls",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T17:17:44Z",
+   "last_success_at": "2026-10-29T19:08:04Z",
    "last_error": "",
    "active": true
   },
@@ -431,7 +431,9 @@
    "terms_note": "Label + date + link only. The site loads this file itself and documents it as 'public, cached files — no auth required'. robots.txt: search=yes, ai-train=no, use=reference. Raw JSON not kept (hash only).",
    "verification_evidence": "2026-10-29 18:21Z: 200 application/json; keys office,total,last_updated,generated_at,ratings[]; per-race date, rating, previous_rating. Runner 2026-10-29 18:30Z: 200.",
    "decision_needed": null,
-   "notes": "Vocabulary: Solid/Likely/Lean/Tilt/Battleground D or R, Toss-up, Lean Independent; Tilt and Battleground map to ±1 with label_lossy=true."
+   "notes": "Vocabulary: Solid/Likely/Lean/Tilt/Battleground D or R, Toss-up, Lean Independent; Tilt and Battleground map to ±1 with label_lossy=true.",
+   "last_success_at": "2026-10-29T19:08:06Z",
+   "last_error": ""
   },
   {
    "id": "ratings_ie_governor",
@@ -448,7 +450,9 @@
    "terms_note": "Label + date + link only. The site loads this file itself and documents it as 'public, cached files — no auth required'. robots.txt: search=yes, ai-train=no, use=reference. Raw JSON not kept (hash only).",
    "verification_evidence": "2026-10-29 18:21Z: 200 application/json; keys office,total,last_updated,generated_at,ratings[]; per-race date, rating, previous_rating. Runner 2026-10-29 18:30Z: 200.",
    "decision_needed": null,
-   "notes": "Vocabulary: Solid/Likely/Lean/Tilt/Battleground D or R, Toss-up, Lean Independent; Tilt and Battleground map to ±1 with label_lossy=true."
+   "notes": "Vocabulary: Solid/Likely/Lean/Tilt/Battleground D or R, Toss-up, Lean Independent; Tilt and Battleground map to ±1 with label_lossy=true.",
+   "last_success_at": "2026-10-29T19:08:07Z",
+   "last_error": ""
   },
   {
    "id": "ratings_ie_house",
@@ -465,7 +469,9 @@
    "terms_note": "Label + date + link only. The site loads this file itself and documents it as 'public, cached files — no auth required'. robots.txt: search=yes, ai-train=no, use=reference. Raw JSON not kept (hash only).",
    "verification_evidence": "2026-10-29 18:21Z: 200 application/json; keys office,total,last_updated,generated_at,ratings[]; per-race date, rating, previous_rating. Runner 2026-10-29 18:30Z: 200.",
    "decision_needed": "House labels stored for Michigan only (same scope as Cook); widen if Tabu rules so.",
-   "notes": "Vocabulary: Solid/Likely/Lean/Tilt/Battleground D or R, Toss-up, Lean Independent; Tilt and Battleground map to ±1 with label_lossy=true."
+   "notes": "Vocabulary: Solid/Likely/Lean/Tilt/Battleground D or R, Toss-up, Lean Independent; Tilt and Battleground map to ±1 with label_lossy=true.",
+   "last_success_at": "2026-10-29T19:08:08Z",
+   "last_error": ""
   },
   {
    "id": "ratings_votehub_forecast",
@@ -695,7 +701,7 @@
    "verified_at": "2026-10-29",
    "poller": "ev_nc_s3",
    "decision_needed": null,
-   "last_success_at": null,
+   "last_success_at": "2026-10-29T19:08:10Z",
    "last_error": "",
    "active": true,
    "fetch_url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_counts_state_20261103.csv",
@@ -739,7 +745,7 @@
    "verified_at": "2026-10-29",
    "poller": "ev_fl_publicstats",
    "decision_needed": null,
-   "last_success_at": null,
+   "last_success_at": "2026-10-29T19:08:12Z",
    "last_error": "",
    "active": true,
    "fetch_url": "https://electionfiles.floridados.gov/countyballotreportfiles/Stats_49894_{VbmProvided,VbmVoted,EarlyVoted}.txt",
@@ -828,7 +834,7 @@
    "verified_at": "2026-10-29",
    "poller": "ev_uf_csv",
    "decision_needed": "Confirmed display-only per decision 2 (2026-10-29). Written permission from the lab still needed before any normalization.",
-   "last_success_at": null,
+   "last_success_at": "2026-10-29T19:08:13Z",
    "last_error": "",
    "active": true,
    "fetch_url": "https://election.lab.ufl.edu/data-downloads/earlyvote/2026/US.csv",
@@ -1873,7 +1879,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T17:17:46Z",
+   "last_success_at": "2026-10-29T19:08:15Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -2194,7 +2200,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T17:17:48Z",
+   "last_success_at": "2026-10-29T19:08:16Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -2242,7 +2248,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T17:17:51Z",
+   "last_success_at": "2026-10-29T19:08:18Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -2334,7 +2340,7 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": "2026-10-29T17:17:52Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_error": "2026-10-29T19:08:19Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
    "active": true
   },
   {
@@ -2354,7 +2360,7 @@
    "verified_at": "2026-10-29",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T17:17:53Z",
+   "last_success_at": "2026-10-29T19:08:20Z",
    "last_error": "",
    "active": true
   },
@@ -2417,7 +2423,7 @@
    "verified_at": "2026-10-29",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T17:17:54Z",
+   "last_success_at": "2026-10-29T19:08:21Z",
    "last_error": "",
    "active": true
   },

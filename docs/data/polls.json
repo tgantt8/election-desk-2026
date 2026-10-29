@@ -1,6 +1,6 @@
 {
  "_layer": "polls",
- "built_at": "2026-10-29T17:20:02Z",
+ "built_at": "2026-10-29T19:08:22Z",
  "attribution": "Polling data via VoteHub (CC BY 4.0) and the original pollsters; each row links to its publisher.",
  "records": [
   {
@@ -23,7 +23,7 @@
    "url": "https://tpsiofficial.substack.com/p/tpsi-new-tpsi-senate-poll-confirms",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -46,8 +46,75 @@
    "url": "https://tpsiofficial.substack.com/p/tpsi-new-tpsi-senate-poll-confirms",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
+  },
+  {
+   "id": "78c08d3815857f7e",
+   "race": "us-senate-TX",
+   "pollster": "CNN/SSRS",
+   "sponsor": null,
+   "field_start": "2026-10-20",
+   "field_end": "2026-10-27",
+   "population": "LV",
+   "n": 923,
+   "mode": null,
+   "toplines": {
+    "James Talarico": 49.0,
+    "Ken Paxton": 43.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": 6.0
+  },
+  {
+   "id": "3664e968e484a9dc",
+   "race": "us-senate-TX",
+   "pollster": "A2 Insights",
+   "sponsor": null,
+   "field_start": "2026-10-23",
+   "field_end": "2026-10-27",
+   "population": "LV",
+   "n": 631,
+   "mode": null,
+   "toplines": {
+    "James Talarico": 50.2,
+    "Ken Paxton": 47.2
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://drive.google.com/file/d/1UACnmnM84Dd1hU0l6iqHNgXkyh5oCelO/view",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": 3.0
+  },
+  {
+   "id": "e1d5fdaea67c16dd",
+   "race": "us-senate-TX",
+   "pollster": "Texas Southern University Barbara Jordan Public Policy Research and Survey Center",
+   "sponsor": null,
+   "field_start": "2026-10-21",
+   "field_end": "2026-10-25",
+   "population": "LV",
+   "n": 2000,
+   "mode": null,
+   "toplines": {
+    "James Talarico": 49.0,
+    "Ken Paxton": 47.0,
+    "Ted Brown": 3.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.jordanresearchcenter.org/publications/tsuoct2026-txelections-statewide2026",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": 2.0
   },
   {
    "id": "8db523aeeca1b5d3",
@@ -942,7 +1009,7 @@
    "url": "https://www.texastribune.org/wp-content/uploads/2026/04/TPOR-April-2026-TXSEN-poll.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -1030,7 +1097,7 @@
    "url": "https://punchbowl.news/article/campaigns/paxton-cornyn-poll/",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -1052,7 +1119,7 @@
    "url": "https://www.uh.edu/hobby/primary2026/senate.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -1074,7 +1141,7 @@
    "url": "https://docs.google.com/spreadsheets/d/15YGRzDC0lKpxKWzRswm-jVakVutZLJc7/edit?usp=sharing&ouid=111479937799022047482&rtpof=true&sd=true",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -1096,7 +1163,7 @@
    "url": "https://www.politico.com/f/?id=0000019a-9d57-df0f-abfa-fd7fac900000",
    "partisan": "REP",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -1118,7 +1185,7 @@
    "url": "https://www.documentcloud.org/documents/26183203-election2026/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -1140,7 +1207,7 @@
    "url": "https://www.uttyler.edu/academics/colleges-schools/arts-sciences/departments/political-science/files/topline-report-of-texas-voters-revised-september-2025.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -1254,6 +1321,30 @@
    "internal": false,
    "retrieved_at": "2026-10-29T17:17:44Z",
    "margin": -1.0
+  },
+  {
+   "id": "6f780f4ac9a97703",
+   "race": "us-senate-SC",
+   "pollster": "East Carolina University",
+   "sponsor": null,
+   "field_start": "2026-10-19",
+   "field_end": "2026-10-24",
+   "population": "LV",
+   "n": 955,
+   "mode": null,
+   "toplines": {
+    "Annie Andrews": 47.0,
+    "Darline Graham": 51.0,
+    "Kasie Whitener": 1.0,
+    "Mark Hackett": 1.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://surveyresearch-ecu.reportablenews.com/pr/ecu-poll-finds-graham-leading-andrews-by-four-points",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": -4.0
   },
   {
    "id": "12a016f88b58684d",
@@ -1575,7 +1666,7 @@
    "url": "https://battlegrounds.coefficient.org/oh",
    "partisan": "REP",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -2153,6 +2244,29 @@
    "margin": 7.0
   },
   {
+   "id": "571c1038ef671588",
+   "race": "us-senate-NH",
+   "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
+   "sponsor": null,
+   "field_start": "2026-10-02",
+   "field_end": "2026-10-19",
+   "population": "LV",
+   "n": 600,
+   "mode": null,
+   "toplines": {
+    "Chris Pappas": 48.0,
+    "Edmond Laplante": 4.0,
+    "John Sununu": 41.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.uml.edu/news/press-releases/2026/102826-new-england-polls.aspx",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": 7.0
+  },
+  {
    "id": "abdf7c413a6317e2",
    "race": "us-senate-NH",
    "pollster": "The New York Times/Siena University",
@@ -2238,7 +2352,7 @@
    "url": "https://scholars.unh.edu/survey_center_polls/988/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -2260,7 +2374,7 @@
    "url": "https://www.anselm.edu/about/anselmian-hub/news/new-saint-anselm-college-poll-finds-republicans-facing-midterm-headwinds-democratic-lead-widens",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -2282,7 +2396,7 @@
    "url": "https://www.anselm.edu/about/anselmian-hub/news/saint-anselm-college-survey-center-june-poll-finds-democrats-expand-generic-ballot-lead",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -2304,7 +2418,7 @@
    "url": "https://scholars.unh.edu/survey_center_polls/974/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -3520,7 +3634,7 @@
    "url": "https://www.carolinajournal.com/wp-content/uploads/2025/11/H23440-CJ-NC-Nov25-Toplines.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -3674,7 +3788,7 @@
    "url": "https://irp.cdn-website.com/07e08705/files/uploaded/PollReport_NC-2026_12-2-24.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -3815,7 +3929,7 @@
    "url": "https://242750075.fs1.hubspotusercontent-na2.net/hubfs/242750075/Toplines%20-%20Montana%20Senate%20late%20July%2020260723_143910%20(2).pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -3837,7 +3951,7 @@
    "url": "https://www.gelliottmorris.com/p/2026-07-28-exclusive-independent-leads-democrat-against-republican-montana",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -3928,7 +4042,7 @@
    "url": "https://242750075.fs1.hubspotusercontent-na2.net/hubfs/242750075/Toplines%20-%20Montana%20Senate%20General%20Election%2020260616_161028%20(1).pdf",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": -12.0
   },
   {
@@ -3976,7 +4090,7 @@
    "url": "https://242750075.fs1.hubspotusercontent-na2.net/hubfs/242750075/MT%20Senate%20Toplines%20-%20Contours%20-%20Tavern.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -4205,7 +4319,7 @@
    "url": "https://docs.google.com/spreadsheets/d/1JA1bJWjrfS2kJbvUpGC8cGy7c0UiK7Qr/edit?usp=sharing&ouid=111479937799022047482&rtpof=true&sd=true",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": 6.5
   },
   {
@@ -4227,7 +4341,7 @@
    "url": "https://www.scribd.com/document/930902898/Flanagan-Senate-Poll-Memo-September-2025",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -4255,6 +4369,50 @@
    "internal": false,
    "retrieved_at": "2026-10-29T17:17:44Z",
    "margin": 7.0
+  },
+  {
+   "id": "7f582cda86f6be5a",
+   "race": "us-senate-MI",
+   "pollster": "CNN/SSRS",
+   "sponsor": null,
+   "field_start": "2026-10-20",
+   "field_end": "2026-10-27",
+   "population": "LV",
+   "n": 768,
+   "mode": null,
+   "toplines": {
+    "Abdul El-Sayed": 49.0,
+    "Mike Rogers": 42.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": 7.0
+  },
+  {
+   "id": "b62303016015cc43",
+   "race": "us-senate-MI",
+   "pollster": "Michigan State University Department of Political Science/Verasight",
+   "sponsor": null,
+   "field_start": "2026-10-08",
+   "field_end": "2026-10-23",
+   "population": "LV",
+   "n": 1383,
+   "mode": null,
+   "toplines": {
+    "Abdul El-Sayed": 50.5,
+    "Mike Rogers": 43.1
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://polisci.msu.edu/news-events/news/smidt-poll102926.html",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": 7.4
   },
   {
    "id": "6f61dc57e7978d55",
@@ -4876,7 +5034,7 @@
    "url": null,
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -4898,7 +5056,7 @@
    "url": "https://static1.squarespace.com/static/5f14ae6fb2a20e01e9c6d608/t/6a6d26262f442f133d15fa49/1785538087149/MITCHELL+MI+Poll+Nov+Electio+Press+Release+7-31-2026+305PM_A.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -4920,7 +5078,7 @@
    "url": "https://mea.org/wp-content/uploads/2026/07/MICHIGAN-EDUCATION-SURVEY-REPORT-FINAL54.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -4942,7 +5100,7 @@
    "url": "https://quantusinsights.org/f/michigan-senate-el-sayed-leads-primary-fall-race-remains-tight",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -4964,7 +5122,7 @@
    "url": "https://x.com/admcrlsn/status/2067419019544555546",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5008,7 +5166,7 @@
    "url": "https://tippinsights.com/league-of-american-workers-survey-michigan",
    "partisan": "REP",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5030,7 +5188,7 @@
    "url": "https://tippinsights.com/league-of-american-workers-survey-michigan",
    "partisan": "REP",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5052,7 +5210,7 @@
    "url": "https://www.dropbox.com/scl/fi/852uovvc2zfsqrnphdn9q/MIRS-MITCHELL-DEM-Primary-Press-Release-5-11-26-150PM_A.docx?rlkey=v522wmle6zvzlajt6m6nfoj78&st=zhm55ihc&dl=0",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5074,7 +5232,7 @@
    "url": "https://www.detroitchamber.com/wp-content/uploads/2026/05/DRC_Glengariff-Group_2026-Mackinac-Policy-Conference_POLITICAL-REPORT.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5096,7 +5254,7 @@
    "url": "https://docs.google.com/spreadsheets/d/1AtLJcs2z9R_NRY7eZqvKS256qHiVSUx0/edit?usp=sharing&ouid=111479937799022047482&rtpof=true&sd=true",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": -0.3
   },
   {
@@ -5118,7 +5276,7 @@
    "url": "https://www.detroitnews.com/story/news/politics/2026/01/13/michigan-race-for-governor-polling-john-james-jocelyn-benson-mike-duggan/88134923007/?gnt-cfr=1&gca-cat=p&gca-uir=true&gca-epti=z11xx55p119750n11----c11----e1173xxv11xx55d--xx--b--xx--&gca-ft=8&gca-ds=sophi",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5140,7 +5298,7 @@
    "url": "https://mirs-polls.s3.us-east-2.amazonaws.com/c7ba70f28c3812c553cbf07db509f469.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": -3.0
   },
   {
@@ -5162,7 +5320,7 @@
    "url": "https://www.abc12.com/news/politics/exclusive-poll-shows-tight-races-for-michigan-governor-senate-races/article_7b0cec7f-87c6-4084-9b07-0f393f2a0816.html",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5184,7 +5342,7 @@
    "url": "https://x.com/IAPolls2022/status/1986533537747472500",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5206,7 +5364,7 @@
    "url": "https://www.politico.com/f/?id=00000197-e30f-da98-a3b7-fb0fd50f0000",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5228,7 +5386,7 @@
    "url": "https://www.detroitchamber.com/wp-content/uploads/2025/05/Detroit-Regional-Chamber_Glengariff-Group_May-2025-Political-Survey-Report.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": -6.0
   },
   {
@@ -5888,7 +6046,7 @@
    "url": "https://netchoice.org/wp-content/uploads/2026/04/NetChoice-Apr-2026-National-Antitrust-Survey-Topline.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5910,7 +6068,7 @@
    "url": "https://static.notus.org/0b/9f/97515a054eaa89882d18ab798388/poll.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5932,7 +6090,7 @@
    "url": "https://docs.google.com/spreadsheets/d/1jm6cifqqT8NRH_qpVamcP3BDevlPuVtI/edit?usp=sharing&ouid=111479937799022047482&rtpof=true&sd=true",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5954,7 +6112,7 @@
    "url": "https://polls.quantusinsights.org/polls/maine-senate-quantus-mxnu1zpr?tab=toplines",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5976,7 +6134,7 @@
    "url": "https://hs-21701012.f.hubspotstarter.net/hubfs/21701012/20260304%2068th%20Omnibus%20Poll%20March%202026.pdf?utm_medium=email&_hsenc=p2ANqtz-8Smdd7JAYw6nBcKm1gfTX5TzCqm0rgKMxcZRco0jyjJhxQiJcRLcVhwNLu29zTOsV3FCNkzssQ0i1ZVFuKVQ_UUvqzVQ&_hsmi=406936398&utm_content=406936398&utm_source=hs_email",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -5998,7 +6156,7 @@
    "url": "https://scholars.unh.edu/survey_center_polls/930/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -6020,7 +6178,7 @@
    "url": "https://login.politicopro.com/?redirect=https://subscriber.politicopro.com/?redirect=https://subscriber.politicopro.com/f/?id%3D0000019c-2aaf-d647-addc-abef0b310000",
    "partisan": "REP",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -6042,7 +6200,7 @@
    "url": "https://hs-21701012.f.hubspotstarter.net/hubfs/21701012/67th%20Omnibus%20Poll%20December%202025.pdf?utm_medium=email&_hsenc=p2ANqtz-_qWyGL4keanJ5LSdiKL6c5WZV-1bzCKylYwKxtbhhKyeZjebUL8XLBb0fyCN-GbIYvmJH9vOeAAN3J59WkcFJnVG8viQ&_hsmi=393840029&utm_content=393840029&utm_source=hs_email",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -6086,7 +6244,7 @@
    "url": "https://mainepeoplesalliance.org/poll-majority-of-voters-disapprove-of-collins-on-shutdown/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -6108,8 +6266,30 @@
    "url": "https://perfectunion.us/wp-content/uploads/2025/10/More-Perfect-Union_-Maine-Senate-General-Election-Benchmark-Poll.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
+  },
+  {
+   "id": "82587278c99d3bfb",
+   "race": "us-senate-MA",
+   "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
+   "sponsor": null,
+   "field_start": "2026-10-07",
+   "field_end": "2026-10-18",
+   "population": "LV",
+   "n": 850,
+   "mode": null,
+   "toplines": {
+    "Ed Markey": 55.0,
+    "John Deaton": 26.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.uml.edu/news/press-releases/2026/102826-new-england-polls.aspx",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": 29.0
   },
   {
    "id": "b0bcb4832bdda8a1",
@@ -6226,7 +6406,7 @@
    "url": "https://scholars.unh.edu/survey_center_polls/989/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -6248,7 +6428,7 @@
    "url": "https://www.wcvb.com/article/markey-moulton-umass-poll-aug-17/73437119",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -6270,7 +6450,7 @@
    "url": "https://scholars.unh.edu/survey_center_polls/973/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -6292,7 +6472,7 @@
    "url": "https://www.bostonglobe.com/2026/06/16/metro/healey-voter-suffolk-poll-2026-midterm",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -6314,7 +6494,7 @@
    "url": "https://scholars.unh.edu/survey_center_polls/945/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": 23.0
   },
   {
@@ -6336,7 +6516,7 @@
    "url": "https://scholars.unh.edu/survey_center_polls/931/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -6358,7 +6538,7 @@
    "url": "https://www.suffolk.edu/academics/research-at-suffolk/political-research-center/polls/massachusetts#collapse-November-25-2025-Massachusetts-Statewide-Issues-with-The-Boston-Globe",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -6382,6 +6562,28 @@
    "internal": false,
    "retrieved_at": "2026-10-29T17:17:44Z",
    "margin": 19.0
+  },
+  {
+   "id": "a3f75250277ca6cf",
+   "race": "us-senate-KS",
+   "pollster": "CNN/SSRS",
+   "sponsor": null,
+   "field_start": "2026-10-20",
+   "field_end": "2026-10-26",
+   "population": "LV",
+   "n": 838,
+   "mode": null,
+   "toplines": {
+    "Adam Hamilton": 49.0,
+    "Roger Marshall": 45.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": 4.0
   },
   {
    "id": "6d352db0638990b8",
@@ -6539,6 +6741,29 @@
    "internal": false,
    "retrieved_at": "2026-10-29T17:17:44Z",
    "margin": null
+  },
+  {
+   "id": "0a220b56a8ffd40b",
+   "race": "us-senate-IA",
+   "pollster": "co/efficient",
+   "sponsor": null,
+   "field_start": "2026-10-28",
+   "field_end": "2026-10-28",
+   "population": "LV",
+   "n": 1020,
+   "mode": null,
+   "toplines": {
+    "Ashley Hinson": 48.0,
+    "Josh Turek": 46.0,
+    "Thomas Laehn": 1.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://battlegrounds.coefficient.org/ia/",
+   "partisan": "REP",
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": -2.0
   },
   {
    "id": "d9d541f230c1e5cb",
@@ -7027,7 +7252,7 @@
    "url": "https://netchoice.org/wp-content/uploads/2026/04/NetChoice-Apr-2026-National-Antitrust-Survey-Topline.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": 1.0
   },
   {
@@ -7049,7 +7274,7 @@
    "url": "https://www.politico.com/f/?id=0000019d-8400-d182-a9fd-b63c76ae0000",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -7071,7 +7296,7 @@
    "url": "https://x.com/Bencjacobs/status/2020894441196663099",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -7336,7 +7561,7 @@
    "url": "https://netchoice.org/wp-content/uploads/2026/04/NetChoice-Apr-2026-National-Antitrust-Survey-Topline.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -7358,7 +7583,7 @@
    "url": "https://docs.google.com/spreadsheets/d/1WMIkxH0hZRhWe0dbY6wtuuqshJGChuhv/edit?gid=1306158051#gid=1306158051",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -7380,7 +7605,7 @@
    "url": "https://drive.google.com/file/d/1s_XyIo0Rre1TGtVisHKu9hW3S4yEvxRl/view",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -7402,7 +7627,7 @@
    "url": "https://dailycaller.com/2025/08/07/mike-collins-georgia-senate-poll/",
    "partisan": "REP",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -7801,7 +8026,7 @@
    "url": "https://floridapolitics.com/archives/808426-unf-poll-jolly-donalds/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -7889,7 +8114,7 @@
    "url": "https://changeresearch.com/wp-content/uploads/2026/05/Deep-Dive-into-Florida-1.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -7933,7 +8158,7 @@
    "url": "https://t.co/dtCsadTWtf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -7999,7 +8224,7 @@
    "url": "https://emersoncollegepolling.com/florida-2026-poll-donalds-leads-gop-primary-for-governor-republicans-outpace-democrats-in-florida-elections/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -8021,8 +8246,31 @@
    "url": "https://floridapolitics.com/archives/783199-desantis-more-popular-trump-poll/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
+  },
+  {
+   "id": "64d6f2f388af5bb1",
+   "race": "us-senate-AR",
+   "pollster": "GrayHouse",
+   "sponsor": "America One Policies",
+   "field_start": "2026-10-27",
+   "field_end": "2026-10-28",
+   "population": "LV",
+   "n": 509,
+   "mode": null,
+   "toplines": {
+    "Hallie Shoffner": 39.0,
+    "Jeff Wadlin": 4.0,
+    "Tom Cotton": 55.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.grayhouse.com/post/arkansas-senate-poll-october-2026-cotton",
+   "partisan": "REP",
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": -16.0
   },
   {
    "id": "cd2b77a5801f4e52",
@@ -8468,7 +8716,7 @@
    "url": "https://x.com/polltracker2024/status/2050660840278229202",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": 3.5
   },
   {
@@ -8979,7 +9227,7 @@
    "url": "https://x.com/PollTracker2024/status/1965014578812842210/photo/1",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -9303,7 +9551,7 @@
    "url": "https://www.texastribune.org/wp-content/uploads/2026/03/TX23-PPP-poll.pdf",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -9634,6 +9882,28 @@
    "partisan": "DEM",
    "internal": false,
    "retrieved_at": "2026-10-29T17:17:44Z",
+   "margin": null
+  },
+  {
+   "id": "c0fc8184f6f9e8bc",
+   "race": "us-house-PA-07",
+   "pollster": "Muhlenberg College Institute of Public Opinion",
+   "sponsor": null,
+   "field_start": "2026-10-06",
+   "field_end": "2026-10-15",
+   "population": "LV",
+   "n": 529,
+   "mode": null,
+   "toplines": {
+    "Bob Brooks": 49.0,
+    "Ryan Mackenzie": 43.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.muhlenberg.edu/muhlenberg-now/pa-7th-congressional-survey-october-2026/",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -10696,7 +10966,7 @@
    "url": "https://x.com/PatrickSvitek/status/2054609849439199263?s=20",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -10916,7 +11186,7 @@
    "url": "https://www.newsweek.com/democrat-republican-swing-state-poll-michigan-10997147",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -11004,7 +11274,7 @@
    "url": "https://scholars.unh.edu/survey_center_polls/930/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -11271,7 +11541,7 @@
    "url": "https://floridapolitics.com/archives/788279-poll-shows-carlos-gimenezs-lead-narrowing-in-cd-28-amid-economic-policy-headwinds/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -11315,7 +11585,7 @@
    "url": "https://floridapolitics.com/archives/784817-__trashed-35/",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -11757,7 +12027,7 @@
    "url": "https://punchbowl.news/article/campaigns/bad-gop-polls/",
    "partisan": "REP",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -11871,6 +12141,28 @@
    "margin": null
   },
   {
+   "id": "edd6cc42e69ace7f",
+   "race": "us-house-AL-02",
+   "pollster": "Remington Research Group",
+   "sponsor": null,
+   "field_start": "2026-10-23",
+   "field_end": "2026-10-25",
+   "population": "LV",
+   "n": 642,
+   "mode": null,
+   "toplines": {
+    "Rhett Marques": 48.0,
+    "Shomari Figures": 46.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://1819news.com/news/item/al-2-poll-marques-48-figures-46",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": null
+  },
+  {
    "id": "3ebcdb55fbe8c06d",
    "race": "us-house-AK-01",
    "pollster": "Data for Progress",
@@ -11979,7 +12271,7 @@
    "url": "https://x.com/The_Real_ASR/status/2088053315502498055",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -12046,7 +12338,7 @@
    "url": "https://hub.nationaljournal.com/new-maps-for-new-york-1?ecid=ACsprvtXCGX_y5aGgL4GVYyMV9Pj7_5mYOX-Ecv59TfcWhUAkRfvxk8ydNp1f2W6B11HWiXOKD8M&utm_campaign=36387909-%5BNJ%5D%202026%20Wake%20Up%20Call&utm_medium=email&_hsenc=p2ANqtz--ypdqFzjt6YlQeSvcQ2L6ur-f3dfrpC3LBhtrLZ4qbOePmR8uo6p_Cyj44MVGYrw4Q0nK8jceKiqibg_VZpQlb2qLJhFLgjXeX0K4fwp0NAbfnvxU&_hsmi=404722735&utm_content=404722735&utm_source=hs_email",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -23553,7 +23845,7 @@
    "url": "https://static1.squarespace.com/static/663253f0bc87b7070102f41f/t/68fbe60430e9a41286f8b8df/1761338884941/Deliverables+-+DM+Polling+Oct+2025.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": 2.0
   },
   {
@@ -34750,7 +35042,7 @@
    "url": "https://reforminggovernment.org/irg-poll-inflation-still-rules-free-markets-still-win-race-still-open/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -34772,7 +35064,7 @@
    "url": "https://law.marquette.edu/assets/community/poll/MLSP89/MLSP89PressRelease.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -34794,7 +35086,7 @@
    "url": "https://tpsiofficial.substack.com/p/new-wisconsin-poll-shows-political",
    "partisan": "REP",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -34816,7 +35108,7 @@
    "url": "https://tpsiofficial.substack.com/p/new-wisconsin-poll-shows-political",
    "partisan": "REP",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -34838,7 +35130,7 @@
    "url": "https://x.com/IAPolls2022/status/2036258027725025698",
    "partisan": "REP",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -34860,7 +35152,7 @@
    "url": "https://tippinsights.com/league-of-american-workers-survey-wisconsin-3/",
    "partisan": "REP",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -35019,7 +35311,7 @@
    "url": "https://scholars.unh.edu/survey_center_polls/982/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -35041,8 +35333,53 @@
    "url": "https://scholars.unh.edu/survey_center_polls/970/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
+  },
+  {
+   "id": "5759d5a1b313bad0",
+   "race": "gov-TX",
+   "pollster": "CNN/SSRS",
+   "sponsor": null,
+   "field_start": "2026-10-20",
+   "field_end": "2026-10-27",
+   "population": "LV",
+   "n": 923,
+   "mode": null,
+   "toplines": {
+    "Gina Hinojosa": 46.0,
+    "Greg Abbott": 48.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": -2.0
+  },
+  {
+   "id": "f50bd568d5e2be1b",
+   "race": "gov-TX",
+   "pollster": "Texas Southern University Barbara Jordan Public Policy Research and Survey Center",
+   "sponsor": null,
+   "field_start": "2026-10-21",
+   "field_end": "2026-10-25",
+   "population": "LV",
+   "n": 2000,
+   "mode": null,
+   "toplines": {
+    "Gina Hinojosa": 47.0,
+    "Greg Abbott": 50.0,
+    "Pat Dixon": 2.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.jordanresearchcenter.org/publications/tsuoct2026-txelections-statewide2026",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": -3.0
   },
   {
    "id": "100bd57246549d69",
@@ -35917,7 +36254,7 @@
    "url": "https://www.gilmermirror.com/wp-content/uploads/2026/02/UTTylerPoll_202602_FINAL226-COR-FEB-2026-Poll-Final-Topline-Report.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -36310,7 +36647,7 @@
    "url": "https://scholars.unh.edu/survey_center_polls/971/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -38109,6 +38446,29 @@
    "margin": null
   },
   {
+   "id": "fc2ed0727b3b14eb",
+   "race": "gov-NH",
+   "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
+   "sponsor": null,
+   "field_start": "2026-10-02",
+   "field_end": "2026-10-19",
+   "population": "LV",
+   "n": 600,
+   "mode": null,
+   "toplines": {
+    "Cinde Warmington": 42.0,
+    "Kelly Ayotte": 48.0,
+    "Stephen Villee": 3.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.uml.edu/news/press-releases/2026/102826-new-england-polls.aspx",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": null
+  },
+  {
    "id": "67d1bfcc806aea13",
    "race": "gov-NH",
    "pollster": "The New York Times/Siena University",
@@ -38304,7 +38664,7 @@
    "url": "https://www.anselm.edu/about/anselmian-hub/news/new-poll-saint-anselm-college-survey-shows-democrats-gaining-ground-republicans-face-political-headwinds",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -38468,6 +38828,29 @@
    "margin": -5.0
   },
   {
+   "id": "34757b179b979cc0",
+   "race": "gov-MN",
+   "pollster": "State Navigate",
+   "sponsor": null,
+   "field_start": "2026-10-26",
+   "field_end": "2026-10-28",
+   "population": "LV",
+   "n": 806,
+   "mode": null,
+   "toplines": {
+    "Amy Klobuchar": 52.0,
+    "Lisa Demuth": 42.0,
+    "Steven Young": 3.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://articles.statenavigate.com/mn/new-minnesota-governor-poll-shows-amy-klobuchars-crossover-appeal-fading/",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": 10.0
+  },
+  {
    "id": "c380ea462fe85146",
    "race": "gov-MN",
    "pollster": "SurveyUSA",
@@ -38599,7 +38982,7 @@
    "url": "https://www.startribune.com/minnesota-poll-klobuchar-leads-all-gop-candidates-for-governor/601850018",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -38621,7 +39004,7 @@
    "url": "https://docs.google.com/spreadsheets/d/1JA1bJWjrfS2kJbvUpGC8cGy7c0UiK7Qr/edit?gid=1311961339#gid=1311961339",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -38643,7 +39026,7 @@
    "url": "https://kstp.com/kstp-news/top-news/kstp-surveyusa-klobuchar-leads-all-gop-candidates-by-double-digits/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -38711,6 +39094,50 @@
    "internal": false,
    "retrieved_at": "2026-10-29T17:17:44Z",
    "margin": 5.0
+  },
+  {
+   "id": "48aa34acef831c9d",
+   "race": "gov-MI",
+   "pollster": "CNN/SSRS",
+   "sponsor": null,
+   "field_start": "2026-10-20",
+   "field_end": "2026-10-27",
+   "population": "LV",
+   "n": 768,
+   "mode": null,
+   "toplines": {
+    "Jocelyn Benson": 53.0,
+    "John James": 41.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": 12.0
+  },
+  {
+   "id": "4118caba461b04d2",
+   "race": "gov-MI",
+   "pollster": "Michigan State University Department of Political Science/Verasight",
+   "sponsor": null,
+   "field_start": "2026-10-08",
+   "field_end": "2026-10-23",
+   "population": "LV",
+   "n": 1383,
+   "mode": null,
+   "toplines": {
+    "Jocelyn Benson": 50.9,
+    "John James": 41.5
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://polisci.msu.edu/news-events/news/smidt-poll102926.html",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": 9.4
   },
   {
    "id": "af70ca50bf752522",
@@ -39116,7 +39543,7 @@
    "url": "https://static1.squarespace.com/static/5f14ae6fb2a20e01e9c6d608/t/6a6d26262f442f133d15fa49/1785538087149/MITCHELL+MI+Poll+Nov+Electio+Press+Release+7-31-2026+305PM_A.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -39138,7 +39565,7 @@
    "url": "https://mea.org/latest-statewide-poll-7-2026/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": 5.0
   },
   {
@@ -39547,7 +39974,7 @@
    "url": "https://www.nytimes.com/interactive/2026/06/30/polls/times-pph-siena-maine-poll-crosstabs.html#composition-of-the-sample",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": 14.0
   },
   {
@@ -39617,6 +40044,29 @@
    "internal": false,
    "retrieved_at": "2026-10-29T17:17:44Z",
    "margin": 27.0
+  },
+  {
+   "id": "ceb72c370862ef13",
+   "race": "gov-MA",
+   "pollster": "University of Massachusetts Lowell Center for Public Opinion/YouGov",
+   "sponsor": null,
+   "field_start": "2026-10-07",
+   "field_end": "2026-10-18",
+   "population": "LV",
+   "n": 850,
+   "mode": null,
+   "toplines": {
+    "Andrea James": 4.0,
+    "Maura Healy": 57.0,
+    "Michael Minogue": 29.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "ra",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": null
   },
   {
    "id": "2e0ed2a356f9d676",
@@ -39772,7 +40222,7 @@
    "url": "https://scholars.unh.edu/survey_center_polls/973/",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -39794,7 +40244,7 @@
    "url": "https://www.bostonglobe.com/2026/06/16/metro/healey-voter-suffolk-poll-2026-midterm",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -39816,7 +40266,7 @@
    "url": "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1944&context=survey_center_polls",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -39838,7 +40288,7 @@
    "url": "https://scholars.unh.edu/cgi/viewcontent.cgi?article=1930&context=survey_center_polls",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -39882,7 +40332,7 @@
    "url": "https://www.wcvb.com/article/gop-challenger-healey-umass-poll-nov-2025/69253709",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -39904,7 +40354,7 @@
    "url": "https://assets.nationbuilder.com/fiscalalliancefoundation/pages/201/attachments/original/1759336363/Fiscal_Alliance_Foundation_Sept_2025_Poll_Results_-_FINAL.pdf?1759336363",
    "partisan": "REP",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -39926,7 +40376,29 @@
    "url": "https://www.270towin.com/uploads/UMassAmherst_022725.pdf#page=8",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
+   "margin": null
+  },
+  {
+   "id": "5060b4f35ec5b6e8",
+   "race": "gov-KS",
+   "pollster": "CNN/SSRS",
+   "sponsor": null,
+   "field_start": "2026-10-20",
+   "field_end": "2026-10-26",
+   "population": "LV",
+   "n": 838,
+   "mode": null,
+   "toplines": {
+    "Cindy Holscher": 45.0,
+    "Ty Masterson": 50.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://www.cnn.com/2026/10/29/politics/cnn-polls-michigan-maine-texas-kansas-senate-races-midterms-vis",
+   "partisan": null,
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -40060,6 +40532,28 @@
    "partisan": null,
    "internal": false,
    "retrieved_at": "2026-10-29T17:17:44Z",
+   "margin": null
+  },
+  {
+   "id": "da29a61a84f2bf88",
+   "race": "gov-IA",
+   "pollster": "co/efficient",
+   "sponsor": null,
+   "field_start": "2026-10-28",
+   "field_end": "2026-10-28",
+   "population": "LV",
+   "n": 1020,
+   "mode": null,
+   "toplines": {
+    "Rob Sand": 50.0,
+    "Zach Lahn": 45.0
+   },
+   "grade": null,
+   "grade_source": null,
+   "url": "https://battlegrounds.coefficient.org/ia/",
+   "partisan": "REP",
+   "internal": false,
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -40895,7 +41389,7 @@
    "url": "https://acrobat.adobe.com/id/urn:aaid:sc:US:29f66864-4f32-47fe-b5e2-85322b2a761b?viewer%21megaVerb=group-discover&utm_source=substack&utm_medium=email",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -40917,7 +41411,7 @@
    "url": "https://netchoice.org/wp-content/uploads/2026/04/NetChoice-Apr-2026-National-Antitrust-Survey-Topline.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -40939,7 +41433,7 @@
    "url": "https://netchoice.org/wp-content/uploads/2026/04/NetChoice-Apr-2026-National-Antitrust-Survey-Topline.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -41380,7 +41874,7 @@
    "url": "https://docs.google.com/document/d/1qaGOwbWKWk-5XYy9sSVIl06Njp4eAK3L9kYx1iKYPuI/edit?tab=t.0",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -41424,7 +41918,7 @@
    "url": "https://netchoice.org/wp-content/uploads/2026/04/NetChoice-Apr-2026-National-Antitrust-Survey-Topline.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -41490,7 +41984,7 @@
    "url": "https://static1.squarespace.com/static/6994d571bce3436c60d86870/t/69a83673b961e1161d90f552/1772631667881/PORL+2026+Spring+Statewide+LV+-+EMBARGO+3.4.26.pdf",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -41556,7 +42050,7 @@
    "url": "https://static1.squarespace.com/static/6994d571bce3436c60d86870/t/69962e376fb07f4b5e4c663a/1771449911414/UNF+PORL+Fall+Statewide+2025+LV+-+Press+Release+-+REVISED.pdf",
    "partisan": "DEM",
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -42758,7 +43252,7 @@
    "url": "https://x.com/PollTracker2024/status/2050660840278229202?s=20",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -44298,7 +44792,7 @@
    "url": "https://intel.morningconsult.com/mc-content/trackers/2026-midterm-election-generic-ballot-polls#05-24-2026",
    "partisan": null,
    "internal": false,
-   "retrieved_at": "2026-10-29T17:17:44Z",
+   "retrieved_at": "2026-10-29T19:08:04Z",
    "margin": null
   },
   {
@@ -54709,7 +55203,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-AL": {
    "margin": -6.8,
@@ -54755,7 +55249,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-AZ": {
    "margin": 5.9,
@@ -54801,7 +55295,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-CA": {
    "margin": 23.3,
@@ -54847,7 +55341,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-FL": {
    "margin": -4.2,
@@ -54893,7 +55387,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-GA": {
    "margin": -1.3,
@@ -54939,7 +55433,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-MD": {
    "margin": null,
@@ -54984,7 +55478,7 @@
     }
    ],
    "note": "fewer than 2 polls in the window — no desk average",
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-ME": {
    "margin": 9.2,
@@ -55030,11 +55524,11 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-MI": {
-   "margin": 7.7,
-   "n_polls": 12,
+   "margin": 8.7,
+   "n_polls": 14,
    "weights": {
     "half_life_days": 14,
     "lv_pref": 1.0,
@@ -55076,11 +55570,11 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-MN": {
-   "margin": 7.8,
-   "n_polls": 3,
+   "margin": 9.0,
+   "n_polls": 4,
    "weights": {
     "half_life_days": 14,
     "lv_pref": 1.0,
@@ -55122,7 +55616,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-NE": {
    "margin": -5.9,
@@ -55168,7 +55662,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-NV": {
    "margin": -3.7,
@@ -55214,7 +55708,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-NY": {
    "margin": 15.1,
@@ -55260,7 +55754,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-OH": {
    "margin": 2.9,
@@ -55306,7 +55800,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-OR": {
    "margin": 0.9,
@@ -55352,7 +55846,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-PA": {
    "margin": 22.1,
@@ -55398,7 +55892,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-RI": {
    "margin": 23.3,
@@ -55444,7 +55938,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-SC": {
    "margin": -11.7,
@@ -55490,7 +55984,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-SD": {
    "margin": null,
@@ -55535,7 +56029,7 @@
     }
    ],
    "note": "fewer than 2 polls in the window — no desk average",
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-TN": {
    "margin": -11.8,
@@ -55581,11 +56075,11 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-TX": {
-   "margin": -2.7,
-   "n_polls": 20,
+   "margin": -2.6,
+   "n_polls": 22,
    "weights": {
     "half_life_days": 14,
     "lv_pref": 1.0,
@@ -55627,7 +56121,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-VT": {
    "margin": -2.0,
@@ -55673,7 +56167,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "gov-WI": {
    "margin": 3.3,
@@ -55719,7 +56213,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "presidential-approval": {
    "margin": -26.0,
@@ -55765,7 +56259,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-AK": {
    "margin": 1.1,
@@ -55811,7 +56305,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-AL": {
    "margin": -13.9,
@@ -55857,11 +56351,11 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-AR": {
-   "margin": -9.7,
-   "n_polls": 2,
+   "margin": -12.0,
+   "n_polls": 3,
    "weights": {
     "half_life_days": 14,
     "lv_pref": 1.0,
@@ -55903,7 +56397,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-GA": {
    "margin": 9.6,
@@ -55949,11 +56443,11 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-IA": {
-   "margin": 0.1,
-   "n_polls": 15,
+   "margin": -0.1,
+   "n_polls": 16,
    "weights": {
     "half_life_days": 14,
     "lv_pref": 1.0,
@@ -55995,7 +56489,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-IL": {
    "margin": 16.2,
@@ -56041,56 +56535,10 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-KS": {
-   "margin": -0.1,
-   "n_polls": 3,
-   "weights": {
-    "half_life_days": 14,
-    "lv_pref": 1.0,
-    "rv_weight": 0.8,
-    "adult_weight": 0.6,
-    "grade_mult": 1.0,
-    "house_effects": false,
-    "min_polls": 2,
-    "internal_partisan_mult": 0.5,
-    "window_days": 60
-   },
-   "published": [
-    {
-     "name": "RealClearPolling",
-     "url": "https://www.realclearpolling.com/",
-     "value": null,
-     "as_of": null,
-     "note": "link only"
-    },
-    {
-     "name": "Silver Bulletin",
-     "url": "https://www.natesilver.net/",
-     "value": null,
-     "as_of": null,
-     "note": "link only (partly paid)"
-    },
-    {
-     "name": "Decision Desk HQ / The Hill averages",
-     "url": "https://elections2026.thehill.com/",
-     "value": null,
-     "as_of": null,
-     "note": "link only"
-    },
-    {
-     "name": "VoteHub averages",
-     "url": "https://votehub.com/polls/",
-     "value": null,
-     "as_of": null,
-     "note": "link only; polls via VoteHub API (CC BY 4.0)"
-    }
-   ],
-   "as_of": "2026-10-29T17:20:02Z"
-  },
-  "us-senate-MA": {
-   "margin": 26.8,
+   "margin": 2.0,
    "n_polls": 4,
    "weights": {
     "half_life_days": 14,
@@ -56133,7 +56581,53 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
+  },
+  "us-senate-MA": {
+   "margin": 27.6,
+   "n_polls": 5,
+   "weights": {
+    "half_life_days": 14,
+    "lv_pref": 1.0,
+    "rv_weight": 0.8,
+    "adult_weight": 0.6,
+    "grade_mult": 1.0,
+    "house_effects": false,
+    "min_polls": 2,
+    "internal_partisan_mult": 0.5,
+    "window_days": 60
+   },
+   "published": [
+    {
+     "name": "RealClearPolling",
+     "url": "https://www.realclearpolling.com/",
+     "value": null,
+     "as_of": null,
+     "note": "link only"
+    },
+    {
+     "name": "Silver Bulletin",
+     "url": "https://www.natesilver.net/",
+     "value": null,
+     "as_of": null,
+     "note": "link only (partly paid)"
+    },
+    {
+     "name": "Decision Desk HQ / The Hill averages",
+     "url": "https://elections2026.thehill.com/",
+     "value": null,
+     "as_of": null,
+     "note": "link only"
+    },
+    {
+     "name": "VoteHub averages",
+     "url": "https://votehub.com/polls/",
+     "value": null,
+     "as_of": null,
+     "note": "link only; polls via VoteHub API (CC BY 4.0)"
+    }
+   ],
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-ME": {
    "margin": 2.6,
@@ -56179,11 +56673,11 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-MI": {
-   "margin": 3.5,
-   "n_polls": 19,
+   "margin": 4.5,
+   "n_polls": 21,
    "weights": {
     "half_life_days": 14,
     "lv_pref": 1.0,
@@ -56225,7 +56719,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-MN": {
    "margin": 3.3,
@@ -56271,7 +56765,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-MS": {
    "margin": null,
@@ -56316,7 +56810,7 @@
     }
    ],
    "note": "fewer than 2 polls in the window — no desk average",
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-MT": {
    "margin": -21.5,
@@ -56362,7 +56856,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-NC": {
    "margin": 11.1,
@@ -56408,11 +56902,11 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-NH": {
-   "margin": 7.1,
-   "n_polls": 4,
+   "margin": 7.0,
+   "n_polls": 5,
    "weights": {
     "half_life_days": 14,
     "lv_pref": 1.0,
@@ -56454,7 +56948,7 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-NM": {
    "margin": null,
@@ -56499,7 +56993,7 @@
     }
    ],
    "note": "fewer than 2 polls in the window — no desk average",
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-RI": {
    "margin": 22.2,
@@ -56545,11 +57039,11 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-SC": {
-   "margin": -1.1,
-   "n_polls": 3,
+   "margin": -2.3,
+   "n_polls": 4,
    "weights": {
     "half_life_days": 14,
     "lv_pref": 1.0,
@@ -56591,11 +57085,11 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   },
   "us-senate-TX": {
-   "margin": 2.4,
-   "n_polls": 22,
+   "margin": 2.7,
+   "n_polls": 25,
    "weights": {
     "half_life_days": 14,
     "lv_pref": 1.0,
@@ -56637,208 +57131,208 @@
      "note": "link only; polls via VoteHub API (CC BY 4.0)"
     }
    ],
-   "as_of": "2026-10-29T17:20:02Z"
+   "as_of": "2026-10-29T19:08:22Z"
   }
  },
  "dedupe_log": [
   {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Suffolk University gov-MA 2026-06-08–2026-06-12 (RV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Suffolk University us-senate-MA 2026-06-08–2026-06-12 (RV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Change Research us-senate-FL 2026-05-13–2026-05-16 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Zenith Research us-senate-MI 2026-06-11–2026-06-14 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Zenith Research us-senate-MI 2026-06-11–2026-06-14 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "The Public Sentiment Institute us-senate-VA 2026-06-12–2026-06-16 (RV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "The Public Sentiment Institute us-senate-VA 2026-06-12–2026-06-16 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "The Public Sentiment Institute us-senate-VA 2026-06-12–2026-06-16 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "The Public Sentiment Institute us-senate-VA 2026-06-12–2026-06-16 (RV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "University of New Hampshire us-house-ME-02 2026-02-12–2026-02-16 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "The New York Times/Siena University gov-ME 2026-06-19–2026-06-26 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "University of New Hampshire us-senate-MA 2026-06-18–2026-06-23 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "University of New Hampshire gov-MA 2026-06-18–2026-06-23 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "University of New Hampshire us-senate-NH 2026-06-18–2026-06-23 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Saint Anselm us-senate-NH 2026-06-24–2026-06-25 (RV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "University of New Hampshire gov-RI 2026-06-18–2026-06-23 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "University of New Hampshire gov-VT 2026-06-18–2026-06-23 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
+   "at": "2026-10-29T19:08:04Z",
    "note": "Tavern Research us-senate-MT 2026-06-16–2026-06-19 (LV) republished with changed toplines; superseded earlier row"
   },
   {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Tavern Research us-senate-MT 2026-06-16–2026-06-19 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
+   "at": "2026-10-29T19:08:04Z",
    "note": "Quantus Insights us-senate-MI 2026-06-29–2026-06-30 (LV) republished with changed toplines; superseded earlier row"
   },
   {
-   "at": "2026-10-29T17:17:44Z",
+   "at": "2026-10-29T19:08:04Z",
    "note": "Quantus Insights us-senate-MI 2026-06-29–2026-06-30 (LV) republished with changed toplines; superseded earlier row"
   },
   {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Marquette University Law School gov-WI 2026-07-08–2026-07-16 (LV) republished with changed toplines; superseded earlier row"
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Quantus Insights us-senate-MI 2026-06-29–2026-06-30 (LV) republished with changed toplines; superseded earlier row"
   },
   {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Marquette University Law School gov-WI 2026-07-08–2026-07-16 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "University of New Hampshire gov-VT 2026-07-15–2026-07-20 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Tavern Research us-senate-MT 2026-07-23–2026-07-27 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Tavern Research us-senate-MT 2026-07-23–2026-07-27 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Tavern Research us-senate-MT 2026-07-23–2026-07-27 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Tavern Research us-senate-MT 2026-07-23–2026-07-27 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Tavern Research us-senate-MT 2026-07-23–2026-07-27 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "GQR us-senate-MT 2026-07-23–2026-07-26 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "GQR us-senate-MT 2026-07-23–2026-07-26 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "GQR us-senate-MT 2026-07-23–2026-07-26 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "GQR us-senate-MT 2026-07-23–2026-07-26 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Glengariff Group, Inc. us-senate-MI 2026-07-22–2026-07-24 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Glengariff Group, Inc. gov-MI 2026-07-22–2026-07-24 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "RMG Research gov-WI 2026-07-20–2026-07-24 (RV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "RMG Research gov-WI 2026-07-20–2026-07-24 (RV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "EPIC-MRA us-senate-MI 2026-07-24–2026-07-31 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Mitchell Research & Communications us-senate-MI 2026-07-28–2026-07-29 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Mitchell Research & Communications gov-MI 2026-07-28–2026-07-29 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Alaska Survey Research us-house-AK-01 2026-08-02–2026-08-05 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Alaska Survey Research us-house-AK-01 2026-08-02–2026-08-05 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "University of Massachusetts Department of Political Science/YouGov us-senate-MA 2026-08-05–2026-08-12 (RV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "University of North Florida us-senate-FL 2026-02-21–2026-03-02 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
-   "note": "Emerson College us-senate-FL 2026-03-29–2026-03-31 (LV) republished with changed toplines; superseded earlier row"
-  },
-  {
-   "at": "2026-10-29T17:17:44Z",
+   "at": "2026-10-29T19:08:04Z",
    "note": "University of North Florida us-senate-FL 2026-07-08–2026-07-17 (LV) republished with changed toplines; superseded earlier row"
   },
   {
-   "at": "2026-10-29T17:17:44Z",
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Marquette University Law School gov-WI 2026-07-08–2026-07-16 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Marquette University Law School gov-WI 2026-07-08–2026-07-16 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Marquette University Law School gov-WI 2026-07-08–2026-07-16 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "University of New Hampshire gov-VT 2026-07-15–2026-07-20 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "University of New Hampshire gov-VT 2026-07-15–2026-07-20 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Tavern Research us-senate-MT 2026-07-23–2026-07-27 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Tavern Research us-senate-MT 2026-07-23–2026-07-27 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Tavern Research us-senate-MT 2026-07-23–2026-07-27 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Tavern Research us-senate-MT 2026-07-23–2026-07-27 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Tavern Research us-senate-MT 2026-07-23–2026-07-27 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Tavern Research us-senate-MT 2026-07-23–2026-07-27 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "GQR us-senate-MT 2026-07-23–2026-07-26 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "GQR us-senate-MT 2026-07-23–2026-07-26 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "GQR us-senate-MT 2026-07-23–2026-07-26 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "GQR us-senate-MT 2026-07-23–2026-07-26 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "GQR us-senate-MT 2026-07-23–2026-07-26 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Glengariff Group, Inc. us-senate-MI 2026-07-22–2026-07-24 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Glengariff Group, Inc. us-senate-MI 2026-07-22–2026-07-24 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Glengariff Group, Inc. gov-MI 2026-07-22–2026-07-24 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Glengariff Group, Inc. gov-MI 2026-07-22–2026-07-24 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "RMG Research gov-WI 2026-07-20–2026-07-24 (RV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "RMG Research gov-WI 2026-07-20–2026-07-24 (RV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "RMG Research gov-WI 2026-07-20–2026-07-24 (RV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "EPIC-MRA us-senate-MI 2026-07-24–2026-07-31 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "EPIC-MRA us-senate-MI 2026-07-24–2026-07-31 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Mitchell Research & Communications us-senate-MI 2026-07-28–2026-07-29 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Mitchell Research & Communications us-senate-MI 2026-07-28–2026-07-29 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Mitchell Research & Communications gov-MI 2026-07-28–2026-07-29 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Mitchell Research & Communications gov-MI 2026-07-28–2026-07-29 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Alaska Survey Research us-house-AK-01 2026-08-02–2026-08-05 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Alaska Survey Research us-house-AK-01 2026-08-02–2026-08-05 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Alaska Survey Research us-house-AK-01 2026-08-02–2026-08-05 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "University of Massachusetts Department of Political Science/YouGov us-senate-MA 2026-08-05–2026-08-12 (RV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "University of Massachusetts Department of Political Science/YouGov us-senate-MA 2026-08-05–2026-08-12 (RV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "University of North Florida us-senate-FL 2026-02-21–2026-03-02 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Emerson College us-senate-FL 2026-03-29–2026-03-31 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "University of North Florida us-senate-FL 2026-07-08–2026-07-17 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
    "note": "Saint Anselm College Survey Center us-senate-NH 2026-08-17–2026-08-18 (LV) republished with changed toplines; superseded earlier row"
   },
   {
-   "at": "2026-10-29T17:17:44Z",
+   "at": "2026-10-29T19:08:04Z",
+   "note": "Saint Anselm College Survey Center us-senate-NH 2026-08-17–2026-08-18 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
    "note": "University of New Hampshire us-senate-NH 2026-08-20–2026-08-24 (LV) republished with changed toplines; superseded earlier row"
   },
   {
-   "at": "2026-10-29T17:17:44Z",
+   "at": "2026-10-29T19:08:04Z",
+   "note": "University of New Hampshire us-senate-NH 2026-08-20–2026-08-24 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
    "note": "University of New Hampshire us-senate-MA 2026-08-20–2026-08-24 (LV) republished with changed toplines; superseded earlier row"
   },
   {
-   "at": "2026-10-29T17:17:44Z",
+   "at": "2026-10-29T19:08:04Z",
+   "note": "University of New Hampshire us-senate-MA 2026-08-20–2026-08-24 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
+   "note": "co/efficient us-senate-OH 2026-10-05–2026-10-06 (LV) republished with changed toplines; superseded earlier row"
+  },
+  {
+   "at": "2026-10-29T19:08:04Z",
    "note": "co/efficient us-senate-OH 2026-10-05–2026-10-06 (LV) republished with changed toplines; superseded earlier row"
   }
  ]

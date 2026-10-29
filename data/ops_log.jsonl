@@ -27,3 +27,13 @@
 {"at": "2026-10-29T18:53:22Z", "changes": 0, "entries": 35, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-20", "snapshot": "ratings_cook_senate:2026-10-29T18:53:22Z:984c36de2552", "source_id": "ratings_cook_senate", "stored": 35}
 {"at": "2026-10-29T18:53:23Z", "changes": 0, "entries": 36, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-27", "snapshot": "ratings_cook_governor:2026-10-29T18:53:23Z:ffa4aa628a9a", "source_id": "ratings_cook_governor", "stored": 36}
 {"at": "2026-10-29T18:56:04Z", "changes": 0, "entries": 81, "event": "ratings_pull", "link_only_skipped": 77, "page_date": "2026-10-23", "snapshot": "ratings_cook_house:2026-10-29T18:56:04Z:4c4c142ea952", "source_id": "ratings_cook_house", "stored": 4}
+{"added": 284, "at": "2026-10-29T19:08:04Z", "event": "votehub_pull", "in_feed": 6021, "mapped": 2657, "snapshot": "polls_votehub_api:2026-10-29T19:08:04Z:57ceb87cc25c", "source_id": "polls_votehub_api"}
+{"at": "2026-10-29T19:08:06Z", "changes": 0, "entries": 35, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_senate:2026-10-29T19:08:06Z:e3c797af9587", "source_id": "ratings_ie_senate", "stored": 35}
+{"at": "2026-10-29T19:08:07Z", "changes": 0, "entries": 36, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_governor:2026-10-29T19:08:07Z:f6267a0bcfa4", "source_id": "ratings_ie_governor", "stored": 36}
+{"at": "2026-10-29T19:08:08Z", "changes": 0, "entries": 435, "event": "ratings_pull", "link_only_skipped": 422, "page_date": "2026-10-29", "snapshot": "ratings_ie_house:2026-10-29T19:08:08Z:2b90afd76943", "source_id": "ratings_ie_house", "stored": 13}
+{"at": "2026-10-29T19:08:10Z", "event": "early_vote_pull", "records": 19, "snapshot": "ev_nc_absentee_counts_csv:2026-10-29T19:08:10Z:2db213de55f5", "source_id": "ev_nc_absentee_counts_csv", "total": 2150024}
+{"at": "2026-10-29T19:08:12Z", "event": "early_vote_pull", "records": 1020, "snapshot": "ev_fl_publicstats:2026-10-29T19:08:12Z:b4b7c865bd39", "source_id": "ev_fl_publicstats"}
+{"at": "2026-10-29T19:08:13Z", "display_only": true, "event": "early_vote_pull", "records": 435, "snapshot": "ev_ufl_election_lab:2026-10-29T19:08:13Z:615be8863e1b", "source_id": "ev_ufl_election_lab"}
+{"at": "2026-10-29T19:08:15Z", "candidates": [], "event": "ev_discover_pending", "source_id": "enr_ga_ev"}
+{"at": "2026-10-29T19:08:15Z", "candidates": [], "event": "ev_discover_pending", "source_id": "enr_id_ev"}
+{"at": "2026-10-29T19:08:19Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
