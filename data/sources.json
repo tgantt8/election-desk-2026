@@ -624,13 +624,13 @@
    "election_night_cadence_min": null,
    "coverage": "Statewide + by county; party registration (D, R, UNA, LIB, GRN), race, ethnicity, gender; 'Comparison to 2022' block; daily PDFs for 2022 and 2024 in the same folder pattern (baselines)",
    "status": "VERIFIED",
-   "status_reason": "2026-10-28 and 2026-10-29 PDFs downloaded (200) and text-extracted with pypdf; 2022 and 2024 S3 folder listings retrieved. Published ~13:12 GMT. Alarm on layout change.",
+   "status_reason": "2026-10-28 and 2026-10-29 PDFs downloaded (200) and text-extracted with pypdf; 2022 and 2024 S3 folder listings retrieved. Published ~13:12 GMT. Alarm on layout change. | dated URL pattern; needs a date-resolving poller before activation",
    "verified_at": "2026-10-29",
    "poller": "pdf_hash",
    "decision_needed": null,
    "last_success_at": null,
    "last_error": "",
-   "active": true
+   "active": false
   },
   {
    "id": "ev_nc_absentee_counts_csv",

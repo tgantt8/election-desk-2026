@@ -17,7 +17,7 @@ from common import DATA, load_json, ops_log  # noqa: E402
 
 IMPLEMENTED = {
     "clarity": ("poll_clarity", lambda m, s, st: m.run(s["url"].rstrip("/"), s["id"], st)),
-    "pdf_hash": ("poll_macomb_pdf", lambda m, s, st: m.run(s["url"], s["id"], st)),
+    "pdf_hash": ("poll_macomb_pdf", lambda m, s, st: m.run(s["url"], s["id"], st, layer=s["layer"])),
     "enhanced_voting": ("poll_enhanced_voting", lambda m, s, st: m.run_source(s, st)),
 }
 

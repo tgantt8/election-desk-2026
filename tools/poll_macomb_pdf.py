@@ -20,7 +20,7 @@ from common import DATA, USER_AGENT, append_jsonl, last_snapshot_hash, ops_log, 
 URL = "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf"
 
 
-def run(url, source_id, state_file, dry_run=False):
+def run(url, source_id, state_file, dry_run=False, layer="results"):
     state = json.load(open(state_file)) if os.path.exists(state_file) else {}
     headers = {"User-Agent": USER_AGENT}
     if state.get("etag"):
@@ -57,8 +57,8 @@ def run(url, source_id, state_file, dry_run=False):
             pass
         except Exception as e:  # noqa: BLE001
             parse_status = f"parse_error: {str(e)[:120]}"
-        snap = record_snapshot(source_id, "results", raw, parse_status, keep_raw=True, note=f"Last-Modified {r.headers.get('Last-Modified', '')}")
-        if not dry_run:
+        snap = record_snapshot(source_id, layer, raw, parse_status, keep_raw=True, note=f"Last-Modified {r.headers.get('Last-Modified', '')}")
+        if not dry_run and layer == "results":
             for rec in recs:
                 rec.update({"source_id": source_id, "snapshot_id": snap["id"], "as_of": r.headers.get("Last-Modified") or snap["fetched_at"], "unofficial": True})
                 append_jsonl(os.path.join(DATA, "results", f"{source_id}.jsonl"), rec)
