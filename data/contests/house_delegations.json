@@ -1,0 +1,767 @@
+{
+ "_layer": "contests",
+ "_note": "Current U.S. House delegation by state (voting members), from the Clerk's member list; totals 218R/214D/1I/2 vacant. new_lines marks states whose 2026 congressional map differs from 2024.",
+ "source": {
+  "name": "Clerk of the U.S. House, Member List",
+  "url": "https://clerk.house.gov/Members/ViewMemberList",
+  "retrieved_at": "2026-10-29T17:10:00Z"
+ },
+ "totals": {
+  "d": 214,
+  "r": 218,
+  "i": 1,
+  "vacant": 2
+ },
+ "states": [
+  {
+   "state": "AL",
+   "seats": 7,
+   "current": {
+    "d": 2,
+    "r": 5,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-AL",
+   "office": "U.S. House delegation",
+   "new_lines": true,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "AK",
+   "seats": 1,
+   "current": {
+    "d": 0,
+    "r": 1,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-AK",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "AZ",
+   "seats": 9,
+   "current": {
+    "d": 3,
+    "r": 6,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-AZ",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "AR",
+   "seats": 4,
+   "current": {
+    "d": 0,
+    "r": 4,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-AR",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "CA",
+   "seats": 52,
+   "current": {
+    "d": 43,
+    "r": 8,
+    "i": 1,
+    "vacant": 0
+   },
+   "id": "us-house-CA",
+   "office": "U.S. House delegation",
+   "new_lines": true,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "CO",
+   "seats": 8,
+   "current": {
+    "d": 4,
+    "r": 4,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-CO",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "CT",
+   "seats": 5,
+   "current": {
+    "d": 5,
+    "r": 0,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-CT",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "DE",
+   "seats": 1,
+   "current": {
+    "d": 1,
+    "r": 0,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-DE",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "FL",
+   "seats": 28,
+   "current": {
+    "d": 7,
+    "r": 20,
+    "i": 0,
+    "vacant": 1
+   },
+   "id": "us-house-FL",
+   "office": "U.S. House delegation",
+   "new_lines": true,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "GA",
+   "seats": 14,
+   "current": {
+    "d": 5,
+    "r": 9,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-GA",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "HI",
+   "seats": 2,
+   "current": {
+    "d": 2,
+    "r": 0,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-HI",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "ID",
+   "seats": 2,
+   "current": {
+    "d": 0,
+    "r": 2,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-ID",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "IL",
+   "seats": 17,
+   "current": {
+    "d": 14,
+    "r": 3,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-IL",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "IN",
+   "seats": 9,
+   "current": {
+    "d": 2,
+    "r": 7,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-IN",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "IA",
+   "seats": 4,
+   "current": {
+    "d": 0,
+    "r": 4,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-IA",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "KS",
+   "seats": 4,
+   "current": {
+    "d": 1,
+    "r": 3,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-KS",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "KY",
+   "seats": 6,
+   "current": {
+    "d": 1,
+    "r": 5,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-KY",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "LA",
+   "seats": 6,
+   "current": {
+    "d": 2,
+    "r": 4,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-LA",
+   "office": "U.S. House delegation",
+   "new_lines": true,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "ME",
+   "seats": 2,
+   "current": {
+    "d": 2,
+    "r": 0,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-ME",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "MD",
+   "seats": 8,
+   "current": {
+    "d": 7,
+    "r": 1,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-MD",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "MA",
+   "seats": 9,
+   "current": {
+    "d": 9,
+    "r": 0,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-MA",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "MI",
+   "seats": 13,
+   "current": {
+    "d": 6,
+    "r": 7,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-MI",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "MN",
+   "seats": 8,
+   "current": {
+    "d": 4,
+    "r": 4,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-MN",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "MS",
+   "seats": 4,
+   "current": {
+    "d": 1,
+    "r": 3,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-MS",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "MO",
+   "seats": 8,
+   "current": {
+    "d": 2,
+    "r": 6,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-MO",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "MT",
+   "seats": 2,
+   "current": {
+    "d": 0,
+    "r": 2,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-MT",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "NE",
+   "seats": 3,
+   "current": {
+    "d": 0,
+    "r": 3,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-NE",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "NV",
+   "seats": 4,
+   "current": {
+    "d": 3,
+    "r": 1,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-NV",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "NH",
+   "seats": 2,
+   "current": {
+    "d": 2,
+    "r": 0,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-NH",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "NJ",
+   "seats": 12,
+   "current": {
+    "d": 9,
+    "r": 3,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-NJ",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "NM",
+   "seats": 3,
+   "current": {
+    "d": 3,
+    "r": 0,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-NM",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "NY",
+   "seats": 26,
+   "current": {
+    "d": 19,
+    "r": 7,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-NY",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "NC",
+   "seats": 14,
+   "current": {
+    "d": 4,
+    "r": 10,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-NC",
+   "office": "U.S. House delegation",
+   "new_lines": true,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "ND",
+   "seats": 1,
+   "current": {
+    "d": 0,
+    "r": 1,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-ND",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "OH",
+   "seats": 15,
+   "current": {
+    "d": 5,
+    "r": 10,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-OH",
+   "office": "U.S. House delegation",
+   "new_lines": true,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "OK",
+   "seats": 5,
+   "current": {
+    "d": 0,
+    "r": 5,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-OK",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "OR",
+   "seats": 6,
+   "current": {
+    "d": 5,
+    "r": 1,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-OR",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "PA",
+   "seats": 17,
+   "current": {
+    "d": 7,
+    "r": 10,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-PA",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "RI",
+   "seats": 2,
+   "current": {
+    "d": 2,
+    "r": 0,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-RI",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "SC",
+   "seats": 7,
+   "current": {
+    "d": 1,
+    "r": 6,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-SC",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "SD",
+   "seats": 1,
+   "current": {
+    "d": 0,
+    "r": 1,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-SD",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "TN",
+   "seats": 9,
+   "current": {
+    "d": 1,
+    "r": 8,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-TN",
+   "office": "U.S. House delegation",
+   "new_lines": true,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "TX",
+   "seats": 38,
+   "current": {
+    "d": 13,
+    "r": 24,
+    "i": 0,
+    "vacant": 1
+   },
+   "id": "us-house-TX",
+   "office": "U.S. House delegation",
+   "new_lines": true,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "UT",
+   "seats": 4,
+   "current": {
+    "d": 0,
+    "r": 4,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-UT",
+   "office": "U.S. House delegation",
+   "new_lines": true,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "VT",
+   "seats": 1,
+   "current": {
+    "d": 1,
+    "r": 0,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-VT",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "VA",
+   "seats": 11,
+   "current": {
+    "d": 6,
+    "r": 5,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-VA",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "WA",
+   "seats": 10,
+   "current": {
+    "d": 8,
+    "r": 2,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-WA",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "WV",
+   "seats": 2,
+   "current": {
+    "d": 0,
+    "r": 2,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-WV",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "WI",
+   "seats": 8,
+   "current": {
+    "d": 2,
+    "r": 6,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-WI",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  },
+  {
+   "state": "WY",
+   "seats": 1,
+   "current": {
+    "d": 0,
+    "r": 1,
+    "i": 0,
+    "vacant": 0
+   },
+   "id": "us-house-WY",
+   "office": "U.S. House delegation",
+   "new_lines": false,
+   "districts": null,
+   "baseline_note": "District-level 2024 presidential margins on 2026 lines not loaded yet — shown as 'no baseline' (P2)."
+  }
+ ]
+}
