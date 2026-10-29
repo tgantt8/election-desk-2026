@@ -14,9 +14,23 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import DATA, ROOT, load_json, read_jsonl, utcnow  # noqa: E402
 
 OUT = os.path.join(ROOT, "docs", "data")
-RATING_SCALE = {"Solid D": -3, "Safe D": -3, "Likely D": -2, "Lean D": -1, "Leans D": -1, "Tilt D": -1,
+RATING_SCALE = {"Solid D": -3, "Safe D": -3, "Likely D": -2, "Lean D": -1, "Leans D": -1, "Tilt D": -1, "Battleground D": -1,
                 "Toss-up": 0, "Toss Up": 0, "Tossup": 0,
-                "Tilt R": 1, "Lean R": 1, "Leans R": 1, "Likely R": 2, "Solid R": 3, "Safe R": 3}
+                "Battleground R": 1, "Tilt R": 1, "Lean R": 1, "Leans R": 1, "Likely R": 2, "Solid R": 3, "Safe R": 3}
+
+
+def latest_per_source(layer, skip=("changes.jsonl",)):
+    """Append-only layer files data/<layer>/<source>.jsonl → the rows of each source's last snapshot."""
+    out = []
+    for path in sorted(glob.glob(os.path.join(DATA, layer, "*.jsonl"))):
+        if os.path.basename(path) in skip:
+            continue
+        rows = read_jsonl(path)
+        if not rows:
+            continue
+        last = rows[-1].get("snapshot_id")
+        out.extend(r for r in rows if r.get("snapshot_id") == last)
+    return out
 
 
 def write(name, obj):
@@ -56,15 +70,16 @@ def build():
     govs = load_json(os.path.join(DATA, "contests", "governors_2026.json"), {"races": []})["races"]
     house = load_json(os.path.join(DATA, "contests", "house_delegations.json"), {"states": []})["states"]
     new_lines = load_json(os.path.join(DATA, "contests", "new_lines.json"), {})
-    ratings_latest = read_jsonl(os.path.join(DATA, "ratings", "latest.jsonl"))
+    ratings_latest = latest_per_source("ratings")
     rat_by_race = {}
     for r in ratings_latest:
         rat_by_race.setdefault(r["race"], []).append(r)
     for race in senate + govs:
         rs = rat_by_race.get(race["id"], [])
         race["ratings"] = [{"rater": r["rater"], "label": r["label"], "date": r.get("date"), "url": r.get("url")} for r in rs]
-        primary = next((r for r in rs if r["rater"] == "Cook Political Report"), rs[0] if rs else None)
+        primary = next((r for r in rs if r["rater"] == "Cook Political Report"), next((r for r in rs if RATING_SCALE.get(r["label"]) is not None), None))
         race["rating_scale"] = RATING_SCALE.get(primary["label"]) if primary else None
+        race["rating_primary"] = {"rater": primary["rater"], "label": primary["label"], "date": primary.get("date"), "url": primary.get("url")} if primary else None
     # Senate holdovers: seats not up in 2026, by party of the current holder.
     if chambers and senate:
         up = {r["state"] + ":" + str(r.get("class", "")) for r in senate}
@@ -80,9 +95,15 @@ def build():
     write("contests.json", {"chambers": chambers, "senate_2026": senate, "governors_2026": govs, "house_delegations": house, "new_lines": new_lines})
 
     write("ratings.json", {"primary_rater": "Cook Political Report", "as_of": max((r.get("date") or "" for r in ratings_latest), default=None) or None,
-                           "latest": ratings_latest, "changes": read_jsonl(os.path.join(DATA, "ratings", "changes.jsonl"))})
+                           "latest": ratings_latest, "changes": read_jsonl(os.path.join(DATA, "ratings", "changes.jsonl"))[-200:],
+                           "scope_note": "Labels, dates and links only. House labels are stored for Michigan districts; other districts link to the rater's page.",
+                           "raters": sorted({r["rater"] for r in ratings_latest})})
     write("polls.json", load_json(os.path.join(DATA, "polls", "site.json"), None) or {"records": [], "averages": {}, "dedupe_log": []})
-    write("early_vote.json", {"records": read_jsonl(os.path.join(DATA, "early_vote", "latest.jsonl"))})
+    ev_all = latest_per_source("early_vote")
+    ev_state = [r for r in ev_all if r.get("geo_level", "state") != "county"]
+    write("early_vote.json", {"records": ev_state, "county_rows_in_layer": len(ev_all) - len(ev_state),
+                              "banner": "Who voted, not how they voted. Ballots requested, returned and cast, and party registration where a state publishes it. Not vote choice.",
+                              "sources": sorted({(r.get("source") or "") for r in ev_all})})
     results = load_json(os.path.join(DATA, "results", "site.json"), None) or {"national": [], "macomb_tier1": [], "macomb_detail": {}, "chamber_calls": {"senate": {"d": 0, "r": 0, "i": 0}, "house": {"d": 0, "r": 0, "i": 0}}}
     results["macomb_snapshots"] = [s for s in snaps if s["source_id"].startswith("macomb")][-50:]
     write("results.json", results)

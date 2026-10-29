@@ -1,12 +1,13 @@
 name: manual-entry
-# Append a manually entered record set (results pasted from a source, or an attributed media call) to the right layer.
+# Append a manually entered record set (results pasted from a source, an attributed media call, a hand-captured rating label, or a
+# Michigan dashboard early-vote capture) to the right layer.
 # The payload is the JSON the desk's Ops panel copies to the clipboard ("Copy as JSON" / "Copy call JSON").
 # Nothing is overwritten: every entry is a new snapshot row plus appended records.
 on:
   workflow_dispatch:
     inputs:
       layer:
-        description: "results or calls"
+        description: "results, calls, ratings or early_vote"
         required: true
         default: "calls"
       payload:

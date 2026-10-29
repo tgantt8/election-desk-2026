@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Append a manual entry to the results or calls layer. Used by the manual-entry workflow and from the shell.
 
+ratings payload: {"layer":"ratings","entered_by":...,"records":[{race, rater, label, label_raw, date, url, office, state}]} — a label, a date and a link, nothing else.
+early_vote payload: {"layer":"early_vote","entered_by":...,"records":[{geography, geo_level, state, metric, party, mode, value, as_of, source, url, note}]}
+  (e.g. a Michigan Voting Dashboard capture: mail ballots requested / returned, early in-person ballots cast, by county or municipality).
 results payload (from the Ops panel "Copy as JSON"): {"layer":"results","entered_by":..., "rows":[{"label":..., "numbers":[...]}], ...}
   → the caller must supply contest/candidate mapping in the payload as "records": [{contest_id, contest_name, unit, mode, candidate, party, votes}] for it to
     reach the site; raw "rows" are kept in the snapshot only.
@@ -18,7 +21,7 @@ from common import DATA, append_jsonl, ops_log, record_snapshot, utcnow  # noqa:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--layer", required=True, choices=["results", "calls"])
+    ap.add_argument("--layer", required=True, choices=["results", "calls", "ratings", "early_vote"])
     ap.add_argument("--payload", help="JSON string")
     ap.add_argument("--payload-env", help="name of an env var holding the JSON")
     ap.add_argument("--note", default="")
@@ -36,6 +39,19 @@ def main():
             sys.exit("a call needs outlet and called_at")
         append_jsonl(os.path.join(DATA, "calls", "calls.jsonl"), rec)
         print("call appended:", rec["contest"], rec["outlet"], rec["status"])
+    elif a.layer in ("ratings", "early_vote"):
+        n = 0
+        for r in payload.get("records", []):
+            if a.layer == "ratings" and not (r.get("race") and r.get("rater") and r.get("label") and r.get("date") and r.get("url")):
+                sys.exit("a ratings record needs race, rater, label, date and url (label + date + link only)")
+            if a.layer == "early_vote" and not (r.get("geography") and r.get("metric") and r.get("value") is not None and r.get("as_of") and r.get("source")):
+                sys.exit("an early-vote record needs geography, metric, value, as_of and source")
+            r.update({"layer": a.layer, "source_id": source_id, "snapshot_id": snap["id"], "fetched_at": snap["fetched_at"], "entered_by": payload.get("entered_by", "manual"),
+                      "entered_at": utcnow(), "note": (r.get("note") or "") + (f" {a.note}" if a.note else "")})
+            r.setdefault("display_only", False)
+            append_jsonl(os.path.join(DATA, a.layer, f"{source_id}.jsonl"), r)
+            n += 1
+        print(f"{a.layer} appended: {n} records (manual capture; snapshot {snap['id']})")
     else:
         n = 0
         for r in payload.get("records", []):
