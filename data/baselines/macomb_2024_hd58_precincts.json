@@ -1,0 +1,1370 @@
+{
+ "_layer": "baselines",
+ "cycle": 2024,
+ "contest": "hd58",
+ "line_vintage": "2022 MICRC maps",
+ "source": {
+  "file": "fixtures/macomb_2024_hd58_precincts.csv",
+  "url": "https://pastelections.macombgov.org/api/download_contest/11815_table.csv?split_party=false&vote_channels=all",
+  "name": "Macomb County Clerk Past Elections database (Civera ElectionStats), vote_channels=all"
+ },
+ "tie_out": "PASS",
+ "candidates": [
+  {
+   "name": "Ron Robinson",
+   "party": "Republican"
+  },
+  {
+   "name": "Nate Shannon",
+   "party": "Democratic"
+  }
+ ],
+ "district": {
+  "unit_type": "State Legislature District",
+  "unit": "58",
+  "values": {
+   "Ron Robinson": {
+    "ED": 10969,
+    "AVCB": 6721,
+    "EV": 7235,
+    "TOTAL": 24925
+   },
+   "Nate Shannon": {
+    "ED": 7979,
+    "AVCB": 10424,
+    "EV": 3536,
+    "TOTAL": 21939
+   },
+   "Write-In": {
+    "ED": 183,
+    "AVCB": 63,
+    "EV": 61,
+    "TOTAL": 307
+   },
+   "Total Votes Cast": {
+    "ED": 19131,
+    "AVCB": 17208,
+    "EV": 10832,
+    "TOTAL": 47171
+   },
+   "Overvotes/Undervotes": {
+    "ED": 1138,
+    "AVCB": 765,
+    "EV": 525,
+    "TOTAL": 2428
+   },
+   "Total Ballots Cast": {
+    "ED": 20269,
+    "AVCB": 17973,
+    "EV": 11357,
+    "TOTAL": 49599
+   }
+  }
+ },
+ "precincts": [
+  {
+   "unit_type": "Precinct",
+   "unit": "Shelby Township, Precinct 4",
+   "values": {
+    "Ron Robinson": {
+     "ED": 313,
+     "AVCB": 313,
+     "EV": 230,
+     "TOTAL": 856
+    },
+    "Nate Shannon": {
+     "ED": 138,
+     "AVCB": 250,
+     "EV": 73,
+     "TOTAL": 461
+    },
+    "Write-In": {
+     "ED": 6,
+     "AVCB": 5,
+     "EV": 2,
+     "TOTAL": 13
+    },
+    "Total Votes Cast": {
+     "ED": 457,
+     "AVCB": 568,
+     "EV": 305,
+     "TOTAL": 1330
+    },
+    "Overvotes/Undervotes": {
+     "ED": 34,
+     "AVCB": 33,
+     "EV": 14,
+     "TOTAL": 81
+    },
+    "Total Ballots Cast": {
+     "ED": 491,
+     "AVCB": 601,
+     "EV": 319,
+     "TOTAL": 1411
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Shelby Township, Precinct 6",
+   "values": {
+    "Ron Robinson": {
+     "ED": 371,
+     "AVCB": 173,
+     "EV": 182,
+     "TOTAL": 726
+    },
+    "Nate Shannon": {
+     "ED": 216,
+     "AVCB": 236,
+     "EV": 65,
+     "TOTAL": 517
+    },
+    "Write-In": {
+     "ED": 5,
+     "AVCB": 0,
+     "EV": 1,
+     "TOTAL": 6
+    },
+    "Total Votes Cast": {
+     "ED": 592,
+     "AVCB": 409,
+     "EV": 248,
+     "TOTAL": 1249
+    },
+    "Overvotes/Undervotes": {
+     "ED": 38,
+     "AVCB": 12,
+     "EV": 14,
+     "TOTAL": 64
+    },
+    "Total Ballots Cast": {
+     "ED": 630,
+     "AVCB": 421,
+     "EV": 262,
+     "TOTAL": 1313
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Shelby Township, Precinct 9",
+   "values": {
+    "Ron Robinson": {
+     "ED": 263,
+     "AVCB": 134,
+     "EV": 170,
+     "TOTAL": 567
+    },
+    "Nate Shannon": {
+     "ED": 233,
+     "AVCB": 224,
+     "EV": 90,
+     "TOTAL": 547
+    },
+    "Write-In": {
+     "ED": 5,
+     "AVCB": 2,
+     "EV": 3,
+     "TOTAL": 10
+    },
+    "Total Votes Cast": {
+     "ED": 501,
+     "AVCB": 360,
+     "EV": 263,
+     "TOTAL": 1124
+    },
+    "Overvotes/Undervotes": {
+     "ED": 28,
+     "AVCB": 21,
+     "EV": 10,
+     "TOTAL": 59
+    },
+    "Total Ballots Cast": {
+     "ED": 529,
+     "AVCB": 381,
+     "EV": 273,
+     "TOTAL": 1183
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Shelby Township, Precinct 10",
+   "values": {
+    "Ron Robinson": {
+     "ED": 368,
+     "AVCB": 254,
+     "EV": 185,
+     "TOTAL": 807
+    },
+    "Nate Shannon": {
+     "ED": 131,
+     "AVCB": 210,
+     "EV": 63,
+     "TOTAL": 404
+    },
+    "Write-In": {
+     "ED": 1,
+     "AVCB": 2,
+     "EV": 2,
+     "TOTAL": 5
+    },
+    "Total Votes Cast": {
+     "ED": 500,
+     "AVCB": 466,
+     "EV": 250,
+     "TOTAL": 1216
+    },
+    "Overvotes/Undervotes": {
+     "ED": 29,
+     "AVCB": 36,
+     "EV": 10,
+     "TOTAL": 75
+    },
+    "Total Ballots Cast": {
+     "ED": 529,
+     "AVCB": 502,
+     "EV": 260,
+     "TOTAL": 1291
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Shelby Township, Precinct 21",
+   "values": {
+    "Ron Robinson": {
+     "ED": 239,
+     "AVCB": 82,
+     "EV": 70,
+     "TOTAL": 391
+    },
+    "Nate Shannon": {
+     "ED": 316,
+     "AVCB": 250,
+     "EV": 74,
+     "TOTAL": 640
+    },
+    "Write-In": {
+     "ED": 4,
+     "AVCB": 3,
+     "EV": 1,
+     "TOTAL": 8
+    },
+    "Total Votes Cast": {
+     "ED": 559,
+     "AVCB": 335,
+     "EV": 145,
+     "TOTAL": 1039
+    },
+    "Overvotes/Undervotes": {
+     "ED": 31,
+     "AVCB": 10,
+     "EV": 9,
+     "TOTAL": 50
+    },
+    "Total Ballots Cast": {
+     "ED": 590,
+     "AVCB": 345,
+     "EV": 154,
+     "TOTAL": 1089
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 18",
+   "values": {
+    "Ron Robinson": {
+     "ED": 335,
+     "AVCB": 204,
+     "EV": 203,
+     "TOTAL": 742
+    },
+    "Nate Shannon": {
+     "ED": 184,
+     "AVCB": 283,
+     "EV": 71,
+     "TOTAL": 538
+    },
+    "Write-In": {
+     "ED": 1,
+     "AVCB": 0,
+     "EV": 0,
+     "TOTAL": 1
+    },
+    "Total Votes Cast": {
+     "ED": 520,
+     "AVCB": 487,
+     "EV": 274,
+     "TOTAL": 1281
+    },
+    "Overvotes/Undervotes": {
+     "ED": 27,
+     "AVCB": 23,
+     "EV": 10,
+     "TOTAL": 60
+    },
+    "Total Ballots Cast": {
+     "ED": 547,
+     "AVCB": 510,
+     "EV": 284,
+     "TOTAL": 1341
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 19",
+   "values": {
+    "Ron Robinson": {
+     "ED": 300,
+     "AVCB": 140,
+     "EV": 172,
+     "TOTAL": 612
+    },
+    "Nate Shannon": {
+     "ED": 197,
+     "AVCB": 220,
+     "EV": 106,
+     "TOTAL": 523
+    },
+    "Write-In": {
+     "ED": 6,
+     "AVCB": 2,
+     "EV": 1,
+     "TOTAL": 9
+    },
+    "Total Votes Cast": {
+     "ED": 503,
+     "AVCB": 362,
+     "EV": 279,
+     "TOTAL": 1144
+    },
+    "Overvotes/Undervotes": {
+     "ED": 35,
+     "AVCB": 7,
+     "EV": 10,
+     "TOTAL": 52
+    },
+    "Total Ballots Cast": {
+     "ED": 538,
+     "AVCB": 369,
+     "EV": 289,
+     "TOTAL": 1196
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 20",
+   "values": {
+    "Ron Robinson": {
+     "ED": 344,
+     "AVCB": 196,
+     "EV": 273,
+     "TOTAL": 813
+    },
+    "Nate Shannon": {
+     "ED": 276,
+     "AVCB": 307,
+     "EV": 134,
+     "TOTAL": 717
+    },
+    "Write-In": {
+     "ED": 6,
+     "AVCB": 1,
+     "EV": 4,
+     "TOTAL": 11
+    },
+    "Total Votes Cast": {
+     "ED": 626,
+     "AVCB": 504,
+     "EV": 411,
+     "TOTAL": 1541
+    },
+    "Overvotes/Undervotes": {
+     "ED": 44,
+     "AVCB": 26,
+     "EV": 17,
+     "TOTAL": 87
+    },
+    "Total Ballots Cast": {
+     "ED": 670,
+     "AVCB": 530,
+     "EV": 428,
+     "TOTAL": 1628
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 21",
+   "values": {
+    "Ron Robinson": {
+     "ED": 766,
+     "AVCB": 466,
+     "EV": 453,
+     "TOTAL": 1685
+    },
+    "Nate Shannon": {
+     "ED": 498,
+     "AVCB": 738,
+     "EV": 205,
+     "TOTAL": 1441
+    },
+    "Write-In": {
+     "ED": 14,
+     "AVCB": 3,
+     "EV": 3,
+     "TOTAL": 20
+    },
+    "Total Votes Cast": {
+     "ED": 1278,
+     "AVCB": 1207,
+     "EV": 661,
+     "TOTAL": 3146
+    },
+    "Overvotes/Undervotes": {
+     "ED": 67,
+     "AVCB": 43,
+     "EV": 33,
+     "TOTAL": 143
+    },
+    "Total Ballots Cast": {
+     "ED": 1345,
+     "AVCB": 1250,
+     "EV": 694,
+     "TOTAL": 3289
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 22",
+   "values": {
+    "Ron Robinson": {
+     "ED": 244,
+     "AVCB": 253,
+     "EV": 219,
+     "TOTAL": 716
+    },
+    "Nate Shannon": {
+     "ED": 181,
+     "AVCB": 435,
+     "EV": 92,
+     "TOTAL": 708
+    },
+    "Write-In": {
+     "ED": 3,
+     "AVCB": 2,
+     "EV": 0,
+     "TOTAL": 5
+    },
+    "Total Votes Cast": {
+     "ED": 428,
+     "AVCB": 690,
+     "EV": 311,
+     "TOTAL": 1429
+    },
+    "Overvotes/Undervotes": {
+     "ED": 21,
+     "AVCB": 28,
+     "EV": 16,
+     "TOTAL": 65
+    },
+    "Total Ballots Cast": {
+     "ED": 449,
+     "AVCB": 718,
+     "EV": 327,
+     "TOTAL": 1494
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 23",
+   "values": {
+    "Ron Robinson": {
+     "ED": 387,
+     "AVCB": 254,
+     "EV": 235,
+     "TOTAL": 876
+    },
+    "Nate Shannon": {
+     "ED": 286,
+     "AVCB": 407,
+     "EV": 124,
+     "TOTAL": 817
+    },
+    "Write-In": {
+     "ED": 5,
+     "AVCB": 3,
+     "EV": 4,
+     "TOTAL": 12
+    },
+    "Total Votes Cast": {
+     "ED": 678,
+     "AVCB": 664,
+     "EV": 363,
+     "TOTAL": 1705
+    },
+    "Overvotes/Undervotes": {
+     "ED": 41,
+     "AVCB": 15,
+     "EV": 19,
+     "TOTAL": 75
+    },
+    "Total Ballots Cast": {
+     "ED": 719,
+     "AVCB": 679,
+     "EV": 382,
+     "TOTAL": 1780
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 25",
+   "values": {
+    "Ron Robinson": {
+     "ED": 206,
+     "AVCB": 111,
+     "EV": 197,
+     "TOTAL": 514
+    },
+    "Nate Shannon": {
+     "ED": 139,
+     "AVCB": 214,
+     "EV": 62,
+     "TOTAL": 415
+    },
+    "Write-In": {
+     "ED": 1,
+     "AVCB": 1,
+     "EV": 2,
+     "TOTAL": 4
+    },
+    "Total Votes Cast": {
+     "ED": 346,
+     "AVCB": 326,
+     "EV": 261,
+     "TOTAL": 933
+    },
+    "Overvotes/Undervotes": {
+     "ED": 22,
+     "AVCB": 13,
+     "EV": 15,
+     "TOTAL": 50
+    },
+    "Total Ballots Cast": {
+     "ED": 368,
+     "AVCB": 339,
+     "EV": 276,
+     "TOTAL": 983
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 26",
+   "values": {
+    "Ron Robinson": {
+     "ED": 369,
+     "AVCB": 160,
+     "EV": 275,
+     "TOTAL": 804
+    },
+    "Nate Shannon": {
+     "ED": 293,
+     "AVCB": 325,
+     "EV": 135,
+     "TOTAL": 753
+    },
+    "Write-In": {
+     "ED": 2,
+     "AVCB": 1,
+     "EV": 1,
+     "TOTAL": 4
+    },
+    "Total Votes Cast": {
+     "ED": 664,
+     "AVCB": 486,
+     "EV": 411,
+     "TOTAL": 1561
+    },
+    "Overvotes/Undervotes": {
+     "ED": 41,
+     "AVCB": 28,
+     "EV": 16,
+     "TOTAL": 85
+    },
+    "Total Ballots Cast": {
+     "ED": 705,
+     "AVCB": 514,
+     "EV": 427,
+     "TOTAL": 1646
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 27",
+   "values": {
+    "Ron Robinson": {
+     "ED": 342,
+     "AVCB": 206,
+     "EV": 228,
+     "TOTAL": 776
+    },
+    "Nate Shannon": {
+     "ED": 169,
+     "AVCB": 299,
+     "EV": 88,
+     "TOTAL": 556
+    },
+    "Write-In": {
+     "ED": 3,
+     "AVCB": 0,
+     "EV": 0,
+     "TOTAL": 3
+    },
+    "Total Votes Cast": {
+     "ED": 514,
+     "AVCB": 505,
+     "EV": 316,
+     "TOTAL": 1335
+    },
+    "Overvotes/Undervotes": {
+     "ED": 33,
+     "AVCB": 18,
+     "EV": 17,
+     "TOTAL": 68
+    },
+    "Total Ballots Cast": {
+     "ED": 547,
+     "AVCB": 523,
+     "EV": 333,
+     "TOTAL": 1403
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 31",
+   "values": {
+    "Ron Robinson": {
+     "ED": 396,
+     "AVCB": 260,
+     "EV": 364,
+     "TOTAL": 1020
+    },
+    "Nate Shannon": {
+     "ED": 241,
+     "AVCB": 364,
+     "EV": 159,
+     "TOTAL": 764
+    },
+    "Write-In": {
+     "ED": 2,
+     "AVCB": 1,
+     "EV": 4,
+     "TOTAL": 7
+    },
+    "Total Votes Cast": {
+     "ED": 639,
+     "AVCB": 625,
+     "EV": 527,
+     "TOTAL": 1791
+    },
+    "Overvotes/Undervotes": {
+     "ED": 27,
+     "AVCB": 29,
+     "EV": 23,
+     "TOTAL": 79
+    },
+    "Total Ballots Cast": {
+     "ED": 666,
+     "AVCB": 654,
+     "EV": 550,
+     "TOTAL": 1870
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 32",
+   "values": {
+    "Ron Robinson": {
+     "ED": 362,
+     "AVCB": 234,
+     "EV": 301,
+     "TOTAL": 897
+    },
+    "Nate Shannon": {
+     "ED": 191,
+     "AVCB": 298,
+     "EV": 105,
+     "TOTAL": 594
+    },
+    "Write-In": {
+     "ED": 4,
+     "AVCB": 6,
+     "EV": 2,
+     "TOTAL": 12
+    },
+    "Total Votes Cast": {
+     "ED": 557,
+     "AVCB": 538,
+     "EV": 408,
+     "TOTAL": 1503
+    },
+    "Overvotes/Undervotes": {
+     "ED": 38,
+     "AVCB": 20,
+     "EV": 17,
+     "TOTAL": 75
+    },
+    "Total Ballots Cast": {
+     "ED": 595,
+     "AVCB": 558,
+     "EV": 425,
+     "TOTAL": 1578
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 33",
+   "values": {
+    "Ron Robinson": {
+     "ED": 249,
+     "AVCB": 119,
+     "EV": 179,
+     "TOTAL": 547
+    },
+    "Nate Shannon": {
+     "ED": 208,
+     "AVCB": 191,
+     "EV": 67,
+     "TOTAL": 466
+    },
+    "Write-In": {
+     "ED": 8,
+     "AVCB": 1,
+     "EV": 1,
+     "TOTAL": 10
+    },
+    "Total Votes Cast": {
+     "ED": 465,
+     "AVCB": 311,
+     "EV": 247,
+     "TOTAL": 1023
+    },
+    "Overvotes/Undervotes": {
+     "ED": 22,
+     "AVCB": 8,
+     "EV": 13,
+     "TOTAL": 43
+    },
+    "Total Ballots Cast": {
+     "ED": 487,
+     "AVCB": 319,
+     "EV": 260,
+     "TOTAL": 1066
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 34",
+   "values": {
+    "Ron Robinson": {
+     "ED": 295,
+     "AVCB": 231,
+     "EV": 251,
+     "TOTAL": 777
+    },
+    "Nate Shannon": {
+     "ED": 208,
+     "AVCB": 376,
+     "EV": 160,
+     "TOTAL": 744
+    },
+    "Write-In": {
+     "ED": 7,
+     "AVCB": 0,
+     "EV": 4,
+     "TOTAL": 11
+    },
+    "Total Votes Cast": {
+     "ED": 510,
+     "AVCB": 607,
+     "EV": 415,
+     "TOTAL": 1532
+    },
+    "Overvotes/Undervotes": {
+     "ED": 43,
+     "AVCB": 20,
+     "EV": 24,
+     "TOTAL": 87
+    },
+    "Total Ballots Cast": {
+     "ED": 553,
+     "AVCB": 627,
+     "EV": 439,
+     "TOTAL": 1619
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 36",
+   "values": {
+    "Ron Robinson": {
+     "ED": 370,
+     "AVCB": 265,
+     "EV": 326,
+     "TOTAL": 961
+    },
+    "Nate Shannon": {
+     "ED": 257,
+     "AVCB": 382,
+     "EV": 138,
+     "TOTAL": 777
+    },
+    "Write-In": {
+     "ED": 2,
+     "AVCB": 1,
+     "EV": 1,
+     "TOTAL": 4
+    },
+    "Total Votes Cast": {
+     "ED": 629,
+     "AVCB": 648,
+     "EV": 465,
+     "TOTAL": 1742
+    },
+    "Overvotes/Undervotes": {
+     "ED": 40,
+     "AVCB": 26,
+     "EV": 12,
+     "TOTAL": 78
+    },
+    "Total Ballots Cast": {
+     "ED": 669,
+     "AVCB": 674,
+     "EV": 477,
+     "TOTAL": 1820
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 39",
+   "values": {
+    "Ron Robinson": {
+     "ED": 396,
+     "AVCB": 240,
+     "EV": 374,
+     "TOTAL": 1010
+    },
+    "Nate Shannon": {
+     "ED": 244,
+     "AVCB": 337,
+     "EV": 110,
+     "TOTAL": 691
+    },
+    "Write-In": {
+     "ED": 5,
+     "AVCB": 3,
+     "EV": 2,
+     "TOTAL": 10
+    },
+    "Total Votes Cast": {
+     "ED": 645,
+     "AVCB": 580,
+     "EV": 486,
+     "TOTAL": 1711
+    },
+    "Overvotes/Undervotes": {
+     "ED": 32,
+     "AVCB": 23,
+     "EV": 36,
+     "TOTAL": 91
+    },
+    "Total Ballots Cast": {
+     "ED": 677,
+     "AVCB": 603,
+     "EV": 522,
+     "TOTAL": 1802
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 40",
+   "values": {
+    "Ron Robinson": {
+     "ED": 540,
+     "AVCB": 278,
+     "EV": 473,
+     "TOTAL": 1291
+    },
+    "Nate Shannon": {
+     "ED": 508,
+     "AVCB": 485,
+     "EV": 224,
+     "TOTAL": 1217
+    },
+    "Write-In": {
+     "ED": 15,
+     "AVCB": 2,
+     "EV": 1,
+     "TOTAL": 18
+    },
+    "Total Votes Cast": {
+     "ED": 1063,
+     "AVCB": 765,
+     "EV": 698,
+     "TOTAL": 2526
+    },
+    "Overvotes/Undervotes": {
+     "ED": 50,
+     "AVCB": 44,
+     "EV": 43,
+     "TOTAL": 137
+    },
+    "Total Ballots Cast": {
+     "ED": 1113,
+     "AVCB": 809,
+     "EV": 741,
+     "TOTAL": 2663
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Sterling Heights City, Precinct 42",
+   "values": {
+    "Ron Robinson": {
+     "ED": 340,
+     "AVCB": 238,
+     "EV": 267,
+     "TOTAL": 845
+    },
+    "Nate Shannon": {
+     "ED": 333,
+     "AVCB": 567,
+     "EV": 154,
+     "TOTAL": 1054
+    },
+    "Write-In": {
+     "ED": 10,
+     "AVCB": 0,
+     "EV": 2,
+     "TOTAL": 12
+    },
+    "Total Votes Cast": {
+     "ED": 683,
+     "AVCB": 805,
+     "EV": 423,
+     "TOTAL": 1911
+    },
+    "Overvotes/Undervotes": {
+     "ED": 38,
+     "AVCB": 40,
+     "EV": 19,
+     "TOTAL": 97
+    },
+    "Total Ballots Cast": {
+     "ED": 721,
+     "AVCB": 845,
+     "EV": 442,
+     "TOTAL": 2008
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Utica City, Precinct 1",
+   "values": {
+    "Ron Robinson": {
+     "ED": 755,
+     "AVCB": 417,
+     "EV": 295,
+     "TOTAL": 1467
+    },
+    "Nate Shannon": {
+     "ED": 463,
+     "AVCB": 611,
+     "EV": 172,
+     "TOTAL": 1246
+    },
+    "Write-In": {
+     "ED": 10,
+     "AVCB": 4,
+     "EV": 0,
+     "TOTAL": 14
+    },
+    "Total Votes Cast": {
+     "ED": 1228,
+     "AVCB": 1032,
+     "EV": 467,
+     "TOTAL": 2727
+    },
+    "Overvotes/Undervotes": {
+     "ED": 65,
+     "AVCB": 60,
+     "EV": 12,
+     "TOTAL": 137
+    },
+    "Total Ballots Cast": {
+     "ED": 1293,
+     "AVCB": 1092,
+     "EV": 479,
+     "TOTAL": 2864
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 38",
+   "values": {
+    "Ron Robinson": {
+     "ED": 269,
+     "AVCB": 176,
+     "EV": 134,
+     "TOTAL": 579
+    },
+    "Nate Shannon": {
+     "ED": 277,
+     "AVCB": 273,
+     "EV": 109,
+     "TOTAL": 659
+    },
+    "Write-In": {
+     "ED": 11,
+     "AVCB": 5,
+     "EV": 6,
+     "TOTAL": 22
+    },
+    "Total Votes Cast": {
+     "ED": 557,
+     "AVCB": 454,
+     "EV": 249,
+     "TOTAL": 1260
+    },
+    "Overvotes/Undervotes": {
+     "ED": 39,
+     "AVCB": 25,
+     "EV": 11,
+     "TOTAL": 75
+    },
+    "Total Ballots Cast": {
+     "ED": 596,
+     "AVCB": 479,
+     "EV": 260,
+     "TOTAL": 1335
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 39",
+   "values": {
+    "Ron Robinson": {
+     "ED": 174,
+     "AVCB": 145,
+     "EV": 122,
+     "TOTAL": 441
+    },
+    "Nate Shannon": {
+     "ED": 242,
+     "AVCB": 401,
+     "EV": 137,
+     "TOTAL": 780
+    },
+    "Write-In": {
+     "ED": 9,
+     "AVCB": 1,
+     "EV": 4,
+     "TOTAL": 14
+    },
+    "Total Votes Cast": {
+     "ED": 425,
+     "AVCB": 547,
+     "EV": 263,
+     "TOTAL": 1235
+    },
+    "Overvotes/Undervotes": {
+     "ED": 21,
+     "AVCB": 15,
+     "EV": 27,
+     "TOTAL": 63
+    },
+    "Total Ballots Cast": {
+     "ED": 446,
+     "AVCB": 562,
+     "EV": 290,
+     "TOTAL": 1298
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 42",
+   "values": {
+    "Ron Robinson": {
+     "ED": 457,
+     "AVCB": 287,
+     "EV": 232,
+     "TOTAL": 976
+    },
+    "Nate Shannon": {
+     "ED": 375,
+     "AVCB": 390,
+     "EV": 129,
+     "TOTAL": 894
+    },
+    "Write-In": {
+     "ED": 14,
+     "AVCB": 3,
+     "EV": 4,
+     "TOTAL": 21
+    },
+    "Total Votes Cast": {
+     "ED": 846,
+     "AVCB": 680,
+     "EV": 365,
+     "TOTAL": 1891
+    },
+    "Overvotes/Undervotes": {
+     "ED": 57,
+     "AVCB": 34,
+     "EV": 19,
+     "TOTAL": 110
+    },
+    "Total Ballots Cast": {
+     "ED": 903,
+     "AVCB": 714,
+     "EV": 384,
+     "TOTAL": 2001
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 48",
+   "values": {
+    "Ron Robinson": {
+     "ED": 265,
+     "AVCB": 137,
+     "EV": 125,
+     "TOTAL": 527
+    },
+    "Nate Shannon": {
+     "ED": 237,
+     "AVCB": 209,
+     "EV": 92,
+     "TOTAL": 538
+    },
+    "Write-In": {
+     "ED": 4,
+     "AVCB": 2,
+     "EV": 1,
+     "TOTAL": 7
+    },
+    "Total Votes Cast": {
+     "ED": 506,
+     "AVCB": 348,
+     "EV": 218,
+     "TOTAL": 1072
+    },
+    "Overvotes/Undervotes": {
+     "ED": 31,
+     "AVCB": 19,
+     "EV": 10,
+     "TOTAL": 60
+    },
+    "Total Ballots Cast": {
+     "ED": 537,
+     "AVCB": 367,
+     "EV": 228,
+     "TOTAL": 1132
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 49",
+   "values": {
+    "Ron Robinson": {
+     "ED": 246,
+     "AVCB": 269,
+     "EV": 200,
+     "TOTAL": 715
+    },
+    "Nate Shannon": {
+     "ED": 193,
+     "AVCB": 345,
+     "EV": 135,
+     "TOTAL": 673
+    },
+    "Write-In": {
+     "ED": 5,
+     "AVCB": 1,
+     "EV": 2,
+     "TOTAL": 8
+    },
+    "Total Votes Cast": {
+     "ED": 444,
+     "AVCB": 615,
+     "EV": 337,
+     "TOTAL": 1396
+    },
+    "Overvotes/Undervotes": {
+     "ED": 26,
+     "AVCB": 22,
+     "EV": 19,
+     "TOTAL": 67
+    },
+    "Total Ballots Cast": {
+     "ED": 470,
+     "AVCB": 637,
+     "EV": 356,
+     "TOTAL": 1463
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 50",
+   "values": {
+    "Ron Robinson": {
+     "ED": 434,
+     "AVCB": 172,
+     "EV": 173,
+     "TOTAL": 779
+    },
+    "Nate Shannon": {
+     "ED": 319,
+     "AVCB": 333,
+     "EV": 105,
+     "TOTAL": 757
+    },
+    "Write-In": {
+     "ED": 7,
+     "AVCB": 2,
+     "EV": 2,
+     "TOTAL": 11
+    },
+    "Total Votes Cast": {
+     "ED": 760,
+     "AVCB": 507,
+     "EV": 280,
+     "TOTAL": 1547
+    },
+    "Overvotes/Undervotes": {
+     "ED": 42,
+     "AVCB": 27,
+     "EV": 12,
+     "TOTAL": 81
+    },
+    "Total Ballots Cast": {
+     "ED": 802,
+     "AVCB": 534,
+     "EV": 292,
+     "TOTAL": 1628
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 51",
+   "values": {
+    "Ron Robinson": {
+     "ED": 198,
+     "AVCB": 150,
+     "EV": 157,
+     "TOTAL": 505
+    },
+    "Nate Shannon": {
+     "ED": 131,
+     "AVCB": 182,
+     "EV": 49,
+     "TOTAL": 362
+    },
+    "Write-In": {
+     "ED": 4,
+     "AVCB": 2,
+     "EV": 1,
+     "TOTAL": 7
+    },
+    "Total Votes Cast": {
+     "ED": 333,
+     "AVCB": 334,
+     "EV": 207,
+     "TOTAL": 874
+    },
+    "Overvotes/Undervotes": {
+     "ED": 32,
+     "AVCB": 10,
+     "EV": 12,
+     "TOTAL": 54
+    },
+    "Total Ballots Cast": {
+     "ED": 365,
+     "AVCB": 344,
+     "EV": 219,
+     "TOTAL": 928
+    }
+   }
+  },
+  {
+   "unit_type": "Precinct",
+   "unit": "Warren City, Precinct 52",
+   "values": {
+    "Ron Robinson": {
+     "ED": 376,
+     "AVCB": 157,
+     "EV": 170,
+     "TOTAL": 703
+    },
+    "Nate Shannon": {
+     "ED": 295,
+     "AVCB": 282,
+     "EV": 109,
+     "TOTAL": 686
+    },
+    "Write-In": {
+     "ED": 4,
+     "AVCB": 4,
+     "EV": 0,
+     "TOTAL": 8
+    },
+    "Total Votes Cast": {
+     "ED": 675,
+     "AVCB": 443,
+     "EV": 279,
+     "TOTAL": 1397
+    },
+    "Overvotes/Undervotes": {
+     "ED": 44,
+     "AVCB": 30,
+     "EV": 6,
+     "TOTAL": 80
+    },
+    "Total Ballots Cast": {
+     "ED": 719,
+     "AVCB": 473,
+     "EV": 285,
+     "TOTAL": 1477
+    }
+   }
+  }
+ ],
+ "suppressed_cells": {},
+ "note": "\"*\" cells in the source are suppressed by the Clerk for small precincts and are stored as null."
+}
