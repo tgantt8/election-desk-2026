@@ -19,7 +19,7 @@
    "verified_at": "2026-10-29",
    "poller": "votehub_polls",
    "decision_needed": null,
-   "last_success_at": null,
+   "last_success_at": "2026-10-29T17:17:44Z",
    "last_error": "",
    "active": true
   },
@@ -1816,7 +1816,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": null,
+   "last_success_at": "2026-10-29T17:17:46Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -2137,7 +2137,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": null,
+   "last_success_at": "2026-10-29T17:17:48Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -2185,8 +2185,8 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": null,
-   "last_error": "2026-10-29T17:17:09Z GET https://results.votewa.gov/results/public/api/elections/washington/20261103: ProxyError: HTTPSConnectionPool(host='results.votewa.gov', port=443): Max retries exceeded with url: /results/public/api/elections/washington/20261103 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))",
+   "last_success_at": "2026-10-29T17:17:51Z",
+   "last_error": "",
    "active": true,
    "ev": {
     "host": "results.votewa.gov",
@@ -2276,7 +2276,7 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": "2026-10-29T17:14:23Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_error": "2026-10-29T17:17:52Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
    "active": true
   },
   {
@@ -2296,7 +2296,7 @@
    "verified_at": "2026-10-29",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T17:14:25Z",
+   "last_success_at": "2026-10-29T17:17:53Z",
    "last_error": "",
    "active": true
   },
@@ -2359,7 +2359,7 @@
    "verified_at": "2026-10-29",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-29T17:14:26Z",
+   "last_success_at": "2026-10-29T17:17:54Z",
    "last_error": "",
    "active": true
   },

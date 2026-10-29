@@ -14,3 +14,13 @@
 {"at": "2026-10-29T17:14:23Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-10-29T17:14:26Z", "bytes": 190054, "event": "pdf_pull", "parse_status": "unparsed", "snapshot": "macomb_candidate_list_pdf:2026-10-29T17:14:26Z:b22065c6778d", "source_id": "macomb_candidate_list_pdf"}
 {"at": "2026-10-29T17:17:09Z", "error": "GET https://results.votewa.gov/results/public/api/elections/washington/20261103: ProxyError: HTTPSConnectionPool(host='results.votewa.gov', port=443): Max retries exceeded with url: /results/public/api/elections/washington/20261103 (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel ", "event": "enhanced_voting_fetch_failed", "source_id": "enr_wa_ev"}
+{"added": 2621, "at": "2026-10-29T17:17:44Z", "event": "votehub_pull", "in_feed": 5999, "mapped": 2635, "snapshot": "polls_votehub_api:2026-10-29T17:17:44Z:46e7173b4df1", "source_id": "polls_votehub_api"}
+{"at": "2026-10-29T17:17:45Z", "event": "poller_not_implemented", "poller": "cook_ratings", "source_id": "ratings_cook_senate"}
+{"at": "2026-10-29T17:17:45Z", "event": "poller_not_implemented", "poller": "cook_ratings", "source_id": "ratings_cook_house"}
+{"at": "2026-10-29T17:17:45Z", "event": "poller_not_implemented", "poller": "cook_ratings", "source_id": "ratings_cook_governor"}
+{"at": "2026-10-29T17:17:45Z", "event": "poller_not_implemented", "poller": "nc_s3", "source_id": "ev_nc_absentee_counts_csv"}
+{"at": "2026-10-29T17:17:46Z", "ballot_items": 32, "election": "2026-November-General", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 113, "snapshot": "enr_va_ev:2026-10-29T17:17:46Z:41f4cb55fa5b", "source_id": "enr_va_ev", "total_record_count": 32}
+{"at": "2026-10-29T17:17:48Z", "ballot_items": 64, "election": "General11032026", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 147, "snapshot": "enr_ut_ev:2026-10-29T17:17:48Z:17e8dcfecfe4", "source_id": "enr_ut_ev", "total_record_count": 64}
+{"at": "2026-10-29T17:17:51Z", "ballot_items": 173, "election": "20261103", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 468, "snapshot": "enr_wa_ev:2026-10-29T17:17:51Z:88f35d7cca58", "source_id": "enr_wa_ev", "total_record_count": 173}
+{"at": "2026-10-29T17:17:52Z", "event": "poller_not_implemented", "poller": "nc_s3", "source_id": "enr_nc_s3_results"}
+{"at": "2026-10-29T17:17:52Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
