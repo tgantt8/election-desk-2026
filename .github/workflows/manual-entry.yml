@@ -1,0 +1,46 @@
+name: manual-entry
+# Append a manually entered record set (results pasted from a source, or an attributed media call) to the right layer.
+# The payload is the JSON the desk's Ops panel copies to the clipboard ("Copy as JSON" / "Copy call JSON").
+# Nothing is overwritten: every entry is a new snapshot row plus appended records.
+on:
+  workflow_dispatch:
+    inputs:
+      layer:
+        description: "results or calls"
+        required: true
+        default: "calls"
+      payload:
+        description: "JSON payload from the desk's Ops panel"
+        required: true
+      note:
+        description: "Where it came from (URL, screen, time)"
+        required: false
+        default: ""
+jobs:
+  enter:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r requirements.txt
+      - name: Append entry
+        env:
+          LAYER: ${{ inputs.layer }}
+          PAYLOAD: ${{ inputs.payload }}
+          NOTE: ${{ inputs.note }}
+        run: python3 tools/manual_entry.py --layer "$LAYER" --note "$NOTE" --payload-env PAYLOAD
+      - name: Rebuild site data
+        run: python3 tools/build_results_site.py && python3 tools/build_site_data.py
+      - name: Hygiene
+        run: python3 tools/hygiene_check.py --all
+      - name: Commit
+        run: |
+          git config user.name "election-desk-bot"
+          git config user.email "info@ganttformichigan.com"
+          git add data docs/data
+          git commit -m "manual-entry (${{ inputs.layer }}): $(date -u +%FT%TZ)" || exit 0
+          for i in 1 2 3; do git pull --rebase origin main && git push && break || sleep 10; done
