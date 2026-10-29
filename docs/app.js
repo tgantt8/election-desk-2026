@@ -36,7 +36,8 @@ function staleCheck() {
   const last = meta.latest_snapshot_at ? new Date(meta.latest_snapshot_at) : null;
   const cadence = meta.expected_cadence_min || 60;
   const ageMin = last ? (Date.now() - last.getTime()) / 60000 : Infinity;
-  if (ageMin > 2 * cadence) { el.textContent = `Stale data — last poll ${last ? fmt.t(last.toISOString()) : "unknown"} (${Math.round(ageMin)} min ago; expected every ${cadence} min). Check source health in Ops.`; el.classList.add("show"); }
+  if (!last) { el.textContent = "No snapshot published yet — the pollers have not run. Contest definitions and baselines are shown; live layers are empty."; el.classList.add("show"); }
+  else if (ageMin > 2 * cadence) { el.textContent = `Stale data — last poll ${fmt.t(last.toISOString())} (${Math.round(ageMin)} min ago; expected every ${cadence} min). Check source health in Ops.`; el.classList.add("show"); }
   else el.classList.remove("show");
   $("lastpull").textContent = `Last poll ${last ? fmt.t(last.toISOString()) : "—"} · page refreshed ${fmt.t(S.lastFetch.toISOString())} · ${meta.built_at ? "data built " + fmt.t(meta.built_at) : ""}`;
 }
@@ -49,7 +50,8 @@ function chamberBar(title, total, called, sim, marks, note) {
   return `<div class="chamber"><div class="label"><span><strong>${title}</strong> <span class="muted small">${note||""}</span></span>
     <span class="mono">D ${d}${i?` (+${i} I)`:""} · R ${r} · uncalled ${unc}${sd+sr?` · sim D ${sd} / R ${sr}`:""}</span></div>
     <div class="bar">${seg(d,"d")}${seg(i,"i")}${seg(sd,"dsim")}<div class="seg" style="flex:1"></div>${seg(sr,"rsim")}${seg(r,"r")}
-    ${marks.map(m=>`<div class="mark" style="left:${(100*m.at/total).toFixed(2)}%"><span>${m.label}</span></div>`).join("")}</div></div>`;
+    ${marks.map(m=>`<div class="mark" style="left:${(100*m.at/total).toFixed(2)}%"></div>`).join("")}</div>
+    <div class="marks">${marks.map(m=>`<span style="left:${(100*m.at/total).toFixed(2)}%">${m.label}</span>`).join("")}</div></div>`;
 }
 function renderChambers() {
   const c = S.data.contests?.chambers; const el = $("chambers");

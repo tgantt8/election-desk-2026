@@ -25,6 +25,12 @@
    "cross_check": {
     "name": "Ballotpedia, United States Senate partisan breakdown (via search summary)",
     "value": "53 R / 45 D / 2 I / 0 vacant"
+   },
+   "holdovers": {
+    "d": 32,
+    "r": 31,
+    "i": 2,
+    "note": "35 seats up in 2026"
    }
   },
   "house": {
@@ -63,8 +69,2300 @@
    }
   }
  },
- "senate_2026": [],
- "governors_2026": [],
+ "senate_2026": [
+  {
+   "id": "us-senate-AL",
+   "state": "AL",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Tommy Tuberville",
+   "holder_party": "R",
+   "status_note": "Incumbent retiring to run for governor",
+   "candidates": [
+    {
+     "name": "Barry Moore",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Everett Wess",
+     "party": "D",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-AK",
+   "state": "AK",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Dan Sullivan",
+   "holder_party": "R",
+   "status_note": "Incumbent advanced to general",
+   "candidates": [
+    {
+     "name": "Gerald Heikes",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Mary Peltola",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Dan J. Sullivan",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "name": "Dan S. Sullivan",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-AR",
+   "state": "AR",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Tom Cotton",
+   "holder_party": "R",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Tom Cotton",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "name": "Hallie Shoffner",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Jeff Wadlin",
+     "party": "L",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-CO",
+   "state": "CO",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "John Hickenlooper",
+   "holder_party": "D",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Mark Baisley",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "John Hickenlooper",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "name": "Blake Huber",
+     "party": "L",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-DE",
+   "state": "DE",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Chris Coons",
+   "holder_party": "D",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Chris Coons",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "name": "Michael Katz",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-GA",
+   "state": "GA",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Jon Ossoff",
+   "holder_party": "D",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Mike Collins",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Jon Ossoff",
+     "party": "D",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-ID",
+   "state": "ID",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Jim Risch",
+   "holder_party": "R",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Todd Achilles",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Natalie Fleming",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Matt Loesby",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Jim Risch",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-IL",
+   "state": "IL",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Dick Durbin",
+   "holder_party": "D",
+   "status_note": "Incumbent retiring",
+   "candidates": [
+    {
+     "name": "Whitfield Harrington Jr.",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Juliana Stratton",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Don Tracy",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-IA",
+   "state": "IA",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Joni Ernst",
+   "holder_party": "R",
+   "status_note": "Incumbent retiring",
+   "candidates": [
+    {
+     "name": "Ashley Hinson",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Thomas Laehn",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Josh Turek",
+     "party": "D",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-KS",
+   "state": "KS",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Roger Marshall",
+   "holder_party": "R",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "David Graham",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Adam Hamilton",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Roger Marshall",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-KY",
+   "state": "KY",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Mitch McConnell",
+   "holder_party": "R",
+   "status_note": "Incumbent retiring",
+   "candidates": [
+    {
+     "name": "Andy Barr",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Charles Booker",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Christopher Campbell",
+     "party": "I",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-LA",
+   "state": "LA",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Bill Cassidy",
+   "holder_party": "R",
+   "status_note": "Incumbent lost renomination",
+   "candidates": [
+    {
+     "name": "Jamie Davis",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Julia Letlow",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-ME",
+   "state": "ME",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Susan Collins",
+   "holder_party": "R",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Susan Collins",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "name": "Troy Jackson",
+     "party": "D",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-MA",
+   "state": "MA",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Ed Markey",
+   "holder_party": "D",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Shiva Ayyadurai",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "John Deaton",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Ed Markey",
+     "party": "D",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-MI",
+   "state": "MI",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Gary Peters",
+   "holder_party": "D",
+   "status_note": "Incumbent retiring",
+   "candidates": [
+    {
+     "name": "Lydia Christensen",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Abdul El-Sayed",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Douglas P. Marsh",
+     "party": "G",
+     "incumbent": false
+    },
+    {
+     "name": "Mike Rogers",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-MN",
+   "state": "MN",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Tina Smith",
+   "holder_party": "D",
+   "status_note": "Incumbent retiring",
+   "candidates": [
+    {
+     "name": "Peggy Flanagan",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Marisa Simonetti",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Michele Tafoya",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Rebecca Whiting",
+     "party": "L",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-MS",
+   "state": "MS",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Cindy Hyde-Smith",
+   "holder_party": "R",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Scott Colom",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Cindy Hyde-Smith",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "name": "Ty Pinkins",
+     "party": "I",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-MT",
+   "state": "MT",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Steve Daines",
+   "holder_party": "R",
+   "status_note": "Incumbent retiring",
+   "candidates": [
+    {
+     "name": "Kurt Alme",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Kyle Austin",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Alani Bankhead",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Seth Bodnar",
+     "party": "I",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-NE",
+   "state": "NE",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Pete Ricketts",
+   "holder_party": "R",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Mike Marvin",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Dan Osborn",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Pete Ricketts",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-NH",
+   "state": "NH",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Jeanne Shaheen",
+   "holder_party": "D",
+   "status_note": "Incumbent retiring",
+   "candidates": [
+    {
+     "name": "Chris Pappas",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "John E. Sununu",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-NJ",
+   "state": "NJ",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Cory Booker",
+   "holder_party": "D",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Cory Booker",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "name": "Veronica Fernandez",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Justin Murphy",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-NM",
+   "state": "NM",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Ben Ray Luján",
+   "holder_party": "D",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Ben Ray Luján",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "name": "Larry Marker",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-NC",
+   "state": "NC",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Thom Tillis",
+   "holder_party": "R",
+   "status_note": "Incumbent retiring",
+   "candidates": [
+    {
+     "name": "Shannon Bray",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Roy Cooper",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Michael Dublin",
+     "party": "G",
+     "incumbent": false
+    },
+    {
+     "name": "Michael Whatley",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-OK",
+   "state": "OK",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Alan Armstrong",
+   "holder_party": "R",
+   "status_note": "Interim appointee ineligible to run",
+   "candidates": [
+    {
+     "name": "Kevin Hern",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Ron Meinhardt",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Curtis Stinnett",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "N'Kiyla Jasmine Thomas",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Sevier White",
+     "party": "L",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-OR",
+   "state": "OR",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Jeff Merkley",
+   "holder_party": "D",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Gary Lyndon Dye",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Jeff Merkley",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "name": "David Brock Smith",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-RI",
+   "state": "RI",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Jack Reed",
+   "holder_party": "D",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Michael Bahry",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Raymond McKay",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Jack Reed",
+     "party": "D",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-SC",
+   "state": "SC",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Darline Graham",
+   "holder_party": "R",
+   "status_note": "Interim appointee nominated in runoff",
+   "candidates": [
+    {
+     "name": "Annie Andrews",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Darline Graham",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "name": "Kasie Whitener",
+     "party": "L",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-SD",
+   "state": "SD",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Mike Rounds",
+   "holder_party": "R",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Brian Bengs",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Mike Rounds",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-TN",
+   "state": "TN",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Bill Hagerty",
+   "holder_party": "R",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Marquita Bradshaw",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Tharon Chandler",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Andrew Gerena",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Bill Hagerty",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "name": "Jeremy Hearn",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Robert Jones",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "James Macon III",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Yoshi Matthews",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "David Sutman Jr.",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Catherine Whitson",
+     "party": "I",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-TX",
+   "state": "TX",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "John Cornyn",
+   "holder_party": "R",
+   "status_note": "Incumbent lost renomination in runoff",
+   "candidates": [
+    {
+     "name": "Ted Brown",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Ken Paxton",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "James Talarico",
+     "party": "D",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-VA",
+   "state": "VA",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Mark Warner",
+   "holder_party": "D",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Bert Mizusawa",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Mark Warner",
+     "party": "D",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-WV",
+   "state": "WV",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Shelley Moore Capito",
+   "holder_party": "R",
+   "status_note": "Incumbent renominated",
+   "candidates": [
+    {
+     "name": "Rachel Fetty Anderson",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Shelley Moore Capito",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-WY",
+   "state": "WY",
+   "office": "U.S. Senate",
+   "class": 2,
+   "special": false,
+   "incumbent": "Cynthia Lummis",
+   "holder_party": "R",
+   "status_note": "Incumbent retiring",
+   "candidates": [
+    {
+     "name": "James W. Byrd",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Harriet Hageman",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-FL-special",
+   "state": "FL",
+   "office": "U.S. Senate",
+   "class": 3,
+   "special": true,
+   "incumbent": "Ashley Moody",
+   "holder_party": "R",
+   "status_note": "Interim appointee nominated",
+   "candidates": [
+    {
+     "name": "Neil Gillespie",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Ashley Moody",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "name": "Angie Nixon",
+     "party": "D",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "us-senate-OH-special",
+   "state": "OH",
+   "office": "U.S. Senate",
+   "class": 3,
+   "special": true,
+   "incumbent": "Jon Husted",
+   "holder_party": "R",
+   "status_note": "Interim appointee nominated",
+   "candidates": [
+    {
+     "name": "Sherrod Brown",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Jon Husted",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "name": "Greg Levy",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "William Redpath",
+     "party": "L",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States Senate elections (summary tables)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  }
+ ],
+ "governors_2026": [
+  {
+   "id": "gov-AL",
+   "state": "AL",
+   "office": "Governor",
+   "incumbent": "Kay Ivey",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Doug Jones",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Tommy Tuberville",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-AK",
+   "state": "AK",
+   "office": "Governor",
+   "incumbent": "Mike Dunleavy",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Dave Bronson",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Jonathan Kreiss-Tomkins",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Treg Taylor",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Bernadette Wilson",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-AZ",
+   "state": "AZ",
+   "office": "Governor",
+   "incumbent": "Katie Hobbs",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Andy Biggs",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Katie Hobbs",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "name": "Risa Lombardo",
+     "party": "G",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-AR",
+   "state": "AR",
+   "office": "Governor",
+   "incumbent": "Sarah Huckabee Sanders",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Fredrick Love",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Sarah Huckabee Sanders",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "name": "Colt Shelby",
+     "party": "L",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-CA",
+   "state": "CA",
+   "office": "Governor",
+   "incumbent": "Gavin Newsom",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Xavier Becerra",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Steve Hilton",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-CO",
+   "state": "CO",
+   "office": "Governor",
+   "incumbent": "Jared Polis",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Greg Lopez",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Victor Marx",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Eric Mulder",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Phil Weiser",
+     "party": "D",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-CT",
+   "state": "CT",
+   "office": "Governor",
+   "incumbent": "Ned Lamont",
+   "holder_party": "D",
+   "candidates": [],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-FL",
+   "state": "FL",
+   "office": "Governor",
+   "incumbent": "Ron DeSantis",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Dean Abrams",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Charles Burkett",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Jeffrey Datto",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Moe Dimanche",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Byron Donalds",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Scott Jewett",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "David Jolly",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Frank Russo",
+     "party": "I",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-GA",
+   "state": "GA",
+   "office": "Governor",
+   "incumbent": "Brian Kemp",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Keisha Lance Bottoms",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Rick Jackson",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-HI",
+   "state": "HI",
+   "office": "Governor",
+   "incumbent": "Josh Green",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Gary Cordery",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Josh Green",
+     "party": "D",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-ID",
+   "state": "ID",
+   "office": "Governor",
+   "incumbent": "Brad Little",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Brad Little",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "name": "Terri Pickens",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "John Stegner",
+     "party": "I",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-IL",
+   "state": "IL",
+   "office": "Governor",
+   "incumbent": "JB Pritzker",
+   "holder_party": "D",
+   "candidates": [],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-IA",
+   "state": "IA",
+   "office": "Governor",
+   "incumbent": "Kim Reynolds",
+   "holder_party": "R",
+   "candidates": [],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-KS",
+   "state": "KS",
+   "office": "Governor",
+   "incumbent": "Laura Kelly",
+   "holder_party": "D",
+   "candidates": [],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-ME",
+   "state": "ME",
+   "office": "Governor",
+   "incumbent": "Janet Mills",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Rick Bennett",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Robert B. Charles",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Hannah Pingree",
+     "party": "D",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-MD",
+   "state": "MD",
+   "office": "Governor",
+   "incumbent": "Wes Moore",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Dan Cox",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Andy Ellis",
+     "party": "G",
+     "incumbent": false
+    },
+    {
+     "name": "Wes Moore",
+     "party": "D",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-MA",
+   "state": "MA",
+   "office": "Governor",
+   "incumbent": "Maura Healey",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Maura Healey",
+     "party": "D",
+     "incumbent": true
+    },
+    {
+     "name": "Andrea James",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Mike Minogue",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-MI",
+   "state": "MI",
+   "office": "Governor",
+   "incumbent": "Gretchen Whitmer",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Jocelyn Benson",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "John James",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-MN",
+   "state": "MN",
+   "office": "Governor",
+   "incumbent": "Tim Walz",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Lisa Demuth",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Amy Klobuchar",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Steven Young",
+     "party": "G",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-NE",
+   "state": "NE",
+   "office": "Governor",
+   "incumbent": "Jim Pillen",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Rick Beard",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Jim Pillen",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "name": "Lynne Walz",
+     "party": "D",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-NV",
+   "state": "NV",
+   "office": "Governor",
+   "incumbent": "Joe Lombardo",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Aaron Ford",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Danielle Ford",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Joe Lombardo",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-NH",
+   "state": "NH",
+   "office": "Governor",
+   "incumbent": "Kelly Ayotte",
+   "holder_party": "R",
+   "candidates": [],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-NM",
+   "state": "NM",
+   "office": "Governor",
+   "incumbent": "Michelle Lujan Grisham",
+   "holder_party": "D",
+   "candidates": [],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-NY",
+   "state": "NY",
+   "office": "Governor",
+   "incumbent": "Kathy Hochul",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Bruce Blakeman",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Kathy Hochul",
+     "party": "D",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-OH",
+   "state": "OH",
+   "office": "Governor",
+   "incumbent": "Mike DeWine",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Amy Acton",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Donald Kissick",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Vivek Ramaswamy",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-OK",
+   "state": "OK",
+   "office": "Governor",
+   "incumbent": "Kevin Stitt",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Robert Brooks Sr.",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Orlando Bush",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Jerry Griffin",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Mike Mazzei",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Cyndi Munson",
+     "party": "D",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-OR",
+   "state": "OR",
+   "office": "Governor",
+   "incumbent": "Tina Kotek",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Christine Drazan",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Tina Kotek",
+     "party": "D",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-PA",
+   "state": "PA",
+   "office": "Governor",
+   "incumbent": "Josh Shapiro",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Stacy Garrity",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Ken Krawchuk",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Josh Shapiro",
+     "party": "D",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-RI",
+   "state": "RI",
+   "office": "Governor",
+   "incumbent": "Dan McKee",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "Ken Block",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Helena Foulkes",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Aaron Guckian",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-SC",
+   "state": "SC",
+   "office": "Governor",
+   "incumbent": "Henry McMaster",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Jermaine Johnson",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Alan Wilson",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-SD",
+   "state": "SD",
+   "office": "Governor",
+   "incumbent": null,
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Dan Ahlers",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Larry Rhoden",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-TN",
+   "state": "TN",
+   "office": "Governor",
+   "incumbent": "Bill Lee",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Misam Abidi",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Santiago Asconape",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Marsha Blackburn",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Dean Brewer",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Ray Brown",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Jerri Green",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Taylor Hafley",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "David Hatley",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Wendell Jackson",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Charles Van Morgan",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Eddie Lee Murphy",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Lauren Pinkston",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Karl Smithson",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "L. Webb Taylor",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Robert Vick",
+     "party": "I",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-TX",
+   "state": "TX",
+   "office": "Governor",
+   "incumbent": "Greg Abbott",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Greg Abbott",
+     "party": "R",
+     "incumbent": true
+    },
+    {
+     "name": "Pat Dixon",
+     "party": "L",
+     "incumbent": false
+    },
+    {
+     "name": "Gina Hinojosa",
+     "party": "D",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-VT",
+   "state": "VT",
+   "office": "Governor",
+   "incumbent": "Phil Scott",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "June Goodband",
+     "party": "G",
+     "incumbent": false
+    },
+    {
+     "name": "Amanda Janoo",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Brian Judd",
+     "party": "I",
+     "incumbent": false
+    },
+    {
+     "name": "Phil Scott",
+     "party": "R",
+     "incumbent": true
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-WI",
+   "state": "WI",
+   "office": "Governor",
+   "incumbent": "Tony Evers",
+   "holder_party": "D",
+   "candidates": [
+    {
+     "name": "David Crowley",
+     "party": "D",
+     "incumbent": false
+    },
+    {
+     "name": "Tom Tiffany",
+     "party": "R",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  },
+  {
+   "id": "gov-WY",
+   "state": "WY",
+   "office": "Governor",
+   "incumbent": "Mark Gordon",
+   "holder_party": "R",
+   "candidates": [
+    {
+     "name": "Eric Barlow",
+     "party": "R",
+     "incumbent": false
+    },
+    {
+     "name": "Kenneth Casner",
+     "party": "D",
+     "incumbent": false
+    }
+   ],
+   "source": {
+    "name": "Wikipedia, 2026 United States gubernatorial elections (States table)",
+    "retrieved_at": "2026-10-29T17:40:00Z",
+    "status": "UNVERIFIED — confirm against state SOS ballot"
+   },
+   "ratings": [],
+   "rating_scale": null
+  }
+ ],
  "house_delegations": [],
  "new_lines": {
   "_layer": "contests",
