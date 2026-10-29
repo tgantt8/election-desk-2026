@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import glob
 import os
+import re
 import sys
 from collections import defaultdict
 
@@ -103,7 +104,10 @@ def build(replay_2024=False):
             crec = [r for r in cur if (r.get("contest_id") or r.get("contest")) == cid]
             prec = [r for r in prev if (r.get("contest_id") or r.get("contest")) == cid]
             card = card_from_records(crec[0].get("contest_name") or cid, cid, crec, prec, calls, src, scope.get(cid))
-            (tier1 if str(cid).startswith("macomb-") else national).append(card)
+            if str(cid).startswith("macomb-"):
+                tier1.append(card)
+            elif re.match(r"^(us-senate|gov|us-house)-", str(cid)):
+                national.append(card)  # state legislative, judicial and local items stay in the layer but off the national board
     if replay_2024:
         base = load_json(os.path.join(DATA, "baselines", "macomb_2024_general.json"))
         for c in base["contests"]:

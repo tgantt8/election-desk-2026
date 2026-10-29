@@ -73,7 +73,12 @@ def parse_summary_pdf(path):
                     title = " ".join(pending_title).strip()
                     pending_title = []
                     cur = {"title": title, "vote_for": int(m.group(1)), "candidates": [], "totals": {}, "page": pi + 1}
-                    contests[title] = cur
+                    key = title
+                    k = 2
+                    while key in contests:  # repeated titles (e.g. a second trustee seat, school boards): keep every block
+                        key = f"{title} ({k})"
+                        k += 1
+                    contests[key] = cur
                     continue
                 rm = ROW_RE.match(ln)
                 if rm and cur is not None:

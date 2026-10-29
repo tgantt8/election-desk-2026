@@ -37,7 +37,7 @@ def party_map():
         for r in load_json(os.path.join(DATA, "contests", f), {"races": []})["races"]:
             for c in r["candidates"]:
                 if c["party"] in ("D", "R"):
-                    out[r["id"]][c["name"].split()[-1].lower()] = c["party"]
+                    out[r["id"]][re.sub(r"[^a-z]", "", c["name"].split()[-1].lower())] = c["party"]
     return out
 
 
