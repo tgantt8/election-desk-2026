@@ -1,0 +1,44 @@
+name: fetch-fixtures
+# Downloads a public fixture (e.g. the Macomb Nov 2024 Summary Results Report PDF)
+# into fixtures/ and commits it. The Code session's shell has no outbound network,
+# so fixtures come in through this runner. Manual only.
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "Public URL to download"
+        required: true
+      dest:
+        description: "Destination path under fixtures/ (e.g. macomb_2024_general_summary.pdf)"
+        required: true
+      note:
+        description: "What this fixture is (goes in fixtures/README.md)"
+        required: false
+        default: ""
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          set -euo pipefail
+          mkdir -p fixtures
+          curl -sSL --retry 3 --retry-delay 5 -A "election-desk-2026 fixture fetch (info@ganttformichigan.com)" \
+            -o "fixtures/${{ inputs.dest }}" "${{ inputs.url }}"
+          ls -la "fixtures/${{ inputs.dest }}"
+          file "fixtures/${{ inputs.dest }}" || true
+          sha256sum "fixtures/${{ inputs.dest }}" | tee -a fixtures/SHA256SUMS
+          printf '\n- `%s` — %s  \n  source: <%s>  \n  fetched: %s\n' "${{ inputs.dest }}" "${{ inputs.note }}" "${{ inputs.url }}" "$(date -u +%FT%TZ)" >> fixtures/README.md
+      - name: Hygiene
+        run: python3 tools/hygiene_check.py "fixtures/${{ inputs.dest }}" fixtures/README.md fixtures/SHA256SUMS
+      - name: Commit
+        run: |
+          git config user.name "election-desk-bot"
+          git config user.email "info@ganttformichigan.com"
+          git add fixtures
+          git commit -m "fixtures: add ${{ inputs.dest }}" || echo "nothing to commit"
+          git pull --rebase origin main
+          git push

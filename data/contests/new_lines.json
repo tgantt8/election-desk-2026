@@ -1,0 +1,22 @@
+{
+  "_layer": "contests",
+  "_note": "States whose congressional map for Nov 2026 differs from the map used in Nov 2024 (mid-decade redistricting, 2025-26). Every House baseline for these states must be recomputed on 2026 lines or shown as 'no baseline'. Expected-gain figures are the Wikipedia summary table's and are context, not data.",
+  "verified_at": "2026-10-29T17:20:00Z",
+  "source": {"name": "Wikipedia, 2025–2026 United States redistricting (summary table), cross-checked with Ballotpedia 'Redistricting ahead of the 2026 elections' via search", "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"},
+  "in_effect_2026": [
+    {"state": "TX", "enacted": "2025-08-29", "method": "legislature (special session)", "expected_shift": "R +5", "note": "Upheld for 2026 by a Dec 2025 court ruling; SCOTUS action Apr 2026."},
+    {"state": "NC", "enacted": "2025-10-22", "method": "legislature", "expected_shift": "R +1", "note": "Federal challenge unsuccessful."},
+    {"state": "OH", "enacted": "2025-10-31", "method": "Ohio Redistricting Commission", "expected_shift": "R +2", "note": "In effect; reported as locked through 2031/2032."},
+    {"state": "CA", "enacted": "2025-11-04", "method": "ballot measure (Proposition 50)", "expected_shift": "D +5", "note": "Maps for 2026, 2028, 2030; injunction denied Jan 2026."},
+    {"state": "UT", "enacted": "2025-11-10", "method": "court order", "expected_shift": "D +1", "note": "Court-enacted map; new Salt Lake County-based district."},
+    {"state": "FL", "enacted": "2026-05-04", "method": "legislature", "expected_shift": "R +4", "note": ""},
+    {"state": "TN", "enacted": "2026-05-07", "method": "legislature", "expected_shift": "R +1", "note": "Post-Callais redraw."},
+    {"state": "LA", "enacted": "2026-05-29", "method": "legislature (replacement map after Louisiana v. Callais)", "expected_shift": "R +1", "note": ""},
+    {"state": "AL", "enacted": "2026-06-02", "method": "legislature", "expected_shift": "R +1", "note": ""}
+  ],
+  "not_in_effect_2026": [
+    {"state": "MO", "enacted": "2025-09-28", "status": "Blocked by the Missouri Supreme Court for 2026; Nov 2026 Proposition A (veto referendum) decides whether it is used in 2028. 2026 runs on the 2022 map."},
+    {"state": "VA", "enacted": "2026-04-21", "status": "Struck down in court; 2026 runs on the prior map."}
+  ],
+  "attempted_failed": ["AR", "IN", "KS", "MD", "NY", "SC", "WI", "IL", "WA", "NJ", "NH"]
+}

@@ -1,0 +1,31 @@
+# --- Private layer: these paths must NEVER exist in this public repo ---
+# (the hygiene check also fails the commit if any appear)
+private/
+overlay/
+**/field_aggregates*
+**/hd58_goal*
+**/hd-58-goal*
+**/projection_internal*
+**/scenarios_private*
+**/*.van
+**/*voterfile*
+**/*voter_file*
+
+# --- Secrets ---
+.env
+.env.*
+*.pem
+*.key
+secrets*.json
+credentials*.json
+token*.json
+
+# --- Build / local ---
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+node_modules/
+.DS_Store
+*.log
+tmp/
