@@ -28,6 +28,8 @@ def main(layers, only=None):
     for s in srcs:
         if s.get("layer") not in layers or s.get("status") in ("EXCLUDED", "LINK_ONLY") or s.get("poller") in (None, "none", "manual", "link_only"):
             continue
+        if not s.get("active", True):  # registered but not switched on (e.g. Clarity states until the WAF test passes)
+            continue
         if only and s["id"] not in only:
             continue
         spec = IMPLEMENTED.get(s["poller"])

@@ -20,7 +20,8 @@
    "poller": "votehub_polls",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "polls_nyt_siena",
@@ -40,7 +41,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "polls_siena_sri",
@@ -60,7 +62,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "polls_rcp",
@@ -80,7 +83,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "polls_silver_bulletin",
@@ -100,7 +104,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "polls_ddhq",
@@ -120,7 +125,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "polls_nyt_tracker",
@@ -140,7 +146,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "polls_fiftyplusone",
@@ -160,7 +167,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "polls_538_legacy",
@@ -180,7 +188,8 @@
    "poller": "none",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "polls_pollresults_org",
@@ -200,7 +209,8 @@
    "poller": "none",
    "decision_needed": "PollResults.org: provide the exact URL if this source was intended; otherwise it stays dropped.",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "polls_callthemap",
@@ -220,7 +230,8 @@
    "poller": "none",
    "decision_needed": "Call the Map: provide the exact URL(s) if this source was intended; otherwise it stays dropped.",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "polls_onpoint_politics",
@@ -240,7 +251,8 @@
    "poller": "none",
    "decision_needed": "On Point Politics: provide the exact polling-average URL if this source was intended; otherwise it stays dropped.",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_cook_senate",
@@ -260,7 +272,8 @@
    "poller": "cook_ratings",
    "decision_needed": "Cook written permission to display rating labels publicly (Senate/Governor), or fall back to link-only per race.",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "ratings_cook_house",
@@ -280,7 +293,8 @@
    "poller": "cook_ratings",
    "decision_needed": "Cook written permission to display all 435 House labels, or show only Michigan districts and link out for the rest.",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "ratings_cook_governor",
@@ -300,7 +314,8 @@
    "poller": "cook_ratings",
    "decision_needed": "Cook written permission to display rating labels publicly (Senate/Governor), or fall back to link-only per race.",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "ratings_cook_rating_changes",
@@ -320,7 +335,8 @@
    "poller": "link_only",
    "decision_needed": "Confirm whether Cook listing headline + date may be stored as a changelog hint (recommended: no, link only).",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_sabato_senate",
@@ -340,7 +356,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_sabato_house",
@@ -360,7 +377,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_sabato_governor",
@@ -380,7 +398,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_insideelections",
@@ -400,7 +419,8 @@
    "poller": "manual",
    "decision_needed": "Confirm Inside Elections labels are publicly reachable (no login) and get permission; otherwise link only.",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_votehub_forecast",
@@ -420,7 +440,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_silverbulletin_flipr",
@@ -440,7 +461,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_ddhq_the_hill_forecast",
@@ -460,7 +482,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_economist",
@@ -480,7 +503,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_racetothewh",
@@ -500,7 +524,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_splitticket_argument",
@@ -520,7 +545,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_callthemap_forecast",
@@ -540,7 +566,8 @@
    "poller": "none",
    "decision_needed": "Call the Map: provide the exact URL(s) if this source was intended; otherwise it stays dropped.",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_270towin_crosscheck",
@@ -560,7 +587,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ratings_wikipedia_crosscheck",
@@ -580,7 +608,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_nc_daily_absentee_pdf",
@@ -600,7 +629,8 @@
    "poller": "pdf_hash",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "ev_nc_absentee_counts_csv",
@@ -620,7 +650,8 @@
    "poller": "nc_s3",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "ev_nc_absentee_voter_files",
@@ -640,7 +671,8 @@
    "poller": "none",
    "decision_needed": "Confirm VAN-firewall rule: voter-level absentee files (NC, GA, ME) are never downloaded, even to aggregate (recommended: yes).",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_fl_publicstats",
@@ -660,7 +692,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_mi_sos_dashboard",
@@ -680,7 +713,8 @@
    "poller": "manual",
    "decision_needed": "Who captures the dashboard 2x/day, or ask [contact address on source site] for a data feed? (recommended: manual capture now, request feed)",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_mi_sos_news_releases",
@@ -700,7 +734,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_mi_sos_2022_baseline_xlsx",
@@ -720,7 +755,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_ufl_election_lab",
@@ -740,7 +776,8 @@
    "poller": "none",
    "decision_needed": "UF CC BY-NC-ND license ruling: is a campaign policy-shop dashboard 'non-commercial', and is normalizing a derivative? Contact [contact address on source site] (recommended: ask in writing; link only until answered).",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_votehub_cdn_tracker",
@@ -760,7 +797,8 @@
    "poller": "link_only",
    "decision_needed": "Ask VoteHub for written permission to read cdn.votehub.com/early-vote-tracker/*.json (aggregate counts only), or stay link-only (recommended: link only).",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_nbc_early_vote",
@@ -780,7 +818,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_targetearly",
@@ -800,7 +839,8 @@
    "poller": "none",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_ddhq_newsnation",
@@ -820,7 +860,8 @@
    "poller": "none",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_onpoint_tracker",
@@ -840,7 +881,8 @@
    "poller": "none",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_pollcheck_tracker",
@@ -860,7 +902,8 @@
    "poller": "none",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_ga_data_hub",
@@ -880,7 +923,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_ga_voter_absentee_file",
@@ -900,7 +944,8 @@
    "poller": "none",
    "decision_needed": "Confirm VAN-firewall rule: voter-level absentee files (NC, GA, ME) are never downloaded, even to aggregate (recommended: yes).",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_me_absentee_voter_file",
@@ -920,7 +965,8 @@
    "poller": "none",
    "decision_needed": "Confirm VAN-firewall rule: voter-level absentee files (NC, GA, ME) are never downloaded, even to aggregate (recommended: yes).",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_nh_sos_voter_lookup",
@@ -940,7 +986,8 @@
    "poller": "none",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_oh_sos_dashboard",
@@ -960,7 +1007,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_tx_sos_ivis_evr",
@@ -980,7 +1028,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_ia_sos_absentee",
@@ -1000,7 +1049,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_ak_doe",
@@ -1020,7 +1070,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_ne_sos",
@@ -1040,7 +1091,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "ev_mn_sos_absentee",
@@ -1060,7 +1112,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ga_ev",
@@ -1080,7 +1133,8 @@
    "poller": "enhanced_voting",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "enr_nc_dashboard",
@@ -1100,7 +1154,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_mi_sos",
@@ -1120,7 +1175,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_me_sos",
@@ -1140,7 +1196,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_oh_sos",
@@ -1160,7 +1217,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_tx_sos",
@@ -1180,7 +1238,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ia_clarity",
@@ -1200,7 +1259,8 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ak_sos",
@@ -1220,7 +1280,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ne_sos",
@@ -1240,7 +1301,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_nh_sos",
@@ -1260,7 +1322,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_mn_sos",
@@ -1280,7 +1343,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_fl_sos",
@@ -1300,7 +1364,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ks_sos",
@@ -1320,7 +1385,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ky_sos",
@@ -1340,7 +1406,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_sc_clarity",
@@ -1360,7 +1427,8 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ok_sos",
@@ -1380,7 +1448,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_la_sos",
@@ -1400,7 +1469,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_al_sos",
@@ -1420,7 +1490,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ar_sos",
@@ -1440,7 +1511,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_co_clarity",
@@ -1460,7 +1532,8 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_de_sos",
@@ -1480,7 +1553,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_id_ev",
@@ -1500,7 +1574,8 @@
    "poller": "enhanced_voting",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "enr_il_sos",
@@ -1520,7 +1595,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ma_sos",
@@ -1540,7 +1616,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ms_sos",
@@ -1560,7 +1637,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_mt_sos",
@@ -1580,7 +1658,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_nj_sos",
@@ -1600,7 +1679,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_nm_sos",
@@ -1620,7 +1700,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_or_sos",
@@ -1640,7 +1721,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ri_sos",
@@ -1660,7 +1742,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_sd_sos",
@@ -1680,7 +1763,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_tn_sos",
@@ -1700,7 +1784,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_va_ev",
@@ -1720,7 +1805,8 @@
    "poller": "enhanced_voting",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "enr_wv_sos",
@@ -1740,7 +1826,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_wy_sos",
@@ -1760,7 +1847,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_az_sos",
@@ -1780,7 +1868,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ca_sos",
@@ -1800,7 +1889,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ct_sos",
@@ -1820,7 +1910,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_dc_sos",
@@ -1840,7 +1931,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_hi_sos",
@@ -1860,7 +1952,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_in_sos",
@@ -1880,7 +1973,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_md_sos",
@@ -1900,7 +1994,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_mo_sos",
@@ -1920,7 +2015,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_nv_sos",
@@ -1940,7 +2036,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ny_sos",
@@ -1960,7 +2057,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_nd_sos",
@@ -1980,7 +2078,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_pa_sos",
@@ -2000,7 +2099,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_ut_ev",
@@ -2020,7 +2120,8 @@
    "poller": "enhanced_voting",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "enr_vt_sos",
@@ -2040,7 +2141,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_wa_ev",
@@ -2060,7 +2162,8 @@
    "poller": "enhanced_voting",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "enr_wi_sos",
@@ -2080,7 +2183,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "enr_nc_s3_results",
@@ -2100,7 +2204,8 @@
    "poller": "nc_s3",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "enr_mi_cenr_mielections",
@@ -2120,7 +2225,8 @@
    "poller": "link_only",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "macomb_clarity_enr",
@@ -2140,7 +2246,8 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": "2026-10-29T17:06:28Z challenge: HTTP 202 empty body (WAF JavaScript challenge) from GitHub runner"
+   "last_error": "2026-10-29T17:06:28Z challenge: HTTP 202 empty body (WAF JavaScript challenge) from GitHub runner",
+   "active": true
   },
   {
    "id": "macomb_clerk_unofficial_summary_pdf",
@@ -2152,7 +2259,7 @@
    "terms_note": "Attribute 'Macomb County Clerk/Register of Deeds, unofficial results, as of <timestamp>' (Last-Modified). UNOFFICIAL until certified. Header: 'Macomb County results only. Non-Macomb County results from multi-county districts are not included in these totals'. Terms unread.",
    "rate_limit": "Last-Modified / ETag check at most 1 req / 5 min; archive every changed fetch with sha256 and timestamp; 1 in flight per host",
    "expected_cadence_min": 1440,
-   "election_night_cadence_min": 5,
+   "election_night_cadence_min": 3,
    "coverage": "Macomb County: registered voters, total voted, turnout, partisan and nonpartisan contests (Governor ... County Commissioner), county proposals",
    "status": "VERIFIED_PARTIAL",
    "status_reason": "Exists (3 pages, modified 2026-10-27) but is a blank template: no totals, so mode columns (TOTAL/AVCB/Election Day/Early Voting) are unknown until populated; same URL expected to be overwritten in place. Multi-column layout: use word-position extraction. Verify columns on first populated version before building the parser.",
@@ -2160,7 +2267,8 @@
    "poller": "pdf_hash",
    "decision_needed": null,
    "last_success_at": "2026-10-29T17:06:29Z",
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "macomb_past_elections_db",
@@ -2180,7 +2288,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "macomb_legacy_static_html",
@@ -2200,7 +2309,8 @@
    "poller": "none",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "macomb_candidate_list_pdf",
@@ -2220,7 +2330,8 @@
    "poller": "pdf_hash",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": true
   },
   {
    "id": "macomb_clerk_elections_page",
@@ -2240,7 +2351,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "macomb_electionresults_host",
@@ -2260,7 +2372,8 @@
    "poller": "none",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "calls_ap_results_hub",
@@ -2280,7 +2393,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "calls_ap_elections_api",
@@ -2300,7 +2414,8 @@
    "poller": "none",
    "decision_needed": "License the AP Elections API (or DDHQ API) for post-Nov 3 use? (recommended: not before Nov 3; manual entry for now)",
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "calls_npr",
@@ -2320,7 +2435,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "calls_pbs",
@@ -2340,7 +2456,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "calls_mi_local_ap_members",
@@ -2360,7 +2477,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "calls_nbc",
@@ -2380,7 +2498,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "calls_cbs",
@@ -2400,7 +2519,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "calls_abc",
@@ -2420,7 +2540,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "calls_cnn",
@@ -2440,7 +2561,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "calls_fox",
@@ -2460,7 +2582,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   },
   {
    "id": "calls_ddhq_hill_newsnation",
@@ -2480,7 +2603,8 @@
    "poller": "manual",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": ""
+   "last_error": "",
+   "active": false
   }
  ]
 }
