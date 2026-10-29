@@ -47,7 +47,13 @@ FORBIDDEN_CONTENT_PATTERNS = [
     (r"(?i)\bvan[_ -]?id\b", "VAN identifier"),
     (r"(?i)\bfield_aggregates?\b", "field aggregates marker"),
     (r"(?i)\bhd-?58 (vote )?goal\b", "HD-58 vote goal marker"),
-    (r"(?i)internal estimate .{0,40}do not share", "internal-projection marker in data"),
+    (r"(?i)\bprojected[_ ]final[_ ]margin\b", "internal-projection marker"),
+]
+
+# Data-file-only markers: the UI legitimately carries the simulator's label text, data files must not carry its outputs.
+FORBIDDEN_DATA_PATTERNS = [
+    (r"(?i)internal estimate .{0,40}do not share", "internal-projection output in a data file"),
+    (r"(?i)\bneeds? \d+(\.\d+)?% of (the )?remaining\b", "internal-projection line in a data file"),
 ]
 
 # Only data-ish files get the contact-data sweep (code and docs legitimately mention the project contact).
@@ -89,6 +95,11 @@ def check_content(rel):
             line = text.count("\n", 0, m.start()) + 1
             problems.append(f"{label} at line {line}")
     if ext in CONTACT_SWEEP_EXT:
+        for pat, label in FORBIDDEN_DATA_PATTERNS:
+            m = re.search(pat, text)
+            if m:
+                line = text.count("\n", 0, m.start()) + 1
+                problems.append(f"{label} at line {line}")
         for pat, label in CONTACT_PATTERNS:
             m = re.search(pat, text)
             if m:

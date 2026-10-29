@@ -1,6 +1,154 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Election Desk 2026</title>
-<style>body{font-family:system-ui,sans-serif;background:#0b0f17;color:#e6e9ef;margin:0;padding:24px;max-width:720px}a{color:#8ab4f8}</style></head>
-<body><h1>Election Desk 2026</h1><p>Desk shell under construction (P1). All numbers shown here will be UNOFFICIAL until certified, with source and timestamp.</p>
-<p><a href="https://github.com/tgantt8/election-desk-2026">Repository</a></p></body></html>
+<meta name="description" content="Nov 3, 2026 general election desk: national map, polls, ratings, early-vote indicators, live results (UNOFFICIAL until certified), attributed calls, and Macomb County results.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <h1>Election Desk 2026</h1>
+  <span class="pill unofficial">UNOFFICIAL until certified</span>
+  <div class="controls">
+    <label>Auto <select id="interval" class="sel" title="Auto-refresh interval">
+      <option value="0">off</option><option value="1">1 min</option><option value="5" selected>5 min</option><option value="15">15 min</option><option value="30">30 min</option>
+    </select></label>
+    <button id="refresh" class="btn primary" title="Re-fetch the committed data">Refresh</button>
+    <button id="theme" class="btn" title="Toggle light/dark">◐</button>
+  </div>
+  <div id="lastpull" class="small muted" style="flex-basis:100%"></div>
+</header>
+<div id="banner"></div>
+
+<main>
+  <!-- 1 Map + Chambers -->
+  <section id="view-map" class="view active">
+    <div class="card">
+      <h2>Chambers <span class="small muted">— called D / called R / uncalled / simulated</span></h2>
+      <div id="chambers"></div>
+      <div class="legend">
+        <span><i class="sw" style="background:var(--dem)"></i>called D</span>
+        <span><i class="sw" style="background:var(--rep)"></i>called R</span>
+        <span><i class="sw" style="background:var(--ind)"></i>independent (caucus shown)</span>
+        <span><i class="sw" style="background:repeating-linear-gradient(45deg,var(--dem) 0 3px,var(--dem2) 3px 6px)"></i>simulated</span>
+        <span><i class="sw" style="background:var(--none)"></i>uncalled</span>
+      </div>
+      <div id="chambers-src" class="src"></div>
+    </div>
+    <div class="card">
+      <div class="row" style="justify-content:space-between">
+        <div class="tabs" id="layer-tabs" style="margin:0;padding:0">
+          <button data-layer="senate" class="btn active">Senate 2026</button>
+          <button data-layer="house" class="btn">House delegation</button>
+          <button data-layer="gov" class="btn">Governors 2026</button>
+        </div>
+        <div class="row small">
+          <label>Color by <select id="colorby" class="sel">
+            <option value="rating">rating</option><option value="poll">poll average</option><option value="result">live result</option><option value="sim">simulated</option>
+          </select></label>
+          <button id="maptoggle" class="btn">Tile map</button>
+        </div>
+      </div>
+      <div id="map-geo"><svg id="map" viewBox="0 0 975 610" preserveAspectRatio="xMidYMid meet"></svg></div>
+      <div id="map-tile" class="tile" style="display:none"></div>
+      <div class="legend" id="map-legend"></div>
+      <div class="src" id="map-src"></div>
+    </div>
+  </section>
+
+  <!-- 2 Polls -->
+  <section id="view-polls" class="view">
+    <div class="card"><h2>Polls <span class="small muted">— survey measurements (evidence)</span></h2>
+      <div id="polls-avg"></div>
+      <div class="row small" style="margin:8px 0">
+        <select id="polls-race" class="sel"></select>
+        <select id="polls-pop" class="sel"><option value="">all populations</option><option>LV</option><option>RV</option><option>A</option></select>
+        <select id="polls-days" class="sel"><option value="14">last 14 days</option><option value="30">last 30 days</option><option value="9999">all</option></select>
+      </div>
+      <div class="tablewrap"><table id="polls-table"></table></div>
+      <h3>Dedupe log</h3><div id="polls-dedupe" class="small muted"></div>
+    </div>
+  </section>
+
+  <!-- 3 Ratings & Early vote -->
+  <section id="view-ratings" class="view">
+    <div class="card"><h2>Ratings <span class="small muted">— expert judgment, label + date + link only</span></h2>
+      <div class="tablewrap"><table id="ratings-table"></table></div>
+      <h3>Rating changes</h3><div id="ratings-changes" class="small"></div>
+    </div>
+    <div class="card"><h2>Early vote <span class="small muted">— turnout indicators</span></h2>
+      <div class="notice"><strong>Who voted, not how they voted.</strong> Ballots requested, returned and cast, and party registration where a state publishes it. Not vote choice.</div>
+      <div class="tablewrap"><table id="ev-table"></table></div>
+    </div>
+  </section>
+
+  <!-- 4 Simulator -->
+  <section id="view-sim" class="view">
+    <div class="card"><h2>Blue Tsunami Simulator <span class="small muted">— scenarios layer</span></h2>
+      <div class="notice">Simulator outputs are <strong>Internal estimate — not a call — do not share</strong>. They read the polls, ratings and early-vote layers and write only to <code>scenarios</code>. Arrives in P2.</div>
+      <div id="sim"></div>
+    </div>
+  </section>
+
+  <!-- 5 Live results -->
+  <section id="view-results" class="view">
+    <div class="card"><h2>National battlegrounds</h2><div id="results-national"></div></div>
+    <div class="card"><h2>Macomb Tier 1</h2><div id="results-macomb"></div></div>
+  </section>
+
+  <!-- 6 Macomb detail -->
+  <section id="view-macomb" class="view">
+    <div class="card"><h2>Macomb detail</h2>
+      <div class="row small"><select id="macomb-contest" class="sel"></select></div>
+      <div class="tablewrap"><table id="macomb-table"></table></div>
+      <h3>Snapshot timeline</h3><div id="macomb-timeline" class="small"></div>
+      <h3>Anomaly queue</h3><div id="anomalies"></div>
+    </div>
+  </section>
+
+  <!-- 9 Ops -->
+  <section id="view-ops" class="view">
+    <div class="card"><h2>Source health</h2><div id="ops-health"></div></div>
+    <div class="card"><h2>Manual entry</h2>
+      <p class="small muted">Paste results text or CSV here to build a manual snapshot. Nothing is committed from the browser; use the "copy as JSON" button and commit through the <code>manual-entry</code> workflow or the overlay.</p>
+      <textarea id="paste" class="paste" placeholder="Paste a results table or CSV…"></textarea>
+      <div class="row" style="margin-top:6px"><button class="btn" id="paste-parse">Parse</button><button class="btn" id="paste-copy">Copy as JSON</button></div>
+      <pre id="paste-out" class="small mono muted"></pre>
+    </div>
+    <div class="card"><h2>Call entry</h2>
+      <p class="small muted">Record a media projection. Calls are attributed to the outlet and time; the desk never calls a race itself.</p>
+      <div class="row">
+        <input id="call-contest" class="sel" placeholder="contest id (e.g. us-senate-MI)">
+        <input id="call-outlet" class="sel" placeholder="outlet (AP, NBC, DDHQ…)">
+        <input id="call-for" class="sel" placeholder="called for (candidate)">
+        <input id="call-time" class="sel" type="datetime-local">
+        <input id="call-url" class="sel" placeholder="URL">
+        <button class="btn" id="call-copy">Copy call JSON</button>
+      </div>
+      <pre id="call-out" class="small mono muted"></pre>
+    </div>
+    <div class="card"><h2>Export</h2>
+      <div class="row" id="exports"></div>
+    </div>
+  </section>
+</main>
+
+<div id="drawer" class="drawer"><button class="btn close" onclick="document.getElementById('drawer').classList.remove('open')">Close</button><div id="drawer-body"></div></div>
+
+<nav class="bottom">
+  <button data-view="map" class="active">Map</button>
+  <button data-view="polls">Polls</button>
+  <button data-view="ratings">Ratings · EV</button>
+  <button data-view="sim">Simulator</button>
+  <button data-view="results">Live</button>
+  <button data-view="macomb">Macomb</button>
+  <button data-view="ops">Ops</button>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

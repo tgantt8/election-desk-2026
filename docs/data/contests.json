@@ -1,0 +1,168 @@
+{
+ "chambers": {
+  "_layer": "contests",
+  "_note": "Starting balance of the 119th Congress before the Nov 3 2026 election. Verified from primary sources; do not hardcode from prototypes.",
+  "verified_at": "2026-10-29T17:05:00Z",
+  "senate": {
+   "total": 100,
+   "republican": 53,
+   "democrat": 45,
+   "independent": 2,
+   "independents_caucus": {
+    "Angus King (I-ME)": "D",
+    "Bernie Sanders (I-VT)": "D"
+   },
+   "democratic_caucus": 47,
+   "republican_caucus": 53,
+   "vacancies": 0,
+   "majority_leader_party": "R",
+   "vp_tiebreak_party": "R",
+   "source": {
+    "name": "U.S. Senate contact information XML (senators_cfm.xml)",
+    "url": "https://www.senate.gov/general/contact_information/senators_cfm.xml",
+    "retrieved_at": "2026-10-29T17:05:00Z"
+   },
+   "cross_check": {
+    "name": "Ballotpedia, United States Senate partisan breakdown (via search summary)",
+    "value": "53 R / 45 D / 2 I / 0 vacant"
+   }
+  },
+  "house": {
+   "total": 435,
+   "republican": 218,
+   "democrat": 214,
+   "independent": 1,
+   "independents": [
+    {
+     "member": "Kevin Kiley",
+     "district": "CA-3",
+     "note": "Left the Republican Party in 2026; still sits with the House Republican Conference per Congress Countdown. Counted here as I; shown as 'I (sits with R)'."
+    }
+   ],
+   "vacancies": 2,
+   "vacant_seats": [
+    {
+     "district": "FL-20",
+     "note": "Vacant per Clerk member list 2026-10-29; cause and special-election status to be confirmed."
+    },
+    {
+     "district": "TX-23",
+     "note": "Vacant per Clerk member list 2026-10-29; cause and special-election status to be confirmed."
+    }
+   ],
+   "non_voting_delegates": 6,
+   "majority_threshold": 218,
+   "source": {
+    "name": "Clerk of the U.S. House, Member List (voting members only; delegates and the Resident Commissioner excluded)",
+    "url": "https://clerk.house.gov/Members/ViewMemberList",
+    "retrieved_at": "2026-10-29T17:05:00Z"
+   },
+   "cross_check": {
+    "name": "Congress Countdown party breakdown (as of 2026-10-26)",
+    "value": "218 R / 214 D / 1 I / 2 vacant"
+   }
+  }
+ },
+ "senate_2026": [],
+ "governors_2026": [],
+ "house_delegations": [],
+ "new_lines": {
+  "_layer": "contests",
+  "_note": "States whose congressional map for Nov 2026 differs from the map used in Nov 2024 (mid-decade redistricting, 2025-26). Every House baseline for these states must be recomputed on 2026 lines or shown as 'no baseline'. Expected-gain figures are the Wikipedia summary table's and are context, not data.",
+  "verified_at": "2026-10-29T17:20:00Z",
+  "source": {
+   "name": "Wikipedia, 2025–2026 United States redistricting (summary table), cross-checked with Ballotpedia 'Redistricting ahead of the 2026 elections' via search",
+   "url": "https://en.wikipedia.org/wiki/2025%E2%80%932026_United_States_redistricting"
+  },
+  "in_effect_2026": [
+   {
+    "state": "TX",
+    "enacted": "2025-08-29",
+    "method": "legislature (special session)",
+    "expected_shift": "R +5",
+    "note": "Upheld for 2026 by a Dec 2025 court ruling; SCOTUS action Apr 2026."
+   },
+   {
+    "state": "NC",
+    "enacted": "2025-10-22",
+    "method": "legislature",
+    "expected_shift": "R +1",
+    "note": "Federal challenge unsuccessful."
+   },
+   {
+    "state": "OH",
+    "enacted": "2025-10-31",
+    "method": "Ohio Redistricting Commission",
+    "expected_shift": "R +2",
+    "note": "In effect; reported as locked through 2031/2032."
+   },
+   {
+    "state": "CA",
+    "enacted": "2025-11-04",
+    "method": "ballot measure (Proposition 50)",
+    "expected_shift": "D +5",
+    "note": "Maps for 2026, 2028, 2030; injunction denied Jan 2026."
+   },
+   {
+    "state": "UT",
+    "enacted": "2025-11-10",
+    "method": "court order",
+    "expected_shift": "D +1",
+    "note": "Court-enacted map; new Salt Lake County-based district."
+   },
+   {
+    "state": "FL",
+    "enacted": "2026-05-04",
+    "method": "legislature",
+    "expected_shift": "R +4",
+    "note": ""
+   },
+   {
+    "state": "TN",
+    "enacted": "2026-05-07",
+    "method": "legislature",
+    "expected_shift": "R +1",
+    "note": "Post-Callais redraw."
+   },
+   {
+    "state": "LA",
+    "enacted": "2026-05-29",
+    "method": "legislature (replacement map after Louisiana v. Callais)",
+    "expected_shift": "R +1",
+    "note": ""
+   },
+   {
+    "state": "AL",
+    "enacted": "2026-06-02",
+    "method": "legislature",
+    "expected_shift": "R +1",
+    "note": ""
+   }
+  ],
+  "not_in_effect_2026": [
+   {
+    "state": "MO",
+    "enacted": "2025-09-28",
+    "status": "Blocked by the Missouri Supreme Court for 2026; Nov 2026 Proposition A (veto referendum) decides whether it is used in 2028. 2026 runs on the 2022 map."
+   },
+   {
+    "state": "VA",
+    "enacted": "2026-04-21",
+    "status": "Struck down in court; 2026 runs on the prior map."
+   }
+  ],
+  "attempted_failed": [
+   "AR",
+   "IN",
+   "KS",
+   "MD",
+   "NY",
+   "SC",
+   "WI",
+   "IL",
+   "WA",
+   "NJ",
+   "NH"
+  ]
+ }
+}
