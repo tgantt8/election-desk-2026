@@ -1,0 +1,482 @@
+[
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "polls.votehub_api",
+    "name": "VoteHub Polling API (beta)",
+    "url": "https://api.votehub.com",
+    "docs_url": "https://votehub.com/polls/api/",
+    "format": "json",
+    "endpoints_reported": [
+      "/polls",
+      "/polls/{poll_id}",
+      "/pollsters",
+      "/subjects",
+      "/poll-types"
+    ],
+    "params_reported": [
+      "poll_type",
+      "end-date cutoff (name unconfirmed)",
+      "min sample size (name unconfirmed)",
+      "population (rv|lv|a)",
+      "limit (UNCONFIRMED; used in task brief)",
+      "subject/state/race filters UNCONFIRMED"
+    ],
+    "fields_available": {
+      "pollster": "pollster",
+      "sponsor": "sponsors",
+      "field_start": "UNCONFIRMED (likely start_date)",
+      "field_end": "UNCONFIRMED (likely end_date)",
+      "population": "population (a|lv|rv)",
+      "n": "sample_size",
+      "mode": "UNCONFIRMED (not seen in sample)",
+      "toplines": "answers[] (choice/percentage pairs)",
+      "margin": "derive from answers (not stated)",
+      "url": "UNCONFIRMED (attribution asks to cite each poll's original source URL)"
+    },
+    "other_fields_reported": [
+      "id",
+      "poll_type",
+      "subject",
+      "seat_name",
+      "partisan",
+      "internal",
+      "attribution{license,credit,provider_url}"
+    ],
+    "auth": "none reported (public beta); UNCONFIRMED",
+    "rate_limit": "Not published. Third-party client uses 1 req/sec with retry on 5xx/429. Recommend: max 1 req/min per endpoint on our poller (30-60 min cadence), single connection, honor 429 Retry-After, send descriptive User-Agent.",
+    "terms_note": "Reported: Creative Commons Attribution 4.0 International (CC BY 4.0), API in beta. Attribution reported in sample response: credit VoteHub and cite each poll's original source URL; provider URL votehub.com/polls/api/. Store the attribution object verbatim with each snapshot. Prohibited: nothing beyond CC BY terms reported; no NC/ND clause reported. Exact wording UNVERIFIED.",
+    "coverage": [
+      "generic ballot (poll_type, reported)",
+      "presidential approval (poll_type approval, reported)",
+      "favorability (reported)",
+      "Senate/governor/House district via poll_type + seat_name (poll_type 'us-representative' seen in third-party PR; others UNCONFIRMED)"
+    ],
+    "machine_readable": "yes (reported)",
+    "recommended_cadence": "every 30-60 min; poll-types list daily",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "Field names beyond pollster/population/sample_size/answers/poll_type/subject/seat_name/partisan/internal/sponsors are guesses.",
+      "Docs sample is ~1 year old per search tool; schema may have changed.",
+      "partisan/internal flags exist: carry them through to the polls layer; do not drop sponsor-released polls silently.",
+      "VoteHub also publishes its own averages and Pollster Scorecards (grades) - those are judgment/derived, never mix into polls records.",
+      "Beta: expect breaking changes; validate JSON against a schema and fail loudly."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "polls.nyt_siena_nytimes",
+    "name": "NYT/Siena College polls (nytimes.com)",
+    "url": "https://www.nytimes.com/",
+    "format": "html",
+    "fields_available": {
+      "pollster": "The New York Times / Siena College (fixed)",
+      "sponsor": "The New York Times",
+      "field_start": "in article methodology text",
+      "field_end": "in article methodology text",
+      "population": "RV or LV per release",
+      "n": "article methodology",
+      "mode": "live phone / mixed per release (UNVERIFIED)",
+      "toplines": "article text and interactive crosstabs",
+      "margin": "article text",
+      "url": "article URL"
+    },
+    "auth": "none for public pages; paywall/login on some content - never scrape behind it",
+    "rate_limit": "Do not poll nytimes.com. Poll Siena's own release pages (polls.siena entries) instead; human-triggered manual entry for NYT links. Max 1 req/hr if ever fetched.",
+    "terms_note": "Task rule: toplines and crosstab basics with a link only. NYT site terms prohibit scraping/automated access (assumed, UNVERIFIED). Store topline numbers + link + timestamp; do not copy article analysis text.",
+    "coverage": [
+      "national and battleground-state presidential/Senate/governor/House (historical pattern)",
+      "generic ballot when released"
+    ],
+    "machine_readable": "no",
+    "recommended_cadence": "do not poll; detect via Siena feed; manual verify on release",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "Same survey appears on nytimes.com AND sri.siena.edu: dedupe on pollster+field dates+population+race, keep both URLs in a urls[] list.",
+      "NYT also runs a poll-tracking database picked up after 538 closed (Mar 2025) - link-only."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "polls.siena_sri",
+    "name": "Siena Research Institute release pages (NYT/Siena crosstabs, Siena NY polls)",
+    "url": "https://sri.siena.edu/",
+    "alt_hosts": [
+      "scri.siena.edu (older name, appears in search index)",
+      "scsr.siena.edu (task-supplied; NOT seen in any search result - treat as unconfirmed)"
+    ],
+    "format": "html + pdf (crosstab PDFs under /wp-content/uploads/YYYY/MM/)",
+    "fields_available": {
+      "pollster": "Siena Research Institute (or NYT/Siena)",
+      "sponsor": "NYT when partnered",
+      "field_start": "in PDF/release text",
+      "field_end": "in PDF/release text",
+      "population": "RV/LV in PDF header",
+      "n": "PDF header (e.g. 'N registered voters')",
+      "mode": "release methodology",
+      "toplines": "release page + Crosstabs PDF",
+      "margin": "PDF header ('+/- N%')",
+      "url": "release permalink and PDF URL"
+    },
+    "auth": "none",
+    "rate_limit": "Recommend 1 req/10 min against listing/category pages (e.g. /category/political/, /tag/new-york-times/), no PDF fetch except on new-link detection.",
+    "terms_note": "Not located. Treat as copyrighted: topline and crosstab basics with link, no wholesale PDF mirroring. UNVERIFIED.",
+    "coverage": [
+      "NYT/Siena national and battleground",
+      "Siena NY statewide (Hochul vs Blakeman, Aug 2026 release seen in index)",
+      "House district polls when released"
+    ],
+    "machine_readable": "partially (WordPress HTML listing; PDFs are parseable text tables); no API",
+    "recommended_cadence": "every 60 min Oct 29-Nov 3; PDF parse only on new release",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "WordPress site: category/tag RSS feeds (/feed/) likely exist - UNVERIFIED; try before scraping HTML.",
+      "Crosstab PDFs organized by party, gender, ideology, region, age etc. - crosstab basics only.",
+      "Siena says polls use voter-file/political data in sampling; we ingest only published aggregates, nothing voter-level (VAN firewall)."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "polls.pollresults_org",
+    "name": "PollResults.org",
+    "url": "https://pollresults.org",
+    "format": "UNKNOWN",
+    "fields_available": {},
+    "auth": "UNKNOWN",
+    "rate_limit": "Recommend 1 req/hr if verified",
+    "terms_note": "UNKNOWN. No search evidence the site or an API exists.",
+    "coverage": [],
+    "machine_readable": "unknown",
+    "recommended_cadence": "n/a until verified",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "Zero search hits for this name or an API. Do not build against it. Ask the requester for the exact URL, or drop."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "polls.callthemap",
+    "name": "Call the Map (callthemap.com / callthemap.org)",
+    "url": "https://callthemap.com",
+    "format": "UNKNOWN (task says JSON)",
+    "fields_available": {},
+    "auth": "UNKNOWN",
+    "rate_limit": "Recommend 1 req/hr if verified",
+    "terms_note": "UNKNOWN",
+    "coverage": [],
+    "machine_readable": "unknown",
+    "recommended_cadence": "n/a until verified",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "No search results for any product by this name; JSON file URLs cannot be guessed. Needs the exact URL from the requester (DevTools Network tab) and a terms check; hotlinked static JSON of a third-party site's frontend is not a licensed API."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "polls.onpoint_politics",
+    "name": "On Point Politics polling averages",
+    "url": "UNKNOWN",
+    "format": "UNKNOWN (likely html)",
+    "fields_available": {},
+    "auth": "UNKNOWN",
+    "rate_limit": "n/a",
+    "terms_note": "UNKNOWN. Averages are derived/judgment output: if used, LINK ONLY and store in ratings-adjacent 'published_averages', never in polls.",
+    "coverage": [],
+    "machine_readable": "unknown",
+    "recommended_cadence": "n/a",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "No search results for this name. Needs URL from requester."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "polls.fivethirtyeight_abc",
+    "name": "538 / ABC News poll data",
+    "url": "https://projects.fivethirtyeight.com/polls/",
+    "format": "csv (legacy)",
+    "fields_available": {
+      "pollster": "pollster",
+      "sponsor": "sponsors",
+      "field_start": "start_date",
+      "field_end": "end_date",
+      "population": "population",
+      "n": "sample_size",
+      "toplines": "candidate/pct rows",
+      "url": "url"
+    },
+    "auth": "none",
+    "rate_limit": "n/a - do not poll",
+    "terms_note": "ABC News shut 538 on 2025-03-05 (Nieman Lab, Wikipedia via search). Public polling databases went offline. Legacy GitHub fivethirtyeight/data and mirrors (Rearc, datahub; generic ballot mirror last updated 2026-03-12) are stale/unofficial. Not a 2026 source.",
+    "coverage": [
+      "historical only"
+    ],
+    "machine_readable": "legacy only",
+    "recommended_cadence": "none - exclude",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "Mirrors may carry 538 licence (CC BY 4.0 on some datasets, UNVERIFIED); irrelevant for live 2026 feed.",
+      "Any 538 pollster grades are frozen legacy; must be stored as assigner=538 (legacy, <date>) if used at all."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships. Shutdown facts corroborated by multiple search results."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "polls.nyt_poll_tracker",
+    "name": "NYT polling averages/tracker (successor to 538 tracking)",
+    "url": "https://www.nytimes.com/",
+    "format": "html",
+    "fields_available": {},
+    "auth": "paywall/login possible",
+    "rate_limit": "do not poll",
+    "terms_note": "Link only. Derived averages; never copy.",
+    "coverage": [
+      "Trump approval (started Mar 2025); other averages UNVERIFIED"
+    ],
+    "machine_readable": "no",
+    "recommended_cadence": "none",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "Exact tracker URLs not captured."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "avg.realclearpolling",
+    "name": "RealClearPolling averages",
+    "url": "https://www.realclearpolling.com/",
+    "format": "html",
+    "fields_available": {},
+    "auth": "none for pages",
+    "rate_limit": "do not poll",
+    "terms_note": "Link only (published averages shown next to ours). No scraping; terms not read.",
+    "coverage": [
+      "generic ballot",
+      "Senate",
+      "governor",
+      "approval",
+      "House (search shows generic ballot at least)"
+    ],
+    "machine_readable": "no (public); status of any API UNKNOWN",
+    "recommended_cadence": "none (static links)",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "Search snippets showed RCP generic ballot D50.8/R42.6 as of Oct 18 in a third-party roundup - secondary, not data."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "avg.ddhq",
+    "name": "Decision Desk HQ polling averages + polling API",
+    "url": "https://ddhq.io/polls/methodology",
+    "docs_url": "https://polling-api-docs.decisiondeskhq.com/reference",
+    "format": "html (public); json API for clients (reference/polls, reference/averages)",
+    "fields_available": {},
+    "auth": "API: client credentials (FAQ says API docs provided to clients) - UNVERIFIED",
+    "rate_limit": "n/a",
+    "terms_note": "Public pages: LINK ONLY. API is a client product; do not use without a licence. Methodology: AAPOR-compliant polls, 3-10 polls per average (search snippet).",
+    "coverage": [
+      "generic ballot",
+      "Senate",
+      "governor",
+      "approval"
+    ],
+    "machine_readable": "API yes but gated; public pages no",
+    "recommended_cadence": "none (links)",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "DDHQ is also a calls source; keep its averages (ratings/judgment layer) apart from its race calls."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "avg.silver_bulletin",
+    "name": "Silver Bulletin averages and pollster ratings",
+    "url": "https://www.natesilver.net/",
+    "pages": [
+      "https://www.natesilver.net/p/generic-ballot-average-2026-nate-silver-bulletin-congress-polls",
+      "https://www.natesilver.net/p/silver-bulletin-polling-average-methodology",
+      "https://www.natesilver.net/p/pollster-ratings-archive-2025"
+    ],
+    "format": "html (Substack) + Datawrapper embeds",
+    "fields_available": {},
+    "auth": "some content paywalled for paid subscribers - never scrape behind login",
+    "rate_limit": "do not poll",
+    "terms_note": "LINK ONLY. Terms not read; Substack terms apply. Do not copy analysis text.",
+    "coverage": [
+      "generic ballot",
+      "Trump approval",
+      "Senate/House forecast (model output = ratings layer)"
+    ],
+    "machine_readable": "no (Datawrapper chart CSV possible but terms unread - do not use)",
+    "recommended_cadence": "none",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "Search showed a generic-ballot page dated Jul 31 / Sep 8 2026: confirm freshness before linking."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "avg.cook",
+    "name": "Cook Political Report ratings and polling coverage",
+    "url": "https://www.cookpolitical.com/",
+    "format": "html",
+    "fields_available": {},
+    "auth": "paywall/login for ratings detail - never scrape behind it",
+    "rate_limit": "do not poll",
+    "terms_note": "Ratings layer only: store label, date, link; never analysis text. Cook has no public polling average found in recon (UNVERIFIED).",
+    "coverage": [
+      "ratings only"
+    ],
+    "machine_readable": "no",
+    "recommended_cadence": "none",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "Belongs to ratings layer, listed here only because the brief asked."
+    ],
+    "note": "Not searched/fetched this round."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "avg.fiftyplusone",
+    "name": "Fifty Plus One polls and averages (extra find)",
+    "url": "https://fiftyplusone.news/polls/generic-ballot",
+    "downloads_url": "https://fiftyplusone.news/downloads",
+    "format": "html; downloads/API tiered (standard: horse race+approval; premium: crosstabs)",
+    "fields_available": {},
+    "auth": "paid tiers for API",
+    "rate_limit": "n/a",
+    "terms_note": "Link only unless licensed.",
+    "coverage": [
+      "generic ballot",
+      "approval",
+      "others UNVERIFIED"
+    ],
+    "machine_readable": "API gated",
+    "recommended_cadence": "none",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "Search result says its generic ballot average moved to 100% LV-adjusted by June."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "grades.silver_bulletin",
+    "name": "Pollster grades - Silver Bulletin ratings",
+    "url": "https://www.natesilver.net/p/pollster-ratings-archive-2025",
+    "format": "html + Datawrapper table (datawrapper.dwcdn.net/GiFps/3 per search)",
+    "fields_available": {
+      "grade": "letter grade A+..D",
+      "predictive_plus_minus": "yes",
+      "mean_reverted_bias": "yes"
+    },
+    "auth": "none for public tables",
+    "rate_limit": "once daily at most",
+    "terms_note": "Store as {pollster, grade, assigner:'Silver Bulletin', ratings_version/date, link}. Reuse terms unread; link and short fields only. 500+ pollsters, updated Jan 2026 and after 2025 elections (per search).",
+    "coverage": [
+      "500+ pollsters"
+    ],
+    "machine_readable": "partial",
+    "recommended_cadence": "monthly check",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "2025 archive page is frozen (Feb 17 2025); use the current ratings page.",
+      "One third-party site claims Silver Bulletin has no grades - contradicted by Silver Bulletin's own pages in search; verify."
+    ],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "grades.votehub_scorecards",
+    "name": "Pollster grades - VoteHub Pollster Scorecards",
+    "url": "https://votehub.com/polls/pollster-scorecards/",
+    "format": "html",
+    "fields_available": {},
+    "auth": "none",
+    "rate_limit": "once daily at most",
+    "terms_note": "Page exists per search; content/terms unread. Site content may not share the API's CC BY 4.0 - confirm. Store assigner='VoteHub'.",
+    "coverage": [],
+    "machine_readable": "unknown",
+    "recommended_cadence": "monthly",
+    "status": "UNVERIFIED",
+    "gotchas": [],
+    "note": "WebFetch failed DNS resolution (getaddrinfo ENOTFOUND) for this host in this session; entry built from WebSearch result snippets only. Re-verify by direct fetch before any poller ships."
+  },
+  {
+    "layer": "polls",
+    "verified_at": null,
+    "fetch_attempt_at": "2026-10-29",
+    "fetch_result": "DNS_BLOCKED",
+    "id": "grades.538_legacy",
+    "name": "Pollster grades - 538 legacy ratings",
+    "url": "https://github.com/fivethirtyeight/data/tree/master/pollster-ratings",
+    "format": "csv (legacy, GitHub)",
+    "fields_available": {},
+    "auth": "none",
+    "rate_limit": "n/a",
+    "terms_note": "Frozen as of 538 shutdown (2025-03-05); store assigner='538 (legacy)' with vintage date. Repo licence unverified (538 data repo was CC BY 4.0 historically).",
+    "coverage": [],
+    "machine_readable": "yes (legacy)",
+    "recommended_cadence": "none",
+    "status": "UNVERIFIED",
+    "gotchas": [
+      "github.com is reachable from Bash but the repo was not fetched this round (scope)."
+    ],
+    "note": "Not fetched."
+  }
+]

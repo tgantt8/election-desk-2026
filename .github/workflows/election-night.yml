@@ -1,0 +1,52 @@
+name: election-night
+# Long-running loop for election night: polls every N minutes inside the 6-hour job limit, committing after each pass.
+# Tabu fires it at 7:50 PM ET Nov 3; a second run carries it overnight. Do not rely on cron that night.
+on:
+  workflow_dispatch:
+    inputs:
+      interval_min:
+        description: "Minutes between passes"
+        default: "3"
+      duration_min:
+        description: "Total minutes to run (max 345 to stay inside the 6-hour limit)"
+        default: "340"
+      layers:
+        description: "Layers to poll"
+        default: "results,calls"
+concurrency:
+  group: pollers
+  cancel-in-progress: false
+jobs:
+  loop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r requirements.txt
+      - name: Loop
+        env:
+          INTERVAL: ${{ inputs.interval_min }}
+          DURATION: ${{ inputs.duration_min }}
+          LAYERS: ${{ inputs.layers }}
+        run: |
+          git config user.name "election-desk-bot"
+          git config user.email "info@ganttformichigan.com"
+          end=$(( $(date +%s) + DURATION*60 ))
+          pass=0
+          while [ $(date +%s) -lt $end ]; do
+            pass=$((pass+1)); start=$(date +%s)
+            echo "=== pass $pass $(date -u +%FT%TZ)"
+            python3 tools/poll_all.py --layers "$LAYERS" || true
+            python3 tools/build_results_site.py && python3 tools/build_site_data.py
+            python3 tools/hygiene_check.py --all
+            git add data docs/data
+            if git commit -q -m "election-night pass $pass $(date -u +%FT%TZ)"; then
+              for i in 1 2 3; do git pull -q --rebase origin main && git push -q && break || sleep 5; done
+            fi
+            elapsed=$(( $(date +%s) - start )); sleep_s=$(( INTERVAL*60 - elapsed )); [ $sleep_s -gt 0 ] && sleep $sleep_s
+          done

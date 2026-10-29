@@ -1,0 +1,547 @@
+[
+  {
+    "id": "cook-senate",
+    "name": "Cook Political Report - Senate race ratings",
+    "url": "https://www.cookpolitical.com/ratings/senate-race-ratings",
+    "alt_urls": [
+      "https://www.cookpolitical.com/print/ratings/races/senate",
+      "https://www.cookpolitical.com/analysis/senate/senate-overview"
+    ],
+    "format": "HTML (server-rendered, Drupal-style; print variant /print/ratings/races/senate)",
+    "auth": "none for summary/ratings table; individual race pages and analysis are subscriber-only (do not touch)",
+    "rate_limit": "1 fetch/hour (recommend 1 per 30 min on Oct 28-Nov 3); single request per run, identify via User-Agent with contact",
+    "terms_note": "Store LABEL + DATE + LINK only; never analysis text. Cook Terms & Conditions page NOT read (not located by search). Cook's PVI data-request terms (a different dataset) say internal-use-only, revocable license, attribution to CPR requested; do not assume ratings are licensed for bulk public reproduction. Recommend emailing Cook for written OK for label display, or fall back to link-only per race. Display: 'Rating: Cook Political Report, [date]' + link, no logo.",
+    "coverage": "Senate",
+    "machine_readable": "no (HTML only; no API/JSON/RSS found)",
+    "gotchas": [
+      "Search snippet shows print page carries a page date (e.g. 'August 20, 2026' for Solid list) - one date per page, not per race",
+      "Print page appears to list races grouped under category headings (Solid / Likely / Lean / Toss Up)",
+      "Snippet shows Solid R seats only; unverified whether full table incl. Toss Up is un-gated",
+      "Per-race date of last change likely NOT on the table; get it from rating-changes articles (many paywalled; headline+date public)",
+      "Cook uses Lean/Likely/Solid + Toss Up; no Tilt",
+      "Treat page date as 'page last updated', not 'rating assigned' date"
+    ],
+    "basis": "websearch-snippet+prior-knowledge",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "cook-house",
+    "name": "Cook Political Report - House race ratings",
+    "url": "https://www.cookpolitical.com/ratings/house-race-ratings",
+    "alt_urls": [
+      "https://www.cookpolitical.com/print/ratings/races/house",
+      "https://www.cookpolitical.com/analysis/house/house-overview"
+    ],
+    "format": "HTML (print variant /print/ratings/races/house)",
+    "auth": "none for summary; race pages subscriber-only",
+    "rate_limit": "1 fetch/hour (30 min in final week)",
+    "terms_note": "Same as cook-senate. 435 district labels is a larger reproduction than Senate/Gov; get Cook's written OK or show only MI districts + link for the rest.",
+    "coverage": "House",
+    "machine_readable": "no",
+    "gotchas": [
+      "Cook house page summary reported July 16: Solid D181/R180, Likely+Lean D19/R20, Toss-up or worse D11/R16 (counts on page)",
+      "Mid-decade redistricting: 270toWin notes some ratings pending court outcomes in FL and LA - district IDs may change; key on state+district code and verify map version",
+      "Cook posted 18-19 House moves on Oct 9 and Oct 23, 2026 per secondary reports - poll after those dates",
+      "Race naming like 'MI-07'; open seat marker '(open)' in lists"
+    ],
+    "basis": "websearch-snippet+prior-knowledge",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "cook-governor",
+    "name": "Cook Political Report - Governor race ratings",
+    "url": "https://www.cookpolitical.com/ratings/governor-race-ratings",
+    "alt_urls": [
+      "https://www.cookpolitical.com/print/ratings/races/governor",
+      "https://www.cookpolitical.com/analysis/governors/governors-overview"
+    ],
+    "format": "HTML (print variant)",
+    "auth": "none for summary; race analysis subscriber-only",
+    "rate_limit": "1 fetch/hour",
+    "terms_note": "Same as cook-senate.",
+    "coverage": "Governor",
+    "machine_readable": "no",
+    "gotchas": [
+      "Print page date seen in snippet: August 27, 2026 (Solid list: AL, AR, ID, NE, OK, SC, SD, TN, VT, WY)",
+      "Snippet: July 10 update moved 5 races (OH to Toss Up, OR to Likely D, AZ to Lean D)",
+      "Open seats annotated '(open)' next to name"
+    ],
+    "basis": "websearch-snippet",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "cook-rating-changes",
+    "name": "Cook Political Report - rating changes (articles)",
+    "url": "https://www.cookpolitical.com/analysis/house/house-overview",
+    "alt_urls": [
+      "https://www.cookpolitical.com/analysis/senate/senate-overview",
+      "https://www.cookpolitical.com/analysis/governors/governors-overview",
+      "https://www.cookpolitical.com/taxonomy/term/70"
+    ],
+    "format": "HTML article listings, paginated (?page=N); headline + date + author in listing",
+    "auth": "listing public; many article bodies members-only",
+    "rate_limit": "1 fetch/hour; listing page 0 only",
+    "terms_note": "No dedicated public 'ratings changes' table page found. Use listing headline/date ONLY as a changelog hint to date a change; never store body text.",
+    "coverage": "Senate/House/Governor",
+    "machine_readable": "no",
+    "gotchas": [
+      "Dedicated public change-log page NOT confirmed to exist; changes appear as articles e.g. 'House Ratings Changes: Five Races Shift Toward Dems' (Apr 7, 2026)",
+      "Use only to attach a change date to a label diff the poller detected",
+      "Snippets showed listing cache older than latest moves (stale index)"
+    ],
+    "basis": "websearch-snippet",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "sabato-senate",
+    "name": "Sabato's Crystal Ball - 2026 Senate ratings",
+    "url": "https://centerforpolitics.org/crystalball/category/2026-senate",
+    "alt_urls": [
+      "https://centerforpolitics.org/crystalball/2026-senate/ (pattern guess, unconfirmed)"
+    ],
+    "format": "HTML/WordPress articles with embedded rating tables and map images",
+    "auth": "none (Crystal Ball free to read, per prior knowledge)",
+    "rate_limit": "1 fetch/hour; fetch category page 0 + the standing ratings page only",
+    "terms_note": "UVA Center for Politics site terms NOT read. Same label/date/link-only discipline.",
+    "coverage": "Senate",
+    "machine_readable": "no (tables in HTML; maps are images)",
+    "gotchas": [
+      "Search snippet: Oct 14, 2026 five Senate shifts; five Toss-ups incl. Iowa and Kansas (secondary)",
+      "Ratings change in 'Notes on the State of Politics' style articles; date = article date",
+      "Vocab: Safe / Likely / Leans / Toss-up"
+    ],
+    "basis": "websearch-snippet+prior-knowledge",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "sabato-house",
+    "name": "Sabato's Crystal Ball - 2026 House ratings",
+    "url": "https://centerforpolitics.org/crystalball/category/2026-house",
+    "format": "HTML tables in articles",
+    "auth": "none",
+    "rate_limit": "1 fetch/hour",
+    "terms_note": "As sabato-senate.",
+    "coverage": "House",
+    "machine_readable": "no",
+    "gotchas": [
+      "URL is a pattern guess from the Senate category URL",
+      "Possible per-district table only in rating-change articles, not a standing page"
+    ],
+    "basis": "prior-knowledge",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "sabato-governor",
+    "name": "Sabato's Crystal Ball - 2026 Governor ratings",
+    "url": "https://centerforpolitics.org/crystalball/category/2026-governor",
+    "format": "HTML tables in articles",
+    "auth": "none",
+    "rate_limit": "1 fetch/hour",
+    "terms_note": "As sabato-senate.",
+    "coverage": "Governor",
+    "machine_readable": "no",
+    "gotchas": [
+      "URL is a pattern guess",
+      "Snippet: gubernatorial moves early September 2026"
+    ],
+    "basis": "prior-knowledge",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "insideelections",
+    "name": "Inside Elections (Nathan Gonzales) - 2026 ratings",
+    "url": "https://insideelections.com/ratings",
+    "alt_urls": [
+      "https://insideelections.com/ie-rating/lean-republican/?cycle=2026",
+      "https://new.insideelections.com/ie-rating/tilt-democrat/",
+      "https://insideelections.com/states"
+    ],
+    "format": "HTML; per-label index pages (/ie-rating/<label>/?cycle=2026) seen in search results",
+    "auth": "Detailed ratings tables and reports are subscriber-only; category index pages MAY expose race names (unverified)",
+    "rate_limit": "1 fetch/day unless category pages confirmed public; never bypass login",
+    "terms_note": "Paywalled product. If labels are only reachable after login, DO NOT STORE - link-only. If category pages are public, same label/date/link rule; seek permission.",
+    "coverage": "Senate/House/Governor",
+    "machine_readable": "no",
+    "gotchas": [
+      "Vocabulary includes Tilt: Solid, Likely, Lean, Tilt, Toss-up (Battleground label in some years) - keep raw label",
+      "Public tally seen in snippet: Solid D200 Likely D13 Lean D8 Tilt D11 Toss-up22 Tilt R8 Lean R10 Likely R19 Solid R216 (undated)",
+      "Snippet: ratings updates dated Apr 23 (Senate) and Jun 11 (House), 2026 in subscriber index"
+    ],
+    "basis": "websearch-snippet+prior-knowledge",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "votehub-forecast",
+    "name": "VoteHub 2026 midterm forecast (model outputs)",
+    "url": "https://votehub.com/2026/05/04/introducing-the-2026-votehub-midterm-forecast/",
+    "alt_urls": [
+      "https://api.votehub.com (polls API; forecast endpoint NOT found)"
+    ],
+    "format": "HTML dashboard; no documented JSON forecast endpoint found",
+    "auth": "none for page",
+    "rate_limit": "1 fetch/hour if page scrape; no API use without docs",
+    "terms_note": "Label as 'model outputs', not ratings. Terms not read. Two versions: Legacy (polls+fundamentals) and Complete (adds expert ratings and prediction markets) - the Complete version embeds Cook/Sabato/IE, so do not present it as independent of them.",
+    "coverage": "House/Senate (state/district coverage unverified)",
+    "machine_readable": "unknown",
+    "gotchas": [
+      "Launched May 4, 2026; secondary Oct 9 blog table lists VoteHub numbers without labels",
+      "VoteHub public API known (prior knowledge) for polls; no forecast endpoint confirmed - check Network tab/XHR in a browser session"
+    ],
+    "basis": "websearch-snippet",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "callthemap-forecast",
+    "name": "Call the Map 2026 forecast (model outputs)",
+    "url": "https://callthemap.com",
+    "format": "UNKNOWN - no JSON URLs found",
+    "auth": "unknown",
+    "rate_limit": "1 fetch/hour if confirmed",
+    "terms_note": "Terms unknown. Label as 'model outputs'.",
+    "coverage": "House/Senate per secondary report",
+    "machine_readable": "unknown",
+    "gotchas": [
+      "No search result from callthemap.com or a GitHub repo; domain itself not confirmed",
+      "Secondary blog (hyperonomy, Oct 9, 2026) cites Call the Map 81% D House, 54% D Senate - not usable as data",
+      "Do NOT guess JSON paths; inspect XHR in a browser once reachable"
+    ],
+    "basis": "websearch-snippet",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "silverbulletin-flipr",
+    "name": "Silver Bulletin FLIPR 2026 midterm forecast (model outputs)",
+    "url": "https://www.natesilver.net/p/nate-silver-2026-midterm-election-polls-model",
+    "alt_urls": [
+      "https://www.natesilver.net/p/nate-silver-2026-midterm-election-senate-model",
+      "https://www.natesilver.net/p/nate-silver-2026-midterm-election-house-model"
+    ],
+    "format": "Substack posts with embedded interactive charts",
+    "auth": "Toplines public; full detail may be paid (Substack)",
+    "rate_limit": "1 fetch/hour",
+    "terms_note": "Model outputs; paywall status mixed; terms not read.",
+    "coverage": "House/Senate/Governor",
+    "machine_readable": "unknown (no download confirmed)",
+    "gotchas": [
+      "Launched ~Aug 11, 2026; last update seen Oct 22",
+      "Newsweek reports 76.4% D Senate, 95% D House (secondary)"
+    ],
+    "basis": "websearch-snippet",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "racetothewh",
+    "name": "Race to the WH 2026 forecast",
+    "url": "https://www.racetothewh.com/senate/26",
+    "alt_urls": [
+      "https://www.racetothewh.com/senate/ten",
+      "https://www.270towin.com/2026-senate-election/racetothewh-2026-senate-forecast"
+    ],
+    "format": "HTML (Squarespace-style site) with race tables/maps",
+    "auth": "none seen",
+    "rate_limit": "1 fetch/hour",
+    "terms_note": "Terms not read; label/date/link only.",
+    "coverage": "Senate/House/Governor",
+    "machine_readable": "no",
+    "gotchas": [
+      "House and governor URLs not confirmed",
+      "Labeled by 270toWin among rater set"
+    ],
+    "basis": "websearch-snippet",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "splitticket-argument",
+    "name": "Split Ticket / The Argument 2026 forecast",
+    "url": "https://www.270towin.com/2026-house-election/split-ticket-2026-house-ratings",
+    "alt_urls": [
+      "https://www.270towin.com/2026-senate-election/split-ticket-2026-senate-ratings"
+    ],
+    "format": "HTML; primary now at The Argument (domain unconfirmed: theargumentmag.com?)",
+    "auth": "unknown",
+    "rate_limit": "1 fetch/hour",
+    "terms_note": "Primary URL unconfirmed; mirror is third party.",
+    "coverage": "House/Senate",
+    "machine_readable": "no",
+    "gotchas": [
+      "Model run by Lakshya Jain at The Argument",
+      "Pre-launch podcast: 90% D House, 53% R Senate (not usable)"
+    ],
+    "basis": "websearch-snippet",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "ddhq-the-hill",
+    "name": "Decision Desk HQ / The Hill 2026 forecast",
+    "url": "https://decisiondeskhq.com/press",
+    "alt_urls": [
+      "https://ddhq.io/press/decision-desk-hq-releases-2026-congressional-forecast-model",
+      "https://decisiondeskhq.substack.com/p/2026-midterm-election-forecast-tight-race-congress-senate-house",
+      "https://votes.decisiondeskhq.com"
+    ],
+    "format": "HTML (forecast hub); Substack announcement",
+    "auth": "none for page",
+    "rate_limit": "1 fetch/hour",
+    "terms_note": "Model outputs. DDHQ also runs results/calls - never mix into calls layer.",
+    "coverage": "House/Senate",
+    "machine_readable": "unknown",
+    "gotchas": [
+      "Released July 15, 2026; updates at least daily; includes Kalshi/Polymarket data",
+      "Oct 26 update per local news: 57% D Senate",
+      "data.ddhq.io hosts polls files (polls family)"
+    ],
+    "basis": "websearch-snippet",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "economist-model",
+    "name": "The Economist 2026 midterm forecast",
+    "url": "https://theeconomistoffthecharts.substack.com/p/our-prediction-model-for-americas",
+    "format": "Web page + Substack; code reportedly on GitHub (unconfirmed)",
+    "auth": "unknown/possibly paywalled",
+    "rate_limit": "1 fetch/day",
+    "terms_note": "Terms not read.",
+    "coverage": "House/Senate",
+    "machine_readable": "unknown",
+    "gotchas": [
+      "Launched April 29, 2026: 97.9% D House at launch",
+      "Senate 46% D in April (stale)"
+    ],
+    "basis": "websearch-snippet",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "consensus-270towin",
+    "name": "270toWin consensus + per-rater pages (CROSS-CHECK ONLY)",
+    "url": "https://www.270towin.com/2026-senate-election/consensus-2026-senate-forecast",
+    "alt_urls": [
+      "https://www.270towin.com/2026-house-election/consensus-2026-house-forecast",
+      "https://www.270towin.com/2026-senate-election/cook-political-report-2026-senate",
+      "https://www.270towin.com/2026-senate-election/inside-elections-2026-senate-ratings",
+      "https://www.270towin.com/2026-senate-election/sabatos-crystal-ball-senate-2026",
+      "https://270towin.com/content/forecasts-used-to-create-the-2026-consensus-maps"
+    ],
+    "format": "HTML tables with 'As of <date>' stamps",
+    "auth": "none",
+    "rate_limit": "DO NOT poll; manual cross-check only",
+    "terms_note": "Third-party aggregator. Do not store as rater data; use to sanity-check our own entries.",
+    "coverage": "Senate/House/Governor",
+    "machine_readable": "no",
+    "gotchas": [
+      "Stamps lag by weeks (Cook Senate Aug 4; IE Senate Aug 6; Sabato Senate stamp looked stale)"
+    ],
+    "basis": "websearch-snippet",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  },
+  {
+    "id": "wikipedia-crosscheck",
+    "name": "Wikipedia 2026 election pages (CROSS-CHECK ONLY)",
+    "url": "https://en.wikipedia.org/wiki/2026_United_States_Senate_elections",
+    "alt_urls": [
+      "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections",
+      "https://en.wikipedia.org/wiki/2026_United_States_gubernatorial_elections",
+      "https://en.wikipedia.org/wiki/2026_United_States_Senate_election_in_Michigan",
+      "https://en.wikipedia.org/wiki/2026_Michigan_gubernatorial_election",
+      "https://en.wikipedia.org/wiki/2026_United_States_House_of_Representatives_elections_in_Michigan"
+    ],
+    "format": "HTML/wikitext; MediaWiki API action=parse available",
+    "auth": "none",
+    "rate_limit": "manual only; if scripted, <=1 req/s with descriptive User-Agent",
+    "terms_note": "Secondary, CC BY-SA. NEVER store as rater=Wikipedia-aggregated. Cross-check only.",
+    "coverage": "Senate/House/Governor",
+    "machine_readable": "partly (wikitext)",
+    "gotchas": [
+      "Titles from naming convention (prior knowledge) - not confirmed by search",
+      "Tables aggregate Cook/IE/Sabato/others with dates; can lag or be wrong"
+    ],
+    "basis": "prior-knowledge",
+    "layer": "ratings",
+    "status": "UNVERIFIED",
+    "verified_at": null,
+    "verification_blocker": "Direct fetch blocked: WebFetch DNS-fails for www.cookpolitical.com and centerforpolitics.org (host not in session network allowlist; Bash reaches github.com only). Findings come from WebSearch snippets (2026-10-29) and prior knowledge, NOT from reading the page. Re-verify with a live fetch before building parsers.",
+    "last_search_check": "2026-10-29",
+    "fields": [
+      "race",
+      "rater",
+      "label",
+      "date",
+      "url"
+    ]
+  }
+]

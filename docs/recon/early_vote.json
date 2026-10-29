@@ -1,0 +1,789 @@
+[
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://votehub.com/2026-early-vote-methodology/",
+      "https://votehub.com/terms/",
+      "https://cdn.votehub.com/early-vote-tracker/catalog.json (undocumented front-end data store)",
+      "https://x.com/VoteHub"
+    ],
+    "auth": "none (no key)",
+    "machine_readable": true,
+    "party_breakdown": true,
+    "party_breakdown_note": "MODELED only. In Michigan the party component is 'Primary Voting History' (modeled_party_primary_history), not registration. Where states publish registration VoteHub uses it; elsewhere models.",
+    "baseline": "Tracker pairs with prior cycles on-page; no downloadable prior-cycle series found in the JSON files read (config/toplines/components).",
+    "ingest_recommendation": "link_only (ask permission for catalog.json/toplines.json before any polling)",
+    "id": "EV-VOTEHUB-TRACKER",
+    "name": "VoteHub 2026 Midterm Early Vote Tracker (built with L2)",
+    "url": "https://votehub.com/2026-early-vote-tracker",
+    "geography": "State pages for 16 states (AK NC FL GA TX KS IA NE MI OH WI SC ME NH NV VA) + county geography per state (topojson join on vcu_fips)",
+    "metrics": [
+      "aggregate ballots cast",
+      "early in-person count",
+      "mail returns count",
+      "remaining ballots (projection)",
+      "progress % of VoteHub-projected final",
+      "components: modeled 2024 presidential vote, 'modeled_party_primary_history', modeled race, age, voted-in-2024",
+      "MODELED 2026 race estimates and margins for Senate/Governor (DO NOT INGEST)"
+    ],
+    "format": "JS app (React/MapLibre) reading static JSON from cdn.votehub.com/early-vote-tracker/ : catalog.json -> {state}/config.json -> toplines.json, components.json, geographies/county/*.json, races/<id>/estimate.json",
+    "rate_limit": "NOT licensed for programmatic use. If permitted: GET catalog.json with If-None-Match, act only when updated_at changes; <=1 req/10 min; identify UA.",
+    "terms_note": "votehub.com/terms/ (Terms & Conditions, updated 2025-12-05) is a website-use license that bars distributing/commercially exploiting the site and making derivative works; the CC BY 4.0 grant covers the Polling API only. No data license found for the CDN JSON. Methodology page: tracker built 'in partnership with L2' (voter-file vendor) pairing VoteHub-collected returns with voter-file modeling. Link + attribution only unless VoteHub grants written permission.",
+    "cadence": "catalog.json updated_at 2026-10-29T16:28:39Z; MI toplines updated_at 2026-10-28T17:36:25Z (about daily per state).",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): tracker page 200; JS bundle read for data URLs; catalog.json, MI config.json, toplines.json, components.json fetched 2026-10-29; methodology page and /terms/ read.",
+    "gotchas": [
+      "Domain is votehub.com. The CDN JSON is undocumented: it can change without notice.",
+      "Mixes counted ballots with MODELED vote choice and race margins in the same files - must never enter early_vote; if ever ingested, take only aggregate/early/mail_returns counts and discard components/races.",
+      "L2 voter-file provenance: VAN-firewall review before use.",
+      "'remaining'/'final_count'/progress % are VoteHub projections, not data.",
+      "No mail_requested topline seen in MI config (toplines = early, mail_returns, remaining)."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://votehub.com/polls/api/ (docs)"
+    ],
+    "auth": "none",
+    "machine_readable": true,
+    "party_breakdown": false,
+    "party_breakdown_note": "",
+    "baseline": "n/a",
+    "ingest_recommendation": "none_for_early_vote",
+    "id": "EV-VOTEHUB-API",
+    "name": "VoteHub API (api.votehub.com) - Polling API only; NO early-vote endpoints",
+    "url": "https://api.votehub.com/polls",
+    "geography": "n/a",
+    "metrics": [
+      "polls only: GET /polls, GET /polls/{poll_id}"
+    ],
+    "format": "JSON, no auth",
+    "rate_limit": "Not stated. Not needed for early_vote. (For polls layer: recommend <=1 req/15 min.)",
+    "terms_note": "Docs page: 'This API is licensed under Creative Commons Attribution 4.0 International. API Users must follow the license terms.' Applies to the Polling API only.",
+    "cadence": "n/a for early vote",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): GET api.votehub.com/ -> 404 {'message':'Not Found'}; /early-vote, /early_vote, /earlyvote, /ballots, /elections, /states all 404; /polls and /polls/ -> 200 JSON poll list; docs at votehub.com/polls/api/ list only /polls and /polls/{poll_id}.",
+    "gotchas": [
+      "Answer to 'does api.votehub.com expose early-vote?': NO (docs list polls only; 6 guessed early-vote paths 404).",
+      "Belongs to the polls layer, not early_vote."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://election.lab.ufl.edu/data-downloads/earlyvote/2026/US.csv (state-level, all reporting states)",
+      "https://election.lab.ufl.edu/data-downloads/earlyvote/2026/{ST}_county.csv (e.g. MI GA NC FL TX confirmed 200)",
+      "https://election.lab.ufl.edu/data-downloads/earlyvote/2026/{ST}_cd.csv (congressional district; MI confirmed)",
+      "https://election.lab.ufl.edu/data-downloads/earlyvote/2024/US.csv (final 2024 snapshot, Nov 5 2024)",
+      "https://election.lab.ufl.edu/early-vote/2022-early-voting/",
+      "https://election.lab.ufl.edu/early-vote/2024-early-voting/",
+      "[UF Election Lab contact address on its site]"
+    ],
+    "auth": "none for the CSVs (open at the URL); Data Archive files need an account",
+    "machine_readable": true,
+    "party_breakdown": true,
+    "party_breakdown_note": "Party columns (voted_dem/rep/none) populated only for states with party registration data: yes for FL NC IA NE ME NV PA AZ etc.; 0/blank for MI GA OH TX MN AK WI.",
+    "baseline": "PARTIAL. US.csv carries turn_2022 (2022 total turnout) so '2026 early vote vs 2022 total turnout' ratio is possible; 2024 US.csv is a single final snapshot (Nov 5 2024, turn_2020 column); 2022/2020/2024 tracker pages exist but no same-days-out daily series was found.",
+    "ingest_recommendation": "best_single_cross_state_feed; poll US.csv + a few county CSVs IF license reading (NC-ND) is cleared; otherwise link_only. Treat as secondary to state primaries.",
+    "id": "EV-UFL-ELECTIONLAB",
+    "name": "University of Florida Election Lab - 2026 Early Voting (Michael McDonald)",
+    "url": "https://election.lab.ufl.edu/early-vote/2026-early-voting/",
+    "geography": "State (49 jurisdictions in US.csv; AL and NH absent), county CSVs for many states, congressional-district CSVs",
+    "metrics": [
+      "request_* (mail ballots requested/issued)",
+      "accept_* (mail ballots returned/accepted)",
+      "inperson_*",
+      "voted_* (total) - each split by party reg, age bands, gender, race/ethnicity where the state provides",
+      "turn_2022 (2022 total turnout denominator)",
+      "last_update, data_source (official URL), notes (state caveats), updates_today"
+    ],
+    "format": "CSV (header row, 49 rows in US.csv) + HTML/JS dashboard",
+    "rate_limit": "Recommend 1 request/30 min to US.csv (22 KB) and only the county CSVs we use; send If-Modified-Since (Last-Modified header present: US.csv 2026-10-29 16:18 GMT).",
+    "terms_note": "Page states: statistics are disseminated under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International; users MUST provide reasonable attribution and cannot use the data for commercial purposes such as behind a paywall without permission. Some data are compiled from state officials and 'not in the public domain'. ND = no adapted/derived works: display unmodified, attributed, with last_update; do not merge/renormalize into our own series without written OK from [UF Election Lab contact address on its site].",
+    "cadence": "Several times a day; page showed 'Last updated: Oct 29, 2026 @ 12:18pm Eastern'. States update at their own pace (per-row last_update; MN 10/23, MS/MO/WV 10/23-26).",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): tracker page, 2026-early-voting-national.js and -state.js read; US.csv, MI/GA/NC/FL/TX_county.csv, MI_cd.csv, 2024/US.csv fetched 2026-10-29.",
+    "gotchas": [
+      "UF's MI in-person numbers are ESTIMATED from mail-application data and differ from the state dashboard; OH in-person is approximated (ballot sent and received same day); AZ request_* = ballots issued; TX/LA/DE do not publish requests (requests = sent).",
+      "Counts can differ from state sources by timestamp; never add UF to a state figure.",
+      "Some UF rows rely on individual-level state files internally; only aggregates are published.",
+      "The 2022 and 2024 pages' data files are not at a parallel path (2022/US.csv 404)."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [],
+    "auth": "Existing TargetSmart clients via MyTargetSmart; others 'Request Access'",
+    "machine_readable": false,
+    "party_breakdown": true,
+    "party_breakdown_note": "Matches individual early-vote records to the TargetSmart voter file; party = state-provided where available plus TargetSmart's model.",
+    "baseline": "Advertises comparison with previous cycles (client-only).",
+    "ingest_recommendation": "exclude (client-only, voter-file-derived)",
+    "id": "EV-TARGETEARLY",
+    "name": "TargetSmart TargetEarly (2026) - client/access-request product",
+    "url": "https://targetearly.targetsmart.com/",
+    "geography": "National + state; battleground Senate/governor tracking",
+    "metrics": [
+      "early ballot requests",
+      "returned ballots",
+      "in-person early voting",
+      "by party, age, gender, vote history"
+    ],
+    "format": "Web app behind MyTargetSmart; marketing page public",
+    "terms_note": "Not a public feed. Voter-file-derived (VAN-firewall category). TargetSmart (c) all rights reserved.",
+    "cadence": "Daily",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): targetearly.targetsmart.com 200; text says 'TargetEarly is already available to all existing clients via MyTargetSmart' and 'Request Access'.",
+    "gotchas": [
+      "My earlier assumption that it is free/public is wrong for 2026.",
+      "NBC's tracker (below) uses TargetSmart data: second-hand exposure."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://www.nbcnews.com/politics/2026-elections/how-election-data-is-collected"
+    ],
+    "auth": "none",
+    "machine_readable": false,
+    "party_breakdown": true,
+    "party_breakdown_note": "Chart 'Registered Democrats / Registered Republicans / Other / Data not available'; party = state-provided where available plus TargetSmart's MODEL of party affiliation.",
+    "baseline": "Unknown.",
+    "ingest_recommendation": "link_only",
+    "id": "EV-NBC-EARLYVOTE",
+    "name": "NBC News - Tracking the 2026 Early Vote: Midterm Elections",
+    "url": "https://www.nbcnews.com/politics/2026-elections/early-vote",
+    "geography": "National + by state",
+    "metrics": [
+      "mail-in + early in-person votes cast by state (national total ~39.6M seen in a snippet)"
+    ],
+    "format": "HTML page (716 KB) with embedded tables/maps",
+    "rate_limit": "Do not poll.",
+    "terms_note": "NBC News page footnote: national total aggregates 'daily state totals sourced from TargetSmart and state officials'; totals of ballots requested include all registered voters in universal-VBM states. Copyrighted; link + attribution only. Voter-file-derived inputs (TargetSmart) => VAN-firewall: link-only.",
+    "cadence": "'Last updated: October 29, 2026' (daily)",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): page 200, source footnote read.",
+    "gotchas": [
+      "Modeled party mixed with registration party in the same chart: do not treat as registration."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "UNVERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://decisiondeskhq.com"
+    ],
+    "auth": "none",
+    "machine_readable": false,
+    "party_breakdown": false,
+    "party_breakdown_note": "Unknown for general.",
+    "baseline": "Unknown.",
+    "ingest_recommendation": "link_only",
+    "id": "EV-DDHQ-EARLYVOTE",
+    "name": "Decision Desk HQ / NewsNation early-voting pages",
+    "url": "https://newsnation-votes.decisiondeskhq.com/races/<date>/<race-slug>/early-voting",
+    "geography": "Per race; county tables seen for 2026 primaries (AR, MS, FL, NY, LA, OK)",
+    "metrics": [
+      "requested",
+      "returned",
+      "early in-person (per county) - per primary pages"
+    ],
+    "format": "HTML (JS)",
+    "terms_note": "Commercial vendor; its data API is a paid product (separate polling API docs exist at polling-api-docs.decisiondeskhq.com). Link-only.",
+    "cadence": "Unknown",
+    "verification_evidence": "newsnation-votes.decisiondeskhq.com root -> 404 'DEPLOYMENT_NOT_FOUND' (Vercel) as fetched from the workbench; primary-race early-voting URLs appeared only in search. No general-election DDHQ early-vote page confirmed. Not verified.",
+    "gotchas": [
+      "Treat as nonexistent until a general-election early-voting page is found.",
+      "Primary pages seen (e.g. /races/2026-03-03/arkansas-us-senate-democratic-primary/early-voting) are not for November."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [],
+    "auth": "none",
+    "machine_readable": false,
+    "party_breakdown": false,
+    "party_breakdown_note": "",
+    "baseline": "none",
+    "ingest_recommendation": "do_not_use",
+    "id": "EV-ONPOINT-TRACKER",
+    "name": "OnPoint Politics 2026 Early Vote Tracker",
+    "url": "https://onpointpolitics.us/maps/early-vote",
+    "geography": "State (47 reporting states per snippet)",
+    "metrics": [
+      "ballots cast by state (~39.2M seen)"
+    ],
+    "format": "HTML map",
+    "terms_note": "Unknown publisher, no methodology seen.",
+    "cadence": "unknown",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): page 200 ('2026 Early Vote Tracker: Ballots Cast by State', On Point Politics forecast site). Provenance/methodology not established.",
+    "gotchas": [
+      "Provenance unknown. Do not cite or display; included only so nobody mistakes it for a primary source."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "UNVERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [],
+    "auth": "none",
+    "machine_readable": false,
+    "party_breakdown": true,
+    "party_breakdown_note": "",
+    "baseline": "none",
+    "ingest_recommendation": "do_not_use",
+    "id": "EV-POLLCHECK-TRACKER",
+    "name": "PollCheck (UK) US midterms early voting page",
+    "url": "https://www.pollcheck.co.uk/us-midterms-2026/early-voting",
+    "geography": "NC, PA and others",
+    "metrics": [
+      "returned/sent, by party (NC)"
+    ],
+    "format": "HTML",
+    "terms_note": "Secondary re-publisher of state numbers.",
+    "cadence": "unknown",
+    "verification_evidence": "web-search result snippet only (WebFetch could not resolve host in this sandbox: ENOTFOUND). Not fetched. Not checked against state sites.",
+    "gotchas": [
+      "Secondary source: go to NCSBE/PA DoS directly."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://www.michigan.gov/VotingDashboard",
+      "https://app.powerbigov.us/view?r=eyJrIjoiYjY3OTdhMGYtZWY4ZC00OWMzLTk1ZjQtNDU3OTM2MDI0YWU2IiwidCI6ImQ1ZmI3MDg3LTM3NzctNDJhZC05NjZhLTg5MmVmNDcyMjVkMSJ9 (public Power BI Gov embed linked from the page)",
+      "https://www.michigan.gov/sos/elections/election-results-and-data/voter-participation-dashboard/mobile",
+      "[contact address redacted — see source site]"
+    ],
+    "auth": "none",
+    "machine_readable": false,
+    "party_breakdown": false,
+    "party_breakdown_note": "No. Michigan has no party registration; the dashboard has no party split.",
+    "baseline": "Dashboard has no 2022 data (launched Oct 2024). Authoritative 2022 same-point baseline = SOS release XLSX files (see EV-MI-BASELINE-2022-XLSX).",
+    "ingest_recommendation": "manual_capture_or_link; needs a human network-tab recon for an underlying JSON endpoint",
+    "id": "EV-MI-DASHBOARD",
+    "name": "Michigan Voting Dashboard (Michigan Dept. of State, Bureau of Elections)",
+    "url": "https://www.michigan.gov/sos/elections/election-results-and-data/voter-participation-dashboard",
+    "geography": "Statewide, by county, by local jurisdiction (city/township)",
+    "metrics": [
+      "absent voter (mail) ballots requested",
+      "AV ballots returned for tabulation (returned, not necessarily accepted)",
+      "early in-person ballots cast",
+      "active registered voters (denominator) -> % turnout"
+    ],
+    "format": "Power BI (Azure Government 'Publish to web' embed). No CSV/XLSX export link on the page.",
+    "rate_limit": "Do not automate against the Power BI embed (undocumented query API, fragile, ToS gray). Manual capture or request a data feed from [contact address redacted — see source site].",
+    "terms_note": "State of Michigan page, (c) State of Michigan. Page text: aggregated totals only; values of 10 or less display 'Less than 10'; ballots-cast counts come from QVF voting history entered by clerks and 'will not match official or unofficial election results'.",
+    "cadence": "Daily from 45 days before the election; the Oct 20 release says updated daily 'between now and the Monday before Election Day' (i.e. through Mon Nov 2); then archived 30 days after Election Day (about Dec 3) and not updated after that.",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): dashboard page fetched 2026-10-29; description, retention rule, Power BI link, contact read directly.",
+    "gotchas": [
+      "Dashboard text says it reports voter history from the QVF; 'early voting (when available)' updated at the time the ballot is cast via the Early Voting e-Pollbook.",
+      "UF notes MI does not identify how mail ballots were cast: in-person early is a separate QVF mark, so dashboard in-person is exact whereas UF's is an estimate.",
+      "Early voting is a new category since 2023 - no 2022 comparison exists for it.",
+      "Early voting sites open Oct 24 through Sun Nov 1, at least 8 hours daily (SOS Oct 20 release)."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://www.michigan.gov/sos/resources/news/2026/10/13/three-weeks-before-election-day-6-percent-of-voters-have-already-cast-their-ballot",
+      "https://www.michigan.gov/sos/resources/news/2026/10/20/more-than-780000-michigan-voters-have-cast-their-ballot-two-weeks-before-election-day",
+      "https://content.govdelivery.com/accounts/MISOS/bulletins/42fcf6d"
+    ],
+    "auth": "none",
+    "machine_readable": false,
+    "party_breakdown": false,
+    "party_breakdown_note": "",
+    "baseline": "YES, in the release: Oct 20, 2026 release table: 'Two weeks before General Election (Oct. 24, 2022)' requested 1,810,569 / returned 771,967 vs 2026 (Oct 20) 2,121,458 / 789,476; Oct 13 release: 2022 (Oct 18) 1,707,970 / 432,960 vs 2026 2,083,240 / 440,677. 2022 jurisdiction-level XLSX attached to each release.",
+    "ingest_recommendation": "poll index page hourly; parse the 3-row comparison table; snapshot raw HTML",
+    "id": "EV-MI-SOS-RELEASES",
+    "name": "Michigan Dept. of State news releases with early/AV return tables (also via GovDelivery)",
+    "url": "https://www.michigan.gov/sos/resources/news",
+    "geography": "Statewide only",
+    "metrics": [
+      "voters who have requested a mail ballot (incl. permanent list)",
+      "voters who returned mail ballot",
+      "total voted incl. early-voting-site votes and % of active registered",
+      "same-point 2022 comparison table"
+    ],
+    "format": "HTML press release with a small comparison table; email bulletin copy",
+    "rate_limit": "1 request/hour to the news index; fetch each release once.",
+    "terms_note": "State publication; attribute with release date.",
+    "cadence": "Weekly milestones (3 weeks Oct 13, 2 weeks Oct 20; expect 1 week ~Oct 27 and a final ~Nov 2). Release states 7 a.m. as-of time.",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): Oct 20 2026 release HTML fetched and table read; Oct 13 release table read; 2022 releases (10/25, 11/01) fetched and XLSX links found.",
+    "gotchas": [
+      "Release pairs 2026-10-20 (14 days out) with 2022-10-24 (15 days out): approximately, not exactly, days-before aligned. Show the SOS pairing as published and label it so.",
+      "These counts (mail returned) exclude early in-person votes; total-voted line includes them.",
+      "Release wording changes yearly; store raw HTML."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://pastelections.macombgov.org (results archive)",
+      "https://mvic.sos.state.mi.us/Voter/index (individual ballot status lookup - EXCLUDED, voter-level)"
+    ],
+    "auth": "none",
+    "machine_readable": false,
+    "party_breakdown": false,
+    "party_breakdown_note": "",
+    "baseline": "Macomb rows exist in the MI 2022 jurisdiction XLSX (EV-MI-BASELINE-2022-XLSX); Macomb 2024 by method from search snippet only (unverified).",
+    "ingest_recommendation": "use_state_dashboard_county_and_jurisdiction_slice_instead",
+    "id": "EV-MI-MACOMB",
+    "name": "Macomb County Clerk/Register of Deeds - Elections",
+    "url": "https://www.macombgov.org/departments/clerk-register-deeds/elections",
+    "geography": "Macomb County; municipal detail only via state dashboard / 2022 XLSX",
+    "metrics": [
+      "none: no AV-return statistics on the Elections page"
+    ],
+    "format": "HTML; results PDFs",
+    "terms_note": "County government; attribute.",
+    "cadence": "n/a for AV stats",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): Macomb Elections page fetched (4.3 KB text): Nov 3 2026 election banner, links to Unofficial Detailed/Summary Election Results and 'Track Your Absent Voter Ballot' (per-voter), 'Early Voting', 'Absent voter ballots'. No ballots-issued/returned aggregate or thermometer found.",
+    "gotchas": [
+      "Answer: Macomb does NOT publish its own AV-return stats on the landing page as of 2026-10-29 (could sit on a sub-page not linked there). Use the state dashboard's county/municipal view (Macomb County and its 27 jurisdictions)."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "UNVERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://sos.ga.gov/page/election-data-hub-unofficial-turnout",
+      "https://sos.ga.gov/data-hub-november-8-2022-general-election",
+      "https://sos.ga.gov/data-hub-2022-general-election",
+      "https://sos.ga.gov/current-election-information"
+    ],
+    "auth": "none",
+    "machine_readable": false,
+    "party_breakdown": true,
+    "party_breakdown_note": "April 29, 2026 SOS upgrade added turnout by party affiliation. Georgia has NO party registration, so this is likely derived from primary-ballot history - unconfirmed. Label as 'party affiliation (primary history)' if used.",
+    "baseline": "YES, structurally: per-election Data Hub pages exist for Nov 8 2022 general (and runoff Dec 6 2022); 2024 page presumably. Same-day matching requires indexing by early-voting day.",
+    "ingest_recommendation": "link_only; consume via UF GA_county.csv if UF license cleared",
+    "id": "EV-GA-DATAHUB",
+    "name": "Georgia SOS Election Data Hub - unofficial turnout (absentee, early, total)",
+    "url": "https://sos.ga.gov/page/election-data-hub-turnout",
+    "geography": "Statewide + county (view-dependent)",
+    "metrics": [
+      "absentee requested/returned",
+      "early in-person votes",
+      "total turnout (unofficial)"
+    ],
+    "format": "Interactive web tool (BI) fed by Absentee Voter File + Voter History File",
+    "rate_limit": "Do not poll the tool; look for a published summary table/export; if none, 1 req/30 min.",
+    "terms_note": "State publication; attribute.",
+    "cadence": "Daily during early voting (SOS releases: 1,007,015 in-person early as of Oct 20 noon).",
+    "verification_evidence": "Workbench: sos.ga.gov and mvp.sos.ga.gov -> 403 Cloudflare challenge ('Just a moment... Enable JavaScript and cookies'); not readable programmatically. UF US.csv names https://mvp.sos.ga.gov/s/voter-absentee-files as GA source and https://sos.ga.gov/page/election-data-hub-unofficial-turnout for the dashboard county downloads ('Ballots Issued and Accepted', 'Ballots to Date'); UF GA_county.csv exists (2026-10-29 10:57 GMT).",
+    "gotchas": [
+      "Cloudflare bot wall: do not plan a direct poller.",
+      "Statewide absentee file is VOTER-LEVEL: excluded.",
+      "UF GA party columns blank (Georgia has no party registration)."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://dl.ncsbe.gov/?prefix=Press/2026%20General/NC%20Absentee%20Stats%20for%202026%20General/",
+      "https://s3.amazonaws.com/dl.ncsbe.gov?prefix=Press/2026%20General/&delimiter=/ (S3 XML key listing, public)",
+      "https://www.ncsbe.gov/results-data/absentee-data"
+    ],
+    "auth": "none",
+    "machine_readable": true,
+    "party_breakdown": true,
+    "party_breakdown_note": "Yes: Democratic / Republican / Unaffiliated / Libertarian / Green (registration).",
+    "baseline": "YES, strongest of all: each report prints 'Comparison to 2022 General Election' (Total ballots cast this time in 2022: early voting 1,472,047 + mail 113,941 = 1,585,988 in the Oct 29 report - read via pypdf; whether that is same-day-aligned or final is not stated in the extract, so confirm against 2022-10-26/27 PDF). Complete daily PDF archives: 2022 General (2022-09-12 .. 2022-11-19) and 2024 General (2024-09-21 .. 2024-11-26) in the same S3 folder pattern; 2024 'Daily County by County Turnout Stats' folder also exists.",
+    "ingest_recommendation": "poll (primary source #1)",
+    "id": "EV-NC-DAILY-ABSENTEE",
+    "name": "NC State Board of Elections - Daily Absentee Stats Report (2026 General)",
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/Press/2026%20General/NC%20Absentee%20Stats%20for%202026%20General/YYYY-MM-DD%20Daily%20Absentee%20Stats%20Report%20-%202026%20General.pdf",
+    "geography": "Statewide + by county (table); party and demographics in report",
+    "metrics": [
+      "total ballots cast (in-person early + civilian/military/overseas mail)",
+      "turnout % of eligible",
+      "party registration x ballots cast x turnout x proportion",
+      "race, ethnicity, gender same",
+      "county table (in-person early, civilian, military, overseas, total)",
+      "comparison to 2022 general (same point)"
+    ],
+    "format": "PDF, 4 pages, text-extractable (pypdf worked). Footer: 'Published 10/29/2026; Ballots cast through 10/28/2026'. Data sources line names absentee_counts_state_20261103.csv and absentee_20221108.zip.",
+    "rate_limit": "Fetch each new dated PDF once per day (+ one retry); date-stamped, effectively immutable. Identify UA.",
+    "terms_note": "State public record; attribute NCSBE and the report's own 'data updated' timestamp.",
+    "cadence": "Daily; today's PDF Last-Modified Thu 29 Oct 2026 13:12:49 GMT (about 9:12 a.m. ET); yesterday 13:18 GMT. In-person early voting Oct 15 - Oct 31 (3 p.m.).",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): 2026-10-28 and 2026-10-29 PDFs downloaded (200, application/pdf) and text extracted; S3 listings of 2022 and 2024 folders retrieved.",
+    "gotchas": [
+      "Mail ballots here are 'accepted' (not merely returned).",
+      "NC's 'Total ballots cast' mixes in-person early and mail; keep modes separate.",
+      "Layout parse needs an alarm on page-structure change.",
+      "Eligible voters denominator = registered (7,892,848 in the Oct 29 report).",
+      "The S3 bucket also holds record-level absentee files: never fetch."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://dl.ncsbe.gov/?prefix=ENRS/2026_11_03/",
+      "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2022_11_08/absentee_counts_state_20221108.csv",
+      "https://www.ncsbe.gov/results-data/absentee-data"
+    ],
+    "auth": "none",
+    "machine_readable": true,
+    "party_breakdown": true,
+    "party_breakdown_note": "",
+    "baseline": "2022 file at the parallel path (2022_11_08) exists but is the final file (Last-Modified 19 Nov 2022), not same-day.",
+    "ingest_recommendation": "poll (alt to PDF parsing)",
+    "id": "EV-NC-ABSENTEE-COUNTS",
+    "name": "NCSBE absentee counts files (aggregate CSV) and request-demographic stats",
+    "url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_counts_state_20261103.csv",
+    "geography": "Statewide (cross-tab by request type, party, gender, race, ethnicity); county-level request stats separately",
+    "metrics": [
+      "counts by abs_request_type x party_cd x gender x race x ethnicity (final column is the count)"
+    ],
+    "format": "CSV, 204 KB (2026), 25 KB (2022); Last-Modified Thu 29 Oct 2026 08:41:38 GMT",
+    "rate_limit": "HEAD + If-Modified-Since; at most 1 GET/hour.",
+    "terms_note": "Public record; attribute.",
+    "cadence": "Daily overnight (08:41 GMT).",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): both CSVs fetched; first rows read.",
+    "gotchas": [
+      "Aggregate cross-tab only (no voter ID) - the 2026 CSV is the aggregate counts file; the zip alongside is record-level and excluded.",
+      "Count-column header is a number/date artifact ('0'), confirm schema before parsing.",
+      "UF notes NC mail-request stats are county-level only."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "UNVERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://www.maine.gov/sos/elections-voting/voter-data/previous-absentee-data",
+      "https://www.maine.gov/sos/elections-voting/voter-data/absentee-layout%3A-november-2024-election"
+    ],
+    "auth": "none",
+    "machine_readable": true,
+    "party_breakdown": true,
+    "party_breakdown_note": "Enrollment field exists (likely party); computing party shares means aggregating a voter-level file.",
+    "baseline": "Previous absentee data page keeps prior files (2024, 2022) - voter-level.",
+    "ingest_recommendation": "exclude_voter_level_file; use UF ME row as secondary",
+    "id": "EV-ME-ABSENTEE-FILE",
+    "name": "Maine SOS Statewide Absentee Voter Data File",
+    "url": "https://www.maine.gov/sos/elections-voting/voter-data/statewide-absentee-voter-list",
+    "geography": "Municipality level (record-level file)",
+    "metrics": [
+      "request, fulfillment and return per voter record"
+    ],
+    "format": "Text file (fixed/delimited; layout page per election), posted as dated snapshots (latest seen: 6/9/26 primary file)",
+    "terms_note": "Free per state law; voter-level.",
+    "cadence": "Dated snapshots; November 2026 file not confirmed.",
+    "verification_evidence": "Workbench: maine.gov/sos/cec/elec/data/index.html -> redirect to /sos/elections-voting/voter-data (200); statewide-absentee-voter-list page -> 403. UF names the voter-data page as ME source (UF ME row: party present, last_update 10/28, no in-person).",
+    "gotchas": [
+      "VOTER-LEVEL: under the VAN firewall rule do not ingest, even to aggregate. Needs an explicit ruling.",
+      "No official aggregate Maine page found; use SOS press releases and news for statewide totals (Maine reported >65,000 requested / ~35,000 returned for the June primary)."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "UNVERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://www.ohiosos.gov/office/media-center/categories/press-releases/",
+      "https://www.ohiosos.gov/office/media-center/categories/week-in-review/"
+    ],
+    "auth": "none",
+    "machine_readable": false,
+    "party_breakdown": false,
+    "party_breakdown_note": "Ohio has no party registration; some county boards (e.g. Hamilton) publish issued/returned by 'voter party affiliation' derived from primary history. Not a state-level feed.",
+    "baseline": "PARTIAL: press releases give statewide cumulative figures for 2022 (e.g. 2022-11-07, 2022-11-01) and 2024; XLSX county tables for 2020 seen.",
+    "ingest_recommendation": "link_only; consume via UF only if licence cleared",
+    "id": "EV-OH-SOS-DATA",
+    "name": "Ohio SOS - Data Analytics and Archives dashboard and county absentee reports",
+    "url": "https://data.ohiosos.gov/portal/election-dashboards",
+    "geography": "Statewide + county",
+    "metrics": [
+      "absentee requests received",
+      "absentee ballots returned/cast",
+      "in-person early (via press release)"
+    ],
+    "format": "Dashboard (BI) + press releases + historical county XLSX attachments",
+    "rate_limit": "1 request/hour to press-release index.",
+    "terms_note": "State publication; attribute.",
+    "cadence": "County data reported to SOS and 'updated daily' per a 2024 report (secondhand).",
+    "verification_evidence": "Workbench: data.ohiosos.gov/portal/election-dashboards -> 403 (WAF/'Website Maintenance' interstitial). UF names this URL as OH source. Not readable.",
+    "gotchas": [
+      "UF note: OH in-person early approximated by ballots sent and received same day.",
+      "Ohio has no party registration."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "UNVERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://www.sos.texas.gov/elections/ (403 WAF from workbench)"
+    ],
+    "auth": "none",
+    "machine_readable": true,
+    "party_breakdown": false,
+    "party_breakdown_note": "Texas has no party registration.",
+    "baseline": "Not found. UF TX_county.csv (2026) exists; no prior-year same-day series located.",
+    "ingest_recommendation": "poll_after_api_inspection",
+    "id": "EV-TX-SOS-EARLYVOTING",
+    "name": "Texas SOS Early Voting Results (IVIS EVR) and SOS early-voting pages",
+    "url": "https://goelect.txelections.civixapps.com/ivis-evr-ui/evr",
+    "geography": "Statewide + all 254 counties (KXAN map built on it)",
+    "metrics": [
+      "registered voters",
+      "in-person early votes",
+      "mail ballots returned (separately)",
+      "turnout %"
+    ],
+    "format": "Civix single-page app (JSON API behind it - not inspected); SOS legacy HTML tables for prior years",
+    "rate_limit": "1 request/hour (static pages).",
+    "terms_note": "State public record; attribute.",
+    "cadence": "Daily during early voting (Oct 19-30, 2026); final day today+1.",
+    "verification_evidence": "Workbench: goelect.txelections.civixapps.com/ivis-evr-ui/evr -> 200 text/html (18 KB SPA shell, title 'Early Voting Results'); sos.texas.gov and sos.state.tx.us /elections/ -> 403 'requested file was not found' (WAF). UF names the civix URL as TX's data source. Data content not read.",
+    "gotchas": [
+      "UF note: Texas does not report mail-ballot requests; requests = ballots sent; some counties scraped from county sites.",
+      "Early voting Oct 19-30, so last new numbers Oct 30; then Election Day totals are results, not early_vote.",
+      "SOS web pages block this IP range; GitHub Actions runners may be blocked too."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "UNVERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://sos.iowa.gov/sites/default/files/2026-06/ABS%20Counties%202026.pdf (primary example)",
+      "https://sos.iowa.gov/sites/default/files/2026-06/ABS%20Congressional%202026.pdf"
+    ],
+    "auth": "none",
+    "machine_readable": true,
+    "party_breakdown": true,
+    "party_breakdown_note": "Yes - Democrat / Republican / No Party etc. in each table.",
+    "baseline": "PARTIAL: 2024 primary reports found at sos.iowa.gov/elections/pdf/2024/primary/; 2022/2024 general daily PDFs presumably exist; Bleeding Heartland has archived daily snapshots.",
+    "ingest_recommendation": "find_vivid_json_url_in_browser; else UF",
+    "id": "EV-IA-SOS-ABSENTEE",
+    "name": "Iowa SOS - Absentee ballot statistics (county, congressional, state House, state Senate)",
+    "url": "https://sos.iowa.gov/elections/absenteestats",
+    "geography": "County, congressional district, state House, state Senate",
+    "metrics": [
+      "absentee requested, issued, received - by method (mail, counter/in-office, health-care facility)"
+    ],
+    "format": "Vivid dashboard JSON (per UF) + PDF reports (per search)",
+    "rate_limit": "1 request/hour; PDFs change by posting new files - poll the index page, then fetch new links.",
+    "terms_note": "State public record; attribute.",
+    "cadence": "Daily by statute (Iowa Code 53.4) from first mailing day (Oct 14, 2026 per one outlet); in-person absentee 'counter' counts included.",
+    "verification_evidence": "Workbench: sos.iowa.gov -> 403 Cloudflare challenge. UF note: Iowa 'statewide and county totals, method of voting (mail vs in-person) and party registration all come from two public JSON files the state's own Vivid dashboard uses' (UF IA row last_update 10/29, party present). JSON URLs not located. Not verified.",
+    "gotchas": [
+      "Cloudflare bot wall.",
+      "Nevada also uses a Vivid dashboard (nvsos.gov/elections/election-information/vivid-project)."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "UNVERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://www.elections.alaska.gov/research/statistics/#aeqstats (UF-named source)"
+    ],
+    "auth": "none",
+    "machine_readable": false,
+    "party_breakdown": true,
+    "party_breakdown_note": "Yes per Alaska Beacon (e.g. 27.1% of early votes Mon-Wed from registered Republicans, 'according to a Division of Elections report').",
+    "baseline": "Weak/unknown. Division also notes 2024 general rejection rate baseline (primary 3.4% ~double 2024 general).",
+    "ingest_recommendation": "find_report_url_first",
+    "id": "EV-AK-DOE",
+    "name": "Alaska Division of Elections - absentee/early vote reports",
+    "url": "https://www.elections.alaska.gov/research/statistics/",
+    "geography": "Statewide + district (reports cited by Alaska Beacon)",
+    "metrics": [
+      "early votes cast",
+      "absentee ballots returned",
+      "rejected absentee ballots",
+      "unreturned blank absentee ballots (outlet-cited)"
+    ],
+    "format": "Reports (likely PDF) on division site - exact page UNKNOWN",
+    "terms_note": "State public record; attribute.",
+    "cadence": "Daily during the early-vote window (Oct 22 outlet piece quotes Wednesday and Thursday morning counts).",
+    "verification_evidence": "Workbench: www.elections.alaska.gov -> SSL error (certificate verification failed). UF AK row last_update 10/28 shows requests, accepted and in-person but no party columns; Alaska Beacon (via search) says a Division report gives party share. Not read.",
+    "gotchas": [
+      "Site fails TLS verification from the workbench - do not disable verification; flag to Alaska Division.",
+      "Late-arriving absentees counted through ~Nov 18."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "UNVERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [],
+    "auth": "none",
+    "machine_readable": false,
+    "party_breakdown": true,
+    "party_breakdown_note": "Via UF: yes (data file provided to UF); not a public SOS feed.",
+    "baseline": "None found.",
+    "ingest_recommendation": "link_only; county pages (NE-02: Douglas County Election Commission) need separate recon",
+    "id": "EV-NE-SOS",
+    "name": "Nebraska SOS - Elections Division (early voting)",
+    "url": "https://sos.nebraska.gov/elections/elections-division",
+    "geography": "No statewide early-vote report found; counties (e.g. Douglas, Lancaster) publish their own",
+    "metrics": [
+      "none located at state level"
+    ],
+    "format": "HTML/PDF county pages",
+    "terms_note": "n/a",
+    "cadence": "n/a",
+    "verification_evidence": "Search + UF CSV: UF NE row says 'Data file provided by Nebraska Secretary of State' (not a public URL) and carries party columns (voted_dem 78,591 on 10/29). No public SOS page located. Not fetched.",
+    "gotchas": [
+      "Honest answer: no published state aggregate located.",
+      "Nebraska splits electoral votes (NE-02) but this is a Senate/House desk: county data matters for NE-02."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "UNVERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [],
+    "auth": "none",
+    "machine_readable": false,
+    "party_breakdown": false,
+    "party_breakdown_note": "",
+    "baseline": "2024 general total absentee: 99,524 (~12% of ballots) per NHPR - single total only.",
+    "ingest_recommendation": "exclude_voter_lookup; link only",
+    "id": "EV-NH-SOS",
+    "name": "New Hampshire SOS - absentee voter lookup and statistics",
+    "url": "https://app.sos.nh.gov/",
+    "geography": "Per-voter lookup only; no aggregate page found",
+    "metrics": [
+      "none aggregate located"
+    ],
+    "format": "Interactive voter lookup (individual) - EXCLUDED",
+    "terms_note": "n/a",
+    "cadence": "n/a",
+    "verification_evidence": "Search only. UF US.csv has NO New Hampshire row (and no Alabama). NHPR 2024 baseline: 99,524 absentee ballots (12%).",
+    "gotchas": [
+      "Absentee return deadline: in person by 5pm Nov 2, mail by 5pm Nov 3.",
+      "UF said NH had no data a week out."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "UNVERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://sos.state.mn.us/election-administration-campaigns/data-maps/absentee-data",
+      "https://sos.mn.gov/media/n31bt5gc/2026voteearlyab.pdf (purpose unclear)"
+    ],
+    "auth": "none",
+    "machine_readable": true,
+    "party_breakdown": false,
+    "party_breakdown_note": "Minnesota has no party registration.",
+    "baseline": "YES, summary back to 2018 on the page; same-day index unknown.",
+    "ingest_recommendation": "link_only; UF as secondary",
+    "id": "EV-MN-SOS-ABSENTEE",
+    "name": "Minnesota SOS - Absentee Data (ballots sent / accepted)",
+    "url": "https://www.sos.mn.gov/election-administration-campaigns/data-maps/absentee-data/",
+    "geography": "Statewide; county detail on the page (unconfirmed)",
+    "metrics": [
+      "absentee applications",
+      "ballots sent",
+      "ballots accepted (incl. mail-ballot precincts)"
+    ],
+    "format": "HTML tables / downloadable summary (format unconfirmed)",
+    "rate_limit": "1 request/hour.",
+    "terms_note": "State public record; attribute.",
+    "cadence": "Weekly (UF row last_update 10/23/2026).",
+    "verification_evidence": "Workbench: sos.mn.gov absentee-data page -> 200 but Radware bot CAPTCHA page. UF MN row last_update 10/23 (so state data is weekly). Not readable.",
+    "gotchas": [
+      "'Accepted absentee ballot list' is voter-level: never fetch.",
+      "Includes in-person early (absentee in person) - it is absentee law in MN."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://dos.fl.gov/elections/data-statistics/elections-data/",
+      "(my earlier guess countyballotreports.floridados.gov does NOT resolve)"
+    ],
+    "auth": "none",
+    "machine_readable": true,
+    "party_breakdown": true,
+    "party_breakdown_note": "Yes: Republican / Democrat / Other / No Party Affiliation / Total.",
+    "baseline": "Page links 'Archived statistical reports' (prior cycles retained); UF also holds FL history. Same-days-out alignment not verified.",
+    "ingest_recommendation": "poll",
+    "id": "EV-FL-DOE-BALLOT-REPORTS",
+    "name": "Florida Division of Elections - County Vote-by-Mail and Early Voting Reports (PublicStats)",
+    "url": "https://countyfilesvbm-ev.floridados.gov/VoteByMailEarlyVotingReports/PublicStats",
+    "geography": "Statewide + 67 counties (tabs)",
+    "metrics": [
+      "Vote-by-Mail Provided (Not Yet Returned)",
+      "Voted Vote-by-Mail",
+      "Voted Early"
+    ],
+    "format": "HTML page with per-table 'Download File' links; statewide + county tables with compiled timestamps",
+    "rate_limit": "Page refreshes 8 a.m., noon, 3 p.m., 6 p.m. ET: poll at most 4x/day plus once after 6 p.m.",
+    "terms_note": "State public record; attribute to Florida Department of State, Division of Elections with the 'Compiled' timestamp.",
+    "cadence": "Counties report once daily by 8 a.m.; site refreshed at noon, 3, 6 p.m.; cumulative through the prior day; early voting reporting runs to the Monday after early voting ends (Nov 9); VBM reporting to 15 days after the election. Early voting Oct 24-31 (some counties extra days).",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): page 200 (202 KB); statewide table and refresh statement read (statewide as of 10/29/2026 8:07AM).",
+    "gotchas": [
+      "Statewide numbers (Division) can trail county websites (UF note).",
+      "Download File URLs not extracted; JS-generated.",
+      "Counties report 'Voted Early' differently on the last days."
+    ]
+  },
+  {
+    "layer": "early_vote",
+    "status": "VERIFIED",
+    "verified_at": "2026-10-29",
+    "other_urls": [
+      "https://www.michigan.gov/sos/-/media/Project/Websites/sos/Press-releases/2026/documents/PRNov2022BallotStatsByJurisdiction_10_17_2022.xlsx (3 weeks out)",
+      "https://www.michigan.gov/sos/-/media/Project/Websites/sos/Press-releases/2022/documents/10-31-2022-PR-Nov-2022-AV--Ballot-Stats.xlsx (1 week out, linked from 2022/11/01 release)"
+    ],
+    "auth": "none",
+    "machine_readable": true,
+    "party_breakdown": false,
+    "party_breakdown_note": "",
+    "baseline": "THIS IS the baseline: 3-week, 2-week and 1-week-out 2022 snapshots by jurisdiction. Alignment: the SOS pairs 2026-10-20 (14 days before Nov 3) with 2022-10-24 (15 days before Nov 8), i.e. a one-day offset; label it 'about two weeks out', or interpolate nothing and show the SOS pairing as published.",
+    "ingest_recommendation": "poll_once (store as baseline snapshot)",
+    "id": "EV-MI-BASELINE-2022-XLSX",
+    "name": "Michigan Dept. of State 2022 general-election mail ballot stats by jurisdiction (same-point snapshots)",
+    "url": "https://www.michigan.gov/sos/-/media/Project/Websites/sos/Press-releases/2026/documents/PRNov2022AV-BallotStats2022_10_24.xlsx",
+    "geography": "County and jurisdiction (city/township) incl. Macomb County rows",
+    "metrics": [
+      "APPS RECEIVED",
+      "BALLOTS SENT",
+      "BALLOTS RECEIVED",
+      "BALLOTS SPOILED",
+      "BALLOTS REJECTED"
+    ],
+    "format": "XLSX, one sheet ('2022 (Oct 24)'), columns COUNTY, JURISDICTION + 5 count columns; ~91 KB",
+    "rate_limit": "One-time fetch; static files (hash the bytes).",
+    "terms_note": "State publication; attribute 'Michigan Department of State news release' + date. Aggregates only.",
+    "cadence": "Static (2022).",
+    "verification_evidence": "VERIFIED by fetch (Composio workbench, python requests): Oct 24 2022 XLSX downloaded (91,703 bytes), header row and MACOMB COUNTY row confirmed; other two links taken from release HTML, not downloaded.",
+    "gotchas": [
+      "Only three time points, not daily.",
+      "Mail ballots only - 2022 had no statewide early in-person voting.",
+      "'BALLOTS RECEIVED' = returned to clerk, not necessarily accepted.",
+      "2024 equivalents not checked."
+    ]
+  }
+]

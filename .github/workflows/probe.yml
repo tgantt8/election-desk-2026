@@ -1,0 +1,50 @@
+name: probe
+# Manual reachability + pipeline probe from a GitHub runner: Clarity (Macomb), the Clerk's summary PDF, and the
+# Enhanced Voting live-test feed. Commits whatever snapshots it records (append-only) so the desk can show them.
+on:
+  workflow_dispatch:
+    inputs:
+      commit:
+        description: "Commit recorded snapshots to main"
+        type: boolean
+        default: true
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q -r requirements.txt
+      - name: Clarity (Macomb) reachability
+        continue-on-error: true
+        run: |
+          set -x
+          curl -sS -o /tmp/ver.txt -w "clarity current_ver HTTP %{http_code}\n" -A "election-desk-2026/0.1 (public results desk; info@ganttformichigan.com)" https://results.enr.clarityelections.com/MI/Macomb/127293/current_ver.txt
+          head -c 200 /tmp/ver.txt; echo
+          python3 tools/poll_clarity.py --dry-run || echo "clarity poller exit $?"
+      - name: Macomb summary PDF
+        continue-on-error: true
+        run: python3 tools/poll_macomb_pdf.py
+      - name: Enhanced Voting live-test (Washington Nov 3 shell)
+        continue-on-error: true
+        run: |
+          curl -sS -o /tmp/wa.json -w "WA election object HTTP %{http_code} %{size_download} bytes\n" -A "election-desk-2026/0.1 (public results desk; info@ganttformichigan.com)" https://results.votewa.gov/results/public/api/elections/washington/20261103
+          head -c 400 /tmp/wa.json; echo
+          if [ -f tools/poll_enhanced_voting.py ]; then python3 tools/poll_enhanced_voting.py --host results.votewa.gov --slug washington --election 20261103 --state WA --source-id enr_wa_enhanced_voting || echo "ev poller exit $?"; fi
+      - name: Rebuild site data
+        run: python3 tools/build_site_data.py
+      - name: Hygiene
+        run: python3 tools/hygiene_check.py --all
+      - name: Commit snapshots
+        if: ${{ inputs.commit }}
+        run: |
+          git config user.name "election-desk-bot"
+          git config user.email "info@ganttformichigan.com"
+          git add data docs/data
+          git commit -m "probe: snapshots $(date -u +%FT%TZ)" || echo "nothing to commit"
+          git pull --rebase origin main
+          git push

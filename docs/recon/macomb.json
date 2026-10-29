@@ -1,0 +1,1048 @@
+{
+ "recon_note": "Recon 2026-10-29. Verified by fetching through the Composio workbench (WebFetch cannot resolve the macombgov.org hosts; Bash has no network). No vote counts recorded: PDFs/CSVs were read for layout and labels only. Candidate contact data deliberately not stored.",
+ "sources": [
+  {
+   "id": "macomb_clerk_unofficial_summary_pdf",
+   "layer": "results",
+   "name": "Macomb Clerk election-night UNOFFICIAL summary results (3-page PDF, Macomb-only totals)",
+   "url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "format": "PDF, 3 pages, two/three-column text layout",
+   "fields": "Header 'MACOMB COUNTY GENERAL ELECTION - NOVEMBER 3, 2026 / UNOFFICIAL ELECTION RESULTS / *Macomb County results only. Non-Macomb County results from multi-county districts are not included in these totals*', REGISTERED VOTERS / TOTAL VOTED / TURNOUT, then contests (PARTISAN: Governor...County Commissioner; NONPARTISAN: judicial, MCC trustee, village/city/school board; PROPOSALS). Candidate lines carry party codes and '(W.I.)' write-ins. Multi-county districts are labelled '(Multi-County)'. Current file (modified 2026-10-27) is a pre-election TEMPLATE with blank totals.",
+   "machine_readable": "No (PDF text). Parseable with pdfplumber/pypdf; layout is multi-column so use word-position extraction, not linear text.",
+   "rate_limit": "Not stated. Poll no faster than once per 5 minutes with If-Modified-Since / Last-Modified check.",
+   "terms_note": "Not read; attribute to Macomb County Clerk/Register of Deeds; UNOFFICIAL until certified.",
+   "cadence": "UNKNOWN on election night. Same URL is expected to be overwritten (Last-Modified header is the change signal). Not confirmed.",
+   "status": "VERIFIED (exists, layout read); election-night behavior UNVERIFIED",
+   "verified_at": "2026-10-29",
+   "gotchas": [
+    "Linked from the Clerk elections page as 'Unofficial Summary Election Results'.",
+    "Template shows only vote-total-free layout; vote columns (if any) and mode splits are not known until election night; verify columns when first populated.",
+    "Totals are Macomb-only for multi-county districts; never compare to district totals.",
+    "Overwrites in place: always archive each fetch with sha256 and Last-Modified."
+   ]
+  },
+  {
+   "id": "macomb_clarity_enr",
+   "layer": "results",
+   "name": "Macomb 'Unofficial Detailed Election Results' (Clarity Elections ENR)",
+   "url": "https://results.enr.clarityelections.com/MI/Macomb/127293/",
+   "format": "Clarity/Scytl ENR single-page app (HTML shell); standard Clarity endpoints are JSON/XML/CSV zips (UNVERIFIED)",
+   "fields": "UNVERIFIED. Clarity normally reports precincts reporting/total, vote-type columns, per-contest and per-precinct detail.",
+   "machine_readable": "PROBABLY (Clarity ENR normally exposes {ver}/json/en/summary.json, reports/summary.zip, detailxml.zip, detailtxt.zip, detailxls.zip, current_ver.txt) - NOT TESTED. From the sandbox every request returned HTTP 202 with an empty body (bot challenge), so endpoints could not be inspected.",
+   "rate_limit": "Not stated. Treat as 1 request / 60 s per endpoint.",
+   "terms_note": "Not read.",
+   "cadence": "Not observed. Clarity pages typically auto-refresh about every 1-5 minutes.",
+   "status": "VERIFIED (link) / UNVERIFIED (endpoints)",
+   "verified_at": "2026-10-29",
+   "gotchas": [
+    "Event id 127293 comes from the Clerk's 2026-11-03 election page (linked as 'Unofficial Detailed Election Results'); confirm it is the Nov 3 id, not carried from May/Aug (the page labels it under the Nov 3 heading).",
+    "HTTP 202 empty-body = WAF challenge; a plain requests client may not get through; plan manual paste fallback.",
+    "Prior-election Clarity ids not collected."
+   ]
+  },
+  {
+   "id": "macomb_electionresults_host",
+   "layer": "results",
+   "name": "electionresults.macombgov.org (legacy live-results host)",
+   "url": "https://electionresults.macombgov.org/",
+   "format": "UNKNOWN",
+   "fields": "UNKNOWN",
+   "machine_readable": "UNKNOWN",
+   "rate_limit": "n/a",
+   "terms_note": "n/a",
+   "cadence": "n/a",
+   "status": "UNVERIFIED - NOT REACHABLE",
+   "verified_at": "2026-10-29",
+   "gotchas": [
+    "DNS resolves from the Composio sandbox but TLS handshake ends in EOF and plain http gets 'Remote end closed connection' (host not serving / filtered / geo-blocked). WebFetch/Bash cannot resolve it at all (network policy).",
+    "A search index shows https://electionresults.macombgov.org/m42 titled 'Macomb County, Michigan Election Results' (Feb 27 2024 election); it is NOT linked from the current Clerk elections page.",
+    "Current Clerk elections page (https://www.macombgov.org/departments/clerk-register-deeds/elections) points to Clarity ENR (detailed) + the macombgovdocs summary PDF instead. Treat this host as retired unless it is observed live."
+   ]
+  },
+  {
+   "id": "macomb_legacy_static_html",
+   "layer": "results",
+   "name": "Macomb Clerk legacy static election-results site (macombgovdocs.org)",
+   "url": "https://macombgovdocs.org/clerk/electionresults/2022/November22/index.html",
+   "format": "Static HTML: index.html, results.html (contest list), numbered pages 4.html..26.html (contests), precincts.html (precinct-reporting times), voterturnout.html",
+   "fields": "Per-contest HTML pages; precincts.html says 'ED = election-day precinct ballots, AV = absentee, % In = % precincts reporting, First Report time'.",
+   "machine_readable": "HTML tables only (scrapable); no JSON/CSV.",
+   "rate_limit": "Not stated",
+   "terms_note": "Footer: 'this website reports Macomb County results only'. Not otherwise read.",
+   "cadence": "2022: refreshed as results tabulated (not measured)",
+   "status": "VERIFIED for 2022 and May 2024 (200); 2024 Nov and 2026 Nov folders NOT found",
+   "verified_at": "2026-10-29",
+   "gotchas": [
+    "Pattern: /clerk/electionresults/<YYYY>/<MonthYY>/index.html. Confirmed 2022/November22 and 2024/May24; guessed 2024/Nov24, 2024/November24, 2026/November26 give 404/300.",
+    "Flash-era design; could be what electionresults.macombgov.org once served."
+   ]
+  },
+  {
+   "id": "macomb_past_elections_db",
+   "layer": "results",
+   "name": "Macomb County Elections Database / Ballot Verifier (pastelections.macombgov.org; Civera ElectionStats)",
+   "url": "https://pastelections.macombgov.org/",
+   "format": "Next.js app on Civera ElectionStats; GraphQL + CSV + PDF",
+   "fields": "Contests, candidates, ballot questions; precinct-level results; vote-channel breakdown (columns per candidate); ballot images / cast vote records for some ballots (OUT OF SCOPE: ballot-level data, do not ingest).",
+   "machine_readable": "YES. (1) GraphQL POST https://pastelections.macombgov.org/api/graphql_pr (introspection disabled; queries: searchSuggestions(filters){events{id name}}, search(filters,pagination){results{id name office{name} division{displayName}}}; Pagination.page starts at 1). (2) Per-contest precinct CSV: GET /api/download_contest/<contestId>_table.csv?split_party=false  (add &vote_channels=all for 3 channel columns per candidate). (3) Contest page /contest/<id> lists 'Official Sources' PDFs. (4) /document/<fileId>?page=<n> views; raw PDF at https://macombmi.elstats2.civera.com/eng/files/serve/<fileId>.",
+   "rate_limit": "Not stated; used <20 requests total. Poll politely (<=1/min).",
+   "terms_note": "Not read; footer 'ElectionStats'. Attribute Macomb County Clerk's Office.",
+   "cadence": "Archive; elections added after certification. Event 93 (2026 Aug 4 Primary) is loaded; no 2026 Nov 3 event yet.",
+   "status": "VERIFIED",
+   "verified_at": "2026-10-29",
+   "gotchas": [
+    "OLD IDs ARE DEAD: /contests/view/7785 and /contests/get_source_documentation/11822/1 now return 404 (database was re-ID'd). Use /contest/<id> and /document/<fileId>.",
+    "Event ids: 88 = 2024 Nov 05 General (165 contests), 8 = 2022 Nov 08 General (139), 93 = 2026 Aug 04 Primary, 87 = 2024 Aug 06 Primary.",
+    "Homepage text mentions ballot images/CVRs 'from October 29, 2026 through the present': voter-privacy-adjacent; do not touch.",
+    "Summary PDF title on the 2024 precinct file reads '11 2022 General Electio' in the page header (typo in source); contents are 2024.",
+    "2022 general has NO source PDF in the database: contest pages link to the legacy static site instead.",
+    "CSV first two rows are blank/label rows; rows are 'County', 'State Legislature District', then 'Precinct' lines named '<Jurisdiction>, Precinct <n>'."
+   ]
+  },
+  {
+   "id": "mi_sos_dashboard",
+   "layer": "early_vote",
+   "name": "Michigan Voting Dashboard (MI Dept of State)",
+   "url": "https://www.michigan.gov/sos/elections/election-results-and-data/voter-participation-dashboard",
+   "format": "Power BI Gov embeds (app.powerbigov.us/view?r=...)",
+   "fields": "Mail ballot requests/returns, early voting totals (per SOS release: updated daily until the Monday before Election Day). Aggregate turnout indicators only.",
+   "machine_readable": "No public API found; Power BI embed. Weekly SOS news releases (HTML) carry headline numbers.",
+   "rate_limit": "Not stated",
+   "terms_note": "Not read",
+   "cadence": "Daily (per SOS release 2026-10-13)",
+   "status": "VERIFIED (page exists, embeds present); data not extracted",
+   "verified_at": "2026-10-29",
+   "gotchas": [
+    "Early-vote layer is turnout, not vote choice.",
+    "Release example: https://www.michigan.gov/sos/resources/news/2026/10/13/three-weeks-before-election-day-6-percent-of-voters-have-already-cast-their-ballot",
+    "MVIC https://mvic.sos.state.mi.us/ returns 403 to scripted fetches."
+   ]
+  },
+  {
+   "id": "mi_sos_results",
+   "layer": "results",
+   "name": "Michigan Bureau of Elections / SOS election results",
+   "url": "https://www.michigan.gov/sos/elections/election-results-and-data/candidate-listings-and-election-results-by-county",
+   "format": "SOS page of links to county sites; state results at mielections.us (not reachable)",
+   "fields": "UNVERIFIED",
+   "machine_readable": "UNKNOWN",
+   "rate_limit": "n/a",
+   "terms_note": "SOS page states: election-night results on county links are unofficial until certified by county/state boards of canvassers; DOS is not responsible for county sites.",
+   "cadence": "UNKNOWN",
+   "status": "PARTIAL: county-links page verified; mielections.us UNVERIFIED",
+   "verified_at": "2026-10-29",
+   "gotchas": [
+    "mielections.us gave SSL errors / timeouts from the sandbox; 2020 pattern /election/results/2020GEN_CENR.html is from a search snippet only.",
+    "The SOS county page links Macomb to the Clerk's elections page.",
+    "Historical state results: https://mvic.sos.state.mi.us/votehistory/Index?type=C&electionDate=11-5-2024 (403 to scripts)."
+   ]
+  },
+  {
+   "id": "macomb_candidate_list_2026",
+   "layer": "scenarios",
+   "name": "Macomb Clerk OFFICIAL candidate list for Nov 3, 2026",
+   "url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "format": "PDF, 7 pages",
+   "fields": "Office, candidate, party, address/contact (DO NOT store contact data)",
+   "machine_readable": "No (PDF)",
+   "rate_limit": "n/a",
+   "terms_note": "Public record; store names and party only",
+   "cadence": "Static (header 'Last Updated 9/03/2026 8:15 a.m.'; file Last-Modified 2026-09-18)",
+   "status": "VERIFIED",
+   "verified_at": "2026-10-29",
+   "gotchas": [
+    "Older/other files: elect-2026-11-03-candidate-list.pdf (UNOFFICIAL, modified 2026-05-29, pre-primary: still lists primary fields), elect-2026-08-04-candidate-list.pdf.",
+    "Withdrawn candidates remain listed with '(Withdrew)'.",
+    "Proposals: https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-proposals.pdf (16 pages)."
+   ]
+  }
+ ],
+ "contests_2026": [
+  {
+   "id": "gov",
+   "office": "Governor / Lt. Governor",
+   "geography": "Statewide",
+   "candidates": [
+    {
+     "name": "Jocelyn Benson / Winnie Brinks",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "John James / Jay DeBoyer",
+     "party": "REP",
+     "incumbent": null
+    },
+    {
+     "name": "Anthony Hudson / Beau Parmenter",
+     "party": "LIB",
+     "incumbent": null
+    },
+    {
+     "name": "Donna Brandenburg / Robert Donald Cowper II",
+     "party": "UST",
+     "incumbent": null
+    },
+    {
+     "name": "Douglas Campbell / Bobbie Clay",
+     "party": "GRN",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": "Statewide; Clerk template adds write-ins."
+  },
+  {
+   "id": "sos",
+   "office": "Secretary of State",
+   "geography": "Statewide",
+   "candidates": [
+    {
+     "name": "Garlin Gilchrist II",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Anthony G. Forlini",
+     "party": "REP",
+     "incumbent": null
+    },
+    {
+     "name": "Christine Sloan",
+     "party": "LIB",
+     "incumbent": null
+    },
+    {
+     "name": "Scott E. Aughney",
+     "party": "UST",
+     "incumbent": null
+    },
+    {
+     "name": "Eric Borregard",
+     "party": "GRN",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "ag",
+   "office": "Attorney General",
+   "geography": "Statewide",
+   "candidates": [
+    {
+     "name": "Eli Savit",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Doug Lloyd",
+     "party": "REP",
+     "incumbent": null
+    },
+    {
+     "name": "Jason Dye",
+     "party": "LIB",
+     "incumbent": null
+    },
+    {
+     "name": "John Perry Ludtke Jr.",
+     "party": "UST",
+     "incumbent": null
+    },
+    {
+     "name": "Jeff Polonowski",
+     "party": "GRN",
+     "incumbent": null
+    },
+    {
+     "name": "Doug Dern",
+     "party": "NLP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "ussen",
+   "office": "U.S. Senator",
+   "geography": "Statewide",
+   "candidates": [
+    {
+     "name": "Abdul El-Sayed",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Mike Rogers",
+     "party": "REP",
+     "incumbent": null
+    },
+    {
+     "name": "Lydia Christensen",
+     "party": "LIB",
+     "incumbent": null
+    },
+    {
+     "name": "Tim Long",
+     "party": "UST",
+     "incumbent": null
+    },
+    {
+     "name": "Douglas P. Marsh",
+     "party": "GRN",
+     "incumbent": null
+    },
+    {
+     "name": "Walter P. Kristy",
+     "party": "NLP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "mi09",
+   "office": "U.S. House MI-09",
+   "geography": "Multi-County",
+   "candidates": [
+    {
+     "name": "Ray Pooley",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Lisa McClain",
+     "party": "REP",
+     "incumbent": true
+    },
+    {
+     "name": "Kevin Vayko",
+     "party": "LIB",
+     "incumbent": null
+    },
+    {
+     "name": "John Vlahos",
+     "party": "UST",
+     "incumbent": null
+    },
+    {
+     "name": "Destiny Clayton",
+     "party": "GRN",
+     "incumbent": null
+    },
+    {
+     "name": "Jim Walkowicz",
+     "party": "WC",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": "incumbent flag from general knowledge; not on Clerk list"
+  },
+  {
+   "id": "mi10",
+   "office": "U.S. House MI-10",
+   "geography": "Multi-County (Macomb portion only)",
+   "candidates": [
+    {
+     "name": "Christina Bertrand Hines",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Michael Bouchard",
+     "party": "REP",
+     "incumbent": null
+    },
+    {
+     "name": "Mike Saliba",
+     "party": "LIB",
+     "incumbent": null
+    },
+    {
+     "name": "Kwabena Nkromo",
+     "party": "GRN",
+     "incumbent": null
+    },
+    {
+     "name": "Andrea L. Kirby",
+     "party": "WC",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": "Open seat (John James running for Governor, per news search). Task name 'Hines (D) vs Bouchard (R)' VERIFIED."
+  },
+  {
+   "id": "sd09",
+   "office": "State Senate 9",
+   "geography": "Multi-County",
+   "candidates": [
+    {
+     "name": "Theresa Brooks",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Michael Webber",
+     "party": "REP",
+     "incumbent": null
+    },
+    {
+     "name": "Jacob R. Schodowski",
+     "party": "WC",
+     "incumbent": null
+    },
+    {
+     "name": "Philippe M. Cicchini",
+     "party": "NPA",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "sd10",
+   "office": "State Senate 10",
+   "geography": "Multi-County",
+   "candidates": [
+    {
+     "name": "Natalie Price",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Michelle Nard",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "sd11",
+   "office": "State Senate 11",
+   "geography": "Macomb only per Clerk template (no Multi-County label)",
+   "candidates": [
+    {
+     "name": "Veronica Klinefelt",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Johnnie S. Townsend",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "sd12",
+   "office": "State Senate 12",
+   "geography": "Multi-County",
+   "candidates": [
+    {
+     "name": "Kevin Hertel",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "John Goldwater",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "sd24",
+   "office": "State Senate 24",
+   "geography": "Macomb only per Clerk template (no Multi-County label)",
+   "candidates": [
+    {
+     "name": "Edlira Sako",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Douglas Chester Wozniak",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": "Task claim 'Sako (D) vs Wozniak (R)' VERIFIED. Third-party sources that said SD-24 spans Oakland/Genesee/Lapeer reflect old lines; Clerk labels it Macomb-only."
+  },
+  {
+   "id": "sd25",
+   "office": "State Senate 25",
+   "geography": "Multi-County",
+   "candidates": [
+    {
+     "name": "April L. Osentoski",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Andrew Beeler",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": "Candidate addresses on list are in Bad Axe (Huron Co.) and Port Huron (St. Clair Co.)."
+  },
+  {
+   "id": "hd11",
+   "office": "State House 11",
+   "geography": "Multi-County",
+   "candidates": [
+    {
+     "name": "Kimberly Fisher",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Matthew Stafford",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "hd12",
+   "office": "State House 12",
+   "geography": "Multi-County",
+   "candidates": [
+    {
+     "name": "Kimberly L. Edwards",
+     "party": "DEM",
+     "incumbent": true
+    },
+    {
+     "name": "Randell J. Shafer",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "hd13",
+   "office": "State House 13",
+   "geography": "Macomb only per template",
+   "candidates": [
+    {
+     "name": "Mai Xiong",
+     "party": "DEM",
+     "incumbent": true
+    },
+    {
+     "name": "Mark Thomas Foster",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "hd14",
+   "office": "State House 14",
+   "geography": "Multi-County",
+   "candidates": [
+    {
+     "name": "Mike McFall",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Larry Szyska",
+     "party": "REP",
+     "incumbent": null
+    },
+    {
+     "name": "Jeff Sparling",
+     "party": "GRN",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "hd57",
+   "office": "State House 57",
+   "geography": "Multi-County",
+   "candidates": [
+    {
+     "name": "Tom Turner",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Thomas E. Kuhn",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "hd58",
+   "office": "State House 58",
+   "geography": "Macomb only (Sterling Heights, Utica, Warren, Shelby Twp portions)",
+   "candidates": [
+    {
+     "name": "Katrina Manetta",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Ron Robinson",
+     "party": "REP",
+     "incumbent": true
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": "Task claim VERIFIED. Robinson incumbent per prior-cycle 2024 result in this database (won 2024 general)."
+  },
+  {
+   "id": "hd59",
+   "office": "State House 59",
+   "geography": "Macomb only per template",
+   "candidates": [
+    {
+     "name": "Jason Robbins",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Sylvia Grot",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "hd60",
+   "office": "State House 60",
+   "geography": "Macomb only per template",
+   "candidates": [
+    {
+     "name": "Amy Gray",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Joseph Aragona",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "hd61",
+   "office": "State House 61",
+   "geography": "Macomb only per template",
+   "candidates": [
+    {
+     "name": "Denise Mentzer",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Robert Wojtowicz",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "hd62",
+   "office": "State House 62",
+   "geography": "Macomb only per template",
+   "candidates": [
+    {
+     "name": "Matthew Smith",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Alicia St. Germaine",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "hd63",
+   "office": "State House 63",
+   "geography": "Multi-County",
+   "candidates": [
+    {
+     "name": "Jamie Sonneberger",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Pamela Hornberger",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "hd65",
+   "office": "State House 65",
+   "geography": "Multi-County",
+   "candidates": [
+    {
+     "name": "James M. O'Brien",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Jaime Greene",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "hd66",
+   "office": "State House 66",
+   "geography": "Multi-County",
+   "candidates": [
+    {
+     "name": "Ned Zimmer",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Josh Schriver",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_portion",
+   "other_counties": [
+    "not named by Clerk (marked '(Multi-County)')"
+   ],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "countyexec",
+   "office": "Macomb County Executive",
+   "geography": "Countywide",
+   "candidates": [
+    {
+     "name": "Mark A. Hackel",
+     "party": "DEM",
+     "incumbent": true
+    },
+    {
+     "name": "Richard Moore",
+     "party": "REP",
+     "incumbent": null
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": ""
+  },
+  {
+   "id": "commission_d1",
+   "office": "County Commissioner District 1 (partial term ending 12/31/2028)",
+   "geography": "County Commission District 1",
+   "candidates": [
+    {
+     "name": "Michael E. LaBuhn",
+     "party": "DEM",
+     "incumbent": null
+    },
+    {
+     "name": "Ken Goike",
+     "party": "REP",
+     "incumbent": true
+    }
+   ],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": "Only commission seat on the ballot; incumbent flag: Goike was appointed per Wikipedia search summary (UNVERIFIED)."
+  },
+  {
+   "id": "state_props",
+   "office": "Statewide proposals",
+   "geography": "Statewide",
+   "candidates": [],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": "STATE PROPOSAL 2026-1: convene a constitutional convention (Yes/No). STATE PROPOSAL 2026-2: initiated law prohibiting campaign contributions from certain regulated utilities and government contractors and expanding political-communication disclosure (Yes/No). Source: https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-proposals.pdf"
+  },
+  {
+   "id": "county_props",
+   "office": "Macomb countywide proposals",
+   "geography": "Countywide",
+   "candidates": [],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": "Veterans' Millage Renewal; Public Transportation (SMART) Millage; Zoological Authority (Detroit Zoo) Millage Renewal. Rates/amounts are in the proposals PDF; not recorded here."
+  },
+  {
+   "id": "local_props",
+   "office": "Notable local proposals",
+   "geography": "Local",
+   "candidates": [],
+   "county_scope": "macomb_only",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": "Center Line library millage; Memphis police protection millage renewal; New Baltimore municipal facilities bond; Sterling Heights charter amendments (vacancy; purchasing authority); Harrison Twp millage for grants; Village of Romeo street improvements bond; Almont Community Schools sinking fund millage (Lapeer Co. part multi-county); Chippewa Valley Schools safety/improvement bond; Eastpointe Community Schools improvement bond. Per the Clerk's unofficial results template (proposal sub-list on page 3)."
+  },
+  {
+   "id": "judicial_other",
+   "office": "Other: judicial, MCC trustee, local, school boards",
+   "geography": "Mixed",
+   "candidates": [],
+   "county_scope": "macomb_portion",
+   "other_counties": [],
+   "status": "VERIFIED",
+   "source_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-Official-Candidate-List-printable.pdf",
+   "cross_check_url": "https://macombgovdocs.org/clerk/pdfs/elect-2026-11-03-unofficial-summary-results.pdf",
+   "note": "Nonpartisan section: Supreme Court (2 seats), Court of Appeals 2nd Dist (2), 16th Circuit (4 incumbent + 1 open), probate, 37th-42-1 district courts, Macomb Community College Trustee (3 of 9), state boards (SBE, UM, MSU, WSU). See official candidate list."
+  }
+ ],
+ "fixtures": {
+  "summary_2024_url": "https://macombmi.elstats2.civera.com/eng/files/serve/3931 (44-page 'Summary Results Report November 2024'; viewer https://pastelections.macombgov.org/document/3931 ; official copy https://macombgovdocs.org/clerk/pdfs/elect-2024-11-05-official-summary-results.pdf ; unofficial https://macombgovdocs.org/clerk/pdfs/elect-2024-11-05-unofficial-summary-results.pdf)",
+  "sheriff_2024_precinct_url": "contest https://pastelections.macombgov.org/contest/11957 ; precinct CSV https://pastelections.macombgov.org/api/download_contest/11957_table.csv?split_party=false (&vote_channels=all for channel columns) ; precinct PDF https://macombmi.elstats2.civera.com/eng/files/serve/3934 (2,914 pages; Sheriff in the first precinct block is page 4; summary report page 8)",
+  "hd58_2024_precinct_url": "contest https://pastelections.macombgov.org/contest/11815 ; CSV https://pastelections.macombgov.org/api/download_contest/11815_table.csv?split_party=false ; summary PDF 3931 page 3 ; precinct PDF 3934 starts at page 844",
+  "summary_2022_url": "NO PDF on the database. 2022 general is event 8; contests e.g. https://pastelections.macombgov.org/contest/665 (County Executive) and /contest/685 (HD-58) with CSVs /api/download_contest/<id>_table.csv?split_party=false. Legacy static site: https://macombgovdocs.org/clerk/electionresults/2022/November22/index.html (results.html, precincts.html, voterturnout.html). A 2022 summary PDF at macombgovdocs.org (elect-2022-11-08-{official,unofficial}-summary-results.pdf) returned 404.",
+  "event_ids": {
+   "2024_general": 88,
+   "2022_general": 8,
+   "2024_primary": 87,
+   "2026_aug_primary": 93
+  }
+ },
+ "hd58_geography": {
+  "status": "VERIFIED for 2024 precinct set (contest 11815 CSV); 2026 precinct numbering not checked",
+  "source": "https://pastelections.macombgov.org/api/download_contest/11815_table.csv?split_party=false",
+  "jurisdictions": {
+   "Sterling Heights City": {
+    "n_precincts": 17,
+    "precincts": [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     25,
+     26,
+     27,
+     31,
+     32,
+     33,
+     34,
+     36,
+     39,
+     40,
+     42
+    ]
+   },
+   "Warren City": {
+    "n_precincts": 8,
+    "precincts": [
+     38,
+     39,
+     42,
+     48,
+     49,
+     50,
+     51,
+     52
+    ]
+   },
+   "Shelby Township": {
+    "n_precincts": 5,
+    "precincts": [
+     4,
+     6,
+     9,
+     10,
+     21
+    ]
+   },
+   "Utica City": {
+    "n_precincts": 1,
+    "precincts": [
+     1
+    ]
+   }
+  },
+  "total_precincts": 31,
+  "note": "Only part of Sterling Heights, Warren and Shelby Twp; all of Utica is one precinct. The name 'Motown Sound' was not confirmed by any source read; the 2024 precinct list is the 2024-2026 lines (HD-58 under the MICRC map)."
+ }
+}
