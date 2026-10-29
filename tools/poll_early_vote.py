@@ -32,7 +32,7 @@ import sys
 from datetime import date, datetime, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import DATA, USER_AGENT, append_jsonl, last_snapshot_hash, load_json, ops_log, record_snapshot, sha256_bytes, update_source_health  # noqa: E402
+from common import DATA, USER_AGENT, append_jsonl, last_snapshot_hash, load_json, ops_log, read_jsonl, record_snapshot, sha256_bytes, update_source_health  # noqa: E402
 
 NC_CSV = "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_counts_state_20261103.csv"
 NC_PDF = "https://s3.amazonaws.com/dl.ncsbe.gov/Press/2026%20General/NC%20Absentee%20Stats%20for%202026%20General/{d}%20Daily%20Absentee%20Stats%20Report%20-%202026%20General.pdf"
@@ -268,6 +268,14 @@ def run_fl(source, dry_run=False, session=None, raws=None):
     if sha256_bytes(combined) == last_snapshot_hash(sid):
         update_source_health(sid, True)
         return {"status": "skipped_unchanged", "source_id": sid}
+    new_as_of = max((_fl_iso(r["compiled_raw"]) or "" for rows in parsed.values() for r in rows if r["county"] == "State Totals"), default="")
+    prev_rows = [r for r in read_jsonl(os.path.join(DATA, "early_vote", f"{sid}.jsonl")) if r.get("geo_level") == "state"]
+    prev_as_of = max((r.get("as_of") or "" for r in prev_rows if r.get("snapshot_id") == (prev_rows[-1].get("snapshot_id") if prev_rows else None)), default="")
+    if prev_as_of and new_as_of and new_as_of < prev_as_of:
+        snap = record_snapshot(sid, "early_vote", combined, "stale_cache", keep_raw=True, note=f"compiled {new_as_of} is older than the displayed {prev_as_of}; rows not written")
+        ops_log("early_vote_stale_cache_served", source_id=sid, snapshot=snap["id"], served_as_of=new_as_of, displayed_as_of=prev_as_of)
+        update_source_health(sid, True)
+        return {"status": "stale_cache", "served_as_of": new_as_of, "displayed_as_of": prev_as_of, "source_id": sid}
     snap = record_snapshot(sid, "early_vote", combined, "ok", keep_raw=True, note="VbmProvided+VbmVoted+EarlyVoted concatenated")
     recs = fl_records(parsed, sid, snap["id"], snap["fetched_at"])
     for r in recs:

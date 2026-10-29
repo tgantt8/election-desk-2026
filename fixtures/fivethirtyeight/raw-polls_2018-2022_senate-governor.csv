@@ -1,0 +1,798 @@
+poll_id,question_id,race_id,year,race,location,type_simple,type_detail,pollster,pollster_rating_id,methodology,partisan,polldate,samplesize,cand1_name,cand1_party,cand1_pct,cand2_name,cand2_party,cand2_pct,cand3_pct,margin_poll,electiondate,cand1_actual,cand2_actual,margin_actual,error,bias,rightcall
+56360,90598,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,OnMessage Inc.,239,Live Phone,R,10/16/2018,2200,Bill Nelson,DEM,46,Rick Scott,REP,51,,-5,11/6/2018,49.93,50.05,-.12,4.88,-4.88,1
+56267,90420,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,St. Pete Polls,314,IVR,,10/16/2018,1974,Bill Nelson,DEM,47.2,Rick Scott,REP,48.6,,-1.4,11/6/2018,49.93,50.05,-.12,1.28,-1.28,1
+56347,90583,102,2018,2018_Sen-G_IN,IN,Sen-G,Sen-G,American Viewpoint,10,Live Phone,R,10/16/2018,800,Joe Donnelly,DEM,40,Mike Braun,REP,44,7,-4,11/6/2018,44.84,50.73,-5.89,1.89,1.89,1
+56362,90713,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Marketing Resource Group (MRG),193,Live Phone,,10/16/2018,600,Debbie Stabenow,DEM,53,John James,REP,37,,16,11/6/2018,52.26,45.76,6.51,9.49,9.49,1
+56330,90566,107,2018,2018_Sen-G_MN,MN,Sen-G,Sen-G,Mason-Dixon Polling & Strategy,197,Live Phone,,10/16/2018,800,Amy Klobuchar,DEM,56,Jim Newberger,REP,33,2,23,11/6/2018,60.33,36.23,24.1,1.1,-1.1,1
+56373,90626,108,2018,2018_Sen-G_MS,MS,Sen-G,Sen-G,Marist College,183,Live Phone,,10/16/2018,511,David Baria,DEM,31.5,Roger F. Wicker,REP,58.5,2,-27,11/6/2018,39.47,58.49,-19.02,7.98,-7.98,1
+56414,90684,112,2018,2018_Sen-G_NV,NV,Sen-G,Sen-G,Ipsos,154,Online,,10/16/2018,1137,Jacky Rosen,DEM,41.2,Dean Heller,REP,46.9,,-5.6999998,11/6/2018,51.22,46.11,5.11,10.81,-10.81,0
+56317,90515,112,2018,2018_Sen-G_NV,NV,Sen-G,Sen-G,Public Policy Polling,263,IVR,D,10/16/2018,648,Jacky Rosen,DEM,48,Dean Heller,REP,46,,2,11/6/2018,51.22,46.11,5.11,3.11,-3.11,1
+56416,90686,113,2018,2018_Sen-G_NJ,NJ,Sen-G,Sen-G,Rutgers University Eagleton Center for Public Interest Polling,295,Live Phone,,10/16/2018,496,Robert Menendez,DEM,51,Bob Hugin,REP,46,,5,11/6/2018,54.01,42.83,11.18,6.18,-6.18,1
+56356,90592,116,2018,2018_Sen-G_ND,ND,Sen-G,Sen-G,Strategic Research Associates,462,Live Phone,,10/16/2018,650,Heidi Heitkamp,DEM,40,Kevin Cramer,REP,56,,-16,11/6/2018,44.55,55.45,-10.91,5.09,-5.09,1
+56355,90591,126,2018,2018_Sen-G_WV,WV,Sen-G,Sen-G,Strategic Research Associates,462,Live Phone,,10/16/2018,650,"Joe Manchin, III",DEM,52,Patrick Morrisey,REP,36,4,16,11/6/2018,49.57,46.26,3.31,12.69,12.69,1
+56330,90567,129,2018,2018_Sen-GS_MN,MN,Sen-G,Sen-GS,Mason-Dixon Polling & Strategy,197,Live Phone,,10/16/2018,800,Tina Smith,DEM,47,Karin Housley,REP,41,1,6,11/6/2018,52.99,42.37,10.62,4.62,-4.62,1
+56373,90622,130,2018,2018_Sen-OS_MS,MS,Sen-G,Sen-OS,Marist College,183,Live Phone,,10/16/2018,511,Mike Espy,DEM,36,Cindy Hyde-Smith,REP,38,25.5,-2,11/6/2018,40.9,41.25,-.34,1.66,-1.66,1
+56360,90596,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,OnMessage Inc.,239,Live Phone,R,10/16/2018,2200,Andrew Gillum,DEM,45,Ron DeSantis,REP,48,3,-3,11/6/2018,49.19,49.59,-.39,2.61,-2.61,1
+56267,90416,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,St. Pete Polls,314,IVR,,10/16/2018,1974,Andrew Gillum,DEM,47,Ron DeSantis,REP,45.9,2.1,1.1,11/6/2018,49.19,49.59,-.39,1.49,1.49,0
+56442,90778,139,2018,2018_Gov-G_GA,GA,Gov-G,Gov-G,Marist College,183,Live Phone,,10/16/2018,554,Stacey Abrams,DEM,46,Brian Kemp,REP,47.5,4,-1.5,11/6/2018,48.83,50.22,-1.39,.11,-.11,1
+56362,90602,148,2018,2018_Gov-G_MI,MI,Gov-G,Gov-G,Marketing Resource Group (MRG),193,Live Phone,,10/16/2018,600,Gretchen Whitmer,DEM,50,Bill Schuette,REP,36,2,14,11/6/2018,53.31,43.75,9.57,4.43,4.43,1
+56330,90548,149,2018,2018_Gov-G_MN,MN,Gov-G,Gov-G,Mason-Dixon Polling & Strategy,197,Live Phone,,10/16/2018,800,Tim Walz,DEM,45,Jeff Johnson,REP,39,1.8,6,11/6/2018,53.87,42.44,11.42,5.42,-5.42,1
+56414,90681,151,2018,2018_Gov-G_NV,NV,Gov-G,Gov-G,Ipsos,154,Online,,10/16/2018,1137,Steve Sisolak,DEM,41.2,Adam Paul Laxalt,REP,46,,-4.8000002,11/6/2018,50.37,46.21,4.16,8.96,-8.96,0
+56316,90514,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Data Orbital,73,Live Phone,,10/17/2018,600,Kyrsten Sinema,DEM,47.24,Martha McSally,REP,40.44,2.93,6.79,11/6/2018,49.96,47.61,2.34,4.45,4.45,1
+56263,90409,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,The New York Times/Siena College,448,Live Phone,,10/17/2018,606,Kyrsten Sinema,DEM,45.86,Martha McSally,REP,47.65,,-1.79,11/6/2018,49.96,47.61,2.34,4.13,-4.13,0
+56451,90796,97,2018,2018_Sen-G_CA,CA,Sen-G,Sen-G,Public Policy Institute of California,262,Live Phone,,10/17/2018,989,Dianne Feinstein,DEM,43,Kevin de León,DEM,27,,16,11/6/2018,54.16,45.84,8.33,7.67,,1
+56669,91269,97,2018,2018_Sen-G_CA,CA,Sen-G,Sen-G,YouGov,391,Online,,10/17/2018,2178,Dianne Feinstein,DEM,36,Kevin de León,DEM,29,,7,11/6/2018,54.16,45.84,8.33,1.33,,1
+56417,90688,109,2018,2018_Sen-G_MO,MO,Sen-G,Sen-G,OnMessage Inc.,239,Live Phone,R,10/17/2018,800,Claire McCaskill,DEM,42,Josh Hawley,REP,49,,-7,11/6/2018,45.57,51.38,-5.81,1.19,-1.19,1
+56440,90736,126,2018,2018_Sen-G_WV,WV,Sen-G,Sen-G,"Fabrizio, Lee & Associates",90,Live Phone,R,10/17/2018,600,"Joe Manchin, III",DEM,43.5,Patrick Morrisey,REP,45.5,3,-2,11/6/2018,49.57,46.26,3.31,5.31,-5.31,0
+56451,90795,135,2018,2018_Gov-G_CA,CA,Gov-G,Gov-G,Public Policy Institute of California,262,Live Phone,,10/17/2018,989,Gavin Newsom,DEM,49,John Cox,REP,38,,11,11/6/2018,61.95,38.05,23.9,12.9,-12.9,1
+56669,91268,135,2018,2018_Gov-G_CA,CA,Gov-G,Gov-G,YouGov,391,Online,,10/17/2018,2178,Gavin Newsom,DEM,53,John Cox,REP,34,,19,11/6/2018,61.95,38.05,23.9,4.9,-4.9,1
+56345,90581,97,2018,2018_Sen-G_CA,CA,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/18/2018,671,Dianne Feinstein,DEM,40.8,Kevin de León,DEM,22.7,,18.1,11/6/2018,54.16,45.84,8.33,9.77,,1
+56334,90559,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,SSRS,297,Live Phone,,10/18/2018,759,Bill Nelson,DEM,50,Rick Scott,REP,45,,5,11/6/2018,49.93,50.05,-.12,5.12,5.12,0
+56375,90632,102,2018,2018_Sen-G_IN,IN,Sen-G,Sen-G,Mason Strategies,464,Live Phone,,10/18/2018,600,Joe Donnelly,DEM,43,Mike Braun,REP,47,3,-4,11/6/2018,44.84,50.73,-5.89,1.89,1.89,1
+56485,90859,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Michigan State University Institute for Public Policy and Social Research,463,Live Phone,,10/18/2018,169,Debbie Stabenow,DEM,49,John James,REP,42,,7,11/6/2018,52.26,45.76,6.51,.49,.49,1
+56325,90542,109,2018,2018_Sen-G_MO,MO,Sen-G,Sen-G,Remington Research Group,279,IVR/Live Phone,,10/18/2018,1215,Claire McCaskill,DEM,46,Josh Hawley,REP,47,1,-1,11/6/2018,45.57,51.38,-5.81,4.81,4.81,1
+56481,90848,121,2018,2018_Sen-G_TX,TX,Sen-G,Sen-G,YouGov,391,Online,,10/18/2018,927,Beto O'Rourke,DEM,45,Ted Cruz,REP,51,2,-6,11/6/2018,48.33,50.89,-2.57,3.43,-3.43,1
+56345,90580,135,2018,2018_Gov-G_CA,CA,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/18/2018,671,Gavin Newsom,DEM,52.1,John Cox,REP,32.2,,19.9,11/6/2018,61.95,38.05,23.9,4,-4,1
+56334,90557,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,SSRS,297,Live Phone,,10/18/2018,759,Andrew Gillum,DEM,54,Ron DeSantis,REP,42,,12,11/6/2018,49.19,49.59,-.39,12.39,12.39,0
+56453,90799,148,2018,2018_Gov-G_MI,MI,Gov-G,Gov-G,Impact Research,14,Live Phone,D,10/18/2018,906,Gretchen Whitmer,DEM,47.5,Bill Schuette,REP,37,4,10.5,11/6/2018,53.31,43.75,9.57,.93,.93,1
+56485,90858,148,2018,2018_Gov-G_MI,MI,Gov-G,Gov-G,Michigan State University Institute for Public Policy and Social Research,463,Live Phone,,10/18/2018,169,Gretchen Whitmer,DEM,47,Bill Schuette,REP,39,,8,11/6/2018,53.31,43.75,9.57,1.57,-1.57,1
+56481,90846,163,2018,2018_Gov-G_TX,TX,Gov-G,Gov-G,YouGov,391,Online,,10/18/2018,927,Lupe Valdez,DEM,37,Greg Abbott,REP,56,3,-19,11/6/2018,42.51,55.81,-13.3,5.7,-5.7,1
+56353,90589,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Quinnipiac University,267,Live Phone,,10/19/2018,1161,Bill Nelson,DEM,52,Rick Scott,REP,46,,6,11/6/2018,49.93,50.05,-.12,6.12,6.12,0
+56335,90561,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,SEA Polling & Strategic Design,302,Live Phone,D,10/19/2018,600,Bill Nelson,DEM,45,Rick Scott,REP,47,,-2,11/6/2018,49.93,50.05,-.12,1.88,-1.88,1
+56429,90710,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Saint Leo University Polling Institute,299,Online,,10/19/2018,698,Bill Nelson,DEM,46.6,Rick Scott,REP,38.4,,8.1999998,11/6/2018,49.93,50.05,-.12,8.32,8.32,0
+56585,91085,105,2018,2018_Sen-G_MA,MA,Sen-G,Sen-G,Western New England University Polling Institute,380,Live Phone,,10/19/2018,402,Elizabeth Warren,DEM,57,Geoff Diehl,REP,27,7,30,11/6/2018,60.4,36.21,24.19,5.81,5.81,1
+56368,90609,134,2018,2018_Gov-G_AR,AR,Gov-G,Gov-G,Hendrix College,138,Live Phone,,10/19/2018,528,Jared K. Henderson,DEM,24,Asa Hutchinson,REP,60,5,-36,11/6/2018,31.77,65.33,-33.56,2.44,-2.44,1
+56441,90773,135,2018,2018_Gov-G_CA,CA,Gov-G,Gov-G,Thomas Partners Strategies/Øptimus,758,IVR,,10/19/2018,1068,Gavin Newsom,DEM,53.9,John Cox,REP,41.4,,12.5,11/6/2018,61.95,38.05,23.9,11.4,-11.4,1
+56353,90639,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Quinnipiac University,267,Live Phone,,10/19/2018,1161,Andrew Gillum,DEM,52,Ron DeSantis,REP,46,,6,11/6/2018,49.19,49.59,-.39,6.39,6.39,0
+56335,90560,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,SEA Polling & Strategic Design,302,Live Phone,D,10/19/2018,600,Andrew Gillum,DEM,48,Ron DeSantis,REP,42,,6,11/6/2018,49.19,49.59,-.39,6.39,6.39,0
+56429,90709,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Saint Leo University Polling Institute,299,Online,,10/19/2018,698,Andrew Gillum,DEM,48.6,Ron DeSantis,REP,36.8,,11.8,11/6/2018,49.19,49.59,-.39,12.19,12.19,0
+56585,91080,147,2018,2018_Gov-G_MA,MA,Gov-G,Gov-G,Western New England University Polling Institute,380,Live Phone,,10/19/2018,402,Jay M. Gonzalez,DEM,27,Charles D. Baker,REP,65,,-38,11/6/2018,33.21,66.79,-33.58,4.42,-4.42,1
+56390,90651,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Florida Atlantic University,97,IVR/Online,,10/20/2018,704,Bill Nelson,DEM,40.6,Rick Scott,REP,42.3,,-1.7,11/6/2018,49.93,50.05,-.12,1.58,-1.58,1
+56466,90818,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Strategic Research Associates,462,Live Phone,,10/20/2018,800,Bill Nelson,DEM,46,Rick Scott,REP,45,,1,11/6/2018,49.93,50.05,-.12,1.12,1.12,0
+56365,90606,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,SurveyUSA,325,Online,,10/20/2018,665,Bill Nelson,DEM,49,Rick Scott,REP,41,,8,11/6/2018,49.93,50.05,-.12,8.12,8.12,0
+56386,90645,121,2018,2018_Sen-G_TX,TX,Sen-G,Sen-G,GBAO,109,Live Phone,D,10/20/2018,1000,Beto O'Rourke,DEM,46,Ted Cruz,REP,50,2,-4,11/6/2018,48.33,50.89,-2.57,1.43,-1.43,1
+56390,90649,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Florida Atlantic University,97,IVR/Online,,10/20/2018,704,Andrew Gillum,DEM,41.4,Ron DeSantis,REP,36.7,,4.6999998,11/6/2018,49.19,49.59,-.39,5.09,5.09,0
+56466,90817,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Strategic Research Associates,462,Live Phone,,10/20/2018,800,Andrew Gillum,DEM,45,Ron DeSantis,REP,48,,-3,11/6/2018,49.19,49.59,-.39,2.61,-2.61,1
+56365,90605,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,SurveyUSA,325,Online,,10/20/2018,665,Andrew Gillum,DEM,49,Ron DeSantis,REP,42,,7,11/6/2018,49.19,49.59,-.39,7.39,7.39,0
+56392,90652,144,2018,2018_Gov-G_KS,KS,Gov-G,Gov-G,Public Policy Polling,263,IVR,D,10/20/2018,698,Laura Kelly,DEM,41,Kris W. Kobach,REP,41,10,0,11/6/2018,48.03,42.96,5.07,5.07,-5.07,.5
+56431,90714,161,2018,2018_Gov-G_SD,SD,Gov-G,Gov-G,Mason-Dixon Polling & Strategy,197,Live Phone,,10/20/2018,500,Billie H. Sutton,DEM,45,Kristi Noem,REP,45,1,0,11/6/2018,47.6,50.97,-3.38,3.38,3.38,.5
+56587,91087,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Ipsos,154,Online,,10/21/2018,1069,Bill Nelson,DEM,49,Rick Scott,REP,44,,5,11/6/2018,49.93,50.05,-.12,5.12,5.12,0
+56344,90578,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,St. Pete Polls,314,IVR,,10/21/2018,1575,Bill Nelson,DEM,48.3,Rick Scott,REP,48.6,,-.30000001,11/6/2018,49.93,50.05,-.12,.18,-.18,1
+56452,90800,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,EPIC-MRA,84,Live Phone,,10/21/2018,600,Debbie Stabenow,DEM,49,John James,REP,42,,7,11/6/2018,52.26,45.76,6.51,.49,.49,1
+56379,90637,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Tarrance Group,333,Live Phone,R,10/21/2018,605,Debbie Stabenow,DEM,48,John James,REP,41,,7,11/6/2018,52.26,45.76,6.51,.49,.49,1
+56391,90650,132,2018,2018_Gov-G_AK,AK,Gov-G,Gov-G,Alaska Survey Research,155,Live Phone,,10/21/2018,500,Mark Begich,DEM,43.7,Mike Dunleavy,REP,48.3,5.3,-4.5999999,11/6/2018,44.5,51.55,-7.04,2.44,2.44,1
+56468,90822,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,1892 Polling,461,IVR,R,10/21/2018,2500,Andrew Gillum,DEM,46,Ron DeSantis,REP,47,,-1,11/6/2018,49.19,49.59,-.39,.61,-.61,1
+56587,91082,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Ipsos,154,Online,,10/21/2018,1069,Andrew Gillum,DEM,50,Ron DeSantis,REP,44,,6,11/6/2018,49.19,49.59,-.39,6.39,6.39,0
+56344,90577,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,St. Pete Polls,314,IVR,,10/21/2018,1575,Andrew Gillum,DEM,47.4,Ron DeSantis,REP,46.4,1.9,1,11/6/2018,49.19,49.59,-.39,1.39,1.39,0
+56452,90797,148,2018,2018_Gov-G_MI,MI,Gov-G,Gov-G,EPIC-MRA,84,Live Phone,,10/21/2018,600,Gretchen Whitmer,DEM,46,Bill Schuette,REP,41,3,5,11/6/2018,53.31,43.75,9.57,4.57,-4.57,1
+56586,91086,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Ipsos,154,Online,,10/22/2018,799,Kyrsten Sinema,DEM,46,Martha McSally,REP,48,,-2,11/6/2018,49.96,47.61,2.34,4.34,-4.34,0
+56595,91106,97,2018,2018_Sen-G_CA,CA,Sen-G,Sen-G,University of California Berkeley Institute of Governmental Studies,457,Online,,10/22/2018,1339,Dianne Feinstein,DEM,45,Kevin de León,DEM,36,,9,11/6/2018,54.16,45.84,8.33,.67,,1
+56479,90847,114,2018,2018_Sen-G_NM,NM,Sen-G,Sen-G,Pacific Market Research,459,Online,,10/22/2018,400,Martin Heinrich,DEM,45,Mick Rich,REP,32,22,13,11/6/2018,54.09,30.53,23.56,10.56,-10.56,1
+56518,90931,119,2018,2018_Sen-G_RI,RI,Sen-G,Sen-G,Fleming & Associates,96,Live Phone,,10/22/2018,416,Sheldon Whitehouse,DEM,55.3,Bob Flanders,REP,36.3,,19,11/6/2018,61.58,38.42,23.16,4.16,-4.16,1
+56590,91093,121,2018,2018_Sen-G_TX,TX,Sen-G,Sen-G,University of Texas at Tyler Center for Opinion Research,458,Live Phone/Online,,10/22/2018,905,Beto O'Rourke,DEM,43.4,Ted Cruz,REP,47,,-3.5999999,11/6/2018,48.33,50.89,-2.57,1.03,-1.03,1
+56586,91081,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,Ipsos,154,Online,,10/22/2018,799,David Garcia,DEM,37,Doug Ducey,REP,57,,-20,11/6/2018,41.84,56,-14.16,5.84,-5.84,1
+56595,91105,135,2018,2018_Gov-G_CA,CA,Gov-G,Gov-G,University of California Berkeley Institute of Governmental Studies,457,Online,,10/22/2018,1339,Gavin Newsom,DEM,58,John Cox,REP,40,,18,11/6/2018,61.95,38.05,23.9,5.9,-5.9,1
+56380,90638,139,2018,2018_Gov-G_GA,GA,Gov-G,Gov-G,InsiderAdvantage,243,IVR/Online,,10/22/2018,824,Stacey Abrams,DEM,47.7,Brian Kemp,REP,48.4,1.3,-.69999999,11/6/2018,48.83,50.22,-1.39,.69,.69,1
+56588,91083,144,2018,2018_Gov-G_KS,KS,Gov-G,Gov-G,Ipsos,154,Online,,10/22/2018,986,Laura Kelly,DEM,43,Kris W. Kobach,REP,41,9,2,11/6/2018,48.03,42.96,5.07,3.07,-3.07,1
+56479,90842,153,2018,2018_Gov-G_NM,NM,Gov-G,Gov-G,Pacific Market Research,459,Online,,10/22/2018,400,Michelle Lujan Grisham,DEM,55,Stevan Pearce,REP,45,,10,11/6/2018,57.2,42.8,14.4,4.4,-4.4,1
+56518,90922,159,2018,2018_Gov-G_RI,RI,Gov-G,Gov-G,Fleming & Associates,96,Live Phone,,10/22/2018,416,Gina M. Raimondo,DEM,44.5,Allan W. Fung,REP,33.7,9.4,10.8,11/6/2018,52.81,37.3,15.51,4.71,-4.71,1
+56590,91088,163,2018,2018_Gov-G_TX,TX,Gov-G,Gov-G,University of Texas at Tyler Center for Opinion Research,458,Live Phone/Online,,10/22/2018,1033,Lupe Valdez,DEM,32.2,Greg Abbott,REP,52.6,,-20.4,11/6/2018,42.51,55.81,-13.3,7.1,-7.1,1
+56625,91182,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,OH Predictive Insights,235,Live Phone,,10/23/2018,600,Kyrsten Sinema,DEM,45,Martha McSally,REP,52,1,-7,11/6/2018,49.96,47.61,2.34,9.34,-9.34,0
+56419,90691,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Gravis Marketing/Kaplan Strategies,124,IVR/Online,,10/23/2018,773,Bill Nelson,DEM,49,Rick Scott,REP,45,,4,11/6/2018,49.93,50.05,-.12,4.12,4.12,0
+56743,91420,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Target Insyght,330,Live Phone,,10/23/2018,800,Debbie Stabenow,DEM,53,John James,REP,43,2,10,11/6/2018,52.26,45.76,6.51,3.49,3.49,1
+66738,124507,107,2018,2018_Sen-G_MN,MN,Sen-G,Sen-G,St. Cloud State University,312,Live Phone,,10/23/2018,420,Amy Klobuchar,DEM,54,Jim Newberger,REP,28,,26,11/6/2018,60.33,36.23,24.1,1.9,1.9,1
+56541,90971,117,2018,2018_Sen-G_OH,OH,Sen-G,Sen-G,Baldwin Wallace University Community Research Institute,401,Live Phone,,10/23/2018,1051,Sherrod Brown,DEM,51.2,Jim Renacci,REP,31.7,,19.5,11/6/2018,53.41,46.57,6.85,12.65,12.65,1
+66738,124513,129,2018,2018_Sen-GS_MN,MN,Sen-G,Sen-GS,St. Cloud State University,312,Live Phone,,10/23/2018,420,Tina Smith,DEM,44,Karin Housley,REP,29,,15,11/6/2018,52.99,42.37,10.62,4.38,4.38,1
+56625,91245,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,OH Predictive Insights,235,Live Phone,,10/23/2018,600,David Garcia,DEM,39,Doug Ducey,REP,57,1,-18,11/6/2018,41.84,56,-14.16,3.84,-3.84,1
+56419,90690,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Gravis Marketing/Kaplan Strategies,124,IVR/Online,,10/23/2018,773,Andrew Gillum,DEM,51,Ron DeSantis,REP,46,,5,11/6/2018,49.19,49.59,-.39,5.39,5.39,0
+56743,91419,148,2018,2018_Gov-G_MI,MI,Gov-G,Gov-G,Target Insyght,330,Live Phone,,10/23/2018,800,Gretchen Whitmer,DEM,48,Bill Schuette,REP,44,1,4,11/6/2018,53.31,43.75,9.57,5.57,-5.57,1
+66738,124506,149,2018,2018_Gov-G_MN,MN,Gov-G,Gov-G,St. Cloud State University,312,Live Phone,,10/23/2018,404,Tim Walz,DEM,50,Jeff Johnson,REP,34,,16,11/6/2018,53.87,42.44,11.42,4.58,4.58,1
+56541,91004,155,2018,2018_Gov-G_OH,OH,Gov-G,Gov-G,Baldwin Wallace University Community Research Institute,401,Live Phone,,10/23/2018,1051,Richard Cordray,DEM,40.5,Mike DeWine,REP,40.25,4.1,.25,11/6/2018,46.68,50.39,-3.7,3.95,3.95,0
+56439,90734,156,2018,2018_Gov-G_OK,OK,Gov-G,Gov-G,Magellan Strategies,179,Live Phone,,10/23/2018,500,Drew Edmondson,DEM,44,Kevin Stitt,REP,51,1,-7,11/6/2018,42.23,54.33,-12.1,5.1,5.1,1
+56566,91006,116,2018,2018_Sen-G_ND,ND,Sen-G,Sen-G,Trafalgar Group,338,IVR,R,10/24/2018,1498,Heidi Heitkamp,DEM,45.5,Kevin Cramer,REP,54.5,,-9,11/6/2018,44.55,55.45,-10.91,1.91,1.91,1
+56503,90893,153,2018,2018_Gov-G_NM,NM,Gov-G,Gov-G,GQR,126,Live Phone,D,10/24/2018,600,Michelle Lujan Grisham,DEM,53,Stevan Pearce,REP,44,,9,11/6/2018,57.2,42.8,14.4,5.4,-5.4,1
+56583,91077,156,2018,2018_Gov-G_OK,OK,Gov-G,Gov-G,SoonerPoll.com,308,IVR/Live Phone/Online,,10/24/2018,447,Drew Edmondson,DEM,41.6,Kevin Stitt,REP,46.4,3.8,-4.8000002,11/6/2018,42.23,54.33,-12.1,7.3,7.3,1
+56539,90965,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Marist College,183,Live Phone,,10/25/2018,506,Kyrsten Sinema,DEM,48.5,Martha McSally,REP,44,6,4.5,11/6/2018,49.96,47.61,2.34,2.16,2.16,1
+56497,90884,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,YouGov,391,Online,,10/25/2018,972,Kyrsten Sinema,DEM,47,Martha McSally,REP,44,,3,11/6/2018,49.96,47.61,2.34,.66,.66,1
+56538,90962,98,2018,2018_Sen-G_CT,CT,Sen-G,Sen-G,Quinnipiac University,267,Live Phone,,10/25/2018,1201,Christopher Murphy,DEM,56,Matthew Corey,REP,41,,15,11/6/2018,59.53,39.35,20.18,5.18,-5.18,1
+56450,90791,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,The New York Times/Siena College,448,Live Phone,,10/25/2018,737,Bill Nelson,DEM,47.89,Rick Scott,REP,44.36,,3.53,11/6/2018,49.93,50.05,-.12,3.65,3.65,0
+56537,90956,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,University of North Florida Public Opinion Research Lab,360,Live Phone,,10/25/2018,1051,Bill Nelson,DEM,47,Rick Scott,REP,46,,1,11/6/2018,49.93,50.05,-.12,1.12,1.12,0
+56498,90886,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,YouGov,391,Online,,10/25/2018,991,Bill Nelson,DEM,46,Rick Scott,REP,46,,0,11/6/2018,49.93,50.05,-.12,.12,.12,.5
+56499,90885,102,2018,2018_Sen-G_IN,IN,Sen-G,Sen-G,YouGov,391,Online,,10/25/2018,975,Joe Donnelly,DEM,43,Mike Braun,REP,46,3,-3,11/6/2018,44.84,50.73,-5.89,2.89,2.89,1
+56507,90904,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/25/2018,822,Debbie Stabenow,DEM,51.9,John James,REP,42.5,,9.3999996,11/6/2018,52.26,45.76,6.51,2.89,2.89,1
+56488,90863,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Mitchell Research & Communications,213,IVR,,10/25/2018,400,Debbie Stabenow,DEM,52,John James,REP,46,,6,11/6/2018,52.26,45.76,6.51,.51,-.51,1
+56493,90872,109,2018,2018_Sen-G_MO,MO,Sen-G,Sen-G,Remington Research Group,279,IVR/Live Phone,,10/25/2018,1376,Claire McCaskill,DEM,45,Josh Hawley,REP,49,1,-4,11/6/2018,45.57,51.38,-5.81,1.81,1.81,1
+56546,90981,110,2018,2018_Sen-G_MT,MT,Sen-G,Sen-G,Gravis Marketing/Kaplan Strategies,124,Live Phone/Online,,10/25/2018,782,Jon Tester,DEM,48,Matt Rosendale,REP,45,,3,11/6/2018,50.33,46.78,3.55,.55,-.55,1
+56561,90999,111,2018,2018_Sen-G_NE,NE,Sen-G,Sen-G,DFM Research,69,Live Phone,D,10/25/2018,683,Jane Raybould,DEM,39,Deb Fischer,REP,54,,-15,11/6/2018,38.65,57.72,-19.08,4.08,4.08,1
+56683,91296,112,2018,2018_Sen-G_NV,NV,Sen-G,Sen-G,Gravis Marketing/Kaplan Strategies,124,Live Phone/Online,,10/25/2018,773,Jacky Rosen,DEM,47,Dean Heller,REP,45,,2,11/6/2018,51.22,46.11,5.11,3.11,-3.11,1
+56509,90903,113,2018,2018_Sen-G_NJ,NJ,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/25/2018,659,Robert Menendez,DEM,47.3,Bob Hugin,REP,42,,5.3000002,11/6/2018,54.01,42.83,11.18,5.88,-5.88,1
+56508,90905,114,2018,2018_Sen-G_NM,NM,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/25/2018,936,Martin Heinrich,DEM,48,Mick Rich,REP,31.5,15.9,16.5,11/6/2018,54.09,30.53,23.56,7.06,-7.06,1
+56628,91190,118,2018,2018_Sen-G_PA,PA,Sen-G,Sen-G,Franklin & Marshall College,106,Live Phone/Online,,10/25/2018,214,Robert P. Casey Jr.,DEM,50,Lou Barletta,REP,35,,15,11/6/2018,55.74,42.62,13.13,1.87,1.87,1
+56577,91065,120,2018,2018_Sen-G_TN,TN,Sen-G,Sen-G,Marist College,183,Live Phone,,10/25/2018,471,Phil Bredesen,DEM,46,Marsha Blackburn,REP,51,,-5,11/6/2018,43.92,54.71,-10.79,5.79,5.79,1
+56513,90915,121,2018,2018_Sen-G_TX,TX,Sen-G,Sen-G,Quinnipiac University,267,Live Phone,,10/25/2018,1078,Beto O'Rourke,DEM,46,Ted Cruz,REP,51,,-5,11/6/2018,48.33,50.89,-2.57,2.43,-2.43,1
+56629,91191,126,2018,2018_Sen-G_WV,WV,Sen-G,Sen-G,Repass,268,Live Phone/Online,,10/25/2018,400,"Joe Manchin, III",DEM,45,Patrick Morrisey,REP,40,11,5,11/6/2018,49.57,46.26,3.31,1.69,1.69,1
+56539,90960,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,Marist College,183,Live Phone,,10/25/2018,506,David Garcia,DEM,41,Doug Ducey,REP,54.5,5,-13.5,11/6/2018,41.84,56,-14.16,.66,.66,1
+56497,90882,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,YouGov,391,Online,,10/25/2018,972,David Garcia,DEM,41,Doug Ducey,REP,52,,-11,11/6/2018,41.84,56,-14.16,3.16,3.16,1
+56538,90957,137,2018,2018_Gov-G_CT,CT,Gov-G,Gov-G,Quinnipiac University,267,Live Phone,,10/25/2018,1201,Edward Lamont,DEM,47,Robert Stefanowski,REP,43,7,4,11/6/2018,49.37,46.21,3.15,.85,.85,1
+56450,90793,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,The New York Times/Siena College,448,Live Phone,,10/25/2018,737,Andrew Gillum,DEM,47.63,Ron DeSantis,REP,43.25,,4.3800001,11/6/2018,49.19,49.59,-.39,4.77,4.77,0
+56537,90955,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,University of North Florida Public Opinion Research Lab,360,Live Phone,,10/25/2018,1051,Andrew Gillum,DEM,49,Ron DeSantis,REP,43,,6,11/6/2018,49.19,49.59,-.39,6.39,6.39,0
+56498,90883,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,YouGov,391,Online,,10/25/2018,991,Andrew Gillum,DEM,47,Ron DeSantis,REP,46,,1,11/6/2018,49.19,49.59,-.39,1.39,1.39,0
+56507,90901,148,2018,2018_Gov-G_MI,MI,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/25/2018,822,Gretchen Whitmer,DEM,51.7,Bill Schuette,REP,41.3,,10.4,11/6/2018,53.31,43.75,9.57,.83,.83,1
+56488,90862,148,2018,2018_Gov-G_MI,MI,Gov-G,Gov-G,Mitchell Research & Communications,213,IVR,,10/25/2018,400,Gretchen Whitmer,DEM,48,Bill Schuette,REP,43,,5,11/6/2018,53.31,43.75,9.57,4.57,-4.57,1
+56683,91294,151,2018,2018_Gov-G_NV,NV,Gov-G,Gov-G,Gravis Marketing/Kaplan Strategies,124,Live Phone/Online,,10/25/2018,773,Steve Sisolak,DEM,46,Adam Paul Laxalt,REP,44,,2,11/6/2018,50.37,46.21,4.16,2.16,-2.16,1
+56508,90902,153,2018,2018_Gov-G_NM,NM,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/25/2018,936,Michelle Lujan Grisham,DEM,52.7,Stevan Pearce,REP,43.7,,9,11/6/2018,57.2,42.8,14.4,5.4,-5.4,1
+56628,91188,158,2018,2018_Gov-G_PA,PA,Gov-G,Gov-G,Franklin & Marshall College,106,Live Phone/Online,,10/25/2018,214,Thomas W. Wolf,DEM,59,Scott R. Wagner,REP,33,3,26,11/6/2018,57.77,40.7,17.07,8.93,8.93,1
+56577,91067,162,2018,2018_Gov-G_TN,TN,Gov-G,Gov-G,Marist College,183,Live Phone,,10/25/2018,471,Karl F. Dean,DEM,40,Bill Lee,REP,57,,-17,11/6/2018,38.55,59.56,-21.01,4.01,4.01,1
+56513,90914,163,2018,2018_Gov-G_TX,TX,Gov-G,Gov-G,Quinnipiac University,267,Live Phone,,10/25/2018,1078,Lupe Valdez,DEM,40,Greg Abbott,REP,54,,-14,11/6/2018,42.51,55.81,-13.3,.7,-.7,1
+56612,91148,102,2018,2018_Sen-G_IN,IN,Sen-G,Sen-G,Marist College,183,Live Phone,,10/26/2018,496,Joe Donnelly,DEM,46.5,Mike Braun,REP,44,7,2.5,11/6/2018,44.84,50.73,-5.89,8.39,8.39,0
+56512,90913,105,2018,2018_Sen-G_MA,MA,Sen-G,Sen-G,Suffolk University,323,Live Phone,,10/26/2018,500,Elizabeth Warren,DEM,55.6,Geoff Diehl,REP,34.4,4.4,21.200001,11/6/2018,60.4,36.21,24.19,2.99,-2.99,1
+56520,90929,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Glengariff Group,117,Live Phone,,10/26/2018,600,Debbie Stabenow,DEM,53,John James,REP,36.3,1.2,16.700001,11/6/2018,52.26,45.76,6.51,10.19,10.19,1
+56681,91291,120,2018,2018_Sen-G_TN,TN,Sen-G,Sen-G,East Tennessee State University Applied Social Research Laboratory,456,Live Phone,,10/26/2018,495,Phil Bredesen,DEM,44,Marsha Blackburn,REP,44,,0,11/6/2018,43.92,54.71,-10.79,10.79,10.79,.5
+56562,91001,121,2018,2018_Sen-G_TX,TX,Sen-G,Sen-G,Dixie Strategies,81,IVR/Live Phone,,10/26/2018,588,Beto O'Rourke,DEM,42,Ted Cruz,REP,52,,-10,11/6/2018,48.33,50.89,-2.57,7.43,-7.43,1
+56602,91132,127,2018,2018_Sen-G_WI,WI,Sen-G,Sen-G,Marquette University Law School,195,Live Phone,,10/26/2018,1154,Tammy Baldwin,DEM,54,Leah Vukmir,REP,43,,11,11/6/2018,55.42,44.58,10.84,.16,.16,1
+56549,90985,135,2018,2018_Gov-G_CA,CA,Gov-G,Gov-G,Gravis Marketing/Kaplan Strategies,124,Live Phone/Online,,10/26/2018,743,Gavin Newsom,DEM,55,John Cox,REP,35,,20,11/6/2018,61.95,38.05,23.9,3.9,-3.9,1
+56611,91145,135,2018,2018_Gov-G_CA,CA,Gov-G,Gov-G,Thomas Partners Strategies/Øptimus,758,IVR/Live Phone,,10/26/2018,1068,Gavin Newsom,DEM,55,John Cox,REP,41.6,,13.4,11/6/2018,61.95,38.05,23.9,10.5,-10.5,1
+56648,91232,139,2018,2018_Gov-G_GA,GA,Gov-G,Gov-G,University of Georgia School of Public and International Affairs,350,Live Phone,,10/26/2018,1091,Stacey Abrams,DEM,46.9,Brian Kemp,REP,46.7,1.6,.2,11/6/2018,48.83,50.22,-1.39,1.59,1.59,0
+56512,90912,147,2018,2018_Gov-G_MA,MA,Gov-G,Gov-G,Suffolk University,323,Live Phone,,10/26/2018,500,Jay M. Gonzalez,DEM,26,Charles D. Baker,REP,65.4,,-39.400002,11/6/2018,33.21,66.79,-33.58,5.82,-5.82,1
+56520,90924,148,2018,2018_Gov-G_MI,MI,Gov-G,Gov-G,Glengariff Group,117,Live Phone,,10/26/2018,600,Gretchen Whitmer,DEM,50,Bill Schuette,REP,37.5,1.5,12.5,11/6/2018,53.31,43.75,9.57,2.93,2.93,1
+56681,91290,162,2018,2018_Gov-G_TN,TN,Gov-G,Gov-G,East Tennessee State University Applied Social Research Laboratory,456,Live Phone,,10/26/2018,495,Karl F. Dean,DEM,36,Bill Lee,REP,48,,-12,11/6/2018,38.55,59.56,-21.01,9.01,9.01,1
+56562,91000,163,2018,2018_Gov-G_TX,TX,Gov-G,Gov-G,Dixie Strategies,81,IVR/Live Phone,,10/26/2018,588,Lupe Valdez,DEM,33,Greg Abbott,REP,59,,-26,11/6/2018,42.51,55.81,-13.3,12.7,-12.7,1
+56602,91130,165,2018,2018_Gov-G_WI,WI,Gov-G,Gov-G,Marquette University Law School,195,Live Phone,,10/26/2018,1154,Tony Evers,DEM,47,Scott Walker,REP,47,3,0,11/6/2018,49.56,48.46,1.09,1.09,-1.09,.5
+56710,91352,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,10/27/2018,1400,Kyrsten Sinema,DEM,42.7,Martha McSally,REP,47.5,,-4.8000002,11/6/2018,49.96,47.61,2.34,7.14,-7.14,0
+56522,90927,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,HighGround Inc.,416,Live Phone,,10/27/2018,400,Kyrsten Sinema,DEM,45.3,Martha McSally,REP,46.5,3.5,-1.2,11/6/2018,49.96,47.61,2.34,3.54,-3.54,0
+56600,91126,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,SSRS,297,Live Phone,,10/27/2018,702,Kyrsten Sinema,DEM,51,Martha McSally,REP,47,,4,11/6/2018,49.96,47.61,2.34,1.66,1.66,1
+56711,91353,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,10/27/2018,1400,Bill Nelson,DEM,43.4,Rick Scott,REP,44.3,,-.89999998,11/6/2018,49.93,50.05,-.12,.78,-.78,1
+56640,91217,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,SSRS,297,Live Phone,,10/27/2018,781,Bill Nelson,DEM,49,Rick Scott,REP,47,,2,11/6/2018,49.93,50.05,-.12,2.12,2.12,0
+56554,90991,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Suffolk University,323,Live Phone,,10/27/2018,500,Bill Nelson,DEM,45,Rick Scott,REP,43.2,,1.8,11/6/2018,49.93,50.05,-.12,1.92,1.92,0
+56557,90994,102,2018,2018_Sen-G_IN,IN,Sen-G,Sen-G,Cygnal,67,Live Phone,,10/27/2018,505,Joe Donnelly,DEM,46.2,Mike Braun,REP,49.1,,-2.9000001,11/6/2018,44.84,50.73,-5.89,2.99,2.99,1
+56713,91354,102,2018,2018_Sen-G_IN,IN,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,10/27/2018,1400,Joe Donnelly,DEM,41.6,Mike Braun,REP,42.1,,-.5,11/6/2018,44.84,50.73,-5.89,5.39,5.39,1
+56606,91139,105,2018,2018_Sen-G_MA,MA,Sen-G,Sen-G,MassINC Polling Group,198,Live Phone,,10/27/2018,502,Elizabeth Warren,DEM,54,Geoff Diehl,REP,32,6,22,11/6/2018,60.4,36.21,24.19,2.19,-2.19,1
+56558,90995,109,2018,2018_Sen-G_MO,MO,Sen-G,Sen-G,Cygnal,67,Live Phone,,10/27/2018,501,Claire McCaskill,DEM,46.4,Josh Hawley,REP,49.4,,-3,11/6/2018,45.57,51.38,-5.81,2.81,2.81,1
+56714,91355,109,2018,2018_Sen-G_MO,MO,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,10/27/2018,1400,Claire McCaskill,DEM,46,Josh Hawley,REP,44.1,,1.9,11/6/2018,45.57,51.38,-5.81,7.71,7.71,0
+56712,91357,112,2018,2018_Sen-G_NV,NV,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,10/27/2018,1400,Jacky Rosen,DEM,45.6,Dean Heller,REP,42.7,,2.9000001,11/6/2018,51.22,46.11,5.11,2.21,-2.21,1
+56601,91128,112,2018,2018_Sen-G_NV,NV,Sen-G,Sen-G,SSRS,297,Live Phone,,10/27/2018,622,Jacky Rosen,DEM,48,Dean Heller,REP,45,,3,11/6/2018,51.22,46.11,5.11,2.11,-2.11,1
+56544,90976,117,2018,2018_Sen-G_OH,OH,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/27/2018,566,Sherrod Brown,DEM,48.8,Jim Renacci,REP,43,2.4,5.8000002,11/6/2018,53.41,46.57,6.85,1.05,-1.05,1
+56604,91137,120,2018,2018_Sen-G_TN,TN,Sen-G,Sen-G,Cygnal,67,Live Phone,,10/27/2018,497,Phil Bredesen,DEM,44.7,Marsha Blackburn,REP,50.5,,-5.8000002,11/6/2018,43.92,54.71,-10.79,4.99,4.99,1
+56641,91219,120,2018,2018_Sen-G_TN,TN,Sen-G,Sen-G,SSRS,297,Live Phone,,10/27/2018,764,Phil Bredesen,DEM,45,Marsha Blackburn,REP,49,,-4,11/6/2018,43.92,54.71,-10.79,6.79,6.79,1
+56710,91349,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,Harris Insights & Analytics,133,Online,,10/27/2018,1400,David Garcia,DEM,34.8,Doug Ducey,REP,57,,-22.200001,11/6/2018,41.84,56,-14.16,8.04,-8.04,1
+56522,90926,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,HighGround Inc.,416,Live Phone,,10/27/2018,400,David Garcia,DEM,35.3,Doug Ducey,REP,54.8,3.5,-19.5,11/6/2018,41.84,56,-14.16,5.34,-5.34,1
+56600,91122,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,SSRS,297,Live Phone,,10/27/2018,702,David Garcia,DEM,45,Doug Ducey,REP,52,,-7,11/6/2018,41.84,56,-14.16,7.16,7.16,1
+56711,91350,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Harris Insights & Analytics,133,Online,,10/27/2018,1400,Andrew Gillum,DEM,44.2,Ron DeSantis,REP,41.9,,2.3,11/6/2018,49.19,49.59,-.39,2.69,2.69,0
+56640,91213,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,SSRS,297,Live Phone,,10/27/2018,781,Andrew Gillum,DEM,49,Ron DeSantis,REP,48,,1,11/6/2018,49.19,49.59,-.39,1.39,1.39,0
+56554,90990,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Suffolk University,323,Live Phone,,10/27/2018,500,Andrew Gillum,DEM,45,Ron DeSantis,REP,44,.2,1,11/6/2018,49.19,49.59,-.39,1.39,1.39,0
+56545,90975,144,2018,2018_Gov-G_KS,KS,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/27/2018,976,Laura Kelly,DEM,43,Kris W. Kobach,REP,44.3,8.1,-1.3,11/6/2018,48.03,42.96,5.07,6.37,-6.37,0
+56606,91186,147,2018,2018_Gov-G_MA,MA,Gov-G,Gov-G,MassINC Polling Group,198,Live Phone,,10/27/2018,502,Jay M. Gonzalez,DEM,25,Charles D. Baker,REP,68,,-43,11/6/2018,33.21,66.79,-33.58,9.42,-9.42,1
+56712,91351,151,2018,2018_Gov-G_NV,NV,Gov-G,Gov-G,Harris Insights & Analytics,133,Online,,10/27/2018,1400,Steve Sisolak,DEM,45.1,Adam Paul Laxalt,REP,43,,2.0999999,11/6/2018,50.37,46.21,4.16,2.06,-2.06,1
+56601,91124,151,2018,2018_Gov-G_NV,NV,Gov-G,Gov-G,SSRS,297,Live Phone,,10/27/2018,622,Steve Sisolak,DEM,46,Adam Paul Laxalt,REP,45,,1,11/6/2018,50.37,46.21,4.16,3.16,-3.16,1
+56544,90974,155,2018,2018_Gov-G_OH,OH,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/27/2018,566,Richard Cordray,DEM,49.3,Mike DeWine,REP,45.8,,3.5,11/6/2018,46.68,50.39,-3.7,7.2,7.2,0
+56543,90973,157,2018,2018_Gov-G_OR,OR,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/27/2018,747,Kate Brown,DEM,46.7,Knute C. Buehler,REP,41.6,,5.0999999,11/6/2018,50.14,43.72,6.41,1.31,-1.31,1
+56604,91134,162,2018,2018_Gov-G_TN,TN,Gov-G,Gov-G,Cygnal,67,Live Phone,,10/27/2018,497,Karl F. Dean,DEM,36.1,Bill Lee,REP,58.5,,-22.4,11/6/2018,38.55,59.56,-21.01,1.39,-1.39,1
+56641,91215,162,2018,2018_Gov-G_TN,TN,Gov-G,Gov-G,SSRS,297,Live Phone,,10/27/2018,764,Karl F. Dean,DEM,42,Bill Lee,REP,52,,-10,11/6/2018,38.55,59.56,-21.01,11.01,11.01,1
+56615,91157,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/28/2018,643,Kyrsten Sinema,DEM,46,Martha McSally,REP,46,,0,11/6/2018,49.96,47.61,2.34,2.34,-2.34,.5
+56731,91394,97,2018,2018_Sen-G_CA,CA,Sen-G,Sen-G,Probolsky Research,259,Live Phone/Online,,10/28/2018,900,Dianne Feinstein,DEM,40.9,Kevin de León,DEM,35.2,,5.6999998,11/6/2018,54.16,45.84,8.33,2.63,,1
+56596,91110,98,2018,2018_Sen-G_CT,CT,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/28/2018,780,Christopher Murphy,DEM,55.1,Matthew Corey,REP,35.1,,20,11/6/2018,59.53,39.35,20.18,.18,-.18,1
+56610,91144,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Cygnal,67,Live Phone,,10/28/2018,495,Bill Nelson,DEM,50.1,Rick Scott,REP,48.3,,1.8,11/6/2018,49.93,50.05,-.12,1.92,1.92,0
+69584,129671,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,MWR Strategies,617,Live Phone,,10/28/2018,1005,Bill Nelson,DEM,40.5,Rick Scott,REP,42.8,,-2.3,11/6/2018,49.93,50.05,-.12,2.18,-2.18,1
+56597,91111,103,2018,2018_Sen-G_ME,ME,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/28/2018,883,Angus S. King Jr.,IND,50.4,Eric L. Brakey,REP,37.2,5.8,13.2,11/6/2018,54.32,35.23,19.09,5.89,,1
+56677,91286,113,2018,2018_Sen-G_NJ,NJ,Sen-G,Sen-G,Stockton University,317,Live Phone,,10/28/2018,598,Robert Menendez,DEM,51.3,Bob Hugin,REP,39.3,,12,11/6/2018,54.01,42.83,11.18,.82,.82,1
+56589,91084,113,2018,2018_Sen-G_NJ,NJ,Sen-G,Sen-G,Vox Populi Polling,372,Online,,10/28/2018,814,Robert Menendez,DEM,54,Bob Hugin,REP,46,,8,11/6/2018,54.01,42.83,11.18,3.18,-3.18,1
+56580,91073,120,2018,2018_Sen-G_TN,TN,Sen-G,Sen-G,Vox Populi Polling,372,Online,,10/28/2018,780,Phil Bredesen,DEM,47,Marsha Blackburn,REP,53,,-6,11/6/2018,43.92,54.71,-10.79,4.79,4.79,1
+56603,91131,132,2018,2018_Gov-G_AK,AK,Gov-G,Gov-G,Alaska Survey Research,155,Live Phone,,10/28/2018,500,Mark Begich,DEM,42.3,Mike Dunleavy,REP,42.5,7.7,-.2,11/6/2018,44.5,51.55,-7.04,6.84,6.84,1
+56615,91153,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/28/2018,643,David Garcia,DEM,37,Doug Ducey,REP,55,,-18,11/6/2018,41.84,56,-14.16,3.84,-3.84,1
+56731,91392,135,2018,2018_Gov-G_CA,CA,Gov-G,Gov-G,Probolsky Research,259,Live Phone/Online,,10/28/2018,900,Gavin Newsom,DEM,47.2,John Cox,REP,36.7,,10.5,11/6/2018,61.95,38.05,23.9,13.4,-13.4,1
+56636,91203,136,2018,2018_Gov-G_CO,CO,Gov-G,Gov-G,Keating Research/OnSight Public Affairs/Melanson,455,Live Phone,,10/28/2018,517,Jared Polis,DEM,50,Walker Stapleton,REP,42,4,8,11/6/2018,53.42,42.8,10.62,2.62,-2.62,1
+56596,91107,137,2018,2018_Gov-G_CT,CT,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/28/2018,780,Edward Lamont,DEM,45.5,Robert Stefanowski,REP,39.3,9.9,6.1999998,11/6/2018,49.37,46.21,3.15,3.05,3.05,1
+56610,91143,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Cygnal,67,Live Phone,,10/28/2018,495,Andrew Gillum,DEM,46.7,Ron DeSantis,REP,47.3,,-.60000002,11/6/2018,49.19,49.59,-.39,.21,-.21,1
+69584,129670,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,MWR Strategies,617,Live Phone,,10/28/2018,1005,Andrew Gillum,DEM,41.3,Ron DeSantis,REP,40.3,,1,11/6/2018,49.19,49.59,-.39,1.39,1.39,0
+56597,91108,145,2018,2018_Gov-G_ME,ME,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/28/2018,883,Janet T. Mills,DEM,49.7,Shawn H. Moody,REP,41.7,,8,11/6/2018,50.9,43.19,7.72,.28,.28,1
+56691,91306,152,2018,2018_Gov-G_NH,NH,Gov-G,Gov-G,Change Research,48,Online,D,10/28/2018,901,Molly M. Kelly,DEM,46,Chris Sununu,REP,47,,-1,11/6/2018,45.76,52.81,-7.05,6.05,6.05,1
+56598,91109,152,2018,2018_Gov-G_NH,NH,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/28/2018,1139,Molly M. Kelly,DEM,43.3,Chris Sununu,REP,50.6,.7,-7.3000002,11/6/2018,45.76,52.81,-7.05,.25,-.25,1
+56580,91072,162,2018,2018_Gov-G_TN,TN,Gov-G,Gov-G,Vox Populi Polling,372,Online,,10/28/2018,780,Karl F. Dean,DEM,44,Bill Lee,REP,56,,-12,11/6/2018,38.55,59.56,-21.01,9.01,9.01,1
+56810,91551,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Gravis Marketing/Kaplan Strategies,124,Live Phone/Online,,10/29/2018,1165,Kyrsten Sinema,DEM,46,Martha McSally,REP,47,,-1,11/6/2018,49.96,47.61,2.34,3.34,-3.34,0
+56673,91276,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Vox Populi Polling,372,Online,,10/29/2018,677,Kyrsten Sinema,DEM,52,Martha McSally,REP,48,,4,11/6/2018,49.96,47.61,2.34,1.66,1.66,1
+74940,142773,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,The Political Matrix/The Listener Group,677,IVR,,10/29/2018,1193,Bill Nelson,DEM,47.3,Rick Scott,REP,46.9,,.40000001,11/6/2018,49.93,50.05,-.12,.52,.52,0
+56674,91277,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Vox Populi Polling,372,Online,,10/29/2018,696,Bill Nelson,DEM,50,Rick Scott,REP,50,,0,11/6/2018,49.93,50.05,-.12,.12,.12,.5
+56618,91163,102,2018,2018_Sen-G_IN,IN,Sen-G,Sen-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/29/2018,722,Joe Donnelly,DEM,45,Mike Braun,REP,38,5,7,11/6/2018,44.84,50.73,-5.89,12.89,12.89,0
+56619,91167,109,2018,2018_Sen-G_MO,MO,Sen-G,Sen-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/29/2018,741,Claire McCaskill,DEM,44,Josh Hawley,REP,44,3,0,11/6/2018,45.57,51.38,-5.81,5.81,5.81,.5
+56655,91241,110,2018,2018_Sen-G_MT,MT,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,10/29/2018,500,Jon Tester,DEM,48.5,Matt Rosendale,REP,41.8,,6.6999998,11/6/2018,50.33,46.78,3.55,3.15,3.15,1
+56732,91395,114,2018,2018_Sen-G_NM,NM,Sen-G,Sen-G,Research & Polling Inc.,280,Live Phone,,10/29/2018,993,Martin Heinrich,DEM,51,Mick Rich,REP,31,12,20,11/6/2018,54.09,30.53,23.56,3.56,-3.56,1
+56617,91161,116,2018,2018_Sen-G_ND,ND,Sen-G,Sen-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/29/2018,789,Heidi Heitkamp,DEM,42,Kevin Cramer,REP,51,,-9,11/6/2018,44.55,55.45,-10.91,1.91,1.91,1
+56616,91159,120,2018,2018_Sen-G_TN,TN,Sen-G,Sen-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/29/2018,718,Phil Bredesen,DEM,41,Marsha Blackburn,REP,50,,-9,11/6/2018,43.92,54.71,-10.79,1.79,1.79,1
+56633,91198,120,2018,2018_Sen-G_TN,TN,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/29/2018,632,Phil Bredesen,DEM,43.6,Marsha Blackburn,REP,52,,-8.3999996,11/6/2018,43.92,54.71,-10.79,2.39,2.39,1
+56632,91196,121,2018,2018_Sen-G_TX,TX,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/29/2018,781,Beto O'Rourke,DEM,47.2,Ted Cruz,REP,50.3,1,-3.0999999,11/6/2018,48.33,50.89,-2.57,.53,-.53,1
+56810,91550,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,Gravis Marketing/Kaplan Strategies,124,Live Phone/Online,,10/29/2018,1165,David Garcia,DEM,40,Doug Ducey,REP,53,,-13,11/6/2018,41.84,56,-14.16,1.16,1.16,1
+56673,91273,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,Vox Populi Polling,372,Online,,10/29/2018,677,David Garcia,DEM,46,Doug Ducey,REP,54,,-8,11/6/2018,41.84,56,-14.16,6.16,6.16,1
+74940,142775,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,The Political Matrix/The Listener Group,677,IVR,,10/29/2018,1193,Andrew Gillum,DEM,43.3,Ron DeSantis,REP,50.5,,-7.1999998,11/6/2018,49.19,49.59,-.39,6.81,-6.81,1
+56674,91274,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Vox Populi Polling,372,Online,,10/29/2018,696,Andrew Gillum,DEM,53,Ron DeSantis,REP,47,,6,11/6/2018,49.19,49.59,-.39,6.39,6.39,0
+56645,91228,139,2018,2018_Gov-G_GA,GA,Gov-G,Gov-G,Cygnal,67,Live Phone,,10/29/2018,504,Stacey Abrams,DEM,47,Brian Kemp,REP,49.2,3.8,-2.2,11/6/2018,48.83,50.22,-1.39,.81,-.81,1
+56559,90996,139,2018,2018_Gov-G_GA,GA,Gov-G,Gov-G,InsiderAdvantage,243,IVR/Online,,10/29/2018,623,Stacey Abrams,DEM,48.1,Brian Kemp,REP,47.2,2,.89999998,11/6/2018,48.83,50.22,-1.39,2.29,2.29,0
+56642,91220,153,2018,2018_Gov-G_NM,NM,Gov-G,Gov-G,Carroll Strategies,450,IVR,,10/29/2018,1200,Michelle Lujan Grisham,DEM,50.6,Stevan Pearce,REP,45.5,,5.0999999,11/6/2018,57.2,42.8,14.4,9.3,-9.3,1
+56732,91393,153,2018,2018_Gov-G_NM,NM,Gov-G,Gov-G,Research & Polling Inc.,280,Live Phone,,10/29/2018,993,Michelle Lujan Grisham,DEM,53,Stevan Pearce,REP,43,,10,11/6/2018,57.2,42.8,14.4,4.4,-4.4,1
+56616,91155,162,2018,2018_Gov-G_TN,TN,Gov-G,Gov-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/29/2018,718,Karl F. Dean,DEM,37,Bill Lee,REP,54,,-17,11/6/2018,38.55,59.56,-21.01,4.01,4.01,1
+56633,91195,162,2018,2018_Gov-G_TN,TN,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/29/2018,632,Karl F. Dean,DEM,40.8,Bill Lee,REP,54.2,,-13.4,11/6/2018,38.55,59.56,-21.01,7.61,7.61,1
+56632,91194,163,2018,2018_Gov-G_TX,TX,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/29/2018,781,Lupe Valdez,DEM,42.8,Greg Abbott,REP,51.1,2.2,-8.3000002,11/6/2018,42.51,55.81,-13.3,5,5,1
+56706,91342,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Targoz Market Research,454,Online,,10/30/2018,558,Bill Nelson,DEM,45,Rick Scott,REP,49,,-4,11/6/2018,49.93,50.05,-.12,3.88,-3.88,1
+56638,91210,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Trafalgar Group,338,IVR,R,10/30/2018,2543,Bill Nelson,DEM,49.4,Rick Scott,REP,47.2,,2.2,11/6/2018,49.93,50.05,-.12,2.32,2.32,0
+56620,91171,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Gravis Marketing/Kaplan Strategies,124,IVR/Online,,10/30/2018,764,Debbie Stabenow,DEM,54,John James,REP,41,,13,11/6/2018,52.26,45.76,6.51,6.49,6.49,1
+56652,91459,107,2018,2018_Sen-G_MN,MN,Sen-G,Sen-G,SurveyUSA,325,Online,,10/30/2018,600,Amy Klobuchar,DEM,57,Jim Newberger,REP,34,,23,11/6/2018,60.33,36.23,24.1,1.1,-1.1,1
+56733,91399,115,2018,2018_Sen-G_NY,NY,Sen-G,Sen-G,Siena College,305,Live Phone,,10/30/2018,641,Kirsten E. Gillibrand,DEM,58,Chele Farley,REP,35,,23,11/6/2018,67,33,34,11,-11,1
+56661,91258,117,2018,2018_Sen-G_OH,OH,Sen-G,Sen-G,Gravis Marketing/Kaplan Strategies,124,IVR/Online,,10/30/2018,789,Sherrod Brown,DEM,46,Jim Renacci,REP,37,,9,11/6/2018,53.41,46.57,6.85,2.15,2.15,1
+56682,91293,118,2018,2018_Sen-G_PA,PA,Sen-G,Sen-G,Muhlenberg College,219,Live Phone,,10/30/2018,421,Robert P. Casey Jr.,DEM,54,Lou Barletta,REP,40,,14,11/6/2018,55.74,42.62,13.13,.87,.87,1
+56705,91341,120,2018,2018_Sen-G_TN,TN,Sen-G,Sen-G,Targoz Market Research,454,Online,,10/30/2018,480,Phil Bredesen,DEM,49,Marsha Blackburn,REP,49,,0,11/6/2018,43.92,54.71,-10.79,10.79,10.79,.5
+56634,91197,126,2018,2018_Sen-G_WV,WV,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/30/2018,1013,"Joe Manchin, III",DEM,47.3,Patrick Morrisey,REP,41.5,2.9,5.8000002,11/6/2018,49.57,46.26,3.31,2.49,2.49,1
+56671,91275,127,2018,2018_Sen-G_WI,WI,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/30/2018,604,Tammy Baldwin,DEM,53.1,Leah Vukmir,REP,44.4,,8.6999998,11/6/2018,55.42,44.58,10.84,2.14,-2.14,1
+56652,91460,129,2018,2018_Sen-GS_MN,MN,Sen-G,Sen-GS,SurveyUSA,325,Online,,10/30/2018,600,Tina Smith,DEM,48,Karin Housley,REP,40,,8,11/6/2018,52.99,42.37,10.62,2.62,-2.62,1
+56630,91192,136,2018,2018_Gov-G_CO,CO,Gov-G,Gov-G,Magellan Strategies,179,Live Phone,,10/30/2018,500,Jared Polis,DEM,45,Walker Stapleton,REP,40,3,5,11/6/2018,53.42,42.8,10.62,5.62,-5.62,1
+56647,91231,137,2018,2018_Gov-G_CT,CT,Gov-G,Gov-G,GreatBlue Research,748,Live Phone,,10/30/2018,500,Edward Lamont,DEM,37.6,Robert Stefanowski,REP,40,9,-2.4000001,11/6/2018,49.37,46.21,3.15,5.55,-5.55,0
+56706,91338,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Targoz Market Research,454,Online,,10/30/2018,558,Andrew Gillum,DEM,47,Ron DeSantis,REP,48,,-1,11/6/2018,49.19,49.59,-.39,.61,-.61,1
+56638,91209,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Trafalgar Group,338,IVR,R,10/30/2018,2543,Andrew Gillum,DEM,48.4,Ron DeSantis,REP,46.1,,2.3,11/6/2018,49.19,49.59,-.39,2.69,2.69,0
+56670,91270,139,2018,2018_Gov-G_GA,GA,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/30/2018,724,Stacey Abrams,DEM,47.3,Brian Kemp,REP,49.4,.8,-2.0999999,11/6/2018,48.83,50.22,-1.39,.71,-.71,1
+56652,91236,149,2018,2018_Gov-G_MN,MN,Gov-G,Gov-G,SurveyUSA,325,Online,,10/30/2018,600,Tim Walz,DEM,49,Jeff Johnson,REP,41,,8,11/6/2018,53.87,42.44,11.42,3.42,-3.42,1
+56733,91398,154,2018,2018_Gov-G_NY,NY,Gov-G,Gov-G,Siena College,305,Live Phone,,10/30/2018,641,Andrew Cuomo,DEM,49,Marcus Molinaro,REP,36,2,13,11/6/2018,59.62,36.21,23.42,10.42,-10.42,1
+56661,91255,155,2018,2018_Gov-G_OH,OH,Gov-G,Gov-G,Gravis Marketing/Kaplan Strategies,124,IVR/Online,,10/30/2018,789,Richard Cordray,DEM,48,Mike DeWine,REP,43,,5,11/6/2018,46.68,50.39,-3.7,8.7,8.7,0
+56613,91150,157,2018,2018_Gov-G_OR,OR,Gov-G,Gov-G,Hoffman Research Group,141,Live Phone,,10/30/2018,694,Kate Brown,DEM,45,Knute C. Buehler,REP,42,4,3,11/6/2018,50.14,43.72,6.41,3.41,-3.41,1
+56682,91292,158,2018,2018_Gov-G_PA,PA,Gov-G,Gov-G,Muhlenberg College,219,Live Phone,,10/30/2018,421,Thomas W. Wolf,DEM,58,Scott R. Wagner,REP,37,,21,11/6/2018,57.77,40.7,17.07,3.93,3.93,1
+56679,91288,160,2018,2018_Gov-G_SC,SC,Gov-G,Gov-G,Trafalgar Group,338,IVR,R,10/30/2018,3792,James Emerson Smith,DEM,38.1,Henry McMaster,REP,54.3,,-16.200001,11/6/2018,45.98,54.02,-8.04,8.16,-8.16,1
+56644,91227,161,2018,2018_Gov-G_SD,SD,Gov-G,Gov-G,Mason-Dixon Polling & Strategy,197,Live Phone,,10/30/2018,500,Billie H. Sutton,DEM,44,Kristi Noem,REP,47,1,-3,11/6/2018,47.6,50.97,-3.38,.38,.38,1
+56705,91337,162,2018,2018_Gov-G_TN,TN,Gov-G,Gov-G,Targoz Market Research,454,Online,,10/30/2018,480,Karl F. Dean,DEM,44,Bill Lee,REP,53,,-9,11/6/2018,38.55,59.56,-21.01,12.01,12.01,1
+56671,91271,165,2018,2018_Gov-G_WI,WI,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/30/2018,604,Tony Evers,DEM,50.9,Scott Walker,REP,46.1,,4.8000002,11/6/2018,49.56,48.46,1.09,3.71,3.71,1
+56730,91389,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Trafalgar Group,338,IVR,R,10/31/2018,2166,Kyrsten Sinema,DEM,49.8,Martha McSally,REP,47.1,,2.7,11/6/2018,49.96,47.61,2.34,.36,.36,1
+56662,91259,98,2018,2018_Sen-G_CT,CT,Sen-G,Sen-G,Gravis Marketing/Kaplan Strategies,124,IVR/Online,,10/31/2018,681,Christopher Murphy,DEM,58,Matthew Corey,REP,35,,23,11/6/2018,59.53,39.35,20.18,2.82,2.82,1
+56756,91440,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Gravis Marketing/Kaplan Strategies,124,IVR/Online,,10/31/2018,753,Bill Nelson,DEM,50,Rick Scott,REP,47,,3,11/6/2018,49.93,50.05,-.12,3.12,3.12,0
+56631,91193,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,St. Pete Polls,314,IVR,,10/31/2018,2470,Bill Nelson,DEM,49.3,Rick Scott,REP,47.4,,1.9,11/6/2018,49.93,50.05,-.12,2.02,2.02,0
+56773,91475,109,2018,2018_Sen-G_MO,MO,Sen-G,Sen-G,Marist College,183,Live Phone,,10/31/2018,600,Claire McCaskill,DEM,48.5,Josh Hawley,REP,45.5,,3,11/6/2018,45.57,51.38,-5.81,8.81,8.81,0
+56723,91369,112,2018,2018_Sen-G_NV,NV,Sen-G,Sen-G,Trafalgar Group,338,IVR,R,10/31/2018,2587,Jacky Rosen,DEM,45.6,Dean Heller,REP,48.9,,-3.3,11/6/2018,51.22,46.11,5.11,8.41,-8.41,0
+56646,91230,117,2018,2018_Sen-G_OH,OH,Sen-G,Sen-G,Cygnal,67,Live Phone,,10/31/2018,503,Sherrod Brown,DEM,52.4,Jim Renacci,REP,42,,10.4,11/6/2018,53.41,46.57,6.85,3.55,3.55,1
+56663,91260,123,2018,2018_Sen-G_VT,VT,Sen-G,Sen-G,Gravis Marketing/Kaplan Strategies,124,IVR/Online,,10/31/2018,885,Bernard Sanders,IND,66,Lawrence Zupan,REP,30,,36,11/6/2018,67.44,27.47,39.96,3.96,,1
+56662,91256,137,2018,2018_Gov-G_CT,CT,Gov-G,Gov-G,Gravis Marketing/Kaplan Strategies,124,IVR/Online,,10/31/2018,681,Edward Lamont,DEM,46,Robert Stefanowski,REP,37,9,9,11/6/2018,49.37,46.21,3.15,5.85,5.85,1
+56756,91439,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Gravis Marketing/Kaplan Strategies,124,IVR/Online,,10/31/2018,753,Andrew Gillum,DEM,48,Ron DeSantis,REP,47,,1,11/6/2018,49.19,49.59,-.39,1.39,1.39,0
+56672,91272,143,2018,2018_Gov-G_IA,IA,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/31/2018,1462,Fred Hubbell,DEM,45,Kim Reynolds,REP,48.9,,-3.9000001,11/6/2018,47.54,50.28,-2.73,1.17,-1.17,1
+56723,91368,151,2018,2018_Gov-G_NV,NV,Gov-G,Gov-G,Trafalgar Group,338,IVR,R,10/31/2018,2587,Steve Sisolak,DEM,44.9,Adam Paul Laxalt,REP,47,,-2.0999999,11/6/2018,50.37,46.21,4.16,6.26,-6.26,0
+56646,91229,155,2018,2018_Gov-G_OH,OH,Gov-G,Gov-G,Cygnal,67,Live Phone,,10/31/2018,503,Richard Cordray,DEM,43.2,Mike DeWine,REP,43.4,2.8,-.2,11/6/2018,46.68,50.39,-3.7,3.5,3.5,1
+56663,91257,164,2018,2018_Gov-G_VT,VT,Gov-G,Gov-G,Gravis Marketing/Kaplan Strategies,124,IVR/Online,,10/31/2018,885,Christine Hallquist,DEM,39,Phil Scott,REP,49,,-10,11/6/2018,40.42,55.41,-14.99,4.99,4.99,1
+56716,91361,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,11/1/2018,600,Kyrsten Sinema,DEM,43.5,Martha McSally,REP,49.1,,-5.5999999,11/6/2018,49.96,47.61,2.34,7.94,-7.94,0
+56717,91362,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,11/1/2018,600,Bill Nelson,DEM,45.5,Rick Scott,REP,48.1,,-2.5999999,11/6/2018,49.93,50.05,-.12,2.48,-2.48,1
+56769,91477,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Marist College,183,Live Phone,,11/1/2018,595,Bill Nelson,DEM,50,Rick Scott,REP,46,,4,11/6/2018,49.93,50.05,-.12,4.12,4.12,0
+56770,91479,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Quinnipiac University,267,Live Phone,,11/1/2018,1142,Bill Nelson,DEM,51,Rick Scott,REP,44,,7,11/6/2018,49.93,50.05,-.12,7.12,7.12,0
+56719,91363,102,2018,2018_Sen-G_IN,IN,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,11/1/2018,600,Joe Donnelly,DEM,44.4,Mike Braun,REP,42,,2.4000001,11/6/2018,44.84,50.73,-5.89,8.29,8.29,0
+56720,91364,109,2018,2018_Sen-G_MO,MO,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,11/1/2018,600,Claire McCaskill,DEM,45.3,Josh Hawley,REP,46.2,,-.89999998,11/6/2018,45.57,51.38,-5.81,4.91,4.91,1
+56764,91457,109,2018,2018_Sen-G_MO,MO,Sen-G,Sen-G,Trafalgar Group,338,IVR,R,11/1/2018,1791,Claire McCaskill,DEM,44.4,Josh Hawley,REP,48.3,,-3.9000001,11/6/2018,45.57,51.38,-5.81,1.91,1.91,1
+56718,91366,112,2018,2018_Sen-G_NV,NV,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,11/1/2018,600,Jacky Rosen,DEM,44.4,Dean Heller,REP,45.2,,-.80000001,11/6/2018,51.22,46.11,5.11,5.91,-5.91,0
+56774,91480,113,2018,2018_Sen-G_NJ,NJ,Sen-G,Sen-G,Quinnipiac University,267,Live Phone,,11/1/2018,1115,Robert Menendez,DEM,55,Bob Hugin,REP,40,,15,11/6/2018,54.01,42.83,11.18,3.82,3.82,1
+56678,91287,114,2018,2018_Sen-G_NM,NM,Sen-G,Sen-G,Carroll Strategies,450,IVR,,11/1/2018,1202,Martin Heinrich,DEM,50.7,Mick Rich,REP,37.9,8.4,12.8,11/6/2018,54.09,30.53,23.56,10.76,-10.76,1
+56716,91358,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,Harris Insights & Analytics,133,Online,,11/1/2018,600,David Garcia,DEM,36.5,Doug Ducey,REP,56.4,,-19.9,11/6/2018,41.84,56,-14.16,5.74,-5.74,1
+56717,91359,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Harris Insights & Analytics,133,Online,,11/1/2018,600,Andrew Gillum,DEM,49.5,Ron DeSantis,REP,44.8,,4.6999998,11/6/2018,49.19,49.59,-.39,5.09,5.09,0
+56769,91468,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Marist College,183,Live Phone,,11/1/2018,595,Andrew Gillum,DEM,50,Ron DeSantis,REP,46,,4,11/6/2018,49.19,49.59,-.39,4.39,4.39,0
+56770,91470,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Quinnipiac University,267,Live Phone,,11/1/2018,1142,Andrew Gillum,DEM,50,Ron DeSantis,REP,43,,7,11/6/2018,49.19,49.59,-.39,7.39,7.39,0
+56775,91483,139,2018,2018_Gov-G_GA,GA,Gov-G,Gov-G,20/20 Insight,1,IVR,D,11/1/2018,614,Stacey Abrams,DEM,50,Brian Kemp,REP,46,1,4,11/6/2018,48.83,50.22,-1.39,5.39,5.39,0
+56749,91429,139,2018,2018_Gov-G_GA,GA,Gov-G,Gov-G,Trafalgar Group,338,IVR,R,11/1/2018,2171,Stacey Abrams,DEM,40.1,Brian Kemp,REP,52.4,,-12.3,11/6/2018,48.83,50.22,-1.39,10.91,-10.91,1
+56722,91367,143,2018,2018_Gov-G_IA,IA,Gov-G,Gov-G,Selzer & Co.,304,Live Phone,,11/1/2018,801,Fred Hubbell,DEM,46,Kim Reynolds,REP,44,2,2,11/6/2018,47.54,50.28,-2.73,4.73,4.73,0
+56680,91289,145,2018,2018_Gov-G_ME,ME,Gov-G,Gov-G,Slingshot Strategies,451,IVR,IND,11/1/2018,518,Janet T. Mills,DEM,55,Shawn H. Moody,REP,38,7,17,11/6/2018,50.9,43.19,7.72,9.28,9.28,1
+56718,91360,151,2018,2018_Gov-G_NV,NV,Gov-G,Gov-G,Harris Insights & Analytics,133,Online,,11/1/2018,600,Steve Sisolak,DEM,43.3,Adam Paul Laxalt,REP,46.7,,-3.4000001,11/6/2018,50.37,46.21,4.16,7.56,-7.56,0
+56779,91492,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Emerson College,88,IVR/Online,,11/2/2018,758,Kyrsten Sinema,DEM,48.5,Martha McSally,REP,47.8,1.9,.69999999,11/6/2018,49.96,47.61,2.34,1.64,-1.64,1
+56801,91545,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Research Co.,449,Online,,11/2/2018,450,Kyrsten Sinema,DEM,45,Martha McSally,REP,44,,1,11/6/2018,49.96,47.61,2.34,1.34,-1.34,1
+56737,91412,97,2018,2018_Sen-G_CA,CA,Sen-G,Sen-G,Research Co.,449,Online,,11/2/2018,450,Dianne Feinstein,DEM,47,Kevin de León,DEM,28,,19,11/6/2018,54.16,45.84,8.33,10.67,,1
+56813,91557,97,2018,2018_Sen-G_CA,CA,Sen-G,Sen-G,SurveyUSA,325,Online,,11/2/2018,806,Dianne Feinstein,DEM,50,Kevin de León,DEM,36,,14,11/6/2018,54.16,45.84,8.33,5.67,,1
+56701,91331,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Change Research,48,Online,D,11/2/2018,1236,Bill Nelson,DEM,50,Rick Scott,REP,48,,2,11/6/2018,49.93,50.05,-.12,2.12,2.12,0
+56780,91493,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Emerson College,88,IVR/Online,,11/2/2018,784,Bill Nelson,DEM,49.9,Rick Scott,REP,44.9,,5,11/6/2018,49.93,50.05,-.12,5.12,5.12,0
+56802,91546,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Research Co.,449,Online,,11/2/2018,450,Bill Nelson,DEM,47,Rick Scott,REP,46,,1,11/6/2018,49.93,50.05,-.12,1.12,1.12,0
+56703,91334,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,St. Pete Polls,314,IVR,,11/2/2018,2733,Bill Nelson,DEM,47.5,Rick Scott,REP,49.1,,-1.6,11/6/2018,49.93,50.05,-.12,1.48,-1.48,1
+56738,91413,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Research Co.,449,Online,,11/2/2018,450,Debbie Stabenow,DEM,52,John James,REP,36,,16,11/6/2018,52.26,45.76,6.51,9.49,9.49,1
+56739,91414,107,2018,2018_Sen-G_MN,MN,Sen-G,Sen-G,Research Co.,449,Online,,11/2/2018,450,Amy Klobuchar,DEM,53,Jim Newberger,REP,33,,20,11/6/2018,60.33,36.23,24.1,4.1,-4.1,1
+56782,91490,109,2018,2018_Sen-G_MO,MO,Sen-G,Sen-G,Emerson College,88,IVR/Online,,11/2/2018,732,Claire McCaskill,DEM,45.6,Josh Hawley,REP,49,,-3.4000001,11/6/2018,45.57,51.38,-5.81,2.41,2.41,1
+56695,91314,109,2018,2018_Sen-G_MO,MO,Sen-G,Sen-G,Remington Research Group,279,IVR/Live Phone,,11/2/2018,1424,Claire McCaskill,DEM,47,Josh Hawley,REP,47,1,0,11/6/2018,45.57,51.38,-5.81,5.81,5.81,.5
+56803,91547,114,2018,2018_Sen-G_NM,NM,Sen-G,Sen-G,Research Co.,449,Online,,11/2/2018,450,Martin Heinrich,DEM,47,Mick Rich,REP,33,11,14,11/6/2018,54.09,30.53,23.56,9.56,-9.56,1
+56740,91416,115,2018,2018_Sen-G_NY,NY,Sen-G,Sen-G,Research Co.,449,Online,,11/2/2018,450,Kirsten E. Gillibrand,DEM,60,Chele Farley,REP,32,,28,11/6/2018,67,33,34,6,-6,1
+56804,91548,117,2018,2018_Sen-G_OH,OH,Sen-G,Sen-G,Research Co.,449,Online,,11/2/2018,450,Sherrod Brown,DEM,53,Jim Renacci,REP,39,,14,11/6/2018,53.41,46.57,6.85,7.15,7.15,1
+56741,91417,118,2018,2018_Sen-G_PA,PA,Sen-G,Sen-G,Research Co.,449,Online,,11/2/2018,450,Robert P. Casey Jr.,DEM,56,Lou Barletta,REP,39,,17,11/6/2018,55.74,42.62,13.13,3.87,3.87,1
+56702,91332,121,2018,2018_Sen-G_TX,TX,Sen-G,Sen-G,Change Research,48,Online,D,11/2/2018,1211,Beto O'Rourke,DEM,49,Ted Cruz,REP,49,1,0,11/6/2018,48.33,50.89,-2.57,2.57,2.57,.5
+56805,91549,127,2018,2018_Sen-G_WI,WI,Sen-G,Sen-G,Research Co.,449,Online,,11/2/2018,450,Tammy Baldwin,DEM,50,Leah Vukmir,REP,39,,11,11/6/2018,55.42,44.58,10.84,.16,.16,1
+56739,91415,129,2018,2018_Sen-GS_MN,MN,Sen-G,Sen-GS,Research Co.,449,Online,,11/2/2018,450,Tina Smith,DEM,49,Karin Housley,REP,39,,10,11/6/2018,52.99,42.37,10.62,.62,-.62,1
+56779,91487,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,Emerson College,88,IVR/Online,,11/2/2018,758,David Garcia,DEM,40.2,Doug Ducey,REP,55.3,,-15.1,11/6/2018,41.84,56,-14.16,.94,-.94,1
+56801,91529,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,Research Co.,449,Online,,11/2/2018,450,David Garcia,DEM,39,Doug Ducey,REP,54,,-15,11/6/2018,41.84,56,-14.16,.84,-.84,1
+56737,91407,135,2018,2018_Gov-G_CA,CA,Gov-G,Gov-G,Research Co.,449,Online,,11/2/2018,450,Gavin Newsom,DEM,58,John Cox,REP,38,,20,11/6/2018,61.95,38.05,23.9,3.9,-3.9,1
+56813,91556,135,2018,2018_Gov-G_CA,CA,Gov-G,Gov-G,SurveyUSA,325,Online,,11/2/2018,924,Gavin Newsom,DEM,53,John Cox,REP,38,,15,11/6/2018,61.95,38.05,23.9,8.9,-8.9,1
+56780,91488,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Emerson College,88,IVR/Online,,11/2/2018,784,Andrew Gillum,DEM,50.9,Ron DeSantis,REP,45.6,,5.3000002,11/6/2018,49.19,49.59,-.39,5.69,5.69,0
+56802,91530,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Research Co.,449,Online,,11/2/2018,450,Andrew Gillum,DEM,47,Ron DeSantis,REP,46,,1,11/6/2018,49.19,49.59,-.39,1.39,1.39,0
+56703,91333,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,St. Pete Polls,314,IVR,,11/2/2018,2733,Andrew Gillum,DEM,48.4,Ron DeSantis,REP,46.3,1.6,2.0999999,11/6/2018,49.19,49.59,-.39,2.49,2.49,0
+56736,91406,142,2018,2018_Gov-G_IL,IL,Gov-G,Gov-G,Victory Research,437,Live Phone,,11/2/2018,1208,J.B. Pritzker,DEM,49,Bruce Rauner,REP,33,7.8,16,11/6/2018,54.53,38.83,15.7,.3,.3,1
+56738,91408,148,2018,2018_Gov-G_MI,MI,Gov-G,Gov-G,Research Co.,449,Online,,11/2/2018,450,Gretchen Whitmer,DEM,47,Bill Schuette,REP,43,,4,11/6/2018,53.31,43.75,9.57,5.57,-5.57,1
+56739,91409,149,2018,2018_Gov-G_MN,MN,Gov-G,Gov-G,Research Co.,449,Online,,11/2/2018,450,Tim Walz,DEM,48,Jeff Johnson,REP,42,,6,11/6/2018,53.87,42.44,11.42,5.42,-5.42,1
+56803,91531,153,2018,2018_Gov-G_NM,NM,Gov-G,Gov-G,Research Co.,449,Online,,11/2/2018,450,Michelle Lujan Grisham,DEM,53,Stevan Pearce,REP,41,,12,11/6/2018,57.2,42.8,14.4,2.4,-2.4,1
+56740,91410,154,2018,2018_Gov-G_NY,NY,Gov-G,Gov-G,Research Co.,449,Online,,11/2/2018,450,Andrew Cuomo,DEM,54,Marcus Molinaro,REP,37,,17,11/6/2018,59.62,36.21,23.42,6.42,-6.42,1
+56804,91532,155,2018,2018_Gov-G_OH,OH,Gov-G,Gov-G,Research Co.,449,Online,,11/2/2018,450,Richard Cordray,DEM,44,Mike DeWine,REP,44,,0,11/6/2018,46.68,50.39,-3.7,3.7,3.7,.5
+56748,91428,156,2018,2018_Gov-G_OK,OK,Gov-G,Gov-G,SoonerPoll.com,308,IVR/Live Phone/Online,,11/2/2018,338,Drew Edmondson,DEM,44.1,Kevin Stitt,REP,47,2.7,-2.9000001,11/6/2018,42.23,54.33,-12.1,9.2,9.2,1
+56741,91411,158,2018,2018_Gov-G_PA,PA,Gov-G,Gov-G,Research Co.,449,Online,,11/2/2018,450,Thomas W. Wolf,DEM,54,Scott R. Wagner,REP,39,,15,11/6/2018,57.77,40.7,17.07,2.07,-2.07,1
+56805,91533,165,2018,2018_Gov-G_WI,WI,Gov-G,Gov-G,Research Co.,449,Online,,11/2/2018,450,Tony Evers,DEM,45,Scott Walker,REP,44,,1,11/6/2018,49.56,48.46,1.09,.09,-.09,1
+56765,91458,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,OH Predictive Insights,235,Live Phone,,11/3/2018,631,Kyrsten Sinema,DEM,48,Martha McSally,REP,49,0,-1,11/6/2018,49.96,47.61,2.34,3.34,-3.34,0
+56793,91520,97,2018,2018_Sen-G_CA,CA,Sen-G,Sen-G,Change Research,48,Online,,11/3/2018,1108,Dianne Feinstein,DEM,42,Kevin de León,DEM,32,,10,11/6/2018,54.16,45.84,8.33,1.67,,1
+56811,91553,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Change Research,48,Online,,11/3/2018,880,Debbie Stabenow,DEM,49,John James,REP,47,1,2,11/6/2018,52.26,45.76,6.51,4.51,-4.51,1
+56797,91537,107,2018,2018_Sen-G_MN,MN,Sen-G,Sen-G,Change Research,48,Online,,11/3/2018,953,Amy Klobuchar,DEM,55,Jim Newberger,REP,40,3,15,11/6/2018,60.33,36.23,24.1,9.1,-9.1,1
+56806,91534,108,2018,2018_Sen-G_MS,MS,Sen-G,Sen-G,Change Research,48,Online,,11/3/2018,1003,David Baria,DEM,40,Roger F. Wicker,REP,48,5,-8,11/6/2018,39.47,58.49,-19.02,11.02,11.02,1
+56762,91446,110,2018,2018_Sen-G_MT,MT,Sen-G,Sen-G,Change Research,48,Online,,11/3/2018,879,Jon Tester,DEM,46,Matt Rosendale,REP,49,3,-3,11/6/2018,50.33,46.78,3.55,6.55,-6.55,0
+56834,91594,110,2018,2018_Sen-G_MT,MT,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,11/3/2018,500,Jon Tester,DEM,49.9,Matt Rosendale,REP,42.1,,7.8000002,11/6/2018,50.33,46.78,3.55,4.25,4.25,1
+56778,91491,112,2018,2018_Sen-G_NV,NV,Sen-G,Sen-G,Emerson College,88,IVR/Online,,11/3/2018,1197,Jacky Rosen,DEM,49.1,Dean Heller,REP,44.6,,4.5,11/6/2018,51.22,46.11,5.11,.61,-.61,1
+56763,91447,113,2018,2018_Sen-G_NJ,NJ,Sen-G,Sen-G,Change Research,48,Online,,11/3/2018,1006,Robert Menendez,DEM,51,Bob Hugin,REP,41,,10,11/6/2018,54.01,42.83,11.18,1.18,-1.18,1
+56818,91573,117,2018,2018_Sen-G_OH,OH,Sen-G,Sen-G,Change Research,48,Online,,11/3/2018,923,Sherrod Brown,DEM,53,Jim Renacci,REP,43,,10,11/6/2018,53.41,46.57,6.85,3.15,3.15,1
+56758,91449,118,2018,2018_Sen-G_PA,PA,Sen-G,Sen-G,Change Research,48,Online,,11/3/2018,1833,Robert P. Casey Jr.,DEM,51,Lou Barletta,REP,44,1,7,11/6/2018,55.74,42.62,13.13,6.13,-6.13,1
+56761,91450,128,2018,2018_Sen-G_WY,WY,Sen-G,Sen-G,Change Research,48,Online,,11/3/2018,858,Gary Trauner,DEM,31,John Barrasso,REP,60,6,-29,11/6/2018,30.15,67.07,-36.92,7.92,7.92,1
+56797,91538,129,2018,2018_Sen-GS_MN,MN,Sen-G,Sen-GS,Change Research,48,Online,,11/3/2018,953,Tina Smith,DEM,51,Karin Housley,REP,42,3,9,11/6/2018,52.99,42.37,10.62,1.62,-1.62,1
+56806,91535,130,2018,2018_Sen-OS_MS,MS,Sen-G,Sen-OS,Change Research,48,Online,,11/3/2018,1003,Mike Espy,DEM,40,Cindy Hyde-Smith,REP,27,28,13,11/6/2018,40.9,41.25,-.34,13.34,13.34,0
+56793,91519,135,2018,2018_Gov-G_CA,CA,Gov-G,Gov-G,Change Research,48,Online,,11/3/2018,1108,Gavin Newsom,DEM,53,John Cox,REP,41,,12,11/6/2018,61.95,38.05,23.9,11.9,-11.9,1
+56795,91522,141,2018,2018_Gov-G_ID,ID,Gov-G,Gov-G,Change Research,48,Online,,11/3/2018,838,Paulette E. Jordan,DEM,39,Brad Little,REP,55,3,-16,11/6/2018,38.19,59.77,-21.58,5.58,5.58,1
+56796,91523,143,2018,2018_Gov-G_IA,IA,Gov-G,Gov-G,Change Research,48,Online,,11/3/2018,961,Fred Hubbell,DEM,49,Kim Reynolds,REP,46,3,3,11/6/2018,47.54,50.28,-2.73,5.73,5.73,0
+56811,91552,148,2018,2018_Gov-G_MI,MI,Gov-G,Gov-G,Change Research,48,Online,,11/3/2018,880,Gretchen Whitmer,DEM,51,Bill Schuette,REP,43,2,8,11/6/2018,53.31,43.75,9.57,1.57,-1.57,1
+56797,91525,149,2018,2018_Gov-G_MN,MN,Gov-G,Gov-G,Change Research,48,Online,,11/3/2018,953,Tim Walz,DEM,53,Jeff Johnson,REP,41,2,12,11/6/2018,53.87,42.44,11.42,.58,.58,1
+56778,91486,151,2018,2018_Gov-G_NV,NV,Gov-G,Gov-G,Emerson College,88,IVR/Online,,11/3/2018,1197,Steve Sisolak,DEM,47.5,Adam Paul Laxalt,REP,46.5,,1,11/6/2018,50.37,46.21,4.16,3.16,-3.16,1
+56759,91443,152,2018,2018_Gov-G_NH,NH,Gov-G,Gov-G,University of New Hampshire Survey Center,357,Live Phone,,11/3/2018,630,Molly M. Kelly,DEM,46,Chris Sununu,REP,46,2,0,11/6/2018,45.76,52.81,-7.05,7.05,7.05,.5
+56818,91572,155,2018,2018_Gov-G_OH,OH,Gov-G,Gov-G,Change Research,48,Online,,11/3/2018,923,Richard Cordray,DEM,48,Mike DeWine,REP,43,5,5,11/6/2018,46.68,50.39,-3.7,8.7,8.7,0
+56828,91586,155,2018,2018_Gov-G_OH,OH,Gov-G,Gov-G,Trafalgar Group,338,IVR,R,11/3/2018,1948,Richard Cordray,DEM,45.8,Mike DeWine,REP,42.2,,3.5999999,11/6/2018,46.68,50.39,-3.7,7.3,7.3,0
+56758,91442,158,2018,2018_Gov-G_PA,PA,Gov-G,Gov-G,Change Research,48,Online,,11/3/2018,1833,Thomas W. Wolf,DEM,53,Scott R. Wagner,REP,42,2,11,11/6/2018,57.77,40.7,17.07,6.07,-6.07,1
+56760,91444,161,2018,2018_Gov-G_SD,SD,Gov-G,Gov-G,Change Research,48,Online,,11/3/2018,851,Billie H. Sutton,DEM,51,Kristi Noem,REP,45,2,6,11/6/2018,47.6,50.97,-3.38,9.38,9.38,0
+56781,91489,161,2018,2018_Gov-G_SD,SD,Gov-G,Gov-G,Emerson College,88,IVR/Online,,11/3/2018,514,Billie H. Sutton,DEM,46.6,Kristi Noem,REP,47.6,,-1,11/6/2018,47.6,50.97,-3.38,2.38,2.38,1
+56761,91445,166,2018,2018_Gov-G_WY,WY,Gov-G,Gov-G,Change Research,48,Online,,11/3/2018,858,Mary Throne,DEM,27,Mark Gordon,REP,61,6,-34,11/6/2018,27.69,67.48,-39.8,5.8,5.8,1
+56829,91590,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,11/4/2018,600,Kyrsten Sinema,DEM,48.6,Martha McSally,REP,44,,4.5999999,11/6/2018,49.96,47.61,2.34,2.26,2.26,1
+56830,91591,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,11/4/2018,600,Bill Nelson,DEM,47.6,Rick Scott,REP,48.2,,-.60000002,11/6/2018,49.93,50.05,-.12,.48,-.48,1
+56771,91481,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,St. Pete Polls,314,IVR,,11/4/2018,3088,Bill Nelson,DEM,49.9,Rick Scott,REP,46.2,,3.7,11/6/2018,49.93,50.05,-.12,3.82,3.82,0
+56832,91592,102,2018,2018_Sen-G_IN,IN,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,11/4/2018,600,Joe Donnelly,DEM,41.8,Mike Braun,REP,42.9,,-1.1,11/6/2018,44.84,50.73,-5.89,4.79,4.79,1
+56772,91482,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Mitchell Research & Communications,213,IVR,,11/4/2018,701,Debbie Stabenow,DEM,53,John James,REP,46,,7,11/6/2018,52.26,45.76,6.51,.49,.49,1
+56814,91558,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Trafalgar Group,338,IVR,R,11/4/2018,1817,Debbie Stabenow,DEM,52.8,John James,REP,43.8,,9,11/6/2018,52.26,45.76,6.51,2.49,2.49,1
+56833,91593,109,2018,2018_Sen-G_MO,MO,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,11/4/2018,600,Claire McCaskill,DEM,44.7,Josh Hawley,REP,45.5,,-.80000001,11/6/2018,45.57,51.38,-5.81,5.01,5.01,1
+56816,91570,110,2018,2018_Sen-G_MT,MT,Sen-G,Sen-G,Trafalgar Group,338,IVR,R,11/4/2018,953,Jon Tester,DEM,50.1,Matt Rosendale,REP,49,,1.1,11/6/2018,50.33,46.78,3.55,2.45,-2.45,1
+56831,91595,112,2018,2018_Sen-G_NV,NV,Sen-G,Sen-G,Harris Insights & Analytics,133,Online,,11/4/2018,600,Jacky Rosen,DEM,46.9,Dean Heller,REP,44.6,,2.3,11/6/2018,51.22,46.11,5.11,2.81,-2.81,1
+56817,91571,121,2018,2018_Sen-G_TX,TX,Sen-G,Sen-G,Trafalgar Group,338,IVR,R,11/4/2018,2135,Beto O'Rourke,DEM,43.2,Ted Cruz,REP,52.1,,-8.8999996,11/6/2018,48.33,50.89,-2.57,6.33,-6.33,1
+56829,91587,133,2018,2018_Gov-G_AZ,AZ,Gov-G,Gov-G,Harris Insights & Analytics,133,Online,,11/4/2018,600,David Garcia,DEM,38.5,Doug Ducey,REP,52.8,,-14.3,11/6/2018,41.84,56,-14.16,.14,-.14,1
+56830,91588,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Harris Insights & Analytics,133,Online,,11/4/2018,600,Andrew Gillum,DEM,48.7,Ron DeSantis,REP,46.3,,2.4000001,11/6/2018,49.19,49.59,-.39,2.79,2.79,0
+56771,91471,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,St. Pete Polls,314,IVR,,11/4/2018,3088,Andrew Gillum,DEM,49.5,Ron DeSantis,REP,45.4,1.8,4.0999999,11/6/2018,49.19,49.59,-.39,4.49,4.49,0
+56772,91472,148,2018,2018_Gov-G_MI,MI,Gov-G,Gov-G,Mitchell Research & Communications,213,IVR,,11/4/2018,701,Gretchen Whitmer,DEM,54,Bill Schuette,REP,40,,14,11/6/2018,53.31,43.75,9.57,4.43,4.43,1
+56831,91589,151,2018,2018_Gov-G_NV,NV,Gov-G,Gov-G,Harris Insights & Analytics,133,Online,,11/4/2018,600,Steve Sisolak,DEM,44.5,Adam Paul Laxalt,REP,44.3,,.2,11/6/2018,50.37,46.21,4.16,3.96,-3.96,1
+56827,91585,96,2018,2018_Sen-G_AZ,AZ,Sen-G,Sen-G,Trafalgar Group,338,IVR,R,11/5/2018,1217,Kyrsten Sinema,DEM,45.3,Martha McSally,REP,47.4,,-2.0999999,11/6/2018,49.96,47.61,2.34,4.44,-4.44,0
+56825,91583,100,2018,2018_Sen-G_FL,FL,Sen-G,Sen-G,Trafalgar Group,338,IVR,R,11/5/2018,1484,Bill Nelson,DEM,47.3,Rick Scott,REP,49,,-1.7,11/6/2018,49.93,50.05,-.12,1.58,-1.58,1
+56815,91569,106,2018,2018_Sen-G_MI,MI,Sen-G,Sen-G,Mitchell Research & Communications,213,IVR,,11/5/2018,827,Debbie Stabenow,DEM,49,John James,REP,46,,3,11/6/2018,52.26,45.76,6.51,3.51,-3.51,1
+56825,91582,138,2018,2018_Gov-G_FL,FL,Gov-G,Gov-G,Trafalgar Group,338,IVR,R,11/5/2018,1484,Andrew Gillum,DEM,46.6,Ron DeSantis,REP,50,,-3.4000001,11/6/2018,49.19,49.59,-.39,3.01,-3.01,1
+56815,91568,148,2018,2018_Gov-G_MI,MI,Gov-G,Gov-G,Mitchell Research & Communications,213,IVR,,11/5/2018,827,Gretchen Whitmer,DEM,48.4,Bill Schuette,REP,40.6,,7.8000002,11/6/2018,53.31,43.75,9.57,1.77,-1.77,1
+56921,91850,6209,2018,2018_Sen-GSR_MS,MS,Sen-G,Sen-GSR,JMC Analytics/Bold Blue Campaigns,503,Live Phone,,11/22/2018,684,Mike Espy,DEM,44,Cindy Hyde-Smith,REP,54,,-10,11/27/2018,46.37,53.63,-7.27,2.73,-2.73,1
+56923,91852,6209,2018,2018_Sen-GSR_MS,MS,Sen-G,Sen-GSR,Change Research,48,Online,,11/25/2018,1211,Mike Espy,DEM,46,Cindy Hyde-Smith,REP,51,,-5,11/27/2018,46.37,53.63,-7.27,2.27,2.27,1
+81163,163737,8920,2022,2022_Sen-G_AR,AR,Sen-G,Sen-G,Hendrix College,138,Text,,10/18/2022,974,Natalie James,DEM,32,John Boozman,REP,52,3,-20,11/8/2022,31.09,65.73,-34.64,14.64,14.64,1
+81306,164232,8924,2022,2022_Sen-G_FL,FL,Sen-G,Sen-G,Stetson University Center for Public Opinion Research,730,Online,,10/18/2022,644,Val Demings,DEM,45,Marco Rubio,REP,52,,-7,11/8/2022,41.27,57.68,-16.41,9.41,9.41,1
+81169,163765,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,"Fabrizio, Lee & Associates",90,Live Phone/Online,R,10/18/2022,600,Maggie Hassan,DEM,49,Donald C. Bolduc,REP,47,,2,11/8/2022,53.54,44.47,9.07,7.07,-7.07,1
+81145,163688,8940,2022,2022_Sen-G_NC,NC,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/18/2022,1081,Cheri Beasley,DEM,44.2,Ted Budd,REP,48.4,1.6,-4.1999998,11/8/2022,47.3,50.53,-3.23,.97,-.97,1
+81384,164451,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Garin-Hart-Yang Research Group,113,Live Phone,D,10/18/2022,504,John Fetterman,DEM,46,Mehmet Oz,REP,44,,2,11/8/2022,51.25,46.33,4.91,2.91,-2.91,1
+81271,164140,8951,2022,2022_Sen-G_WI,WI,Sen-G,Sen-G,Data for Progress,522,Live Phone/Online/Text,,10/18/2022,1376,Mandela Barnes,DEM,46,Ron Johnson,REP,51,,-5,11/8/2022,49.49,50.5,-1.01,3.99,-3.99,1
+81246,163982,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Data Orbital,73,Live Phone,,10/18/2022,550,Katie Hobbs,DEM,44.2,Kari Lake,REP,46.7,,-2.5,11/8/2022,50.32,49.65,.67,3.17,-3.17,0
+81163,163738,8955,2022,2022_Gov-G_AR,AR,Gov-G,Gov-G,Hendrix College,138,Text,,10/18/2022,974,Chris Jones,DEM,41,Sarah Huckabee Sanders,REP,51,3,-10,11/8/2022,35.2,62.96,-27.77,17.77,17.77,1
+81277,164152,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,Cherry Communications,49,Live Phone,R,10/18/2022,601,Charlie Crist,DEM,42,Ron DeSantis,REP,53,,-11,11/8/2022,39.97,59.37,-19.4,8.4,8.4,1
+81306,164231,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,Stetson University Center for Public Opinion Research,730,Online,,10/18/2022,644,Charlie Crist,DEM,45,Ron DeSantis,REP,53,,-8,11/8/2022,39.97,59.37,-19.4,11.4,11.4,1
+81162,163736,8970,2022,2022_Gov-G_MN,MN,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/18/2022,1091,Tim Walz,DEM,45.8,Scott Jensen,REP,46.3,1.2,-.5,11/8/2022,52.29,44.63,7.67,8.17,-8.17,0
+81169,163764,8973,2022,2022_Gov-G_NH,NH,Gov-G,Gov-G,"Fabrizio, Lee & Associates",90,Live Phone/Online,R,10/18/2022,600,Tom Sherman,DEM,40,Chris Sununu,REP,57,,-17,11/8/2022,41.59,57.14,-15.56,1.44,-1.44,1
+81206,163879,8975,2022,2022_Gov-G_NY,NY,Gov-G,Gov-G,Bold Decision,686,Online,,10/18/2022,1204,Kathy C. Hochul,DEM,52,Lee M. Zeldin,REP,37,,15,11/8/2022,53.2,46.8,6.4,8.6,8.6,1
+81147,163692,8978,2022,2022_Gov-G_OR,OR,Gov-G,Gov-G,Hoffman Research Group,141,Live Phone,,10/18/2022,684,Tina Kotek,DEM,35,Christine Drazan,REP,37,17,-2,11/8/2022,47.01,43.59,3.42,5.42,-5.42,0
+81210,163897,8984,2022,2022_Gov-G_TX,TX,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/18/2022,1000,Beto O'Rourke,DEM,42.1,Greg Abbott,REP,51.8,1.3,-9.6999998,11/8/2022,43.86,54.76,-10.9,1.2,1.2,1
+81213,163907,8984,2022,2022_Gov-G_TX,TX,Gov-G,Gov-G,Siena College,305,Live Phone,,10/18/2022,649,Beto O'Rourke,DEM,43,Greg Abbott,REP,52,,-9,11/8/2022,43.86,54.76,-10.9,1.9,1.9,1
+81271,164145,8986,2022,2022_Gov-G_WI,WI,Gov-G,Gov-G,Data for Progress,522,Live Phone/Online/Text,,10/18/2022,1376,Tony Evers,DEM,48,Tim Michels,REP,49,1,-1,11/8/2022,51.19,47.79,3.4,4.4,-4.4,0
+81543,165044,9536,2022,2022_Gov-G_VI,VI,Gov-G,Gov-G,"Island Analytics & Marketing, LLC",736,Live Phone/Online,,10/18/2022,423,Albert Bryan,DEM,40.2,Kurt A. Vialet,IND,44,4.7,-3.8,11/8/2022,56.85,38.55,18.3,22.1,,0
+81231,163954,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/19/2022,727,Maggie Hassan,DEM,49.5,Donald C. Bolduc,REP,45.4,2.6,4.0999999,11/8/2022,53.54,44.47,9.07,4.97,-4.97,1
+81261,164046,8940,2022,2022_Sen-G_NC,NC,Sen-G,Sen-G,Marist College,183,Live Phone/Online/Text,,10/19/2022,1130,Cheri Beasley,DEM,44,Ted Budd,REP,44,,0,11/8/2022,47.3,50.53,-3.23,3.23,3.23,.5
+81208,163899,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Marist College,183,Live Phone/Online/Text,,10/19/2022,1141,Tim Ryan,DEM,45,J.D. Vance,REP,46,,-1,11/8/2022,46.92,53.03,-6.11,5.11,5.11,1
+81182,163819,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Echelon Insights,407,Online,,10/19/2022,500,John Fetterman,DEM,46,Mehmet Oz,REP,43,2,3,11/8/2022,51.25,46.33,4.91,1.91,-1.91,1
+81298,164202,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Franklin & Marshall College,106,Live Phone/Online,,10/19/2022,384,John Fetterman,DEM,49,Mehmet Oz,REP,45,,4,11/8/2022,51.25,46.33,4.91,.91,-.91,1
+81152,163715,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,InsiderAdvantage,243,Text,,10/19/2022,550,John Fetterman,DEM,46.3,Mehmet Oz,REP,45.5,1.8,.80000001,11/8/2022,51.25,46.33,4.91,4.11,-4.11,1
+81465,164816,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,YouGov,391,Online,,10/19/2022,850,John Fetterman,DEM,48.1,Mehmet Oz,REP,42.4,,5.6999998,11/8/2022,51.25,46.33,4.91,.79,.79,1
+81300,164209,8956,2022,2022_Gov-G_CA,CA,Gov-G,Gov-G,Public Policy Institute of California,262,Live Phone,,10/19/2022,1111,Gavin Newsom,DEM,55,Brian Dahle,REP,36,,19,11/8/2022,59.18,40.82,18.36,.64,.64,1
+81533,165026,8956,2022,2022_Gov-G_CA,CA,Gov-G,Gov-G,YouGov,391,Online,,10/19/2022,860,Gavin Newsom,DEM,56,Brian Dahle,REP,37,,19,11/8/2022,59.18,40.82,18.36,.64,.64,1
+81536,165029,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,YouGov,391,Online,,10/19/2022,832,Charlie Crist,DEM,43,Ron DeSantis,REP,53,,-10,11/8/2022,39.97,59.37,-19.4,9.4,9.4,1
+81174,163787,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,Mitchell Research & Communications,213,IVR,,10/19/2022,541,Gretchen Whitmer,DEM,49,Tudor M. Dixon,REP,47,,2,11/8/2022,54.47,43.94,10.53,8.53,-8.53,1
+81231,163955,8973,2022,2022_Gov-G_NH,NH,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/19/2022,727,Tom Sherman,DEM,40.9,Chris Sununu,REP,53.8,1.4,-12.9,11/8/2022,41.59,57.14,-15.56,2.66,2.66,1
+81534,165027,8975,2022,2022_Gov-G_NY,NY,Gov-G,Gov-G,YouGov,391,Online,,10/19/2022,796,Kathy C. Hochul,DEM,54,Lee M. Zeldin,REP,41,,13,11/8/2022,53.2,46.8,6.4,6.6,6.6,1
+81184,163822,8975,2022,2022_Gov-G_NY,NY,Gov-G,Gov-G,co/efficient,514,IVR/Text,,10/19/2022,1056,Kathy C. Hochul,DEM,45,Lee M. Zeldin,REP,46,,-1,11/8/2022,53.2,46.8,6.4,7.4,-7.4,0
+81208,163895,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Marist College,183,Live Phone/Online/Text,,10/19/2022,1141,Nan Whaley,DEM,40,Mike DeWine,REP,53,,-13,11/8/2022,37.38,62.41,-25.03,12.03,12.03,1
+81182,163820,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Echelon Insights,407,Online,,10/19/2022,500,Josh Shapiro,DEM,50,Douglas V. Mastriano,REP,38,1,12,11/8/2022,56.49,41.71,14.77,2.77,-2.77,1
+81298,164204,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Franklin & Marshall College,106,Live Phone/Online,,10/19/2022,384,Josh Shapiro,DEM,58,Douglas V. Mastriano,REP,36,,22,11/8/2022,56.49,41.71,14.77,7.23,7.23,1
+81152,163719,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,InsiderAdvantage,243,Text,,10/19/2022,550,Josh Shapiro,DEM,48.5,Douglas V. Mastriano,REP,42.2,2.2,6.3000002,11/8/2022,56.49,41.71,14.77,8.47,-8.47,1
+81465,164817,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,YouGov,391,Online,,10/19/2022,850,Josh Shapiro,DEM,53.1,Douglas V. Mastriano,REP,38.1,,15,11/8/2022,56.49,41.71,14.77,.23,.23,1
+81535,165028,8984,2022,2022_Gov-G_TX,TX,Gov-G,Gov-G,YouGov,391,Online,,10/19/2022,817,Beto O'Rourke,DEM,44,Greg Abbott,REP,51,,-7,11/8/2022,43.86,54.76,-10.9,3.9,3.9,1
+81242,164047,8923,2022,2022_Sen-G_CT,CT,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/20/2022,1000,Richard Blumenthal,DEM,54,Leora R. Levy,REP,41.7,,12.3,11/8/2022,57.45,42.54,14.92,2.62,-2.62,1
+81382,164449,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Garin-Hart-Yang Research Group,113,Live Phone,D,10/20/2022,503,Raphael Warnock,DEM,48,Herschel Junior Walker,REP,45,,3,11/8/2022,49.44,48.49,.96,2.04,2.04,1
+81203,163870,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,InsiderAdvantage,243,Text,,10/20/2022,550,Catherine Cortez Masto,DEM,46.3,Adam Paul Laxalt,REP,48.2,,-1.9,11/8/2022,49.42,48.63,.79,2.69,-2.69,0
+81486,164865,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,University of Massachusetts Lowell Center for Public Opinion,355,Online,,10/20/2022,600,Maggie Hassan,DEM,51,Donald C. Bolduc,REP,41,3,10,11/8/2022,53.54,44.47,9.07,.93,.93,1
+81225,163942,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Rasmussen Reports,277,IVR/Online,,10/20/2022,972,John Fetterman,DEM,45,Mehmet Oz,REP,43,,2,11/8/2022,51.25,46.33,4.91,2.91,-2.91,1
+81275,164286,8947,2022,2022_Sen-G_SD,SD,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/20/2022,1500,Brian L. Bengs,DEM,27,John R. Thune,REP,58,5,-31,11/8/2022,26.15,69.63,-43.48,12.48,12.48,1
+81181,163818,8950,2022,2022_Sen-G_WA,WA,Sen-G,Sen-G,Public Policy Polling,263,IVR/Text,D,10/20/2022,782,Patty Murray,DEM,52,Tiffany Smiley,REP,42,,10,11/8/2022,57.28,42.72,14.55,4.55,-4.55,1
+81183,163821,8950,2022,2022_Sen-G_WA,WA,Sen-G,Sen-G,co/efficient,514,IVR/Text,,10/20/2022,1181,Patty Murray,DEM,48,Tiffany Smiley,REP,45,,3,11/8/2022,57.28,42.72,14.55,11.55,-11.55,1
+81242,163976,8958,2022,2022_Gov-G_CT,CT,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/20/2022,1000,Edward Lamont,DEM,53.4,Robert Stefanowski,REP,42.7,1.6,10.7,11/8/2022,55.93,43.08,12.85,2.15,-2.15,1
+81209,163896,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/20/2022,1079,Gretchen Whitmer,DEM,48.4,Tudor M. Dixon,REP,47.9,1.5,.5,11/8/2022,54.47,43.94,10.53,10.03,-10.03,1
+81538,165035,8970,2022,2022_Gov-G_MN,MN,Gov-G,Gov-G,St. Cloud State University,312,Live Phone,,10/20/2022,219,Tim Walz,DEM,52,Scott Jensen,REP,31,,21,11/8/2022,52.29,44.63,7.67,13.33,13.33,1
+81203,163874,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,InsiderAdvantage,243,Text,,10/20/2022,550,Steve Sisolak,DEM,42.8,Joe Lombardo,REP,48.5,4.1,-5.6999998,11/8/2022,48,49.53,-1.53,4.17,-4.17,1
+81486,164868,8973,2022,2022_Gov-G_NH,NH,Gov-G,Gov-G,University of Massachusetts Lowell Center for Public Opinion,355,Online,,10/20/2022,600,Tom Sherman,DEM,35,Chris Sununu,REP,51,5,-16,11/8/2022,41.59,57.14,-15.56,.44,-.44,1
+81230,163951,8974,2022,2022_Gov-G_NM,NM,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/20/2022,1077,Michelle Lujan Grisham,DEM,45.5,Mark V. Ronchetti,REP,46.6,3.9,-1.1,11/8/2022,51.97,45.59,6.38,7.48,-7.48,0
+81285,164167,8978,2022,2022_Gov-G_OR,OR,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/20/2022,1161,Tina Kotek,DEM,40.4,Christine Drazan,REP,41.7,13.2,-1.3,11/8/2022,47.01,43.59,3.42,4.72,-4.72,0
+81225,163944,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Rasmussen Reports,277,IVR/Online,,10/20/2022,972,Josh Shapiro,DEM,43,Douglas V. Mastriano,REP,40,,3,11/8/2022,56.49,41.71,14.77,11.77,-11.77,1
+81275,164148,8982,2022,2022_Gov-G_SD,SD,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/20/2022,1500,Jamie Smith,DEM,38.6,Kristi Noem,REP,57.5,4,-18.9,11/8/2022,35.17,61.98,-26.81,7.91,7.91,1
+81215,163914,8918,2022,2022_Sen-G_AK,AK,Sen-G,Sen-G,Alaska Survey Research,155,Online,,10/21/2022,1276,Lisa Murkowski,REP,42.2,Kelly C. Tshibaka,REP,41,16.9,1.2,11/8/2022,44.49,44.32,.17,1.03,,1
+81215,163915,8918,2022,2022_Sen-G_AK,AK,Sen-G,Sen-G,Alaska Survey Research,155,Online,,10/21/2022,1276,Lisa Murkowski,REP,55.5,Kelly C. Tshibaka,REP,44.5,,11,11/8/2022,53.7,46.3,7.4,3.6,,1
+81215,163913,8918,2022,2022_Sen-G_AK,AK,Sen-G,Sen-G,Alaska Survey Research,155,Online,,10/21/2022,1276,Lisa Murkowski,REP,40.8,Kelly C. Tshibaka,REP,38.9,16.4,1.9,11/8/2022,43.39,42.62,.77,1.13,,1
+81188,163830,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,co/efficient,514,IVR/Text,,10/21/2022,1111,Mark Kelly,DEM,46.6,Blake Masters,REP,44.8,3.5,1.8,11/8/2022,51.39,46.51,4.89,3.09,-3.09,1
+81218,163920,8923,2022,2022_Sen-G_CT,CT,Sen-G,Sen-G,Quinnipiac University,267,Live Phone,,10/21/2022,1879,Richard Blumenthal,DEM,56,Leora R. Levy,REP,41,,15,11/8/2022,57.45,42.54,14.92,.08,.08,1
+81270,164139,8924,2022,2022_Sen-G_FL,FL,Sen-G,Sen-G,Data for Progress,522,Online,,10/21/2022,1251,Val Demings,DEM,44,Marco Rubio,REP,51,1,-7,11/8/2022,41.27,57.68,-16.41,9.41,9.41,1
+81262,164048,8924,2022,2022_Sen-G_FL,FL,Sen-G,Sen-G,University of North Florida Public Opinion Research Lab,360,Live Phone,,10/21/2022,622,Val Demings,DEM,43,Marco Rubio,REP,54,,-11,11/8/2022,41.27,57.68,-16.41,5.41,5.41,1
+81383,164450,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,Garin-Hart-Yang Research Group,113,Live Phone,D,10/21/2022,501,Catherine Cortez Masto,DEM,47,Adam Paul Laxalt,REP,46,,1,11/8/2022,49.42,48.63,.79,.21,.21,1
+81254,164018,8940,2022,2022_Sen-G_NC,NC,Sen-G,Sen-G,Cygnal,67,Live Phone/Online,R,10/21/2022,600,Cheri Beasley,DEM,43.1,Ted Budd,REP,46.9,2.3,-3.8,11/8/2022,47.3,50.53,-3.23,.57,-.57,1
+81222,163939,8950,2022,2022_Sen-G_WA,WA,Sen-G,Sen-G,KAConsulting,757,IVR/Live Phone,R,10/21/2022,500,Patty Murray,DEM,48,Tiffany Smiley,REP,42,,6,11/8/2022,57.28,42.72,14.55,8.55,-8.55,1
+81349,164373,8950,2022,2022_Sen-G_WA,WA,Sen-G,Sen-G,Moore Information Group,217,Live Phone/Online,R,10/21/2022,500,Patty Murray,DEM,46,Tiffany Smiley,REP,46,,0,11/8/2022,57.28,42.72,14.55,14.55,-14.55,.5
+81188,163831,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,co/efficient,514,IVR/Text,,10/21/2022,1111,Katie Hobbs,DEM,45.3,Kari Lake,REP,48.6,,-3.3,11/8/2022,50.32,49.65,.67,3.97,-3.97,0
+81218,163929,8958,2022,2022_Gov-G_CT,CT,Gov-G,Gov-G,Quinnipiac University,267,Live Phone,,10/21/2022,1879,Edward Lamont,DEM,56,Robert Stefanowski,REP,41,,15,11/8/2022,55.93,43.08,12.85,2.15,2.15,1
+81270,164144,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,Data for Progress,522,Online,,10/21/2022,1251,Charlie Crist,DEM,42,Ron DeSantis,REP,54,1,-12,11/8/2022,39.97,59.37,-19.4,7.4,7.4,1
+81262,164049,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,University of North Florida Public Opinion Research Lab,360,Live Phone,,10/21/2022,622,Charlie Crist,DEM,41,Ron DeSantis,REP,55,,-14,11/8/2022,39.97,59.37,-19.4,5.4,5.4,1
+81342,164361,8983,2022,2022_Gov-G_TN,TN,Gov-G,Gov-G,RABA Research,269,Online,,10/21/2022,549,Jason Brantley Martin,DEM,28,Bill Lee,REP,52,,-24,11/8/2022,32.92,64.91,-31.99,7.99,7.99,1
+81350,164401,8984,2022,2022_Gov-G_TX,TX,Gov-G,Gov-G,University of Texas at Tyler Center for Opinion Research,458,Live Phone/Online,,10/21/2022,973,Beto O'Rourke,DEM,44,Greg Abbott,REP,50,2,-6,11/8/2022,43.86,54.76,-10.9,4.9,4.9,1
+81501,164907,8920,2022,2022_Sen-G_AR,AR,Sen-G,Sen-G,University of Arkansas Department of Political Science,345,Live Phone,,10/22/2022,557,Natalie James,DEM,25.8,John Boozman,REP,54.6,4.6,-28.799999,11/8/2022,31.09,65.73,-34.64,5.84,5.84,1
+81232,163957,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/22/2022,1076,Raphael Warnock,DEM,46.5,Herschel Junior Walker,REP,48.9,4.6,-2.4000001,11/8/2022,49.44,48.49,.96,3.36,-3.36,0
+81368,164406,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,University of Georgia School of Public and International Affairs,350,Live Phone,,10/22/2022,1022,Raphael Warnock,DEM,45.2,Herschel Junior Walker,REP,45.5,4.8,-.30000001,11/8/2022,49.44,48.49,.96,1.26,-1.26,0
+81279,164154,8928,2022,2022_Sen-G_IL,IL,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/22/2022,1000,Tammy Duckworth,DEM,49.1,Kathy Salvi,REP,39.3,2.1,9.8000002,11/8/2022,56.82,41.5,15.32,5.52,-5.52,1
+81356,164381,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,The New York Times/Siena College,448,Live Phone,,10/22/2022,885,Catherine Cortez Masto,DEM,47,Adam Paul Laxalt,REP,47,0,0,11/8/2022,49.42,48.63,.79,.79,-.79,.5
+81337,164351,8939,2022,2022_Sen-G_NY,NY,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/22/2022,1000,Charles E. Schumer,DEM,52.8,Joe Pinion,REP,39.6,1.7,13.2,11/8/2022,56.78,42.77,14.01,.81,-.81,1
+81305,164230,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Baldwin Wallace University Community Research Institute,401,Online,,10/22/2022,1068,Tim Ryan,DEM,50.2,J.D. Vance,REP,46,,4.1999998,11/8/2022,46.92,53.03,-6.11,10.31,10.31,0
+81245,163981,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Cygnal,67,IVR/Online,,10/22/2022,1886,Tim Ryan,DEM,44.2,J.D. Vance,REP,48.3,,-4.0999999,11/8/2022,46.92,53.03,-6.11,2.01,2.01,1
+81370,164427,8951,2022,2022_Sen-G_WI,WI,Sen-G,Sen-G,Patriot Polling,732,IVR,,10/22/2022,801,Mandela Barnes,DEM,43.2,Ron Johnson,REP,51.6,,-8.3999996,11/8/2022,49.49,50.5,-1.01,7.39,-7.39,1
+81501,164908,8955,2022,2022_Gov-G_AR,AR,Gov-G,Gov-G,University of Arkansas Department of Political Science,345,Live Phone,,10/22/2022,557,Chris Jones,DEM,33.9,Sarah Huckabee Sanders,REP,53,3.8,-19.1,11/8/2022,35.2,62.96,-27.77,8.67,8.67,1
+81232,163958,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/22/2022,1076,Stacey Abrams,DEM,45.3,Brian Kemp,REP,52.2,2.5,-6.9000001,11/8/2022,45.88,53.41,-7.54,.64,.64,1
+81368,164407,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,University of Georgia School of Public and International Affairs,350,Live Phone,,10/22/2022,1022,Stacey Abrams,DEM,44.3,Brian Kemp,REP,51.1,2,-6.8000002,11/8/2022,45.88,53.41,-7.54,.74,.74,1
+81279,164155,8963,2022,2022_Gov-G_IL,IL,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/22/2022,1000,J.B. Pritzker,DEM,51.6,Darren Bailey,REP,42.3,2.6,9.3000002,11/8/2022,54.91,42.37,12.54,3.24,-3.24,1
+81303,164214,8967,2022,2022_Gov-G_MD,MD,Gov-G,Gov-G,OpinionWorks,244,Live Phone/Online,,10/22/2022,989,Wes Moore,DEM,58,Dan Cox,REP,27,3,31,11/8/2022,64.69,32.19,32.49,1.49,-1.49,1
+81487,164869,8968,2022,2022_Gov-G_MA,MA,Gov-G,Gov-G,University of Massachusetts Lowell Center for Public Opinion,355,Online,,10/22/2022,1000,Maura Healey,DEM,59,Geoff Diehl,REP,32,3,27,11/8/2022,63.76,34.66,29.11,2.11,-2.11,1
+81356,164492,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,The New York Times/Siena College,448,Live Phone,,10/22/2022,885,Steve Sisolak,DEM,45,Joe Lombardo,REP,49,0,-4,11/8/2022,48,49.53,-1.53,2.47,-2.47,1
+81337,164352,8975,2022,2022_Gov-G_NY,NY,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/22/2022,1000,Kathy C. Hochul,DEM,51.6,Lee M. Zeldin,REP,44.4,,7.1999998,11/8/2022,53.2,46.8,6.4,.8,.8,1
+81305,164229,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Baldwin Wallace University Community Research Institute,401,Online,,10/22/2022,1068,Nan Whaley,DEM,40,Mike DeWine,REP,56.6,,-16.6,11/8/2022,37.38,62.41,-25.03,8.43,8.43,1
+81245,163980,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Cygnal,67,IVR/Online,,10/22/2022,1886,Nan Whaley,DEM,37.3,Mike DeWine,REP,54.9,,-17.6,11/8/2022,37.38,62.41,-25.03,7.43,7.43,1
+81370,164430,8986,2022,2022_Gov-G_WI,WI,Gov-G,Gov-G,Patriot Polling,732,IVR,,10/22/2022,801,Tony Evers,DEM,45.7,Tim Michels,REP,50.1,,-4.4000001,11/8/2022,51.19,47.79,3.4,7.8,-7.8,0
+81411,164554,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,BSP Research/Shaw & Company Research,728,Live Phone/Online,,10/23/2022,669,Mark Kelly,DEM,47,Blake Masters,REP,43,,4,11/8/2022,51.39,46.51,4.89,.89,-.89,1
+81234,163960,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,Phillips Academy,699,Text,,10/23/2022,1052,Catherine Cortez Masto,DEM,48.9,Adam Paul Laxalt,REP,47.2,,1.7,11/8/2022,49.42,48.63,.79,.91,.91,1
+81224,163941,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,InsiderAdvantage,243,Text,,10/23/2022,600,Maggie Hassan,DEM,47.6,Donald C. Bolduc,REP,47.1,,.5,11/8/2022,53.54,44.47,9.07,8.57,-8.57,1
+81233,163959,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,YouGov,391,Online,,10/23/2022,1084,John Fetterman,DEM,51,Mehmet Oz,REP,49,,2,11/8/2022,51.25,46.33,4.91,2.91,-2.91,1
+81412,164525,8953,2022,2022_Gov-G_AK,AK,Gov-G,Gov-G,Dittman Research,79,Live Phone,,10/23/2022,403,Les Gara,DEM,25,Mike Dunleavy,REP,49,23.5,-24,11/8/2022,24.28,50.44,-26.16,2.16,2.16,1
+81411,164556,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,BSP Research/Shaw & Company Research,728,Live Phone/Online,,10/23/2022,669,Katie Hobbs,DEM,44,Kari Lake,REP,44,,0,11/8/2022,50.32,49.65,.67,.67,-.67,.5
+81323,164316,8968,2022,2022_Gov-G_MA,MA,Gov-G,Gov-G,YouGov,391,Online,,10/23/2022,700,Maura Healey,DEM,61,Geoff Diehl,REP,33,2,28,11/8/2022,63.76,34.66,29.11,1.11,-1.11,1
+81265,164089,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,Cygnal,67,IVR/Online,,10/23/2022,1378,Gretchen Whitmer,DEM,50.6,Tudor M. Dixon,REP,44.5,,6.0999999,11/8/2022,54.47,43.94,10.53,4.43,-4.43,1
+81234,163961,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,Phillips Academy,699,Text,,10/23/2022,1052,Steve Sisolak,DEM,50,Joe Lombardo,REP,45.4,,4.5999999,11/8/2022,48,49.53,-1.53,6.13,6.13,0
+81224,163945,8973,2022,2022_Gov-G_NH,NH,Gov-G,Gov-G,InsiderAdvantage,243,Text,,10/23/2022,600,Tom Sherman,DEM,37,Chris Sununu,REP,53.9,,-16.9,11/8/2022,41.59,57.14,-15.56,1.34,-1.34,1
+81233,164072,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,YouGov,391,Online,,10/23/2022,1084,Josh Shapiro,DEM,54,Douglas V. Mastriano,REP,45,,9,11/8/2022,56.49,41.71,14.77,5.77,-5.77,1
+81403,164490,8984,2022,2022_Gov-G_TX,TX,Gov-G,Gov-G,YouGov,391,Online,,10/23/2022,1200,Beto O'Rourke,DEM,40,Greg Abbott,REP,53,2,-13,11/8/2022,43.86,54.76,-10.9,2.1,-2.1,1
+81276,164151,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Moore Information Group,217,Live Phone,R,10/24/2022,800,Raphael Warnock,DEM,42,Herschel Junior Walker,REP,46,3,-4,11/8/2022,49.44,48.49,.96,4.96,-4.96,0
+81307,164234,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Rasmussen Reports,277,IVR/Online,,10/24/2022,1053,Raphael Warnock,DEM,43,Herschel Junior Walker,REP,48,,-5,11/8/2022,49.44,48.49,.96,5.96,-5.96,0
+81282,164160,8928,2022,2022_Sen-G_IL,IL,Sen-G,Sen-G,Civiqs,471,Online,,10/24/2022,659,Tammy Duckworth,DEM,56,Kathy Salvi,REP,40,,16,11/8/2022,56.82,41.5,15.32,.68,.68,1
+81281,164159,8930,2022,2022_Sen-G_IA,IA,Sen-G,Sen-G,Civiqs,471,Online,,10/24/2022,623,Michael Franken,DEM,44,Chuck Grassley,REP,52,,-8,11/8/2022,43.9,56.1,-12.2,4.2,4.2,1
+81316,164304,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/24/2022,1100,Catherine Cortez Masto,DEM,45.6,Adam Paul Laxalt,REP,49.8,,-4.1999998,11/8/2022,49.42,48.63,.79,4.99,-4.99,0
+81283,164161,8939,2022,2022_Sen-G_NY,NY,Sen-G,Sen-G,Civiqs,471,Online,,10/24/2022,593,Charles E. Schumer,DEM,56,Joe Pinion,REP,41,,15,11/8/2022,56.78,42.77,14.01,.99,.99,1
+81417,164547,8949,2022,2022_Sen-G_VT,VT,Sen-G,Sen-G,Data for Progress,522,Online,,10/24/2022,1039,Peter Welch,DEM,63,Gerald Malloy,REP,32,,31,11/8/2022,68.62,28.09,40.53,9.53,-9.53,1
+81315,164303,8958,2022,2022_Gov-G_CT,CT,Gov-G,Gov-G,McLaughlin & Associates,203,Live Phone/Online,R,10/24/2022,500,Edward Lamont,DEM,49.5,Robert Stefanowski,REP,44.5,4,5,11/8/2022,55.93,43.08,12.85,7.85,-7.85,1
+81307,164233,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Rasmussen Reports,277,IVR/Online,,10/24/2022,1053,Stacey Abrams,DEM,41,Brian Kemp,REP,51,,-10,11/8/2022,45.88,53.41,-7.54,2.46,-2.46,1
+81282,164163,8963,2022,2022_Gov-G_IL,IL,Gov-G,Gov-G,Civiqs,471,Online,,10/24/2022,659,J.B. Pritzker,DEM,56,Darren Bailey,REP,39,,17,11/8/2022,54.91,42.37,12.54,4.46,4.46,1
+81281,164162,8964,2022,2022_Gov-G_IA,IA,Gov-G,Gov-G,Civiqs,471,Online,,10/24/2022,623,Deidre DeJear,DEM,42,Kim Reynolds,REP,54,,-12,11/8/2022,39.55,58.08,-18.53,6.53,6.53,1
+81316,164305,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/24/2022,1100,Steve Sisolak,DEM,44.1,Joe Lombardo,REP,50.9,3.3,-6.8000002,11/8/2022,48,49.53,-1.53,5.27,-5.27,1
+81348,164372,8974,2022,2022_Gov-G_NM,NM,Gov-G,Gov-G,Research & Polling Inc.,280,Live Phone,,10/24/2022,1254,Michelle Lujan Grisham,DEM,50,Mark V. Ronchetti,REP,42,3,8,11/8/2022,51.97,45.59,6.38,1.62,1.62,1
+81361,164390,8974,2022,2022_Gov-G_NM,NM,Gov-G,Gov-G,SurveyUSA,325,Online,,10/24/2022,650,Michelle Lujan Grisham,DEM,46,Mark V. Ronchetti,REP,39,5,7,11/8/2022,51.97,45.59,6.38,.62,.62,1
+81283,164164,8975,2022,2022_Gov-G_NY,NY,Gov-G,Gov-G,Civiqs,471,Online,,10/24/2022,593,Kathy C. Hochul,DEM,54,Lee M. Zeldin,REP,43,,11,11/8/2022,53.2,46.8,6.4,4.6,4.6,1
+81417,164550,8985,2022,2022_Gov-G_VT,VT,Gov-G,Gov-G,Data for Progress,522,Online,,10/24/2022,1039,Brenda Siegel,DEM,24,Phil Scott,REP,65,3,-41,11/8/2022,24.08,71.32,-47.24,6.24,6.24,1
+81365,164399,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,"Fabrizio, Lee & Associates",90,Live Phone/Text,R,10/25/2022,800,Mark Kelly,DEM,48,Blake Masters,REP,47.5,3,.5,11/8/2022,51.39,46.51,4.89,4.39,-4.39,1
+81280,164157,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,InsiderAdvantage,243,Live Phone/Text,,10/25/2022,550,Mark Kelly,DEM,45,Blake Masters,REP,43,6,2,11/8/2022,51.39,46.51,4.89,2.89,-2.89,1
+81359,164384,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,OH Predictive Insights,235,Live Phone/Text,,10/25/2022,600,Mark Kelly,DEM,48,Blake Masters,REP,46,3,2,11/8/2022,51.39,46.51,4.89,2.89,-2.89,1
+81354,164379,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,The New York Times/Siena College,448,Live Phone,,10/25/2022,604,Mark Kelly,DEM,51,Blake Masters,REP,45,1,6,11/8/2022,51.39,46.51,4.89,1.11,1.11,1
+81318,164307,8922,2022,2022_Sen-G_CO,CO,Sen-G,Sen-G,co/efficient,514,IVR/Text,,10/25/2022,826,Michael Bennet,DEM,49.9,Joe O'Dea,REP,34.4,,15.5,11/8/2022,55.88,41.27,14.62,.88,.88,1
+81497,164899,8923,2022,2022_Sen-G_CT,CT,Sen-G,Sen-G,"Long Island University Steven S. Hornstein Center for Policy, Polling, and Analysis",633,Online,,10/25/2022,1004,Richard Blumenthal,DEM,51,Leora R. Levy,REP,26,,25,11/8/2022,57.45,42.54,14.92,10.08,10.08,1
+81284,164165,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,co/efficient,514,IVR/Text,,10/25/2022,946,Raphael Warnock,DEM,43.6,Herschel Junior Walker,REP,47,3.1,-3.4000001,11/8/2022,49.44,48.49,.96,4.36,-4.36,0
+81346,164370,8936,2022,2022_Sen-G_MO,MO,Sen-G,Sen-G,Remington Research Group,279,IVR,,10/25/2022,1011,Trudy Busch Valentine,DEM,42,Eric Schmitt,REP,51,2,-9,11/8/2022,42.18,55.43,-13.26,4.26,4.26,1
+81312,164282,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,Echelon Insights,407,Live Phone/Online,,10/25/2022,500,Catherine Cortez Masto,DEM,45.5,Adam Paul Laxalt,REP,46.5,1,-1,11/8/2022,49.42,48.63,.79,1.79,-1.79,0
+81466,164818,8939,2022,2022_Sen-G_NY,NY,Sen-G,Sen-G,"Long Island University Steven S. Hornstein Center for Policy, Polling, and Analysis",633,Online,,10/25/2022,1001,Charles E. Schumer,DEM,54,Joe Pinion,REP,27,,27,11/8/2022,56.78,42.77,14.01,12.99,12.99,1
+81301,164341,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Center Street PAC,715,Online,D,10/25/2022,508,Tim Ryan,DEM,47,J.D. Vance,REP,42,,5,11/8/2022,46.92,53.03,-6.11,11.11,11.11,0
+81357,164382,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,The New York Times/Siena College,448,Live Phone,,10/25/2022,620,John Fetterman,DEM,49,Mehmet Oz,REP,44,0,5,11/8/2022,51.25,46.33,4.91,.09,.09,1
+81365,164400,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,"Fabrizio, Lee & Associates",90,Live Phone/Text,R,10/25/2022,800,Katie Hobbs,DEM,47,Kari Lake,REP,50,,-3,11/8/2022,50.32,49.65,.67,3.67,-3.67,0
+81280,164158,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,InsiderAdvantage,243,Live Phone/Text,,10/25/2022,550,Katie Hobbs,DEM,43,Kari Lake,REP,54,,-11,11/8/2022,50.32,49.65,.67,11.67,-11.67,0
+81359,164385,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,OH Predictive Insights,235,Live Phone/Text,,10/25/2022,600,Katie Hobbs,DEM,47,Kari Lake,REP,49,,-2,11/8/2022,50.32,49.65,.67,2.67,-2.67,0
+81354,164493,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,The New York Times/Siena College,448,Live Phone,,10/25/2022,604,Katie Hobbs,DEM,48,Kari Lake,REP,48,,0,11/8/2022,50.32,49.65,.67,.67,-.67,.5
+81497,164900,8958,2022,2022_Gov-G_CT,CT,Gov-G,Gov-G,"Long Island University Steven S. Hornstein Center for Policy, Polling, and Analysis",633,Online,,10/25/2022,1004,Edward Lamont,DEM,55,Robert Stefanowski,REP,24,,31,11/8/2022,55.93,43.08,12.85,18.15,18.15,1
+81312,164284,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,Echelon Insights,407,Live Phone/Online,,10/25/2022,500,Steve Sisolak,DEM,44.5,Joe Lombardo,REP,46,2,-1.5,11/8/2022,48,49.53,-1.53,.03,.03,1
+81301,164211,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Center Street PAC,715,Online,D,10/25/2022,508,Nan Whaley,DEM,40,Mike DeWine,REP,53,,-13,11/8/2022,37.38,62.41,-25.03,12.03,12.03,1
+81548,165051,8978,2022,2022_Gov-G_OR,OR,Gov-G,Gov-G,FM3 Research,91,Live Phone/Online,D,10/25/2022,741,Tina Kotek,DEM,40,Christine Drazan,REP,38,13,2,11/8/2022,47.01,43.59,3.42,1.42,-1.42,1
+81326,164330,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Center Street PAC,715,Online,D,10/25/2022,1053,Josh Shapiro,DEM,60,Douglas V. Mastriano,REP,35,,25,11/8/2022,56.49,41.71,14.77,10.23,10.23,1
+81357,164494,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,The New York Times/Siena College,448,Live Phone,,10/25/2022,620,Josh Shapiro,DEM,53,Douglas V. Mastriano,REP,40,0,13,11/8/2022,56.49,41.71,14.77,1.77,-1.77,1
+81530,165021,8924,2022,2022_Sen-G_FL,FL,Sen-G,Sen-G,YouGov,391,Online,,10/26/2022,1117,Val Demings,DEM,44,Marco Rubio,REP,51,,-7,11/8/2022,41.27,57.68,-16.41,9.41,9.41,1
+81355,164380,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,The New York Times/Siena College,448,Live Phone,,10/26/2022,604,Raphael Warnock,DEM,47,Herschel Junior Walker,REP,44,1,3,11/8/2022,49.44,48.49,.96,2.04,2.04,1
+81377,164442,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,OH Predictive Insights,235,Live Phone/Text,,10/26/2022,600,Catherine Cortez Masto,DEM,43,Adam Paul Laxalt,REP,41,,2,11/8/2022,49.42,48.63,.79,1.21,1.21,1
+81418,164548,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,Suffolk University,323,Live Phone,,10/26/2022,500,Catherine Cortez Masto,DEM,45,Adam Paul Laxalt,REP,44,.8,1,11/8/2022,49.42,48.63,.79,.21,.21,1
+81437,164659,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,Susquehanna Polling & Research Inc.,326,Live Phone,,10/26/2022,500,Catherine Cortez Masto,DEM,42.5,Adam Paul Laxalt,REP,48.1,0,-5.5999999,11/8/2022,49.42,48.63,.79,6.39,-6.39,0
+81324,164324,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,co/efficient,514,IVR/Text,,10/26/2022,1098,Maggie Hassan,DEM,45,Donald C. Bolduc,REP,45,3,0,11/8/2022,53.54,44.47,9.07,9.07,-9.07,.5
+81380,164468,8943,2022,2022_Sen-G_OK,OK,Sen-G,Sen-G,Ascend Action,726,Live Phone,,10/26/2022,749,Madison Horn,DEM,34,James Lankford,REP,51,3,-17,11/8/2022,32.1,64.3,-32.2,15.2,15.2,1
+81313,164299,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,InsiderAdvantage,243,Text,,10/26/2022,750,John Fetterman,DEM,44.8,Mehmet Oz,REP,47.5,2.8,-2.7,11/8/2022,51.25,46.33,4.91,7.61,-7.61,0
+81421,164555,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Muhlenberg College,219,Live Phone,,10/26/2022,460,John Fetterman,DEM,47,Mehmet Oz,REP,47,,0,11/8/2022,51.25,46.33,4.91,4.91,-4.91,.5
+81420,164553,8948,2022,2022_Sen-G_UT,UT,Sen-G,Sen-G,OH Predictive Insights,235,Live Phone/Online/Text,,10/26/2022,600,Mike Lee,REP,51,Evan McMullin,IND,36,3,15,11/8/2022,53.15,42.74,10.41,4.59,,1
+81387,164455,8957,2022,2022_Gov-G_CO,CO,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/26/2022,1174,Jared Polis,DEM,49.5,Heidi Ganahl,REP,41.8,2.1,7.6999998,11/8/2022,58.53,39.18,19.35,11.65,-11.65,1
+81530,165020,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,YouGov,391,Online,,10/26/2022,1117,Charlie Crist,DEM,43,Ron DeSantis,REP,53,,-10,11/8/2022,39.97,59.37,-19.4,9.4,9.4,1
+81355,164495,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,The New York Times/Siena College,448,Live Phone,,10/26/2022,604,Stacey Abrams,DEM,45,Brian Kemp,REP,50,1,-5,11/8/2022,45.88,53.41,-7.54,2.54,2.54,1
+81377,164446,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,OH Predictive Insights,235,Live Phone/Text,,10/26/2022,600,Steve Sisolak,DEM,45,Joe Lombardo,REP,41,,4,11/8/2022,48,49.53,-1.53,5.53,5.53,0
+81418,164551,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,Suffolk University,323,Live Phone,,10/26/2022,500,Steve Sisolak,DEM,42.8,Joe Lombardo,REP,43.2,1.6,-.40000001,11/8/2022,48,49.53,-1.53,1.13,1.13,1
+81437,164657,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,Susquehanna Polling & Research Inc.,326,Live Phone,,10/26/2022,500,Steve Sisolak,DEM,43.4,Joe Lombardo,REP,44.6,1.8,-1.2,11/8/2022,48,49.53,-1.53,.33,.33,1
+81324,164323,8973,2022,2022_Gov-G_NH,NH,Gov-G,Gov-G,co/efficient,514,IVR/Text,,10/26/2022,1098,Tom Sherman,DEM,34,Chris Sununu,REP,52,1,-18,11/8/2022,41.59,57.14,-15.56,2.44,-2.44,1
+81332,164342,8975,2022,2022_Gov-G_NY,NY,Gov-G,Gov-G,Slingshot Strategies,451,Online,,10/26/2022,1000,Kathy C. Hochul,DEM,48,Lee M. Zeldin,REP,42,,6,11/8/2022,53.2,46.8,6.4,.4,-.4,1
+81380,164445,8977,2022,2022_Gov-G_OK,OK,Gov-G,Gov-G,Ascend Action,726,Live Phone,,10/26/2022,749,Joy Hofmeister,DEM,48,Kevin Stitt,REP,45,1,3,11/8/2022,41.79,55.45,-13.66,16.66,16.66,0
+81505,164915,8977,2022,2022_Gov-G_OK,OK,Gov-G,Gov-G,SoonerPoll.com,308,IVR/Online,,10/26/2022,324,Joy Hofmeister,DEM,48.2,Kevin Stitt,REP,44.9,1.7,3.3,11/8/2022,41.79,55.45,-13.66,16.96,16.96,0
+81313,164300,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,InsiderAdvantage,243,Text,,10/26/2022,750,Josh Shapiro,DEM,50.2,Douglas V. Mastriano,REP,41.8,2.8,8.3999996,11/8/2022,56.49,41.71,14.77,6.37,-6.37,1
+81421,164557,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Muhlenberg College,219,Live Phone,,10/26/2022,460,Josh Shapiro,DEM,54,Douglas V. Mastriano,REP,40,,14,11/8/2022,56.49,41.71,14.77,.77,-.77,1
+81380,164469,9482,2022,2022_Sen-GS_OK,OK,Sen-G,Sen-GS,Ascend Action,726,Live Phone,,10/26/2022,749,Kendra Horn,DEM,41,Markwayne Mullin,REP,47,2,-6,11/8/2022,35.24,61.77,-26.53,20.53,20.53,1
+81338,164354,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,InsiderAdvantage,243,Text,,10/27/2022,550,Raphael Warnock,DEM,45.3,Herschel Junior Walker,REP,47.5,2.1,-2.2,11/8/2022,49.44,48.49,.96,3.16,-3.16,0
+81367,164404,8930,2022,2022_Sen-G_IA,IA,Sen-G,Sen-G,Cygnal,67,IVR/Online,R,10/27/2022,600,Michael Franken,DEM,42.7,Chuck Grassley,REP,53.9,,-11.2,11/8/2022,43.9,56.1,-12.2,1,1,1
+81405,164497,8936,2022,2022_Sen-G_MO,MO,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/27/2022,1000,Trudy Busch Valentine,DEM,40.1,Eric Schmitt,REP,53.6,3.2,-13.5,11/8/2022,42.18,55.43,-13.26,.24,-.24,1
+81456,164764,8939,2022,2022_Sen-G_NY,NY,Sen-G,Sen-G,Data for Progress,522,Online,,10/27/2022,818,Charles E. Schumer,DEM,56,Joe Pinion,REP,39,,17,11/8/2022,56.78,42.77,14.01,2.99,2.99,1
+81467,164819,8943,2022,2022_Sen-G_OK,OK,Sen-G,Sen-G,Amber Integrated,556,Live Phone/Online,,10/27/2022,501,Madison Horn,DEM,38,James Lankford,REP,52,4,-14,11/8/2022,32.1,64.3,-32.2,18.2,18.2,1
+81375,164435,8943,2022,2022_Sen-G_OK,OK,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/27/2022,1000,Madison Horn,DEM,34.2,James Lankford,REP,61.5,3.1,-27.299999,11/8/2022,32.1,64.3,-32.2,4.9,4.9,1
+81327,164332,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Wick,284,Online,,10/27/2022,1000,John Fetterman,DEM,45.9,Mehmet Oz,REP,47.6,,-1.7,11/8/2022,51.25,46.33,4.91,6.61,-6.61,0
+81335,164348,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,co/efficient,514,IVR/Text,,10/27/2022,1716,John Fetterman,DEM,45,Mehmet Oz,REP,48,,-3,11/8/2022,51.25,46.33,4.91,7.91,-7.91,0
+81374,164434,8948,2022,2022_Sen-G_UT,UT,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/27/2022,825,Mike Lee,REP,49.6,Evan McMullin,IND,39.8,4.6,9.8000002,11/8/2022,53.15,42.74,10.41,.61,,1
+81347,164371,8950,2022,2022_Sen-G_WA,WA,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/27/2022,1207,Patty Murray,DEM,49.4,Tiffany Smiley,REP,48.2,,1.2,11/8/2022,57.28,42.72,14.55,13.35,-13.35,1
+81345,164369,8950,2022,2022_Sen-G_WA,WA,Sen-G,Sen-G,Triton Polling & Research,497,IVR,,10/27/2022,506,Patty Murray,DEM,50.6,Tiffany Smiley,REP,45.4,,5.1999998,11/8/2022,57.28,42.72,14.55,9.35,-9.35,1
+81338,164355,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,InsiderAdvantage,243,Text,,10/27/2022,550,Stacey Abrams,DEM,43.2,Brian Kemp,REP,51.6,.7,-8.3999996,11/8/2022,45.88,53.41,-7.54,.86,-.86,1
+81367,164405,8964,2022,2022_Gov-G_IA,IA,Gov-G,Gov-G,Cygnal,67,IVR/Online,R,10/27/2022,600,Deidre DeJear,DEM,38.1,Kim Reynolds,REP,57.1,,-19,11/8/2022,39.55,58.08,-18.53,.47,-.47,1
+81388,164456,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,Glengariff Group,117,Live Phone,,10/27/2022,600,Gretchen Whitmer,DEM,51.7,Tudor M. Dixon,REP,43.1,,8.6000004,11/8/2022,54.47,43.94,10.53,1.93,-1.93,1
+81389,164458,8974,2022,2022_Gov-G_NM,NM,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/27/2022,1000,Michelle Lujan Grisham,DEM,49.6,Mark V. Ronchetti,REP,48,2,1.6,11/8/2022,51.97,45.59,6.38,4.78,-4.78,1
+81456,164770,8975,2022,2022_Gov-G_NY,NY,Gov-G,Gov-G,Data for Progress,522,Online,,10/27/2022,818,Kathy C. Hochul,DEM,54,Lee M. Zeldin,REP,42,,12,11/8/2022,53.2,46.8,6.4,5.6,5.6,1
+81467,164824,8977,2022,2022_Gov-G_OK,OK,Gov-G,Gov-G,Amber Integrated,556,Live Phone/Online,,10/27/2022,501,Joy Hofmeister,DEM,44,Kevin Stitt,REP,45,2,-1,11/8/2022,41.79,55.45,-13.66,12.66,12.66,1
+81375,164437,8977,2022,2022_Gov-G_OK,OK,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/27/2022,1000,Joy Hofmeister,DEM,42.6,Kevin Stitt,REP,52.2,1.7,-9.6000004,11/8/2022,41.79,55.45,-13.66,4.06,4.06,1
+81327,164331,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Wick,284,Online,,10/27/2022,1000,Josh Shapiro,DEM,49.2,Douglas V. Mastriano,REP,43.3,,5.9000001,11/8/2022,56.49,41.71,14.77,8.87,-8.87,1
+81335,164347,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,co/efficient,514,IVR/Text,,10/27/2022,1716,Josh Shapiro,DEM,51,Douglas V. Mastriano,REP,41,,10,11/8/2022,56.49,41.71,14.77,4.77,-4.77,1
+81467,164820,9482,2022,2022_Sen-GS_OK,OK,Sen-G,Sen-GS,Amber Integrated,556,Live Phone/Online,,10/27/2022,501,Kendra Horn,DEM,41,Markwayne Mullin,REP,52,2,-11,11/8/2022,35.24,61.77,-26.53,15.53,15.53,1
+81375,164436,9482,2022,2022_Sen-GS_OK,OK,Sen-G,Sen-GS,Emerson College,88,IVR/Online,,10/27/2022,1000,Kendra Horn,DEM,36.3,Markwayne Mullin,REP,58.9,1,-22.6,11/8/2022,35.24,61.77,-26.53,3.93,3.93,1
+81391,164465,8917,2022,2022_Sen-G_AL,AL,Sen-G,Sen-G,Cygnal,67,IVR/Online,,10/28/2022,616,Will Boyd,DEM,27.5,Katie Britt,REP,57.1,6.3,-29.6,11/8/2022,30.94,66.74,-35.8,6.2,6.2,1
+81429,164573,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/28/2022,1003,Mark Kelly,DEM,47,Blake Masters,REP,45,,2,11/8/2022,51.39,46.51,4.89,2.89,-2.89,1
+81386,164454,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Center Street PAC,715,Online,D,10/28/2022,558,Mark Kelly,DEM,55,Blake Masters,REP,45,,10,11/8/2022,51.39,46.51,4.89,5.11,5.11,1
+81366,164402,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Wick,284,IVR/Online,,10/28/2022,1122,Mark Kelly,DEM,49.2,Blake Masters,REP,46.9,,2.3,11/8/2022,51.39,46.51,4.89,2.59,-2.59,1
+81404,164496,8922,2022,2022_Sen-G_CO,CO,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/28/2022,1000,Michael Bennet,DEM,51.4,Joe O'Dea,REP,43.3,1.9,8.1000004,11/8/2022,55.88,41.27,14.62,6.52,-6.52,1
+81458,164766,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/28/2022,1002,Raphael Warnock,DEM,44,Herschel Junior Walker,REP,43,,1,11/8/2022,49.44,48.49,.96,.04,.04,1
+81438,164660,8931,2022,2022_Sen-G_KS,KS,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/28/2022,1000,Mark R. Holland,DEM,32.6,Jerry Moran,REP,54.2,3,-21.6,11/8/2022,37.04,60,-22.96,1.36,1.36,1
+81430,164577,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/28/2022,2000,Catherine Cortez Masto,DEM,45.8,Adam Paul Laxalt,REP,51,1.1,-5.1999998,11/8/2022,49.42,48.63,.79,5.99,-5.99,0
+81372,164429,8939,2022,2022_Sen-G_NY,NY,Sen-G,Sen-G,KAConsulting,757,IVR/Live Phone,R,10/28/2022,501,Charles E. Schumer,DEM,50,Joe Pinion,REP,38,,12,11/8/2022,56.78,42.77,14.01,2.01,-2.01,1
+81451,164757,8940,2022,2022_Sen-G_NC,NC,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/28/2022,1000,Cheri Beasley,DEM,45.7,Ted Budd,REP,51.4,1.6,-5.6999998,11/8/2022,47.3,50.53,-3.23,2.47,-2.47,1
+81364,164396,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Cygnal,67,IVR/Online,,10/28/2022,1510,Tim Ryan,DEM,43.7,J.D. Vance,REP,48.2,,-4.5,11/8/2022,46.92,53.03,-6.11,1.61,1.61,1
+81459,164767,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/28/2022,1005,John Fetterman,DEM,45,Mehmet Oz,REP,42,,3,11/8/2022,51.25,46.33,4.91,1.91,-1.91,1
+81428,164572,8951,2022,2022_Sen-G_WI,WI,Sen-G,Sen-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/28/2022,1000,Mandela Barnes,DEM,45,Ron Johnson,REP,48,,-3,11/8/2022,49.49,50.5,-1.01,1.99,-1.99,1
+81445,164739,8951,2022,2022_Sen-G_WI,WI,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/28/2022,1000,Mandela Barnes,DEM,46.4,Ron Johnson,REP,51,,-4.5999999,11/8/2022,49.49,50.5,-1.01,3.59,-3.59,1
+81447,164745,8951,2022,2022_Sen-G_WI,WI,Sen-G,Sen-G,Marquette University Law School,195,Live Phone,,10/28/2022,679,Mandela Barnes,DEM,48,Ron Johnson,REP,50,,-2,11/8/2022,49.49,50.5,-1.01,.99,-.99,1
+81426,164570,8951,2022,2022_Sen-G_WI,WI,Sen-G,Sen-G,Wick,284,IVR/Online,,10/28/2022,1089,Mandela Barnes,DEM,46.1,Ron Johnson,REP,50.2,,-4.0999999,11/8/2022,49.49,50.5,-1.01,3.09,-3.09,1
+81391,164466,8952,2022,2022_Gov-G_AL,AL,Gov-G,Gov-G,Cygnal,67,IVR/Online,,10/28/2022,616,Yolanda Rochelle Flowers,DEM,25.3,Kay Ivey,REP,59.5,4.7,-34.200001,11/8/2022,29.37,67.36,-37.98,3.78,3.78,1
+81429,164576,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/28/2022,1003,Katie Hobbs,DEM,46,Kari Lake,REP,47,,-1,11/8/2022,50.32,49.65,.67,1.67,-1.67,0
+81366,164403,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Wick,284,IVR/Online,,10/28/2022,1122,Katie Hobbs,DEM,46.8,Kari Lake,REP,49.2,,-2.4000001,11/8/2022,50.32,49.65,.67,3.07,-3.07,0
+81542,165043,8956,2022,2022_Gov-G_CA,CA,Gov-G,Gov-G,University of California Berkeley Institute of Governmental Studies,457,Online,,10/28/2022,5972,Gavin Newsom,DEM,58,Brian Dahle,REP,37,,21,11/8/2022,59.18,40.82,18.36,2.64,2.64,1
+81404,164498,8957,2022,2022_Gov-G_CO,CO,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/28/2022,1000,Jared Polis,DEM,54.2,Heidi Ganahl,REP,40.8,.4,13.4,11/8/2022,58.53,39.18,19.35,5.95,-5.95,1
+81422,164558,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,The Political Matrix/The Listener Group,677,IVR/Live Phone,,10/28/2022,633,Charlie Crist,DEM,53.4,Ron DeSantis,REP,46.6,,6.8000002,11/8/2022,39.97,59.37,-19.4,26.2,26.2,0
+81458,164771,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/28/2022,1002,Stacey Abrams,DEM,43,Brian Kemp,REP,49,,-6,11/8/2022,45.88,53.41,-7.54,1.54,1.54,1
+81446,164742,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Seven Letter Insight,661,Online,,10/28/2022,762,Stacey Abrams,DEM,44,Brian Kemp,REP,49,4,-5,11/8/2022,45.88,53.41,-7.54,2.54,2.54,1
+81438,164658,8965,2022,2022_Gov-G_KS,KS,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/28/2022,1000,Laura Kelly,DEM,48.7,Derek Schmidt,REP,44.1,5.1,4.5999999,11/8/2022,49.54,47.33,2.21,2.39,2.39,1
+81373,164432,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,KAConsulting,757,IVR/Live Phone,R,10/28/2022,501,Gretchen Whitmer,DEM,48,Tudor M. Dixon,REP,41,,7,11/8/2022,54.47,43.94,10.53,3.53,-3.53,1
+81436,164656,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,Wick,284,IVR/Online,,10/28/2022,1137,Gretchen Whitmer,DEM,48.5,Tudor M. Dixon,REP,47.2,,1.3,11/8/2022,54.47,43.94,10.53,9.23,-9.23,1
+81432,164586,8970,2022,2022_Gov-G_MN,MN,Gov-G,Gov-G,SurveyUSA,325,Online,,10/28/2022,836,Tim Walz,DEM,51,Scott Jensen,REP,43,,8,11/8/2022,52.29,44.63,7.67,.33,.33,1
+81430,164814,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/28/2022,2000,Steve Sisolak,DEM,46,Joe Lombardo,REP,50,,-4,11/8/2022,48,49.53,-1.53,2.47,-2.47,1
+81372,164433,8975,2022,2022_Gov-G_NY,NY,Gov-G,Gov-G,KAConsulting,757,IVR/Live Phone,R,10/28/2022,501,Kathy C. Hochul,DEM,46,Lee M. Zeldin,REP,45,,1,11/8/2022,53.2,46.8,6.4,5.4,-5.4,1
+81364,164397,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Cygnal,67,IVR/Online,,10/28/2022,1510,Nan Whaley,DEM,35.5,Mike DeWine,REP,56,,-20.5,11/8/2022,37.38,62.41,-25.03,4.53,4.53,1
+81459,164772,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/28/2022,1005,Josh Shapiro,DEM,53,Douglas V. Mastriano,REP,37,,16,11/8/2022,56.49,41.71,14.77,1.23,1.23,1
+81428,164575,8986,2022,2022_Gov-G_WI,WI,Gov-G,Gov-G,Beacon Research/Shaw & Co. Research,103,Live Phone,,10/28/2022,1000,Tony Evers,DEM,46,Tim Michels,REP,47,,-1,11/8/2022,51.19,47.79,3.4,4.4,-4.4,0
+81445,164740,8986,2022,2022_Gov-G_WI,WI,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/28/2022,1000,Tony Evers,DEM,47.5,Tim Michels,REP,49.4,1.9,-1.9,11/8/2022,51.19,47.79,3.4,5.3,-5.3,0
+81447,164747,8986,2022,2022_Gov-G_WI,WI,Gov-G,Gov-G,Marquette University Law School,195,Live Phone,,10/28/2022,679,Tony Evers,DEM,48,Tim Michels,REP,48,2,0,11/8/2022,51.19,47.79,3.4,3.4,-3.4,.5
+81426,164574,8986,2022,2022_Gov-G_WI,WI,Gov-G,Gov-G,Wick,284,IVR/Online,,10/28/2022,1089,Tony Evers,DEM,47.2,Tim Michels,REP,47.5,,-.30000001,11/8/2022,51.19,47.79,3.4,3.7,-3.7,0
+81549,165056,8987,2022,2022_Gov-G_WY,WY,Gov-G,Gov-G,University of Wyoming Survey & Analysis Center,667,Live Phone,,10/28/2022,436,Theresa A. Livingston,DEM,23.6,Mark Gordon,REP,75.9,3.5,-52.299999,11/8/2022,16.81,78.72,-61.91,9.61,9.61,1
+81413,164527,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,Saint Anselm College Survey Center,494,Live Phone,,10/29/2022,1541,Maggie Hassan,DEM,47,Donald C. Bolduc,REP,48,2,-1,11/8/2022,53.54,44.47,9.07,10.07,-10.07,0
+81402,164546,8939,2022,2022_Sen-G_NY,NY,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/29/2022,1198,Charles E. Schumer,DEM,50.6,Joe Pinion,REP,40,5.1,10.6,11/8/2022,56.78,42.77,14.01,3.41,-3.41,1
+81409,164516,8940,2022,2022_Sen-G_NC,NC,Sen-G,Sen-G,Meredith College,423,Online,,10/29/2022,724,Cheri Beasley,DEM,42.7,Ted Budd,REP,43.9,4,-1.2,11/8/2022,47.3,50.53,-3.23,2.03,2.03,1
+81452,164758,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Suffolk University,323,Live Phone,,10/29/2022,500,John Fetterman,DEM,46.6,Mehmet Oz,REP,44.8,1,1.8,11/8/2022,51.25,46.33,4.91,3.11,-3.11,1
+81425,164569,8951,2022,2022_Sen-G_WI,WI,Sen-G,Sen-G,Clarity Campaign Labs,52,IVR/Live Phone,D,10/29/2022,888,Mandela Barnes,DEM,48,Ron Johnson,REP,46,,2,11/8/2022,49.49,50.5,-1.01,3.01,3.01,0
+81470,164823,8951,2022,2022_Sen-G_WI,WI,Sen-G,Sen-G,Siena College,305,Live Phone,,10/29/2022,655,Mandela Barnes,DEM,45,Ron Johnson,REP,47,,-2,11/8/2022,49.49,50.5,-1.01,.99,-.99,1
+81408,164515,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,Cygnal,67,IVR/Online,,10/29/2022,1584,Gretchen Whitmer,DEM,50.9,Tudor M. Dixon,REP,44.5,,6.4000001,11/8/2022,54.47,43.94,10.53,4.13,-4.13,1
+81413,164526,8973,2022,2022_Gov-G_NH,NH,Gov-G,Gov-G,Saint Anselm College Survey Center,494,Live Phone,,10/29/2022,1541,Tom Sherman,DEM,37,Chris Sununu,REP,55,1,-18,11/8/2022,41.59,57.14,-15.56,2.44,-2.44,1
+81402,164489,8975,2022,2022_Gov-G_NY,NY,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/29/2022,1198,Kathy C. Hochul,DEM,47.6,Lee M. Zeldin,REP,48.4,,-.80000001,11/8/2022,53.2,46.8,6.4,7.2,-7.2,0
+81559,165070,8977,2022,2022_Gov-G_OK,OK,Gov-G,Gov-G,Blueprint Polling,470,Live Phone,,10/29/2022,557,Joy Hofmeister,DEM,39.7,Kevin Stitt,REP,48.2,1.8,-8.5,11/8/2022,41.79,55.45,-13.66,5.16,5.16,1
+81561,165073,8978,2022,2022_Gov-G_OR,OR,Gov-G,Gov-G,Blueprint Polling,470,Live Phone,,10/29/2022,585,Tina Kotek,DEM,45,Christine Drazan,REP,41,9.6,4,11/8/2022,47.01,43.59,3.42,.58,.58,1
+81452,164760,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Suffolk University,323,Live Phone,,10/29/2022,500,Josh Shapiro,DEM,52.4,Douglas V. Mastriano,REP,40.4,.8,12,11/8/2022,56.49,41.71,14.77,2.77,-2.77,1
+81470,164827,8986,2022,2022_Gov-G_WI,WI,Gov-G,Gov-G,Siena College,305,Live Phone,,10/29/2022,655,Tony Evers,DEM,47,Tim Michels,REP,45,,2,11/8/2022,51.19,47.79,3.4,1.4,-1.4,1
+81401,164491,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Phillips Academy,699,IVR/Text,,10/30/2022,985,Mark Kelly,DEM,47.2,Blake Masters,REP,46.6,1.7,.60000002,11/8/2022,51.39,46.51,4.89,4.29,-4.29,1
+81488,164873,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/30/2022,1000,Raphael Warnock,DEM,49.5,Herschel Junior Walker,REP,47.6,1.5,1.9,11/8/2022,49.44,48.49,.96,.94,.94,1
+81464,164815,8936,2022,2022_Sen-G_MO,MO,Sen-G,Sen-G,SurveyUSA,325,Online,,10/30/2022,791,Trudy Busch Valentine,DEM,41,Eric Schmitt,REP,50,,-9,11/8/2022,42.18,55.43,-13.26,4.26,4.26,1
+81419,164545,8939,2022,2022_Sen-G_NY,NY,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/30/2022,1000,Charles E. Schumer,DEM,57,Joe Pinion,REP,38.5,1.3,18.5,11/8/2022,56.78,42.77,14.01,4.49,4.49,1
+81468,164821,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/30/2022,1000,John Fetterman,DEM,47.3,Mehmet Oz,REP,48.4,1.6,-1.1,11/8/2022,51.25,46.33,4.91,6.01,-6.01,0
+81457,164765,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Susquehanna Polling & Research Inc.,326,Live Phone,,10/30/2022,700,John Fetterman,DEM,46.6,Mehmet Oz,REP,47.6,,-1,11/8/2022,51.25,46.33,4.91,5.91,-5.91,0
+81378,164443,8948,2022,2022_Sen-G_UT,UT,Sen-G,Sen-G,Hill Research Consultants,140,Live Phone/Online,IND,10/30/2022,500,Mike Lee,REP,47,Evan McMullin,IND,46,,1,11/8/2022,53.15,42.74,10.41,9.41,,1
+81401,164488,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Phillips Academy,699,IVR/Text,,10/30/2022,985,Katie Hobbs,DEM,42.3,Kari Lake,REP,53.4,,-11.1,11/8/2022,50.32,49.65,.67,11.77,-11.77,0
+81488,164878,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/30/2022,1000,Stacey Abrams,DEM,46.4,Brian Kemp,REP,52,.8,-5.5999999,11/8/2022,45.88,53.41,-7.54,1.94,1.94,1
+81503,164912,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,EPIC-MRA,84,Live Phone,,10/30/2022,600,Gretchen Whitmer,DEM,54,Tudor M. Dixon,REP,43,1,11,11/8/2022,54.47,43.94,10.53,.47,.47,1
+81471,164826,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/30/2022,900,Gretchen Whitmer,DEM,50.9,Tudor M. Dixon,REP,45.8,1.5,5.0999999,11/8/2022,54.47,43.94,10.53,5.43,-5.43,1
+81400,164487,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,InsiderAdvantage,243,Text,,10/30/2022,550,Gretchen Whitmer,DEM,44.6,Tudor M. Dixon,REP,44.8,2,-.2,11/8/2022,54.47,43.94,10.53,10.73,-10.73,0
+81419,164549,8975,2022,2022_Gov-G_NY,NY,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/30/2022,1000,Kathy C. Hochul,DEM,53.6,Lee M. Zeldin,REP,44.9,,8.6999998,11/8/2022,53.2,46.8,6.4,2.3,2.3,1
+81484,164862,8977,2022,2022_Gov-G_OK,OK,Gov-G,Gov-G,WPA Intelligence,383,Live Phone,R,10/30/2022,500,Joy Hofmeister,DEM,39,Kevin Stitt,REP,52,,-13,11/8/2022,41.79,55.45,-13.66,.66,.66,1
+81468,164825,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/30/2022,1000,Josh Shapiro,DEM,53.1,Douglas V. Mastriano,REP,42.7,1.5,10.4,11/8/2022,56.49,41.71,14.77,4.37,-4.37,1
+81457,164911,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Susquehanna Polling & Research Inc.,326,Live Phone,,10/30/2022,700,Josh Shapiro,DEM,51.7,Douglas V. Mastriano,REP,38.1,,13.6,11/8/2022,56.49,41.71,14.77,1.17,-1.17,1
+81455,164763,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Civiqs,471,Online,,10/31/2022,852,Mark Kelly,DEM,49,Blake Masters,REP,49,,0,11/8/2022,51.39,46.51,4.89,4.89,-4.89,.5
+81521,164965,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/31/2022,1000,Mark Kelly,DEM,47.7,Blake Masters,REP,48.1,3,-.40000001,11/8/2022,51.39,46.51,4.89,5.29,-5.29,0
+81463,164812,8922,2022,2022_Sen-G_CO,CO,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/31/2022,1084,Michael Bennet,DEM,47.6,Joe O'Dea,REP,46.1,2.2,1.5,11/8/2022,55.88,41.27,14.62,13.12,-13.12,1
+81453,164761,8924,2022,2022_Sen-G_FL,FL,Sen-G,Sen-G,Civiqs,471,Online,,10/31/2022,772,Val Demings,DEM,45,Marco Rubio,REP,52,,-7,11/8/2022,41.27,57.68,-16.41,9.41,9.41,1
+81513,164944,8924,2022,2022_Sen-G_FL,FL,Sen-G,Sen-G,Siena College,305,Live Phone,,10/31/2022,659,Val Demings,DEM,43,Marco Rubio,REP,51,,-8,11/8/2022,41.27,57.68,-16.41,8.41,8.41,1
+81460,164774,8924,2022,2022_Sen-G_FL,FL,Sen-G,Sen-G,Victory Insights,673,IVR,,10/31/2022,500,Val Demings,DEM,45.7,Marco Rubio,REP,49.7,,-4,11/8/2022,41.27,57.68,-16.41,12.41,12.41,1
+81504,164914,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Moore Information Group,217,Live Phone,R,10/31/2022,800,Raphael Warnock,DEM,44,Herschel Junior Walker,REP,49,2,-5,11/8/2022,49.44,48.49,.96,5.96,-5.96,0
+81525,164972,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Patinkin Research Strategies,490,Live Phone/Online,D,10/31/2022,700,Raphael Warnock,DEM,49,Herschel Junior Walker,REP,45,4,4,11/8/2022,49.44,48.49,.96,3.04,3.04,1
+81495,164895,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,SurveyUSA,325,Online,,10/31/2022,1171,Raphael Warnock,DEM,49,Herschel Junior Walker,REP,43,3,6,11/8/2022,49.44,48.49,.96,5.04,5.04,1
+81510,164924,8936,2022,2022_Sen-G_MO,MO,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/31/2022,1079,Trudy Busch Valentine,DEM,42.3,Eric Schmitt,REP,53.3,2.1,-11,11/8/2022,42.18,55.43,-13.26,2.26,2.26,1
+81519,164960,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/31/2022,850,Maggie Hassan,DEM,50.2,Donald C. Bolduc,REP,45.7,2.6,4.5,11/8/2022,53.54,44.47,9.07,4.57,-4.57,1
+81469,164822,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/31/2022,1241,Maggie Hassan,DEM,45.7,Donald C. Bolduc,REP,47,4,-1.3,11/8/2022,53.54,44.47,9.07,10.37,-10.37,0
+81454,164762,8940,2022,2022_Sen-G_NC,NC,Sen-G,Sen-G,Civiqs,471,Online,,10/31/2022,674,Cheri Beasley,DEM,49,Ted Budd,REP,49,,0,11/8/2022,47.3,50.53,-3.23,3.23,3.23,.5
+81540,165038,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Emerson College,88,IVR/Online,,10/31/2022,1000,Tim Ryan,DEM,43.8,J.D. Vance,REP,52.7,,-8.8999996,11/8/2022,46.92,53.03,-6.11,2.79,-2.79,1
+81427,164571,8950,2022,2022_Sen-G_WA,WA,Sen-G,Sen-G,InsiderAdvantage,243,Text,,10/31/2022,550,Patty Murray,DEM,48,Tiffany Smiley,REP,46.4,,1.6,11/8/2022,57.28,42.72,14.55,12.95,-12.95,1
+81524,164970,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Alloy Analytics,734,Live Phone/Online,,10/31/2022,639,Katie Hobbs,DEM,46,Kari Lake,REP,50,,-4,11/8/2022,50.32,49.65,.67,4.67,-4.67,0
+81455,164769,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Civiqs,471,Online,,10/31/2022,852,Katie Hobbs,DEM,48,Kari Lake,REP,50,,-2,11/8/2022,50.32,49.65,.67,2.67,-2.67,0
+81521,164966,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/31/2022,1000,Katie Hobbs,DEM,46.7,Kari Lake,REP,50.2,,-3.5,11/8/2022,50.32,49.65,.67,4.17,-4.17,0
+81463,164813,8957,2022,2022_Gov-G_CO,CO,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,10/31/2022,1084,Jared Polis,DEM,49.6,Heidi Ganahl,REP,42.5,1.7,7.0999999,11/8/2022,58.53,39.18,19.35,12.25,-12.25,1
+81453,164768,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,Civiqs,471,Online,,10/31/2022,772,Charlie Crist,DEM,45,Ron DeSantis,REP,54,,-9,11/8/2022,39.97,59.37,-19.4,10.4,10.4,1
+81513,164945,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,Siena College,305,Live Phone,,10/31/2022,659,Charlie Crist,DEM,42,Ron DeSantis,REP,54,,-12,11/8/2022,39.97,59.37,-19.4,7.4,7.4,1
+81460,164773,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,Victory Insights,673,IVR,,10/31/2022,500,Charlie Crist,DEM,41.4,Ron DeSantis,REP,54.1,,-12.7,11/8/2022,39.97,59.37,-19.4,6.7,6.7,1
+81525,164971,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Patinkin Research Strategies,490,Live Phone/Online,D,10/31/2022,700,Stacey Abrams,DEM,47,Brian Kemp,REP,49,2,-2,11/8/2022,45.88,53.41,-7.54,5.54,5.54,1
+81495,164896,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,SurveyUSA,325,Online,,10/31/2022,1171,Stacey Abrams,DEM,45,Brian Kemp,REP,52,1,-7,11/8/2022,45.88,53.41,-7.54,.54,.54,1
+81517,164957,8966,2022,2022_Gov-G_ME,ME,Gov-G,Gov-G,SurveyUSA,325,IVR/Online,,10/31/2022,1116,Janet T. Mills,DEM,49,Paul R. LePage,REP,43,4,6,11/8/2022,55.69,42.45,13.24,7.24,-7.24,1
+81519,164961,8973,2022,2022_Gov-G_NH,NH,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/31/2022,850,Tom Sherman,DEM,37.3,Chris Sununu,REP,58.1,1.5,-20.799999,11/8/2022,41.59,57.14,-15.56,5.24,-5.24,1
+81540,165040,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Emerson College,88,IVR/Online,,10/31/2022,1000,Nan Whaley,DEM,34,Mike DeWine,REP,54.8,,-20.799999,11/8/2022,37.38,62.41,-25.03,4.23,4.23,1
+81508,164922,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Marist College,183,Live Phone/Online/Text,,11/1/2022,1157,Mark Kelly,DEM,49,Blake Masters,REP,45,,4,11/8/2022,51.39,46.51,4.89,.89,-.89,1
+81545,165048,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Patriot Polling,732,IVR,,11/1/2022,814,Mark Kelly,DEM,48.6,Blake Masters,REP,47.9,,.69999999,11/8/2022,51.39,46.51,4.89,4.19,-4.19,1
+81541,165039,8921,2022,2022_Sen-G_CA,CA,Sen-G,Sen-G,University of Southern California Schwarzenegger Institute for State and Global Policy,648,Online,,11/1/2022,802,Alex Padilla,DEM,63,Mark P. Meuser,REP,37,,26,11/8/2022,61.06,38.94,22.13,3.87,3.87,1
+81450,164755,8924,2022,2022_Sen-G_FL,FL,Sen-G,Sen-G,InsiderAdvantage,243,Text,,11/1/2022,550,Val Demings,DEM,45,Marco Rubio,REP,51,,-6,11/8/2022,41.27,57.68,-16.41,10.41,10.41,1
+81485,164864,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Echelon Insights,407,Live Phone/Online,,11/1/2022,500,Raphael Warnock,DEM,45,Herschel Junior Walker,REP,50.5,3,-5.5,11/8/2022,49.44,48.49,.96,6.46,-6.46,0
+81509,164923,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Marist College,183,Live Phone/Online/Text,,11/1/2022,1168,Raphael Warnock,DEM,49,Herschel Junior Walker,REP,45,,4,11/8/2022,49.44,48.49,.96,3.04,3.04,1
+81544,165046,8944,2022,2022_Sen-G_OR,OR,Sen-G,Sen-G,Emerson College,88,IVR/Online,,11/1/2022,975,Ron Wyden,DEM,50.6,Jo Rae Perkins,REP,33.6,3.4,17,11/8/2022,55.9,40.97,14.93,2.07,2.07,1
+81507,164921,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Marist College,183,Live Phone/Online/Text,,11/1/2022,1152,John Fetterman,DEM,50,Mehmet Oz,REP,44,,6,11/8/2022,51.25,46.33,4.91,1.09,1.09,1
+81508,164927,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Marist College,183,Live Phone/Online/Text,,11/1/2022,1157,Katie Hobbs,DEM,48,Kari Lake,REP,47,,1,11/8/2022,50.32,49.65,.67,.33,.33,1
+81541,165041,8956,2022,2022_Gov-G_CA,CA,Gov-G,Gov-G,University of Southern California Schwarzenegger Institute for State and Global Policy,648,Online,,11/1/2022,802,Gavin Newsom,DEM,62,Brian Dahle,REP,38,,24,11/8/2022,59.18,40.82,18.36,5.64,5.64,1
+81450,164756,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,InsiderAdvantage,243,Text,,11/1/2022,550,Charlie Crist,DEM,43,Ron DeSantis,REP,53,,-10,11/8/2022,39.97,59.37,-19.4,9.4,9.4,1
+81485,164867,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Echelon Insights,407,Live Phone/Online,,11/1/2022,500,Stacey Abrams,DEM,43.5,Brian Kemp,REP,51.5,3,-8,11/8/2022,45.88,53.41,-7.54,.46,-.46,1
+81509,164928,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Marist College,183,Live Phone/Online/Text,,11/1/2022,1168,Stacey Abrams,DEM,45,Brian Kemp,REP,51,,-6,11/8/2022,45.88,53.41,-7.54,1.54,1.54,1
+81544,165045,8978,2022,2022_Gov-G_OR,OR,Gov-G,Gov-G,Emerson College,88,IVR/Online,,11/1/2022,975,Tina Kotek,DEM,46,Christine Drazan,REP,40.5,8.8,5.5,11/8/2022,47.01,43.59,3.42,2.08,2.08,1
+81462,164807,8978,2022,2022_Gov-G_OR,OR,Gov-G,Gov-G,Nelson Research,703,Live Phone,,11/1/2022,577,Tina Kotek,DEM,42.5,Christine Drazan,REP,45.4,5.9,-2.9000001,11/8/2022,47.01,43.59,3.42,6.32,-6.32,0
+81507,164926,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Marist College,183,Live Phone/Online/Text,,11/1/2022,1152,Josh Shapiro,DEM,54,Douglas V. Mastriano,REP,39,,15,11/8/2022,56.49,41.71,14.77,.23,.23,1
+81499,164904,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,HighGround Inc.,416,Live Phone,,11/2/2022,500,Mark Kelly,DEM,46.4,Blake Masters,REP,45,,1.4,11/8/2022,51.39,46.51,4.89,3.49,-3.49,1
+81502,164909,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,InsiderAdvantage,243,Text,,11/2/2022,550,Mark Kelly,DEM,48,Blake Masters,REP,48,2,0,11/8/2022,51.39,46.51,4.89,4.89,-4.89,.5
+81490,164875,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Remington Research Group,279,IVR,,11/2/2022,1075,Mark Kelly,DEM,48,Blake Masters,REP,47,2,1,11/8/2022,51.39,46.51,4.89,3.89,-3.89,1
+81546,165052,8924,2022,2022_Sen-G_FL,FL,Sen-G,Sen-G,Amber Integrated,556,Live Phone/Online,,11/2/2022,600,Val Demings,DEM,40,Marco Rubio,REP,49,3,-9,11/8/2022,41.27,57.68,-16.41,7.41,7.41,1
+81547,165053,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Amber Integrated,556,Live Phone/Online,,11/2/2022,600,Raphael Warnock,DEM,45,Herschel Junior Walker,REP,48,3,-3,11/8/2022,49.44,48.49,.96,3.96,-3.96,0
+81494,164893,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Remington Research Group,279,IVR,,11/2/2022,1150,Raphael Warnock,DEM,45,Herschel Junior Walker,REP,49,2,-4,11/8/2022,49.44,48.49,.96,4.96,-4.96,0
+81560,165072,8930,2022,2022_Sen-G_IA,IA,Sen-G,Sen-G,Selzer & Co.,304,Live Phone,,11/2/2022,801,Michael Franken,DEM,41,Chuck Grassley,REP,53,,-12,11/8/2022,43.9,56.1,-12.2,.2,.2,1
+81518,164959,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,Cygnal,67,Live Phone/IVR/Text,,11/2/2022,600,Catherine Cortez Masto,DEM,43.3,Adam Paul Laxalt,REP,45.8,,-2.5,11/8/2022,49.42,48.63,.79,3.29,-3.29,0
+81552,165059,8940,2022,2022_Sen-G_NC,NC,Sen-G,Sen-G,East Carolina University Center for Survey Research,523,IVR/Online,,11/2/2022,1183,Cheri Beasley,DEM,47,Ted Budd,REP,51.9,.7,-4.9000001,11/8/2022,47.3,50.53,-3.23,1.67,-1.67,1
+81491,164876,8940,2022,2022_Sen-G_NC,NC,Sen-G,Sen-G,Remington Research Group,279,IVR,,11/2/2022,1140,Cheri Beasley,DEM,43,Ted Budd,REP,50,1,-7,11/8/2022,47.3,50.53,-3.23,3.77,-3.77,1
+81520,164964,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Cygnal,67,IVR/Online,,11/2/2022,1498,Tim Ryan,DEM,43.1,J.D. Vance,REP,49.3,,-6.1999998,11/8/2022,46.92,53.03,-6.11,.09,-.09,1
+81492,164877,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Remington Research Group,279,IVR,,11/2/2022,1125,Tim Ryan,DEM,43,J.D. Vance,REP,48,,-5,11/8/2022,46.92,53.03,-6.11,1.11,1.11,1
+81489,164874,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Remington Research Group,279,IVR,,11/2/2022,1180,John Fetterman,DEM,44,Mehmet Oz,REP,47,2,-3,11/8/2022,51.25,46.33,4.91,7.91,-7.91,0
+81511,164925,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/2/2022,1097,John Fetterman,DEM,45.5,Mehmet Oz,REP,47.7,,-2.2,11/8/2022,51.25,46.33,4.91,7.11,-7.11,0
+81499,164905,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,HighGround Inc.,416,Live Phone,,11/2/2022,500,Katie Hobbs,DEM,45.2,Kari Lake,REP,46.6,,-1.4,11/8/2022,50.32,49.65,.67,2.07,-2.07,0
+81502,164910,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,InsiderAdvantage,243,Text,,11/2/2022,550,Katie Hobbs,DEM,48,Kari Lake,REP,51,,-3,11/8/2022,50.32,49.65,.67,3.67,-3.67,0
+81490,164880,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Remington Research Group,279,IVR,,11/2/2022,1075,Katie Hobbs,DEM,46,Kari Lake,REP,49,,-3,11/8/2022,50.32,49.65,.67,3.67,-3.67,0
+81546,165049,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,Amber Integrated,556,Live Phone/Online,,11/2/2022,600,Charlie Crist,DEM,40,Ron DeSantis,REP,53,,-13,11/8/2022,39.97,59.37,-19.4,6.4,6.4,1
+81547,165050,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Amber Integrated,556,Live Phone/Online,,11/2/2022,600,Stacey Abrams,DEM,43,Brian Kemp,REP,52,1,-9,11/8/2022,45.88,53.41,-7.54,1.46,-1.46,1
+81494,164894,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Remington Research Group,279,IVR,,11/2/2022,1150,Stacey Abrams,DEM,41,Brian Kemp,REP,55,1,-14,11/8/2022,45.88,53.41,-7.54,6.46,-6.46,1
+81560,165078,8964,2022,2022_Gov-G_IA,IA,Gov-G,Gov-G,Selzer & Co.,304,Live Phone,,11/2/2022,801,Deidre DeJear,DEM,37,Kim Reynolds,REP,54,4,-17,11/8/2022,39.55,58.08,-18.53,1.53,1.53,1
+81518,164958,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,Cygnal,67,Live Phone/IVR/Text,,11/2/2022,600,Steve Sisolak,DEM,42,Joe Lombardo,REP,47,,-5,11/8/2022,48,49.53,-1.53,3.47,-3.47,1
+81550,165057,8975,2022,2022_Gov-G_NY,NY,Gov-G,Gov-G,Patriot Polling,732,IVR,,11/2/2022,826,Kathy C. Hochul,DEM,49.1,Lee M. Zeldin,REP,44,,5.0999999,11/8/2022,53.2,46.8,6.4,1.3,-1.3,1
+81520,164963,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Cygnal,67,IVR/Online,,11/2/2022,1498,Nan Whaley,DEM,36.9,Mike DeWine,REP,55.8,,-18.9,11/8/2022,37.38,62.41,-25.03,6.13,6.13,1
+81492,164881,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Remington Research Group,279,IVR,,11/2/2022,1125,Nan Whaley,DEM,35,Mike DeWine,REP,58,,-23,11/8/2022,37.38,62.41,-25.03,2.03,2.03,1
+81551,165058,8977,2022,2022_Gov-G_OK,OK,Gov-G,Gov-G,Tomahawk Strategies,737,Live Phone,,11/2/2022,729,Joy Hofmeister,DEM,45.3,Kevin Stitt,REP,41.9,,3.4000001,11/8/2022,41.79,55.45,-13.66,17.06,17.06,0
+81489,164879,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Remington Research Group,279,IVR,,11/2/2022,1180,Josh Shapiro,DEM,52,Douglas V. Mastriano,REP,40,2,12,11/8/2022,56.49,41.71,14.77,2.77,-2.77,1
+81511,164929,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/2/2022,1097,Josh Shapiro,DEM,49.7,Douglas V. Mastriano,REP,45.4,,4.3000002,11/8/2022,56.49,41.71,14.77,10.47,-10.47,1
+81531,165024,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,KAConsulting,757,Live Phone,R,11/3/2022,501,Mark Kelly,DEM,47,Blake Masters,REP,46,,1,11/8/2022,51.39,46.51,4.89,3.89,-3.89,1
+81532,165025,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,KAConsulting,757,Live Phone,R,11/3/2022,501,Catherine Cortez Masto,DEM,45,Adam Paul Laxalt,REP,44,,1,11/8/2022,49.42,48.63,.79,.21,.21,1
+81529,165018,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,InsiderAdvantage,243,Text,,11/3/2022,750,John Fetterman,DEM,46,Mehmet Oz,REP,48.3,1.5,-2.3,11/8/2022,51.25,46.33,4.91,7.21,-7.21,0
+81557,165067,8951,2022,2022_Sen-G_WI,WI,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/3/2022,1095,Mandela Barnes,DEM,47.4,Ron Johnson,REP,50.1,,-2.7,11/8/2022,49.49,50.5,-1.01,1.69,-1.69,1
+81531,165022,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,KAConsulting,757,Live Phone,R,11/3/2022,501,Katie Hobbs,DEM,45,Kari Lake,REP,49,,-4,11/8/2022,50.32,49.65,.67,4.67,-4.67,0
+81553,165060,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,Cygnal,67,IVR/Online,,11/3/2022,1603,Gretchen Whitmer,DEM,50.2,Tudor M. Dixon,REP,46.5,,3.7,11/8/2022,54.47,43.94,10.53,6.83,-6.83,1
+81523,164969,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,Mitchell Research & Communications,213,IVR/Online,,11/3/2022,658,Gretchen Whitmer,DEM,49,Tudor M. Dixon,REP,47,,2,11/8/2022,54.47,43.94,10.53,8.53,-8.53,1
+81532,165023,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,KAConsulting,757,Live Phone,R,11/3/2022,501,Steve Sisolak,DEM,43,Joe Lombardo,REP,45,,-2,11/8/2022,48,49.53,-1.53,.47,-.47,1
+81529,165019,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,InsiderAdvantage,243,Text,,11/3/2022,750,Josh Shapiro,DEM,50.9,Douglas V. Mastriano,REP,43.2,1.8,7.6999998,11/8/2022,56.49,41.71,14.77,7.07,-7.07,1
+81557,165069,8986,2022,2022_Gov-G_WI,WI,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/3/2022,1095,Tony Evers,DEM,48,Tim Michels,REP,49.6,.8,-1.6,11/8/2022,51.19,47.79,3.4,5,-5,0
+81618,165271,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Data for Progress,522,Live Phone/Online/Mail,,11/4/2022,1359,Mark Kelly,DEM,49,Blake Masters,REP,50,2,-1,11/8/2022,51.39,46.51,4.89,5.89,-5.89,0
+81626,165300,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Targoz Market Research,454,Online,,11/4/2022,560,Mark Kelly,DEM,50,Blake Masters,REP,47,2,3,11/8/2022,51.39,46.51,4.89,1.89,-1.89,1
+81615,165242,8922,2022,2022_Sen-G_CO,CO,Sen-G,Sen-G,Data for Progress,522,IVR/Online/Live Phone/Mail,,11/4/2022,1983,Michael Bennet,DEM,51,Joe O'Dea,REP,44,2,7,11/8/2022,55.88,41.27,14.62,7.62,-7.62,1
+81613,165232,8924,2022,2022_Sen-G_FL,FL,Sen-G,Sen-G,Data for Progress,522,Live Phone/Online,,11/4/2022,1436,Val Demings,DEM,43,Marco Rubio,REP,55,1,-12,11/8/2022,41.27,57.68,-16.41,4.41,4.41,1
+81619,165274,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Data for Progress,522,Live Phone/Online/Mail,,11/4/2022,1474,Raphael Warnock,DEM,48,Herschel Junior Walker,REP,49,3,-1,11/8/2022,49.44,48.49,.96,1.96,-1.96,0
+81594,165161,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,East Carolina University Center for Survey Research,523,IVR/Online,,11/4/2022,1077,Raphael Warnock,DEM,48.9,Herschel Junior Walker,REP,48.9,2.1,0,11/8/2022,49.44,48.49,.96,.96,-.96,.5
+81625,165297,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Targoz Market Research,454,Online,,11/4/2022,579,Raphael Warnock,DEM,47,Herschel Junior Walker,REP,49,1,-2,11/8/2022,49.44,48.49,.96,2.96,-2.96,0
+81612,165228,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,Data for Progress,522,Live Phone/Online/Mail,,11/4/2022,1100,Catherine Cortez Masto,DEM,47,Adam Paul Laxalt,REP,49,,-2,11/8/2022,49.42,48.63,.79,2.79,-2.79,0
+81558,165068,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,InsiderAdvantage,243,Text,,11/4/2022,550,Catherine Cortez Masto,DEM,43.8,Adam Paul Laxalt,REP,49.8,,-6,11/8/2022,49.42,48.63,.79,6.79,-6.79,0
+81609,165221,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,Data for Progress,522,IVR/Online/Live Phone/Mail,,11/4/2022,1995,Maggie Hassan,DEM,50,Donald C. Bolduc,REP,47,2,3,11/8/2022,53.54,44.47,9.07,6.07,-6.07,1
+81569,165106,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,University of New Hampshire Survey Center,357,Online,,11/4/2022,2077,Maggie Hassan,DEM,50,Donald C. Bolduc,REP,48,1,2,11/8/2022,53.54,44.47,9.07,7.07,-7.07,1
+81568,165099,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,Wick,284,IVR/Online,,11/4/2022,725,Maggie Hassan,DEM,48.3,Donald C. Bolduc,REP,48.4,,-.1,11/8/2022,53.54,44.47,9.07,9.17,-9.17,0
+81603,165206,8940,2022,2022_Sen-G_NC,NC,Sen-G,Sen-G,Data for Progress,522,Live Phone/Online/Mail,,11/4/2022,1322,Cheri Beasley,DEM,45,Ted Budd,REP,51,2,-6,11/8/2022,47.3,50.53,-3.23,2.77,-2.77,1
+81614,165236,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Data for Progress,522,IVR/Online/Live Phone/Mail,,11/4/2022,1413,Tim Ryan,DEM,45,J.D. Vance,REP,55,,-10,11/8/2022,46.92,53.03,-6.11,3.89,-3.89,1
+81628,165304,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Targoz Market Research,454,Online,,11/4/2022,505,Tim Ryan,DEM,45,J.D. Vance,REP,52,,-7,11/8/2022,46.92,53.03,-6.11,.89,-.89,1
+81571,165105,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/4/2022,1123,Tim Ryan,DEM,43.5,J.D. Vance,REP,53.9,,-10.4,11/8/2022,46.92,53.03,-6.11,4.29,-4.29,1
+81608,165213,8944,2022,2022_Sen-G_OR,OR,Sen-G,Sen-G,Data for Progress,522,Online,,11/4/2022,1393,Ron Wyden,DEM,56,Jo Rae Perkins,REP,42,1,14,11/8/2022,55.9,40.97,14.93,.93,-.93,1
+81617,165270,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Patriot Polling,732,IVR,,11/4/2022,846,John Fetterman,DEM,46.1,Mehmet Oz,REP,49.4,,-3.3,11/8/2022,51.25,46.33,4.91,8.21,-8.21,0
+81627,165302,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Targoz Market Research,454,Online,,11/4/2022,631,John Fetterman,DEM,46,Mehmet Oz,REP,51,2,-5,11/8/2022,51.25,46.33,4.91,9.91,-9.91,0
+81602,165204,8950,2022,2022_Sen-G_WA,WA,Sen-G,Sen-G,Moore Information Group,217,Live Phone/Online,R,11/4/2022,500,Patty Murray,DEM,47,Tiffany Smiley,REP,47.4,,-.40000001,11/8/2022,57.28,42.72,14.55,14.95,-14.95,0
+81611,165224,8951,2022,2022_Sen-G_WI,WI,Sen-G,Sen-G,Data for Progress,522,IVR/Online/Live Phone/Mail,,11/4/2022,1504,Mandela Barnes,DEM,47,Ron Johnson,REP,53,,-6,11/8/2022,49.49,50.5,-1.01,4.99,-4.99,1
+81618,165272,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Data for Progress,522,Live Phone/Online/Mail,,11/4/2022,1359,Katie Hobbs,DEM,48,Kari Lake,REP,52,,-4,11/8/2022,50.32,49.65,.67,4.67,-4.67,0
+81626,165309,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Targoz Market Research,454,Online,,11/4/2022,560,Katie Hobbs,DEM,48,Kari Lake,REP,50,,-2,11/8/2022,50.32,49.65,.67,2.67,-2.67,0
+81615,165243,8957,2022,2022_Gov-G_CO,CO,Gov-G,Gov-G,Data for Progress,522,IVR/Online/Live Phone/Mail,,11/4/2022,1983,Jared Polis,DEM,55,Heidi Ganahl,REP,43,1,12,11/8/2022,58.53,39.18,19.35,7.35,-7.35,1
+81613,165233,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,Data for Progress,522,Live Phone/Online,,11/4/2022,1436,Charlie Crist,DEM,42,Ron DeSantis,REP,57,1,-15,11/8/2022,39.97,59.37,-19.4,4.4,4.4,1
+81619,165273,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Data for Progress,522,Live Phone/Online/Mail,,11/4/2022,1474,Stacey Abrams,DEM,45,Brian Kemp,REP,54,2,-9,11/8/2022,45.88,53.41,-7.54,1.46,-1.46,1
+81594,165160,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,East Carolina University Center for Survey Research,523,IVR/Online,,11/4/2022,1077,Stacey Abrams,DEM,45.7,Brian Kemp,REP,53.7,.5,-8,11/8/2022,45.88,53.41,-7.54,.46,-.46,1
+81625,165306,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Targoz Market Research,454,Online,,11/4/2022,579,Stacey Abrams,DEM,42,Brian Kemp,REP,56,1,-14,11/8/2022,45.88,53.41,-7.54,6.46,-6.46,1
+81570,165110,8966,2022,2022_Gov-G_ME,ME,Gov-G,Gov-G,University of New Hampshire Survey Center,357,Online,,11/4/2022,922,Janet T. Mills,DEM,52,Paul R. LePage,REP,44,2,8,11/8/2022,55.69,42.45,13.24,5.24,-5.24,1
+81612,165229,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,Data for Progress,522,Live Phone/Online/Mail,,11/4/2022,1100,Steve Sisolak,DEM,46,Joe Lombardo,REP,48,3,-2,11/8/2022,48,49.53,-1.53,.47,-.47,1
+81558,165071,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,InsiderAdvantage,243,Text,,11/4/2022,550,Steve Sisolak,DEM,43.5,Joe Lombardo,REP,48.7,3.5,-5.1999998,11/8/2022,48,49.53,-1.53,3.67,-3.67,1
+81609,165222,8973,2022,2022_Gov-G_NH,NH,Gov-G,Gov-G,Data for Progress,522,IVR/Online/Live Phone/Mail,,11/4/2022,1995,Tom Sherman,DEM,40,Chris Sununu,REP,58,2,-18,11/8/2022,41.59,57.14,-15.56,2.44,-2.44,1
+81569,165109,8973,2022,2022_Gov-G_NH,NH,Gov-G,Gov-G,University of New Hampshire Survey Center,357,Online,,11/4/2022,2077,Tom Sherman,DEM,43,Chris Sununu,REP,55,1,-12,11/8/2022,41.59,57.14,-15.56,3.56,3.56,1
+81568,165100,8973,2022,2022_Gov-G_NH,NH,Gov-G,Gov-G,Wick,284,IVR/Online,,11/4/2022,725,Tom Sherman,DEM,42.5,Chris Sununu,REP,53.1,,-10.6,11/8/2022,41.59,57.14,-15.56,4.96,4.96,1
+81614,165237,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Data for Progress,522,IVR/Online/Live Phone/Mail,,11/4/2022,1413,Nan Whaley,DEM,38,Mike DeWine,REP,62,,-24,11/8/2022,37.38,62.41,-25.03,1.03,1.03,1
+81628,165313,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Targoz Market Research,454,Online,,11/4/2022,505,Nan Whaley,DEM,32,Mike DeWine,REP,62,,-30,11/8/2022,37.38,62.41,-25.03,4.97,-4.97,1
+81571,165108,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/4/2022,1123,Nan Whaley,DEM,34,Mike DeWine,REP,58.5,,-24.5,11/8/2022,37.38,62.41,-25.03,.53,.53,1
+81608,165214,8978,2022,2022_Gov-G_OR,OR,Gov-G,Gov-G,Data for Progress,522,Online,,11/4/2022,1393,Tina Kotek,DEM,48,Christine Drazan,REP,44,7,4,11/8/2022,47.01,43.59,3.42,.58,.58,1
+81617,165269,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Patriot Polling,732,IVR,,11/4/2022,846,Josh Shapiro,DEM,51.5,Douglas V. Mastriano,REP,45,,6.5,11/8/2022,56.49,41.71,14.77,8.27,-8.27,1
+81627,165311,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Targoz Market Research,454,Online,,11/4/2022,631,Josh Shapiro,DEM,52,Douglas V. Mastriano,REP,46,1,6,11/8/2022,56.49,41.71,14.77,8.77,-8.77,1
+81599,165198,8984,2022,2022_Gov-G_TX,TX,Gov-G,Gov-G,CWS Research,697,IVR/Online,R,11/4/2022,786,Beto O'Rourke,DEM,42,Greg Abbott,REP,53,,-11,11/8/2022,43.86,54.76,-10.9,.1,-.1,1
+81611,165225,8986,2022,2022_Gov-G_WI,WI,Gov-G,Gov-G,Data for Progress,522,IVR/Online/Live Phone/Mail,,11/4/2022,1504,Tony Evers,DEM,48,Tim Michels,REP,50,2,-2,11/8/2022,51.19,47.79,3.4,5.4,-5.4,0
+81596,165192,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Data Orbital,73,Live Phone,,11/5/2022,550,Mark Kelly,DEM,48.2,Blake Masters,REP,46.5,1.8,1.7,11/8/2022,51.39,46.51,4.89,3.19,-3.19,1
+81581,165128,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Research Co.,449,Online,,11/5/2022,450,Mark Kelly,DEM,51,Blake Masters,REP,47,2,4,11/8/2022,51.39,46.51,4.89,.89,-.89,1
+81582,165130,8921,2022,2022_Sen-G_CA,CA,Sen-G,Sen-G,Research Co.,449,Online,,11/5/2022,450,Alex Padilla,DEM,53,Mark P. Meuser,REP,37,,16,11/8/2022,61.06,38.94,22.13,6.13,-6.13,1
+81620,165275,8922,2022,2022_Sen-G_CO,CO,Sen-G,Sen-G,co/efficient,514,IVR/Text,,11/5/2022,856,Michael Bennet,DEM,51,Joe O'Dea,REP,43,,8,11/8/2022,55.88,41.27,14.62,6.62,-6.62,1
+81583,165131,8924,2022,2022_Sen-G_FL,FL,Sen-G,Sen-G,Research Co.,449,Online,,11/5/2022,450,Val Demings,DEM,44,Marco Rubio,REP,54,,-10,11/8/2022,41.27,57.68,-16.41,6.41,6.41,1
+81584,165132,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Research Co.,449,Online,,11/5/2022,450,Raphael Warnock,DEM,49,Herschel Junior Walker,REP,49,1,0,11/8/2022,49.44,48.49,.96,.96,-.96,.5
+81592,165157,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/5/2022,1103,Raphael Warnock,DEM,46.5,Herschel Junior Walker,REP,49.7,2.2,-3.2,11/8/2022,49.44,48.49,.96,4.16,-4.16,0
+81585,165133,8928,2022,2022_Sen-G_IL,IL,Sen-G,Sen-G,Research Co.,449,Online,,11/5/2022,450,Tammy Duckworth,DEM,58,Kathy Salvi,REP,40,,18,11/8/2022,56.82,41.5,15.32,2.68,2.68,1
+81586,165134,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,Research Co.,449,Online,,11/5/2022,450,Catherine Cortez Masto,DEM,48,Adam Paul Laxalt,REP,49,,-1,11/8/2022,49.42,48.63,.79,1.79,-1.79,0
+81572,165107,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,InsiderAdvantage,243,Text,,11/5/2022,700,Maggie Hassan,DEM,49.4,Donald C. Bolduc,REP,47.6,,1.8,11/8/2022,53.54,44.47,9.07,7.27,-7.27,1
+81587,165135,8939,2022,2022_Sen-G_NY,NY,Sen-G,Sen-G,Research Co.,449,Online,,11/5/2022,450,Charles E. Schumer,DEM,59,Joe Pinion,REP,39,,20,11/8/2022,56.78,42.77,14.01,5.99,5.99,1
+81574,165117,8940,2022,2022_Sen-G_NC,NC,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/5/2022,1098,Cheri Beasley,DEM,44.8,Ted Budd,REP,51.2,,-6.4000001,11/8/2022,47.3,50.53,-3.23,3.17,-3.17,1
+81588,165136,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Research Co.,449,Online,,11/5/2022,450,Tim Ryan,DEM,46,J.D. Vance,REP,54,,-8,11/8/2022,46.92,53.03,-6.11,1.89,-1.89,1
+81589,165137,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,Research Co.,449,Online,,11/5/2022,450,John Fetterman,DEM,49,Mehmet Oz,REP,48,,1,11/8/2022,51.25,46.33,4.91,3.91,-3.91,1
+81590,165138,8951,2022,2022_Sen-G_WI,WI,Sen-G,Sen-G,Research Co.,449,Online,,11/5/2022,450,Mandela Barnes,DEM,47,Ron Johnson,REP,53,,-6,11/8/2022,49.49,50.5,-1.01,4.99,-4.99,1
+81596,165191,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Data Orbital,73,Live Phone,,11/5/2022,550,Katie Hobbs,DEM,46.6,Kari Lake,REP,49.7,,-3.0999999,11/8/2022,50.32,49.65,.67,3.77,-3.77,0
+81581,165139,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Research Co.,449,Online,,11/5/2022,450,Katie Hobbs,DEM,49,Kari Lake,REP,51,,-2,11/8/2022,50.32,49.65,.67,2.67,-2.67,0
+81582,165140,8956,2022,2022_Gov-G_CA,CA,Gov-G,Gov-G,Research Co.,449,Online,,11/5/2022,450,Gavin Newsom,DEM,60,Brian Dahle,REP,40,,20,11/8/2022,59.18,40.82,18.36,1.64,1.64,1
+81620,165276,8957,2022,2022_Gov-G_CO,CO,Gov-G,Gov-G,co/efficient,514,IVR/Text,,11/5/2022,856,Jared Polis,DEM,54,Heidi Ganahl,REP,42,,12,11/8/2022,58.53,39.18,19.35,7.35,-7.35,1
+81583,165141,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,Research Co.,449,Online,,11/5/2022,450,Charlie Crist,DEM,42,Ron DeSantis,REP,56,,-14,11/8/2022,39.97,59.37,-19.4,5.4,5.4,1
+81584,165142,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Research Co.,449,Online,,11/5/2022,450,Stacey Abrams,DEM,46,Brian Kemp,REP,53,,-7,11/8/2022,45.88,53.41,-7.54,.54,.54,1
+81592,165158,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/5/2022,1103,Stacey Abrams,DEM,43.7,Brian Kemp,REP,52.6,2.3,-8.8999996,11/8/2022,45.88,53.41,-7.54,1.36,-1.36,1
+81585,165143,8963,2022,2022_Gov-G_IL,IL,Gov-G,Gov-G,Research Co.,449,Online,,11/5/2022,450,J.B. Pritzker,DEM,59,Darren Bailey,REP,39,,20,11/8/2022,54.91,42.37,12.54,7.46,7.46,1
+81586,165144,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,Research Co.,449,Online,,11/5/2022,450,Steve Sisolak,DEM,47,Joe Lombardo,REP,49,,-2,11/8/2022,48,49.53,-1.53,.47,-.47,1
+81572,165111,8973,2022,2022_Gov-G_NH,NH,Gov-G,Gov-G,InsiderAdvantage,243,Text,,11/5/2022,700,Tom Sherman,DEM,40.4,Chris Sununu,REP,55.7,,-15.3,11/8/2022,41.59,57.14,-15.56,.26,.26,1
+81587,165145,8975,2022,2022_Gov-G_NY,NY,Gov-G,Gov-G,Research Co.,449,Online,,11/5/2022,450,Kathy C. Hochul,DEM,55,Lee M. Zeldin,REP,45,,10,11/8/2022,53.2,46.8,6.4,3.6,3.6,1
+81588,165146,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Research Co.,449,Online,,11/5/2022,450,Nan Whaley,DEM,39,Mike DeWine,REP,61,,-22,11/8/2022,37.38,62.41,-25.03,3.03,3.03,1
+81589,165147,8979,2022,2022_Gov-G_PA,PA,Gov-G,Gov-G,Research Co.,449,Online,,11/5/2022,450,Josh Shapiro,DEM,55,Douglas V. Mastriano,REP,43,,12,11/8/2022,56.49,41.71,14.77,2.77,-2.77,1
+81590,165148,8986,2022,2022_Gov-G_WI,WI,Gov-G,Gov-G,Research Co.,449,Online,,11/5/2022,450,Tony Evers,DEM,50,Tim Michels,REP,50,,0,11/8/2022,51.19,47.79,3.4,3.4,-3.4,.5
+81582,165129,9480,2022,2022_Sen-GS_CA,CA,Sen-G,Sen-GS,Research Co.,449,Online,,11/5/2022,450,Alex Padilla,DEM,53,Mark P. Meuser,REP,37,,16,11/8/2022,60.89,39.11,21.79,5.79,-5.79,1
+81629,165305,8919,2022,2022_Sen-G_AZ,AZ,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/6/2022,1094,Mark Kelly,DEM,46.7,Blake Masters,REP,48.2,1.3,-1.5,11/8/2022,51.39,46.51,4.89,6.39,-6.39,0
+81778,166101,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,AtlasIntel,546,Online,,11/6/2022,791,Raphael Warnock,DEM,45.8,Herschel Junior Walker,REP,49,,-3.2,11/8/2022,49.44,48.49,.96,4.16,-4.16,0
+81595,165162,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,InsiderAdvantage,243,Text,,11/6/2022,550,Raphael Warnock,DEM,47,Herschel Junior Walker,REP,49,1,-2,11/8/2022,49.44,48.49,.96,2.96,-2.96,0
+81579,165126,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,Landmark Communications,166,Live Phone/Online,,11/6/2022,1214,Raphael Warnock,DEM,46.4,Herschel Junior Walker,REP,46.8,4.5,-.40000001,11/8/2022,49.44,48.49,.96,1.36,-1.36,0
+81780,166103,8925,2022,2022_Sen-G_GA,GA,Sen-G,Sen-G,The Political Matrix/The Listener Group,677,IVR,,11/6/2022,690,Raphael Warnock,DEM,59,Herschel Junior Walker,REP,41,,18,11/8/2022,49.44,48.49,.96,17.04,17.04,1
+81606,165209,8929,2022,2022_Sen-G_IN,IN,Sen-G,Sen-G,Civiqs,471,Online,,11/6/2022,707,Thomas McDermott,DEM,38,Todd Young,REP,49,,-11,11/8/2022,37.87,58.62,-20.75,9.75,9.75,1
+81607,165210,8936,2022,2022_Sen-G_MO,MO,Sen-G,Sen-G,Civiqs,471,Online,,11/6/2022,746,Trudy Busch Valentine,DEM,40,Eric Schmitt,REP,55,,-15,11/8/2022,42.18,55.43,-13.26,1.74,-1.74,1
+81775,166099,8937,2022,2022_Sen-G_NV,NV,Sen-G,Sen-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/6/2022,1089,Catherine Cortez Masto,DEM,45.4,Adam Paul Laxalt,REP,50.3,,-4.9000001,11/8/2022,49.42,48.63,.79,5.69,-5.69,0
+81578,165123,8938,2022,2022_Sen-G_NH,NH,Sen-G,Sen-G,Phillips Academy,699,IVR/Text,,11/6/2022,1056,Maggie Hassan,DEM,48.3,Donald C. Bolduc,REP,44.7,1.5,3.5999999,11/8/2022,53.54,44.47,9.07,5.47,-5.47,1
+81605,165208,8942,2022,2022_Sen-G_OH,OH,Sen-G,Sen-G,Civiqs,471,Online,,11/6/2022,716,Tim Ryan,DEM,46,J.D. Vance,REP,51,,-5,11/8/2022,46.92,53.03,-6.11,1.11,1.11,1
+81601,165202,8943,2022,2022_Sen-G_OK,OK,Sen-G,Sen-G,Ascend Action,726,Live Phone,,11/6/2022,682,Madison Horn,DEM,36,James Lankford,REP,56,2,-20,11/8/2022,32.1,64.3,-32.2,12.2,12.2,1
+81779,166102,8945,2022,2022_Sen-G_PA,PA,Sen-G,Sen-G,The Political Matrix/The Listener Group,677,IVR,,11/6/2022,800,John Fetterman,DEM,53,Mehmet Oz,REP,47,,6,11/8/2022,51.25,46.33,4.91,1.09,1.09,1
+81604,165207,8951,2022,2022_Sen-G_WI,WI,Sen-G,Sen-G,Civiqs,471,Online,,11/6/2022,739,Mandela Barnes,DEM,49,Ron Johnson,REP,50,,-1,11/8/2022,49.49,50.5,-1.01,.01,.01,1
+81629,165314,8954,2022,2022_Gov-G_AZ,AZ,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/6/2022,1094,Katie Hobbs,DEM,46.9,Kari Lake,REP,50.5,,-3.5999999,11/8/2022,50.32,49.65,.67,4.27,-4.27,0
+81595,165163,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,InsiderAdvantage,243,Text,,11/6/2022,550,Stacey Abrams,DEM,45,Brian Kemp,REP,50,1,-5,11/8/2022,45.88,53.41,-7.54,2.54,2.54,1
+81579,165125,8960,2022,2022_Gov-G_GA,GA,Gov-G,Gov-G,Landmark Communications,166,Live Phone/Online,,11/6/2022,1214,Stacey Abrams,DEM,45.5,Brian Kemp,REP,52.1,1.7,-6.5999999,11/8/2022,45.88,53.41,-7.54,.94,.94,1
+81777,166098,8963,2022,2022_Gov-G_IL,IL,Gov-G,Gov-G,Victory Insights,673,Live Phone,,11/6/2022,1208,J.B. Pritzker,DEM,49.3,Darren Bailey,REP,41.7,,7.5999999,11/8/2022,54.91,42.37,12.54,4.94,-4.94,1
+81776,166097,8969,2022,2022_Gov-G_MI,MI,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/6/2022,1097,Gretchen Whitmer,DEM,48.2,Tudor M. Dixon,REP,48.5,.6,-.30000001,11/8/2022,54.47,43.94,10.53,10.83,-10.83,0
+81775,166096,8972,2022,2022_Gov-G_NV,NV,Gov-G,Gov-G,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,11/6/2022,1089,Steve Sisolak,DEM,46.1,Joe Lombardo,REP,48.6,2.1,-2.5,11/8/2022,48,49.53,-1.53,.97,-.97,1
+81578,165124,8973,2022,2022_Gov-G_NH,NH,Gov-G,Gov-G,Phillips Academy,699,IVR/Text,,11/6/2022,1056,Tom Sherman,DEM,35.8,Chris Sununu,REP,58,,-22.200001,11/8/2022,41.59,57.14,-15.56,6.64,-6.64,1
+81605,165212,8976,2022,2022_Gov-G_OH,OH,Gov-G,Gov-G,Civiqs,471,Online,,11/6/2022,716,Nan Whaley,DEM,39,Mike DeWine,REP,53,,-14,11/8/2022,37.38,62.41,-25.03,11.03,11.03,1
+81601,165205,8977,2022,2022_Gov-G_OK,OK,Gov-G,Gov-G,Ascend Action,726,Live Phone,,11/6/2022,682,Joy Hofmeister,DEM,46,Kevin Stitt,REP,49,1,-3,11/8/2022,41.79,55.45,-13.66,10.66,10.66,1
+81604,165211,8986,2022,2022_Gov-G_WI,WI,Gov-G,Gov-G,Civiqs,471,Online,,11/6/2022,739,Tony Evers,DEM,51,Tim Michels,REP,48,,3,11/8/2022,51.19,47.79,3.4,.4,-.4,1
+81601,165203,9482,2022,2022_Sen-GS_OK,OK,Sen-G,Sen-GS,Ascend Action,726,Live Phone,,11/6/2022,682,Kendra Horn,DEM,41,Markwayne Mullin,REP,53,1,-12,11/8/2022,35.24,61.77,-26.53,14.53,14.53,1
+81623,165294,8959,2022,2022_Gov-G_FL,FL,Gov-G,Gov-G,The Political Matrix/The Listener Group,677,IVR,,11/7/2022,722,Charlie Crist,DEM,48,Ron DeSantis,REP,52,,-4,11/8/2022,39.97,59.37,-19.4,15.4,15.4,1
+81756,165956,9552,2022,2022_Sen-GR_GA,GA,Sen-G,Sen-GR,University of Massachusetts Lowell Center for Public Opinion,355,Online,,11/23/2022,1300,Raphael Warnock,DEM,51,Herschel Junior Walker,REP,46,,5,12/6/2022,51.4,48.6,2.81,2.19,2.19,1
+81719,165781,9552,2022,2022_Sen-GR_GA,GA,Sen-G,Sen-GR,Frederick Polls,108,Online,,11/25/2022,939,Raphael Warnock,DEM,50,Herschel Junior Walker,REP,50,,0,12/6/2022,51.4,48.6,2.81,2.81,-2.81,.5
+81717,165779,9552,2022,2022_Sen-GR_GA,GA,Sen-G,Sen-GR,Phillips Academy,699,IVR/Text,,11/27/2022,862,Raphael Warnock,DEM,47.3,Herschel Junior Walker,REP,48.1,,-.80000001,12/6/2022,51.4,48.6,2.81,3.61,-3.61,0
+81741,165920,9552,2022,2022_Sen-GR_GA,GA,Sen-G,Sen-GR,SSRS,297,Live Phone/Online,,11/27/2022,1184,Raphael Warnock,DEM,52,Herschel Junior Walker,REP,48,,4,12/6/2022,51.4,48.6,2.81,1.19,1.19,1
+81740,165918,9552,2022,2022_Sen-GR_GA,GA,Sen-G,Sen-GR,SurveyUSA,325,Online,,11/28/2022,1214,Raphael Warnock,DEM,50,Herschel Junior Walker,REP,47,,3,12/6/2022,51.4,48.6,2.81,.19,.19,1
+81734,165846,9552,2022,2022_Sen-GR_GA,GA,Sen-G,Sen-GR,Emerson College,88,IVR/Online,,11/29/2022,888,Raphael Warnock,DEM,50.8,Herschel Junior Walker,REP,49.2,,1.6,12/6/2022,51.4,48.6,2.81,1.21,-1.21,1
+81754,165943,9552,2022,2022_Sen-GR_GA,GA,Sen-G,Sen-GR,Patriot Polling,732,IVR,,12/1/2022,818,Raphael Warnock,DEM,48.7,Herschel Junior Walker,REP,47,,1.7,12/6/2022,51.4,48.6,2.81,1.11,-1.11,1
+81760,165968,9552,2022,2022_Sen-GR_GA,GA,Sen-G,Sen-GR,Data for Progress,522,IVR/Online/Live Phone,,12/3/2022,1229,Raphael Warnock,DEM,51,Herschel Junior Walker,REP,49,,2,12/6/2022,51.4,48.6,2.81,.81,-.81,1
+81759,165967,9552,2022,2022_Sen-GR_GA,GA,Sen-G,Sen-GR,InsiderAdvantage,243,Text,,12/4/2022,750,Raphael Warnock,DEM,50.5,Herschel Junior Walker,REP,48.4,,2.0999999,12/6/2022,51.4,48.6,2.81,.71,-.71,1
+81764,165974,9552,2022,2022_Sen-GR_GA,GA,Sen-G,Sen-GR,Landmark Communications,166,Live Phone/Online,,12/4/2022,800,Raphael Warnock,DEM,52.2,Herschel Junior Walker,REP,46.7,,5.5,12/6/2022,51.4,48.6,2.81,2.69,2.69,1
+81761,165971,9552,2022,2022_Sen-GR_GA,GA,Sen-G,Sen-GR,Mitchell Research & Communications,213,Online,,12/4/2022,625,Raphael Warnock,DEM,50,Herschel Junior Walker,REP,45,,5,12/6/2022,51.4,48.6,2.81,2.19,2.19,1
+81762,165972,9552,2022,2022_Sen-GR_GA,GA,Sen-G,Sen-GR,Trafalgar Group,338,IVR/Online/Text/Live Phone,R,12/4/2022,1099,Raphael Warnock,DEM,51.1,Herschel Junior Walker,REP,47.4,,3.7,12/6/2022,51.4,48.6,2.81,.89,.89,1

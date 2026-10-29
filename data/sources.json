@@ -273,11 +273,11 @@
    "decision_needed": null,
    "last_success_at": null,
    "last_error": "",
-   "active": true,
+   "active": false,
    "office": "senate",
    "fetch_url": "https://www.cookpolitical.com/print/ratings/races/senate",
    "verification_evidence": "2026-10-29 18:21Z: GET /print/ratings/races/senate → 200 application/pdf, one page, page date in header; robots.txt default group allows the path (search=yes, ai-input=yes, ai-train=no).",
-   "notes": "Senate and Governor: every race, 7 columns, per-block HELD SEATS tallies used as a checksum. Raw PDF not kept (hash only)."
+   "notes": "Senate and Governor: every race, 7 columns, per-block HELD SEATS tallies used as a checksum. Raw PDF not kept (hash only). Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): cookpolitical.com answered 403 \"Just a moment...\" (Cloudflare challenge) to the GitHub runner, while the drafting workbench got the PDF. Not polled from Actions. Refresh path: a Code session fetches the print PDF through the workbench and runs `python3 tools/poll_ratings.py --source-id ratings_cook_senate --file <pdf>` (hash of the real bytes recorded), or a person enters label + date + link through manual-entry (layer ratings). Never defeat a challenge."
   },
   {
    "id": "ratings_cook_house",
@@ -298,11 +298,11 @@
    "decision_needed": "Widen the stored House labels beyond Michigan only if Cook agrees in writing.",
    "last_success_at": null,
    "last_error": "",
-   "active": true,
+   "active": false,
    "office": "house",
    "fetch_url": "https://www.cookpolitical.com/print/ratings/races/house",
    "verification_evidence": "2026-10-29 18:21Z: GET /print/ratings/races/house → 200 application/pdf, one page, page date in header; robots.txt default group allows the path (search=yes, ai-input=yes, ai-train=no).",
-   "notes": "House: the print page lists competitive races only (6 columns, per-column \"n Dem • m Rep\" tallies used as a checksum); the desk stores Michigan districts, other districts are link-only (Tabu, decision 5). Raw PDF not kept (hash only)."
+   "notes": "House: the print page lists competitive races only (6 columns, per-column \"n Dem • m Rep\" tallies used as a checksum); the desk stores Michigan districts, other districts are link-only (Tabu, decision 5). Raw PDF not kept (hash only). Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): cookpolitical.com answered 403 \"Just a moment...\" (Cloudflare challenge) to the GitHub runner, while the drafting workbench got the PDF. Not polled from Actions. Refresh path: a Code session fetches the print PDF through the workbench and runs `python3 tools/poll_ratings.py --source-id ratings_cook_house --file <pdf>` (hash of the real bytes recorded), or a person enters label + date + link through manual-entry (layer ratings). Never defeat a challenge."
   },
   {
    "id": "ratings_cook_governor",
@@ -323,11 +323,11 @@
    "decision_needed": null,
    "last_success_at": null,
    "last_error": "",
-   "active": true,
+   "active": false,
    "office": "governor",
    "fetch_url": "https://www.cookpolitical.com/print/ratings/races/governor",
    "verification_evidence": "2026-10-29 18:21Z: GET /print/ratings/races/governor → 200 application/pdf, one page, page date in header; robots.txt default group allows the path (search=yes, ai-input=yes, ai-train=no).",
-   "notes": "Senate and Governor: every race, 7 columns, per-block HELD SEATS tallies used as a checksum. Raw PDF not kept (hash only)."
+   "notes": "Senate and Governor: every race, 7 columns, per-block HELD SEATS tallies used as a checksum. Raw PDF not kept (hash only). Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): cookpolitical.com answered 403 \"Just a moment...\" (Cloudflare challenge) to the GitHub runner, while the drafting workbench got the PDF. Not polled from Actions. Refresh path: a Code session fetches the print PDF through the workbench and runs `python3 tools/poll_ratings.py --source-id ratings_cook_governor --file <pdf>` (hash of the real bytes recorded), or a person enters label + date + link through manual-entry (layer ratings). Never defeat a challenge."
   },
   {
    "id": "ratings_cook_rating_changes",
@@ -370,7 +370,7 @@
    "last_success_at": null,
    "last_error": "",
    "active": false,
-   "notes": "2026-10-29 18:21Z: centerforpolitics.org answered 403 \"Just a moment...\" (Cloudflare challenge) from the sandbox; runner result in the reach workflow run. Hand capture: manual-entry workflow, layer ratings (label + date + link). Never defeat a challenge."
+   "notes": "2026-10-29 18:21Z: centerforpolitics.org answered 403 \"Just a moment...\" (Cloudflare challenge) from the sandbox; runner result in the reach workflow run. Hand capture: manual-entry workflow, layer ratings (label + date + link). Never defeat a challenge. Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): 403 challenge from the runner too. Manual entry only."
   },
   {
    "id": "ratings_sabato_house",
@@ -392,7 +392,7 @@
    "last_success_at": null,
    "last_error": "",
    "active": false,
-   "notes": "2026-10-29 18:21Z: centerforpolitics.org answered 403 \"Just a moment...\" (Cloudflare challenge) from the sandbox; runner result in the reach workflow run. Hand capture: manual-entry workflow, layer ratings (label + date + link). Never defeat a challenge."
+   "notes": "2026-10-29 18:21Z: centerforpolitics.org answered 403 \"Just a moment...\" (Cloudflare challenge) from the sandbox; runner result in the reach workflow run. Hand capture: manual-entry workflow, layer ratings (label + date + link). Never defeat a challenge. Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): 403 challenge from the runner too. Manual entry only."
   },
   {
    "id": "ratings_sabato_governor",
@@ -414,7 +414,7 @@
    "last_success_at": null,
    "last_error": "",
    "active": false,
-   "notes": "2026-10-29 18:21Z: centerforpolitics.org answered 403 \"Just a moment...\" (Cloudflare challenge) from the sandbox; runner result in the reach workflow run. Hand capture: manual-entry workflow, layer ratings (label + date + link). Never defeat a challenge."
+   "notes": "2026-10-29 18:21Z: centerforpolitics.org answered 403 \"Just a moment...\" (Cloudflare challenge) from the sandbox; runner result in the reach workflow run. Hand capture: manual-entry workflow, layer ratings (label + date + link). Never defeat a challenge. Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): 403 challenge from the runner too. Manual entry only."
   },
   {
    "id": "ratings_ie_senate",
@@ -429,7 +429,7 @@
    "active": true,
    "expected_cadence_min": 60,
    "terms_note": "Label + date + link only. The site loads this file itself and documents it as 'public, cached files — no auth required'. robots.txt: search=yes, ai-train=no, use=reference. Raw JSON not kept (hash only).",
-   "verification_evidence": "2026-10-29 18:21Z: 200 application/json; keys office,total,last_updated,generated_at,ratings[]; per-race date, rating, previous_rating.",
+   "verification_evidence": "2026-10-29 18:21Z: 200 application/json; keys office,total,last_updated,generated_at,ratings[]; per-race date, rating, previous_rating. Runner 2026-10-29 18:30Z: 200.",
    "decision_needed": null,
    "notes": "Vocabulary: Solid/Likely/Lean/Tilt/Battleground D or R, Toss-up, Lean Independent; Tilt and Battleground map to ±1 with label_lossy=true."
   },
@@ -446,7 +446,7 @@
    "active": true,
    "expected_cadence_min": 60,
    "terms_note": "Label + date + link only. The site loads this file itself and documents it as 'public, cached files — no auth required'. robots.txt: search=yes, ai-train=no, use=reference. Raw JSON not kept (hash only).",
-   "verification_evidence": "2026-10-29 18:21Z: 200 application/json; keys office,total,last_updated,generated_at,ratings[]; per-race date, rating, previous_rating.",
+   "verification_evidence": "2026-10-29 18:21Z: 200 application/json; keys office,total,last_updated,generated_at,ratings[]; per-race date, rating, previous_rating. Runner 2026-10-29 18:30Z: 200.",
    "decision_needed": null,
    "notes": "Vocabulary: Solid/Likely/Lean/Tilt/Battleground D or R, Toss-up, Lean Independent; Tilt and Battleground map to ±1 with label_lossy=true."
   },
@@ -463,7 +463,7 @@
    "active": true,
    "expected_cadence_min": 60,
    "terms_note": "Label + date + link only. The site loads this file itself and documents it as 'public, cached files — no auth required'. robots.txt: search=yes, ai-train=no, use=reference. Raw JSON not kept (hash only).",
-   "verification_evidence": "2026-10-29 18:21Z: 200 application/json; keys office,total,last_updated,generated_at,ratings[]; per-race date, rating, previous_rating.",
+   "verification_evidence": "2026-10-29 18:21Z: 200 application/json; keys office,total,last_updated,generated_at,ratings[]; per-race date, rating, previous_rating. Runner 2026-10-29 18:30Z: 200.",
    "decision_needed": "House labels stored for Michigan only (same scope as Cook); widen if Tabu rules so.",
    "notes": "Vocabulary: Solid/Likely/Lean/Tilt/Battleground D or R, Toss-up, Lean Independent; Tilt and Battleground map to ±1 with label_lossy=true."
   },
@@ -699,7 +699,7 @@
    "last_error": "",
    "active": true,
    "fetch_url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_counts_state_20261103.csv",
-   "notes": "Aggregate accepted-ballot counts by request type × party × gender × race × ethnicity; the daily PDF (same folder family) supplies the official comparison-to-2022 block and the ballots-cast-through date. Published ~08:40 GMT daily; the CSV total tied out to the 10/29 PDF (2,150,024)."
+   "notes": "Aggregate accepted-ballot counts by request type × party × gender × race × ethnicity; the daily PDF (same folder family) supplies the official comparison-to-2022 block and the ballots-cast-through date. Published ~08:40 GMT daily; the CSV total tied out to the 10/29 PDF (2,150,024). Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): 200 from the runner."
   },
   {
    "id": "ev_nc_absentee_voter_files",
@@ -743,7 +743,7 @@
    "last_error": "",
    "active": true,
    "fetch_url": "https://electionfiles.floridados.gov/countyballotreportfiles/Stats_49894_{VbmProvided,VbmVoted,EarlyVoted}.txt",
-   "notes": "Three tab-separated files behind the page's Download File links (election 49894 = 2026 General): State Totals + 67 counties by party registration with a CompileDate per row; rows tie out (parties sum to GrandTotal)."
+   "notes": "Three tab-separated files behind the page's Download File links (election 49894 = 2026 General): State Totals + 67 counties by party registration with a CompileDate per row; rows tie out (parties sum to GrandTotal). Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): 200 from the runner. The Division serves the txt files from more than one cache: the runner received a 10/28 8:07AM compile minutes after the workbench received 10/29 8:07AM; the poller never lets an older compile replace a newer one (snapshot recorded, rows withheld, ops event early_vote_stale_cache_served)."
   },
   {
    "id": "ev_mi_sos_dashboard",
@@ -765,7 +765,7 @@
    "last_success_at": null,
    "last_error": "",
    "active": false,
-   "notes": "Power BI embed, no export. michigan.gov answered 403 to the sandbox (2026-10-29); runner result in the reach workflow run. Captures go in by hand: Ops → Early-vote capture → manual-entry workflow (layer early_vote)."
+   "notes": "Power BI embed, no export. michigan.gov answered 403 to the sandbox (2026-10-29); runner result in the reach workflow run. Captures go in by hand: Ops → Early-vote capture → manual-entry workflow (layer early_vote). Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): michigan.gov answered 403 Access Denied (Akamai) to the runner as well. Hand capture only."
   },
   {
    "id": "ev_mi_sos_news_releases",
@@ -787,7 +787,7 @@
    "last_success_at": null,
    "last_error": "",
    "active": false,
-   "notes": "michigan.gov answered 403 to the sandbox (2026-10-29); runner result in the reach workflow run. Milestone tables are captured by hand until a runner fetch is proven."
+   "notes": "michigan.gov answered 403 to the sandbox (2026-10-29); runner result in the reach workflow run. Milestone tables are captured by hand until a runner fetch is proven. Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): michigan.gov answered 403 Access Denied (Akamai) to the runner as well. Hand capture only."
   },
   {
    "id": "ev_mi_sos_2022_baseline_xlsx",
@@ -808,7 +808,8 @@
    "decision_needed": null,
    "last_success_at": null,
    "last_error": "",
-   "active": false
+   "active": false,
+   "notes": " Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): michigan.gov answered 403 Access Denied (Akamai) to the runner as well. Hand capture only."
   },
   {
    "id": "ev_ufl_election_lab",
@@ -830,7 +831,8 @@
    "last_success_at": null,
    "last_error": "",
    "active": true,
-   "fetch_url": "https://election.lab.ufl.edu/data-downloads/earlyvote/2026/US.csv"
+   "fetch_url": "https://election.lab.ufl.edu/data-downloads/earlyvote/2026/US.csv",
+   "notes": " Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): 200 from the runner."
   },
   {
    "id": "ev_votehub_cdn_tracker",
@@ -1193,7 +1195,8 @@
     "slug": "georgia",
     "election_id": null,
     "state": "GA"
-   }
+   },
+   "notes": " Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): 200 from the runner."
   },
   {
    "id": "enr_nc_dashboard",
@@ -1640,7 +1643,8 @@
     "slug": "id",
     "election_id": null,
     "state": "ID"
-   }
+   },
+   "notes": " Runner test 2026-10-29 18:30Z (reach workflow run 40931499434): 200 from the runner."
   },
   {
    "id": "enr_il_sos",

@@ -1,0 +1,1341 @@
+{
+ "_layer": "scenarios",
+ "built_at": "2026-10-29T18:52:26Z",
+ "source": {
+  "name": "FiveThirtyEight pollster-ratings raw-polls.csv (2018 and 2022 Senate and Governor general-election polls, with official results)",
+  "file": "fixtures/fivethirtyeight/raw-polls_2018-2022_senate-governor.csv",
+  "license": "CC BY 4.0"
+ },
+ "method": "Per race: desk-style weighted average of polls in the final 60 days (half-life 14 d, sqrt(n), partisan x0.5; no ratings); P(D) = Phi(avg / s_total); s_total^2 = s_nat^2 + s_reg^2 + s_base^2 + s_poll^2 / min(n, 8). Grid over s_nat, s_base, s_poll; s_reg fixed at 1.5.",
+ "n_races": 118,
+ "chosen_params": {
+  "s_nat": 1.5,
+  "s_reg": 1.5,
+  "s_base": 2.5,
+  "s_poll": 8.0,
+  "s_rating": 6.0
+ },
+ "chosen_metrics": {
+  "n_races": 118,
+  "rmse": 5.4,
+  "mean_signed_error_actual_minus_polls": -0.74,
+  "coverage_80": 0.805,
+  "coverage_95": 0.941,
+  "brier": 0.0659,
+  "log_loss": 0.2107,
+  "right_call_rate": 0.907,
+  "calibration_loss": 0.0799
+ },
+ "default_metrics": {
+  "n_races": 118,
+  "rmse": 5.4,
+  "mean_signed_error_actual_minus_polls": -0.74,
+  "coverage_80": 0.839,
+  "coverage_95": 0.958,
+  "brier": 0.0661,
+  "log_loss": 0.2131,
+  "right_call_rate": 0.907
+ },
+ "by_year": {
+  "2018": {
+   "all": {
+    "n_races": 59,
+    "rmse": 4.69,
+    "mean_signed_error_actual_minus_polls": -0.15,
+    "coverage_80": 0.831,
+    "coverage_95": 0.983,
+    "brier": 0.0862,
+    "log_loss": 0.2683,
+    "right_call_rate": 0.864
+   },
+   "senate": {
+    "n_races": 27,
+    "rmse": 4.57,
+    "mean_signed_error_actual_minus_polls": -0.63,
+    "coverage_80": 0.815,
+    "coverage_95": 1.0,
+    "brier": 0.0825,
+    "log_loss": 0.2642,
+    "right_call_rate": 0.889
+   },
+   "governor": {
+    "n_races": 32,
+    "rmse": 4.79,
+    "mean_signed_error_actual_minus_polls": 0.26,
+    "coverage_80": 0.844,
+    "coverage_95": 0.969,
+    "brier": 0.0893,
+    "log_loss": 0.2717,
+    "right_call_rate": 0.844
+   }
+  },
+  "2022": {
+   "all": {
+    "n_races": 59,
+    "rmse": 6.04,
+    "mean_signed_error_actual_minus_polls": -1.33,
+    "coverage_80": 0.78,
+    "coverage_95": 0.898,
+    "brier": 0.0456,
+    "log_loss": 0.153,
+    "right_call_rate": 0.949
+   },
+   "senate": {
+    "n_races": 28,
+    "rmse": 6.59,
+    "mean_signed_error_actual_minus_polls": -0.94,
+    "coverage_80": 0.714,
+    "coverage_95": 0.893,
+    "brier": 0.0492,
+    "log_loss": 0.166,
+    "right_call_rate": 0.964
+   },
+   "governor": {
+    "n_races": 31,
+    "rmse": 5.49,
+    "mean_signed_error_actual_minus_polls": -1.68,
+    "coverage_80": 0.839,
+    "coverage_95": 0.903,
+    "brier": 0.0423,
+    "log_loss": 0.1413,
+    "right_call_rate": 0.935
+   }
+  }
+ },
+ "grid_top10": [
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.805,
+   "coverage_95": 0.941,
+   "brier": 0.0659,
+   "log_loss": 0.2107,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 1.5,
+    "s_reg": 1.5,
+    "s_base": 2.5,
+    "s_poll": 8.0
+   },
+   "calibration_loss": 0.0799
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.78,
+   "coverage_95": 0.949,
+   "brier": 0.0654,
+   "log_loss": 0.2096,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 1.5,
+    "s_reg": 1.5,
+    "s_base": 3.5,
+    "s_poll": 6.0
+   },
+   "calibration_loss": 0.0864
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.822,
+   "coverage_95": 0.958,
+   "brier": 0.0658,
+   "log_loss": 0.2124,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 1.5,
+    "s_reg": 1.5,
+    "s_base": 4.5,
+    "s_poll": 4.0
+   },
+   "calibration_loss": 0.0958
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.822,
+   "coverage_95": 0.958,
+   "brier": 0.0662,
+   "log_loss": 0.214,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 3.5,
+    "s_reg": 1.5,
+    "s_base": 3.5,
+    "s_poll": 4.0
+   },
+   "calibration_loss": 0.0962
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.771,
+   "coverage_95": 0.941,
+   "brier": 0.0651,
+   "log_loss": 0.208,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 2.5,
+    "s_reg": 1.5,
+    "s_base": 2.5,
+    "s_poll": 6.0
+   },
+   "calibration_loss": 0.1031
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.839,
+   "coverage_95": 0.958,
+   "brier": 0.0661,
+   "log_loss": 0.2131,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 2.5,
+    "s_reg": 1.5,
+    "s_base": 3.5,
+    "s_poll": 6.0
+   },
+   "calibration_loss": 0.1131
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.839,
+   "coverage_95": 0.958,
+   "brier": 0.0661,
+   "log_loss": 0.2131,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 3.5,
+    "s_reg": 1.5,
+    "s_base": 2.5,
+    "s_poll": 6.0
+   },
+   "calibration_loss": 0.1131
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.839,
+   "coverage_95": 0.958,
+   "brier": 0.0665,
+   "log_loss": 0.2157,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 2.5,
+    "s_reg": 1.5,
+    "s_base": 4.5,
+    "s_poll": 4.0
+   },
+   "calibration_loss": 0.1135
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.763,
+   "coverage_95": 0.932,
+   "brier": 0.0646,
+   "log_loss": 0.2054,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 1.5,
+    "s_reg": 1.5,
+    "s_base": 2.5,
+    "s_poll": 6.0
+   },
+   "calibration_loss": 0.1196
+  },
+  {
+   "n_races": 118,
+   "rmse": 5.4,
+   "mean_signed_error_actual_minus_polls": -0.74,
+   "coverage_80": 0.754,
+   "coverage_95": 0.941,
+   "brier": 0.065,
+   "log_loss": 0.2094,
+   "right_call_rate": 0.907,
+   "params": {
+    "s_nat": 2.5,
+    "s_reg": 1.5,
+    "s_base": 3.5,
+    "s_poll": 4.0
+   },
+   "calibration_loss": 0.12
+  }
+ ],
+ "races": [
+  {
+   "race": "2018_Gov-G_AK",
+   "year": "2018",
+   "office": "governor",
+   "state": "AK",
+   "n_polls": 2,
+   "poll_avg": -2.02,
+   "actual": -7.04
+  },
+  {
+   "race": "2018_Gov-G_AR",
+   "year": "2018",
+   "office": "governor",
+   "state": "AR",
+   "n_polls": 1,
+   "poll_avg": -36.0,
+   "actual": -33.56
+  },
+  {
+   "race": "2018_Gov-G_AZ",
+   "year": "2018",
+   "office": "governor",
+   "state": "AZ",
+   "n_polls": 14,
+   "poll_avg": -15.27,
+   "actual": -14.16
+  },
+  {
+   "race": "2018_Gov-G_CA",
+   "year": "2018",
+   "office": "governor",
+   "state": "CA",
+   "n_polls": 11,
+   "poll_avg": 15.28,
+   "actual": 23.9
+  },
+  {
+   "race": "2018_Gov-G_CO",
+   "year": "2018",
+   "office": "governor",
+   "state": "CO",
+   "n_polls": 2,
+   "poll_avg": 6.44,
+   "actual": 10.62
+  },
+  {
+   "race": "2018_Gov-G_CT",
+   "year": "2018",
+   "office": "governor",
+   "state": "CT",
+   "n_polls": 4,
+   "poll_avg": 4.49,
+   "actual": 3.15
+  },
+  {
+   "race": "2018_Gov-G_FL",
+   "year": "2018",
+   "office": "governor",
+   "state": "FL",
+   "n_polls": 35,
+   "poll_avg": 2.65,
+   "actual": -0.39
+  },
+  {
+   "race": "2018_Gov-G_GA",
+   "year": "2018",
+   "office": "governor",
+   "state": "GA",
+   "n_polls": 8,
+   "poll_avg": -2.18,
+   "actual": -1.39
+  },
+  {
+   "race": "2018_Gov-G_IA",
+   "year": "2018",
+   "office": "governor",
+   "state": "IA",
+   "n_polls": 3,
+   "poll_avg": 0.18,
+   "actual": -2.73
+  },
+  {
+   "race": "2018_Gov-G_ID",
+   "year": "2018",
+   "office": "governor",
+   "state": "ID",
+   "n_polls": 1,
+   "poll_avg": -16.0,
+   "actual": -21.58
+  },
+  {
+   "race": "2018_Gov-G_IL",
+   "year": "2018",
+   "office": "governor",
+   "state": "IL",
+   "n_polls": 1,
+   "poll_avg": 16.0,
+   "actual": 15.7
+  },
+  {
+   "race": "2018_Gov-G_KS",
+   "year": "2018",
+   "office": "governor",
+   "state": "KS",
+   "n_polls": 3,
+   "poll_avg": 0.13,
+   "actual": 5.07
+  },
+  {
+   "race": "2018_Gov-G_MA",
+   "year": "2018",
+   "office": "governor",
+   "state": "MA",
+   "n_polls": 3,
+   "poll_avg": -40.48,
+   "actual": -33.58
+  },
+  {
+   "race": "2018_Gov-G_ME",
+   "year": "2018",
+   "office": "governor",
+   "state": "ME",
+   "n_polls": 2,
+   "poll_avg": 10.86,
+   "actual": 7.72
+  },
+  {
+   "race": "2018_Gov-G_MI",
+   "year": "2018",
+   "office": "governor",
+   "state": "MI",
+   "n_polls": 12,
+   "poll_avg": 8.63,
+   "actual": 9.57
+  },
+  {
+   "race": "2018_Gov-G_MN",
+   "year": "2018",
+   "office": "governor",
+   "state": "MN",
+   "n_polls": 5,
+   "poll_avg": 9.62,
+   "actual": 11.42
+  },
+  {
+   "race": "2018_Gov-G_NH",
+   "year": "2018",
+   "office": "governor",
+   "state": "NH",
+   "n_polls": 3,
+   "poll_avg": -3.17,
+   "actual": -7.05
+  },
+  {
+   "race": "2018_Gov-G_NM",
+   "year": "2018",
+   "office": "governor",
+   "state": "NM",
+   "n_polls": 6,
+   "poll_avg": 8.92,
+   "actual": 14.4
+  },
+  {
+   "race": "2018_Gov-G_NV",
+   "year": "2018",
+   "office": "governor",
+   "state": "NV",
+   "n_polls": 8,
+   "poll_avg": -0.22,
+   "actual": 4.16
+  },
+  {
+   "race": "2018_Gov-G_NY",
+   "year": "2018",
+   "office": "governor",
+   "state": "NY",
+   "n_polls": 2,
+   "poll_avg": 14.97,
+   "actual": 23.42
+  },
+  {
+   "race": "2018_Gov-G_OH",
+   "year": "2018",
+   "office": "governor",
+   "state": "OH",
+   "n_polls": 7,
+   "poll_avg": 2.7,
+   "actual": -3.7
+  },
+  {
+   "race": "2018_Gov-G_OK",
+   "year": "2018",
+   "office": "governor",
+   "state": "OK",
+   "n_polls": 3,
+   "poll_avg": -4.69,
+   "actual": -12.1
+  },
+  {
+   "race": "2018_Gov-G_OR",
+   "year": "2018",
+   "office": "governor",
+   "state": "OR",
+   "n_polls": 2,
+   "poll_avg": 3.99,
+   "actual": 6.41
+  },
+  {
+   "race": "2018_Gov-G_PA",
+   "year": "2018",
+   "office": "governor",
+   "state": "PA",
+   "n_polls": 4,
+   "poll_avg": 15.37,
+   "actual": 17.07
+  },
+  {
+   "race": "2018_Gov-G_RI",
+   "year": "2018",
+   "office": "governor",
+   "state": "RI",
+   "n_polls": 1,
+   "poll_avg": 10.8,
+   "actual": 15.51
+  },
+  {
+   "race": "2018_Gov-G_SC",
+   "year": "2018",
+   "office": "governor",
+   "state": "SC",
+   "n_polls": 1,
+   "poll_avg": -16.2,
+   "actual": -8.04
+  },
+  {
+   "race": "2018_Gov-G_SD",
+   "year": "2018",
+   "office": "governor",
+   "state": "SD",
+   "n_polls": 4,
+   "poll_avg": 1.2,
+   "actual": -3.38
+  },
+  {
+   "race": "2018_Gov-G_TN",
+   "year": "2018",
+   "office": "governor",
+   "state": "TN",
+   "n_polls": 8,
+   "poll_avg": -13.9,
+   "actual": -21.01
+  },
+  {
+   "race": "2018_Gov-G_TX",
+   "year": "2018",
+   "office": "governor",
+   "state": "TX",
+   "n_polls": 5,
+   "poll_avg": -16.8,
+   "actual": -13.3
+  },
+  {
+   "race": "2018_Gov-G_VT",
+   "year": "2018",
+   "office": "governor",
+   "state": "VT",
+   "n_polls": 1,
+   "poll_avg": -10.0,
+   "actual": -14.99
+  },
+  {
+   "race": "2018_Gov-G_WI",
+   "year": "2018",
+   "office": "governor",
+   "state": "WI",
+   "n_polls": 3,
+   "poll_avg": 1.85,
+   "actual": 1.09
+  },
+  {
+   "race": "2018_Gov-G_WY",
+   "year": "2018",
+   "office": "governor",
+   "state": "WY",
+   "n_polls": 1,
+   "poll_avg": -34.0,
+   "actual": -39.8
+  },
+  {
+   "race": "2018_Sen-GSR_MS",
+   "year": "2018",
+   "office": "senate",
+   "state": "MS",
+   "n_polls": 2,
+   "poll_avg": -6.97,
+   "actual": -7.27
+  },
+  {
+   "race": "2018_Sen-GS_MN",
+   "year": "2018",
+   "office": "senate",
+   "state": "MN",
+   "n_polls": 5,
+   "poll_avg": 9.39,
+   "actual": 10.62
+  },
+  {
+   "race": "2018_Sen-G_AZ",
+   "year": "2018",
+   "office": "senate",
+   "state": "AZ",
+   "n_polls": 19,
+   "poll_avg": 0.15,
+   "actual": 2.34
+  },
+  {
+   "race": "2018_Sen-G_CT",
+   "year": "2018",
+   "office": "senate",
+   "state": "CT",
+   "n_polls": 3,
+   "poll_avg": 19.34,
+   "actual": 20.18
+  },
+  {
+   "race": "2018_Sen-G_FL",
+   "year": "2018",
+   "office": "senate",
+   "state": "FL",
+   "n_polls": 36,
+   "poll_avg": 1.5,
+   "actual": -0.12
+  },
+  {
+   "race": "2018_Sen-G_IN",
+   "year": "2018",
+   "office": "senate",
+   "state": "IN",
+   "n_polls": 9,
+   "poll_avg": 0.14,
+   "actual": -5.89
+  },
+  {
+   "race": "2018_Sen-G_MA",
+   "year": "2018",
+   "office": "senate",
+   "state": "MA",
+   "n_polls": 3,
+   "poll_avg": 23.59,
+   "actual": 24.19
+  },
+  {
+   "race": "2018_Sen-G_MI",
+   "year": "2018",
+   "office": "senate",
+   "state": "MI",
+   "n_polls": 14,
+   "poll_avg": 8.65,
+   "actual": 6.51
+  },
+  {
+   "race": "2018_Sen-G_MN",
+   "year": "2018",
+   "office": "senate",
+   "state": "MN",
+   "n_polls": 5,
+   "poll_avg": 20.13,
+   "actual": 24.1
+  },
+  {
+   "race": "2018_Sen-G_MO",
+   "year": "2018",
+   "office": "senate",
+   "state": "MO",
+   "n_polls": 12,
+   "poll_avg": -1.12,
+   "actual": -5.81
+  },
+  {
+   "race": "2018_Sen-G_MS",
+   "year": "2018",
+   "office": "senate",
+   "state": "MS",
+   "n_polls": 2,
+   "poll_avg": -12.3,
+   "actual": -19.02
+  },
+  {
+   "race": "2018_Sen-G_MT",
+   "year": "2018",
+   "office": "senate",
+   "state": "MT",
+   "n_polls": 5,
+   "poll_avg": 2.64,
+   "actual": 3.55
+  },
+  {
+   "race": "2018_Sen-G_ND",
+   "year": "2018",
+   "office": "senate",
+   "state": "ND",
+   "n_polls": 3,
+   "poll_avg": -10.66,
+   "actual": -10.91
+  },
+  {
+   "race": "2018_Sen-G_NE",
+   "year": "2018",
+   "office": "senate",
+   "state": "NE",
+   "n_polls": 1,
+   "poll_avg": -15.0,
+   "actual": -19.08
+  },
+  {
+   "race": "2018_Sen-G_NJ",
+   "year": "2018",
+   "office": "senate",
+   "state": "NJ",
+   "n_polls": 6,
+   "poll_avg": 10.18,
+   "actual": 11.18
+  },
+  {
+   "race": "2018_Sen-G_NM",
+   "year": "2018",
+   "office": "senate",
+   "state": "NM",
+   "n_polls": 5,
+   "poll_avg": 15.38,
+   "actual": 23.56
+  },
+  {
+   "race": "2018_Sen-G_NV",
+   "year": "2018",
+   "office": "senate",
+   "state": "NV",
+   "n_polls": 9,
+   "poll_avg": 1.2,
+   "actual": 5.11
+  },
+  {
+   "race": "2018_Sen-G_NY",
+   "year": "2018",
+   "office": "senate",
+   "state": "NY",
+   "n_polls": 2,
+   "poll_avg": 25.46,
+   "actual": 34.0
+  },
+  {
+   "race": "2018_Sen-G_OH",
+   "year": "2018",
+   "office": "senate",
+   "state": "OH",
+   "n_polls": 6,
+   "poll_avg": 11.35,
+   "actual": 6.85
+  },
+  {
+   "race": "2018_Sen-G_PA",
+   "year": "2018",
+   "office": "senate",
+   "state": "PA",
+   "n_polls": 4,
+   "poll_avg": 11.42,
+   "actual": 13.13
+  },
+  {
+   "race": "2018_Sen-G_RI",
+   "year": "2018",
+   "office": "senate",
+   "state": "RI",
+   "n_polls": 1,
+   "poll_avg": 19.0,
+   "actual": 23.16
+  },
+  {
+   "race": "2018_Sen-G_TN",
+   "year": "2018",
+   "office": "senate",
+   "state": "TN",
+   "n_polls": 8,
+   "poll_avg": -5.0,
+   "actual": -10.79
+  },
+  {
+   "race": "2018_Sen-G_TX",
+   "year": "2018",
+   "office": "senate",
+   "state": "TX",
+   "n_polls": 8,
+   "poll_avg": -5.25,
+   "actual": -2.57
+  },
+  {
+   "race": "2018_Sen-G_WI",
+   "year": "2018",
+   "office": "senate",
+   "state": "WI",
+   "n_polls": 3,
+   "poll_avg": 10.27,
+   "actual": 10.84
+  },
+  {
+   "race": "2018_Sen-G_WV",
+   "year": "2018",
+   "office": "senate",
+   "state": "WV",
+   "n_polls": 4,
+   "poll_avg": 6.81,
+   "actual": 3.31
+  },
+  {
+   "race": "2018_Sen-G_WY",
+   "year": "2018",
+   "office": "senate",
+   "state": "WY",
+   "n_polls": 1,
+   "poll_avg": -29.0,
+   "actual": -36.92
+  },
+  {
+   "race": "2018_Sen-OS_MS",
+   "year": "2018",
+   "office": "senate",
+   "state": "MS",
+   "n_polls": 2,
+   "poll_avg": 9.6,
+   "actual": -0.34
+  },
+  {
+   "race": "2022_Gov-G_AK",
+   "year": "2022",
+   "office": "governor",
+   "state": "AK",
+   "n_polls": 1,
+   "poll_avg": -24.0,
+   "actual": -26.16
+  },
+  {
+   "race": "2022_Gov-G_AL",
+   "year": "2022",
+   "office": "governor",
+   "state": "AL",
+   "n_polls": 1,
+   "poll_avg": -34.2,
+   "actual": -37.98
+  },
+  {
+   "race": "2022_Gov-G_AR",
+   "year": "2022",
+   "office": "governor",
+   "state": "AR",
+   "n_polls": 2,
+   "poll_avg": -14.36,
+   "actual": -27.77
+  },
+  {
+   "race": "2022_Gov-G_AZ",
+   "year": "2022",
+   "office": "governor",
+   "state": "AZ",
+   "n_polls": 23,
+   "poll_avg": -3.06,
+   "actual": 0.67
+  },
+  {
+   "race": "2022_Gov-G_CA",
+   "year": "2022",
+   "office": "governor",
+   "state": "CA",
+   "n_polls": 5,
+   "poll_avg": 20.96,
+   "actual": 18.36
+  },
+  {
+   "race": "2022_Gov-G_CO",
+   "year": "2022",
+   "office": "governor",
+   "state": "CO",
+   "n_polls": 5,
+   "poll_avg": 11.33,
+   "actual": 19.35
+  },
+  {
+   "race": "2022_Gov-G_CT",
+   "year": "2022",
+   "office": "governor",
+   "state": "CT",
+   "n_polls": 4,
+   "poll_avg": 17.87,
+   "actual": 12.85
+  },
+  {
+   "race": "2022_Gov-G_FL",
+   "year": "2022",
+   "office": "governor",
+   "state": "FL",
+   "n_polls": 15,
+   "poll_avg": -9.99,
+   "actual": -19.4
+  },
+  {
+   "race": "2022_Gov-G_GA",
+   "year": "2022",
+   "office": "governor",
+   "state": "GA",
+   "n_polls": 21,
+   "poll_avg": -7.8,
+   "actual": -7.54
+  },
+  {
+   "race": "2022_Gov-G_IA",
+   "year": "2022",
+   "office": "governor",
+   "state": "IA",
+   "n_polls": 3,
+   "poll_avg": -15.84,
+   "actual": -18.53
+  },
+  {
+   "race": "2022_Gov-G_IL",
+   "year": "2022",
+   "office": "governor",
+   "state": "IL",
+   "n_polls": 4,
+   "poll_avg": 12.42,
+   "actual": 12.54
+  },
+  {
+   "race": "2022_Gov-G_KS",
+   "year": "2022",
+   "office": "governor",
+   "state": "KS",
+   "n_polls": 1,
+   "poll_avg": 4.6,
+   "actual": 2.21
+  },
+  {
+   "race": "2022_Gov-G_MA",
+   "year": "2022",
+   "office": "governor",
+   "state": "MA",
+   "n_polls": 2,
+   "poll_avg": 27.47,
+   "actual": 29.11
+  },
+  {
+   "race": "2022_Gov-G_MD",
+   "year": "2022",
+   "office": "governor",
+   "state": "MD",
+   "n_polls": 1,
+   "poll_avg": 31.0,
+   "actual": 32.49
+  },
+  {
+   "race": "2022_Gov-G_ME",
+   "year": "2022",
+   "office": "governor",
+   "state": "ME",
+   "n_polls": 2,
+   "poll_avg": 7.05,
+   "actual": 13.24
+  },
+  {
+   "race": "2022_Gov-G_MI",
+   "year": "2022",
+   "office": "governor",
+   "state": "MI",
+   "n_polls": 13,
+   "poll_avg": 4.17,
+   "actual": 10.53
+  },
+  {
+   "race": "2022_Gov-G_MN",
+   "year": "2022",
+   "office": "governor",
+   "state": "MN",
+   "n_polls": 3,
+   "poll_avg": 8.9,
+   "actual": 7.67
+  },
+  {
+   "race": "2022_Gov-G_NH",
+   "year": "2022",
+   "office": "governor",
+   "state": "NH",
+   "n_polls": 12,
+   "poll_avg": -16.54,
+   "actual": -15.56
+  },
+  {
+   "race": "2022_Gov-G_NM",
+   "year": "2022",
+   "office": "governor",
+   "state": "NM",
+   "n_polls": 4,
+   "poll_avg": 4.55,
+   "actual": 6.38
+  },
+  {
+   "race": "2022_Gov-G_NV",
+   "year": "2022",
+   "office": "governor",
+   "state": "NV",
+   "n_polls": 15,
+   "poll_avg": -2.29,
+   "actual": -1.53
+  },
+  {
+   "race": "2022_Gov-G_NY",
+   "year": "2022",
+   "office": "governor",
+   "state": "NY",
+   "n_polls": 12,
+   "poll_avg": 7.61,
+   "actual": 6.4
+  },
+  {
+   "race": "2022_Gov-G_OH",
+   "year": "2022",
+   "office": "governor",
+   "state": "OH",
+   "n_polls": 13,
+   "poll_avg": -20.44,
+   "actual": -25.03
+  },
+  {
+   "race": "2022_Gov-G_OK",
+   "year": "2022",
+   "office": "governor",
+   "state": "OK",
+   "n_polls": 8,
+   "poll_avg": -2.72,
+   "actual": -13.66
+  },
+  {
+   "race": "2022_Gov-G_OR",
+   "year": "2022",
+   "office": "governor",
+   "state": "OR",
+   "n_polls": 7,
+   "poll_avg": 2.24,
+   "actual": 3.42
+  },
+  {
+   "race": "2022_Gov-G_PA",
+   "year": "2022",
+   "office": "governor",
+   "state": "PA",
+   "n_polls": 23,
+   "poll_avg": 10.73,
+   "actual": 14.77
+  },
+  {
+   "race": "2022_Gov-G_SD",
+   "year": "2022",
+   "office": "governor",
+   "state": "SD",
+   "n_polls": 1,
+   "poll_avg": -18.9,
+   "actual": -26.81
+  },
+  {
+   "race": "2022_Gov-G_TN",
+   "year": "2022",
+   "office": "governor",
+   "state": "TN",
+   "n_polls": 1,
+   "poll_avg": -24.0,
+   "actual": -31.99
+  },
+  {
+   "race": "2022_Gov-G_TX",
+   "year": "2022",
+   "office": "governor",
+   "state": "TX",
+   "n_polls": 6,
+   "poll_avg": -9.48,
+   "actual": -10.9
+  },
+  {
+   "race": "2022_Gov-G_VT",
+   "year": "2022",
+   "office": "governor",
+   "state": "VT",
+   "n_polls": 1,
+   "poll_avg": -41.0,
+   "actual": -47.24
+  },
+  {
+   "race": "2022_Gov-G_WI",
+   "year": "2022",
+   "office": "governor",
+   "state": "WI",
+   "n_polls": 11,
+   "poll_avg": -0.53,
+   "actual": 3.4
+  },
+  {
+   "race": "2022_Gov-G_WY",
+   "year": "2022",
+   "office": "governor",
+   "state": "WY",
+   "n_polls": 1,
+   "poll_avg": -52.3,
+   "actual": -61.91
+  },
+  {
+   "race": "2022_Sen-GR_GA",
+   "year": "2022",
+   "office": "senate",
+   "state": "GA",
+   "n_polls": 12,
+   "poll_avg": 2.79,
+   "actual": 2.81
+  },
+  {
+   "race": "2022_Sen-GS_CA",
+   "year": "2022",
+   "office": "senate",
+   "state": "CA",
+   "n_polls": 1,
+   "poll_avg": 16.0,
+   "actual": 21.79
+  },
+  {
+   "race": "2022_Sen-GS_OK",
+   "year": "2022",
+   "office": "senate",
+   "state": "OK",
+   "n_polls": 4,
+   "poll_avg": -13.27,
+   "actual": -26.53
+  },
+  {
+   "race": "2022_Sen-G_AL",
+   "year": "2022",
+   "office": "senate",
+   "state": "AL",
+   "n_polls": 1,
+   "poll_avg": -29.6,
+   "actual": -35.8
+  },
+  {
+   "race": "2022_Sen-G_AR",
+   "year": "2022",
+   "office": "senate",
+   "state": "AR",
+   "n_polls": 2,
+   "poll_avg": -24.22,
+   "actual": -34.64
+  },
+  {
+   "race": "2022_Sen-G_AZ",
+   "year": "2022",
+   "office": "senate",
+   "state": "AZ",
+   "n_polls": 23,
+   "poll_avg": 1.62,
+   "actual": 4.89
+  },
+  {
+   "race": "2022_Sen-G_CA",
+   "year": "2022",
+   "office": "senate",
+   "state": "CA",
+   "n_polls": 2,
+   "poll_avg": 21.23,
+   "actual": 22.13
+  },
+  {
+   "race": "2022_Sen-G_CO",
+   "year": "2022",
+   "office": "senate",
+   "state": "CO",
+   "n_polls": 5,
+   "poll_avg": 8.01,
+   "actual": 14.62
+  },
+  {
+   "race": "2022_Sen-G_CT",
+   "year": "2022",
+   "office": "senate",
+   "state": "CT",
+   "n_polls": 3,
+   "poll_avg": 17.72,
+   "actual": 14.92
+  },
+  {
+   "race": "2022_Sen-G_FL",
+   "year": "2022",
+   "office": "senate",
+   "state": "FL",
+   "n_polls": 11,
+   "poll_avg": -8.3,
+   "actual": -16.41
+  },
+  {
+   "race": "2022_Sen-G_GA",
+   "year": "2022",
+   "office": "senate",
+   "state": "GA",
+   "n_polls": 26,
+   "poll_avg": 0.12,
+   "actual": 0.96
+  },
+  {
+   "race": "2022_Sen-G_IA",
+   "year": "2022",
+   "office": "senate",
+   "state": "IA",
+   "n_polls": 3,
+   "poll_avg": -10.67,
+   "actual": -12.2
+  },
+  {
+   "race": "2022_Sen-G_IL",
+   "year": "2022",
+   "office": "senate",
+   "state": "IL",
+   "n_polls": 3,
+   "poll_avg": 14.91,
+   "actual": 15.32
+  },
+  {
+   "race": "2022_Sen-G_IN",
+   "year": "2022",
+   "office": "senate",
+   "state": "IN",
+   "n_polls": 1,
+   "poll_avg": -11.0,
+   "actual": -20.75
+  },
+  {
+   "race": "2022_Sen-G_KS",
+   "year": "2022",
+   "office": "senate",
+   "state": "KS",
+   "n_polls": 1,
+   "poll_avg": -21.6,
+   "actual": -22.96
+  },
+  {
+   "race": "2022_Sen-G_MO",
+   "year": "2022",
+   "office": "senate",
+   "state": "MO",
+   "n_polls": 5,
+   "poll_avg": -11.86,
+   "actual": -13.26
+  },
+  {
+   "race": "2022_Sen-G_NC",
+   "year": "2022",
+   "office": "senate",
+   "state": "NC",
+   "n_polls": 10,
+   "poll_avg": -4.34,
+   "actual": -3.23
+  },
+  {
+   "race": "2022_Sen-G_NH",
+   "year": "2022",
+   "office": "senate",
+   "state": "NH",
+   "n_polls": 13,
+   "poll_avg": 2.07,
+   "actual": 9.07
+  },
+  {
+   "race": "2022_Sen-G_NV",
+   "year": "2022",
+   "office": "senate",
+   "state": "NV",
+   "n_polls": 16,
+   "poll_avg": -2.15,
+   "actual": 0.79
+  },
+  {
+   "race": "2022_Sen-G_NY",
+   "year": "2022",
+   "office": "senate",
+   "state": "NY",
+   "n_polls": 8,
+   "poll_avg": 17.61,
+   "actual": 14.01
+  },
+  {
+   "race": "2022_Sen-G_OH",
+   "year": "2022",
+   "office": "senate",
+   "state": "OH",
+   "n_polls": 13,
+   "poll_avg": -5.68,
+   "actual": -6.11
+  },
+  {
+   "race": "2022_Sen-G_OK",
+   "year": "2022",
+   "office": "senate",
+   "state": "OK",
+   "n_polls": 4,
+   "poll_avg": -20.15,
+   "actual": -32.2
+  },
+  {
+   "race": "2022_Sen-G_OR",
+   "year": "2022",
+   "office": "senate",
+   "state": "OR",
+   "n_polls": 2,
+   "poll_avg": 15.26,
+   "actual": 14.93
+  },
+  {
+   "race": "2022_Sen-G_PA",
+   "year": "2022",
+   "office": "senate",
+   "state": "PA",
+   "n_polls": 24,
+   "poll_avg": 0.34,
+   "actual": 4.91
+  },
+  {
+   "race": "2022_Sen-G_SD",
+   "year": "2022",
+   "office": "senate",
+   "state": "SD",
+   "n_polls": 1,
+   "poll_avg": -31.0,
+   "actual": -43.48
+  },
+  {
+   "race": "2022_Sen-G_VT",
+   "year": "2022",
+   "office": "senate",
+   "state": "VT",
+   "n_polls": 1,
+   "poll_avg": 31.0,
+   "actual": 40.53
+  },
+  {
+   "race": "2022_Sen-G_WA",
+   "year": "2022",
+   "office": "senate",
+   "state": "WA",
+   "n_polls": 8,
+   "poll_avg": 2.93,
+   "actual": 14.55
+  },
+  {
+   "race": "2022_Sen-G_WI",
+   "year": "2022",
+   "office": "senate",
+   "state": "WI",
+   "n_polls": 12,
+   "poll_avg": -3.78,
+   "actual": -1.01
+  }
+ ]
+}

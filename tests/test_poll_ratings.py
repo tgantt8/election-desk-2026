@@ -81,7 +81,7 @@ def test_cook_house_from_local_words(monkeypatch):
     assert sum(t["parsed"] for t in p["column_tallies"]) == len(p["entries"]) == 17 + 1 + 4 + 12 + 5 + 12 + 2 + 15 + 2 + 11
     mi = {e["district"]: e for e in p["entries"] if e["state"] == "MI"}
     assert mi["MI-08"]["label"] == "Likely D" and mi["MI-04"]["label"] == "Toss-up" and mi["MI-04"]["label_raw"] == "Republican Toss Up"
-    assert mi["MI-07"]["label"] == "Toss-up" and mi["MI-10"]["label"] == "Lean R" and mi["MI-10"]["incumbent"] == "OPEN (James)"
+    assert mi["MI-07"]["label"] == "Toss-up" and mi["MI-10"]["label"] == "Toss-up" and mi["MI-10"]["label_raw"] == "Republican Toss Up" and mi["MI-10"]["incumbent"] == "OPEN (James)"
     recs, skipped = pr.cook_records(p, "house", "ratings_cook_house", pr.COOK_PAGE["house"], "snap", "now")
     assert len(recs) == 4 and skipped == len(p["entries"]) - 4  # Michigan only; the rest stay link-only
     assert {r["race"] for r in recs} == {"us-house-MI-04", "us-house-MI-07", "us-house-MI-08", "us-house-MI-10"}
