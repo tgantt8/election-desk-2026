@@ -14,5 +14,5 @@ jobs:
         run: python3 tools/hygiene_check.py --all
       - name: Unit tests
         run: |
-          pip install -q pytest
+          pip install -q -r requirements.txt
           pytest -q

@@ -44,7 +44,7 @@ nav.bottom button.active{color:var(--accent);font-weight:600}
 .chamber{margin:10px 0}
 .chamber .label{display:flex;justify-content:space-between;gap:8px;font-size:13px;margin-bottom:4px;flex-wrap:wrap}
 .chamber .label .mono{font-size:12px}
-.chamber .marks{position:relative;height:14px;font-size:10px;color:var(--muted)}
+.chamber .marks{position:relative;height:26px;font-size:10px;color:var(--muted)}
 .chamber .marks span{position:absolute;transform:translateX(-50%);white-space:nowrap}
 .bar{position:relative;height:22px;border-radius:6px;overflow:hidden;background:var(--none);display:flex}
 .bar .seg{height:100%}

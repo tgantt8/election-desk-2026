@@ -51,7 +51,7 @@ function chamberBar(title, total, called, sim, marks, note) {
     <span class="mono">D ${d}${i?` (+${i} I)`:""} · R ${r} · uncalled ${unc}${sd+sr?` · sim D ${sd} / R ${sr}`:""}</span></div>
     <div class="bar">${seg(d,"d")}${seg(i,"i")}${seg(sd,"dsim")}<div class="seg" style="flex:1"></div>${seg(sr,"rsim")}${seg(r,"r")}
     ${marks.map(m=>`<div class="mark" style="left:${(100*m.at/total).toFixed(2)}%"></div>`).join("")}</div>
-    <div class="marks">${marks.map(m=>`<span style="left:${(100*m.at/total).toFixed(2)}%">${m.label}</span>`).join("")}</div></div>`;
+    <div class="marks">${marks.map((m,i)=>`<span style="left:${(100*m.at/total).toFixed(2)}%;top:${i%2?12:0}px">${m.label}</span>`).join("")}</div></div>`;
 }
 function renderChambers() {
   const c = S.data.contests?.chambers; const el = $("chambers");
@@ -61,7 +61,7 @@ function renderChambers() {
   // Seats not up in 2026 carry over: show them as "called" for the party holding them (holdovers), labeled.
   const hold = c.senate.holdovers || {d:0,r:0,i:0};
   const sen = { d: hold.d + (res.senate?.d||0), r: hold.r + (res.senate?.r||0), i: hold.i + (res.senate?.i||0) };
-  el.innerHTML = chamberBar("Senate", 100, sen, sim?.senate, [{at:50,label:"50 (VP: "+c.senate.vp_tiebreak_party+")"},{at:51,label:"51"}],
+  el.innerHTML = chamberBar("Senate", 100, sen, sim?.senate, [{at:50,label:"50 · VP tiebreak "+c.senate.vp_tiebreak_party},{at:51,label:"51 = majority"}],
       `holdovers ${hold.d}D/${hold.r}R/${hold.i}I + 2026 calls; independents shown with caucus`)
     + chamberBar("House", 435, { d: res.house?.d||0, r: res.house?.r||0, i: res.house?.i||0 }, sim?.house, [{at:218,label:"218"}], "all 435 seats up");
   $("chambers-src").innerHTML = `Starting balance (pre-election): Senate ${c.senate.republican}R / ${c.senate.democrat}D / ${c.senate.independent}I (caucus D), ${c.senate.vacancies} vacant — ${c.senate.source.name}, retrieved ${fmt.t(c.senate.source.retrieved_at)}. House ${c.house.republican}R / ${c.house.democrat}D / ${c.house.independent}I, ${c.house.vacancies} vacant (${c.house.vacant_seats.map(v=>v.district).join(", ")}) — ${c.house.source.name}, retrieved ${fmt.t(c.house.source.retrieved_at)}. Calls: ${S.data.calls?.records?.length||0} recorded, each attributed to its outlet and time. UNOFFICIAL.`;
