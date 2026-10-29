@@ -93,7 +93,7 @@ function stateColor(abbr) {
 }
 async function ensureGeo() {
   if (S.geo) return S.geo;
-  const url = "https://cdn.jsdelivr.net/npm/us-atlas@3.0.1/states-10m.json";
+  const url = "vendor/us-atlas-3.0.1-states-10m.json"; // us-atlas 3.0.1 (vendored; no CDN dependency on election night)
   const topo = await (await fetch(url)).json();
   S.geo = topojson.feature(topo, topo.objects.states);
   return S.geo;
