@@ -1,9 +1,11 @@
 name: poll-scheduled
 # Pre-election cadence: every 30 minutes (GitHub cron runs late under load; that's fine before Nov 3).
 # Election night uses election-night.yml (a long-running loop), not this cron.
+# The cron line must be last edited by a commit GitHub can attribute to a repository user: scheduled runs execute as the
+# user who last modified the cron syntax, and a commit from an unlinked email leaves the schedule silent (Oct 29 2026).
 on:
   schedule:
-    - cron: "7,37 * * * *"
+    - cron: "9,39 * * * *"
   workflow_dispatch:
 concurrency:
   group: pollers
