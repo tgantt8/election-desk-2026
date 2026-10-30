@@ -1,6 +1,6 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-10-30T00:55:15Z",
+ "built_at": "2026-10-30T07:04:05Z",
  "disclaimer": "Scenarios layer: model estimates built from the polls and ratings layers. Not a call, not a result, never written to results or calls.",
  "n_sims": 10000,
  "seed": 20261103,
@@ -9078,13 +9078,13 @@
    },
    "California": {
     "Democratic": {
-     "value": 2167243,
+     "value": 2422907,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-10-29",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 1220499,
+     "value": 1350275,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-10-29",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
@@ -9092,15 +9092,15 @@
    },
    "Colorado": {
     "Democratic": {
-     "value": 388962,
+     "value": 418115,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-28",
+     "as_of": "2026-10-29",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 300147,
+     "value": 324963,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-28",
+     "as_of": "2026-10-29",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },

@@ -19,7 +19,7 @@
    "verified_at": "2026-10-29",
    "poller": "votehub_polls",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T00:54:48Z",
+   "last_success_at": "2026-10-30T07:03:39Z",
    "last_error": "",
    "active": true
   },
@@ -432,7 +432,7 @@
    "verification_evidence": "2026-10-29 18:21Z: 200 application/json; keys office,total,last_updated,generated_at,ratings[]; per-race date, rating, previous_rating. Runner 2026-10-29 18:30Z: 200.",
    "decision_needed": null,
    "notes": "Vocabulary: Solid/Likely/Lean/Tilt/Battleground D or R, Toss-up, Lean Independent; Tilt and Battleground map to ±1 with label_lossy=true.",
-   "last_success_at": "2026-10-30T00:54:50Z",
+   "last_success_at": "2026-10-30T07:03:40Z",
    "last_error": ""
   },
   {
@@ -451,7 +451,7 @@
    "verification_evidence": "2026-10-29 18:21Z: 200 application/json; keys office,total,last_updated,generated_at,ratings[]; per-race date, rating, previous_rating. Runner 2026-10-29 18:30Z: 200.",
    "decision_needed": null,
    "notes": "Vocabulary: Solid/Likely/Lean/Tilt/Battleground D or R, Toss-up, Lean Independent; Tilt and Battleground map to ±1 with label_lossy=true.",
-   "last_success_at": "2026-10-30T00:54:51Z",
+   "last_success_at": "2026-10-30T07:03:41Z",
    "last_error": ""
   },
   {
@@ -470,7 +470,7 @@
    "verification_evidence": "2026-10-29 18:21Z: 200 application/json; keys office,total,last_updated,generated_at,ratings[]; per-race date, rating, previous_rating. Runner 2026-10-29 18:30Z: 200.",
    "decision_needed": "House labels stored for Michigan only (same scope as Cook); widen if Tabu rules so.",
    "notes": "Vocabulary: Solid/Likely/Lean/Tilt/Battleground D or R, Toss-up, Lean Independent; Tilt and Battleground map to ±1 with label_lossy=true.",
-   "last_success_at": "2026-10-30T00:54:52Z",
+   "last_success_at": "2026-10-30T07:03:42Z",
    "last_error": ""
   },
   {
@@ -701,7 +701,7 @@
    "verified_at": "2026-10-29",
    "poller": "ev_nc_s3",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T00:54:53Z",
+   "last_success_at": "2026-10-30T07:03:44Z",
    "last_error": "",
    "active": true,
    "fetch_url": "https://s3.amazonaws.com/dl.ncsbe.gov/ENRS/2026_11_03/absentee_counts_state_20261103.csv",
@@ -745,7 +745,7 @@
    "verified_at": "2026-10-29",
    "poller": "ev_fl_publicstats",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T00:54:55Z",
+   "last_success_at": "2026-10-30T07:03:45Z",
    "last_error": "",
    "active": true,
    "fetch_url": "https://electionfiles.floridados.gov/countyballotreportfiles/Stats_49894_{VbmProvided,VbmVoted,EarlyVoted}.txt",
@@ -834,7 +834,7 @@
    "verified_at": "2026-10-29",
    "poller": "ev_uf_csv",
    "decision_needed": "Confirmed display-only per decision 2 (2026-10-29). Written permission from the lab still needed before any normalization.",
-   "last_success_at": "2026-10-30T00:54:56Z",
+   "last_success_at": "2026-10-30T07:03:46Z",
    "last_error": "",
    "active": true,
    "fetch_url": "https://election.lab.ufl.edu/data-downloads/earlyvote/2026/US.csv",
@@ -1879,7 +1879,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T00:54:57Z",
+   "last_success_at": "2026-10-30T07:03:48Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -2200,7 +2200,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T00:54:58Z",
+   "last_success_at": "2026-10-30T07:03:49Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -2248,7 +2248,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T00:55:00Z",
+   "last_success_at": "2026-10-30T07:03:50Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -2340,7 +2340,7 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": "2026-10-30T00:55:01Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_error": "2026-10-30T07:03:51Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
    "active": true
   },
   {
@@ -2360,7 +2360,7 @@
    "verified_at": "2026-10-29",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T00:55:02Z",
+   "last_success_at": "2026-10-30T07:03:52Z",
    "last_error": "",
    "active": true
   },
@@ -2423,7 +2423,7 @@
    "verified_at": "2026-10-29",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T00:55:03Z",
+   "last_success_at": "2026-10-30T07:03:54Z",
    "last_error": "",
    "active": true
   },
