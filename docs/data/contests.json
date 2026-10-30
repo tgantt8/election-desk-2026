@@ -75,7 +75,7 @@
     "note": "expected 2026 wins, polls-as-is preset"
    },
    "house": null,
-   "built_at": "2026-10-30T14:05:03Z"
+   "built_at": "2026-10-30T19:20:40Z"
   }
  },
  "senate_2026": [
@@ -522,10 +522,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.992,
+   "sim_p_dem": 0.993,
    "sim_basis": "polls+rating",
-   "poll_margin": 16.2,
-   "poll_n": 2
+   "poll_margin": 13.4,
+   "poll_n": 3
   },
   {
    "id": "us-senate-IA",
@@ -636,10 +636,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.597,
+   "sim_p_dem": 0.73,
    "sim_basis": "polls+rating",
-   "poll_margin": 2.0,
-   "poll_n": 4
+   "poll_margin": 3.8,
+   "poll_n": 6
   },
   {
    "id": "us-senate-KY",
@@ -917,7 +917,7 @@
    "sim_p_dem": 0.831,
    "sim_basis": "polls+rating",
    "poll_margin": 4.5,
-   "poll_n": 21
+   "poll_n": 22
   },
   {
    "id": "us-senate-MN",
@@ -1096,8 +1096,8 @@
    },
    "sim_p_dem": 0.0,
    "sim_basis": "polls+rating",
-   "poll_margin": -21.5,
-   "poll_n": 4
+   "poll_margin": -16.8,
+   "poll_n": 5
   },
   {
    "id": "us-senate-NE",
@@ -1806,10 +1806,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.715,
+   "sim_p_dem": 0.695,
    "sim_basis": "polls+rating",
-   "poll_margin": 2.7,
-   "poll_n": 25
+   "poll_margin": 2.4,
+   "poll_n": 27
   },
   {
    "id": "us-senate-VA",
@@ -2240,10 +2240,10 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.838,
+   "sim_p_dem": 0.856,
    "sim_basis": "polls+rating",
    "poll_margin": 5.9,
-   "poll_n": 4
+   "poll_n": 5
   },
   {
    "id": "gov-AR",
@@ -2344,8 +2344,8 @@
    },
    "sim_p_dem": 1.0,
    "sim_basis": "polls+rating",
-   "poll_margin": 23.3,
-   "poll_n": 6
+   "poll_margin": 24.4,
+   "poll_n": 7
   },
   {
    "id": "gov-CO",
@@ -2986,10 +2986,10 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.97,
+   "sim_p_dem": 0.963,
    "sim_basis": "polls+rating",
-   "poll_margin": 8.7,
-   "poll_n": 14
+   "poll_margin": 8.2,
+   "poll_n": 15
   },
   {
    "id": "gov-MN",
@@ -3643,9 +3643,10 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.013,
-   "sim_basis": "rating",
-   "poll_margin": null
+   "sim_p_dem": 0.01,
+   "sim_basis": "polls+rating",
+   "poll_margin": -15.7,
+   "poll_n": 2
   },
   {
    "id": "gov-TN",
@@ -3810,10 +3811,10 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.257,
+   "sim_p_dem": 0.23,
    "sim_basis": "polls+rating",
-   "poll_margin": -2.6,
-   "poll_n": 22
+   "poll_margin": -3.0,
+   "poll_n": 24
   },
   {
    "id": "gov-VT",
@@ -4830,6 +4831,6 @@
    "note": "expected 2026 wins, polls-as-is preset"
   },
   "house": null,
-  "built_at": "2026-10-30T14:05:03Z"
+  "built_at": "2026-10-30T19:20:40Z"
  }
 }

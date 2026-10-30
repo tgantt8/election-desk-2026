@@ -1,8 +1,8 @@
 {
- "built_at": "2026-10-30T14:05:04Z",
- "latest_snapshot_at": "2026-10-30T14:04:48Z",
+ "built_at": "2026-10-30T19:20:40Z",
+ "latest_snapshot_at": "2026-10-30T19:20:21Z",
  "expected_cadence_min": 60,
- "snapshot_count": 41,
+ "snapshot_count": 47,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -13,7 +13,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "votehub_polls",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T14:04:39Z",
+   "last_success_at": "2026-10-30T19:18:11Z",
    "last_error": "",
    "health": "green"
   },
@@ -208,7 +208,7 @@
    "status": "VERIFIED",
    "poller": "ie_ratings",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T14:04:41Z",
+   "last_success_at": "2026-10-30T19:18:12Z",
    "last_error": "",
    "health": "green"
   },
@@ -221,7 +221,7 @@
    "status": "VERIFIED",
    "poller": "ie_ratings",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T14:04:42Z",
+   "last_success_at": "2026-10-30T19:18:13Z",
    "last_error": "",
    "health": "green"
   },
@@ -234,7 +234,7 @@
    "status": "VERIFIED",
    "poller": "ie_ratings",
    "decision_needed": "House labels stored for Michigan only (same scope as Cook); widen if Tabu rules so.",
-   "last_success_at": "2026-10-30T14:04:43Z",
+   "last_success_at": "2026-10-30T19:18:15Z",
    "last_error": "",
    "health": "green"
   },
@@ -364,7 +364,7 @@
    "status": "VERIFIED",
    "poller": "ev_nc_s3",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T14:04:45Z",
+   "last_success_at": "2026-10-30T19:18:16Z",
    "last_error": "",
    "health": "green"
   },
@@ -377,7 +377,7 @@
    "status": "VERIFIED",
    "poller": "ev_fl_publicstats",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T14:04:46Z",
+   "last_success_at": "2026-10-30T19:18:17Z",
    "last_error": "",
    "health": "green"
   },
@@ -429,7 +429,7 @@
    "status": "VERIFIED",
    "poller": "ev_uf_csv",
    "decision_needed": "Confirmed display-only per decision 2 (2026-10-29). Written permission from the lab still needed before any normalization.",
-   "last_success_at": "2026-10-30T14:04:48Z",
+   "last_success_at": "2026-10-30T19:18:19Z",
    "last_error": "",
    "health": "green"
   },
@@ -832,9 +832,9 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": null,
+   "last_success_at": "2026-10-30T19:20:21Z",
    "last_error": "",
-   "health": "gray"
+   "health": "green"
   },
   {
    "id": "enr_il_sos",
@@ -975,7 +975,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T14:04:49Z",
+   "last_success_at": "2026-10-30T19:20:22Z",
    "last_error": "",
    "health": "green"
   },
@@ -1170,7 +1170,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T14:04:51Z",
+   "last_success_at": "2026-10-30T19:20:23Z",
    "last_error": "",
    "health": "green"
   },
@@ -1196,7 +1196,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T14:04:52Z",
+   "last_success_at": "2026-10-30T19:20:25Z",
    "last_error": "",
    "health": "green"
   },
@@ -1249,7 +1249,7 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": "2026-10-30T14:04:53Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_error": "2026-10-30T19:20:26Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
    "health": "gray"
   },
   {
@@ -1261,7 +1261,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T14:04:55Z",
+   "last_success_at": "2026-10-30T19:20:27Z",
    "last_error": "",
    "health": "green"
   },
@@ -1300,7 +1300,7 @@
    "status": "VERIFIED",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T14:04:56Z",
+   "last_success_at": "2026-10-30T19:20:28Z",
    "last_error": "",
    "health": "green"
   },
