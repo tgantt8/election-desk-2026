@@ -1,6 +1,6 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-10-30T19:20:40Z",
+ "built_at": "2026-10-30T23:13:16Z",
  "disclaimer": "Scenarios layer: model estimates built from the polls and ratings layers. Not a call, not a result, never written to results or calls.",
  "n_sims": 10000,
  "seed": 20261103,
@@ -9119,27 +9119,27 @@
    },
    "Delaware": {
     "Democratic": {
-     "value": 62432,
-     "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-29",
-     "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
-    },
-    "Republican": {
-     "value": 32264,
-     "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-29",
-     "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
-    }
-   },
-   "Florida": {
-    "Democratic": {
-     "value": 1691809,
+     "value": 68227,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 1780964,
+     "value": 35628,
+     "metric": "Total early votes (mail returned + in person)",
+     "as_of": "2026-10-30",
+     "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
+    }
+   },
+   "Florida": {
+    "Democratic": {
+     "value": 1784052,
+     "metric": "Total early votes (mail returned + in person)",
+     "as_of": "2026-10-30",
+     "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
+    },
+    "Republican": {
+     "value": 1902063,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
@@ -9259,13 +9259,13 @@
    },
    "Nevada": {
     "Democratic": {
-     "value": 251159,
+     "value": 263156,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 213750,
+     "value": 227239,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
@@ -9301,13 +9301,13 @@
    },
    "Oklahoma": {
     "Democratic": {
-     "value": 37130,
+     "value": 55893,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 41283,
+     "value": 65328,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
@@ -9343,15 +9343,15 @@
    },
    "Rhode Island": {
     "Democratic": {
-     "value": 44579,
+     "value": 50595,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-29",
+     "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 9776,
+     "value": 11304,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-29",
+     "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
