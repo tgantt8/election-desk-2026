@@ -95,3 +95,11 @@
 {"at": "2026-10-31T02:42:54Z", "display_only": true, "event": "early_vote_pull", "records": 437, "snapshot": "ev_ufl_election_lab:2026-10-31T02:42:54Z:a52f2586f094", "source_id": "ev_ufl_election_lab"}
 {"at": "2026-10-31T02:42:55Z", "candidates": [], "event": "ev_discover_pending", "source_id": "enr_ga_ev"}
 {"at": "2026-10-31T02:43:00Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-10-31T09:32:44Z", "changes": 0, "entries": 35, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_senate:2026-10-31T09:32:44Z:e3c797af9587", "source_id": "ratings_ie_senate", "stored": 0}
+{"at": "2026-10-31T09:32:45Z", "changes": 0, "entries": 36, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_governor:2026-10-31T09:32:45Z:f6267a0bcfa4", "source_id": "ratings_ie_governor", "stored": 0}
+{"at": "2026-10-31T09:32:46Z", "changes": 0, "entries": 435, "event": "ratings_pull", "link_only_skipped": 422, "page_date": "2026-10-29", "snapshot": "ratings_ie_house:2026-10-31T09:32:46Z:becaa50e99fc", "source_id": "ratings_ie_house", "stored": 0}
+{"at": "2026-10-31T09:32:48Z", "csv_total": 2612249, "event": "early_vote_tie_out_mismatch", "note": "CSV and daily PDF disagree; CSV shown, PDF comparison withheld", "pdf_total": 2353233, "source_id": "ev_nc_absentee_counts_csv"}
+{"at": "2026-10-31T09:32:48Z", "event": "early_vote_pull", "records": 18, "snapshot": "ev_nc_absentee_counts_csv:2026-10-31T09:32:48Z:c6a9760e2694", "source_id": "ev_nc_absentee_counts_csv", "total": 2612249}
+{"at": "2026-10-31T09:32:49Z", "event": "early_vote_pull", "records": 1020, "snapshot": "ev_fl_publicstats:2026-10-31T09:32:49Z:7047f47352ce", "source_id": "ev_fl_publicstats"}
+{"at": "2026-10-31T09:32:52Z", "candidates": [], "event": "ev_discover_pending", "source_id": "enr_ga_ev"}
+{"at": "2026-10-31T09:32:57Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
