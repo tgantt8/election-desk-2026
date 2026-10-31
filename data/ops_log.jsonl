@@ -117,3 +117,10 @@
 {"at": "2026-10-31T19:32:49Z", "display_only": true, "event": "early_vote_pull", "records": 437, "snapshot": "ev_ufl_election_lab:2026-10-31T19:32:49Z:1ee4cd1a37e2", "source_id": "ev_ufl_election_lab"}
 {"at": "2026-10-31T19:32:50Z", "candidates": [], "event": "ev_discover_pending", "source_id": "enr_ga_ev"}
 {"at": "2026-10-31T19:32:55Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-10-31T22:49:04Z", "changes": 0, "entries": 35, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_senate:2026-10-31T22:49:04Z:e3c797af9587", "source_id": "ratings_ie_senate", "stored": 0}
+{"at": "2026-10-31T22:49:05Z", "changes": 0, "entries": 36, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_governor:2026-10-31T22:49:05Z:f6267a0bcfa4", "source_id": "ratings_ie_governor", "stored": 0}
+{"at": "2026-10-31T22:49:07Z", "changes": 0, "entries": 435, "event": "ratings_pull", "link_only_skipped": 422, "page_date": "2026-10-29", "snapshot": "ratings_ie_house:2026-10-31T22:49:07Z:becaa50e99fc", "source_id": "ratings_ie_house", "stored": 0}
+{"at": "2026-10-31T22:49:11Z", "event": "early_vote_pull", "records": 1020, "snapshot": "ev_fl_publicstats:2026-10-31T22:49:11Z:31bb16f96656", "source_id": "ev_fl_publicstats"}
+{"at": "2026-10-31T22:49:12Z", "display_only": true, "event": "early_vote_pull", "records": 437, "snapshot": "ev_ufl_election_lab:2026-10-31T22:49:12Z:dbe85f979224", "source_id": "ev_ufl_election_lab"}
+{"at": "2026-10-31T22:49:14Z", "candidates": [], "event": "ev_discover_pending", "source_id": "enr_ga_ev"}
+{"at": "2026-10-31T22:49:19Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
