@@ -1,6 +1,6 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-10-30T23:13:16Z",
+ "built_at": "2026-10-31T02:43:12Z",
  "disclaimer": "Scenarios layer: model estimates built from the polls and ratings layers. Not a call, not a result, never written to results or calls.",
  "n_sims": 10000,
  "seed": 20261103,
@@ -635,11 +635,11 @@
    "state": "NC",
    "region": "South",
    "holder_party": "R",
-   "mu": 10.71,
+   "mu": 10.69,
    "s_race": 3.2,
    "basis": "polls+rating",
    "poll_margin": 11.1,
-   "n_polls": 14,
+   "n_polls": 13,
    "rating_label": "Likely D",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-20",
@@ -1671,11 +1671,11 @@
    "state": "OH",
    "region": "Midwest",
    "holder_party": "R",
-   "mu": 3.04,
+   "mu": 3.05,
    "s_race": 3.2,
    "basis": "polls+rating",
    "poll_margin": 2.9,
-   "n_polls": 14,
+   "n_polls": 13,
    "rating_label": "Lean D",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -2322,7 +2322,7 @@
   }
  ],
  "excluded": [],
- "inputs_hash": "5b590ac5dd96",
+ "inputs_hash": "9ce8e85fcdc6",
  "house_baselines": {
   "districts_with_2024_on_2026_lines_baseline": 0,
   "districts_with_public_rating": 13,
@@ -2667,14 +2667,14 @@
      "office": "senate",
      "state": "NC",
      "p_dem": 0.993,
-     "margin_mean": 10.7,
+     "margin_mean": 10.6,
      "margin_p10_p50_p90": [
       5.2,
       10.7,
       16.1
      ],
      "basis": "polls+rating",
-     "mu": 10.71,
+     "mu": 10.69,
      "s_race": 3.2
     },
     {
@@ -3221,15 +3221,15 @@
      "race": "gov-OH",
      "office": "governor",
      "state": "OH",
-     "p_dem": 0.756,
+     "p_dem": 0.757,
      "margin_mean": 3.0,
      "margin_p10_p50_p90": [
       -2.6,
-      3.0,
+      3.1,
       8.6
      ],
      "basis": "polls+rating",
-     "mu": 3.04,
+     "mu": 3.05,
      "s_race": 3.2
     },
     {
@@ -4006,14 +4006,14 @@
      "office": "senate",
      "state": "NC",
      "p_dem": 0.999,
-     "margin_mean": 13.7,
+     "margin_mean": 13.6,
      "margin_p10_p50_p90": [
       8.2,
       13.7,
       19.1
      ],
      "basis": "polls+rating",
-     "mu": 10.71,
+     "mu": 10.69,
      "s_race": 3.2
     },
     {
@@ -4560,15 +4560,15 @@
      "race": "gov-OH",
      "office": "governor",
      "state": "OH",
-     "p_dem": 0.918,
+     "p_dem": 0.919,
      "margin_mean": 6.0,
      "margin_p10_p50_p90": [
       0.4,
-      6.0,
+      6.1,
       11.6
      ],
      "basis": "polls+rating",
-     "mu": 3.04,
+     "mu": 3.05,
      "s_race": 3.2
     },
     {
@@ -5343,14 +5343,14 @@
      "office": "senate",
      "state": "NC",
      "p_dem": 0.961,
-     "margin_mean": 7.7,
+     "margin_mean": 7.6,
      "margin_p10_p50_p90": [
       2.2,
       7.7,
       13.1
      ],
      "basis": "polls+rating",
-     "mu": 10.71,
+     "mu": 10.69,
      "s_race": 3.2
     },
     {
@@ -5897,15 +5897,15 @@
      "race": "gov-OH",
      "office": "governor",
      "state": "OH",
-     "p_dem": 0.505,
+     "p_dem": 0.507,
      "margin_mean": 0.0,
      "margin_p10_p50_p90": [
       -5.6,
-      0.0,
+      0.1,
       5.6
      ],
      "basis": "polls+rating",
-     "mu": 3.04,
+     "mu": 3.05,
      "s_race": 3.2
     },
     {
@@ -6278,7 +6278,7 @@
     "seats_up": 35,
     "p_dem_control_51": 0.309,
     "p_dem_50_tie_vp_r": 0.129,
-    "expected_dem_caucus": 49.01,
+    "expected_dem_caucus": 49.0,
     "dem_caucus_p10_p50_p90": [
      45,
      49,
@@ -6292,8 +6292,8 @@
      "43": 0.0161,
      "44": 0.0306,
      "45": 0.0544,
-     "46": 0.0896,
-     "47": 0.1086,
+     "46": 0.0898,
+     "47": 0.1084,
      "48": 0.1275,
      "49": 0.1265,
      "50": 0.1285,
@@ -6307,7 +6307,7 @@
      "58": 0.0005,
      "59": 0.0001
     },
-    "expected_dem_wins_of_seats_up": 15.01,
+    "expected_dem_wins_of_seats_up": 15.0,
     "tipping_point": [
      {
       "race": "us-senate-TX",
@@ -6690,7 +6690,7 @@
       16.0
      ],
      "basis": "polls+rating",
-     "mu": 10.71,
+     "mu": 10.69,
      "s_race": 3.2
     },
     {
@@ -7242,10 +7242,10 @@
      "margin_p10_p50_p90": [
       -2.7,
       2.9,
-      8.4
+      8.5
      ],
      "basis": "polls+rating",
-     "mu": 3.04,
+     "mu": 3.05,
      "s_race": 3.2
     },
     {
@@ -7633,9 +7633,9 @@
      "46": 0.0214,
      "47": 0.0346,
      "48": 0.0601,
-     "49": 0.0816,
+     "49": 0.0817,
      "50": 0.1122,
-     "51": 0.1351,
+     "51": 0.135,
      "52": 0.1429,
      "53": 0.1436,
      "54": 0.1207,
@@ -8024,12 +8024,12 @@
      "p_dem": 0.985,
      "margin_mean": 9.3,
      "margin_p10_p50_p90": [
-      3.9,
-      9.4,
+      3.8,
+      9.3,
       14.8
      ],
      "basis": "polls+rating",
-     "mu": 10.71,
+     "mu": 10.69,
      "s_race": 3.2
     },
     {
@@ -8576,7 +8576,7 @@
      "race": "gov-OH",
      "office": "governor",
      "state": "OH",
-     "p_dem": 0.651,
+     "p_dem": 0.652,
      "margin_mean": 1.7,
      "margin_p10_p50_p90": [
       -3.9,
@@ -8584,7 +8584,7 @@
       7.3
      ],
      "basis": "polls+rating",
-     "mu": 3.04,
+     "mu": 3.05,
      "s_race": 3.2
     },
     {
@@ -8968,12 +8968,12 @@
      "41": 0.0007,
      "42": 0.0011,
      "43": 0.0041,
-     "44": 0.0105,
-     "45": 0.0236,
+     "44": 0.0106,
+     "45": 0.0235,
      "46": 0.0421,
      "47": 0.0659,
-     "48": 0.0865,
-     "49": 0.1137,
+     "48": 0.0866,
+     "49": 0.1136,
      "50": 0.1324,
      "51": 0.1325,
      "52": 0.1266,
@@ -9049,13 +9049,13 @@
    },
    "Arizona": {
     "Democratic": {
-     "value": 575936,
+     "value": 576284,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 585570,
+     "value": 586084,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
@@ -9091,15 +9091,15 @@
    },
    "Colorado": {
     "Democratic": {
-     "value": 418115,
+     "value": 451903,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-29",
+     "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 324963,
+     "value": 354921,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-29",
+     "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9133,13 +9133,13 @@
    },
    "Florida": {
     "Democratic": {
-     "value": 1784052,
+     "value": 1798089,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 1902063,
+     "value": 1915269,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
@@ -9357,15 +9357,15 @@
    },
    "South Dakota": {
     "Democratic": {
-     "value": 19847,
+     "value": 21784,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-29",
+     "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 35557,
+     "value": 39262,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-29",
+     "as_of": "2026-10-30",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },

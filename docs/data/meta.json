@@ -1,8 +1,8 @@
 {
- "built_at": "2026-10-30T23:13:16Z",
- "latest_snapshot_at": "2026-10-30T23:12:59Z",
+ "built_at": "2026-10-31T02:43:12Z",
+ "latest_snapshot_at": "2026-10-31T02:42:54Z",
  "expected_cadence_min": 60,
- "snapshot_count": 52,
+ "snapshot_count": 57,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -13,7 +13,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "votehub_polls",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T23:12:48Z",
+   "last_success_at": "2026-10-31T02:42:45Z",
    "last_error": "",
    "health": "green"
   },
@@ -208,7 +208,7 @@
    "status": "VERIFIED",
    "poller": "ie_ratings",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T23:12:49Z",
+   "last_success_at": "2026-10-31T02:42:46Z",
    "last_error": "",
    "health": "green"
   },
@@ -221,7 +221,7 @@
    "status": "VERIFIED",
    "poller": "ie_ratings",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T23:12:50Z",
+   "last_success_at": "2026-10-31T02:42:48Z",
    "last_error": "",
    "health": "green"
   },
@@ -234,7 +234,7 @@
    "status": "VERIFIED",
    "poller": "ie_ratings",
    "decision_needed": "House labels stored for Michigan only (same scope as Cook); widen if Tabu rules so.",
-   "last_success_at": "2026-10-30T23:12:51Z",
+   "last_success_at": "2026-10-31T02:42:49Z",
    "last_error": "",
    "health": "green"
   },
@@ -364,7 +364,7 @@
    "status": "VERIFIED",
    "poller": "ev_nc_s3",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T23:12:53Z",
+   "last_success_at": "2026-10-31T02:42:51Z",
    "last_error": "",
    "health": "green"
   },
@@ -377,7 +377,7 @@
    "status": "VERIFIED",
    "poller": "ev_fl_publicstats",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T23:12:54Z",
+   "last_success_at": "2026-10-31T02:42:52Z",
    "last_error": "",
    "health": "green"
   },
@@ -429,7 +429,7 @@
    "status": "VERIFIED",
    "poller": "ev_uf_csv",
    "decision_needed": "Confirmed display-only per decision 2 (2026-10-29). Written permission from the lab still needed before any normalization.",
-   "last_success_at": "2026-10-30T23:12:55Z",
+   "last_success_at": "2026-10-31T02:42:54Z",
    "last_error": "",
    "health": "green"
   },
@@ -832,7 +832,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T23:12:56Z",
+   "last_success_at": "2026-10-31T02:42:55Z",
    "last_error": "",
    "health": "green"
   },
@@ -975,7 +975,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T23:12:59Z",
+   "last_success_at": "2026-10-31T02:42:57Z",
    "last_error": "",
    "health": "green"
   },
@@ -1170,7 +1170,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T23:13:00Z",
+   "last_success_at": "2026-10-31T02:42:58Z",
    "last_error": "",
    "health": "green"
   },
@@ -1196,7 +1196,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T23:13:01Z",
+   "last_success_at": "2026-10-31T02:42:59Z",
    "last_error": "",
    "health": "green"
   },
@@ -1249,7 +1249,7 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": "2026-10-30T23:13:02Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_error": "2026-10-31T02:43:00Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
    "health": "gray"
   },
   {
@@ -1261,7 +1261,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T23:13:03Z",
+   "last_success_at": "2026-10-31T02:43:01Z",
    "last_error": "",
    "health": "green"
   },
@@ -1300,7 +1300,7 @@
    "status": "VERIFIED",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-10-30T23:13:05Z",
+   "last_success_at": "2026-10-31T02:43:02Z",
    "last_error": "",
    "health": "green"
   },
