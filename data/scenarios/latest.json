@@ -1,6 +1,6 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-11-01T16:49:12Z",
+ "built_at": "2026-11-01T21:10:53Z",
  "disclaimer": "Scenarios layer: model estimates built from the polls and ratings layers. Not a call, not a result, never written to results or calls.",
  "n_sims": 10000,
  "seed": 20261103,
@@ -411,11 +411,11 @@
    "state": "MI",
    "region": "Midwest",
    "holder_party": "D",
-   "mu": 4.12,
+   "mu": 4.05,
    "s_race": 3.2,
    "basis": "polls+rating",
-   "poll_margin": 4.5,
-   "n_polls": 22,
+   "poll_margin": 4.4,
+   "n_polls": 23,
    "rating_label": "Toss-up",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-20",
@@ -1391,11 +1391,11 @@
    "state": "ME",
    "region": "Northeast",
    "holder_party": "D",
-   "mu": 10.03,
+   "mu": 9.71,
    "s_race": 3.2,
    "basis": "polls+rating",
-   "poll_margin": 9.2,
-   "n_polls": 12,
+   "poll_margin": 8.9,
+   "n_polls": 13,
    "rating_label": "Solid D",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -1475,11 +1475,11 @@
    "state": "MI",
    "region": "Midwest",
    "holder_party": "D",
-   "mu": 7.71,
+   "mu": 7.38,
    "s_race": 3.2,
    "basis": "polls+rating",
-   "poll_margin": 8.2,
-   "n_polls": 15,
+   "poll_margin": 7.8,
+   "n_polls": 16,
    "rating_label": "Lean D",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -1531,11 +1531,11 @@
    "state": "NE",
    "region": "Midwest",
    "holder_party": "R",
-   "mu": -5.14,
-   "s_race": 4.86,
+   "mu": -4.27,
+   "s_race": 4.27,
    "basis": "polls+rating",
-   "poll_margin": -5.9,
-   "n_polls": 3,
+   "poll_margin": -4.4,
+   "n_polls": 4,
    "rating_label": "Lean R",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -1671,11 +1671,11 @@
    "state": "OH",
    "region": "Midwest",
    "holder_party": "R",
-   "mu": 3.05,
+   "mu": 3.65,
    "s_race": 3.2,
    "basis": "polls+rating",
-   "poll_margin": 2.9,
-   "n_polls": 13,
+   "poll_margin": 3.6,
+   "n_polls": 14,
    "rating_label": "Lean D",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -1895,11 +1895,11 @@
    "state": "TX",
    "region": "South",
    "holder_party": "R",
-   "mu": -3.08,
+   "mu": -2.89,
    "s_race": 3.2,
    "basis": "polls+rating",
-   "poll_margin": -3.0,
-   "n_polls": 23,
+   "poll_margin": -2.8,
+   "n_polls": 24,
    "rating_label": "Lean R",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -2322,7 +2322,7 @@
   }
  ],
  "excluded": [],
- "inputs_hash": "772c39693fdb",
+ "inputs_hash": "fbf8d487ef1d",
  "house_baselines": {
   "districts_with_2024_on_2026_lines_baseline": 0,
   "districts_with_public_rating": 13,
@@ -2546,15 +2546,15 @@
      "race": "us-senate-MI",
      "office": "senate",
      "state": "MI",
-     "p_dem": 0.831,
+     "p_dem": 0.827,
      "margin_mean": 4.1,
      "margin_p10_p50_p90": [
-      -1.5,
-      4.2,
-      9.7
+      -1.6,
+      4.1,
+      9.6
      ],
      "basis": "polls+rating",
-     "mu": 4.12,
+     "mu": 4.05,
      "s_race": 3.2
     },
     {
@@ -3071,15 +3071,15 @@
      "race": "gov-ME",
      "office": "governor",
      "state": "ME",
-     "p_dem": 0.99,
-     "margin_mean": 10.0,
+     "p_dem": 0.987,
+     "margin_mean": 9.6,
      "margin_p10_p50_p90": [
-      4.4,
-      9.9,
-      15.6
+      4.1,
+      9.6,
+      15.2
      ],
      "basis": "polls+rating",
-     "mu": 10.03,
+     "mu": 9.71,
      "s_race": 3.2
     },
     {
@@ -3116,15 +3116,15 @@
      "race": "gov-MI",
      "office": "governor",
      "state": "MI",
-     "p_dem": 0.963,
-     "margin_mean": 7.7,
+     "p_dem": 0.958,
+     "margin_mean": 7.4,
      "margin_p10_p50_p90": [
-      2.2,
-      7.7,
-      13.2
+      1.9,
+      7.4,
+      12.9
      ],
      "basis": "polls+rating",
-     "mu": 7.71,
+     "mu": 7.38,
      "s_race": 3.2
     },
     {
@@ -3146,16 +3146,16 @@
      "race": "gov-NE",
      "office": "governor",
      "state": "NE",
-     "p_dem": 0.185,
-     "margin_mean": -5.1,
+     "p_dem": 0.207,
+     "margin_mean": -4.3,
      "margin_p10_p50_p90": [
-      -12.5,
-      -5.1,
-      2.1
+      -11.0,
+      -4.2,
+      2.3
      ],
      "basis": "polls+rating",
-     "mu": -5.14,
-     "s_race": 4.86
+     "mu": -4.27,
+     "s_race": 4.27
     },
     {
      "race": "gov-NV",
@@ -3221,15 +3221,15 @@
      "race": "gov-OH",
      "office": "governor",
      "state": "OH",
-     "p_dem": 0.757,
-     "margin_mean": 3.0,
+     "p_dem": 0.797,
+     "margin_mean": 3.6,
      "margin_p10_p50_p90": [
-      -2.6,
-      3.1,
-      8.6
+      -2.0,
+      3.7,
+      9.2
      ],
      "basis": "polls+rating",
-     "mu": 3.05,
+     "mu": 3.65,
      "s_race": 3.2
     },
     {
@@ -3341,15 +3341,15 @@
      "race": "gov-TX",
      "office": "governor",
      "state": "TX",
-     "p_dem": 0.23,
-     "margin_mean": -3.2,
+     "p_dem": 0.245,
+     "margin_mean": -3.0,
      "margin_p10_p50_p90": [
-      -8.7,
-      -3.2,
-      2.4
+      -8.6,
+      -3.0,
+      2.6
      ],
      "basis": "polls+rating",
-     "mu": -3.08,
+     "mu": -2.89,
      "s_race": 3.2
     },
     {
@@ -3612,20 +3612,20 @@
      "41": 0.0002,
      "42": 0.0004,
      "43": 0.0008,
-     "44": 0.0043,
-     "45": 0.0093,
-     "46": 0.0188,
-     "47": 0.0318,
+     "44": 0.0044,
+     "45": 0.0092,
+     "46": 0.0189,
+     "47": 0.032,
      "48": 0.0561,
-     "49": 0.0769,
-     "50": 0.1101,
+     "49": 0.0773,
+     "50": 0.11,
      "51": 0.1294,
-     "52": 0.1436,
-     "53": 0.1488,
-     "54": 0.1265,
-     "55": 0.0854,
-     "56": 0.0401,
-     "57": 0.0125,
+     "52": 0.1437,
+     "53": 0.1489,
+     "54": 0.1261,
+     "55": 0.085,
+     "56": 0.0402,
+     "57": 0.0124,
      "58": 0.0041,
      "59": 0.0007,
      "60": 0.0002
@@ -3642,7 +3642,7 @@
      },
      {
       "race": "us-senate-IA",
-      "share": 0.109
+      "share": 0.11
      },
      {
       "race": "us-senate-KS",
@@ -3656,7 +3656,7 @@
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 20.83,
+    "expected_dem_wins": 20.9,
     "dem_wins_p10_p50_p90": [
      17,
      21,
@@ -3885,15 +3885,15 @@
      "race": "us-senate-MI",
      "office": "senate",
      "state": "MI",
-     "p_dem": 0.95,
+     "p_dem": 0.948,
      "margin_mean": 7.1,
      "margin_p10_p50_p90": [
-      1.5,
-      7.2,
-      12.7
+      1.4,
+      7.1,
+      12.6
      ],
      "basis": "polls+rating",
-     "mu": 4.12,
+     "mu": 4.05,
      "s_race": 3.2
     },
     {
@@ -4410,15 +4410,15 @@
      "race": "gov-ME",
      "office": "governor",
      "state": "ME",
-     "p_dem": 0.999,
-     "margin_mean": 13.0,
+     "p_dem": 0.998,
+     "margin_mean": 12.6,
      "margin_p10_p50_p90": [
-      7.4,
-      12.9,
-      18.6
+      7.1,
+      12.6,
+      18.2
      ],
      "basis": "polls+rating",
-     "mu": 10.03,
+     "mu": 9.71,
      "s_race": 3.2
     },
     {
@@ -4455,15 +4455,15 @@
      "race": "gov-MI",
      "office": "governor",
      "state": "MI",
-     "p_dem": 0.994,
-     "margin_mean": 10.7,
+     "p_dem": 0.992,
+     "margin_mean": 10.4,
      "margin_p10_p50_p90": [
-      5.2,
-      10.7,
-      16.2
+      4.9,
+      10.4,
+      15.9
      ],
      "basis": "polls+rating",
-     "mu": 7.71,
+     "mu": 7.38,
      "s_race": 3.2
     },
     {
@@ -4485,16 +4485,16 @@
      "race": "gov-NE",
      "office": "governor",
      "state": "NE",
-     "p_dem": 0.353,
-     "margin_mean": -2.1,
+     "p_dem": 0.401,
+     "margin_mean": -1.3,
      "margin_p10_p50_p90": [
-      -9.5,
-      -2.1,
-      5.1
+      -8.0,
+      -1.2,
+      5.3
      ],
      "basis": "polls+rating",
-     "mu": -5.14,
-     "s_race": 4.86
+     "mu": -4.27,
+     "s_race": 4.27
     },
     {
      "race": "gov-NV",
@@ -4560,15 +4560,15 @@
      "race": "gov-OH",
      "office": "governor",
      "state": "OH",
-     "p_dem": 0.919,
-     "margin_mean": 6.0,
+     "p_dem": 0.938,
+     "margin_mean": 6.6,
      "margin_p10_p50_p90": [
-      0.4,
-      6.1,
-      11.6
+      1.0,
+      6.7,
+      12.2
      ],
      "basis": "polls+rating",
-     "mu": 3.05,
+     "mu": 3.65,
      "s_race": 3.2
     },
     {
@@ -4680,15 +4680,15 @@
      "race": "gov-TX",
      "office": "governor",
      "state": "TX",
-     "p_dem": 0.484,
-     "margin_mean": -0.2,
+     "p_dem": 0.502,
+     "margin_mean": 0.0,
      "margin_p10_p50_p90": [
-      -5.7,
-      -0.2,
-      5.4
+      -5.6,
+      0.0,
+      5.6
      ],
      "basis": "polls+rating",
-     "mu": -3.08,
+     "mu": -2.89,
      "s_race": 3.2
     },
     {
@@ -4939,7 +4939,7 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.937,
+    "p_dem_control_51": 0.936,
     "p_dem_50_tie_vp_r": 0.031,
     "expected_dem_caucus": 54.03,
     "dem_caucus_p10_p50_p90": [
@@ -4951,16 +4951,16 @@
      "45": 0.0009,
      "46": 0.0018,
      "47": 0.0044,
-     "48": 0.0079,
+     "48": 0.0082,
      "49": 0.0171,
-     "50": 0.0311,
-     "51": 0.0632,
-     "52": 0.1019,
-     "53": 0.1474,
+     "50": 0.0312,
+     "51": 0.0631,
+     "52": 0.102,
+     "53": 0.1472,
      "54": 0.1841,
-     "55": 0.1876,
+     "55": 0.1875,
      "56": 0.1312,
-     "57": 0.0746,
+     "57": 0.0745,
      "58": 0.0302,
      "59": 0.0108,
      "60": 0.0042,
@@ -4979,7 +4979,7 @@
      },
      {
       "race": "us-senate-IA",
-      "share": 0.109
+      "share": 0.11
      },
      {
       "race": "us-senate-KS",
@@ -4993,7 +4993,7 @@
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 23.62,
+    "expected_dem_wins": 23.7,
     "dem_wins_p10_p50_p90": [
      20,
      24,
@@ -5222,15 +5222,15 @@
      "race": "us-senate-MI",
      "office": "senate",
      "state": "MI",
-     "p_dem": 0.61,
+     "p_dem": 0.604,
      "margin_mean": 1.1,
      "margin_p10_p50_p90": [
-      -4.5,
-      1.2,
-      6.7
+      -4.6,
+      1.1,
+      6.6
      ],
      "basis": "polls+rating",
-     "mu": 4.12,
+     "mu": 4.05,
      "s_race": 3.2
     },
     {
@@ -5747,15 +5747,15 @@
      "race": "gov-ME",
      "office": "governor",
      "state": "ME",
-     "p_dem": 0.946,
-     "margin_mean": 7.0,
+     "p_dem": 0.937,
+     "margin_mean": 6.6,
      "margin_p10_p50_p90": [
-      1.4,
-      6.9,
-      12.6
+      1.1,
+      6.6,
+      12.2
      ],
      "basis": "polls+rating",
-     "mu": 10.03,
+     "mu": 9.71,
      "s_race": 3.2
     },
     {
@@ -5792,15 +5792,15 @@
      "race": "gov-MI",
      "office": "governor",
      "state": "MI",
-     "p_dem": 0.867,
-     "margin_mean": 4.7,
+     "p_dem": 0.851,
+     "margin_mean": 4.4,
      "margin_p10_p50_p90": [
-      -0.8,
-      4.7,
-      10.2
+      -1.1,
+      4.4,
+      9.9
      ],
      "basis": "polls+rating",
-     "mu": 7.71,
+     "mu": 7.38,
      "s_race": 3.2
     },
     {
@@ -5822,16 +5822,16 @@
      "race": "gov-NE",
      "office": "governor",
      "state": "NE",
-     "p_dem": 0.074,
-     "margin_mean": -8.1,
+     "p_dem": 0.078,
+     "margin_mean": -7.3,
      "margin_p10_p50_p90": [
-      -15.5,
-      -8.1,
-      -0.9
+      -14.0,
+      -7.2,
+      -0.7
      ],
      "basis": "polls+rating",
-     "mu": -5.14,
-     "s_race": 4.86
+     "mu": -4.27,
+     "s_race": 4.27
     },
     {
      "race": "gov-NV",
@@ -5897,15 +5897,15 @@
      "race": "gov-OH",
      "office": "governor",
      "state": "OH",
-     "p_dem": 0.507,
-     "margin_mean": 0.0,
+     "p_dem": 0.562,
+     "margin_mean": 0.6,
      "margin_p10_p50_p90": [
-      -5.6,
-      0.1,
-      5.6
+      -5.0,
+      0.7,
+      6.2
      ],
      "basis": "polls+rating",
-     "mu": 3.05,
+     "mu": 3.65,
      "s_race": 3.2
     },
     {
@@ -6017,15 +6017,15 @@
      "race": "gov-TX",
      "office": "governor",
      "state": "TX",
-     "p_dem": 0.077,
-     "margin_mean": -6.2,
+     "p_dem": 0.084,
+     "margin_mean": -6.0,
      "margin_p10_p50_p90": [
-      -11.7,
-      -6.2,
-      -0.6
+      -11.6,
+      -6.0,
+      -0.4
      ],
      "basis": "polls+rating",
-     "mu": -3.08,
+     "mu": -2.89,
      "s_race": 3.2
     },
     {
@@ -6276,9 +6276,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.31,
+    "p_dem_control_51": 0.309,
     "p_dem_50_tie_vp_r": 0.128,
-    "expected_dem_caucus": 49.01,
+    "expected_dem_caucus": 49.0,
     "dem_caucus_p10_p50_p90": [
      45,
      49,
@@ -6290,16 +6290,16 @@
      "41": 0.0025,
      "42": 0.0055,
      "43": 0.0161,
-     "44": 0.0306,
-     "45": 0.0543,
-     "46": 0.0897,
-     "47": 0.1082,
-     "48": 0.1271,
-     "49": 0.1267,
-     "50": 0.1283,
-     "51": 0.1067,
-     "52": 0.0881,
-     "53": 0.0599,
+     "44": 0.0308,
+     "45": 0.0546,
+     "46": 0.0898,
+     "47": 0.1088,
+     "48": 0.1267,
+     "49": 0.127,
+     "50": 0.128,
+     "51": 0.1065,
+     "52": 0.0876,
+     "53": 0.0598,
      "54": 0.0332,
      "55": 0.016,
      "56": 0.0046,
@@ -6307,7 +6307,7 @@
      "58": 0.0005,
      "59": 0.0001
     },
-    "expected_dem_wins_of_seats_up": 15.01,
+    "expected_dem_wins_of_seats_up": 15.0,
     "tipping_point": [
      {
       "race": "us-senate-ME",
@@ -6319,7 +6319,7 @@
      },
      {
       "race": "us-senate-IA",
-      "share": 0.109
+      "share": 0.11
      },
      {
       "race": "us-senate-KS",
@@ -6333,7 +6333,7 @@
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 18.09,
+    "expected_dem_wins": 18.13,
     "dem_wins_p10_p50_p90": [
      14,
      18,
@@ -6562,15 +6562,15 @@
      "race": "us-senate-MI",
      "office": "senate",
      "state": "MI",
-     "p_dem": 0.823,
-     "margin_mean": 4.0,
+     "p_dem": 0.818,
+     "margin_mean": 3.9,
      "margin_p10_p50_p90": [
-      -1.6,
+      -1.7,
       4.0,
-      9.5
+      9.4
      ],
      "basis": "polls+rating",
-     "mu": 4.12,
+     "mu": 4.05,
      "s_race": 3.2
     },
     {
@@ -7087,15 +7087,15 @@
      "race": "gov-ME",
      "office": "governor",
      "state": "ME",
-     "p_dem": 0.989,
-     "margin_mean": 9.8,
+     "p_dem": 0.986,
+     "margin_mean": 9.5,
      "margin_p10_p50_p90": [
-      4.3,
-      9.8,
-      15.4
+      4.0,
+      9.5,
+      15.1
      ],
      "basis": "polls+rating",
-     "mu": 10.03,
+     "mu": 9.71,
      "s_race": 3.2
     },
     {
@@ -7132,15 +7132,15 @@
      "race": "gov-MI",
      "office": "governor",
      "state": "MI",
-     "p_dem": 0.961,
-     "margin_mean": 7.6,
+     "p_dem": 0.955,
+     "margin_mean": 7.2,
      "margin_p10_p50_p90": [
-      2.0,
-      7.5,
-      13.1
+      1.7,
+      7.2,
+      12.7
      ],
      "basis": "polls+rating",
-     "mu": 7.71,
+     "mu": 7.38,
      "s_race": 3.2
     },
     {
@@ -7162,16 +7162,16 @@
      "race": "gov-NE",
      "office": "governor",
      "state": "NE",
-     "p_dem": 0.179,
-     "margin_mean": -5.3,
+     "p_dem": 0.198,
+     "margin_mean": -4.4,
      "margin_p10_p50_p90": [
-      -12.6,
-      -5.3,
-      2.0
+      -11.2,
+      -4.4,
+      2.2
      ],
      "basis": "polls+rating",
-     "mu": -5.14,
-     "s_race": 4.86
+     "mu": -4.27,
+     "s_race": 4.27
     },
     {
      "race": "gov-NV",
@@ -7237,15 +7237,15 @@
      "race": "gov-OH",
      "office": "governor",
      "state": "OH",
-     "p_dem": 0.746,
-     "margin_mean": 2.9,
+     "p_dem": 0.789,
+     "margin_mean": 3.5,
      "margin_p10_p50_p90": [
-      -2.7,
-      2.9,
-      8.5
+      -2.1,
+      3.5,
+      9.1
      ],
      "basis": "polls+rating",
-     "mu": 3.05,
+     "mu": 3.65,
      "s_race": 3.2
     },
     {
@@ -7357,15 +7357,15 @@
      "race": "gov-TX",
      "office": "governor",
      "state": "TX",
-     "p_dem": 0.22,
-     "margin_mean": -3.3,
+     "p_dem": 0.233,
+     "margin_mean": -3.1,
      "margin_p10_p50_p90": [
-      -8.9,
-      -3.3,
-      2.3
+      -8.7,
+      -3.1,
+      2.4
      ],
      "basis": "polls+rating",
-     "mu": -3.08,
+     "mu": -2.89,
      "s_race": 3.2
     },
     {
@@ -7628,17 +7628,17 @@
      "41": 0.0002,
      "42": 0.0004,
      "43": 0.0009,
-     "44": 0.0046,
+     "44": 0.0047,
      "45": 0.0105,
-     "46": 0.0213,
-     "47": 0.0345,
-     "48": 0.0599,
-     "49": 0.081,
-     "50": 0.1122,
-     "51": 0.1338,
-     "52": 0.1435,
-     "53": 0.1437,
-     "54": 0.1212,
+     "46": 0.0218,
+     "47": 0.0343,
+     "48": 0.0601,
+     "49": 0.0814,
+     "50": 0.1118,
+     "51": 0.134,
+     "52": 0.1433,
+     "53": 0.1432,
+     "54": 0.1211,
      "55": 0.079,
      "56": 0.0377,
      "57": 0.0112,
@@ -7658,7 +7658,7 @@
      },
      {
       "race": "us-senate-IA",
-      "share": 0.109
+      "share": 0.11
      },
      {
       "race": "us-senate-KS",
@@ -7672,11 +7672,11 @@
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 20.69,
+    "expected_dem_wins": 20.76,
     "dem_wins_p10_p50_p90": [
      17,
      21,
-     24
+     25
     ]
    },
    "house": {
@@ -7901,15 +7901,15 @@
      "race": "us-senate-MI",
      "office": "senate",
      "state": "MI",
-     "p_dem": 0.741,
-     "margin_mean": 2.8,
+     "p_dem": 0.736,
+     "margin_mean": 2.7,
      "margin_p10_p50_p90": [
-      -2.8,
-      2.9,
+      -2.9,
+      2.8,
       8.3
      ],
      "basis": "polls+rating",
-     "mu": 4.12,
+     "mu": 4.05,
      "s_race": 3.2
     },
     {
@@ -8426,15 +8426,15 @@
      "race": "gov-ME",
      "office": "governor",
      "state": "ME",
-     "p_dem": 0.977,
-     "margin_mean": 8.6,
+     "p_dem": 0.973,
+     "margin_mean": 8.3,
      "margin_p10_p50_p90": [
-      3.1,
-      8.6,
-      14.2
+      2.8,
+      8.3,
+      13.9
      ],
      "basis": "polls+rating",
-     "mu": 10.03,
+     "mu": 9.71,
      "s_race": 3.2
     },
     {
@@ -8471,15 +8471,15 @@
      "race": "gov-MI",
      "office": "governor",
      "state": "MI",
-     "p_dem": 0.934,
-     "margin_mean": 6.4,
+     "p_dem": 0.923,
+     "margin_mean": 6.1,
      "margin_p10_p50_p90": [
-      0.9,
-      6.4,
-      11.9
+      0.5,
+      6.0,
+      11.6
      ],
      "basis": "polls+rating",
-     "mu": 7.71,
+     "mu": 7.38,
      "s_race": 3.2
     },
     {
@@ -8501,16 +8501,16 @@
      "race": "gov-NE",
      "office": "governor",
      "state": "NE",
-     "p_dem": 0.128,
-     "margin_mean": -6.5,
+     "p_dem": 0.141,
+     "margin_mean": -5.6,
      "margin_p10_p50_p90": [
-      -13.8,
-      -6.5,
-      0.8
+      -12.3,
+      -5.6,
+      1.0
      ],
      "basis": "polls+rating",
-     "mu": -5.14,
-     "s_race": 4.86
+     "mu": -4.27,
+     "s_race": 4.27
     },
     {
      "race": "gov-NV",
@@ -8576,15 +8576,15 @@
      "race": "gov-OH",
      "office": "governor",
      "state": "OH",
-     "p_dem": 0.652,
-     "margin_mean": 1.7,
+     "p_dem": 0.702,
+     "margin_mean": 2.3,
      "margin_p10_p50_p90": [
-      -3.9,
-      1.7,
-      7.3
+      -3.3,
+      2.3,
+      7.9
      ],
      "basis": "polls+rating",
-     "mu": 3.05,
+     "mu": 3.65,
      "s_race": 3.2
     },
     {
@@ -8696,15 +8696,15 @@
      "race": "gov-TX",
      "office": "governor",
      "state": "TX",
-     "p_dem": 0.151,
-     "margin_mean": -4.5,
+     "p_dem": 0.161,
+     "margin_mean": -4.3,
      "margin_p10_p50_p90": [
-      -10.1,
-      -4.5,
-      1.1
+      -9.9,
+      -4.3,
+      1.3
      ],
      "basis": "polls+rating",
-     "mu": -3.08,
+     "mu": -2.89,
      "s_race": 3.2
     },
     {
@@ -8955,9 +8955,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.521,
+    "p_dem_control_51": 0.52,
     "p_dem_50_tie_vp_r": 0.132,
-    "expected_dem_caucus": 50.54,
+    "expected_dem_caucus": 50.53,
     "dem_caucus_p10_p50_p90": [
      47,
      51,
@@ -8967,26 +8967,26 @@
      "40": 0.0002,
      "41": 0.0007,
      "42": 0.0011,
-     "43": 0.0041,
-     "44": 0.0105,
-     "45": 0.0233,
-     "46": 0.0421,
-     "47": 0.0658,
-     "48": 0.0865,
-     "49": 0.1133,
-     "50": 0.1318,
-     "51": 0.1328,
-     "52": 0.1264,
-     "53": 0.1139,
-     "54": 0.0804,
-     "55": 0.0431,
+     "43": 0.0042,
+     "44": 0.0104,
+     "45": 0.0234,
+     "46": 0.0423,
+     "47": 0.066,
+     "48": 0.0873,
+     "49": 0.1127,
+     "50": 0.1315,
+     "51": 0.1332,
+     "52": 0.126,
+     "53": 0.1135,
+     "54": 0.0805,
+     "55": 0.043,
      "56": 0.0179,
      "57": 0.0044,
      "58": 0.0014,
      "59": 0.0002,
      "60": 0.0001
     },
-    "expected_dem_wins_of_seats_up": 16.54,
+    "expected_dem_wins_of_seats_up": 16.53,
     "tipping_point": [
      {
       "race": "us-senate-ME",
@@ -8998,7 +8998,7 @@
      },
      {
       "race": "us-senate-IA",
-      "share": 0.109
+      "share": 0.11
      },
      {
       "race": "us-senate-KS",
@@ -9012,7 +9012,7 @@
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 19.61,
+    "expected_dem_wins": 19.67,
     "dem_wins_p10_p50_p90": [
      16,
      20,
@@ -9079,13 +9079,13 @@
     "Democratic": {
      "value": 2653319,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-01",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
      "value": 1467396,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-01",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9105,15 +9105,15 @@
    },
    "Connecticut": {
     "Democratic": {
-     "value": 212730,
+     "value": 225830,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-01",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 85222,
+     "value": 90829,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-01",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9133,13 +9133,13 @@
    },
    "Florida": {
     "Democratic": {
-     "value": 1948071,
+     "value": 2016983,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-11-01",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 2102638,
+     "value": 2158670,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-11-01",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
@@ -9147,15 +9147,15 @@
    },
    "Idaho": {
     "Democratic": {
-     "value": 22501,
+     "value": 22506,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-01",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 72411,
+     "value": 72415,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-01",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9231,15 +9231,15 @@
    },
    "Maryland": {
     "Democratic": {
-     "value": 627606,
+     "value": 634589,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-01",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 205835,
+     "value": 206785,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-01",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9329,15 +9329,15 @@
    },
    "Pennsylvania": {
     "Democratic": {
-     "value": 674734,
+     "value": 683968,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-01",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 263811,
+     "value": 266257,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-01",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
