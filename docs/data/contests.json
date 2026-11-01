@@ -75,7 +75,7 @@
     "note": "expected 2026 wins, polls-as-is preset"
    },
    "house": null,
-   "built_at": "2026-10-31T22:49:34Z"
+   "built_at": "2026-11-01T02:10:32Z"
   }
  },
  "senate_2026": [
@@ -579,10 +579,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.5,
+   "sim_p_dem": 0.508,
    "sim_basis": "polls+rating",
-   "poll_margin": -0.1,
-   "poll_n": 16
+   "poll_margin": -0.0,
+   "poll_n": 15
   },
   {
    "id": "us-senate-KS",
@@ -1809,7 +1809,7 @@
    "sim_p_dem": 0.695,
    "sim_basis": "polls+rating",
    "poll_margin": 2.4,
-   "poll_n": 27
+   "poll_n": 26
   },
   {
    "id": "us-senate-VA",
@@ -3814,7 +3814,7 @@
    "sim_p_dem": 0.23,
    "sim_basis": "polls+rating",
    "poll_margin": -3.0,
-   "poll_n": 24
+   "poll_n": 23
   },
   {
    "id": "gov-VT",
@@ -4831,6 +4831,6 @@
    "note": "expected 2026 wins, polls-as-is preset"
   },
   "house": null,
-  "built_at": "2026-10-31T22:49:34Z"
+  "built_at": "2026-11-01T02:10:32Z"
  }
 }
