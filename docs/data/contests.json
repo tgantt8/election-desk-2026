@@ -75,7 +75,7 @@
     "note": "expected 2026 wins, polls-as-is preset"
    },
    "house": null,
-   "built_at": "2026-11-02T17:01:08Z"
+   "built_at": "2026-11-02T17:27:13Z"
   }
  },
  "senate_2026": [
@@ -1202,10 +1202,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.957,
+   "sim_p_dem": 0.96,
    "sim_basis": "polls+rating",
-   "poll_margin": 9.4,
-   "poll_n": 6
+   "poll_margin": 9.0,
+   "poll_n": 7
   },
   {
    "id": "us-senate-NJ",
@@ -2240,10 +2240,10 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.856,
+   "sim_p_dem": 0.909,
    "sim_basis": "polls+rating",
-   "poll_margin": 5.9,
-   "poll_n": 5
+   "poll_margin": 7.1,
+   "poll_n": 6
   },
   {
    "id": "gov-AR",
@@ -2516,10 +2516,10 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.17,
+   "sim_p_dem": 0.217,
    "sim_basis": "polls+rating",
-   "poll_margin": -4.2,
-   "poll_n": 14
+   "poll_margin": -3.3,
+   "poll_n": 15
   },
   {
    "id": "gov-GA",
@@ -4831,6 +4831,6 @@
    "note": "expected 2026 wins, polls-as-is preset"
   },
   "house": null,
-  "built_at": "2026-11-02T17:01:08Z"
+  "built_at": "2026-11-02T17:27:13Z"
  }
 }
