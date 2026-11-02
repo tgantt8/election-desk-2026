@@ -1,6 +1,6 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-11-02T07:38:49Z",
+ "built_at": "2026-11-02T17:01:08Z",
  "disclaimer": "Scenarios layer: model estimates built from the polls and ratings layers. Not a call, not a result, never written to results or calls.",
  "n_sims": 10000,
  "seed": 20261103,
@@ -243,11 +243,11 @@
    "state": "IA",
    "region": "Midwest",
    "holder_party": "R",
-   "mu": 0.18,
+   "mu": -0.09,
    "s_race": 3.2,
    "basis": "polls+rating",
-   "poll_margin": 0.2,
-   "n_polls": 16,
+   "poll_margin": -0.1,
+   "n_polls": 17,
    "rating_label": "Toss-up",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-20",
@@ -2322,7 +2322,7 @@
   }
  ],
  "excluded": [],
- "inputs_hash": "a6ecf5cf6a96",
+ "inputs_hash": "df2b51aeea3e",
  "house_baselines": {
   "districts_with_2024_on_2026_lines_baseline": 0,
   "districts_with_public_rating": 13,
@@ -2456,15 +2456,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.524,
-     "margin_mean": 0.2,
+     "p_dem": 0.5,
+     "margin_mean": -0.0,
      "margin_p10_p50_p90": [
-      -5.3,
-      0.3,
-      5.7
+      -5.6,
+      0.0,
+      5.4
      ],
      "basis": "polls+rating",
-     "mu": 0.18,
+     "mu": -0.09,
      "s_race": 3.2
     },
     {
@@ -3600,9 +3600,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.743,
-    "p_dem_50_tie_vp_r": 0.095,
-    "expected_dem_caucus": 52.04,
+    "p_dem_control_51": 0.741,
+    "p_dem_50_tie_vp_r": 0.096,
+    "expected_dem_caucus": 52.02,
     "dem_caucus_p10_p50_p90": [
      49,
      52,
@@ -3613,43 +3613,43 @@
      "42": 0.0004,
      "43": 0.0004,
      "44": 0.0022,
-     "45": 0.0062,
-     "46": 0.0142,
-     "47": 0.0237,
-     "48": 0.0447,
-     "49": 0.0697,
-     "50": 0.0949,
-     "51": 0.1252,
-     "52": 0.1538,
-     "53": 0.1601,
-     "54": 0.144,
-     "55": 0.0963,
-     "56": 0.0445,
+     "45": 0.0063,
+     "46": 0.0143,
+     "47": 0.0236,
+     "48": 0.0455,
+     "49": 0.0707,
+     "50": 0.0959,
+     "51": 0.1268,
+     "52": 0.1536,
+     "53": 0.1607,
+     "54": 0.1418,
+     "55": 0.0945,
+     "56": 0.0437,
      "57": 0.0139,
-     "58": 0.0046,
+     "58": 0.0045,
      "59": 0.0008,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 18.04,
+    "expected_dem_wins_of_seats_up": 18.02,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.12
-     },
-     {
-      "race": "us-senate-KS",
-      "share": 0.11
+      "share": 0.121
      },
      {
       "race": "us-senate-AK",
-      "share": 0.11
+      "share": 0.112
      },
      {
-      "race": "us-senate-IA",
-      "share": 0.105
+      "race": "us-senate-KS",
+      "share": 0.111
      },
      {
       "race": "us-senate-ME",
+      "share": 0.103
+     },
+     {
+      "race": "us-senate-MN",
       "share": 0.103
      }
     ]
@@ -3795,15 +3795,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.773,
-     "margin_mean": 3.2,
+     "p_dem": 0.753,
+     "margin_mean": 3.0,
      "margin_p10_p50_p90": [
-      -2.3,
-      3.3,
-      8.7
+      -2.6,
+      3.0,
+      8.4
      ],
      "basis": "polls+rating",
-     "mu": 0.18,
+     "mu": -0.09,
      "s_race": 3.2
     },
     {
@@ -4939,54 +4939,54 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.953,
+    "p_dem_control_51": 0.952,
     "p_dem_50_tie_vp_r": 0.024,
-    "expected_dem_caucus": 54.21,
+    "expected_dem_caucus": 54.19,
     "dem_caucus_p10_p50_p90": [
-     52,
+     51,
      54,
      57
     ],
     "distribution": {
      "45": 0.0005,
      "46": 0.001,
-     "47": 0.0027,
-     "48": 0.0058,
-     "49": 0.0133,
-     "50": 0.024,
-     "51": 0.0524,
-     "52": 0.0934,
-     "53": 0.1458,
-     "54": 0.1972,
-     "55": 0.1969,
-     "56": 0.1408,
-     "57": 0.0776,
-     "58": 0.0318,
+     "47": 0.0028,
+     "48": 0.006,
+     "49": 0.0135,
+     "50": 0.0243,
+     "51": 0.0551,
+     "52": 0.0935,
+     "53": 0.1478,
+     "54": 0.1945,
+     "55": 0.1958,
+     "56": 0.1398,
+     "57": 0.077,
+     "58": 0.0316,
      "59": 0.011,
      "60": 0.0042,
      "61": 0.0014,
      "63": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 20.21,
+    "expected_dem_wins_of_seats_up": 20.19,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.12
-     },
-     {
-      "race": "us-senate-KS",
-      "share": 0.11
+      "share": 0.121
      },
      {
       "race": "us-senate-AK",
-      "share": 0.11
+      "share": 0.112
      },
      {
-      "race": "us-senate-IA",
-      "share": 0.105
+      "race": "us-senate-KS",
+      "share": 0.111
      },
      {
       "race": "us-senate-ME",
+      "share": 0.103
+     },
+     {
+      "race": "us-senate-MN",
       "share": 0.103
      }
     ]
@@ -5132,15 +5132,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.263,
-     "margin_mean": -2.8,
+     "p_dem": 0.243,
+     "margin_mean": -3.0,
      "margin_p10_p50_p90": [
-      -8.3,
-      -2.7,
-      2.7
+      -8.6,
+      -3.0,
+      2.4
      ],
      "basis": "polls+rating",
-     "mu": 0.18,
+     "mu": -0.09,
      "s_race": 3.2
     },
     {
@@ -6276,9 +6276,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.366,
+    "p_dem_control_51": 0.363,
     "p_dem_50_tie_vp_r": 0.131,
-    "expected_dem_caucus": 49.42,
+    "expected_dem_caucus": 49.4,
     "dem_caucus_p10_p50_p90": [
      46,
      49,
@@ -6289,43 +6289,43 @@
      "41": 0.0018,
      "42": 0.0044,
      "43": 0.0107,
-     "44": 0.0263,
+     "44": 0.0265,
      "45": 0.0405,
-     "46": 0.0729,
-     "47": 0.0951,
-     "48": 0.1204,
-     "49": 0.1297,
-     "50": 0.1313,
-     "51": 0.1188,
-     "52": 0.1046,
-     "53": 0.0722,
-     "54": 0.0433,
-     "55": 0.0193,
-     "56": 0.0059,
+     "46": 0.0732,
+     "47": 0.0961,
+     "48": 0.1215,
+     "49": 0.1301,
+     "50": 0.1309,
+     "51": 0.1195,
+     "52": 0.1044,
+     "53": 0.0707,
+     "54": 0.043,
+     "55": 0.0182,
+     "56": 0.0057,
      "57": 0.0013,
      "58": 0.0006,
      "59": 0.0001
     },
-    "expected_dem_wins_of_seats_up": 15.42,
+    "expected_dem_wins_of_seats_up": 15.4,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.12
-     },
-     {
-      "race": "us-senate-KS",
-      "share": 0.11
+      "share": 0.121
      },
      {
       "race": "us-senate-AK",
-      "share": 0.11
+      "share": 0.112
      },
      {
-      "race": "us-senate-IA",
-      "share": 0.105
+      "race": "us-senate-KS",
+      "share": 0.111
      },
      {
       "race": "us-senate-ME",
+      "share": 0.103
+     },
+     {
+      "race": "us-senate-MN",
       "share": 0.103
      }
     ]
@@ -6471,15 +6471,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.512,
-     "margin_mean": 0.1,
+     "p_dem": 0.485,
+     "margin_mean": -0.2,
      "margin_p10_p50_p90": [
-      -5.5,
-      0.1,
-      5.5
+      -5.7,
+      -0.1,
+      5.3
      ],
      "basis": "polls+rating",
-     "mu": 0.18,
+     "mu": -0.09,
      "s_race": 3.2
     },
     {
@@ -7615,9 +7615,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.727,
-    "p_dem_50_tie_vp_r": 0.101,
-    "expected_dem_caucus": 51.92,
+    "p_dem_control_51": 0.723,
+    "p_dem_50_tie_vp_r": 0.103,
+    "expected_dem_caucus": 51.89,
     "dem_caucus_p10_p50_p90": [
      48,
      52,
@@ -7629,42 +7629,42 @@
      "43": 0.0006,
      "44": 0.0024,
      "45": 0.0075,
-     "46": 0.0156,
-     "47": 0.0257,
-     "48": 0.0492,
-     "49": 0.0707,
-     "50": 0.1005,
-     "51": 0.128,
-     "52": 0.1542,
-     "53": 0.158,
-     "54": 0.1389,
-     "55": 0.0894,
-     "56": 0.0411,
-     "57": 0.0126,
-     "58": 0.0041,
+     "46": 0.0157,
+     "47": 0.0259,
+     "48": 0.0502,
+     "49": 0.0713,
+     "50": 0.1027,
+     "51": 0.1289,
+     "52": 0.1547,
+     "53": 0.1573,
+     "54": 0.1365,
+     "55": 0.0876,
+     "56": 0.0405,
+     "57": 0.0128,
+     "58": 0.0039,
      "59": 0.0007,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 17.92,
+    "expected_dem_wins_of_seats_up": 17.89,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.12
-     },
-     {
-      "race": "us-senate-KS",
-      "share": 0.11
+      "share": 0.121
      },
      {
       "race": "us-senate-AK",
-      "share": 0.11
+      "share": 0.112
      },
      {
-      "race": "us-senate-IA",
-      "share": 0.105
+      "race": "us-senate-KS",
+      "share": 0.111
      },
      {
       "race": "us-senate-ME",
+      "share": 0.103
+     },
+     {
+      "race": "us-senate-MN",
       "share": 0.103
      }
     ]
@@ -7810,15 +7810,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.401,
-     "margin_mean": -1.1,
+     "p_dem": 0.376,
+     "margin_mean": -1.4,
      "margin_p10_p50_p90": [
-      -6.7,
-      -1.1,
-      4.4
+      -6.9,
+      -1.3,
+      4.1
      ],
      "basis": "polls+rating",
-     "mu": 0.18,
+     "mu": -0.09,
      "s_race": 3.2
     },
     {
@@ -8954,9 +8954,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.582,
-    "p_dem_50_tie_vp_r": 0.126,
-    "expected_dem_caucus": 50.91,
+    "p_dem_control_51": 0.577,
+    "p_dem_50_tie_vp_r": 0.129,
+    "expected_dem_caucus": 50.89,
     "dem_caucus_p10_p50_p90": [
      47,
      51,
@@ -8967,44 +8967,44 @@
      "41": 0.0006,
      "42": 0.0009,
      "43": 0.0028,
-     "44": 0.0073,
+     "44": 0.0074,
      "45": 0.0157,
-     "46": 0.0331,
-     "47": 0.0523,
-     "48": 0.0774,
-     "49": 0.1018,
-     "50": 0.1263,
-     "51": 0.1395,
-     "52": 0.1406,
-     "53": 0.1273,
-     "54": 0.0941,
-     "55": 0.0534,
-     "56": 0.0198,
-     "57": 0.0051,
+     "46": 0.0339,
+     "47": 0.0527,
+     "48": 0.0775,
+     "49": 0.1024,
+     "50": 0.1286,
+     "51": 0.14,
+     "52": 0.1404,
+     "53": 0.1269,
+     "54": 0.0912,
+     "55": 0.0524,
+     "56": 0.0196,
+     "57": 0.005,
      "58": 0.0016,
      "59": 0.0002,
      "60": 0.0001
     },
-    "expected_dem_wins_of_seats_up": 16.91,
+    "expected_dem_wins_of_seats_up": 16.89,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.12
-     },
-     {
-      "race": "us-senate-KS",
-      "share": 0.11
+      "share": 0.121
      },
      {
       "race": "us-senate-AK",
-      "share": 0.11
+      "share": 0.112
      },
      {
-      "race": "us-senate-IA",
-      "share": 0.105
+      "race": "us-senate-KS",
+      "share": 0.111
      },
      {
       "race": "us-senate-ME",
+      "share": 0.103
+     },
+     {
+      "race": "us-senate-MN",
       "share": 0.103
      }
     ]
@@ -9026,7 +9026,7 @@
  },
  "what_has_to_be_true": {
   "target": "Democratic caucus of 51 (the Vice President is Republican, so 50 is not control)",
-  "shift_needed": -1.95,
+  "shift_needed": -1.91,
   "p_at_shift": 0.5
  },
  "early_vote_context": {
@@ -9034,43 +9034,43 @@
   "states": {
    "North Carolina": {
     "Democratic": {
-     "value": 1080440,
+     "value": 1081911,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 736891,
+     "value": 737349,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
    "Arizona": {
     "Democratic": {
-     "value": 596997,
+     "value": 613185,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 609321,
+     "value": 625143,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
    "Arkansas": {
     "Democratic": {
-     "value": 32839,
+     "value": 34754,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 46550,
+     "value": 49408,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9078,13 +9078,13 @@
     "Democratic": {
      "value": 2653319,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
      "value": 1467396,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9104,15 +9104,15 @@
    },
    "Connecticut": {
     "Democratic": {
-     "value": 225830,
+     "value": 242289,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 90829,
+     "value": 98393,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9132,57 +9132,57 @@
    },
    "Florida": {
     "Democratic": {
-     "value": 2040475,
+     "value": 2043736,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 2175018,
+     "value": 2176829,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
    "Idaho": {
     "Democratic": {
-     "value": 22506,
+     "value": 22518,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 72415,
+     "value": 72474,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
    "Iowa": {
     "Democratic": {
-     "value": 203573,
+     "value": 213835,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 150296,
+     "value": 156900,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
    "Kansas": {
     "Democratic": {
-     "value": 173833,
+     "value": 192007,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 184102,
+     "value": 203502,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9204,13 +9204,13 @@
     "Democratic": {
      "value": 225951,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 208339,
+     "value": 208344,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9230,85 +9230,85 @@
    },
    "Maryland": {
     "Democratic": {
-     "value": 634589,
+     "value": 635942,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 206785,
+     "value": 207077,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
    "Nebraska": {
     "Democratic": {
-     "value": 83442,
+     "value": 91001,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-30",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 95087,
+     "value": 104872,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-30",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
    "Nevada": {
     "Democratic": {
-     "value": 286158,
+     "value": 289895,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 240733,
+     "value": 246681,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
    "New Jersey": {
     "Democratic": {
-     "value": 509983,
+     "value": 649434,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-30",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 195033,
+     "value": 277298,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-30",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
    "New Mexico": {
     "Democratic": {
-     "value": 218814,
+     "value": 235527,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 128853,
+     "value": 141691,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-31",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
    "Oklahoma": {
     "Democratic": {
-     "value": 89504,
+     "value": 89506,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 108948,
+     "value": 108952,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9328,15 +9328,15 @@
    },
    "Pennsylvania": {
     "Democratic": {
-     "value": 683968,
+     "value": 687732,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 266257,
+     "value": 267388,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9370,15 +9370,15 @@
    },
    "Utah": {
     "Democratic": {
-     "value": 100061,
+     "value": 100069,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 253863,
+     "value": 253901,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-01",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9398,15 +9398,15 @@
    },
    "Wyoming": {
     "Democratic": {
-     "value": 9917,
+     "value": 10976,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-30",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 43694,
+     "value": 49221,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-10-30",
+     "as_of": "2026-11-02",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    }
