@@ -111,13 +111,18 @@ def build():
         if a and a.get("margin") is not None:
             race["poll_margin"] = a["margin"]
             race["poll_n"] = a.get("n_polls")
+    mi_reg = load_json(os.path.join(DATA, "contests", "mi_legislature_2026.json"), None)
+    if mi_reg:  # Michigan state legislative seats: definitions plus the ratings layer's labels (label, date, link only)
+        for seat in mi_reg["seats"]:
+            rs = rat_by_race.get(seat["contest_id"], [])
+            seat["ratings"] = [{"rater": r["rater"], "label": r["label"], "date": r.get("date"), "url": r.get("url")} for r in rs]
     write("contests.json", {"chambers": chambers, "senate_2026": senate, "governors_2026": govs, "house_delegations": house, "new_lines": new_lines,
-                            "sim_chambers": chambers.get("sim_chambers")})
+                            "sim_chambers": chambers.get("sim_chambers"), "mi_legislature": mi_reg})
     write("scenarios.json", scen or {"_layer": "scenarios", "built_at": None, "presets": {}, "inputs": [], "excluded": [], "note": "simulator has not run"})
 
     write("ratings.json", {"primary_rater": "Cook Political Report", "as_of": max((r.get("date") or "" for r in ratings_latest), default=None) or None,
                            "latest": ratings_latest, "changes": read_jsonl(os.path.join(DATA, "ratings", "changes.jsonl"))[-200:],
-                           "scope_note": "Labels, dates and links only. House labels are stored for Michigan districts; other districts link to the rater's page.",
+                           "scope_note": "Labels, dates and links only. House labels are stored for Michigan districts; other districts link to the rater's page. Michigan State House and Senate: OnPoint Politics labels for its competitive districts.",
                            "raters": sorted({r["rater"] for r in ratings_latest})})
     write("polls.json", load_json(os.path.join(DATA, "polls", "site.json"), None) or {"records": [], "averages": {}, "dedupe_log": []})
     ev_all = latest_per_source("early_vote")

@@ -19,8 +19,9 @@ never goes in this repository. A hygiene check runs on every commit.
 - **Append-only snapshots** with a raw payload hash; polls deduplicated by
   pollster + field dates + population + race.
 - **No synthetic data.** A missing baseline is shown as "no baseline".
-- **Source terms respected.** Cook Political Report: label, date and link only (Senate, Governor and Michigan House labels are stored; other House districts link out). Inside Elections: label, date and link from its public cached JSON. UF Election Lab early-vote figures are shown unmodified with attribution (CC BY-NC-ND) and never blended. AP's data API is licensed and is not scraped. Bot-walled hosts (Cook from GitHub runners, Sabato, michigan.gov) are never worked around: hand entry or an off-runner fetch with the real bytes hashed.
+- **Source terms respected.** Cook Political Report: label, date and link only (Senate, Governor and Michigan House labels are stored; other House districts link out). OnPoint Politics (Michigan State House and Senate competitive districts): label, date and link only, same rule. Inside Elections: label, date and link from its public cached JSON. UF Election Lab early-vote figures are shown unmodified with attribution (CC BY-NC-ND) and never blended. AP's data API is licensed and is not scraped. Bot-walled hosts (Cook from GitHub runners, Sabato, michigan.gov) are never worked around: hand entry or an off-runner fetch with the real bytes hashed.
 - **Simulator outputs are the `scenarios` layer**: model estimates from polls and ratings, labeled internal in the UI, never written to `results` or `calls`. House districts without a 2024-on-2026-lines baseline or a stored rating read "no baseline".
+- **Michigan legislative seats are summed county by county:** one hand entry per county portion (the Macomb portion from the Clerk's PDF); a seat card reads "N of M counties entered" and never counts a missing county as zero. The Michigan chamber view counts only attributed calls.
 - **Neutral anomaly language:** "data changed — confirm with the Clerk." Flags come from `tools/run_anomalies.py` (decrease, votes > ballots, complete-then-changed, stall, over/undervote spike) over the last two snapshots of every Macomb contest; they open review items and never change a number.
 
 ## Layout
@@ -29,7 +30,7 @@ never goes in this repository. A hygiene check runs on every commit.
 | --- | --- |
 | `docs/` | The GitHub Pages site (static; reads only the JSON under `docs/data/`). |
 | `data/sources.json` | Source registry: layer, URL, format, terms, rate limit, health. |
-| `data/contests/` | Contest definitions: chamber balance, Senate/Governor races, redistricted states, Macomb ballot. |
+| `data/contests/` | Contest definitions: chamber balance, Senate/Governor races, redistricted states, Macomb ballot, Michigan state legislative seats (`mi_legislature_2026.json`: competitive set + Macomb-ballot seats, counties from the MICRC plans in effect for 2026, county results pages, official candidate lists). |
 | `data/baselines/` | Real prior results on the lines in effect for Nov 2026. |
 | `data/<layer>/` | Append-only records per layer. `ratings/` and `early_vote/` hold one file per source (rows per snapshot) plus `ratings/changes.jsonl`; `scenarios/` holds the simulator's `latest.json`, `history.jsonl` and `backtest.json`. |
 | `data/snapshots/index.jsonl` | Every pull: source, time, raw hash, parse status. |

@@ -4832,5 +4832,2344 @@
   },
   "house": null,
   "built_at": "2026-11-02T17:27:13Z"
+ },
+ "mi_legislature": {
+  "_layer": "contests",
+  "_note": "Michigan state legislative seats on the desk, Nov 3 2026 general. Tracked = OnPoint Politics' competitive set (24 House, 7 Senate, read 2026-11-02) plus every State House and State Senate contest on the Macomb County ballot. scope 'statewide': its own contest (mi-hd-NNN / mi-sd-NN), entered county by county (one manual entry per county portion; the Macomb portion comes from the Clerk summary-PDF contest named in portion_contest_id). scope 'macomb_only': the whole seat lies in Macomb, so the Macomb contest is the seat (no statewide copy). scope 'macomb_portion_only': on the Macomb ballot but outside the competitive set; the desk carries the Macomb portion only. A call entered on any id in call_ids is a call on the seat. Every Michigan House seat (2-year terms) and every Senate seat (4-year terms, elected with the governor) is on the 2026 ballot (Mich. Const. art. IV, secs. 2-3).",
+  "chambers": {
+   "house": {
+    "name": "Michigan House of Representatives",
+    "seats": 110,
+    "majority": 56
+   },
+   "senate": {
+    "name": "Michigan Senate",
+    "seats": 38,
+    "majority": 20
+   }
+  },
+  "competitive_source": {
+   "rater": "OnPoint Politics",
+   "house_url": "https://onpointpolitics.us/forecast/legislatures/mi/house",
+   "senate_url": "https://onpointpolitics.us/forecast/legislatures/mi/senate",
+   "read_at": "2026-11-02",
+   "page_date": "2026-11-02",
+   "note": "The pages list exactly these 24 House and 7 Senate districts. Labels are in the ratings layer (label, date, link only)."
+  },
+  "county_coverage_source": {
+   "name": "Michigan Independent Citizens Redistricting Commission plans in effect for 2026: remedial State House (Motown Sound FC E1) and State Senate (Crane A1) plans approved in 2024, linked from the MICRC Mapping Data page; all other districts unchanged from Hickory (House) and Linden (Senate)",
+   "urls": [
+    "https://www.michigan.gov/micrc/mapping-process/mapping-data",
+    "https://services3.arcgis.com/dxRQUfTDNtfqZ301/arcgis/rest/services/Remedial_State_House_2021/FeatureServer/0",
+    "https://services3.arcgis.com/dxRQUfTDNtfqZ301/arcgis/rest/services/Remedial_State_Senate_2021/FeatureServer/0",
+    "https://services3.arcgis.com/dxRQUfTDNtfqZ301/arcgis/rest/services/County/FeatureServer/0"
+   ],
+   "method": "Each district polygon (State of Michigan GIS, MGF V26) intersected with the State's county layer (MGF V26) in Michigan GeoRef metres. A county counts when the overlap is >= 0.1% of the district and >= 0.5 km2; for every seat here the smallest counted portion is 23.6 km2 and the largest discarded edge overlap 0.004 km2. area_share_pct is land+water area, not population.",
+   "cross_check": "MICRC block-assignment files for the 2021 plans (Linden Senate Blocks, Hickory House Blocks; Census block GEOIDs carry the county): every House seat here matches; Senate 9, 12, 30, 32, 35, 37 match; SD-13 lost its Wayne portion and SD-24 its Genesee, Lapeer and Oakland portions under the 2024 remedial Senate plan, so SD-24 now lies entirely in Macomb (as the Clerk's ballot shows: no Multi-County label). The set of districts touching Macomb (Senate 9, 10, 11, 12, 24, 25; House 11, 12, 13, 14, 57-63, 65, 66) equals the Clerk's contest list.",
+   "read_at": "2026-11-02",
+   "sha256": {
+    "micrc_linden_senate_blocks_zip": "adf7b6ec0062c0752ca31d75edc1e8f84cd0d1fe7922afa46ab2bd21d0e7e409",
+    "micrc_hickory_house_blocks_zip": "ffcfb8d72e4350fc6d69f433600d06fda1b1120369104d58dccca6cfac8ed47c"
+   }
+  },
+  "county_pages_source": {
+   "read_at": "2026-11-02",
+   "method": "Each link was read on the county's own clerk or elections page (evidence_url). Where a county site challenges automated readers, the link is 'not confirmed' and the Secretary of State's county-links page entry is given as sos_listed_url for a browser.",
+   "sos_county_links": "https://www.michigan.gov/sos/elections/election-results-and-data/candidate-listings-and-election-results-by-county"
+  },
+  "state_results": {
+   "url": "https://mvic.sos.state.mi.us/votehistory/Index?type=C&electionDate=11-3-2026",
+   "linked_from": "https://www.michigan.gov/sos/elections",
+   "anchor_text": "Nov. 3, 2026 General Election Results",
+   "note": "Secretary of State results; challenges automated clients — browser only, cross-check against the county pages."
+  },
+  "candidates_source": {
+   "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026",
+   "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026",
+   "linked_from": "https://www.michigan.gov/sos/elections",
+   "note": "Every statewide seat here is on the listing (so on the Nov 3 ballot); no candidate in these districts is marked withdrawn or disqualified. The listing flags no incumbents in legislative races."
+  },
+  "counties": {
+   "Alger": {
+    "results_url": "https://algercounty.gov/departments/elections/election-results-history/",
+    "evidence_url": "https://algercounty.gov/departments/elections/",
+    "status": "CONFIRMED",
+    "note": "standing results page; no Nov 3 link posted at check; link read on the county's own page 2026-11-02"
+   },
+   "Allegan": {
+    "results_url": null,
+    "evidence_url": null,
+    "status": "NOT_CONFIRMED",
+    "sos_listed_url": "https://www.allegancounty.org/departments/elections",
+    "note": "not confirmed: county site answers 403 Access Denied (bot protection) to automated reads; not worked around. The Secretary of State's county-links page lists the county's elections page (sos_listed_url) — open it in a browser on election night."
+   },
+   "Antrim": {
+    "results_url": "https://www.antrimcountymi.gov/departments___services_/clerk/elections.php",
+    "evidence_url": "https://www.antrimcountymi.gov/departments___services_/clerk/elections.php",
+    "status": "CONFIRMED",
+    "note": "standing page of results PDFs; no Nov 3 link posted at check; link read on the county's own page 2026-11-02"
+   },
+   "Baraga": {
+    "results_url": "https://keweenawbay.org/government/departments/elections/",
+    "evidence_url": "https://www.baragacounty.org/government/departments/county-clerk-register-of-deeds/",
+    "status": "CONFIRMED",
+    "note": "the Baraga County Clerk page links its Elections page on keweenawbay.org; standing page of results PDFs; link read on the county's own page 2026-11-02"
+   },
+   "Bay": {
+    "results_url": "https://www.baycountymi.gov/departments/clerk/elections/election_results.php",
+    "evidence_url": "https://www.baycountymi.gov/",
+    "status": "CONFIRMED",
+    "note": "standing results page; no Nov 3 link posted at check; link read on the county's own page 2026-11-02"
+   },
+   "Benzie": {
+    "results_url": "https://benzieco.gov/government/11.3.2026%20Prec%20Results.pdf",
+    "evidence_url": "https://benzieco.gov/government/county_clerk.php",
+    "status": "CONFIRMED",
+    "note": "'November 3, 2026 Unofficial Precinct Results' PDF (file dated before the election: a placeholder until results post); link read on the county's own page 2026-11-02"
+   },
+   "Calhoun": {
+    "results_url": "https://elections.calhouncountymi.gov/November2026/",
+    "evidence_url": "https://www.calhouncountymi.gov/departments/clerk_and_register_of_deeds/elections.php",
+    "status": "CONFIRMED",
+    "note": "November 3, 2026 results page; link read on the county's own page 2026-11-02"
+   },
+   "Charlevoix": {
+    "results_url": "https://www.charlevoixcounty.org/elections/current_election_results.php",
+    "evidence_url": "https://www.charlevoixcounty.org/",
+    "status": "CONFIRMED",
+    "note": "page headed November 3, 2026 General Election Unofficial Results; link read on the county's own page 2026-11-02"
+   },
+   "Cheboygan": {
+    "results_url": "https://www.cheboygancounty.net/departments-services/county-clerk-register-of-deeds/election/",
+    "evidence_url": "https://www.cheboygancounty.net/departments-services/county-clerk-register-of-deeds/election/",
+    "status": "CONFIRMED",
+    "note": "standing page of results PDFs; no Nov 3 link posted at check; link read on the county's own page 2026-11-02"
+   },
+   "Chippewa": {
+    "results_url": "https://www.chippewacountymi.gov/november-2026-election-results",
+    "evidence_url": "https://www.chippewacountymi.gov/",
+    "status": "CONFIRMED",
+    "note": "November 3, 2026 Unofficial Election Results; link read on the county's own page 2026-11-02"
+   },
+   "Dickinson": {
+    "results_url": "https://www.dickinsoncountymi.gov/residents/elections/index.php",
+    "evidence_url": "https://www.dickinsoncountymi.gov/",
+    "status": "CONFIRMED",
+    "note": "standing page of results PDFs; no Nov 3 link posted at check; link read on the county's own page 2026-11-02"
+   },
+   "Emmet": {
+    "results_url": "https://results.enr.clarityelections.com/MI/Emmet/127403/",
+    "evidence_url": "https://www.emmetcounty.org/government/elections.php",
+    "status": "CONFIRMED",
+    "note": "Clarity ENR, linked under November 3, 2026 General Election (browser only); link read on the county's own page 2026-11-02"
+   },
+   "Genesee": {
+    "results_url": "https://results.enr.clarityelections.com/MI/Genesee/127354/",
+    "evidence_url": "https://www.geneseecountymi.gov/departments/county_clerk/election_division.php",
+    "status": "CONFIRMED",
+    "note": "Clarity ENR, 'November 3rd, 2026 Election Night Results' (browser only); link read on the county's own page 2026-11-02"
+   },
+   "Grand Traverse": {
+    "results_url": "https://results.enr.clarityelections.com/MI/Grand_Traverse/127587/web.345435/",
+    "evidence_url": "https://www.gtcountymi.gov/256/Elections",
+    "status": "CONFIRMED",
+    "note": "Clarity ENR, linked under General Election November 3, 2026 (browser only); link read on the county's own page 2026-11-02"
+   },
+   "Gratiot": {
+    "results_url": "https://app.enhancedvoting.com/results/public/gratiot-county-mi/GratiotCountyNovemberElection",
+    "evidence_url": "https://www.gratiotmi.com/174/Elections",
+    "status": "CONFIRMED",
+    "note": "'November 3, 2026 - Election Results'; link read on the county's own page 2026-11-02"
+   },
+   "Isabella": {
+    "results_url": "https://app.enhancedvoting.com/results/public/isabella-county-mi",
+    "evidence_url": "https://www.isabellacounty.org/departments/county-clerk/services/general-election-information/",
+    "status": "CONFIRMED",
+    "note": "standing results site; no Nov 3 link posted at check; link read on the county's own page 2026-11-02"
+   },
+   "Jackson": {
+    "results_url": "https://www.mijackson.org/1799/Current-Election-Results",
+    "evidence_url": "https://www.mijackson.org/1549/Election-Results",
+    "status": "CONFIRMED",
+    "note": "'Current Election Results' (still showed Aug 4 at check); link read on the county's own page 2026-11-02"
+   },
+   "Kalamazoo": {
+    "results_url": null,
+    "evidence_url": null,
+    "status": "NOT_CONFIRMED",
+    "sos_listed_url": "https://www.kalcounty.gov/453/Election-Results",
+    "note": "not confirmed: county site answers with a Cloudflare challenge; not worked around. The Secretary of State's county-links page lists the county's elections page (sos_listed_url) — open it in a browser on election night."
+   },
+   "Kent": {
+    "results_url": null,
+    "evidence_url": null,
+    "status": "NOT_CONFIRMED",
+    "sos_listed_url": "https://www.accesskent.com/Departments/Elections/",
+    "note": "not confirmed: county site (accesskent.com -> kentcountymi.gov) answers with a Cloudflare challenge; not worked around. The Secretary of State's county-links page lists the county's elections page (sos_listed_url) — open it in a browser on election night."
+   },
+   "Leelanau": {
+    "results_url": "https://app.enhancedvoting.com/results/public/leelanau-county-mi",
+    "evidence_url": "https://www.leelanau.gov/departments/clerk/election_results.php",
+    "status": "CONFIRMED",
+    "note": "standing results site; no Nov 3 link posted at check; link read on the county's own page 2026-11-02"
+   },
+   "Lenawee": {
+    "results_url": "https://www.electionlenawee.com/",
+    "evidence_url": "https://www.lenawee.mi.us/300/Election-Services",
+    "status": "CONFIRMED",
+    "note": "the county's Election Services page redirects to electionlenawee.com (Election Results section); link read on the county's own page 2026-11-02"
+   },
+   "Livingston": {
+    "results_url": "https://milivcounty.gov/elections/election-results/",
+    "evidence_url": "https://milivcounty.gov/",
+    "status": "CONFIRMED",
+    "note": "page carries a November 3, 2026 Unofficial Results section (links live after 8 PM); link read on the county's own page 2026-11-02"
+   },
+   "Mackinac": {
+    "results_url": "https://www.mackinaccounty.net/departments/county-clerk/elections/",
+    "evidence_url": "https://www.mackinaccounty.net/",
+    "status": "CONFIRMED",
+    "note": "standing page of results PDFs; no Nov 3 link posted at check; link read on the county's own page 2026-11-02"
+   },
+   "Macomb": {
+    "results_url": "https://results.enr.clarityelections.com/MI/Macomb/127293/",
+    "evidence_url": "https://www.macombgov.org/departments/clerk-register-deeds/elections",
+    "status": "CONFIRMED",
+    "note": "Clarity ENR 'Unofficial Detailed Election Results' (browser only); the summary PDF is polled; link read on the county's own page 2026-11-02"
+   },
+   "Manistee": {
+    "results_url": "https://www.manisteecountymi.gov/DocumentCenter/View/3067/Election-Results",
+    "evidence_url": "https://www.manisteecountymi.gov/",
+    "status": "CONFIRMED",
+    "note": "'Election Results' (resolves to a PDF titled General-Election-Nov-3); link read on the county's own page 2026-11-02"
+   },
+   "Marquette": {
+    "results_url": null,
+    "evidence_url": null,
+    "status": "NOT_CONFIRMED",
+    "sos_listed_url": "https://www.co.marquette.mi.us/departments/county_clerk/elections_voter_information.php",
+    "note": "not confirmed: county host did not resolve from the reading workbench. The Secretary of State's county-links page lists the county's elections page (sos_listed_url) — open it in a browser on election night."
+   },
+   "Mason": {
+    "results_url": "https://www.masoncountymi.gov/departments/clerk/election_history.php",
+    "evidence_url": "https://www.masoncountymi.gov/departments/clerk/elections.php",
+    "status": "CONFIRMED",
+    "note": "standing 'Election History' page; no Nov 3 link posted at check; link read on the county's own page 2026-11-02"
+   },
+   "Midland": {
+    "results_url": "https://app.enhancedvoting.com/results/public/midland-county-mi/November_3_2026",
+    "evidence_url": "https://midlandcountymi.gov/clerk-elections",
+    "status": "CONFIRMED",
+    "note": "'November 3, 2026 General Results'; link read on the county's own page 2026-11-02"
+   },
+   "Monroe": {
+    "results_url": "https://app.enhancedvoting.com/results/public/monroe-county-mi/November2026Election",
+    "evidence_url": "https://www.co.monroe.mi.us/409/Elections",
+    "status": "CONFIRMED",
+    "note": "'Election Results' (November 2026 election); link read on the county's own page 2026-11-02"
+   },
+   "Muskegon": {
+    "results_url": "https://co.muskegon.mi.us/507/Election-Results",
+    "evidence_url": "https://co.muskegon.mi.us/1890/Elections-Division",
+    "status": "CONFIRMED",
+    "note": "standing results page (still showed Aug 4 at check); link read on the county's own page 2026-11-02"
+   },
+   "Oakland": {
+    "results_url": "https://oakgov.info/results",
+    "evidence_url": "https://www.oaklandcountymi.gov/",
+    "status": "CONFIRMED",
+    "note": "'Nov. 3 General Election' (redirects to Clarity ENR MI/Oakland/127284; browser only); link read on the county's own page 2026-11-02"
+   },
+   "Oceana": {
+    "results_url": "https://oceana.mi.us/departments/county-clerk/elections/election-results/",
+    "evidence_url": "https://oceana.mi.us/",
+    "status": "CONFIRMED",
+    "note": "page says Nov 3 unofficial results post after 8 PM; link read on the county's own page 2026-11-02"
+   },
+   "Ottawa": {
+    "results_url": "https://www.miottawavotes.gov/MI/Ottawa/",
+    "evidence_url": "https://miottawa.org/clerk/elections/election-results/",
+    "status": "CONFIRMED",
+    "note": "'Election Results 2024 - Present' tile on the Clerk's page (browser only); link read on the county's own page 2026-11-02"
+   },
+   "Saginaw": {
+    "results_url": "https://app.enhancedvoting.com/results/public/saginaw-county-mi",
+    "evidence_url": "https://www.saginawcountymi.gov/departments/county-clerk/elections/",
+    "status": "CONFIRMED",
+    "note": "standing results site; no Nov 3 link posted at check; link read on the county's own page 2026-11-02"
+   },
+   "St. Clair": {
+    "results_url": "https://app.enhancedvoting.com/results/public/st.-clair-county-mi/November2026GeneralElection_20260928112331",
+    "evidence_url": "https://stclaircountyclerk.org/Page/Elections_2026_Election_Information",
+    "status": "CONFIRMED",
+    "note": "'November 3, 2026 Election Results'; link read on the county's own page 2026-11-02"
+   },
+   "Washtenaw": {
+    "results_url": "https://www.washtenaw.org/314/Election-Results",
+    "evidence_url": "https://www.washtenaw.org/current-election-information",
+    "status": "CONFIRMED",
+    "note": "standing 'Election Results' page; per-election links are drawn by script; link read on the county's own page 2026-11-02"
+   },
+   "Wayne": {
+    "results_url": null,
+    "evidence_url": null,
+    "status": "NOT_CONFIRMED",
+    "sos_listed_url": "https://www.waynecountymi.gov/Government/Elected-Officials/Clerk/Elections/Election-Results-Candidates",
+    "note": "not confirmed: county site answers 403 Access Denied (bot protection) to automated reads; not worked around. The Secretary of State's county-links page lists the county's elections page (sos_listed_url) — open it in a browser on election night."
+   }
+  },
+  "seats": [
+   {
+    "seat_id": "mi-sd-09",
+    "chamber": "senate",
+    "district": 9,
+    "office": "State Senator, 9th District",
+    "contest_id": "mi-sd-09",
+    "scope": "statewide",
+    "sets": [
+     "competitive",
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 27.63,
+      "portion_contest_id": "macomb-sd09"
+     },
+     {
+      "county": "Oakland",
+      "area_share_pct": 72.37
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-sd09",
+     "mi-sd-09"
+    ],
+    "macomb_contest_id": "macomb-sd09",
+    "candidates": [
+     {
+      "name": "Theresa Brooks",
+      "name_as_listed": "Brooks, Theresa",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Michael Webber",
+      "name_as_listed": "Webber, Michael",
+      "party": "R",
+      "party_raw": "REP"
+     },
+     {
+      "name": "Jacob R. Schodowski",
+      "name_as_listed": "Schodowski, Jacob R.",
+      "party": "W",
+      "party_raw": "WCP"
+     },
+     {
+      "name": "Philippe M. Cicchini",
+      "name_as_listed": "Cicchini, Philippe M.",
+      "party": "I",
+      "party_raw": "NPA"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-sd-09",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/senate"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-sd-10",
+    "chamber": "senate",
+    "district": 10,
+    "office": "State Senator, 10th District",
+    "contest_id": "macomb-sd10",
+    "scope": "macomb_portion_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 33.87,
+      "portion_contest_id": "macomb-sd10"
+     },
+     {
+      "county": "Oakland",
+      "area_share_pct": 66.13
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-sd10",
+     "mi-sd-10"
+    ],
+    "macomb_contest_id": "macomb-sd10",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-sd-11",
+    "chamber": "senate",
+    "district": 11,
+    "office": "State Senator, 11th District",
+    "contest_id": "macomb-sd11",
+    "scope": "macomb_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 100.0,
+      "portion_contest_id": "macomb-sd11"
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-sd11",
+     "mi-sd-11"
+    ],
+    "macomb_contest_id": "macomb-sd11",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-sd-12",
+    "chamber": "senate",
+    "district": 12,
+    "office": "State Senator, 12th District",
+    "contest_id": "mi-sd-12",
+    "scope": "statewide",
+    "sets": [
+     "competitive",
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 50.13,
+      "portion_contest_id": "macomb-sd12"
+     },
+     {
+      "county": "St. Clair",
+      "area_share_pct": 40.81
+     },
+     {
+      "county": "Wayne",
+      "area_share_pct": 9.06
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-sd12",
+     "mi-sd-12"
+    ],
+    "macomb_contest_id": "macomb-sd12",
+    "candidates": [
+     {
+      "name": "Kevin Hertel",
+      "name_as_listed": "Hertel, Kevin",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "John Goldwater",
+      "name_as_listed": "Goldwater, John",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-sd-12",
+    "county_pages": "not confirmed: Wayne",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/senate"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-sd-13",
+    "chamber": "senate",
+    "district": 13,
+    "office": "State Senator, 13th District",
+    "contest_id": "mi-sd-13",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Oakland",
+      "area_share_pct": 100.0
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-sd-13"
+    ],
+    "candidates": [
+     {
+      "name": "Sean Carlson",
+      "name_as_listed": "Carlson, Sean",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Ryan Berman",
+      "name_as_listed": "Berman, Ryan",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-sd-13",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/senate"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-sd-24",
+    "chamber": "senate",
+    "district": 24,
+    "office": "State Senator, 24th District",
+    "contest_id": "macomb-sd24",
+    "scope": "macomb_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 100.0,
+      "portion_contest_id": "macomb-sd24"
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-sd24",
+     "mi-sd-24"
+    ],
+    "macomb_contest_id": "macomb-sd24",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-sd-25",
+    "chamber": "senate",
+    "district": 25,
+    "office": "State Senator, 25th District",
+    "contest_id": "macomb-sd25",
+    "scope": "macomb_portion_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Huron",
+      "area_share_pct": 28.4
+     },
+     {
+      "county": "Macomb",
+      "area_share_pct": 3.94,
+      "portion_contest_id": "macomb-sd25"
+     },
+     {
+      "county": "Sanilac",
+      "area_share_pct": 32.66
+     },
+     {
+      "county": "St. Clair",
+      "area_share_pct": 22.94
+     },
+     {
+      "county": "Tuscola",
+      "area_share_pct": 12.06
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-sd25",
+     "mi-sd-25"
+    ],
+    "macomb_contest_id": "macomb-sd25",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-sd-30",
+    "chamber": "senate",
+    "district": 30,
+    "office": "State Senator, 30th District",
+    "contest_id": "mi-sd-30",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Kent",
+      "area_share_pct": 59.47
+     },
+     {
+      "county": "Ottawa",
+      "area_share_pct": 40.53
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-sd-30"
+    ],
+    "candidates": [
+     {
+      "name": "Carol Glanville",
+      "name_as_listed": "Glanville, Carol",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Mark E. Huizenga",
+      "name_as_listed": "Huizenga, Mark E.",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-sd-30",
+    "county_pages": "not confirmed: Kent",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/senate"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-sd-32",
+    "chamber": "senate",
+    "district": 32,
+    "office": "State Senator, 32nd District",
+    "contest_id": "mi-sd-32",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Benzie",
+      "area_share_pct": 16.33
+     },
+     {
+      "county": "Manistee",
+      "area_share_pct": 14.39
+     },
+     {
+      "county": "Mason",
+      "area_share_pct": 23.96
+     },
+     {
+      "county": "Muskegon",
+      "area_share_pct": 19.68
+     },
+     {
+      "county": "Oceana",
+      "area_share_pct": 25.65
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-sd-32"
+    ],
+    "candidates": [
+     {
+      "name": "Rebecca Amidon",
+      "name_as_listed": "Amidon, Rebecca",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Kim Cole",
+      "name_as_listed": "Cole, Kim",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-sd-32",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Toss-up",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/senate"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-sd-35",
+    "chamber": "senate",
+    "district": 35,
+    "office": "State Senator, 35th District",
+    "contest_id": "mi-sd-35",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Bay",
+      "area_share_pct": 45.45
+     },
+     {
+      "county": "Midland",
+      "area_share_pct": 30.27
+     },
+     {
+      "county": "Saginaw",
+      "area_share_pct": 24.28
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-sd-35"
+    ],
+    "candidates": [
+     {
+      "name": "Chedrick Greene",
+      "name_as_listed": "Greene, Chedrick",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Jason Tunney",
+      "name_as_listed": "Tunney, Jason",
+      "party": "R",
+      "party_raw": "REP"
+     },
+     {
+      "name": "Laurie Atwood",
+      "name_as_listed": "Atwood, Laurie",
+      "party": "U",
+      "party_raw": "UST"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-sd-35",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/senate"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-sd-37",
+    "chamber": "senate",
+    "district": 37,
+    "office": "State Senator, 37th District",
+    "contest_id": "mi-sd-37",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Antrim",
+      "area_share_pct": 11.53
+     },
+     {
+      "county": "Charlevoix",
+      "area_share_pct": 9.97
+     },
+     {
+      "county": "Cheboygan",
+      "area_share_pct": 17.49
+     },
+     {
+      "county": "Chippewa",
+      "area_share_pct": 19.29
+     },
+     {
+      "county": "Emmet",
+      "area_share_pct": 10.61
+     },
+     {
+      "county": "Grand Traverse",
+      "area_share_pct": 10.77
+     },
+     {
+      "county": "Leelanau",
+      "area_share_pct": 8.25
+     },
+     {
+      "county": "Mackinac",
+      "area_share_pct": 12.09
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-sd-37"
+    ],
+    "candidates": [
+     {
+      "name": "Kate Gallup",
+      "name_as_listed": "Gallup, Kate",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "John Damoose",
+      "name_as_listed": "Damoose, John",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-sd-37",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely R",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/senate"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-011",
+    "chamber": "house",
+    "district": 11,
+    "office": "State Representative, 11th District",
+    "contest_id": "macomb-hd11",
+    "scope": "macomb_portion_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 44.87,
+      "portion_contest_id": "macomb-hd11"
+     },
+     {
+      "county": "Wayne",
+      "area_share_pct": 55.13
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd11",
+     "mi-hd-011"
+    ],
+    "macomb_contest_id": "macomb-hd11",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-hd-012",
+    "chamber": "house",
+    "district": 12,
+    "office": "State Representative, 12th District",
+    "contest_id": "macomb-hd12",
+    "scope": "macomb_portion_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 69.26,
+      "portion_contest_id": "macomb-hd12"
+     },
+     {
+      "county": "Wayne",
+      "area_share_pct": 30.74
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd12",
+     "mi-hd-012"
+    ],
+    "macomb_contest_id": "macomb-hd12",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-hd-013",
+    "chamber": "house",
+    "district": 13,
+    "office": "State Representative, 13th District",
+    "contest_id": "macomb-hd13",
+    "scope": "macomb_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 100.0,
+      "portion_contest_id": "macomb-hd13"
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd13",
+     "mi-hd-013"
+    ],
+    "macomb_contest_id": "macomb-hd13",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-hd-014",
+    "chamber": "house",
+    "district": 14,
+    "office": "State Representative, 14th District",
+    "contest_id": "macomb-hd14",
+    "scope": "macomb_portion_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 57.57,
+      "portion_contest_id": "macomb-hd14"
+     },
+     {
+      "county": "Oakland",
+      "area_share_pct": 42.43
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd14",
+     "mi-hd-014"
+    ],
+    "macomb_contest_id": "macomb-hd14",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-hd-027",
+    "chamber": "house",
+    "district": 27,
+    "office": "State Representative, 27th District",
+    "contest_id": "mi-hd-027",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Wayne",
+      "area_share_pct": 100.0
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-027"
+    ],
+    "candidates": [
+     {
+      "name": "Jaime Churches",
+      "name_as_listed": "Churches, Jaime",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Rylee Linting",
+      "name_as_listed": "Linting, Rylee",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-027",
+    "county_pages": "not confirmed: Wayne",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-028",
+    "chamber": "house",
+    "district": 28,
+    "office": "State Representative, 28th District",
+    "contest_id": "mi-hd-028",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Monroe",
+      "area_share_pct": 53.66
+     },
+     {
+      "county": "Wayne",
+      "area_share_pct": 46.34
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-028"
+    ],
+    "candidates": [
+     {
+      "name": "Sherry A. Berecz",
+      "name_as_listed": "Berecz, Sherry A.",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Jamie Thompson",
+      "name_as_listed": "Thompson, Jamie",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-028",
+    "county_pages": "not confirmed: Wayne",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Toss-up",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-029",
+    "chamber": "house",
+    "district": 29,
+    "office": "State Representative, 29th District",
+    "contest_id": "mi-hd-029",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Monroe",
+      "area_share_pct": 49.32
+     },
+     {
+      "county": "Wayne",
+      "area_share_pct": 50.68
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-029"
+    ],
+    "candidates": [
+     {
+      "name": "Darian Counts",
+      "name_as_listed": "Counts, Darian",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "James DeSana",
+      "name_as_listed": "DeSana, James",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-029",
+    "county_pages": "not confirmed: Wayne",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Toss-up",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-031",
+    "chamber": "house",
+    "district": 31,
+    "office": "State Representative, 31st District",
+    "contest_id": "mi-hd-031",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Lenawee",
+      "area_share_pct": 8.31
+     },
+     {
+      "county": "Monroe",
+      "area_share_pct": 52.44
+     },
+     {
+      "county": "Washtenaw",
+      "area_share_pct": 16.52
+     },
+     {
+      "county": "Wayne",
+      "area_share_pct": 22.74
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-031"
+    ],
+    "candidates": [
+     {
+      "name": "Shannon Dare Wayne",
+      "name_as_listed": "Wayne, Shannon Dare",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Laura M. Perry",
+      "name_as_listed": "Perry, Laura M.",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-031",
+    "county_pages": "not confirmed: Wayne",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-042",
+    "chamber": "house",
+    "district": 42,
+    "office": "State Representative, 42nd District",
+    "contest_id": "mi-hd-042",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Allegan",
+      "area_share_pct": 12.72
+     },
+     {
+      "county": "Kalamazoo",
+      "area_share_pct": 87.28
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-042"
+    ],
+    "candidates": [
+     {
+      "name": "Nick Rowe",
+      "name_as_listed": "Rowe, Nick",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Matt Hall",
+      "name_as_listed": "Hall, Matt",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-042",
+    "county_pages": "not confirmed: Allegan, Kalamazoo",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean R",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-044",
+    "chamber": "house",
+    "district": 44,
+    "office": "State Representative, 44th District",
+    "contest_id": "mi-hd-044",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Calhoun",
+      "area_share_pct": 100.0
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-044"
+    ],
+    "candidates": [
+     {
+      "name": "Jim Haadsma",
+      "name_as_listed": "Haadsma, Jim",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Steve Frisbie",
+      "name_as_listed": "Frisbie, Steve",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-044",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-046",
+    "chamber": "house",
+    "district": 46,
+    "office": "State Representative, 46th District",
+    "contest_id": "mi-hd-046",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Jackson",
+      "area_share_pct": 76.71
+     },
+     {
+      "county": "Washtenaw",
+      "area_share_pct": 23.29
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-046"
+    ],
+    "candidates": [
+     {
+      "name": "Jan Maino",
+      "name_as_listed": "Maino, Jan",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Kathy Schmaltz",
+      "name_as_listed": "Schmaltz, Kathy",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-046",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-049",
+    "chamber": "house",
+    "district": 49,
+    "office": "State Representative, 49th District",
+    "contest_id": "mi-hd-049",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Livingston",
+      "area_share_pct": 71.12
+     },
+     {
+      "county": "Oakland",
+      "area_share_pct": 28.88
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-049"
+    ],
+    "candidates": [
+     {
+      "name": "Dan Pelchat",
+      "name_as_listed": "Pelchat, Dan",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Ann M. Bollin",
+      "name_as_listed": "Bollin, Ann M.",
+      "party": "R",
+      "party_raw": "REP"
+     },
+     {
+      "name": "Trevor Step",
+      "name_as_listed": "Step, Trevor",
+      "party": "L",
+      "party_raw": "LIB"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-049",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean R",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-051",
+    "chamber": "house",
+    "district": 51,
+    "office": "State Representative, 51st District",
+    "contest_id": "mi-hd-051",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Oakland",
+      "area_share_pct": 100.0
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-051"
+    ],
+    "candidates": [
+     {
+      "name": "Stacey McDuffie",
+      "name_as_listed": "McDuffie, Stacey",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Matt Maddock",
+      "name_as_listed": "Maddock, Matt",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-051",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely R",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-052",
+    "chamber": "house",
+    "district": 52,
+    "office": "State Representative, 52nd District",
+    "contest_id": "mi-hd-052",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Oakland",
+      "area_share_pct": 100.0
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-052"
+    ],
+    "candidates": [
+     {
+      "name": "Brendan P. Leddy",
+      "name_as_listed": "Leddy, Brendan P.",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Mike Harris",
+      "name_as_listed": "Harris, Mike",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-052",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely R",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-054",
+    "chamber": "house",
+    "district": 54,
+    "office": "State Representative, 54th District",
+    "contest_id": "mi-hd-054",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Oakland",
+      "area_share_pct": 100.0
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-054"
+    ],
+    "candidates": [
+     {
+      "name": "Sarah Pounds",
+      "name_as_listed": "Pounds, Sarah",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Roman Gaskey",
+      "name_as_listed": "Gaskey, Roman",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-054",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-055",
+    "chamber": "house",
+    "district": 55,
+    "office": "State Representative, 55th District",
+    "contest_id": "mi-hd-055",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Oakland",
+      "area_share_pct": 100.0
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-055"
+    ],
+    "candidates": [
+     {
+      "name": "Alex Hawkins",
+      "name_as_listed": "Hawkins, Alex",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Mark Tisdel",
+      "name_as_listed": "Tisdel, Mark",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-055",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-057",
+    "chamber": "house",
+    "district": 57,
+    "office": "State Representative, 57th District",
+    "contest_id": "mi-hd-057",
+    "scope": "statewide",
+    "sets": [
+     "competitive",
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 66.99,
+      "portion_contest_id": "macomb-hd57"
+     },
+     {
+      "county": "Oakland",
+      "area_share_pct": 33.01
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd57",
+     "mi-hd-057"
+    ],
+    "macomb_contest_id": "macomb-hd57",
+    "candidates": [
+     {
+      "name": "Tom Turner",
+      "name_as_listed": "Turner, Tom",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Thomas E. Kuhn",
+      "name_as_listed": "Kuhn, Thomas E.",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-057",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean R",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-058",
+    "chamber": "house",
+    "district": 58,
+    "office": "State Representative, 58th District",
+    "contest_id": "macomb-hd58",
+    "scope": "macomb_only",
+    "sets": [
+     "competitive",
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 100.0,
+      "portion_contest_id": "macomb-hd58"
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd58",
+     "mi-hd-058"
+    ],
+    "macomb_contest_id": "macomb-hd58",
+    "rating_race_id": "macomb-hd58",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-059",
+    "chamber": "house",
+    "district": 59,
+    "office": "State Representative, 59th District",
+    "contest_id": "macomb-hd59",
+    "scope": "macomb_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 100.0,
+      "portion_contest_id": "macomb-hd59"
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd59",
+     "mi-hd-059"
+    ],
+    "macomb_contest_id": "macomb-hd59",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-hd-060",
+    "chamber": "house",
+    "district": 60,
+    "office": "State Representative, 60th District",
+    "contest_id": "macomb-hd60",
+    "scope": "macomb_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 100.0,
+      "portion_contest_id": "macomb-hd60"
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd60",
+     "mi-hd-060"
+    ],
+    "macomb_contest_id": "macomb-hd60",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-hd-061",
+    "chamber": "house",
+    "district": 61,
+    "office": "State Representative, 61st District",
+    "contest_id": "macomb-hd61",
+    "scope": "macomb_only",
+    "sets": [
+     "competitive",
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 100.0,
+      "portion_contest_id": "macomb-hd61"
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd61",
+     "mi-hd-061"
+    ],
+    "macomb_contest_id": "macomb-hd61",
+    "rating_race_id": "macomb-hd61",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-062",
+    "chamber": "house",
+    "district": 62,
+    "office": "State Representative, 62nd District",
+    "contest_id": "macomb-hd62",
+    "scope": "macomb_only",
+    "sets": [
+     "competitive",
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 100.0,
+      "portion_contest_id": "macomb-hd62"
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd62",
+     "mi-hd-062"
+    ],
+    "macomb_contest_id": "macomb-hd62",
+    "rating_race_id": "macomb-hd62",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean R",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-063",
+    "chamber": "house",
+    "district": 63,
+    "office": "State Representative, 63rd District",
+    "contest_id": "macomb-hd63",
+    "scope": "macomb_portion_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 16.18,
+      "portion_contest_id": "macomb-hd63"
+     },
+     {
+      "county": "St. Clair",
+      "area_share_pct": 83.82
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd63",
+     "mi-hd-063"
+    ],
+    "macomb_contest_id": "macomb-hd63",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-hd-065",
+    "chamber": "house",
+    "district": 65,
+    "office": "State Representative, 65th District",
+    "contest_id": "macomb-hd65",
+    "scope": "macomb_portion_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Lapeer",
+      "area_share_pct": 33.61
+     },
+     {
+      "county": "Macomb",
+      "area_share_pct": 18.94,
+      "portion_contest_id": "macomb-hd65"
+     },
+     {
+      "county": "St. Clair",
+      "area_share_pct": 47.46
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd65",
+     "mi-hd-065"
+    ],
+    "macomb_contest_id": "macomb-hd65",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-hd-066",
+    "chamber": "house",
+    "district": 66,
+    "office": "State Representative, 66th District",
+    "contest_id": "macomb-hd66",
+    "scope": "macomb_portion_only",
+    "sets": [
+     "macomb_ballot"
+    ],
+    "counties": [
+     {
+      "county": "Macomb",
+      "area_share_pct": 35.41,
+      "portion_contest_id": "macomb-hd66"
+     },
+     {
+      "county": "Oakland",
+      "area_share_pct": 64.59
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "macomb-hd66",
+     "mi-hd-066"
+    ],
+    "macomb_contest_id": "macomb-hd66",
+    "ratings": []
+   },
+   {
+    "seat_id": "mi-hd-068",
+    "chamber": "house",
+    "district": 68,
+    "office": "State Representative, 68th District",
+    "contest_id": "mi-hd-068",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Genesee",
+      "area_share_pct": 75.77
+     },
+     {
+      "county": "Oakland",
+      "area_share_pct": 24.23
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-068"
+    ],
+    "candidates": [
+     {
+      "name": "Matt Schlinker",
+      "name_as_listed": "Schlinker, Matt",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "David W. Martin",
+      "name_as_listed": "Martin, David W.",
+      "party": "R",
+      "party_raw": "REP"
+     },
+     {
+      "name": "Deanna L Martin",
+      "name_as_listed": "Martin, Deanna L",
+      "party": "L",
+      "party_raw": "LIB"
+     },
+     {
+      "name": "Joe McHugh",
+      "name_as_listed": "McHugh, Joe",
+      "party": "I",
+      "party_raw": "NPA"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-068",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-072",
+    "chamber": "house",
+    "district": 72,
+    "office": "State Representative, 72nd District",
+    "contest_id": "mi-hd-072",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Genesee",
+      "area_share_pct": 42.84
+     },
+     {
+      "county": "Livingston",
+      "area_share_pct": 15.71
+     },
+     {
+      "county": "Oakland",
+      "area_share_pct": 41.45
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-072"
+    ],
+    "candidates": [
+     {
+      "name": "Thomas Ryan",
+      "name_as_listed": "Ryan, Thomas",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Mike Mueller",
+      "name_as_listed": "Mueller, Mike",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-072",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely R",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-086",
+    "chamber": "house",
+    "district": 86,
+    "office": "State Representative, 86th District",
+    "contest_id": "mi-hd-086",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Allegan",
+      "area_share_pct": 37.37
+     },
+     {
+      "county": "Ottawa",
+      "area_share_pct": 62.63
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-086"
+    ],
+    "candidates": [
+     {
+      "name": "Joseph McClusky",
+      "name_as_listed": "McClusky, Joseph",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Nancy DeBoer",
+      "name_as_listed": "DeBoer, Nancy",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-086",
+    "county_pages": "not confirmed: Allegan",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Toss-up",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-088",
+    "chamber": "house",
+    "district": 88,
+    "office": "State Representative, 88th District",
+    "contest_id": "mi-hd-088",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Muskegon",
+      "area_share_pct": 11.09
+     },
+     {
+      "county": "Ottawa",
+      "area_share_pct": 88.91
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-088"
+    ],
+    "candidates": [
+     {
+      "name": "Kiel Reid",
+      "name_as_listed": "Reid, Kiel",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Greg VanWoerkom",
+      "name_as_listed": "VanWoerkom, Greg",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-088",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean R",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-092",
+    "chamber": "house",
+    "district": 92,
+    "office": "State Representative, 92nd District",
+    "contest_id": "mi-hd-092",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Gratiot",
+      "area_share_pct": 24.08
+     },
+     {
+      "county": "Isabella",
+      "area_share_pct": 75.92
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-092"
+    ],
+    "candidates": [
+     {
+      "name": "Luke Del Castillo",
+      "name_as_listed": "Del Castillo, Luke",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Jerry Neyer",
+      "name_as_listed": "Neyer, Jerry",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-092",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean R",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-096",
+    "chamber": "house",
+    "district": 96,
+    "office": "State Representative, 96th District",
+    "contest_id": "mi-hd-096",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Bay",
+      "area_share_pct": 100.0
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-096"
+    ],
+    "candidates": [
+     {
+      "name": "Christopher R. Girard",
+      "name_as_listed": "Girard, Christopher R.",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Timothy Beson",
+      "name_as_listed": "Beson, Timothy",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-096",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Lean R",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-107",
+    "chamber": "house",
+    "district": 107,
+    "office": "State Representative, 107th District",
+    "contest_id": "mi-hd-107",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Charlevoix",
+      "area_share_pct": 21.66
+     },
+     {
+      "county": "Cheboygan",
+      "area_share_pct": 0.55
+     },
+     {
+      "county": "Chippewa",
+      "area_share_pct": 28.47
+     },
+     {
+      "county": "Emmet",
+      "area_share_pct": 23.06
+     },
+     {
+      "county": "Mackinac",
+      "area_share_pct": 26.26
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-107"
+    ],
+    "candidates": [
+     {
+      "name": "Melissa Perron",
+      "name_as_listed": "Perron, Melissa",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Parker Fairbairn",
+      "name_as_listed": "Fairbairn, Parker",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-107",
+    "county_pages": "CONFIRMED",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely R",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   },
+   {
+    "seat_id": "mi-hd-109",
+    "chamber": "house",
+    "district": 109,
+    "office": "State Representative, 109th District",
+    "contest_id": "mi-hd-109",
+    "scope": "statewide",
+    "sets": [
+     "competitive"
+    ],
+    "counties": [
+     {
+      "county": "Alger",
+      "area_share_pct": 22.0
+     },
+     {
+      "county": "Baraga",
+      "area_share_pct": 21.54
+     },
+     {
+      "county": "Dickinson",
+      "area_share_pct": 12.53
+     },
+     {
+      "county": "Marquette",
+      "area_share_pct": 43.92
+     }
+    ],
+    "county_coverage": "CONFIRMED",
+    "call_ids": [
+     "mi-hd-109"
+    ],
+    "candidates": [
+     {
+      "name": "Anna Aho Rink",
+      "name_as_listed": "Rink, Anna Aho",
+      "party": "D",
+      "party_raw": "DEM"
+     },
+     {
+      "name": "Karl Bohnak",
+      "name_as_listed": "Bohnak, Karl",
+      "party": "R",
+      "party_raw": "REP"
+     }
+    ],
+    "candidates_source": {
+     "name": "Michigan Department of State, Official Candidate Listing, General Election, Tuesday November 3, 2026 (linked from michigan.gov/sos/elections as '2026 November General Candidate Listing')",
+     "url": "https://mi-boe.entellitrak.com/etk-mi-boe-prod/page.request.do?page=page.miboePublicReport&electionType=GEN&electionYear=2026"
+    },
+    "rating_race_id": "mi-hd-109",
+    "county_pages": "not confirmed: Marquette",
+    "ratings": [
+     {
+      "rater": "OnPoint Politics",
+      "label": "Likely D",
+      "date": "2026-11-02",
+      "url": "https://onpointpolitics.us/forecast/legislatures/mi/house"
+     }
+    ]
+   }
+  ]
  }
 }

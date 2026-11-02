@@ -2,7 +2,8 @@
 """Run the anomaly rules (tools/anomalies.py) over the results layer after every poll or manual entry.
 
 For each results source file (data/results/<source>.jsonl, append-only) the last two snapshots of every Macomb contest
-(contest ids starting "macomb-") are compared unit by unit. New flags are appended to data/anomalies.jsonl (append-only,
+(contest ids starting "macomb-") are compared unit by unit; in the hand-entry file each contest is compared with its own
+previous entry (see comparisons()). New flags are appended to data/anomalies.jsonl (append-only,
 deduplicated by type + contest + unit + snapshot); the per-unit last-change clock lives in data/results/.state_anomalies.json.
 Flags never change a number; their language is "data changed — confirm with the Clerk." The 2024 HD-58 precinct baseline
 supplies the over/undervote rates for the spike rule where unit names match.
@@ -31,6 +32,25 @@ def snapshots_in_order(recs):
         if sid and (not order or order[-1] != sid):
             order.append(sid)
     return order
+
+
+def comparisons(recs, order, per_contest=False):
+    """(previous records, current records) pairs for the file's newest snapshot.
+    A poller file: its last two snapshots. A hand-entry file (one contest per entry): each contest in the newest snapshot
+    against that contest's own previous entry, so entries for other contests (or other counties) in between never hide a change."""
+    cur_id = order[-1]
+    cur = [r for r in recs if r.get("snapshot_id") == cur_id]
+    if not per_contest:
+        return [([r for r in recs if len(order) > 1 and r.get("snapshot_id") == order[-2]], cur)]
+    cid_of = lambda r: (r.get("contest_id") or r.get("contest"), r.get("county"))  # noqa: E731
+    out = []
+    for key in sorted({cid_of(r) for r in cur}, key=str):
+        prev_id = None
+        for r in recs:
+            if r.get("snapshot_id") != cur_id and cid_of(r) == key:
+                prev_id = r.get("snapshot_id")
+        out.append(([r for r in recs if prev_id and r.get("snapshot_id") == prev_id and cid_of(r) == key], [r for r in cur if cid_of(r) == key]))
+    return out
 
 
 def rows_for(recs):
@@ -91,19 +111,19 @@ def run(now_iso=None, write=True):
         cur_id = order[-1]
         if state["last_processed"].get(src) == cur_id:
             continue
-        cur = rows_for([r for r in recs if r.get("snapshot_id") == cur_id])
-        prev = rows_for([r for r in recs if len(order) > 1 and r.get("snapshot_id") == order[-2]])
-        if not cur:
-            state["last_processed"][src] = cur_id
-            continue
-        flags, last_change = detect(prev, cur, cur_id, now_iso, baseline_ou_rate=rates, last_change_at=last_change)
-        for f in flags:
-            f["source_id"] = src
-            key = (f["type"], f["contest"], f["unit"], f["snapshot_id"])
-            if key in existing:
+        for prev_recs, cur_recs in comparisons(recs, order, per_contest=src.startswith("manual_")):
+            cur = rows_for(cur_recs)
+            prev = rows_for(prev_recs)
+            if not cur:
                 continue
-            existing.add(key)
-            new_flags.append(f)
+            flags, last_change = detect(prev, cur, cur_id, now_iso, baseline_ou_rate=rates, last_change_at=last_change)
+            for f in flags:
+                f["source_id"] = src
+                key = (f["type"], f["contest"], f["unit"], f["snapshot_id"])
+                if key in existing:
+                    continue
+                existing.add(key)
+                new_flags.append(f)
         state["last_processed"][src] = cur_id
     if write:
         for f in new_flags:

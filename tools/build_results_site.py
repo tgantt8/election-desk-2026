@@ -3,6 +3,10 @@
 
 Rules: latest snapshot per source per contest wins for display; the previous snapshot gives the delta; status comes
 ONLY from the calls layer (data/calls/calls.jsonl) — never from vote totals. Everything is UNOFFICIAL.
+Hand entries (data/results/manual_results.jsonl) arrive one contest — and, for a statewide legislative seat, one county
+portion — per snapshot, so for them "latest snapshot" is taken per contest (per contest + county for a seat), never per file.
+Michigan legislative seats (tools/mi_legislature.py): seat cards summed county by county ("N of M counties entered", never a
+missing county as zero) and the House / Senate tally of calls (calls layer only; no projected control).
 
 --replay-2024 : also render the real 2024 Macomb results (data/baselines/macomb_2024_general.json) through the same
                 path, tagged "REPLAY 2024 — not live", so the end-to-end flow can be exercised before Nov 3.
@@ -18,6 +22,7 @@ from collections import defaultdict
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import DATA, dump_json, load_json, read_jsonl  # noqa: E402
+import mi_legislature as mil  # noqa: E402
 
 TIER1_TITLES = {  # Summary Results Report title → Macomb contest id
     "Representative in State Legislature 58th District": "macomb-hd58",
@@ -30,7 +35,13 @@ TIER1_TITLES = {  # Summary Results Report title → Macomb contest id
 LADDER = ["Too early", "Leaning", "Likely", "Projected", "Final unofficial", "Certified"]
 
 
+SEATS = mil.seat_index(mil.load_registry())
+
+
 def status_for(contest_id, calls):
+    seat = SEATS.get(contest_id)
+    if seat:  # a call on any id of a Michigan legislative seat is a call on the seat
+        return mil.status_text(mil.seat_call(calls, seat.get("call_ids") or [contest_id]))
     rows = [c for c in calls if c.get("contest") == contest_id]
     if not rows:
         return "Too early"
@@ -87,23 +98,21 @@ def build(replay_2024=False):
     calls = read_jsonl(os.path.join(DATA, "calls", "calls.jsonl"))
     contests = load_json(os.path.join(DATA, "contests", "macomb_2026.json"), {"contests": []})["contests"]
     scope = {c["id"]: c.get("county_scope") for c in contests}
+    tier = {c["id"]: c.get("tier") for c in contests}
     national, tier1, detail = [], [], {}
+    by_source = {}
     # Live records: group by source → snapshot → contest.
     for path in sorted(glob.glob(os.path.join(DATA, "results", "*.jsonl"))):
         recs = read_jsonl(path)
         if not recs:
             continue
-        snaps = []
-        for r in recs:
-            if not snaps or snaps[-1] != r["snapshot_id"]:
-                snaps.append(r["snapshot_id"])
-        cur = [r for r in recs if r["snapshot_id"] == snaps[-1]]
-        prev = [r for r in recs if len(snaps) > 1 and r["snapshot_id"] == snaps[-2]]
         src = recs[-1].get("source_id", os.path.basename(path))
-        for cid in sorted({r.get("contest_id") or r.get("contest") for r in cur}):
-            crec = [r for r in cur if (r.get("contest_id") or r.get("contest")) == cid]
-            prec = [r for r in prev if (r.get("contest_id") or r.get("contest")) == cid]
+        by_source[src] = recs
+        for cid, crec, prec in contest_snapshots(recs, per_contest=src.startswith("manual_")):
+            if str(cid).startswith("mi-"):
+                continue  # statewide legislative seats: county-portion entries, carded by mil.seat_cards below
             card = card_from_records(crec[0].get("contest_name") or cid, cid, crec, prec, calls, src, scope.get(cid))
+            card["tier"] = tier.get(cid)
             if str(cid).startswith("macomb-"):
                 tier1.append(card)
                 units = [r for r in crec if r.get("unit") and r.get("unit") != "county" and r.get("candidate") is not None and r.get("votes") is not None]
@@ -137,10 +146,43 @@ def build(replay_2024=False):
                 for m in ("AVCB", "ED", "EV"):
                     rows.append({"unit": p["unit"], "mode": m, "candidate": cand["name"], "votes": p["values"][cand["name"]][m], "complete": True})
         detail["macomb-hd58 (REPLAY 2024)"] = {"rows": rows, "source": hd["source"]["name"]}
+    tier1.sort(key=lambda c: (c.get("tier") or 9, 1 if c.get("replay") else 0, str(c["id"])))
+    reg = mil.load_registry()
+    mi_leg = {"seats": mil.seat_cards(reg, by_source, calls, {c["id"]: c for c in contests}), "chambers": mil.chamber_tally(reg, calls),
+              "note": "Michigan House and Senate seats on the desk. Sums are of entered county portions only; status and seat counts come only from attributed outlet calls. UNOFFICIAL."}
     out = {"_layer": "results", "national": national, "macomb_tier1": tier1, "macomb_detail": detail,
-           "chamber_calls": chamber_calls(calls), "replay_2024": replay_2024, "disclaimer": "UNOFFICIAL until certified. Status comes only from attributed outlet calls."}
+           "chamber_calls": chamber_calls(calls), "mi_legislature": mi_leg, "replay_2024": replay_2024,
+           "disclaimer": "UNOFFICIAL until certified. Status comes only from attributed outlet calls."}
     dump_json(os.path.join(DATA, "results", "site.json"), out)
-    print(f"results site: {len(national)} national cards, {len(tier1)} Macomb cards, {len(detail)} detail tables, replay={replay_2024}")
+    print(f"results site: {len(national)} national cards, {len(tier1)} Macomb cards, {len(detail)} detail tables, "
+          f"{len(mi_leg['seats'])} MI legislative seats ({sum(1 for c in mi_leg['seats'] if c['counties_entered'])} with entries), replay={replay_2024}")
+
+
+def contest_snapshots(recs, per_contest=False):
+    """Yield (contest_id, current records, previous records) for one source file in append order.
+    per_contest=False: the file's last snapshot is current (a poller writes every contest each pull).
+    per_contest=True: each contest's own last snapshot is current and its own previous one gives the delta (hand entries)."""
+    snaps = []
+    for r in recs:
+        if not snaps or snaps[-1] != r["snapshot_id"]:
+            snaps.append(r["snapshot_id"])
+    cid_of = lambda r: r.get("contest_id") or r.get("contest")  # noqa: E731
+    if not per_contest:
+        cur = [r for r in recs if r["snapshot_id"] == snaps[-1]]
+        prev = [r for r in recs if len(snaps) > 1 and r["snapshot_id"] == snaps[-2]]
+        for cid in sorted({cid_of(r) for r in cur}, key=str):
+            yield cid, [r for r in cur if cid_of(r) == cid], [r for r in prev if cid_of(r) == cid]
+        return
+    seen = {}
+    for r in recs:
+        seen.setdefault(cid_of(r), [])
+        if not seen[cid_of(r)] or seen[cid_of(r)][-1] != r["snapshot_id"]:
+            seen[cid_of(r)].append(r["snapshot_id"])
+    for cid in sorted(seen, key=str):
+        order = seen[cid]
+        cur = [r for r in recs if r["snapshot_id"] == order[-1] and cid_of(r) == cid]
+        prev = [r for r in recs if len(order) > 1 and r["snapshot_id"] == order[-2] and cid_of(r) == cid]
+        yield cid, cur, prev
 
 
 def chamber_calls(calls):

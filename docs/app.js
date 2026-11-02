@@ -241,10 +241,65 @@ function raceCard(r) {
     <div class="row small muted" style="justify-content:space-between"><span>margin ${r.margin!=null?fmt.m(r.margin):"—"}</span><span>${r.reporting_pct!=null?fmt.pct(r.reporting_pct,0)+" reporting":""}${r.precincts?` · ${r.precincts}`:""}</span><span>${r.delta!=null?`Δ ${r.delta>0?"+":""}${r.delta.toFixed(1)} since last pull`:""}</span></div>
     ${modes}<div class="src">${r.source||""} · ${fmt.t(r.as_of)} · UNOFFICIAL${r.county_scope==="macomb_portion"?" · Macomb portion only":""}</div></div>`;
 }
+// ---------- Michigan Legislature (seat cards summed county by county; chamber view from the calls layer only) ----------
+function normId(id) {
+  const c = (id || "").trim(); let m = c.toLowerCase().match(/^mi-(hd|sd)-0*(\d{1,3})$/);
+  if (m) return m[1] === "hd" ? `mi-hd-${m[2].padStart(3,"0")}` : `mi-sd-${m[2].padStart(2,"0")}`;
+  m = c.toLowerCase().match(/^macomb-(hd|sd)0*(\d{1,3})$/);
+  if (m) return `macomb-${m[1]}${m[2].padStart(2,"0")}`;
+  return c;
+}
+function miSeatDefs() { return S.data.contests?.mi_legislature?.seats || []; }
+function miChamberBar(t) {
+  if (!t) return "";
+  const total = t.seats, d = t.called?.d||0, r = t.called?.r||0, o = t.called?.other||0, cnt = t.counting_tracked||0, nt = t.not_tracked||0;
+  const seg = (n, cls) => n > 0 ? `<div class="seg ${cls}" style="width:${(100*n/total).toFixed(2)}%" title="${n}"></div>` : "";
+  const marks = [{at:t.majority, label:`${t.majority} = majority (D from left)`},{at:total - t.majority, label:`${t.majority} = majority (R from right)`}];
+  return `<div class="chamber"><div class="label"><span><strong>${t.name || ""}</strong> <span class="muted small">${total} seats · majority ${t.majority} of ${total}</span></span>
+    <span class="mono">called D ${d} · R ${r}${o?` · other ${o}`:""} · counting ${cnt} tracked (${t.counting_competitive} of ${t.competitive_total} competitive) · not tracked ${nt}</span></div>
+    <div class="bar">${seg(d,"d")}${seg(o,"i")}${seg(cnt,"count")}${seg(nt,"nt")}${seg(r,"r")}
+    ${marks.map(m=>`<div class="mark" style="left:${(100*m.at/total).toFixed(2)}%"></div>`).join("")}</div>
+    <div class="marks">${marks.map((m,i)=>`<span style="left:${(100*m.at/total).toFixed(2)}%;top:${i%2?12:0}px">${m.label}</span>`).join("")}</div></div>`;
+}
+function seatCard(c, def) {
+  const rat = (def?.ratings||[]).map(x=>`${x.rater}: <strong>${x.label}</strong> <span class="muted">${x.date||""}</span> ${x.url?`<a href="${x.url}" target="_blank" rel="noopener">link</a>`:""}`).join(" · ");
+  const tot = (c.candidates||[]).reduce((a,k)=>a+(k.votes||0),0) || 1;
+  const cands = c.candidates ? c.candidates.map(k=>`<div class="row" style="justify-content:space-between"><span class="pill ${(k.party||"").startsWith("D")?"d":(k.party||"").startsWith("R")?"r":""}">${k.name} (${k.party||"?"})</span><span class="mono">${fmt.n(k.votes)} · ${fmt.pct(100*(k.votes||0)/tot)}</span></div>`).join("")
+    : ((def?.candidates||[]).length ? `<p class="muted small">On the ballot: ${def.candidates.map(k=>`${k.name} (${k.party||"?"})`).join(", ")}.</p>` : "");
+  const rows = (c.counties||[]).map(p => `<tr><td>${p.county}${p.portion_contest_id?` <span class="muted">(${p.portion_contest_id})</span>`:""}</td>
+    <td>${!p.tracked ? '<span class="muted">not on the desk</span>' : p.entered ? `✓ ${p.via||""} <span class="muted">${p.as_of ? (/^\d{4}-/.test(p.as_of) ? fmt.t(p.as_of) : p.as_of) : ""}</span>` : '<span class="muted">not entered</span>'}</td>
+    <td>${p.entered && p.candidates ? p.candidates.map(k=>`${k.party||"?"} ${fmt.n(k.votes)}`).join(" · ") : ""}</td>
+    <td>${p.results_url ? `<a href="${p.results_url}" target="_blank" rel="noopener">results page</a>` : (p.results_url_status === "NOT_CONFIRMED" ? `<span class="muted">county page: not confirmed${p.sos_listed_url ? ` · <a href="${p.sos_listed_url}" target="_blank" rel="noopener">SoS lists</a>` : ""}</span>` : "")}</td></tr>`).join("");
+  return `<div class="card seat"><div class="row" style="justify-content:space-between"><strong>${c.title}</strong><span class="status">${c.status||"Too early"}</span></div>
+    ${rat ? `<div class="small">${rat}</div>` : ""}
+    <div class="small" style="margin:4px 0"><strong>${c.entered_label}</strong></div>
+    ${cands}
+    <div class="row small muted" style="justify-content:space-between"><span>${c.margin!=null?(c.complete_counties?"margin ":"margin of entered counties ")+fmt.m(c.margin):""}</span></div>
+    <table class="counties">${rows}</table>
+    <div class="src">${(c.sources||[]).join(" + ") || "no source yet"}${c.as_of ? " · " + (/^\d{4}-/.test(c.as_of) ? fmt.t(c.as_of) : c.as_of) : ""} · UNOFFICIAL${c.scope==="macomb_only" ? " · whole seat lies in Macomb" : ""}</div></div>`;
+}
+function renderMiLeg() {
+  const ml = S.data.results?.mi_legislature; const defs = miSeatDefs(); const byId = Object.fromEntries(defs.map(d=>[d.seat_id,d]));
+  if (!ml) { $("mi-chambers").innerHTML = '<p class="muted">Michigan legislative seats not built yet.</p>'; $("mi-seats").innerHTML = ""; return; }
+  $("mi-chambers").innerHTML = miChamberBar(ml.chambers?.senate) + miChamberBar(ml.chambers?.house);
+  const src = S.data.contests?.mi_legislature?.competitive_source;
+  $("mi-chambers-src").innerHTML = `Called = an attributed outlet call in the calls layer (outlet + time), never vote totals; the desk projects no chamber control. Tracked = ${src?`<a href="${src.house_url}" target="_blank" rel="noopener">OnPoint Politics</a> competitive set (read ${src.read_at})`:"competitive set"} plus every House and Senate contest on the Macomb ballot. County coverage: MICRC plans in effect for 2026. UNOFFICIAL.`;
+  const f = $("mi-filter").value || "competitive";
+  const seats = (ml.seats||[]).filter(c => f === "all" || (f === "competitive" && (c.sets||[]).includes("competitive")) || (f === "macomb" && (c.sets||[]).includes("macomb_ballot")) || f === c.chamber || (f === "entered" && c.counties_entered > 0));
+  $("mi-count").textContent = `${seats.length} seats`;
+  $("mi-seats").innerHTML = seats.map(c => seatCard(c, byId[c.seat_id])).join("") || '<p class="muted">No seats match.</p>';
+}
 function renderResults() {
   const res = S.data.results;
   $("results-national").innerHTML = (res?.national||[]).map(raceCard).join("") || '<p class="muted">No national results yet. Polls close from 7 PM ET Nov 3.</p>';
-  $("results-macomb").innerHTML = (res?.macomb_tier1||[]).map(raceCard).join("") || '<p class="muted">No Macomb results yet. Michigan polls close 8 PM ET Nov 3.</p>';
+  const mac = res?.macomb_tier1 || [];
+  const isLeg = c => /^macomb-(hd|sd)\d+$/.test(c.id);
+  const t1 = mac.filter(c => c.tier === 1 || (c.replay && c.tier == null)), leg = mac.filter(c => isLeg(c) && c.tier !== 1), other = mac.filter(c => !t1.includes(c) && !leg.includes(c));
+  $("results-macomb").innerHTML = t1.map(raceCard).join("") || '<p class="muted">No Macomb results yet. Michigan polls close 8 PM ET Nov 3.</p>';
+  $("results-macomb-leg").innerHTML = leg.map(raceCard).join("") || '<p class="muted">No Macomb legislative results yet (the Clerk summary PDF carries every State House and Senate contest on the Macomb ballot).</p>';
+  $("results-macomb-other").innerHTML = other.map(raceCard).join("") || '<p class="muted">None yet.</p>';
+  $("results-macomb-other-n").textContent = other.length ? `(${other.length})` : "";
+  renderMiLeg();
 }
 function renderMacomb() {
   const res = S.data.results; const sel = $("macomb-contest");
@@ -260,6 +315,22 @@ function renderOps() {
   const m = S.data.meta;
   $("ops-health").innerHTML = m?.sources?.length ? `<div class="tablewrap"><table><tr><th></th><th>Source</th><th>Layer</th><th>Status</th><th>Last success</th><th>Error</th></tr>${m.sources.map(s=>`<tr><td><i class="health ${s.health}"></i></td><td><a href="${s.url}" target="_blank" rel="noopener">${s.name}</a><div class="small muted">${s.terms_note||""}</div></td><td>${s.layer}</td><td class="small">${s.status||""}<div class="muted">${s.poller||""}</div></td><td class="small">${fmt.t(s.last_success_at)}</td><td class="small muted">${s.last_error||""}</td></tr>`).join("")}</table></div>` : '<p class="muted">Source registry not published yet.</p>';
   $("exports").innerHTML = DATA_FILES.map(f=>`<a class="btn" href="data/${f}.json" download>${f}.json</a>`).join("");
+  const ids = new Set(["macomb-hd58","macomb-sd24","macomb-mi10","macomb-gov","macomb-ussen"]);
+  for (const d of miSeatDefs()) { ids.add(d.contest_id); (d.call_ids||[]).forEach(x=>ids.add(x)); }
+  for (const c of S.data.results?.macomb_tier1 || []) ids.add(c.id);
+  const dl = $("contest-ids"); if (dl.options.length !== ids.size) dl.innerHTML = [...ids].sort().map(x=>`<option value="${x}">`).join("");
+  pasteHelp();
+}
+function pasteHelp() {
+  const id = normId($("paste-contest").value); const d = miSeatDefs().find(x => x.contest_id === id || (x.call_ids||[]).includes(id));
+  const el = $("paste-help"); const cl = $("county-list");
+  if (!d) { el.innerHTML = ""; cl.innerHTML = ""; return; }
+  const cdir = S.data.contests?.mi_legislature?.counties || {};
+  cl.innerHTML = d.counties.map(p=>`<option value="${p.county}">`).join("");
+  if (d.scope !== "statewide") { el.innerHTML = `${d.office}: ${d.scope === "macomb_only" ? "the whole seat lies in Macomb — enter it as" : "the desk carries the Macomb portion only —"} <code>${d.contest_id}</code> (no county field needed).`; return; }
+  el.innerHTML = `${d.office} — ${d.counties.length} ${d.counties.length===1?"county":"counties"}: ` + d.counties.map(p => {
+    const c = cdir[p.county] || {}; const auto = p.portion_contest_id ? ` <span class="muted">(auto from the Clerk PDF: ${p.portion_contest_id})</span>` : "";
+    return `${p.county}${auto} ${c.results_url ? `<a href="${c.results_url}" target="_blank" rel="noopener">results page</a>` : `<span class="muted">county page: not confirmed${c.sos_listed_url ? ` (<a href="${c.sos_listed_url}" target="_blank" rel="noopener">SoS lists</a>)` : ""}</span>`}`; }).join(" · ");
 }
 function renderAll() { staleCheck(); renderChambers(); renderMap(); renderPolls(); renderRatings(); renderSim(); renderResults(); renderMacomb(); renderOps(); }
 
@@ -269,7 +340,10 @@ function parsePaste() {
   // every later line with numbers = one unit (precinct). With a contest id the paste becomes unit-level records that reach the
   // Macomb detail table and the anomaly rules; without one only the raw rows are kept in the snapshot.
   const txt = $("paste").value; const rows = []; const records = []; let header = null;
-  const contestId = ($("paste-contest").value || "").trim(); const mode = $("paste-mode").value || "TOTAL";
+  const contestId = normId($("paste-contest").value); const mode = $("paste-mode").value || "TOTAL";
+  const seat = miSeatDefs().find(x => x.contest_id === contestId && x.scope === "statewide");
+  const cty = ($("paste-county").value || "").trim();
+  const county = seat ? (seat.counties.find(p => p.county.toLowerCase().replace(/\.|county/g,"").trim() === cty.toLowerCase().replace(/\.|county/g,"").trim())?.county || null) : null;
   for (const line of txt.split(/\r?\n/)) {
     if (!line.trim()) continue;
     const cells = (line.includes("\t") ? line.split("\t") : line.includes(",") ? line.split(",") : line.trim().split(/\s{2,}/)).map(c=>c.trim().replace(/,/g,""));
@@ -285,18 +359,25 @@ function parsePaste() {
       else if (/total votes|votes cast|^total$/i.test(name)) total = Number(c);
       else if (!/reporting|percent|%|registered|turnout|over|under/i.test(name)) {
         const m = name.match(/^(.*?)\s*[\(\[]?\b(D|R|L|G|U|I|DEM|REP|LIB|GRN|UST|NPA|WC|WCP)\b[\)\]]?\s*$/i);
-        records.push({ contest_id: contestId, unit: cells[0], mode, candidate: m ? m[1].trim() : name, party: m ? m[2].toUpperCase() : null, votes: Number(c) });
+        records.push(Object.assign({ contest_id: contestId, unit: cells[0], mode, candidate: m ? m[1].trim() : name, party: m ? m[2].toUpperCase() : null, votes: Number(c) }, county ? { county } : {}));
       }
     });
-    if (ballots != null || total != null) records.push({ contest_id: contestId, unit: cells[0], mode, candidate: null, votes: total, ballots });
+    if (ballots != null || total != null) records.push(Object.assign({ contest_id: contestId, unit: cells[0], mode, candidate: null, votes: total, ballots }, county ? { county } : {}));
   }
   const out = { layer: "results", entered_by: "manual-paste", entered_at: new Date().toISOString(), note: "Manual entry — verify against the source before use. UNOFFICIAL.", contest_id: contestId || null, mode, header, rows, records };
+  if (county) out.county = county;
   if (header && !contestId) out.warning = "set the contest id (e.g. macomb-hd58) to turn these rows into precinct records";
   if (!header) out.warning = "no column-name line found: paste the table with its header row so candidates can be named";
+  if (seat && !county) { out.records = []; out.warning = `${contestId} is entered one county portion at a time: set the county (${seat.counties.map(p=>p.county).join(", ")})`; }
+  if (seat && mode !== "TOTAL") { out.records = []; out.warning = `${contestId}: enter each county portion as mode TOTAL`; }
   $("paste-out").textContent = JSON.stringify(out, null, 1); return out;
 }
 function callJson() {
-  const out = { layer:"calls", contest: $("call-contest").value, outlet: $("call-outlet").value, called_for: $("call-for").value, called_at: $("call-time").value ? new Date($("call-time").value).toISOString() : null, url: $("call-url").value, entered_by: "call-entry-form", entered_at: new Date().toISOString(), status: "Projected" };
+  const contest = normId($("call-contest").value);
+  const out = { layer:"calls", contest, outlet: $("call-outlet").value, called_for: $("call-for").value, called_for_party: $("call-party").value || null, called_at: $("call-time").value ? new Date($("call-time").value).toISOString() : null, url: $("call-url").value, entered_by: "call-entry-form", entered_at: new Date().toISOString(), status: $("call-status").value || "Projected" };
+  const miLeg = /^mi-(hd|sd)-\d+$/.test(contest) || miSeatDefs().some(d => (d.call_ids||[]).includes(contest));
+  if (miLeg && !out.called_for_party && out.status !== "retracted") out.warning = "a Michigan House or Senate call needs the party (the chamber view counts seats by party)";
+  if (!out.outlet || !out.called_at) out.warning = "outlet and time are required";
   $("call-out").textContent = JSON.stringify(out, null, 1); return out;
 }
 
@@ -311,7 +392,8 @@ function evcAdd() {
 }
 function rcAdd() {
   const row = { race: $("rc-race").value.trim(), rater: $("rc-rater").value.trim(), label: $("rc-label").value, label_raw: $("rc-label").value, date: $("rc-date").value || null, url: $("rc-url").value.trim(),
-    office: $("rc-race").value.startsWith("gov-") ? "governor" : $("rc-race").value.startsWith("us-house-") ? "house" : "senate", state: ($("rc-race").value.match(/-([A-Z]{2})/)||[])[1] || null, date_kind: "page" };
+    office: $("rc-race").value.startsWith("gov-") ? "governor" : $("rc-race").value.startsWith("us-house-") ? "house" : /^(mi-hd-|macomb-hd)/.test($("rc-race").value) ? "state_house" : /^(mi-sd-|macomb-sd)/.test($("rc-race").value) ? "state_senate" : "senate",
+    state: /^(mi-|macomb-)/.test($("rc-race").value) ? "MI" : (($("rc-race").value.match(/-([A-Z]{2})/)||[])[1] || null), date_kind: "page" };
   if (!row.race || !row.rater || !row.date || !row.url) { alert("race, rater, label, date and URL are required (label + date + link only)"); return; }
   CAP.rc.push(row); $("rc-out").textContent = JSON.stringify({ layer: "ratings", entered_by: "ops-panel", entered_at: new Date().toISOString(), records: CAP.rc }, null, 1);
 }
@@ -324,6 +406,7 @@ $("maptoggle").onclick = () => { S.tile = !S.tile; $("map-geo").style.display = 
 $("refresh").onclick = loadAll; $("interval").onchange = setTimer;
 $("theme").onclick = () => { const h = document.documentElement; const next = h.dataset.theme === "dark" ? "light" : "dark"; h.dataset.theme = next; try{localStorage.setItem("desk.theme",next)}catch(e){} };
 ["polls-race","polls-pop","polls-days"].forEach(id => $(id).onchange = renderPolls); $("macomb-contest").onchange = renderMacomb;
+$("mi-filter").onchange = renderMiLeg; $("paste-contest").oninput = pasteHelp;
 ["ratings-rater","ratings-office","ev-state","ev-src"].forEach(id => $(id).onchange = renderRatings); $("sim-office").onchange = renderSim;
 $("sim-shift").oninput = e => $("sim-shift-v").textContent = Number(e.target.value).toFixed(2); $("sim-scale").oninput = e => $("sim-scale-v").textContent = Number(e.target.value).toFixed(1); $("sim-run").onclick = runSimLive;
 $("evc-add").onclick = evcAdd; $("evc-copy").onclick = () => navigator.clipboard?.writeText($("evc-out").textContent); $("evc-clear").onclick = () => { CAP.ev = []; $("evc-out").textContent = ""; };

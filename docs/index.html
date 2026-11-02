@@ -75,7 +75,7 @@
   <!-- 3 Ratings & Early vote -->
   <section id="view-ratings" class="view">
     <div class="card"><h2>Ratings <span class="small muted">— expert judgment, label + date + link only</span></h2>
-      <div class="row small" style="margin:6px 0"><select id="ratings-rater" class="sel"><option value="">all raters</option></select><select id="ratings-office" class="sel"><option value="">all offices</option><option value="senate">Senate</option><option value="governor">Governor</option><option value="house">House (Michigan)</option></select><span id="ratings-scope" class="muted"></span></div>
+      <div class="row small" style="margin:6px 0"><select id="ratings-rater" class="sel"><option value="">all raters</option></select><select id="ratings-office" class="sel"><option value="">all offices</option><option value="senate">Senate</option><option value="governor">Governor</option><option value="house">House (Michigan)</option><option value="state_house">MI State House</option><option value="state_senate">MI State Senate</option></select><span id="ratings-scope" class="muted"></span></div>
       <div class="tablewrap"><table id="ratings-table"></table></div>
       <h3>Rating changes</h3><div id="ratings-changes" class="small"></div>
     </div>
@@ -106,8 +106,24 @@
 
   <!-- 5 Live results -->
   <section id="view-results" class="view">
-    <div class="card"><h2>National battlegrounds</h2><div id="results-national"></div></div>
-    <div class="card"><h2>Macomb Tier 1</h2><div id="results-macomb"></div></div>
+    <div class="row small" style="margin-bottom:8px">Jump to <a href="#card-mi-leg">Michigan Legislature</a> · <a href="#card-macomb">Macomb</a> · <a href="#card-national">National</a></div>
+    <div class="card" id="card-national"><h2>National battlegrounds</h2><div id="results-national"></div></div>
+    <div class="card" id="card-mi-leg"><h2>Michigan Legislature <span class="small muted">— seats called (calls layer only) · tracked seats still counting · not tracked</span></h2>
+      <div id="mi-chambers"></div>
+      <div class="legend">
+        <span><i class="sw" style="background:var(--dem)"></i>called D</span>
+        <span><i class="sw" style="background:var(--rep)"></i>called R</span>
+        <span><i class="sw" style="background:var(--ind)"></i>called, other party</span>
+        <span><i class="sw" style="background:var(--count)"></i>counting (tracked seat, no call)</span>
+        <span><i class="sw" style="background:var(--none);border:1px solid var(--line)"></i>not tracked (no call)</span>
+      </div>
+      <div id="mi-chambers-src" class="src"></div>
+      <div class="row small" style="margin:8px 0"><select id="mi-filter" class="sel"><option value="competitive">competitive set (OnPoint)</option><option value="all">all tracked seats</option><option value="senate">Senate (tracked)</option><option value="house">House (tracked)</option><option value="entered">with results entered</option><option value="macomb">on the Macomb ballot</option></select><span id="mi-count" class="muted"></span></div>
+      <div id="mi-seats"></div>
+    </div>
+    <div class="card" id="card-macomb"><h2>Macomb Tier 1</h2><div id="results-macomb"></div></div>
+    <div class="card"><h2>Macomb — State House and Senate <span class="small muted">— Macomb portion (Clerk summary PDF)</span></h2><div id="results-macomb-leg"></div></div>
+    <div class="card"><details><summary class="small">Other Macomb contests <span id="results-macomb-other-n" class="muted"></span></summary><div id="results-macomb-other"></div></details></div>
   </section>
 
   <!-- 6 Macomb detail -->
@@ -125,17 +141,22 @@
     <div class="card"><h2>Source health</h2><div id="ops-health"></div></div>
     <div class="card"><h2>Manual entry</h2>
       <p class="small muted">Paste a results table (copied from the Clerk's detail page, tab- or comma-separated) with its header line: unit name first, then the candidates as the source names them, optionally "Total Votes" and "Total Ballots" columns. Set the contest id and the mode and the rows become precinct records (they reach the Macomb detail table and the anomaly rules). Nothing is committed from the browser; use "Copy as JSON" and commit through the <code>manual-entry</code> workflow (layer <code>results</code>).</p>
-      <div class="row" style="margin-bottom:6px"><input id="paste-contest" class="sel" placeholder="contest id (macomb-hd58, macomb-sd24, macomb-mi10, macomb-gov, macomb-ussen)"><select id="paste-mode" class="sel"><option value="TOTAL">TOTAL (combined)</option><option value="AVCB">AVCB (absent voter counting boards)</option><option value="ED">ED (Election Day)</option><option value="EV">EV (early in-person)</option></select></div>
+      <p class="small muted"><strong>Statewide legislative seat</strong> (<code>mi-hd-NNN</code> / <code>mi-sd-NN</code>): one entry per county portion. Set the contest id and the county, mode TOTAL, and paste that county page's lines for the district (header + one total line, or its precinct lines). The Macomb portion of a seat that crosses into Macomb comes from the Clerk's summary PDF by itself. The Live tab shows "N of M counties entered"; a county not entered is never counted as zero.</p>
+      <datalist id="contest-ids"></datalist><datalist id="county-list"></datalist>
+      <div class="row" style="margin-bottom:6px"><input id="paste-contest" class="sel" list="contest-ids" placeholder="contest id (mi-hd-029, mi-sd-32, macomb-hd58, macomb-sd24, macomb-mi10, macomb-gov, macomb-ussen)"><input id="paste-county" class="sel" list="county-list" placeholder="county portion (statewide seats)"><select id="paste-mode" class="sel"><option value="TOTAL">TOTAL (combined)</option><option value="AVCB">AVCB (absent voter counting boards)</option><option value="ED">ED (Election Day)</option><option value="EV">EV (early in-person)</option></select></div>
+      <div id="paste-help" class="small muted" style="margin-bottom:6px"></div>
       <textarea id="paste" class="paste" placeholder="Precinct&#9;Manetta (D)&#9;Robinson (R)&#9;Total Ballots&#10;Sterling Heights, Precinct 18&#9;…"></textarea>
       <div class="row" style="margin-top:6px"><button class="btn" id="paste-parse">Parse</button><button class="btn" id="paste-copy">Copy as JSON</button></div>
       <pre id="paste-out" class="small mono muted"></pre>
     </div>
     <div class="card"><h2>Call entry</h2>
-      <p class="small muted">Record a media projection. Calls are attributed to the outlet and time; the desk never calls a race itself.</p>
+      <p class="small muted">Record a media projection. Calls are attributed to the outlet and time; the desk never calls a race itself. A Michigan House or Senate call (<code>mi-hd-001</code>…<code>mi-hd-110</code>, <code>mi-sd-01</code>…<code>mi-sd-38</code>, or a Macomb-only seat's <code>macomb-</code> id) needs the party — it feeds the chamber view.</p>
       <div class="row">
-        <input id="call-contest" class="sel" placeholder="contest id (e.g. us-senate-MI)">
+        <input id="call-contest" class="sel" list="contest-ids" placeholder="contest id (us-senate-MI, mi-hd-029, macomb-hd58)">
         <input id="call-outlet" class="sel" placeholder="outlet (AP, NBC, DDHQ…)">
         <input id="call-for" class="sel" placeholder="called for (candidate)">
+        <select id="call-party" class="sel" title="Party of the candidate called for (the chamber tallies count by party)"><option value="">party…</option><option>D</option><option>R</option><option>I</option><option>L</option><option>G</option><option>U</option><option>N</option><option>W</option></select>
+        <select id="call-status" class="sel"><option value="Projected">Projected</option><option value="retracted">retracted (clears the call)</option></select>
         <input id="call-time" class="sel" type="datetime-local">
         <input id="call-url" class="sel" placeholder="URL">
         <button class="btn" id="call-copy">Copy call JSON</button>
@@ -155,7 +176,7 @@
     </div>
     <div class="card"><h2>Rating capture <span class="small muted">— label + date + link only (Sabato's Crystal Ball, Cook refresh)</span></h2>
       <div class="row">
-        <input id="rc-race" class="sel" placeholder="race id (us-senate-MI, gov-MI, us-house-MI-07)"><input id="rc-rater" class="sel" placeholder="rater" value="Sabato's Crystal Ball">
+        <input id="rc-race" class="sel" list="contest-ids" placeholder="race id (us-senate-MI, gov-MI, us-house-MI-07, mi-hd-029, macomb-hd58)"><input id="rc-rater" class="sel" placeholder="rater" value="Sabato's Crystal Ball">
         <select id="rc-label" class="sel"><option>Solid D</option><option>Likely D</option><option>Lean D</option><option>Toss-up</option><option>Lean R</option><option>Likely R</option><option>Solid R</option></select>
         <input id="rc-date" class="sel" type="date"><input id="rc-url" class="sel" placeholder="URL of the rater's page">
         <button class="btn" id="rc-add">Add row</button><button class="btn" id="rc-copy">Copy JSON</button><button class="btn" id="rc-clear">Clear</button>
