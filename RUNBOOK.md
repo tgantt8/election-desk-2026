@@ -70,6 +70,39 @@ time for that, so three collectors were added live and the loop was hardened:
   it is staged into the sandbox and pushed with `tools/push_capture.sh <source>[@<County>]=<file>`. No numbers are retyped.
 - Code pushes to `main` resumed for these changes; the Nov 2 freeze tag stays where it was as the record of the dry-run build.
 
+## Nov 3 — what ran by itself, what didn't (written 12:50 AM Nov 4)
+
+The Oct 29 plan leaned on hand entry (Clerk PDF rows, county pages, AP calls typed from apnews.com). On the night that was the
+failure mode: there was no time for it. What replaced it, so the next build starts here:
+
+- **Hand entry used tonight: none.** `data/results/manual_results.jsonl` has zero rows; all 341 calls in the calls layer came from
+  `poll_npr_ap` (AP calls as published by NPR's public results app, every loop pass). Every results row came from a feed or a browser capture.
+- **Feeds that ran unattended on the runner** (3-min loop, 44+ passes): Enhanced Voting states GA/ID/UT/VA/WA and Michigan counties
+  Monroe, St. Clair (`enhanced_voting`); North Carolina S3 (`nc_s3`, written 7:55 PM); Wayne TotalVote HTML (`totalvote`); the Macomb
+  Clerk PDFs (`pdf_hash`); AP-via-NPR counts and calls (`npr_ap`).
+- **Browser captures** (the one step that still needs a live session): Macomb, Oakland and Genesee Clarity — 15 captures 9:07 PM–12:16 AM
+  through `clarity_capture_compact.js` → Downloads → `push_capture.sh`. The runner cannot do this (WAF challenge, 84 `clarity_version_failed`
+  events tonight). Gap 10:02 PM–12:16 AM when no session was running; nothing was lost (Clarity versions are cumulative) but the stall
+  rule misfired on it (fixed: the rule now skips comparisons wider than its own window).
+- **Still link-only / manual (58 results sources):** the statewide Michigan picture (SOS is a link list; county sites vary), most state
+  ENRs behind Cloudflare/Akamai (OH, MN, AZ, NY, WI, mvic), Clarity states (IA, CO, SC). None were needed for the desk's Tier 1.
+
+### Upgrades for the next cycle, in order of time saved
+1. **Michigan county sweep as feeds, not hand entry.** 15 counties already run Enhanced Voting (`docs/recon/national_enr.json`,
+   `michigan.enhanced_voting_counties_nov3_2026_ready`); `poll_enhanced_voting` with `ev.county` handles them today — register each as a
+   county-portion feed before the next election instead of two (Monroe, St. Clair). Wayne/Kent/Oakland/Macomb/Genesee cover the rest of the
+   Tier 1 seats; Kent (ElectionStats CSV) needs a small poller.
+2. **Clarity without a person in the loop.** Options, for Tabu to decide: (a) a real browser on a schedule — Playwright/Chromium on the
+   runner loading the county's public page and running the same capture script (it is a browser visiting a public page, same as the
+   operator's; the desk's rule is no spoofing/WAF evasion, and this does neither, but it is a judgment call to record); (b) keep the
+   operator's browser and run the capture from a claude.ai scheduled task with the Downloads channel; (c) ask the Macomb Clerk's office for
+   the detail XML by email on election night (several clerks will).
+3. **Calls: a licensed feed.** Decision Desk HQ's results API is the only self-serve commercial option (calls + county results as JSON);
+   AP's API is news-org licensed. Until then AP-via-NPR is the free, attributable path and worked all night. Add a derived ladder rung —
+   "100% precincts, margin > X" — from data already in the results layer; it is a status, never a call.
+4. **Statewide Michigan.** The SOS posts no live ENR; the statewide US Senate/Governor line has to be summed from county feeds. With the
+   county sweep in (1) that is a build step, not a new collector.
+
 ## Failure modes
 - **A source goes down:** the poller backs off; the stale banner shows. Nothing to do unless it stays red for 2 intervals → switch that source to manual entry.
 - **A format changes:** the parser records the snapshot with `parse_status` = `parse_error`; the raw payload is kept. Switch to manual entry and fix forward after the night.
