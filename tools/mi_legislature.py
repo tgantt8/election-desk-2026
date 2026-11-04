@@ -25,6 +25,8 @@ from common import DATA, load_json  # noqa: E402
 REGISTRY = os.path.join(DATA, "contests", "mi_legislature_2026.json")
 MACOMB = os.path.join(DATA, "contests", "macomb_2026.json")
 PDF_SOURCE = "macomb_clerk_unofficial_summary_pdf"
+CLARITY_SOURCE = "macomb_clarity_enr"  # browser capture of the Clerk's Clarity ENR (tools/ingest_clarity_bundle.py); county rows only
+SOURCE_LABEL = {PDF_SOURCE: "Macomb Clerk summary PDF", CLARITY_SOURCE: "Macomb Clerk Clarity ENR (browser capture)", "manual_results": "manual entry"}
 SEAT_RE = re.compile(r"^mi-(hd|sd)-0*(\d{1,3})$")
 MACOMB_LEG_RE = re.compile(r"^macomb-(hd|sd)0*(\d{1,3})$")
 TOTAL_UNIT_RE = re.compile(r"^(?:(?:[a-z. ]+ )?county )?totals?$|^total votes(?: cast)?$|^district totals?$", re.I)
@@ -190,6 +192,9 @@ def seat_cards(reg, results_by_source, calls, macomb_contests=None):
     if pdf:
         pdf_latest = pdf[-1].get("snapshot_id")
     pdf_cur = [r for r in pdf if r.get("snapshot_id") == pdf_latest] if pdf_latest else []
+    clar = results_by_source.get(CLARITY_SOURCE, [])
+    clar_latest = clar[-1].get("snapshot_id") if clar else None
+    clar_cur = [r for r in clar if r.get("snapshot_id") == clar_latest and r.get("unit") == "county"] if clar_latest else []
     man_by_cc = _latest_group(manual, lambda r: (normalize_contest_id(r.get("contest_id") or r.get("contest")), r.get("county")) if r.get("county") else None)
     man_by_c = _latest_group(manual, lambda r: normalize_contest_id(r.get("contest_id") or r.get("contest")) if not r.get("county") else None)
     cdir = reg.get("counties", {})
@@ -209,6 +214,9 @@ def seat_cards(reg, results_by_source, calls, macomb_contests=None):
                 rs = [r for r in pdf_cur if r.get("contest_id") == pc]
                 if rs:
                     options.append((_snap_time(pdf_latest, PDF_SOURCE), PDF_SOURCE, max((r.get("as_of") or "" for r in rs), default=""), rs))
+                rs = [r for r in clar_cur if r.get("contest_id") == pc]
+                if rs:
+                    options.append((_snap_time(clar_latest, CLARITY_SOURCE), CLARITY_SOURCE, max((r.get("as_of") or "" for r in rs), default=""), rs))
                 if pc in man_by_c:
                     sid, rs = man_by_c[pc]
                     options.append((_snap_time(sid, "manual_results"), "manual_results", max((r.get("as_of") or "" for r in rs), default=""), rs))
@@ -220,7 +228,7 @@ def seat_cards(reg, results_by_source, calls, macomb_contests=None):
                     break
             ci = cdir.get(county, {})
             portions.append({"county": county, "tracked": tracked, "entered": best is not None, "area_share_pct": p.get("area_share_pct"),
-                             "via": None if not best else ("Macomb Clerk summary PDF" if best["source"] == PDF_SOURCE else "manual entry"),
+                             "via": None if not best else SOURCE_LABEL.get(best["source"], best["source"]),
                              "source": best["source"] if best else None, "as_of": best["as_of"] if best else None,
                              "candidates": [{"name": n, "party": best["party"].get(n, ""), "votes": v} for n, v in sorted(best["votes"].items(), key=lambda x: -x[1])] if best else None,
                              "results_url": ci.get("results_url") if s["scope"] == "statewide" else None,

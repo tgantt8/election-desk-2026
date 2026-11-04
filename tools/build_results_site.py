@@ -52,7 +52,16 @@ def status_for(contest_id, calls):
     return f"{st} ({last.get('outlet', '?')}, {last.get('called_at', '')[:16].replace('T', ' ')} UTC)" if st == "Projected" else st
 
 
+def _card_rows(recs):
+    """A feed that carries both the jurisdiction's totals (unit county/state) and unit detail (precincts) is carded from the
+    totals only, so precinct rows are never added on top of the county line. Detail-only sets (hand-entered precincts) sum as before."""
+    recs = recs or []
+    tot = [r for r in recs if r.get("unit") in (None, "county", "state")]
+    return tot if tot and any(r.get("unit") not in (None, "county", "state") for r in recs) else recs
+
+
 def card_from_records(title, contest_id, recs, prev_recs, calls, source_name, county_scope=None):
+    recs, prev_recs = _card_rows(recs), _card_rows(prev_recs)
     by_cand = defaultdict(lambda: {"votes": 0, "modes": defaultdict(int)})
     party = {}
     for r in recs:
