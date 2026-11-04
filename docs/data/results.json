@@ -1871,121 +1871,69 @@
    "tier": null
   },
   {
-   "id": "us-house-AZ-02",
-   "title": "AZ · Arizona · U.S. House District 2",
+   "id": "us-house-MI-07",
+   "title": "MI · Michigan · U.S. House District 7",
    "candidates": [
     {
-     "name": "Jonathan Nez",
+     "name": "William Lawrence",
      "party": "D",
-     "votes": 135023
+     "votes": 201719
     },
     {
-     "name": "Eli Crane",
+     "name": "Tom Barrett",
      "party": "R",
-     "votes": 133070
+     "votes": 189203
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 4683
+     "votes": 4963
     }
    ],
-   "margin": 0.72,
-   "reporting_pct": 78.16901408450704,
-   "precincts": "222 of 284 precincts",
+   "margin": 3.16,
+   "reporting_pct": 75.09433962264151,
+   "precincts": "199 of 265 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T11:24:52Z",
+   "as_of": "2026-11-04T11:29:35Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-AZ-06",
-   "title": "AZ · Arizona · U.S. House District 6",
+   "id": "us-house-NV-02",
+   "title": "NV · Nevada · U.S. House District 2",
    "candidates": [
     {
-     "name": "JoAnna Mendoza",
+     "name": "Teresa Benitez-Thompson",
      "party": "D",
-     "votes": 157269
+     "votes": 145046
     },
     {
-     "name": "Juan Ciscomani",
+     "name": "David Flippo",
      "party": "R",
-     "votes": 133502
+     "votes": 126186
+    },
+    {
+     "name": "Lynn Chapman",
+     "party": "IAP",
+     "votes": 14925
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 6153
+     "votes": 0
     }
    ],
-   "margin": 8.0,
-   "reporting_pct": 79.43548387096774,
-   "precincts": "197 of 248 precincts",
+   "margin": 6.59,
+   "reporting_pct": 86.29737609329446,
+   "precincts": "592 of 686 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T11:24:52Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-AZ-07",
-   "title": "AZ · Arizona · U.S. House District 7",
-   "candidates": [
-    {
-     "name": "Adelita Grijalva",
-     "party": "D",
-     "votes": 111192
-    },
-    {
-     "name": "Daniel Butierez",
-     "party": "R",
-     "votes": 44298
-    }
-   ],
-   "margin": 43.02,
-   "reporting_pct": 80.97560975609755,
-   "precincts": "166 of 205 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:11 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T11:24:51Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-ID-02",
-   "title": "ID · Idaho · U.S. House District 2",
-   "candidates": [
-    {
-     "name": "Mike Simpson",
-     "party": "R",
-     "votes": 159148
-    },
-    {
-     "name": "Ellie Gilbreath",
-     "party": "D",
-     "votes": 125562
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 24596
-    }
-   ],
-   "margin": -10.86,
-   "reporting_pct": 92.32245681381957,
-   "precincts": "481 of 521 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 08:49 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T11:25:32Z",
+   "as_of": "2026-11-04T11:29:49Z",
    "county_scope": null,
    "tier": null
   }
