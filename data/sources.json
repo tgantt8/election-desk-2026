@@ -1193,7 +1193,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T10:54:19Z",
+   "last_success_at": "2026-11-04T10:57:18Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -1641,7 +1641,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T10:54:21Z",
+   "last_success_at": "2026-11-04T10:57:20Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -1879,7 +1879,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T10:54:22Z",
+   "last_success_at": "2026-11-04T10:57:21Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -2200,7 +2200,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T10:54:23Z",
+   "last_success_at": "2026-11-04T10:57:23Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -2248,7 +2248,7 @@
    "verified_at": "2026-10-29",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T10:54:24Z",
+   "last_success_at": "2026-11-04T10:57:24Z",
    "last_error": "",
    "active": true,
    "ev": {
@@ -2296,7 +2296,7 @@
    "verified_at": "2026-10-29",
    "poller": "nc_s3",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T10:54:25Z",
+   "last_success_at": "2026-11-04T10:57:25Z",
    "last_error": "",
    "active": true,
    "notes": " 2026-10-29: poller not written yet (every scheduled pass logged poller_not_implemented); switched off until it exists. Results scaffold reachable from the runner (reach run 40931499434). 2026-11-03 19:55 ET: poller written (tools/poll_nc_s3.py); switched on."
@@ -2340,7 +2340,7 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": "2026-11-04T08:01:45Z",
-   "last_error": "2026-11-04T10:54:27Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_error": "2026-11-04T10:57:26Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
    "active": true
   },
   {
@@ -2360,7 +2360,7 @@
    "verified_at": "2026-10-29",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T10:54:28Z",
+   "last_success_at": "2026-11-04T10:57:27Z",
    "last_error": "",
    "active": true
   },
@@ -2423,7 +2423,7 @@
    "verified_at": "2026-10-29",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T10:54:29Z",
+   "last_success_at": "2026-11-04T10:57:28Z",
    "last_error": "",
    "active": true
   },
@@ -2763,7 +2763,7 @@
    "verified_at": "2026-11-03",
    "poller": "npr_ap",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T10:54:30Z",
+   "last_success_at": "2026-11-04T10:57:29Z",
    "last_error": "",
    "active": true,
    "notes": " 2026-11-03 20:35 ET: added during election night — the only machine-readable source of AP calls the desk can read without a license."
@@ -2800,7 +2800,7 @@
    "verified_at": "2026-11-03",
    "poller": "totalvote",
    "active": true,
-   "last_success_at": "2026-11-04T10:54:32Z",
+   "last_success_at": "2026-11-04T10:57:31Z",
    "last_error": "",
    "totalvote": {
     "base": "https://michigan.totalvote.com/Wayne",
@@ -2848,7 +2848,7 @@
    "verified_at": "2026-11-03",
    "poller": "enhanced_voting",
    "active": true,
-   "last_success_at": "2026-11-04T10:54:33Z",
+   "last_success_at": "2026-11-04T10:57:32Z",
    "last_error": "",
    "county": "Monroe",
    "ev": {
@@ -2878,7 +2878,7 @@
    "verified_at": "2026-11-03",
    "poller": "enhanced_voting",
    "active": true,
-   "last_success_at": "2026-11-04T10:54:53Z",
+   "last_success_at": "2026-11-04T10:57:52Z",
    "last_error": "",
    "county": "St. Clair",
    "ev": {
