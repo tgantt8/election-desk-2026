@@ -1,8 +1,8 @@
 {
- "built_at": "2026-11-04T02:26:33Z",
- "latest_snapshot_at": "2026-11-04T02:26:21Z",
+ "built_at": "2026-11-04T02:29:26Z",
+ "latest_snapshot_at": "2026-11-04T02:29:14Z",
  "expected_cadence_min": 60,
- "snapshot_count": 256,
+ "snapshot_count": 257,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -1248,8 +1248,8 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "clarity",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T02:12:03Z",
-   "last_error": "2026-11-04T02:26:18Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_success_at": "2026-11-04T02:29:14Z",
+   "last_error": "",
    "health": "green"
   },
   {
@@ -1494,6 +1494,19 @@
    "terms_note": "See results_ap_via_npr. One append-only call record per (contest, outlet, winnerDateTime); a call NPR stops showing appends a 'retracted' record.",
    "status": "VERIFIED_PARTIAL",
    "poller": "none",
+   "decision_needed": null,
+   "last_success_at": null,
+   "last_error": "",
+   "health": "gray"
+  },
+  {
+   "id": "enr_wayne_totalvote",
+   "name": "Wayne County Clerk — Unofficial Results Election Display (TotalVote)",
+   "layer": "results",
+   "url": "https://michigan.totalvote.com/Wayne",
+   "terms_note": "Wayne County Clerk's election-night page (BPro/Civix TotalVote), linked from waynecountymi.gov 'Unofficial Results Election Display'. Server-rendered HTML per office type; the page's own 'Results Last Updated' stamp is the as_of. Attribute 'Wayne County Clerk, unofficial results, as of <stamp>'. UNOFFICIAL until certified. Wayne cannot report until its local clerks submit; expect late first numbers.",
+   "status": "VERIFIED_PARTIAL",
+   "poller": "totalvote",
    "decision_needed": null,
    "last_success_at": null,
    "last_error": "",
