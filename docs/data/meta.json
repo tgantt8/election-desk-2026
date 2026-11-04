@@ -1,8 +1,8 @@
 {
- "built_at": "2026-11-04T01:44:56Z",
- "latest_snapshot_at": "2026-11-04T01:44:39Z",
+ "built_at": "2026-11-04T01:47:56Z",
+ "latest_snapshot_at": "2026-11-04T01:47:39Z",
  "expected_cadence_min": 60,
- "snapshot_count": 212,
+ "snapshot_count": 214,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -559,7 +559,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:44:32Z",
+   "last_success_at": "2026-11-04T01:47:32Z",
    "last_error": "",
    "health": "green"
   },
@@ -832,7 +832,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:44:33Z",
+   "last_success_at": "2026-11-04T01:47:33Z",
    "last_error": "",
    "health": "green"
   },
@@ -975,7 +975,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:44:35Z",
+   "last_success_at": "2026-11-04T01:47:35Z",
    "last_error": "",
    "health": "green"
   },
@@ -1170,7 +1170,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:44:36Z",
+   "last_success_at": "2026-11-04T01:47:36Z",
    "last_error": "",
    "health": "green"
   },
@@ -1196,7 +1196,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:44:37Z",
+   "last_success_at": "2026-11-04T01:47:37Z",
    "last_error": "",
    "health": "green"
   },
@@ -1222,7 +1222,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "nc_s3",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:44:40Z",
+   "last_success_at": "2026-11-04T01:47:40Z",
    "last_error": "",
    "health": "green"
   },
@@ -1249,7 +1249,7 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": "2026-11-04T01:44:41Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_error": "2026-11-04T01:47:41Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
    "health": "gray"
   },
   {
@@ -1261,7 +1261,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:44:42Z",
+   "last_success_at": "2026-11-04T01:47:42Z",
    "last_error": "",
    "health": "green"
   },
@@ -1300,7 +1300,7 @@
    "status": "VERIFIED",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:44:44Z",
+   "last_success_at": "2026-11-04T01:47:43Z",
    "last_error": "",
    "health": "green"
   },
