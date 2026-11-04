@@ -424,42 +424,42 @@
     {
      "name": "Brad Little",
      "party": "R",
-     "votes": 391236
+     "votes": 391420
     },
     {
      "name": "Terri Pickens",
      "party": "D",
-     "votes": 221665
+     "votes": 221700
     },
     {
      "name": "John R. Stegner",
      "party": "I",
-     "votes": 52266
+     "votes": 52278
     },
     {
      "name": "Paul Sand",
      "party": "L",
-     "votes": 11068
+     "votes": 11078
     },
     {
      "name": "Pro-Life",
      "party": "other",
-     "votes": 9130
+     "votes": 9137
     },
     {
      "name": "Jacob Burnett",
      "party": "I",
-     "votes": 267
+     "votes": 268
     }
    ],
-   "margin": -24.73,
+   "margin": -24.74,
    "reporting_pct": null,
    "precincts": null,
    "modes": null,
-   "delta": 0.0,
+   "delta": -0.01,
    "status": "Projected (AP (via NPR), 2026-11-04 05:36 UTC)",
    "source": "enr_id_ev",
-   "as_of": "2026-11-04T11:08:08.9544862Z",
+   "as_of": "2026-11-04T11:42:15.8390585Z",
    "county_scope": null,
    "tier": null
   },
@@ -470,22 +470,22 @@
     {
      "name": "Jim Risch",
      "party": "R",
-     "votes": 385706
+     "votes": 385901
     },
     {
      "name": "Todd Achilles",
      "party": "I",
-     "votes": 230159
+     "votes": 230186
     },
     {
      "name": "Natalie M Fleming",
      "party": "I",
-     "votes": 47349
+     "votes": 47371
     },
     {
      "name": "Matt Loesby",
      "party": "L",
-     "votes": 19709
+     "votes": 19714
     }
    ],
    "margin": null,
@@ -495,7 +495,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 06:31 UTC)",
    "source": "enr_id_ev",
-   "as_of": "2026-11-04T11:08:08.9544862Z",
+   "as_of": "2026-11-04T11:42:15.8390585Z",
    "county_scope": null,
    "tier": null
   },
@@ -1871,33 +1871,54 @@
    "tier": null
   },
   {
-   "id": "us-house-NC-01",
-   "title": "NC · North Carolina · U.S. House District 1",
+   "id": "us-house-TX-06",
+   "title": "TX · Texas · U.S. House District 6",
    "candidates": [
     {
-     "name": "Don Davis",
-     "party": "D",
-     "votes": 156565
-    },
-    {
-     "name": "Laurie Buckhout",
+     "name": "Jake Ellzey",
      "party": "R",
-     "votes": 146279
+     "votes": 139900
     },
     {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 9886
+     "name": "Danny Minton",
+     "party": "D",
+     "votes": 128136
     }
    ],
-   "margin": 3.29,
-   "reporting_pct": 99.65517241379311,
-   "precincts": "289 of 290 precincts",
+   "margin": -4.39,
+   "reporting_pct": 97.60956175298804,
+   "precincts": "245 of 251 precincts",
    "modes": null,
    "delta": null,
-   "status": "Too early",
+   "status": "Projected (AP (via NPR), 2026-11-04 07:20 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T11:36:48Z",
+   "as_of": "2026-11-04T11:40:45Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-TX-33",
+   "title": "TX · Texas · U.S. House District 33",
+   "candidates": [
+    {
+     "name": "Colin Allred",
+     "party": "D",
+     "votes": 148858
+    },
+    {
+     "name": "Patrick Gillespie",
+     "party": "R",
+     "votes": 40196
+    }
+   ],
+   "margin": 57.48,
+   "reporting_pct": 89.68253968253968,
+   "precincts": "226 of 252 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 01:10 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T11:40:49Z",
    "county_scope": null,
    "tier": null
   }
