@@ -1840,3 +1840,10 @@
 {"at": "2026-11-04T17:01:05Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-11-04T17:01:08Z", "errors": [], "event": "npr_ap_pull", "new_calls": 0, "result_rows": 67, "retractions": 0, "source_id": "results_ap_via_npr"}
 {"at": "2026-11-04T17:01:10Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
+{"at": "2026-11-04T17:03:58Z", "ballot_items": 145, "election": "nov2026", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok_unchanged", "records": 0, "snapshot": "enr_id_ev:2026-11-04T17:03:58Z:a64e76ba6436", "source_id": "enr_id_ev", "total_record_count": 145}
+{"at": "2026-11-04T17:04:00Z", "ballot_items": 32, "election": "2026-November-General", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 113, "snapshot": "enr_va_ev:2026-11-04T17:04:00Z:1bcf45e078e8", "source_id": "enr_va_ev", "total_record_count": 32}
+{"at": "2026-11-04T17:04:03Z", "event": "nc_s3_unchanged", "source_id": "enr_nc_s3_results"}
+{"at": "2026-11-04T17:04:05Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-11-04T17:04:07Z", "bytes": 156126, "event": "pdf_pull", "parse_status": "ok", "snapshot": "macomb_clerk_unofficial_summary_pdf:2026-11-04T17:04:07Z:fb7073f23852", "source_id": "macomb_clerk_unofficial_summary_pdf"}
+{"at": "2026-11-04T17:04:09Z", "errors": [], "event": "npr_ap_pull", "new_calls": 0, "result_rows": 85, "retractions": 0, "source_id": "results_ap_via_npr"}
+{"at": "2026-11-04T17:04:11Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
