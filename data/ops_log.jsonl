@@ -1331,3 +1331,7 @@
 {"at": "2026-11-04T12:06:27Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-11-04T12:06:30Z", "errors": [], "event": "npr_ap_pull", "new_calls": 0, "result_rows": 6, "retractions": 0, "source_id": "results_ap_via_npr"}
 {"at": "2026-11-04T12:06:32Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
+{"at": "2026-11-04T12:09:25Z", "event": "nc_s3_unchanged", "source_id": "enr_nc_s3_results"}
+{"at": "2026-11-04T12:09:26Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-11-04T12:09:30Z", "errors": [], "event": "npr_ap_pull", "new_calls": 0, "result_rows": 3, "retractions": 0, "source_id": "results_ap_via_npr"}
+{"at": "2026-11-04T12:09:32Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
