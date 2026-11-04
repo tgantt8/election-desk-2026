@@ -1145,7 +1145,7 @@
    "delta": 0.0,
    "status": "Too early",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:08:45.6592332Z",
+   "as_of": "2026-11-04T12:14:02.2146204Z",
    "county_scope": null,
    "tier": null
   },
@@ -1186,7 +1186,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 04:47 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:08:45.6592332Z",
+   "as_of": "2026-11-04T12:14:02.2146204Z",
    "county_scope": null,
    "tier": null
   },
@@ -1227,7 +1227,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:08 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:08:45.6592332Z",
+   "as_of": "2026-11-04T12:14:02.2146204Z",
    "county_scope": null,
    "tier": null
   },
@@ -1263,7 +1263,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:33 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:08:45.6592332Z",
+   "as_of": "2026-11-04T12:14:02.2146204Z",
    "county_scope": null,
    "tier": null
   },
@@ -1299,7 +1299,7 @@
    "delta": 0.0,
    "status": "Too early",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:08:45.6592332Z",
+   "as_of": "2026-11-04T12:14:02.2146204Z",
    "county_scope": null,
    "tier": null
   },
@@ -1330,7 +1330,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 02:10 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:08:45.6592332Z",
+   "as_of": "2026-11-04T12:14:02.2146204Z",
    "county_scope": null,
    "tier": null
   },
@@ -1381,7 +1381,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:40 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:08:45.6592332Z",
+   "as_of": "2026-11-04T12:14:02.2146204Z",
    "county_scope": null,
    "tier": null
   },
@@ -1422,7 +1422,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:05 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:08:45.6592332Z",
+   "as_of": "2026-11-04T12:14:02.2146204Z",
    "county_scope": null,
    "tier": null
   },
@@ -1453,7 +1453,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:29 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:08:45.6592332Z",
+   "as_of": "2026-11-04T12:14:02.2146204Z",
    "county_scope": null,
    "tier": null
   },
@@ -1489,7 +1489,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:03 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:08:45.6592332Z",
+   "as_of": "2026-11-04T12:14:02.2146204Z",
    "county_scope": null,
    "tier": null
   },
@@ -1525,7 +1525,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 02:10 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:08:45.6592332Z",
+   "as_of": "2026-11-04T12:14:02.2146204Z",
    "county_scope": null,
    "tier": null
   },
@@ -1556,7 +1556,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 00:00 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:08:45.6592332Z",
+   "as_of": "2026-11-04T12:14:02.2146204Z",
    "county_scope": null,
    "tier": null
   },
@@ -1871,33 +1871,69 @@
    "tier": null
   },
   {
-   "id": "gov-NE",
-   "title": "NE · Nebraska · Governor",
+   "id": "us-house-ID-01",
+   "title": "ID · Idaho · U.S. House District 1",
    "candidates": [
     {
-     "name": "Jim Pillen",
+     "name": "Russ Fulcher",
      "party": "R",
-     "votes": 371775
+     "votes": 234728
     },
     {
-     "name": "Lynne Walz",
+     "name": "Kaylee Peterson",
      "party": "D",
-     "votes": 310774
+     "votes": 104319
+    },
+    {
+     "name": "Sarah Zabel",
+     "party": "I",
+     "votes": 22006
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 51705
+     "votes": 3308
     }
    ],
-   "margin": -8.31,
-   "reporting_pct": 90.92284417549168,
-   "precincts": "1202 of 1322 precincts",
+   "margin": -35.79,
+   "reporting_pct": 95.48387096774194,
+   "precincts": "444 of 465 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 07:53 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 04:43 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T12:11:09Z",
+   "as_of": "2026-11-04T12:11:33Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-NE-03",
+   "title": "NE · Nebraska · U.S. House District 3",
+   "candidates": [
+    {
+     "name": "Adrian Smith",
+     "party": "R",
+     "votes": 170650
+    },
+    {
+     "name": "Becky Stille",
+     "party": "D",
+     "votes": 48035
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 21451
+    }
+   ],
+   "margin": -51.06,
+   "reporting_pct": 94.33962264150944,
+   "precincts": "600 of 636 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 04:08 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T12:11:49Z",
    "county_scope": null,
    "tier": null
   }
