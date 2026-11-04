@@ -1871,54 +1871,105 @@
    "tier": null
   },
   {
-   "id": "us-house-TX-06",
-   "title": "TX · Texas · U.S. House District 6",
+   "id": "us-house-AK-AL",
+   "title": "AK · Alaska · U.S. House District 1",
    "candidates": [
     {
-     "name": "Jake Ellzey",
+     "name": "Nick Begich",
      "party": "R",
-     "votes": 139900
+     "votes": 105353
     },
     {
-     "name": "Danny Minton",
+     "name": "Bill Hill",
+     "party": "NP",
+     "votes": 85838
+    },
+    {
+     "name": "Eric Hafner",
      "party": "D",
-     "votes": 128136
+     "votes": 15501
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 0
     }
    ],
-   "margin": -4.39,
-   "reporting_pct": 97.60956175298804,
-   "precincts": "245 of 251 precincts",
+   "margin": -43.47,
+   "reporting_pct": 73.9454094292804,
+   "precincts": "298 of 403 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 07:20 UTC)",
+   "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T11:40:45Z",
+   "as_of": "2026-11-04T11:45:20Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-TX-33",
-   "title": "TX · Texas · U.S. House District 33",
+   "id": "us-house-ID-01",
+   "title": "ID · Idaho · U.S. House District 1",
    "candidates": [
     {
-     "name": "Colin Allred",
-     "party": "D",
-     "votes": 148858
+     "name": "Russ Fulcher",
+     "party": "R",
+     "votes": 234037
     },
     {
-     "name": "Patrick Gillespie",
-     "party": "R",
-     "votes": 40196
+     "name": "Kaylee Peterson",
+     "party": "D",
+     "votes": 104118
+    },
+    {
+     "name": "Sarah Zabel",
+     "party": "I",
+     "votes": 21951
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 3296
     }
    ],
-   "margin": 57.48,
-   "reporting_pct": 89.68253968253968,
-   "precincts": "226 of 252 precincts",
+   "margin": -35.75,
+   "reporting_pct": 95.26881720430107,
+   "precincts": "443 of 465 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:10 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 04:43 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T11:40:49Z",
+   "as_of": "2026-11-04T11:42:42Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-MI-09",
+   "title": "MI · Michigan · U.S. House District 9",
+   "candidates": [
+    {
+     "name": "Lisa McClain",
+     "party": "R",
+     "votes": 246019
+    },
+    {
+     "name": "Ray Pooley",
+     "party": "D",
+     "votes": 136707
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 10441
+    }
+   ],
+   "margin": -27.8,
+   "reporting_pct": 86.42384105960265,
+   "precincts": "261 of 302 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 04:45 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T11:43:37Z",
    "county_scope": null,
    "tier": null
   }
