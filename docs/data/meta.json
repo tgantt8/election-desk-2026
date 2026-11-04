@@ -1,8 +1,8 @@
 {
- "built_at": "2026-11-04T02:17:31Z",
- "latest_snapshot_at": "2026-11-04T02:17:19Z",
+ "built_at": "2026-11-04T02:20:34Z",
+ "latest_snapshot_at": "2026-11-04T02:20:22Z",
  "expected_cadence_min": 60,
- "snapshot_count": 240,
+ "snapshot_count": 246,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -210,7 +210,7 @@
    "decision_needed": null,
    "last_success_at": "2026-11-04T00:18:27Z",
    "last_error": "",
-   "health": "green"
+   "health": "amber"
   },
   {
    "id": "ratings_ie_governor",
@@ -223,7 +223,7 @@
    "decision_needed": null,
    "last_success_at": "2026-11-04T00:18:28Z",
    "last_error": "",
-   "health": "green"
+   "health": "amber"
   },
   {
    "id": "ratings_ie_house",
@@ -236,7 +236,7 @@
    "decision_needed": "House labels stored for Michigan only (same scope as Cook); widen if Tabu rules so.",
    "last_success_at": "2026-11-04T00:18:29Z",
    "last_error": "",
-   "health": "green"
+   "health": "amber"
   },
   {
    "id": "ratings_votehub_forecast",
@@ -559,7 +559,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T02:17:08Z",
+   "last_success_at": "2026-11-04T02:20:09Z",
    "last_error": "",
    "health": "green"
   },
@@ -832,7 +832,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T02:17:09Z",
+   "last_success_at": "2026-11-04T02:20:10Z",
    "last_error": "",
    "health": "green"
   },
@@ -975,7 +975,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T02:17:11Z",
+   "last_success_at": "2026-11-04T02:20:13Z",
    "last_error": "",
    "health": "green"
   },
@@ -1170,7 +1170,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T02:17:12Z",
+   "last_success_at": "2026-11-04T02:20:14Z",
    "last_error": "",
    "health": "green"
   },
@@ -1196,7 +1196,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T02:17:13Z",
+   "last_success_at": "2026-11-04T02:20:15Z",
    "last_error": "",
    "health": "green"
   },
@@ -1222,7 +1222,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "nc_s3",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T02:17:14Z",
+   "last_success_at": "2026-11-04T02:20:17Z",
    "last_error": "",
    "health": "green"
   },
@@ -1249,7 +1249,7 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": "2026-11-04T02:12:03Z",
-   "last_error": "2026-11-04T02:17:15Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_error": "2026-11-04T02:20:18Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
    "health": "green"
   },
   {
@@ -1261,7 +1261,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T02:17:17Z",
+   "last_success_at": "2026-11-04T02:20:20Z",
    "last_error": "",
    "health": "green"
   },
@@ -1300,7 +1300,7 @@
    "status": "VERIFIED",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T02:17:18Z",
+   "last_success_at": "2026-11-04T02:20:21Z",
    "last_error": "",
    "health": "green"
   },
@@ -1482,7 +1482,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "npr_ap",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T02:17:19Z",
+   "last_success_at": "2026-11-04T02:20:22Z",
    "last_error": "",
    "health": "green"
   },
