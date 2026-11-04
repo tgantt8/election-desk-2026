@@ -5881,6 +5881,40 @@
    "source_id": "calls_ap_via_npr",
    "status": "Projected",
    "url": "https://apps.npr.org/2026-election-results/data/house.json"
+  },
+  {
+   "ap_race_id": "17355",
+   "basis": "AP race call as published by NPR's results app",
+   "called_at": "2026-11-04T05:26:31.787Z",
+   "called_for": "Derek Schmidt",
+   "called_for_party": "R",
+   "contest": "us-house-KS-02",
+   "entered_at": "2026-11-04T05:29:12Z",
+   "entered_by": "poll_npr_ap",
+   "flipped_seat": false,
+   "layer": "calls",
+   "outlet": "AP (via NPR)",
+   "previous_party": "R",
+   "source_id": "calls_ap_via_npr",
+   "status": "Projected",
+   "url": "https://apps.npr.org/2026-election-results/data/house.json"
+  },
+  {
+   "ap_race_id": "45669",
+   "basis": "AP race call as published by NPR's results app",
+   "called_at": "2026-11-04T05:26:32.273Z",
+   "called_for": "Ben McAdams",
+   "called_for_party": "D",
+   "contest": "us-house-UT-01",
+   "entered_at": "2026-11-04T05:29:12Z",
+   "entered_by": "poll_npr_ap",
+   "flipped_seat": true,
+   "layer": "calls",
+   "outlet": "AP (via NPR)",
+   "previous_party": "",
+   "source_id": "calls_ap_via_npr",
+   "status": "Projected",
+   "url": "https://apps.npr.org/2026-election-results/data/house.json"
   }
  ]
 }
