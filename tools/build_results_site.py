@@ -132,6 +132,8 @@ def build(replay_2024=False):
                     detail[f"{cid} ({src})"] = {"rows": [{"unit": r["unit"], "mode": r.get("mode", "TOTAL"), "candidate": r["candidate"], "votes": r["votes"], "complete": bool(r.get("complete"))} for r in units],
                                                 "source": src, "as_of": card["as_of"]}
             elif re.match(r"^(us-senate|gov|us-house)-", str(cid)):
+                if crec and all(r.get("county_scope") == "county_portion" for r in crec):
+                    continue  # one county's share of a statewide/congressional race (Oakland, Wayne feeds) is not a national card
                 m = re.match(r"^(?:us-senate|gov|us-house)-([A-Z]{2})", str(cid))
                 if m and not card["title"].startswith(m.group(1)):
                     card["title"] = f"{m.group(1)} · {card['title']}"  # the feed's own contest name, prefixed with the state
