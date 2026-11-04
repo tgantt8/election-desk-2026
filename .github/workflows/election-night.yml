@@ -41,13 +41,16 @@ jobs:
           while [ $(date +%s) -lt $end ]; do
             pass=$((pass+1)); start=$(date +%s)
             echo "=== pass $pass $(date -u +%FT%TZ)"
+            # Every pass starts from the current main (browser captures and fixes land there between passes). Never rebase:
+            # a conflict in sources.json or a derived file once killed the loop mid-night (Nov 3, 02:11Z).
+            git fetch -q origin main && git reset -q --hard origin/main
             python3 tools/poll_all.py --layers "$LAYERS" || true
             python3 tools/run_anomalies.py || true
             python3 tools/build_polls_site.py && python3 tools/build_results_site.py && python3 tools/simulate.py && python3 tools/build_site_data.py
             python3 tools/hygiene_check.py --all
             git add data docs/data
             if git commit -q -m "election-night pass $pass $(date -u +%FT%TZ)"; then
-              for i in 1 2 3; do git pull -q --rebase origin main && git push -q && break || sleep 5; done
+              git push -q origin HEAD:main || echo "push raced with another commit; this pass is redone from the new main next time"
             fi
             elapsed=$(( $(date +%s) - start )); sleep_s=$(( INTERVAL*60 - elapsed )); [ $sleep_s -gt 0 ] && sleep $sleep_s
           done
