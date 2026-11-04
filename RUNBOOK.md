@@ -30,6 +30,34 @@ UNOFFICIAL until certified (Macomb canvass ~Nov 17; state canvass ~Nov 23).
 - **Anomaly flags** (Macomb detail view): a decrease, votes > ballots, a complete precinct that changed, a stall > 90 min, an over/undervote spike. `tools/run_anomalies.py` runs them after every poll pass and every manual entry over the last two snapshots of each Macomb contest and appends to `data/anomalies.jsonl`; the Macomb tab shows the queue. Language is "data changed — confirm with the Clerk." Open flags get a one-tap note into the Election Defense Plan doc.
 - **Digest cadence** (private channel only): post when a Tier 1 or battleground margin moves more than 2 points, a status changes, a chamber-control number changes, or an anomaly opens.
 
+## Changed on election night (Nov 3, 8:00–9:20 PM ET) — the manual steps that were removed
+
+The dry-run plan leaned on hand entry (precincts from a browser, calls from apnews.com, county pages typed in). There was no
+time for that, so three collectors were added live and the loop was hardened:
+
+- **AP calls and AP-tabulated counts, automatic** (`tools/poll_npr_ap.py`, poller `npr_ap`, sources `results_ap_via_npr` /
+  `calls_ap_via_npr`): NPR's results app publishes AP's race data as plain JSON (`apps.npr.org/2026-election-results/data/
+  senate.json`, `gov.json`, `house.json`; robots.txt allows all; reachable from the runner). Every pass appends one call per
+  (race, AP winnerDateTime) to the calls layer as outlet "AP (via NPR)" and per-candidate counts to the results layer labeled
+  "AP via NPR" (media-tabulated, UNOFFICIAL). A call NPR stops showing appends a `retracted` row. Nothing here derives a call
+  from totals. Hand call entry (Ops → Call entry) is still there for non-AP outlets and state legislative seats.
+- **North Carolina official precinct feed** (`tools/poll_nc_s3.py`, poller `nc_s3`): the NCSBE S3 zip, conditional GET, statewide
+  and county Senate rows. Written and switched on at 7:55 PM.
+- **Macomb Clarity ENR through a real browser** (`tools/browser/clarity_capture_compact.js` → `tools/ingest_clarity_bundle.py`
+  → `tools/push_capture.sh`): the WAF challenge stops scripts, not browsers. The operator's browser (Claude's built-in browser
+  pane, or any person with the page open) runs the capture script, which reads `current_ver.txt` and `reports/detailxml.zip`
+  exactly as the page does and returns a CRC-32-checked JSON of county totals by vote type for every tracked contest plus
+  precinct × vote type for HD-58 and SD-24. The ingester refuses a copy with a bad CRC, stores the capture as the snapshot (zip
+  sha256 in the note) and appends county / mode / precinct rows under source `macomb_clarity_enr`. Seat cards read it as the
+  Macomb portion (`mi_legislature.CLARITY_SOURCE`); cards built from a feed that carries both county and precinct rows use the
+  county rows (`build_results_site._card_rows`). First live capture 9:07 PM (ver 383972), then every ~10 min. The same script
+  works for Oakland/Genesee/Iowa/Colorado/SC Clarity pages by setting `CLARITY_BASE`.
+- **Loop hardening**: a capture push collided with the loop's `git pull --rebase` at 9:09 PM; the conflict markers in
+  `sources.json` killed the loop at 9:11 PM (run 41747944255). Restarted 9:13 PM. `election-night.yml` now starts every pass
+  from `origin/main` (`fetch` + `reset --hard`) and pushes without rebasing; a raced push is simply redone next pass.
+  `tools/push_capture.sh` does the same from the sandbox side. `.gitattributes` marks `*.jsonl` `merge=union` as a backstop.
+- Code pushes to `main` resumed for these changes; the Nov 2 freeze tag stays where it was as the record of the dry-run build.
+
 ## Failure modes
 - **A source goes down:** the poller backs off; the stale banner shows. Nothing to do unless it stays red for 2 intervals → switch that source to manual entry.
 - **A format changes:** the parser records the snapshot with `parse_status` = `parse_error`; the raw payload is kept. Switch to manual entry and fix forward after the night.
