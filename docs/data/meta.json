@@ -1,8 +1,8 @@
 {
- "built_at": "2026-11-04T02:52:08Z",
- "latest_snapshot_at": "2026-11-04T02:51:55Z",
+ "built_at": "2026-11-04T02:58:02Z",
+ "latest_snapshot_at": "2026-11-04T02:57:47Z",
  "expected_cadence_min": 60,
- "snapshot_count": 288,
+ "snapshot_count": 290,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -1248,7 +1248,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "clarity",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T02:48:47Z",
+   "last_success_at": "2026-11-04T02:57:47Z",
    "last_error": "",
    "health": "green"
   },
@@ -1521,7 +1521,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "manual",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T02:42:13Z",
+   "last_success_at": "2026-11-04T02:57:48Z",
    "last_error": "",
    "health": "green"
   },
