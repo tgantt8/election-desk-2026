@@ -1871,38 +1871,54 @@
    "tier": null
   },
   {
-   "id": "us-house-AK-AL",
-   "title": "AK · Alaska · U.S. House District 1",
+   "id": "us-house-CA-01",
+   "title": "CA · California · U.S. House District 1",
    "candidates": [
     {
-     "name": "Nick Begich",
-     "party": "R",
-     "votes": 105353
-    },
-    {
-     "name": "Bill Hill",
-     "party": "NP",
-     "votes": 85838
-    },
-    {
-     "name": "Eric Hafner",
+     "name": "Mike McGuire",
      "party": "D",
-     "votes": 15501
+     "votes": 88089
     },
     {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 0
+     "name": "James Gallagher",
+     "party": "R",
+     "votes": 66369
     }
    ],
-   "margin": -43.47,
-   "reporting_pct": 73.9454094292804,
-   "precincts": "298 of 403 precincts",
+   "margin": 14.06,
+   "reporting_pct": 50.0,
+   "precincts": "394 of 788 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 04:53 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T11:51:47Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-CA-04",
+   "title": "CA · California · U.S. House District 4",
+   "candidates": [
+    {
+     "name": "Eric Jones",
+     "party": "D",
+     "votes": 61929
+    },
+    {
+     "name": "Mike Thompson",
+     "party": "D",
+     "votes": 57671
+    }
+   ],
+   "margin": null,
+   "reporting_pct": 40.6,
+   "precincts": "203 of 500 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T11:45:20Z",
+   "as_of": "2026-11-04T11:51:51Z",
    "county_scope": null,
    "tier": null
   },
@@ -1913,63 +1929,32 @@
     {
      "name": "Russ Fulcher",
      "party": "R",
-     "votes": 234037
+     "votes": 234295
     },
     {
      "name": "Kaylee Peterson",
      "party": "D",
-     "votes": 104118
+     "votes": 104207
     },
     {
      "name": "Sarah Zabel",
      "party": "I",
-     "votes": 21951
+     "votes": 21968
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 3296
+     "votes": 3302
     }
    ],
-   "margin": -35.75,
+   "margin": -35.76,
    "reporting_pct": 95.26881720430107,
    "precincts": "443 of 465 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:43 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T11:42:42Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-MI-09",
-   "title": "MI · Michigan · U.S. House District 9",
-   "candidates": [
-    {
-     "name": "Lisa McClain",
-     "party": "R",
-     "votes": 246019
-    },
-    {
-     "name": "Ray Pooley",
-     "party": "D",
-     "votes": 136707
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 10441
-    }
-   ],
-   "margin": -27.8,
-   "reporting_pct": 86.42384105960265,
-   "precincts": "261 of 302 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:45 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T11:43:37Z",
+   "as_of": "2026-11-04T11:49:32Z",
    "county_scope": null,
    "tier": null
   }
