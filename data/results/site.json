@@ -1145,7 +1145,7 @@
    "delta": 0.0,
    "status": "Too early",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T16:34:57.8178981Z",
+   "as_of": "2026-11-04T16:40:36.4848324Z",
    "county_scope": null,
    "tier": null
   },
@@ -1186,7 +1186,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 04:47 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T16:34:57.8178981Z",
+   "as_of": "2026-11-04T16:40:36.4848324Z",
    "county_scope": null,
    "tier": null
   },
@@ -1227,7 +1227,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:08 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T16:34:57.8178981Z",
+   "as_of": "2026-11-04T16:40:36.4848324Z",
    "county_scope": null,
    "tier": null
   },
@@ -1263,7 +1263,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:33 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T16:34:57.8178981Z",
+   "as_of": "2026-11-04T16:40:36.4848324Z",
    "county_scope": null,
    "tier": null
   },
@@ -1296,10 +1296,10 @@
    "reporting_pct": null,
    "precincts": null,
    "modes": null,
-   "delta": -0.01,
+   "delta": 0.0,
    "status": "Too early",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T16:34:57.8178981Z",
+   "as_of": "2026-11-04T16:40:36.4848324Z",
    "county_scope": null,
    "tier": null
   },
@@ -1330,7 +1330,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 02:10 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T16:34:57.8178981Z",
+   "as_of": "2026-11-04T16:40:36.4848324Z",
    "county_scope": null,
    "tier": null
   },
@@ -1381,7 +1381,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:40 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T16:34:57.8178981Z",
+   "as_of": "2026-11-04T16:40:36.4848324Z",
    "county_scope": null,
    "tier": null
   },
@@ -1422,7 +1422,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:05 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T16:34:57.8178981Z",
+   "as_of": "2026-11-04T16:40:36.4848324Z",
    "county_scope": null,
    "tier": null
   },
@@ -1453,7 +1453,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:29 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T16:34:57.8178981Z",
+   "as_of": "2026-11-04T16:40:36.4848324Z",
    "county_scope": null,
    "tier": null
   },
@@ -1489,7 +1489,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:03 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T16:34:57.8178981Z",
+   "as_of": "2026-11-04T16:40:36.4848324Z",
    "county_scope": null,
    "tier": null
   },
@@ -1525,7 +1525,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 02:10 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T16:34:57.8178981Z",
+   "as_of": "2026-11-04T16:40:36.4848324Z",
    "county_scope": null,
    "tier": null
   },
@@ -1553,10 +1553,10 @@
    "reporting_pct": null,
    "precincts": null,
    "modes": null,
-   "delta": -0.0,
+   "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 00:00 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T16:34:57.8178981Z",
+   "as_of": "2026-11-04T16:40:36.4848324Z",
    "county_scope": null,
    "tier": null
   },
@@ -1871,59 +1871,116 @@
    "tier": null
   },
   {
-   "id": "us-house-FL-01",
-   "title": "FL · Florida · U.S. House District 1",
+   "id": "us-house-GA-01",
+   "title": "GA · Georgia · U.S. House District 1",
    "candidates": [
     {
-     "name": "Jimmy Patronis",
+     "name": "James Kingston",
      "party": "R",
-     "votes": 181723
+     "votes": 140216
     },
     {
-     "name": "Gay Valimont",
+     "name": "Amanda Hollowell",
      "party": "D",
-     "votes": 103429
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 5322
+     "votes": 132465
     }
    ],
-   "margin": -26.95,
-   "reporting_pct": 98.93617021276596,
-   "precincts": "186 of 188 precincts",
+   "margin": -2.84,
+   "reporting_pct": 100.0,
+   "precincts": "213 of 213 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:35 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 05:14 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T16:35:15Z",
+   "as_of": "2026-11-04T16:39:29Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-IN-08",
-   "title": "IN · Indiana · U.S. House District 8",
+   "id": "us-house-GA-12",
+   "title": "GA · Georgia · U.S. House District 12",
    "candidates": [
     {
-     "name": "Mark Messmer",
+     "name": "Rick Allen",
      "party": "R",
-     "votes": 117503
+     "votes": 140842
     },
     {
-     "name": "Mary Allen",
+     "name": "Ceretta Smith",
      "party": "D",
-     "votes": 95206
+     "votes": 129499
     }
    ],
-   "margin": -10.48,
-   "reporting_pct": 94.53237410071942,
-   "precincts": "657 of 695 precincts",
+   "margin": -4.2,
+   "reporting_pct": 99.57446808510639,
+   "precincts": "234 of 235 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:21 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 03:57 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T16:34:56Z",
+   "as_of": "2026-11-04T16:39:31Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-ID-01",
+   "title": "ID · Idaho · U.S. House District 1",
+   "candidates": [
+    {
+     "name": "Russ Fulcher",
+     "party": "R",
+     "votes": 243085
+    },
+    {
+     "name": "Kaylee Peterson",
+     "party": "D",
+     "votes": 108800
+    },
+    {
+     "name": "Sarah Zabel",
+     "party": "I",
+     "votes": 22969
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 3407
+    }
+   ],
+   "margin": -35.5,
+   "reporting_pct": 98.9247311827957,
+   "precincts": "460 of 465 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 04:43 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T16:40:46Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-IN-03",
+   "title": "IN · Indiana · U.S. House District 3",
+   "candidates": [
+    {
+     "name": "Marlin Stutzman",
+     "party": "R",
+     "votes": 109692
+    },
+    {
+     "name": "Kelly Thompson",
+     "party": "D",
+     "votes": 90180
+    }
+   ],
+   "margin": -9.76,
+   "reporting_pct": 98.21428571428571,
+   "precincts": "550 of 560 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 04:05 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T16:39:02Z",
    "county_scope": null,
    "tier": null
   },
@@ -1954,38 +2011,33 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:13 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T16:37:02Z",
+   "as_of": "2026-11-04T16:40:30Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-KS-03",
-   "title": "KS · Kansas · U.S. House District 3",
+   "id": "us-house-MA-09",
+   "title": "MA · Massachusetts · U.S. House District 9",
    "candidates": [
     {
-     "name": "Sharice Davids",
+     "name": "Bill Keating",
      "party": "D",
-     "votes": 200463
+     "votes": 206114
     },
     {
-     "name": "Eric Jenkins",
+     "name": "R. Macallister",
      "party": "R",
-     "votes": 129248
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 6903
+     "votes": 131648
     }
    ],
-   "margin": 21.16,
-   "reporting_pct": 100.0,
-   "precincts": "735 of 735 precincts",
+   "margin": 22.05,
+   "reporting_pct": 77.41935483870968,
+   "precincts": "192 of 248 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:08 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 03:27 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T16:38:13Z",
+   "as_of": "2026-11-04T16:40:45Z",
    "county_scope": null,
    "tier": null
   },
@@ -2016,100 +2068,100 @@
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T16:36:02Z",
+   "as_of": "2026-11-04T16:39:13Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-MS-01",
-   "title": "MS · Mississippi · U.S. House District 1",
+   "id": "us-house-MS-02",
+   "title": "MS · Mississippi · U.S. House District 2",
    "candidates": [
     {
-     "name": "Trent Kelly",
-     "party": "R",
-     "votes": 138744
+     "name": "Bennie Thompson",
+     "party": "D",
+     "votes": 164261
     },
     {
-     "name": "Cliff Johnson",
-     "party": "D",
-     "votes": 94273
+     "name": "Ron Eller",
+     "party": "R",
+     "votes": 73001
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 3296
+     "votes": 5796
     }
    ],
-   "margin": -18.82,
-   "reporting_pct": 99.75247524752476,
-   "precincts": "403 of 404 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:05 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T16:37:35Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-MS-03",
-   "title": "MS · Mississippi · U.S. House District 3",
-   "candidates": [
-    {
-     "name": "Michael Guest",
-     "party": "R",
-     "votes": 143578
-    },
-    {
-     "name": "Michael Chiaradio",
-     "party": "D",
-     "votes": 101882
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 3127
-    }
-   ],
-   "margin": -16.77,
-   "reporting_pct": 99.78021978021978,
-   "precincts": "454 of 455 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:21 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T16:38:03Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-SC-01",
-   "title": "SC · South Carolina · U.S. House District 1",
-   "candidates": [
-    {
-     "name": "Nancy Lacore",
-     "party": "D",
-     "votes": 161878
-    },
-    {
-     "name": "Jenny Costa Honeycutt",
-     "party": "R",
-     "votes": 158570
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 5564
-    }
-   ],
-   "margin": 1.01,
+   "margin": 37.55,
    "reporting_pct": 100.0,
-   "precincts": "374 of 374 precincts",
+   "precincts": "568 of 568 precincts",
    "modes": null,
    "delta": null,
-   "status": "Too early",
+   "status": "Projected (AP (via NPR), 2026-11-04 02:45 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T16:35:12Z",
+   "as_of": "2026-11-04T16:40:40Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-ND-AL",
+   "title": "ND · North Dakota · U.S. House District 1",
+   "candidates": [
+    {
+     "name": "Julie Fedorchak",
+     "party": "R",
+     "votes": 134477
+    },
+    {
+     "name": "Trygve Hammer",
+     "party": "D",
+     "votes": 85892
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 13886
+    }
+   ],
+   "margin": -20.74,
+   "reporting_pct": 97.20670391061452,
+   "precincts": "348 of 358 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 02:56 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T16:40:46Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-OH-05",
+   "title": "OH · Ohio · U.S. House District 5",
+   "candidates": [
+    {
+     "name": "Bob Latta",
+     "party": "R",
+     "votes": 163382
+    },
+    {
+     "name": "Brian Shaver",
+     "party": "D",
+     "votes": 128142
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 9577
+    }
+   ],
+   "margin": -11.7,
+   "reporting_pct": 97.8369384359401,
+   "precincts": "588 of 601 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 02:56 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T16:39:04Z",
    "county_scope": null,
    "tier": null
   },
@@ -2135,7 +2187,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 01:10 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T16:37:31Z",
+   "as_of": "2026-11-04T16:39:31Z",
    "county_scope": null,
    "tier": null
   },
@@ -2166,7 +2218,7 @@
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T16:38:03Z",
+   "as_of": "2026-11-04T16:39:53Z",
    "county_scope": null,
    "tier": null
   }
