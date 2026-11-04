@@ -1145,7 +1145,7 @@
    "delta": 0.0,
    "status": "Too early",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:36:52.6462793Z",
+   "as_of": "2026-11-04T12:39:14.5442835Z",
    "county_scope": null,
    "tier": null
   },
@@ -1186,7 +1186,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 04:47 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:36:52.6462793Z",
+   "as_of": "2026-11-04T12:39:14.5442835Z",
    "county_scope": null,
    "tier": null
   },
@@ -1227,7 +1227,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:08 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:36:52.6462793Z",
+   "as_of": "2026-11-04T12:39:14.5442835Z",
    "county_scope": null,
    "tier": null
   },
@@ -1263,7 +1263,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:33 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:36:52.6462793Z",
+   "as_of": "2026-11-04T12:39:14.5442835Z",
    "county_scope": null,
    "tier": null
   },
@@ -1299,7 +1299,7 @@
    "delta": 0.0,
    "status": "Too early",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:36:52.6462793Z",
+   "as_of": "2026-11-04T12:39:14.5442835Z",
    "county_scope": null,
    "tier": null
   },
@@ -1330,7 +1330,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 02:10 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:36:52.6462793Z",
+   "as_of": "2026-11-04T12:39:14.5442835Z",
    "county_scope": null,
    "tier": null
   },
@@ -1381,7 +1381,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:40 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:36:52.6462793Z",
+   "as_of": "2026-11-04T12:39:14.5442835Z",
    "county_scope": null,
    "tier": null
   },
@@ -1422,7 +1422,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:05 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:36:52.6462793Z",
+   "as_of": "2026-11-04T12:39:14.5442835Z",
    "county_scope": null,
    "tier": null
   },
@@ -1453,7 +1453,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:29 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:36:52.6462793Z",
+   "as_of": "2026-11-04T12:39:14.5442835Z",
    "county_scope": null,
    "tier": null
   },
@@ -1489,7 +1489,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:03 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:36:52.6462793Z",
+   "as_of": "2026-11-04T12:39:14.5442835Z",
    "county_scope": null,
    "tier": null
   },
@@ -1525,7 +1525,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 02:10 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:36:52.6462793Z",
+   "as_of": "2026-11-04T12:39:14.5442835Z",
    "county_scope": null,
    "tier": null
   },
@@ -1556,7 +1556,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 00:00 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T12:36:52.6462793Z",
+   "as_of": "2026-11-04T12:39:14.5442835Z",
    "county_scope": null,
    "tier": null
   },
@@ -1871,43 +1871,28 @@
    "tier": null
   },
   {
-   "id": "us-senate-ID",
-   "title": "ID · Idaho · U.S. Senate",
+   "id": "us-house-HI-02",
+   "title": "HI · Hawaii · U.S. House District 2",
    "candidates": [
     {
-     "name": "Jim Risch",
+     "name": "Jill Tokuda",
+     "party": "D",
+     "votes": 112448
+    },
+    {
+     "name": "Brenton Awa",
      "party": "R",
-     "votes": 387374
-    },
-    {
-     "name": "Todd Achilles",
-     "party": "I",
-     "votes": 230487
-    },
-    {
-     "name": "Natalie Fleming",
-     "party": "I",
-     "votes": 47500
-    },
-    {
-     "name": "Matt Loesby",
-     "party": "L",
-     "votes": 19765
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 0
+     "votes": 51439
     }
    ],
-   "margin": null,
-   "reporting_pct": 95.43610547667343,
-   "precincts": "941 of 986 precincts",
+   "margin": 37.23,
+   "reporting_pct": 0.0,
+   "precincts": "0 of 247 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 06:31 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 06:18 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T12:34:42Z",
+   "as_of": "2026-11-04T12:39:47Z",
    "county_scope": null,
    "tier": null
   }
