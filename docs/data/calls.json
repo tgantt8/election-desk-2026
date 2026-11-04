@@ -6782,6 +6782,40 @@
    "source_id": "calls_ap_via_npr",
    "status": "Projected",
    "url": "https://apps.npr.org/2026-election-results/data/house.json"
+  },
+  {
+   "ap_race_id": "24074",
+   "basis": "AP race call as published by NPR's results app",
+   "called_at": "2026-11-04T06:45:21.077Z",
+   "called_for": "Jocelyn Benson",
+   "called_for_party": "D",
+   "contest": "gov-MI",
+   "entered_at": "2026-11-04T06:50:11Z",
+   "entered_by": "poll_npr_ap",
+   "flipped_seat": false,
+   "layer": "calls",
+   "outlet": "AP (via NPR)",
+   "previous_party": "D",
+   "source_id": "calls_ap_via_npr",
+   "status": "Projected",
+   "url": "https://apps.npr.org/2026-election-results/data/gov.json"
+  },
+  {
+   "ap_race_id": "39166",
+   "basis": "AP race call as published by NPR's results app",
+   "called_at": "2026-11-04T06:48:14.873Z",
+   "called_for": "Andrea Salinas",
+   "called_for_party": "D",
+   "contest": "us-house-OR-06",
+   "entered_at": "2026-11-04T06:50:11Z",
+   "entered_by": "poll_npr_ap",
+   "flipped_seat": false,
+   "layer": "calls",
+   "outlet": "AP (via NPR)",
+   "previous_party": "D",
+   "source_id": "calls_ap_via_npr",
+   "status": "Projected",
+   "url": "https://apps.npr.org/2026-election-results/data/house.json"
   }
  ]
 }
