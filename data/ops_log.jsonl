@@ -701,3 +701,7 @@
 {"at": "2026-11-04T05:14:12Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-11-04T05:14:15Z", "errors": [], "event": "npr_ap_pull", "new_calls": 2, "result_rows": 539, "retractions": 0, "source_id": "results_ap_via_npr"}
 {"at": "2026-11-04T05:14:17Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
+{"at": "2026-11-04T05:16:31Z", "ballots_cast": 159527, "contests": 29, "event": "clarity_browser_pull", "records": 27832, "snapshot": "macomb_clarity_enr:2026-11-04T05:16:30Z:c98c6a84e8fa", "source_id": "macomb_clarity_enr", "timestamp": "11/3/2026 11:55:44 PM EST", "ver": "385193"}
+{"at": "2026-11-04T05:16:31Z", "ballots_cast": 666363, "contests": 39, "event": "clarity_browser_pull", "records": 8029, "snapshot": "enr_oakland_clarity:2026-11-04T05:16:31Z:9e9756ff48eb", "source_id": "enr_oakland_clarity", "timestamp": "11/4/2026 12:13:50 AM EST", "ver": "385234"}
+{"at": "2026-11-04T05:16:32Z", "ballots_cast": 89243, "contests": 19, "event": "clarity_browser_pull", "records": 11163, "snapshot": "enr_genesee_clarity:2026-11-04T05:16:32Z:27091ed0691d", "source_id": "enr_genesee_clarity", "timestamp": "11/4/2026 12:03:55 AM EST", "ver": "385209"}
+{"at": "2026-11-04T05:16:36Z", "count": 56, "event": "anomaly_flags_opened", "types": ["stalled"]}
