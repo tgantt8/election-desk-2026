@@ -28,22 +28,27 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -q -r requirements.txt
-      - name: Append entry
+      - name: Append entry, rebuild, push (reset-to-main pattern; never rebases derived files)
         env:
           LAYER: ${{ inputs.layer }}
           PAYLOAD: ${{ inputs.payload }}
           NOTE: ${{ inputs.note }}
-        run: python3 tools/manual_entry.py --layer "$LAYER" --note "$NOTE" --payload-env PAYLOAD
-      - name: Anomaly rules (Macomb results, last two snapshots)
-        run: python3 tools/run_anomalies.py || true
-      - name: Rebuild site data
-        run: python3 tools/build_polls_site.py && python3 tools/build_results_site.py && python3 tools/simulate.py && python3 tools/build_site_data.py
-      - name: Hygiene
-        run: python3 tools/hygiene_check.py --all
-      - name: Commit
         run: |
           git config user.name "election-desk-bot"
           git config user.email "info@ganttformichigan.com"
-          git add data docs/data
-          git commit -m "manual-entry (${{ inputs.layer }}): $(date -u +%FT%TZ)" || exit 0
-          for i in 1 2 3; do git pull --rebase origin main && git push && break || sleep 10; done
+          # The loop commits to main every few minutes and regenerates every derived file, so a rebase of this job's commit
+          # would conflict on docs/data/*.json and fail silently (the old retry loop ended in `sleep`, which returns 0).
+          # Same pattern as tools/push_capture.sh: start from the current main, apply the entry, rebuild, push; on a race
+          # start over from the new main. The entry is idempotent only in the sense that nothing is written when it fails.
+          for attempt in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python3 tools/manual_entry.py --layer "$LAYER" --note "$NOTE" --payload-env PAYLOAD
+            python3 tools/run_anomalies.py || true
+            python3 tools/build_polls_site.py && python3 tools/build_results_site.py && python3 tools/simulate.py && python3 tools/build_site_data.py
+            python3 tools/hygiene_check.py --all
+            git add data docs/data
+            git commit -q -m "manual-entry ($LAYER): $(date -u +%FT%TZ)" || { echo "nothing to commit"; exit 0; }
+            if git push -q origin HEAD:main; then echo "pushed $(git rev-parse --short HEAD)"; exit 0; fi
+            echo "push raced with the loop (attempt $attempt); re-applying on the new main"; sleep 5
+          done
+          echo "manual entry did not land after 5 attempts"; exit 1
