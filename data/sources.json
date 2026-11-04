@@ -2839,7 +2839,7 @@
    "format": "json",
    "machine_readable": true,
    "terms_note": "Monroe County Clerk's Enhanced Voting site (same JSON API as the state sites; runner-reachable per the Oct 29 county sweep). Records are the Monroe County PORTION (unit county) of each contest; state legislative contests carry the desk's seat ids. Attribute 'Monroe County Clerk, unofficial results, as of <asOf>'. UNOFFICIAL. isWinner is a vendor flag, never a call.",
-   "rate_limit": "1 req / 120 s ballot-items, 1 / 60 s election object; stop on 403/429",
+   "rate_limit": "20 s between requests to app.enhancedvoting.com from this source (county clerk feed; two sources share the host — a 120 s spacing made every loop pass 6+ min); stop on 403/429",
    "expected_cadence_min": 60,
    "election_night_cadence_min": 3,
    "coverage": "Monroe portions of HD-28, HD-29, HD-31",
@@ -2856,7 +2856,8 @@
     "slug": "monroe-county-mi",
     "election_id": "November2026Election",
     "state": "MI",
-    "county": "Monroe"
+    "county": "Monroe",
+    "min_interval_s": 20
    },
    "notes": " 2026-11-03 ~10:00 PM ET: added during election night for the county portions of tracked seats."
   },
@@ -2868,7 +2869,7 @@
    "format": "json",
    "machine_readable": true,
    "terms_note": "St. Clair County Clerk's Enhanced Voting site (same JSON API as the state sites; runner-reachable per the Oct 29 county sweep). Records are the St. Clair County PORTION (unit county) of each contest; state legislative contests carry the desk's seat ids. Attribute 'St. Clair County Clerk, unofficial results, as of <asOf>'. UNOFFICIAL. isWinner is a vendor flag, never a call.",
-   "rate_limit": "1 req / 120 s ballot-items, 1 / 60 s election object; stop on 403/429",
+   "rate_limit": "20 s between requests to app.enhancedvoting.com from this source (county clerk feed; two sources share the host — a 120 s spacing made every loop pass 6+ min); stop on 403/429",
    "expected_cadence_min": 60,
    "election_night_cadence_min": 3,
    "coverage": "St. Clair portion of SD-12",
@@ -2885,7 +2886,8 @@
     "slug": "st.-clair-county-mi",
     "election_id": "November2026GeneralElection_20260928112331",
     "state": "MI",
-    "county": "St. Clair"
+    "county": "St. Clair",
+    "min_interval_s": 20
    },
    "notes": " 2026-11-03 ~10:00 PM ET: added during election night for the county portions of tracked seats."
   },
