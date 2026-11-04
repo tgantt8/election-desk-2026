@@ -1145,7 +1145,7 @@
    "delta": 0.0,
    "status": "Too early",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:53:19.607597Z",
+   "as_of": "2026-11-04T13:54:55.3931184Z",
    "county_scope": null,
    "tier": null
   },
@@ -1186,7 +1186,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 04:47 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:53:19.607597Z",
+   "as_of": "2026-11-04T13:54:55.3931184Z",
    "county_scope": null,
    "tier": null
   },
@@ -1227,7 +1227,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:08 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:53:19.607597Z",
+   "as_of": "2026-11-04T13:54:55.3931184Z",
    "county_scope": null,
    "tier": null
   },
@@ -1263,7 +1263,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:33 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:53:19.607597Z",
+   "as_of": "2026-11-04T13:54:55.3931184Z",
    "county_scope": null,
    "tier": null
   },
@@ -1299,7 +1299,7 @@
    "delta": 0.0,
    "status": "Too early",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:53:19.607597Z",
+   "as_of": "2026-11-04T13:54:55.3931184Z",
    "county_scope": null,
    "tier": null
   },
@@ -1330,7 +1330,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 02:10 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:53:19.607597Z",
+   "as_of": "2026-11-04T13:54:55.3931184Z",
    "county_scope": null,
    "tier": null
   },
@@ -1381,7 +1381,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:40 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:53:19.607597Z",
+   "as_of": "2026-11-04T13:54:55.3931184Z",
    "county_scope": null,
    "tier": null
   },
@@ -1422,7 +1422,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:05 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:53:19.607597Z",
+   "as_of": "2026-11-04T13:54:55.3931184Z",
    "county_scope": null,
    "tier": null
   },
@@ -1453,7 +1453,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:29 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:53:19.607597Z",
+   "as_of": "2026-11-04T13:54:55.3931184Z",
    "county_scope": null,
    "tier": null
   },
@@ -1489,7 +1489,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:03 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:53:19.607597Z",
+   "as_of": "2026-11-04T13:54:55.3931184Z",
    "county_scope": null,
    "tier": null
   },
@@ -1525,7 +1525,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 02:10 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:53:19.607597Z",
+   "as_of": "2026-11-04T13:54:55.3931184Z",
    "county_scope": null,
    "tier": null
   },
@@ -1556,7 +1556,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 00:00 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:53:19.607597Z",
+   "as_of": "2026-11-04T13:54:55.3931184Z",
    "county_scope": null,
    "tier": null
   },
@@ -1871,85 +1871,33 @@
    "tier": null
   },
   {
-   "id": "us-house-CT-02",
-   "title": "CT · Connecticut · U.S. House District 2",
+   "id": "us-house-ME-02",
+   "title": "ME · Maine · U.S. House District 2",
    "candidates": [
     {
-     "name": "Joe Courtney",
+     "name": "Matthew Dunlap",
      "party": "D",
-     "votes": 172032
+     "votes": 148454
     },
     {
-     "name": "George Austin",
+     "name": "Paul LePage",
      "party": "R",
-     "votes": 103373
-    }
-   ],
-   "margin": 24.93,
-   "reporting_pct": 96.22641509433963,
-   "precincts": "153 of 159 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:54 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T13:46:39Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-HI-02",
-   "title": "HI · Hawaii · U.S. House District 2",
-   "candidates": [
-    {
-     "name": "Jill Tokuda",
-     "party": "D",
-     "votes": 112448
-    },
-    {
-     "name": "Brenton Awa",
-     "party": "R",
-     "votes": 51439
-    }
-   ],
-   "margin": 37.23,
-   "reporting_pct": 0.0,
-   "precincts": "0 of 247 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 06:18 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T13:43:42Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-MI-02",
-   "title": "MI · Michigan · U.S. House District 2",
-   "candidates": [
-    {
-     "name": "John Moolenaar",
-     "party": "R",
-     "votes": 218977
-    },
-    {
-     "name": "Ben Ambrose",
-     "party": "D",
-     "votes": 131823
+     "votes": 147747
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 5578
+     "votes": 158
     }
    ],
-   "margin": -24.46,
-   "reporting_pct": 82.1522309711286,
-   "precincts": "313 of 381 precincts",
+   "margin": 0.24,
+   "reporting_pct": 65.29774127310061,
+   "precincts": "318 of 487 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:45 UTC)",
+   "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T13:43:50Z",
+   "as_of": "2026-11-04T13:55:03Z",
    "county_scope": null,
    "tier": null
   }
