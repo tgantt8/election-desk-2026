@@ -69693,32 +69693,32 @@
     ],
     "title": "MI House 68 · State Representative, 68th District",
     "counties_total": 2,
-    "counties_entered": 1,
-    "entered_label": "1 of 2 counties entered — partial sum of entered counties only",
-    "complete_counties": false,
+    "counties_entered": 2,
+    "entered_label": "2 of 2 counties entered",
+    "complete_counties": true,
     "candidates": [
      {
       "name": "David W. Martin",
       "party": "R",
-      "votes": 1510
+      "votes": 2230
      },
      {
       "name": "Matt Schlinker",
       "party": "D",
-      "votes": 851
+      "votes": 1723
      },
      {
       "name": "Deanna L Martin",
       "party": "L",
-      "votes": 53
+      "votes": 67
      },
      {
       "name": "Joe McHugh",
       "party": "I",
-      "votes": 28
+      "votes": 41
      }
     ],
-    "margin": -26.99,
+    "margin": -12.48,
     "status": "Too early",
     "called_for_party": null,
     "as_of": "2026-11-04T02:39:20Z",
@@ -69726,12 +69726,33 @@
      {
       "county": "Genesee",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 75.77,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Genesee County Clerk Clarity ENR (browser capture)",
+      "source": "enr_genesee_clarity",
+      "as_of": "2026-11-04T02:23:12Z",
+      "candidates": [
+       {
+        "name": "Matt Schlinker",
+        "party": "D",
+        "votes": 872
+       },
+       {
+        "name": "David W. Martin",
+        "party": "R",
+        "votes": 720
+       },
+       {
+        "name": "Deanna L Martin",
+        "party": "L",
+        "votes": 14
+       },
+       {
+        "name": "Joe McHugh",
+        "party": "I",
+        "votes": 13
+       }
+      ],
       "results_url": "https://results.enr.clarityelections.com/MI/Genesee/127354/",
       "results_url_status": "CONFIRMED",
       "sos_listed_url": null,
@@ -69774,6 +69795,7 @@
      }
     ],
     "sources": [
+     "Genesee County Clerk Clarity ENR (browser capture)",
      "Oakland County Clerk Clarity ENR (browser capture)"
     ],
     "county_pages": "CONFIRMED"
@@ -69789,22 +69811,22 @@
     ],
     "title": "MI House 72 · State Representative, 72nd District",
     "counties_total": 3,
-    "counties_entered": 1,
-    "entered_label": "1 of 3 counties entered — partial sum of entered counties only",
+    "counties_entered": 2,
+    "entered_label": "2 of 3 counties entered — partial sum of entered counties only",
     "complete_counties": false,
     "candidates": [
      {
       "name": "Mike Mueller",
       "party": "R",
-      "votes": 5682
+      "votes": 7603
      },
      {
       "name": "Thomas Ryan",
       "party": "D",
-      "votes": 3668
+      "votes": 5422
      }
     ],
-    "margin": -21.54,
+    "margin": -16.74,
     "status": "Too early",
     "called_for_party": null,
     "as_of": "2026-11-04T02:39:20Z",
@@ -69812,12 +69834,23 @@
      {
       "county": "Genesee",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 42.84,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Genesee County Clerk Clarity ENR (browser capture)",
+      "source": "enr_genesee_clarity",
+      "as_of": "2026-11-04T02:23:12Z",
+      "candidates": [
+       {
+        "name": "Mike Mueller",
+        "party": "R",
+        "votes": 1921
+       },
+       {
+        "name": "Thomas Ryan",
+        "party": "D",
+        "votes": 1754
+       }
+      ],
       "results_url": "https://results.enr.clarityelections.com/MI/Genesee/127354/",
       "results_url_status": "CONFIRMED",
       "sos_listed_url": null,
@@ -69864,6 +69897,7 @@
      }
     ],
     "sources": [
+     "Genesee County Clerk Clarity ENR (browser capture)",
      "Oakland County Clerk Clarity ENR (browser capture)"
     ],
     "county_pages": "CONFIRMED"

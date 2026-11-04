@@ -1,8 +1,8 @@
 {
- "built_at": "2026-11-04T02:48:59Z",
- "latest_snapshot_at": "2026-11-04T02:48:46Z",
+ "built_at": "2026-11-04T02:52:08Z",
+ "latest_snapshot_at": "2026-11-04T02:51:55Z",
  "expected_cadence_min": 60,
- "snapshot_count": 287,
+ "snapshot_count": 288,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -1560,9 +1560,9 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "manual",
    "decision_needed": null,
-   "last_success_at": null,
+   "last_success_at": "2026-11-04T02:51:55Z",
    "last_error": "",
-   "health": "gray"
+   "health": "green"
   }
  ],
  "disclaimer": "All figures UNOFFICIAL until certified. Every record carries its source and timestamp."
