@@ -2037,64 +2037,9 @@
      "votes": 198228
     },
     {
-     "name": "Richard Mack",
-     "party": "D",
-     "votes": 188093
-    },
-    {
-     "name": "Christa Murphy",
-     "party": "R",
-     "votes": 183065
-    },
-    {
-     "name": "Shereef Akeel",
-     "party": "D",
-     "votes": 180335
-    },
-    {
-     "name": "Andy Anuzis",
-     "party": "R",
-     "votes": 174665
-    },
-    {
-     "name": "Suzanne Roehrig",
-     "party": "W",
-     "votes": 8202
-    },
-    {
-     "name": "Alex Avery",
-     "party": "L",
-     "votes": 6013
-    },
-    {
-     "name": "Jeff McDonald",
-     "party": "U",
-     "votes": 5190
-    },
-    {
-     "name": "Jami Van Alstine",
-     "party": "L",
-     "votes": 4172
-    },
-    {
      "name": "Anthony Hudson & Beau Parmenter",
      "party": "L",
      "votes": 3053
-    },
-    {
-     "name": "Paul M. Ragan",
-     "party": "G",
-     "votes": 2833
-    },
-    {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 2462
-    },
-    {
-     "name": "Kathleen Oakford",
-     "party": "N",
-     "votes": 2249
     },
     {
      "name": "Donna Brandenburg & Robert Donald Cowper II",
@@ -2105,17 +2050,57 @@
      "name": "Douglas Campbell & Bobbie Clay",
      "party": "G",
      "votes": 1350
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 463
     }
    ],
-   "margin": 1.27,
+   "margin": 3.58,
    "reporting_pct": 100.0,
    "precincts": "249 of 249 precincts",
    "modes": {
-    "AVCB": 444012,
-    "ED": 528770,
-    "EV": 202328
+    "AVCB": 158471,
+    "ED": 188721,
+    "EV": 71102
    },
-   "delta": 4.48,
+   "delta": 6.78,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_only",
+   "tier": 1
+  },
+  {
+   "id": "macomb-hd58",
+   "title": "Representative in State Legislature 58th District",
+   "candidates": [
+    {
+     "name": "Katrina Manetta",
+     "party": "D",
+     "votes": 21058
+    },
+    {
+     "name": "Ron Robinson",
+     "party": "R",
+     "votes": 18949
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 92
+    }
+   ],
+   "margin": 5.26,
+   "reporting_pct": 100.0,
+   "precincts": "29 of 29 precincts",
+   "modes": {
+    "AVCB": 14152,
+    "ED": 18351,
+    "EV": 7596
+   },
+   "delta": 10.4,
    "status": "Too early",
    "source": "macomb_clarity_enr",
    "as_of": "2026-11-04T12:38:22Z",
@@ -2350,6 +2335,431 @@
    "source": "macomb_clarity_enr",
    "as_of": "2026-11-04T12:38:22Z",
    "county_scope": "macomb_only",
+   "tier": 2
+  },
+  {
+   "id": "macomb-hd11",
+   "title": "Representative in State Legislature 11th District",
+   "candidates": [
+    {
+     "name": "Kimberly Fisher",
+     "party": "D",
+     "votes": 8653
+    },
+    {
+     "name": "Matthew Stafford",
+     "party": "R",
+     "votes": 3145
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 58
+    }
+   ],
+   "margin": 46.46,
+   "reporting_pct": 100.0,
+   "precincts": "15 of 15 precincts",
+   "modes": {
+    "AVCB": 3513,
+    "ED": 6954,
+    "EV": 1389
+   },
+   "delta": 3.43,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_portion",
+   "tier": 2
+  },
+  {
+   "id": "macomb-hd12",
+   "title": "Representative in State Legislature 12th District",
+   "candidates": [
+    {
+     "name": "Kimberly L. Edwards",
+     "party": "D",
+     "votes": 19771
+    },
+    {
+     "name": "Randell J. Shafer",
+     "party": "R",
+     "votes": 9144
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 100
+    }
+   ],
+   "margin": 36.63,
+   "reporting_pct": 100.0,
+   "precincts": "16 of 16 precincts",
+   "modes": {
+    "AVCB": 11153,
+    "ED": 13676,
+    "EV": 4186
+   },
+   "delta": 6.53,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_portion",
+   "tier": 2
+  },
+  {
+   "id": "macomb-hd13",
+   "title": "Representative in State Legislature 13th District",
+   "candidates": [
+    {
+     "name": "Mai Xiong",
+     "party": "D",
+     "votes": 24417
+    },
+    {
+     "name": "Mark Thomas Foster",
+     "party": "R",
+     "votes": 16272
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 160
+    }
+   ],
+   "margin": 19.94,
+   "reporting_pct": 100.0,
+   "precincts": "27 of 27 precincts",
+   "modes": {
+    "AVCB": 15094,
+    "ED": 20428,
+    "EV": 5327
+   },
+   "delta": 2.95,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_only",
+   "tier": 2
+  },
+  {
+   "id": "macomb-hd14",
+   "title": "Representative in State Legislature 14th District",
+   "candidates": [
+    {
+     "name": "Mike McFall",
+     "party": "D",
+     "votes": 15098
+    },
+    {
+     "name": "Larry Szyska",
+     "party": "R",
+     "votes": 6958
+    },
+    {
+     "name": "Jeff Sparling",
+     "party": "G",
+     "votes": 390
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 85
+    }
+   ],
+   "margin": 36.13,
+   "reporting_pct": 100.0,
+   "precincts": "21 of 21 precincts",
+   "modes": {
+    "AVCB": 8164,
+    "ED": 11259,
+    "EV": 3108
+   },
+   "delta": 6.1,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_portion",
+   "tier": 2
+  },
+  {
+   "id": "macomb-hd57",
+   "title": "Representative in State Legislature 57th District",
+   "candidates": [
+    {
+     "name": "Thomas E. Kuhn",
+     "party": "R",
+     "votes": 13570
+    },
+    {
+     "name": "Tom Turner",
+     "party": "D",
+     "votes": 11869
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 61
+    }
+   ],
+   "margin": -6.67,
+   "reporting_pct": 100.0,
+   "precincts": "16 of 16 precincts",
+   "modes": {
+    "AVCB": 7851,
+    "ED": 11208,
+    "EV": 6441
+   },
+   "delta": 14.59,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_portion",
+   "tier": 2
+  },
+  {
+   "id": "macomb-hd59",
+   "title": "Representative in State Legislature 59th District",
+   "candidates": [
+    {
+     "name": "Sylvia Grot",
+     "party": "R",
+     "votes": 28528
+    },
+    {
+     "name": "Jason Robbins",
+     "party": "D",
+     "votes": 17927
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 127
+    }
+   ],
+   "margin": -22.76,
+   "reporting_pct": 100.0,
+   "precincts": "24 of 24 precincts",
+   "modes": {
+    "AVCB": 19067,
+    "ED": 18512,
+    "EV": 9003
+   },
+   "delta": 8.48,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_only",
+   "tier": 2
+  },
+  {
+   "id": "macomb-hd60",
+   "title": "Representative in State Legislature 60th District",
+   "candidates": [
+    {
+     "name": "Joseph Aragona",
+     "party": "R",
+     "votes": 25435
+    },
+    {
+     "name": "Amy Gray",
+     "party": "D",
+     "votes": 20985
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 113
+    }
+   ],
+   "margin": -9.56,
+   "reporting_pct": 100.0,
+   "precincts": "23 of 23 precincts",
+   "modes": {
+    "AVCB": 19020,
+    "ED": 19100,
+    "EV": 8413
+   },
+   "delta": 3.62,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_only",
+   "tier": 2
+  },
+  {
+   "id": "macomb-hd61",
+   "title": "Representative in State Legislature 61st District",
+   "candidates": [
+    {
+     "name": "Denise Mentzer",
+     "party": "D",
+     "votes": 23381
+    },
+    {
+     "name": "Robert Wojtowicz",
+     "party": "R",
+     "votes": 18357
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 104
+    }
+   ],
+   "margin": 12.01,
+   "reporting_pct": 100.0,
+   "precincts": "26 of 26 precincts",
+   "modes": {
+    "AVCB": 16940,
+    "ED": 17909,
+    "EV": 6993
+   },
+   "delta": 4.01,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_only",
+   "tier": 2
+  },
+  {
+   "id": "macomb-hd62",
+   "title": "Representative in State Legislature 62nd District",
+   "candidates": [
+    {
+     "name": "Alicia St. Germaine",
+     "party": "R",
+     "votes": 21559
+    },
+    {
+     "name": "Matthew Smith",
+     "party": "D",
+     "votes": 20780
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 164
+    }
+   ],
+   "margin": -1.83,
+   "reporting_pct": 100.0,
+   "precincts": "23 of 23 precincts",
+   "modes": {
+    "AVCB": 16854,
+    "ED": 18980,
+    "EV": 6669
+   },
+   "delta": 5.55,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_only",
+   "tier": 2
+  },
+  {
+   "id": "macomb-hd63",
+   "title": "Representative in State Legislature 63rd District",
+   "candidates": [
+    {
+     "name": "Pamela Hornberger",
+     "party": "R",
+     "votes": 14242
+    },
+    {
+     "name": "Jamie Sonneberger",
+     "party": "D",
+     "votes": 10098
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 87
+    }
+   ],
+   "margin": -16.96,
+   "reporting_pct": 100.0,
+   "precincts": "13 of 13 precincts",
+   "modes": {
+    "AVCB": 9842,
+    "ED": 10101,
+    "EV": 4484
+   },
+   "delta": 0.0,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_portion",
+   "tier": 2
+  },
+  {
+   "id": "macomb-hd65",
+   "title": "Representative in State Legislature 65th District",
+   "candidates": [
+    {
+     "name": "Jaime Greene",
+     "party": "R",
+     "votes": 9902
+    },
+    {
+     "name": "James M. O'Brien",
+     "party": "D",
+     "votes": 5006
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 36
+    }
+   ],
+   "margin": -32.76,
+   "reporting_pct": 100.0,
+   "precincts": "13 of 13 precincts",
+   "modes": {
+    "AVCB": 4112,
+    "ED": 8021,
+    "EV": 2811
+   },
+   "delta": 0.0,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_portion",
+   "tier": 2
+  },
+  {
+   "id": "macomb-hd66",
+   "title": "Representative in State Legislature 66th District",
+   "candidates": [
+    {
+     "name": "Josh Schriver",
+     "party": "R",
+     "votes": 13958
+    },
+    {
+     "name": "Ned Zimmer",
+     "party": "D",
+     "votes": 6828
+    },
+    {
+     "name": "Unofficial Write-in",
+     "party": "",
+     "votes": 54
+    }
+   ],
+   "margin": -34.21,
+   "reporting_pct": 100.0,
+   "precincts": "11 of 11 precincts",
+   "modes": {
+    "AVCB": 8574,
+    "ED": 8982,
+    "EV": 3284
+   },
+   "delta": -0.82,
+   "status": "Too early",
+   "source": "macomb_clarity_enr",
+   "as_of": "2026-11-04T12:38:22Z",
+   "county_scope": "macomb_portion",
    "tier": 2
   },
   {
@@ -2643,457 +3053,72 @@
    "tier": 2
   },
   {
-   "id": "macomb-other:representative-in-state-legislature-11th-district",
-   "title": "Representative in State Legislature 11th District",
+   "id": "macomb-other:governor-of-wayne-state-university",
+   "title": "Governor of Wayne State University",
    "candidates": [
     {
-     "name": "Kimberly Fisher",
+     "name": "Richard Mack",
      "party": "D",
-     "votes": 8653
+     "votes": 188093
     },
     {
-     "name": "Matthew Stafford",
+     "name": "Christa Murphy",
      "party": "R",
-     "votes": 3145
+     "votes": 183065
     },
     {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 58
-    }
-   ],
-   "margin": 46.46,
-   "reporting_pct": 100.0,
-   "precincts": "15 of 15 precincts",
-   "modes": {
-    "AVCB": 3513,
-    "ED": 6954,
-    "EV": 1389
-   },
-   "delta": null,
-   "status": "Too early",
-   "source": "macomb_clarity_enr",
-   "as_of": "2026-11-04T12:38:22Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "macomb-other:representative-in-state-legislature-12th-district",
-   "title": "Representative in State Legislature 12th District",
-   "candidates": [
-    {
-     "name": "Kimberly L. Edwards",
+     "name": "Shereef Akeel",
      "party": "D",
-     "votes": 19771
+     "votes": 180335
     },
     {
-     "name": "Randell J. Shafer",
+     "name": "Andy Anuzis",
      "party": "R",
-     "votes": 9144
+     "votes": 174665
     },
     {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 100
-    }
-   ],
-   "margin": 36.63,
-   "reporting_pct": 100.0,
-   "precincts": "16 of 16 precincts",
-   "modes": {
-    "AVCB": 11153,
-    "ED": 13676,
-    "EV": 4186
-   },
-   "delta": null,
-   "status": "Too early",
-   "source": "macomb_clarity_enr",
-   "as_of": "2026-11-04T12:38:22Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "macomb-other:representative-in-state-legislature-13th-district",
-   "title": "Representative in State Legislature 13th District",
-   "candidates": [
-    {
-     "name": "Mai Xiong",
-     "party": "D",
-     "votes": 24417
+     "name": "Suzanne Roehrig",
+     "party": "W",
+     "votes": 8202
     },
     {
-     "name": "Mark Thomas Foster",
-     "party": "R",
-     "votes": 16272
+     "name": "Alex Avery",
+     "party": "L",
+     "votes": 6013
     },
     {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 160
-    }
-   ],
-   "margin": 19.94,
-   "reporting_pct": 100.0,
-   "precincts": "27 of 27 precincts",
-   "modes": {
-    "AVCB": 15094,
-    "ED": 20428,
-    "EV": 5327
-   },
-   "delta": null,
-   "status": "Too early",
-   "source": "macomb_clarity_enr",
-   "as_of": "2026-11-04T12:38:22Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "macomb-other:representative-in-state-legislature-14th-district",
-   "title": "Representative in State Legislature 14th District",
-   "candidates": [
-    {
-     "name": "Mike McFall",
-     "party": "D",
-     "votes": 15098
+     "name": "Jeff McDonald",
+     "party": "U",
+     "votes": 5190
     },
     {
-     "name": "Larry Szyska",
-     "party": "R",
-     "votes": 6958
+     "name": "Jami Van Alstine",
+     "party": "L",
+     "votes": 4172
     },
     {
-     "name": "Jeff Sparling",
+     "name": "Paul M. Ragan",
      "party": "G",
-     "votes": 390
+     "votes": 2833
+    },
+    {
+     "name": "Kathleen Oakford",
+     "party": "N",
+     "votes": 2249
     },
     {
      "name": "Unofficial Write-in",
      "party": "",
-     "votes": 85
+     "votes": 1999
     }
    ],
-   "margin": 36.13,
+   "margin": 0.66,
    "reporting_pct": 100.0,
-   "precincts": "21 of 21 precincts",
+   "precincts": "249 of 249 precincts",
    "modes": {
-    "AVCB": 8164,
-    "ED": 11259,
-    "EV": 3108
-   },
-   "delta": null,
-   "status": "Too early",
-   "source": "macomb_clarity_enr",
-   "as_of": "2026-11-04T12:38:22Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "macomb-other:representative-in-state-legislature-57th-district",
-   "title": "Representative in State Legislature 57th District",
-   "candidates": [
-    {
-     "name": "Thomas E. Kuhn",
-     "party": "R",
-     "votes": 13570
-    },
-    {
-     "name": "Tom Turner",
-     "party": "D",
-     "votes": 11869
-    },
-    {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 61
-    }
-   ],
-   "margin": -6.67,
-   "reporting_pct": 100.0,
-   "precincts": "16 of 16 precincts",
-   "modes": {
-    "AVCB": 7851,
-    "ED": 11208,
-    "EV": 6441
-   },
-   "delta": null,
-   "status": "Too early",
-   "source": "macomb_clarity_enr",
-   "as_of": "2026-11-04T12:38:22Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "macomb-other:representative-in-state-legislature-58th-district",
-   "title": "Representative in State Legislature 58th District",
-   "candidates": [
-    {
-     "name": "Katrina Manetta",
-     "party": "D",
-     "votes": 21058
-    },
-    {
-     "name": "Ron Robinson",
-     "party": "R",
-     "votes": 18949
-    },
-    {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 92
-    }
-   ],
-   "margin": 5.26,
-   "reporting_pct": 100.0,
-   "precincts": "29 of 29 precincts",
-   "modes": {
-    "AVCB": 14152,
-    "ED": 18351,
-    "EV": 7596
-   },
-   "delta": null,
-   "status": "Too early",
-   "source": "macomb_clarity_enr",
-   "as_of": "2026-11-04T12:38:22Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "macomb-other:representative-in-state-legislature-59th-district",
-   "title": "Representative in State Legislature 59th District",
-   "candidates": [
-    {
-     "name": "Sylvia Grot",
-     "party": "R",
-     "votes": 28528
-    },
-    {
-     "name": "Jason Robbins",
-     "party": "D",
-     "votes": 17927
-    },
-    {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 127
-    }
-   ],
-   "margin": -22.76,
-   "reporting_pct": 100.0,
-   "precincts": "24 of 24 precincts",
-   "modes": {
-    "AVCB": 19067,
-    "ED": 18512,
-    "EV": 9003
-   },
-   "delta": null,
-   "status": "Too early",
-   "source": "macomb_clarity_enr",
-   "as_of": "2026-11-04T12:38:22Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "macomb-other:representative-in-state-legislature-60th-district",
-   "title": "Representative in State Legislature 60th District",
-   "candidates": [
-    {
-     "name": "Joseph Aragona",
-     "party": "R",
-     "votes": 25435
-    },
-    {
-     "name": "Amy Gray",
-     "party": "D",
-     "votes": 20985
-    },
-    {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 113
-    }
-   ],
-   "margin": -9.56,
-   "reporting_pct": 100.0,
-   "precincts": "23 of 23 precincts",
-   "modes": {
-    "AVCB": 19020,
-    "ED": 19100,
-    "EV": 8413
-   },
-   "delta": null,
-   "status": "Too early",
-   "source": "macomb_clarity_enr",
-   "as_of": "2026-11-04T12:38:22Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "macomb-other:representative-in-state-legislature-61st-district",
-   "title": "Representative in State Legislature 61st District",
-   "candidates": [
-    {
-     "name": "Denise Mentzer",
-     "party": "D",
-     "votes": 23381
-    },
-    {
-     "name": "Robert Wojtowicz",
-     "party": "R",
-     "votes": 18357
-    },
-    {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 104
-    }
-   ],
-   "margin": 12.01,
-   "reporting_pct": 100.0,
-   "precincts": "26 of 26 precincts",
-   "modes": {
-    "AVCB": 16940,
-    "ED": 17909,
-    "EV": 6993
-   },
-   "delta": null,
-   "status": "Too early",
-   "source": "macomb_clarity_enr",
-   "as_of": "2026-11-04T12:38:22Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "macomb-other:representative-in-state-legislature-62nd-district",
-   "title": "Representative in State Legislature 62nd District",
-   "candidates": [
-    {
-     "name": "Alicia St. Germaine",
-     "party": "R",
-     "votes": 21559
-    },
-    {
-     "name": "Matthew Smith",
-     "party": "D",
-     "votes": 20780
-    },
-    {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 164
-    }
-   ],
-   "margin": -1.83,
-   "reporting_pct": 100.0,
-   "precincts": "23 of 23 precincts",
-   "modes": {
-    "AVCB": 16854,
-    "ED": 18980,
-    "EV": 6669
-   },
-   "delta": null,
-   "status": "Too early",
-   "source": "macomb_clarity_enr",
-   "as_of": "2026-11-04T12:38:22Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "macomb-other:representative-in-state-legislature-63rd-district",
-   "title": "Representative in State Legislature 63rd District",
-   "candidates": [
-    {
-     "name": "Pamela Hornberger",
-     "party": "R",
-     "votes": 14242
-    },
-    {
-     "name": "Jamie Sonneberger",
-     "party": "D",
-     "votes": 10098
-    },
-    {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 87
-    }
-   ],
-   "margin": -16.96,
-   "reporting_pct": 100.0,
-   "precincts": "13 of 13 precincts",
-   "modes": {
-    "AVCB": 9842,
-    "ED": 10101,
-    "EV": 4484
-   },
-   "delta": null,
-   "status": "Too early",
-   "source": "macomb_clarity_enr",
-   "as_of": "2026-11-04T12:38:22Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "macomb-other:representative-in-state-legislature-65th-district",
-   "title": "Representative in State Legislature 65th District",
-   "candidates": [
-    {
-     "name": "Jaime Greene",
-     "party": "R",
-     "votes": 9902
-    },
-    {
-     "name": "James M. O'Brien",
-     "party": "D",
-     "votes": 5006
-    },
-    {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 36
-    }
-   ],
-   "margin": -32.76,
-   "reporting_pct": 100.0,
-   "precincts": "13 of 13 precincts",
-   "modes": {
-    "AVCB": 4112,
-    "ED": 8021,
-    "EV": 2811
-   },
-   "delta": null,
-   "status": "Too early",
-   "source": "macomb_clarity_enr",
-   "as_of": "2026-11-04T12:38:22Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "macomb-other:representative-in-state-legislature-66th-district",
-   "title": "Representative in State Legislature 66th District",
-   "candidates": [
-    {
-     "name": "Josh Schriver",
-     "party": "R",
-     "votes": 13958
-    },
-    {
-     "name": "Ned Zimmer",
-     "party": "D",
-     "votes": 6828
-    },
-    {
-     "name": "Unofficial Write-in",
-     "party": "",
-     "votes": 54
-    }
-   ],
-   "margin": -34.21,
-   "reporting_pct": 100.0,
-   "precincts": "11 of 11 precincts",
-   "modes": {
-    "AVCB": 8574,
-    "ED": 8982,
-    "EV": 3284
+    "AVCB": 285541,
+    "ED": 340049,
+    "EV": 131226
    },
    "delta": null,
    "status": "Too early",
@@ -3159,7 +3184,7 @@
   }
  ],
  "macomb_detail": {
-  "macomb-other:representative-in-state-legislature-58th-district (macomb_clarity_enr)": {
+  "macomb-hd58 (macomb_clarity_enr)": {
    "rows": [
     {
      "unit": "Sterling Heights, Pct 18",
@@ -12149,24 +12174,46 @@
     ],
     "title": "MI House 11 · State Representative, 11th District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered · Macomb portion only (seat spans 2 counties; the others are not on the desk)",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "Macomb portion entered · Macomb portion only (seat spans 2 counties; the others are not on the desk)",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Kimberly Fisher",
+      "party": "D",
+      "votes": 8653
+     },
+     {
+      "name": "Matthew Stafford",
+      "party": "R",
+      "votes": 3145
+     }
+    ],
+    "margin": 46.69,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T12:38:22Z",
     "counties": [
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 44.87,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Kimberly Fisher",
+        "party": "D",
+        "votes": 8653
+       },
+       {
+        "name": "Matthew Stafford",
+        "party": "R",
+        "votes": 3145
+       }
+      ],
       "results_url": null,
       "results_url_status": null,
       "sos_listed_url": null,
@@ -12187,7 +12234,9 @@
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": null
    },
    {
@@ -12201,24 +12250,46 @@
     ],
     "title": "MI House 12 · State Representative, 12th District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered · Macomb portion only (seat spans 2 counties; the others are not on the desk)",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "Macomb portion entered · Macomb portion only (seat spans 2 counties; the others are not on the desk)",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Kimberly L. Edwards",
+      "party": "D",
+      "votes": 19771
+     },
+     {
+      "name": "Randell J. Shafer",
+      "party": "R",
+      "votes": 9144
+     }
+    ],
+    "margin": 36.75,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T12:38:22Z",
     "counties": [
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 69.26,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Kimberly L. Edwards",
+        "party": "D",
+        "votes": 19771
+       },
+       {
+        "name": "Randell J. Shafer",
+        "party": "R",
+        "votes": 9144
+       }
+      ],
       "results_url": null,
       "results_url_status": null,
       "sos_listed_url": null,
@@ -12239,7 +12310,9 @@
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": null
    },
    {
@@ -12253,31 +12326,55 @@
     ],
     "title": "MI House 13 · State Representative, 13th District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "1 of 1 counties entered",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Mai Xiong",
+      "party": "D",
+      "votes": 24417
+     },
+     {
+      "name": "Mark Thomas Foster",
+      "party": "R",
+      "votes": 16272
+     }
+    ],
+    "margin": 20.02,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T12:38:22Z",
     "counties": [
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 100.0,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Mai Xiong",
+        "party": "D",
+        "votes": 24417
+       },
+       {
+        "name": "Mark Thomas Foster",
+        "party": "R",
+        "votes": 16272
+       }
+      ],
       "results_url": null,
       "results_url_status": null,
       "sos_listed_url": null,
       "portion_contest_id": "macomb-hd13"
      }
     ],
-    "sources": [],
+    "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": null
    },
    {
@@ -12291,24 +12388,56 @@
     ],
     "title": "MI House 14 · State Representative, 14th District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered · Macomb portion only (seat spans 2 counties; the others are not on the desk)",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "Macomb portion entered · Macomb portion only (seat spans 2 counties; the others are not on the desk)",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Mike McFall",
+      "party": "D",
+      "votes": 15098
+     },
+     {
+      "name": "Larry Szyska",
+      "party": "R",
+      "votes": 6958
+     },
+     {
+      "name": "Jeff Sparling",
+      "party": "G",
+      "votes": 390
+     }
+    ],
+    "margin": 36.26,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T12:38:22Z",
     "counties": [
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 57.57,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Mike McFall",
+        "party": "D",
+        "votes": 15098
+       },
+       {
+        "name": "Larry Szyska",
+        "party": "R",
+        "votes": 6958
+       },
+       {
+        "name": "Jeff Sparling",
+        "party": "G",
+        "votes": 390
+       }
+      ],
       "results_url": null,
       "results_url_status": null,
       "sos_listed_url": null,
@@ -12329,7 +12458,9 @@
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": null
    },
    {
@@ -13204,22 +13335,22 @@
     ],
     "title": "MI House 57 · State Representative, 57th District",
     "counties_total": 2,
-    "counties_entered": 1,
-    "entered_label": "1 of 2 counties entered — partial sum of entered counties only",
-    "complete_counties": false,
+    "counties_entered": 2,
+    "entered_label": "2 of 2 counties entered",
+    "complete_counties": true,
     "candidates": [
      {
       "name": "Tom Turner",
       "party": "D",
-      "votes": 7985
+      "votes": 19854
      },
      {
       "name": "Thomas E. Kuhn",
       "party": "R",
-      "votes": 5992
+      "votes": 19562
      }
     ],
-    "margin": 14.26,
+    "margin": 0.74,
     "status": "Too early",
     "called_for_party": null,
     "as_of": "2026-11-04T14:26:25Z",
@@ -13227,12 +13358,23 @@
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 66.99,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Thomas E. Kuhn",
+        "party": "R",
+        "votes": 13570
+       },
+       {
+        "name": "Tom Turner",
+        "party": "D",
+        "votes": 11869
+       }
+      ],
       "results_url": "https://results.enr.clarityelections.com/MI/Macomb/127293/",
       "results_url_status": "CONFIRMED",
       "sos_listed_url": null,
@@ -13265,6 +13407,7 @@
      }
     ],
     "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)",
      "Oakland County Clerk Clarity ENR (browser capture)"
     ],
     "county_pages": "CONFIRMED"
@@ -13281,31 +13424,55 @@
     ],
     "title": "MI House 58 · State Representative, 58th District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "1 of 1 counties entered",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Katrina Manetta",
+      "party": "D",
+      "votes": 21058
+     },
+     {
+      "name": "Ron Robinson",
+      "party": "R",
+      "votes": 18949
+     }
+    ],
+    "margin": 5.27,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T12:38:22Z",
     "counties": [
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 100.0,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Katrina Manetta",
+        "party": "D",
+        "votes": 21058
+       },
+       {
+        "name": "Ron Robinson",
+        "party": "R",
+        "votes": 18949
+       }
+      ],
       "results_url": null,
       "results_url_status": null,
       "sos_listed_url": null,
       "portion_contest_id": "macomb-hd58"
      }
     ],
-    "sources": [],
+    "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": null
    },
    {
@@ -13319,31 +13486,55 @@
     ],
     "title": "MI House 59 · State Representative, 59th District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "1 of 1 counties entered",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Sylvia Grot",
+      "party": "R",
+      "votes": 28528
+     },
+     {
+      "name": "Jason Robbins",
+      "party": "D",
+      "votes": 17927
+     }
+    ],
+    "margin": -22.82,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T12:38:22Z",
     "counties": [
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 100.0,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Sylvia Grot",
+        "party": "R",
+        "votes": 28528
+       },
+       {
+        "name": "Jason Robbins",
+        "party": "D",
+        "votes": 17927
+       }
+      ],
       "results_url": null,
       "results_url_status": null,
       "sos_listed_url": null,
       "portion_contest_id": "macomb-hd59"
      }
     ],
-    "sources": [],
+    "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": null
    },
    {
@@ -13357,31 +13548,55 @@
     ],
     "title": "MI House 60 · State Representative, 60th District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "1 of 1 counties entered",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Joseph Aragona",
+      "party": "R",
+      "votes": 25435
+     },
+     {
+      "name": "Amy Gray",
+      "party": "D",
+      "votes": 20985
+     }
+    ],
+    "margin": -9.59,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T12:38:22Z",
     "counties": [
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 100.0,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Joseph Aragona",
+        "party": "R",
+        "votes": 25435
+       },
+       {
+        "name": "Amy Gray",
+        "party": "D",
+        "votes": 20985
+       }
+      ],
       "results_url": null,
       "results_url_status": null,
       "sos_listed_url": null,
       "portion_contest_id": "macomb-hd60"
      }
     ],
-    "sources": [],
+    "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": null
    },
    {
@@ -13396,31 +13611,55 @@
     ],
     "title": "MI House 61 · State Representative, 61st District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "1 of 1 counties entered",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Denise Mentzer",
+      "party": "D",
+      "votes": 23381
+     },
+     {
+      "name": "Robert Wojtowicz",
+      "party": "R",
+      "votes": 18357
+     }
+    ],
+    "margin": 12.04,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T12:38:22Z",
     "counties": [
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 100.0,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Denise Mentzer",
+        "party": "D",
+        "votes": 23381
+       },
+       {
+        "name": "Robert Wojtowicz",
+        "party": "R",
+        "votes": 18357
+       }
+      ],
       "results_url": null,
       "results_url_status": null,
       "sos_listed_url": null,
       "portion_contest_id": "macomb-hd61"
      }
     ],
-    "sources": [],
+    "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": null
    },
    {
@@ -13435,31 +13674,55 @@
     ],
     "title": "MI House 62 · State Representative, 62nd District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "1 of 1 counties entered",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Alicia St. Germaine",
+      "party": "R",
+      "votes": 21559
+     },
+     {
+      "name": "Matthew Smith",
+      "party": "D",
+      "votes": 20780
+     }
+    ],
+    "margin": -1.84,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T12:38:22Z",
     "counties": [
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 100.0,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Alicia St. Germaine",
+        "party": "R",
+        "votes": 21559
+       },
+       {
+        "name": "Matthew Smith",
+        "party": "D",
+        "votes": 20780
+       }
+      ],
       "results_url": null,
       "results_url_status": null,
       "sos_listed_url": null,
       "portion_contest_id": "macomb-hd62"
      }
     ],
-    "sources": [],
+    "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": null
    },
    {
@@ -13473,24 +13736,46 @@
     ],
     "title": "MI House 63 · State Representative, 63rd District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered · Macomb portion only (seat spans 2 counties; the others are not on the desk)",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "Macomb portion entered · Macomb portion only (seat spans 2 counties; the others are not on the desk)",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Pamela Hornberger",
+      "party": "R",
+      "votes": 14242
+     },
+     {
+      "name": "Jamie Sonneberger",
+      "party": "D",
+      "votes": 10098
+     }
+    ],
+    "margin": -17.03,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T12:38:22Z",
     "counties": [
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 16.18,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Pamela Hornberger",
+        "party": "R",
+        "votes": 14242
+       },
+       {
+        "name": "Jamie Sonneberger",
+        "party": "D",
+        "votes": 10098
+       }
+      ],
       "results_url": null,
       "results_url_status": null,
       "sos_listed_url": null,
@@ -13511,7 +13796,9 @@
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": null
    },
    {
@@ -13525,14 +13812,25 @@
     ],
     "title": "MI House 65 · State Representative, 65th District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered · Macomb portion only (seat spans 3 counties; the others are not on the desk)",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "Macomb portion entered · Macomb portion only (seat spans 3 counties; the others are not on the desk)",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Jaime Greene",
+      "party": "R",
+      "votes": 9902
+     },
+     {
+      "name": "James M. O'Brien",
+      "party": "D",
+      "votes": 5006
+     }
+    ],
+    "margin": -32.84,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T12:38:22Z",
     "counties": [
      {
       "county": "Lapeer",
@@ -13551,12 +13849,23 @@
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 18.94,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Jaime Greene",
+        "party": "R",
+        "votes": 9902
+       },
+       {
+        "name": "James M. O'Brien",
+        "party": "D",
+        "votes": 5006
+       }
+      ],
       "results_url": null,
       "results_url_status": null,
       "sos_listed_url": null,
@@ -13577,7 +13886,9 @@
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": null
    },
    {
@@ -13591,24 +13902,46 @@
     ],
     "title": "MI House 66 · State Representative, 66th District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered · Macomb portion only (seat spans 2 counties; the others are not on the desk)",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "Macomb portion entered · Macomb portion only (seat spans 2 counties; the others are not on the desk)",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Josh Schriver",
+      "party": "R",
+      "votes": 13958
+     },
+     {
+      "name": "Ned Zimmer",
+      "party": "D",
+      "votes": 6828
+     }
+    ],
+    "margin": -34.3,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T12:38:22Z",
     "counties": [
      {
       "county": "Macomb",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 35.41,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Macomb Clerk Clarity ENR (browser capture)",
+      "source": "macomb_clarity_enr",
+      "as_of": "2026-11-04T12:38:22Z",
+      "candidates": [
+       {
+        "name": "Josh Schriver",
+        "party": "R",
+        "votes": 13958
+       },
+       {
+        "name": "Ned Zimmer",
+        "party": "D",
+        "votes": 6828
+       }
+      ],
       "results_url": null,
       "results_url_status": null,
       "sos_listed_url": null,
@@ -13629,7 +13962,9 @@
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Macomb Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": null
    },
    {

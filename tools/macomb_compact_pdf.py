@@ -596,7 +596,7 @@ def compact_contest_id(contest):
     t = (contest.get("title") or "").upper().strip()
     d = _re.search(r"(\d+)(?:ST|ND|RD|TH)? DISTRICT", t + " " + (contest.get("district") or "").upper())
     n = int(d.group(1)) if d else None
-    if t.startswith("GOVERNOR"):
+    if t.startswith("GOVERNOR") and "UNIVERSITY" not in t:  # "Governor of Wayne State University" is a university board, not the state race
         return "macomb-gov"
     if t.startswith("U.S. SENATOR") or t.startswith("UNITED STATES SENATOR"):
         return "macomb-ussen"
@@ -608,7 +608,7 @@ def compact_contest_id(contest):
         return f"macomb-mi{n:02d}"
     if n is not None and "STATE SENATOR" in t:
         return f"macomb-sd{n:02d}"
-    if n is not None and "STATE REPRESENTATIVE" in t:
+    if n is not None and ("STATE REPRESENTATIVE" in t or "REPRESENTATIVE IN STATE LEGISLATURE" in t):  # Clarity's final report renamed the House contests (Nov 4, 7:38 AM)
         return f"macomb-hd{n:02d}"
     if t.startswith("COUNTY EXECUTIVE"):
         return "macomb-countyexec"
