@@ -42,3 +42,5 @@ def test_contest_ids():
     assert p.contest_id_for("State Senator 9th District") == "mi-sd-09"
     assert p.contest_id_for("Representative in Congress 13th District") == "us-house-MI-13"
     assert p.contest_id_for("County Commissioner 4th District") is None
+    assert p.contest_id_for("Representative in State Legislature 51st District") == "mi-hd-051"  # Oakland's Clarity wording
+    assert p.contest_id_for("Governor of Wayne State University") is None and p.contest_id_for("Governor and Lieutenant Governor") == "gov-MI"

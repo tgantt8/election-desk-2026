@@ -16,7 +16,7 @@ await (async () => {
   const DETAIL_RX = (typeof CLARITY_DETAIL_RX !== "undefined") ? CLARITY_DETAIL_RX : /58th District|State Senator 24th/i;
   // contests kept (county totals); local offices, judges, school boards and village races stay out to keep the capture small
   const CONTEST_RX = (typeof CLARITY_CONTEST_RX !== "undefined") ? CLARITY_CONTEST_RX
-    : /Governor|Secretary of State|Attorney General|United States Senator|Representative in Congress|State Senator|State Representative|County Executive|Straight Party|^State Proposal/i;
+    : /^Governor|Secretary of State|Attorney General|United States Senator|Representative in Congress|State Senator|State Representative|Representative in State Legislature|County Executive|Straight Party|^State Proposal/i;
   const fetched = new Date().toISOString();
   const ver = (await fetch(BASE + "/current_ver.txt", { cache: "no-store" }).then(r => r.text())).trim();
   const zipBuf = await fetch(`${BASE}/${ver}/reports/detailxml.zip`, { cache: "no-store" }).then(r => r.arrayBuffer());

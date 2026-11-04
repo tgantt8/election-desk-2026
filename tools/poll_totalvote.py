@@ -34,7 +34,7 @@ def contest_id_for(title: str, state="mi") -> str | None:
     t = title.strip()
     m = _RX_DIST.search(t)
     n = int(m.group(1)) if m else None
-    if re.match(r"^State Representative", t, re.I) and n:
+    if re.match(r"^(State Representative|Representative in State Legislature)", t, re.I) and n:
         return f"mi-hd-{n:03d}"
     if re.match(r"^State Senator", t, re.I) and n:
         return f"mi-sd-{n:02d}"
@@ -42,7 +42,7 @@ def contest_id_for(title: str, state="mi") -> str | None:
         return f"us-house-MI-{n:02d}"
     if re.match(r"^United States Senator|^U\.?S\.? Senator", t, re.I):
         return "us-senate-MI"
-    if re.match(r"^Governor", t, re.I):
+    if re.match(r"^Governor", t, re.I) and not re.search(r"University", t, re.I):
         return "gov-MI"
     return None
 
