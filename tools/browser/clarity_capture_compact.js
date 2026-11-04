@@ -14,6 +14,9 @@
 await (async () => {
   const BASE = (typeof CLARITY_BASE !== "undefined") ? CLARITY_BASE : "https://results.enr.clarityelections.com/MI/Macomb/127293";
   const DETAIL_RX = (typeof CLARITY_DETAIL_RX !== "undefined") ? CLARITY_DETAIL_RX : /58th District|State Senator 24th/i;
+  // contests kept (county totals); local offices, judges, school boards and village races stay out to keep the capture small
+  const CONTEST_RX = (typeof CLARITY_CONTEST_RX !== "undefined") ? CLARITY_CONTEST_RX
+    : /Governor|Secretary of State|Attorney General|United States Senator|Representative in Congress|State Senator|State Representative|County Executive|Straight Party|^State Proposal/i;
   const fetched = new Date().toISOString();
   const ver = (await fetch(BASE + "/current_ver.txt", { cache: "no-store" }).then(r => r.text())).trim();
   const zipBuf = await fetch(`${BASE}/${ver}/reports/detailxml.zip`, { cache: "no-store" }).then(r => r.arrayBuffer());
@@ -40,7 +43,7 @@ await (async () => {
   const prAll = {}; doc.querySelectorAll("VoterTurnout > Precincts > Precinct").forEach(p => { prAll[p.getAttribute("name")] = [num(p.getAttribute("totalVoters")), num(p.getAttribute("ballotsCast")), num(p.getAttribute("percentReporting"))]; });
   const pr = {}; const c = [];
   doc.querySelectorAll("ElectionResult > Contest").forEach(ct => {
-    const text = ct.getAttribute("text"); const detail = DETAIL_RX.test(text);
+    const text = ct.getAttribute("text"); if (!CONTEST_RX.test(text)) return; const detail = DETAIL_RX.test(text);
     const choices = []; const pd = {};
     ct.querySelectorAll(":scope > Choice").forEach((ch, ci) => {
       const row = [ch.getAttribute("text"), ch.getAttribute("party"), num(ch.getAttribute("totalVotes"))]; VT.forEach(() => row.push(null));
@@ -51,6 +54,8 @@ await (async () => {
       });
       choices.push(row);
     });
+    // a precinct that has not reported (no turnout row) and shows only zeros is left out: absent, not zero
+    for (const pn of Object.keys(pd)) if (!pr[pn] && pd[pn].every(v => !v || v.every(x => !x))) { delete pd[pn]; delete pr[pn]; }
     const regv = ct.querySelector(":scope > VoteType[name='regVotersCounty']");
     c.push([ct.getAttribute("key"), text, num(ct.getAttribute("precinctsReporting")), num(ct.getAttribute("precinctsReported")), regv ? num(regv.getAttribute("votes")) : null, choices, detail ? pd : null]);
   });

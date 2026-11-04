@@ -26,7 +26,9 @@ REGISTRY = os.path.join(DATA, "contests", "mi_legislature_2026.json")
 MACOMB = os.path.join(DATA, "contests", "macomb_2026.json")
 PDF_SOURCE = "macomb_clerk_unofficial_summary_pdf"
 CLARITY_SOURCE = "macomb_clarity_enr"  # browser capture of the Clerk's Clarity ENR (tools/ingest_clarity_bundle.py); county rows only
-SOURCE_LABEL = {PDF_SOURCE: "Macomb Clerk summary PDF", CLARITY_SOURCE: "Macomb Clerk Clarity ENR (browser capture)", "manual_results": "manual entry"}
+SOURCE_LABEL = {PDF_SOURCE: "Macomb Clerk summary PDF", CLARITY_SOURCE: "Macomb Clerk Clarity ENR (browser capture)", "manual_results": "manual entry",
+                "enr_wayne_totalvote": "Wayne County Clerk ENR (TotalVote)"}
+COUNTY_FEEDS = ("enr_wayne_totalvote",)  # polled county feeds whose records carry `county` + a statewide seat contest_id
 SEAT_RE = re.compile(r"^mi-(hd|sd)-0*(\d{1,3})$")
 MACOMB_LEG_RE = re.compile(r"^macomb-(hd|sd)0*(\d{1,3})$")
 TOTAL_UNIT_RE = re.compile(r"^(?:(?:[a-z. ]+ )?county )?totals?$|^total votes(?: cast)?$|^district totals?$", re.I)
@@ -196,6 +198,10 @@ def seat_cards(reg, results_by_source, calls, macomb_contests=None):
     clar_latest = clar[-1].get("snapshot_id") if clar else None
     clar_cur = [r for r in clar if r.get("snapshot_id") == clar_latest and r.get("unit") == "county"] if clar_latest else []
     man_by_cc = _latest_group(manual, lambda r: (normalize_contest_id(r.get("contest_id") or r.get("contest")), r.get("county")) if r.get("county") else None)
+    feed_by_cc = {}  # (seat contest_id, county) -> (source_id, snapshot_id, records) from polled county feeds, latest snapshot per pair
+    for fsid in COUNTY_FEEDS:
+        for key, (sid, rs) in _latest_group(results_by_source.get(fsid, []), lambda r: (normalize_contest_id(r.get("contest_id")), r.get("county")) if r.get("county") and r.get("unit") == "county" else None).items():
+            feed_by_cc[key] = (fsid, sid, rs)
     man_by_c = _latest_group(manual, lambda r: normalize_contest_id(r.get("contest_id") or r.get("contest")) if not r.get("county") else None)
     cdir = reg.get("counties", {})
     cards = []
@@ -209,6 +215,9 @@ def seat_cards(reg, results_by_source, calls, macomb_contests=None):
             if s["scope"] == "statewide" and (s["contest_id"], county) in man_by_cc:
                 sid, rs = man_by_cc[(s["contest_id"], county)]
                 options.append((_snap_time(sid, "manual_results"), "manual_results", max((r.get("as_of") or "" for r in rs), default=""), rs))
+            if s["scope"] == "statewide" and (s["contest_id"], county) in feed_by_cc:
+                fsid, sid, rs = feed_by_cc[(s["contest_id"], county)]
+                options.append((_snap_time(sid, fsid), fsid, max((r.get("as_of") or "" for r in rs), default=""), rs))
             if county == "Macomb" and p.get("portion_contest_id"):
                 pc = p["portion_contest_id"]
                 rs = [r for r in pdf_cur if r.get("contest_id") == pc]

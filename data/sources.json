@@ -2782,6 +2782,36 @@
    "poller": "none",
    "active": true,
    "notes": "Records are produced by the results_ap_via_npr pass (poller npr_ap); this row documents the calls-layer source."
+  },
+  {
+   "id": "enr_wayne_totalvote",
+   "layer": "results",
+   "name": "Wayne County Clerk — Unofficial Results Election Display (TotalVote)",
+   "url": "https://michigan.totalvote.com/Wayne",
+   "format": "html",
+   "machine_readable": false,
+   "terms_note": "Wayne County Clerk's election-night page (BPro/Civix TotalVote), linked from waynecountymi.gov 'Unofficial Results Election Display'. Server-rendered HTML per office type; the page's own 'Results Last Updated' stamp is the as_of. Attribute 'Wayne County Clerk, unofficial results, as of <stamp>'. UNOFFICIAL until certified. Wayne cannot report until its local clerks submit; expect late first numbers.",
+   "rate_limit": "1 pass / 3 min (two pages); unchanged stamp records nothing; back off on 403/429/5xx",
+   "expected_cadence_min": 30,
+   "election_night_cadence_min": 3,
+   "coverage": "Wayne County portions: State Representative (all Wayne seats incl. HD-27, 28, 29, 31) and State Senate (incl. SD-12)",
+   "status": "VERIFIED_PARTIAL",
+   "status_reason": "Read from the operator's browser 2026-11-03 9:40 PM ET (0 of 770 precincts at 9:17 PM); runner reach 200 for both pages the same evening.",
+   "verified_at": "2026-11-03",
+   "poller": "totalvote",
+   "active": true,
+   "last_success_at": null,
+   "last_error": "",
+   "totalvote": {
+    "base": "https://michigan.totalvote.com/Wayne",
+    "cid": "05",
+    "county": "Wayne",
+    "pages": {
+     "REP": "",
+     "SEN": "CTY"
+    }
+   },
+   "notes": " 2026-11-03 9:45 PM ET: added during election night; feeds the Wayne portion of mi-hd-027/028/029/031 and mi-sd-12 seat cards automatically (mi_legislature.COUNTY_FEEDS)."
   }
  ]
 }
