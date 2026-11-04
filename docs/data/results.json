@@ -424,27 +424,27 @@
     {
      "name": "Brad Little",
      "party": "R",
-     "votes": 396748
+     "votes": 396809
     },
     {
      "name": "Terri Pickens",
      "party": "D",
-     "votes": 224357
+     "votes": 224380
     },
     {
      "name": "John R. Stegner",
      "party": "I",
-     "votes": 52941
+     "votes": 52945
     },
     {
      "name": "Paul Sand",
      "party": "L",
-     "votes": 11277
+     "votes": 11279
     },
     {
      "name": "Pro-Life",
      "party": "other",
-     "votes": 9288
+     "votes": 9291
     },
     {
      "name": "Jacob Burnett",
@@ -456,10 +456,10 @@
    "reporting_pct": null,
    "precincts": null,
    "modes": null,
-   "delta": 0.05,
+   "delta": -0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 05:36 UTC)",
    "source": "enr_id_ev",
-   "as_of": "2026-11-04T12:51:46.986144Z",
+   "as_of": "2026-11-04T13:05:12.7668288Z",
    "county_scope": null,
    "tier": null
   },
@@ -470,22 +470,22 @@
     {
      "name": "Jim Risch",
      "party": "R",
-     "votes": 391326
+     "votes": 391395
     },
     {
      "name": "Todd Achilles",
      "party": "I",
-     "votes": 232513
+     "votes": 232525
     },
     {
      "name": "Natalie M Fleming",
      "party": "I",
-     "votes": 48181
+     "votes": 48189
     },
     {
      "name": "Matt Loesby",
      "party": "L",
-     "votes": 20134
+     "votes": 20137
     }
    ],
    "margin": null,
@@ -495,7 +495,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 06:31 UTC)",
    "source": "enr_id_ev",
-   "as_of": "2026-11-04T12:51:46.986144Z",
+   "as_of": "2026-11-04T13:05:12.7668288Z",
    "county_scope": null,
    "tier": null
   },
@@ -1871,28 +1871,85 @@
    "tier": null
   },
   {
-   "id": "us-house-PA-07",
-   "title": "PA · Pennsylvania · U.S. House District 7",
+   "id": "us-house-TX-02",
+   "title": "TX · Texas · U.S. House District 2",
    "candidates": [
     {
-     "name": "Bob Brooks",
-     "party": "D",
-     "votes": 163823
+     "name": "Steve Toth",
+     "party": "R",
+     "votes": 144543
     },
     {
-     "name": "Ryan Mackenzie",
-     "party": "R",
-     "votes": 128465
+     "name": "Shaun Finnie",
+     "party": "D",
+     "votes": 138871
     }
    ],
-   "margin": 12.1,
-   "reporting_pct": 97.82016348773843,
-   "precincts": "359 of 367 precincts",
+   "margin": -2.0,
+   "reporting_pct": 97.59036144578313,
+   "precincts": "162 of 166 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:27 UTC)",
+   "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T12:56:46Z",
+   "as_of": "2026-11-04T13:04:43Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-TX-22",
+   "title": "TX · Texas · U.S. House District 22",
+   "candidates": [
+    {
+     "name": "Trever Nehls",
+     "party": "R",
+     "votes": 150074
+    },
+    {
+     "name": "Marquette Greene-Scott",
+     "party": "D",
+     "votes": 139482
+    }
+   ],
+   "margin": -3.66,
+   "reporting_pct": 96.11111111111111,
+   "precincts": "173 of 180 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Too early",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T13:04:43Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-TX-38",
+   "title": "TX · Texas · U.S. House District 38",
+   "candidates": [
+    {
+     "name": "Jon Bonck",
+     "party": "R",
+     "votes": 156834
+    },
+    {
+     "name": "Melissa McDonough",
+     "party": "D",
+     "votes": 143784
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 3430
+    }
+   ],
+   "margin": -4.29,
+   "reporting_pct": 98.90710382513662,
+   "precincts": "181 of 183 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Too early",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T13:04:43Z",
    "county_scope": null,
    "tier": null
   }
