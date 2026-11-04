@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import glob
 import os
+import re
 import sys
 from collections import defaultdict
 
@@ -95,6 +96,12 @@ def baseline_ou_rates():
     return rates
 
 
+def _snapshot_time(snapshot_id):
+    """'<source>:<fetched_at>:<hash12>' → fetched_at, or None when the id has another shape."""
+    m = re.search(r":(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z):[0-9a-f]{12}$", snapshot_id or "")
+    return m.group(1) if m else None
+
+
 def run(now_iso=None, write=True):
     now_iso = now_iso or utcnow()
     state = load_json(STATE, {"last_processed": {}, "last_change_at": {}}) if write else {"last_processed": {}, "last_change_at": {}}
@@ -116,7 +123,8 @@ def run(now_iso=None, write=True):
             prev = rows_for(prev_recs)
             if not cur:
                 continue
-            flags, last_change = detect(prev, cur, cur_id, now_iso, baseline_ou_rate=rates, last_change_at=last_change)
+            prev_at = _snapshot_time(prev_recs[0].get("snapshot_id")) if prev_recs else None
+            flags, last_change = detect(prev, cur, cur_id, now_iso, baseline_ou_rate=rates, last_change_at=last_change, prev_observed_at=prev_at)
             for f in flags:
                 f["source_id"] = src
                 key = (f["type"], f["contest"], f["unit"], f["snapshot_id"])

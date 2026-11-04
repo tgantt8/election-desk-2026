@@ -27,11 +27,14 @@ def _flag(kind, unit, contest, detail, snapshot_id, at):
             "snapshot_id": snapshot_id, "at": at, "status": "open"}
 
 
-def detect(prev_rows, cur_rows, cur_snapshot_id, now_iso, baseline_ou_rate=None, last_change_at=None):
+def detect(prev_rows, cur_rows, cur_snapshot_id, now_iso, baseline_ou_rate=None, last_change_at=None, prev_observed_at=None):
     """prev_rows / cur_rows: lists of {contest, unit, candidate|None, mode, votes, ballots|None, over_under|None, complete|bool}.
     A row with candidate None and mode "TOTAL" is the unit's contest total; ballots is Total Ballots Cast when known.
     baseline_ou_rate: {(contest, unit): rate} of (over+under votes) / ballots in 2024.
     last_change_at: {(contest, unit): iso} maintained by the caller across snapshots (returned updated).
+    prev_observed_at: when the previous snapshot of this source was taken. If that is itself more than STALL_MINUTES ago, the
+    stall rule is skipped for this comparison: a unit that did not move across a two-hour capture gap was not observed in
+    between, so nothing can be said about a stall (Nov 3: a 10:02 PM–12:16 AM gap opened 56 false stalled flags).
     Returns (flags, last_change_at)."""
     flags = []
 
@@ -63,6 +66,8 @@ def detect(prev_rows, cur_rows, cur_snapshot_id, now_iso, baseline_ou_rate=None,
                 flags.append(_flag("overvote_spike", r["unit"], r["contest"], f"Over/undervote rate {rate:.1%} vs 2024 {base:.1%} (>{OU_SPIKE_FACTOR:g}×).", cur_snapshot_id, now_iso))
     for cu in changed_units:
         last_change_at[cu] = now_iso
+    if prev_observed_at and (_t(now_iso) - _t(prev_observed_at)).total_seconds() / 60 > STALL_MINUTES:
+        return flags, last_change_at  # observation gap wider than the stall window: the stall rule has no basis
     for c in {r["contest"] for r in cur_rows}:
         units = {r["unit"] for r in cur_rows if r["contest"] == c}
         moved = {u for (cc, u) in changed_units if cc == c}
