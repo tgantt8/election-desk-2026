@@ -624,3 +624,11 @@
 {"at": "2026-11-04T04:44:14Z", "errors": [], "event": "npr_ap_pull", "new_calls": 7, "result_rows": 691, "retractions": 0, "source_id": "results_ap_via_npr"}
 {"at": "2026-11-04T04:44:16Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
 {"at": "2026-11-04T04:44:38Z", "ballot_items": 88, "election": "November2026GeneralElection_20260928112331", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 332, "snapshot": "enr_stclair_ev:2026-11-04T04:44:38Z:ca0197e4579f", "source_id": "enr_stclair_ev", "total_record_count": 88}
+{"at": "2026-11-04T04:47:01Z", "ballot_items": 273, "election": "11032026GeneralAndSpecialElection", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 457, "snapshot": "enr_ga_ev:2026-11-04T04:47:01Z:d76759970a6a", "source_id": "enr_ga_ev", "total_record_count": 273}
+{"at": "2026-11-04T04:47:03Z", "ballot_items": 145, "election": "nov2026", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 291, "snapshot": "enr_id_ev:2026-11-04T04:47:03Z:57f6ced32ae7", "source_id": "enr_id_ev", "total_record_count": 145}
+{"at": "2026-11-04T04:47:05Z", "ballot_items": 32, "election": "2026-November-General", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 113, "snapshot": "enr_va_ev:2026-11-04T04:47:05Z:43474f336467", "source_id": "enr_va_ev", "total_record_count": 32}
+{"at": "2026-11-04T04:47:08Z", "event": "nc_s3_unchanged", "source_id": "enr_nc_s3_results"}
+{"at": "2026-11-04T04:47:09Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-11-04T04:47:13Z", "errors": [], "event": "npr_ap_pull", "new_calls": 6, "result_rows": 504, "retractions": 0, "source_id": "results_ap_via_npr"}
+{"at": "2026-11-04T04:47:15Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
+{"at": "2026-11-04T04:47:37Z", "ballot_items": 88, "election": "November2026GeneralElection_20260928112331", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 332, "snapshot": "enr_stclair_ev:2026-11-04T04:47:37Z:ffd54132be4c", "source_id": "enr_stclair_ev", "total_record_count": 88}
