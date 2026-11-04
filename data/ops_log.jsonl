@@ -686,3 +686,10 @@
 {"at": "2026-11-04T05:08:13Z", "errors": [], "event": "npr_ap_pull", "new_calls": 6, "result_rows": 522, "retractions": 0, "source_id": "results_ap_via_npr"}
 {"at": "2026-11-04T05:08:15Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
 {"at": "2026-11-04T05:08:37Z", "ballot_items": 88, "election": "November2026GeneralElection_20260928112331", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok_unchanged", "records": 0, "snapshot": "enr_stclair_ev:2026-11-04T05:08:37Z:d71571041387", "source_id": "enr_stclair_ev", "total_record_count": 88}
+{"at": "2026-11-04T05:11:01Z", "ballot_items": 145, "election": "nov2026", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 291, "snapshot": "enr_id_ev:2026-11-04T05:11:01Z:7f5a2f6e020c", "source_id": "enr_id_ev", "total_record_count": 145}
+{"at": "2026-11-04T05:11:03Z", "ballot_items": 32, "election": "2026-November-General", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 113, "snapshot": "enr_va_ev:2026-11-04T05:11:03Z:ff969a24d208", "source_id": "enr_va_ev", "total_record_count": 32}
+{"at": "2026-11-04T05:11:07Z", "event": "nc_s3_unchanged", "source_id": "enr_nc_s3_results"}
+{"at": "2026-11-04T05:11:08Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-11-04T05:11:11Z", "errors": [], "event": "npr_ap_pull", "new_calls": 4, "result_rows": 465, "retractions": 0, "source_id": "results_ap_via_npr"}
+{"at": "2026-11-04T05:11:14Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
+{"at": "2026-11-04T05:11:36Z", "ballot_items": 88, "election": "November2026GeneralElection_20260928112331", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 332, "snapshot": "enr_stclair_ev:2026-11-04T05:11:36Z:f4cf0d6cd336", "source_id": "enr_stclair_ev", "total_record_count": 88}
