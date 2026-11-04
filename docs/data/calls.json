@@ -6748,6 +6748,23 @@
    "source_id": "calls_ap_via_npr",
    "status": "Projected",
    "url": "https://apps.npr.org/2026-election-results/data/house.json"
+  },
+  {
+   "ap_race_id": "1019",
+   "basis": "AP race call as published by NPR's results app",
+   "called_at": "2026-11-04T06:36:23.346Z",
+   "called_for": "Thomas Tuberville",
+   "called_for_party": "R",
+   "contest": "gov-AL",
+   "entered_at": "2026-11-04T06:41:13Z",
+   "entered_by": "poll_npr_ap",
+   "flipped_seat": false,
+   "layer": "calls",
+   "outlet": "AP (via NPR)",
+   "previous_party": "R",
+   "source_id": "calls_ap_via_npr",
+   "status": "Projected",
+   "url": "https://apps.npr.org/2026-election-results/data/gov.json"
   }
  ]
 }
