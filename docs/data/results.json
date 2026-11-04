@@ -424,42 +424,42 @@
     {
      "name": "Brad Little",
      "party": "R",
-     "votes": 208024
+     "votes": 209013
     },
     {
      "name": "Terri Pickens",
      "party": "D",
-     "votes": 136539
+     "votes": 136885
     },
     {
      "name": "John R. Stegner",
      "party": "I",
-     "votes": 31633
+     "votes": 31732
     },
     {
      "name": "Paul Sand",
      "party": "L",
-     "votes": 5953
+     "votes": 5979
     },
     {
      "name": "Pro-Life",
      "party": "other",
-     "votes": 4260
+     "votes": 4304
     },
     {
      "name": "Jacob Burnett",
      "party": "I",
-     "votes": 39
+     "votes": 42
     }
    ],
-   "margin": -18.5,
+   "margin": -18.59,
    "reporting_pct": null,
    "precincts": null,
    "modes": null,
-   "delta": -1.2,
+   "delta": -0.09,
    "status": "Projected (AP (via NPR), 2026-11-04 05:36 UTC)",
    "source": "enr_id_ev",
-   "as_of": "2026-11-04T05:48:03.8644658Z",
+   "as_of": "2026-11-04T05:51:21.8777901Z",
    "county_scope": null,
    "tier": null
   },
@@ -470,22 +470,22 @@
     {
      "name": "Jim Risch",
      "party": "R",
-     "votes": 203181
+     "votes": 204202
     },
     {
      "name": "Todd Achilles",
      "party": "I",
-     "votes": 144799
+     "votes": 145107
     },
     {
      "name": "Natalie M Fleming",
      "party": "I",
-     "votes": 26045
+     "votes": 26147
     },
     {
      "name": "Matt Loesby",
      "party": "L",
-     "votes": 10541
+     "votes": 10603
     }
    ],
    "margin": null,
@@ -495,7 +495,7 @@
    "delta": null,
    "status": "Too early",
    "source": "enr_id_ev",
-   "as_of": "2026-11-04T05:48:03.8644658Z",
+   "as_of": "2026-11-04T05:51:21.8777901Z",
    "county_scope": null,
    "tier": null
   },
@@ -991,7 +991,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 05:26 UTC)",
    "source": "enr_ut_ev",
-   "as_of": "2026-11-04T05:49:00.4798181Z",
+   "as_of": "2026-11-04T05:50:53.1994973Z",
    "county_scope": null,
    "tier": null
   },
@@ -1032,7 +1032,7 @@
    "delta": 0.0,
    "status": "Too early",
    "source": "enr_ut_ev",
-   "as_of": "2026-11-04T05:49:00.4798181Z",
+   "as_of": "2026-11-04T05:50:53.1994973Z",
    "county_scope": null,
    "tier": null
   },
@@ -1078,7 +1078,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 05:03 UTC)",
    "source": "enr_ut_ev",
-   "as_of": "2026-11-04T05:49:00.4798181Z",
+   "as_of": "2026-11-04T05:50:53.1994973Z",
    "county_scope": null,
    "tier": null
   },
@@ -1114,7 +1114,7 @@
    "delta": 0.0,
    "status": "Too early",
    "source": "enr_ut_ev",
-   "as_of": "2026-11-04T05:49:00.4798181Z",
+   "as_of": "2026-11-04T05:50:53.1994973Z",
    "county_scope": null,
    "tier": null
   },
@@ -1871,6 +1871,32 @@
    "tier": null
   },
   {
+   "id": "us-house-AL-01",
+   "title": "AL · Alabama · U.S. House District 1",
+   "candidates": [
+    {
+     "name": "Jerry Carl",
+     "party": "R",
+     "votes": 137025
+    },
+    {
+     "name": "Clyde Jones",
+     "party": "D",
+     "votes": 94940
+    }
+   ],
+   "margin": -18.14,
+   "reporting_pct": 98.55072463768116,
+   "precincts": "136 of 138 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 04:15 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:43Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
    "id": "us-house-AL-02",
    "title": "AL · Alabama · U.S. House District 2",
    "candidates": [
@@ -1892,7 +1918,33 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:00 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:37Z",
+   "as_of": "2026-11-04T05:50:28Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-AL-03",
+   "title": "AL · Alabama · U.S. House District 3",
+   "candidates": [
+    {
+     "name": "Mike Rogers",
+     "party": "R",
+     "votes": 140427
+    },
+    {
+     "name": "Lee McInnis",
+     "party": "D",
+     "votes": 78919
+    }
+   ],
+   "margin": -28.04,
+   "reporting_pct": 88.8086642599278,
+   "precincts": "246 of 277 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 03:10 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:50:20Z",
    "county_scope": null,
    "tier": null
   },
@@ -1918,147 +1970,142 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 02:33 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:34Z",
+   "as_of": "2026-11-04T05:51:05Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-AR-01",
-   "title": "AR · Arkansas · U.S. House District 1",
+   "id": "us-house-AL-07",
+   "title": "AL · Alabama · U.S. House District 7",
    "candidates": [
     {
-     "name": "Rick Crawford",
-     "party": "R",
-     "votes": 126902
+     "name": "Terri Sewell",
+     "party": "D",
+     "votes": 153279
     },
     {
-     "name": "Terri Yarbrough Green",
+     "name": "Ammie Akin",
+     "party": "R",
+     "votes": 69941
+    }
+   ],
+   "margin": 37.33,
+   "reporting_pct": 82.10526315789474,
+   "precincts": "390 of 475 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 03:24 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:51:05Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-AZ-06",
+   "title": "AZ · Arizona · U.S. House District 6",
+   "candidates": [
+    {
+     "name": "JoAnna Mendoza",
      "party": "D",
-     "votes": 60047
+     "votes": 140803
+    },
+    {
+     "name": "Juan Ciscomani",
+     "party": "R",
+     "votes": 106661
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 6936
+     "votes": 5026
     }
    ],
-   "margin": -34.48,
-   "reporting_pct": 98.59550561797752,
-   "precincts": "702 of 712 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:18 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:24Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-AR-02",
-   "title": "AR · Arkansas · U.S. House District 2",
-   "candidates": [
-    {
-     "name": "French Hill",
-     "party": "R",
-     "votes": 127427
-    },
-    {
-     "name": "Chris Jones",
-     "party": "D",
-     "votes": 123025
-    }
-   ],
-   "margin": -1.76,
-   "reporting_pct": 98.76237623762377,
-   "precincts": "399 of 404 precincts",
+   "margin": 13.52,
+   "reporting_pct": 68.54838709677419,
+   "precincts": "170 of 248 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:23Z",
+   "as_of": "2026-11-04T05:50:45Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-AR-03",
-   "title": "AR · Arkansas · U.S. House District 3",
+   "id": "us-house-AZ-07",
+   "title": "AZ · Arizona · U.S. House District 7",
    "candidates": [
     {
-     "name": "Steve Womack",
-     "party": "R",
-     "votes": 127303
-    },
-    {
-     "name": "Robb Ryerse",
+     "name": "Adelita Grijalva",
      "party": "D",
-     "votes": 96189
+     "votes": 89686
     },
     {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 8413
+     "name": "Daniel Butierez",
+     "party": "R",
+     "votes": 30688
     }
    ],
-   "margin": -13.42,
-   "reporting_pct": 98.5594237695078,
-   "precincts": "821 of 833 precincts",
+   "margin": 49.01,
+   "reporting_pct": 64.39024390243902,
+   "precincts": "132 of 205 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:48 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 03:11 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:18Z",
+   "as_of": "2026-11-04T05:50:43Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-AR-04",
-   "title": "AR · Arkansas · U.S. House District 4",
+   "id": "us-house-CA-02",
+   "title": "CA · California · U.S. House District 2",
    "candidates": [
     {
-     "name": "Bruce Westerman",
-     "party": "R",
-     "votes": 128516
+     "name": "Jared Huffman",
+     "party": "D",
+     "votes": 84109
     },
     {
-     "name": "James Russell",
-     "party": "D",
-     "votes": 68224
+     "name": "Robin Littau",
+     "party": "R",
+     "votes": 27438
     }
    ],
-   "margin": -30.65,
-   "reporting_pct": 97.1951219512195,
-   "precincts": "797 of 820 precincts",
+   "margin": 50.8,
+   "reporting_pct": 34.621848739495796,
+   "precincts": "206 of 595 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:17 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 04:47 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:22Z",
+   "as_of": "2026-11-04T05:49:58Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-CA-03",
-   "title": "CA · California · U.S. House District 3",
+   "id": "us-house-CA-04",
+   "title": "CA · California · U.S. House District 4",
    "candidates": [
     {
-     "name": "Ami Bera",
+     "name": "Eric Jones",
      "party": "D",
-     "votes": 83622
+     "votes": 50713
     },
     {
-     "name": "Robb Tucker",
-     "party": "R",
-     "votes": 56431
+     "name": "Mike Thompson",
+     "party": "D",
+     "votes": 50235
     }
    ],
-   "margin": 19.41,
-   "reporting_pct": 41.24293785310734,
-   "precincts": "219 of 531 precincts",
+   "margin": null,
+   "reporting_pct": 34.2,
+   "precincts": "171 of 500 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 05:36 UTC)",
+   "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:24Z",
+   "as_of": "2026-11-04T05:48:52Z",
    "county_scope": null,
    "tier": null
   },
@@ -2084,319 +2131,137 @@
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:27Z",
+   "as_of": "2026-11-04T05:49:37Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-CA-08",
-   "title": "CA · California · U.S. House District 8",
+   "id": "us-house-CA-06",
+   "title": "CA · California · U.S. House District 6",
    "candidates": [
     {
-     "name": "John Garamendi",
+     "name": "Richard Pan",
      "party": "D",
-     "votes": 93916
+     "votes": 73972
     },
     {
-     "name": "Rudy Recile",
-     "party": "R",
-     "votes": 31159
-    }
-   ],
-   "margin": 50.18,
-   "reporting_pct": 52.27272727272727,
-   "precincts": "207 of 396 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:42 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:10Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-09",
-   "title": "CA · California · U.S. House District 9",
-   "candidates": [
-    {
-     "name": "Josh Harder",
-     "party": "D",
-     "votes": 61895
-    },
-    {
-     "name": "John McBride",
-     "party": "R",
-     "votes": 29196
-    }
-   ],
-   "margin": 35.9,
-   "reporting_pct": 42.546583850931675,
-   "precincts": "137 of 322 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:41 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:28Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-10",
-   "title": "CA · California · U.S. House District 10",
-   "candidates": [
-    {
-     "name": "Mark DeSaulnier",
-     "party": "D",
-     "votes": 121782
-    },
-    {
-     "name": "Jeff Frese",
-     "party": "R",
-     "votes": 50959
-    }
-   ],
-   "margin": 41.0,
-   "reporting_pct": 56.043956043956044,
-   "precincts": "408 of 728 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:42 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:48Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-23",
-   "title": "CA · California · U.S. House District 23",
-   "candidates": [
-    {
-     "name": "Jay Obernolte",
-     "party": "R",
-     "votes": 51007
-    },
-    {
-     "name": "Tessa Hodge",
-     "party": "D",
-     "votes": 50093
-    }
-   ],
-   "margin": -0.9,
-   "reporting_pct": 44.03323262839879,
-   "precincts": "583 of 1324 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:55Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-25",
-   "title": "CA · California · U.S. House District 25",
-   "candidates": [
-    {
-     "name": "Raul Ruiz",
-     "party": "D",
-     "votes": 64526
-    },
-    {
-     "name": "Joe Males",
-     "party": "R",
-     "votes": 35439
-    }
-   ],
-   "margin": 29.1,
-   "reporting_pct": 42.22560975609756,
-   "precincts": "277 of 656 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:29Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-26",
-   "title": "CA · California · U.S. House District 26",
-   "candidates": [
-    {
-     "name": "Jacqui Irwin",
-     "party": "D",
-     "votes": 96717
-    },
-    {
-     "name": "Sam Gallucci",
-     "party": "R",
-     "votes": 57531
-    }
-   ],
-   "margin": 25.4,
-   "reporting_pct": 65.22539098436063,
-   "precincts": "709 of 1087 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 05:04 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:45Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-27",
-   "title": "CA · California · U.S. House District 27",
-   "candidates": [
-    {
-     "name": "George Whitesides",
-     "party": "D",
-     "votes": 84638
-    },
-    {
-     "name": "Jason Gibbs",
-     "party": "R",
-     "votes": 49742
-    }
-   ],
-   "margin": 25.97,
-   "reporting_pct": 56.08465608465608,
-   "precincts": "212 of 378 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:48Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-29",
-   "title": "CA · California · U.S. House District 29",
-   "candidates": [
-    {
-     "name": "Luz Rivas",
-     "party": "D",
-     "votes": 55942
-    },
-    {
-     "name": "Angélica Dueñas",
-     "party": "D",
-     "votes": 33087
+     "name": "Kevin Kiley",
+     "party": "NPP",
+     "votes": 49016
     }
    ],
    "margin": null,
-   "reporting_pct": 49.56521739130435,
-   "precincts": "57 of 115 precincts",
+   "reporting_pct": 40.77669902912621,
+   "precincts": "126 of 309 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:44Z",
+   "as_of": "2026-11-04T05:49:17Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-CA-30",
-   "title": "CA · California · U.S. House District 30",
+   "id": "us-house-CA-11",
+   "title": "CA · California · U.S. House District 11",
    "candidates": [
     {
-     "name": "Laura Friedman",
+     "name": "Scott Wiener",
      "party": "D",
-     "votes": 109272
+     "votes": 79568
     },
     {
-     "name": "Scott Meyers",
-     "party": "R",
-     "votes": 38300
-    }
-   ],
-   "margin": 48.09,
-   "reporting_pct": 53.36787564766839,
-   "precincts": "103 of 193 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:44 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:49Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-31",
-   "title": "CA · California · U.S. House District 31",
-   "candidates": [
-    {
-     "name": "Gil Cisneros",
+     "name": "Connie Chan",
      "party": "D",
-     "votes": 83771
-    },
-    {
-     "name": "Eric Ching",
-     "party": "R",
-     "votes": 44733
-    }
-   ],
-   "margin": 30.38,
-   "reporting_pct": 54.72222222222222,
-   "precincts": "197 of 360 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:50 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:42Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-32",
-   "title": "CA · California · U.S. House District 32",
-   "candidates": [
-    {
-     "name": "Brad Sherman",
-     "party": "D",
-     "votes": 106847
-    },
-    {
-     "name": "Larry Thompson",
-     "party": "R",
-     "votes": 52055
-    }
-   ],
-   "margin": 34.48,
-   "reporting_pct": 54.850746268656714,
-   "precincts": "147 of 268 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:48 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:40Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-34",
-   "title": "CA · California · U.S. House District 34",
-   "candidates": [
-    {
-     "name": "Angela Gonzales-Torres",
-     "party": "D",
-     "votes": 47155
-    },
-    {
-     "name": "Jimmy Gomez",
-     "party": "D",
-     "votes": 36523
+     "votes": 61050
     }
    ],
    "margin": null,
-   "reporting_pct": 53.44827586206897,
-   "precincts": "62 of 116 precincts",
+   "reporting_pct": 45.6953642384106,
+   "precincts": "207 of 453 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:53Z",
+   "as_of": "2026-11-04T05:49:34Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-CA-15",
+   "title": "CA · California · U.S. House District 15",
+   "candidates": [
+    {
+     "name": "Kevin Mullin",
+     "party": "D",
+     "votes": 80528
+    },
+    {
+     "name": "Charles Hoelter",
+     "party": "R",
+     "votes": 21966
+    }
+   ],
+   "margin": 57.14,
+   "reporting_pct": 39.79933110367893,
+   "precincts": "119 of 299 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 04:43 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:29Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-CA-28",
+   "title": "CA · California · U.S. House District 28",
+   "candidates": [
+    {
+     "name": "Judy Chu",
+     "party": "D",
+     "votes": 102366
+    },
+    {
+     "name": "April Verlato",
+     "party": "R",
+     "votes": 44332
+    }
+   ],
+   "margin": 39.56,
+   "reporting_pct": 51.406649616368284,
+   "precincts": "201 of 391 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 04:52 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:48:44Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-CA-33",
+   "title": "CA · California · U.S. House District 33",
+   "candidates": [
+    {
+     "name": "Pete Aguilar",
+     "party": "D",
+     "votes": 58990
+    },
+    {
+     "name": "Stephanie Vargas",
+     "party": "R",
+     "votes": 28013
+    }
+   ],
+   "margin": 35.6,
+   "reporting_pct": 44.806517311608964,
+   "precincts": "220 of 491 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 04:52 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:48:49Z",
    "county_scope": null,
    "tier": null
   },
@@ -2422,59 +2287,59 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 05:09 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:43Z",
+   "as_of": "2026-11-04T05:49:17Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-CA-36",
-   "title": "CA · California · U.S. House District 36",
+   "id": "us-house-CA-37",
+   "title": "CA · California · U.S. House District 37",
    "candidates": [
     {
-     "name": "Ted Lieu",
+     "name": "Sydney Kamlager-Dove",
      "party": "D",
-     "votes": 128325
+     "votes": 59112
     },
     {
-     "name": "Houston Brignano",
-     "party": "R",
-     "votes": 50122
+     "name": "Samantha Mota",
+     "party": "D",
+     "votes": 31271
     }
    ],
-   "margin": 43.82,
-   "reporting_pct": 51.92307692307692,
-   "precincts": "81 of 156 precincts",
+   "margin": null,
+   "reporting_pct": 50.714285714285715,
+   "precincts": "71 of 140 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:40 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 05:34 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:52Z",
+   "as_of": "2026-11-04T05:48:47Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-CA-38",
-   "title": "CA · California · U.S. House District 38",
+   "id": "us-house-CA-39",
+   "title": "CA · California · U.S. House District 39",
    "candidates": [
     {
-     "name": "Hilda Solis",
+     "name": "Mark Takano",
      "party": "D",
-     "votes": 77453
+     "votes": 44255
     },
     {
-     "name": "Pedro Casas",
+     "name": "Steve Manos",
      "party": "R",
-     "votes": 38881
+     "votes": 23345
     }
    ],
-   "margin": 33.16,
-   "reporting_pct": 53.734939759036145,
-   "precincts": "223 of 415 precincts",
+   "margin": 30.93,
+   "reporting_pct": 40.0,
+   "precincts": "84 of 210 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:55 UTC)",
+   "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:47Z",
+   "as_of": "2026-11-04T05:49:45Z",
    "county_scope": null,
    "tier": null
   },
@@ -2500,215 +2365,33 @@
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:29Z",
+   "as_of": "2026-11-04T05:50:12Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-CA-41",
-   "title": "CA · California · U.S. House District 41",
+   "id": "us-house-CA-48",
+   "title": "CA · California · U.S. House District 48",
    "candidates": [
     {
-     "name": "Linda Sánchez",
+     "name": "Marni von Wilpert",
      "party": "D",
-     "votes": 87144
+     "votes": 84279
     },
     {
-     "name": "Mitch Clemmons",
+     "name": "Jim Desmond",
      "party": "R",
-     "votes": 43305
+     "votes": 57647
     }
    ],
-   "margin": 33.61,
-   "reporting_pct": 53.380782918149464,
-   "precincts": "150 of 281 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 05:39 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:45Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-42",
-   "title": "CA · California · U.S. House District 42",
-   "candidates": [
-    {
-     "name": "Robert Garcia",
-     "party": "D",
-     "votes": 95289
-    },
-    {
-     "name": "Brian Burley",
-     "party": "R",
-     "votes": 57343
-    }
-   ],
-   "margin": 24.86,
-   "reporting_pct": 48.00995024875622,
-   "precincts": "193 of 402 precincts",
+   "margin": 18.76,
+   "reporting_pct": 47.39884393063584,
+   "precincts": "328 of 692 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:44Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-43",
-   "title": "CA · California · U.S. House District 43",
-   "candidates": [
-    {
-     "name": "Maxine Waters",
-     "party": "D",
-     "votes": 74762
-    },
-    {
-     "name": "Cristian Morales",
-     "party": "R",
-     "votes": 16631
-    }
-   ],
-   "margin": 63.61,
-   "reporting_pct": 55.95854922279793,
-   "precincts": "108 of 193 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:33 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:41Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-44",
-   "title": "CA · California · U.S. House District 44",
-   "candidates": [
-    {
-     "name": "Nanette Barragan",
-     "party": "D",
-     "votes": 73405
-    },
-    {
-     "name": "Genevieve Angel",
-     "party": "R",
-     "votes": 17496
-    }
-   ],
-   "margin": 61.51,
-   "reporting_pct": 55.3072625698324,
-   "precincts": "99 of 179 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:35 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:44Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-45",
-   "title": "CA · California · U.S. House District 45",
-   "candidates": [
-    {
-     "name": "Derek Tran",
-     "party": "D",
-     "votes": 82004
-    },
-    {
-     "name": "Chuong Vo",
-     "party": "R",
-     "votes": 53201
-    }
-   ],
-   "margin": 21.3,
-   "reporting_pct": 48.113207547169814,
-   "precincts": "204 of 424 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:44Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-46",
-   "title": "CA · California · U.S. House District 46",
-   "candidates": [
-    {
-     "name": "Lou Correa",
-     "party": "D",
-     "votes": 60364
-    },
-    {
-     "name": "David Pan",
-     "party": "R",
-     "votes": 26598
-    }
-   ],
-   "margin": 38.83,
-   "reporting_pct": 47.04491725768322,
-   "precincts": "199 of 423 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:49 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:32Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-47",
-   "title": "CA · California · U.S. House District 47",
-   "candidates": [
-    {
-     "name": "Dave Min",
-     "party": "D",
-     "votes": 94033
-    },
-    {
-     "name": "Jenny Rae Le Roux",
-     "party": "R",
-     "votes": 63103
-    }
-   ],
-   "margin": 19.68,
-   "reporting_pct": 46.16755793226381,
-   "precincts": "259 of 561 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:37Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CA-49",
-   "title": "CA · California · U.S. House District 49",
-   "candidates": [
-    {
-     "name": "Mike Levin",
-     "party": "D",
-     "votes": 110116
-    },
-    {
-     "name": "Armen Kurdian",
-     "party": "R",
-     "votes": 76841
-    }
-   ],
-   "margin": 17.8,
-   "reporting_pct": 52.78969957081545,
-   "precincts": "369 of 699 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:35Z",
+   "as_of": "2026-11-04T05:50:37Z",
    "county_scope": null,
    "tier": null
   },
@@ -2719,379 +2402,27 @@
     {
      "name": "Joe Neguse",
      "party": "D",
-     "votes": 198778
+     "votes": 202826
     },
     {
      "name": "Kelley Dennison",
      "party": "R",
-     "votes": 61755
+     "votes": 62574
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 4049
+     "votes": 4128
     }
    ],
-   "margin": 51.79,
-   "reporting_pct": 65.8886894075404,
-   "precincts": "367 of 557 precincts",
+   "margin": 52.04,
+   "reporting_pct": 67.14542190305207,
+   "precincts": "374 of 557 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 02:34 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:06Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CO-04",
-   "title": "CO · Colorado · U.S. House District 4",
-   "candidates": [
-    {
-     "name": "Eileen Laubacher",
-     "party": "D",
-     "votes": 158831
-    },
-    {
-     "name": "Lauren Boebert",
-     "party": "R",
-     "votes": 153121
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 9569
-    }
-   ],
-   "margin": 1.78,
-   "reporting_pct": 77.74140752864157,
-   "precincts": "475 of 611 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:06Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CO-07",
-   "title": "CO · Colorado · U.S. House District 7",
-   "candidates": [
-    {
-     "name": "Brittany Pettersen",
-     "party": "D",
-     "votes": 186917
-    },
-    {
-     "name": "Tim Bennett",
-     "party": "R",
-     "votes": 107759
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 8184
-    }
-   ],
-   "margin": 26.14,
-   "reporting_pct": 76.73545966228893,
-   "precincts": "409 of 533 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:12 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:06Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CO-08",
-   "title": "CO · Colorado · U.S. House District 8",
-   "candidates": [
-    {
-     "name": "Manny Rutinel",
-     "party": "D",
-     "votes": 123653
-    },
-    {
-     "name": "Gabe Evans",
-     "party": "R",
-     "votes": 90488
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 8253
-    }
-   ],
-   "margin": 14.91,
-   "reporting_pct": 77.55102040816327,
-   "precincts": "532 of 686 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:49 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:06Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CT-01",
-   "title": "CT · Connecticut · U.S. House District 1",
-   "candidates": [
-    {
-     "name": "Luke Bronin",
-     "party": "D",
-     "votes": 119970
-    },
-    {
-     "name": "Amy Chai",
-     "party": "R",
-     "votes": 58876
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 3023
-    }
-   ],
-   "margin": 33.59,
-   "reporting_pct": 78.16901408450704,
-   "precincts": "111 of 142 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:04 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:01Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CT-02",
-   "title": "CT · Connecticut · U.S. House District 2",
-   "candidates": [
-    {
-     "name": "Joe Courtney",
-     "party": "D",
-     "votes": 159961
-    },
-    {
-     "name": "George Austin",
-     "party": "R",
-     "votes": 98110
-    }
-   ],
-   "margin": 23.97,
-   "reporting_pct": 89.87341772151899,
-   "precincts": "142 of 158 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:54 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:16Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CT-03",
-   "title": "CT · Connecticut · U.S. House District 3",
-   "candidates": [
-    {
-     "name": "Rosa DeLauro",
-     "party": "D",
-     "votes": 80416
-    },
-    {
-     "name": "Christopher Lancia",
-     "party": "R",
-     "votes": 57383
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 5062
-    }
-   ],
-   "margin": 16.12,
-   "reporting_pct": 52.972972972972975,
-   "precincts": "98 of 185 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:42 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:19Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-CT-05",
-   "title": "CT · Connecticut · U.S. House District 5",
-   "candidates": [
-    {
-     "name": "Jahana Hayes",
-     "party": "D",
-     "votes": 80752
-    },
-    {
-     "name": "Chris Shea",
-     "party": "R",
-     "votes": 63467
-    }
-   ],
-   "margin": 11.99,
-   "reporting_pct": 53.164556962025316,
-   "precincts": "84 of 158 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:59 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:20Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-FL-24",
-   "title": "FL · Florida · U.S. House District 24",
-   "candidates": [
-    {
-     "name": "Oliver Gilbert",
-     "party": "D",
-     "votes": 164819
-    },
-    {
-     "name": "Te Brown",
-     "party": "R",
-     "votes": 39534
-    }
-   ],
-   "margin": 61.31,
-   "reporting_pct": 98.63636363636364,
-   "precincts": "217 of 220 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 00:16 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:39Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-FL-25",
-   "title": "FL · Florida · U.S. House District 25",
-   "candidates": [
-    {
-     "name": "Jared Moskowitz",
-     "party": "D",
-     "votes": 143639
-    },
-    {
-     "name": "Scott Singer",
-     "party": "R",
-     "votes": 130728
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 5871
-    }
-   ],
-   "margin": 4.61,
-   "reporting_pct": 98.78419452887537,
-   "precincts": "325 of 329 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:07 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:39Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-FL-26",
-   "title": "FL · Florida · U.S. House District 26",
-   "candidates": [
-    {
-     "name": "Mario Diaz-Balart",
-     "party": "R",
-     "votes": 114547
-    },
-    {
-     "name": "Nicole Locklin",
-     "party": "D",
-     "votes": 112775
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 2348
-    }
-   ],
-   "margin": -0.77,
-   "reporting_pct": 98.10126582278481,
-   "precincts": "155 of 158 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:39Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-FL-27",
-   "title": "FL · Florida · U.S. House District 27",
-   "candidates": [
-    {
-     "name": "Maria Elvira Salazar",
-     "party": "R",
-     "votes": 124474
-    },
-    {
-     "name": "Eliott Rodriguez",
-     "party": "D",
-     "votes": 123358
-    }
-   ],
-   "margin": -0.45,
-   "reporting_pct": 98.63013698630137,
-   "precincts": "216 of 219 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:39Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-FL-28",
-   "title": "FL · Florida · U.S. House District 28",
-   "candidates": [
-    {
-     "name": "Carlos Gimenez",
-     "party": "R",
-     "votes": 124978
-    },
-    {
-     "name": "Phil Ehr",
-     "party": "D",
-     "votes": 107839
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 3443
-    }
-   ],
-   "margin": -7.25,
-   "reporting_pct": 98.5576923076923,
-   "precincts": "205 of 208 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 00:55 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:39Z",
+   "as_of": "2026-11-04T05:51:11Z",
    "county_scope": null,
    "tier": null
   },
@@ -3117,7 +2448,43 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 01:28 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:25Z",
+   "as_of": "2026-11-04T05:48:38Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-IA-01",
+   "title": "IA · Iowa · U.S. House District 1",
+   "candidates": [
+    {
+     "name": "Christina Bohannan",
+     "party": "D",
+     "votes": 174234
+    },
+    {
+     "name": "Mariannette Miller-Meeks",
+     "party": "R",
+     "votes": 139249
+    },
+    {
+     "name": "Michael Bridgford",
+     "party": "NPA",
+     "votes": 11867
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 0
+    }
+   ],
+   "margin": 10.75,
+   "reporting_pct": 83.70370370370371,
+   "precincts": "339 of 405 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 05:08 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:43Z",
    "county_scope": null,
    "tier": null
   },
@@ -3153,33 +2520,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 05:19 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:49Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-IA-03",
-   "title": "IA · Iowa · U.S. House District 3",
-   "candidates": [
-    {
-     "name": "Sarah Trone Garriott",
-     "party": "D",
-     "votes": 178641
-    },
-    {
-     "name": "Zach Nunn",
-     "party": "R",
-     "votes": 150931
-    }
-   ],
-   "margin": 8.41,
-   "reporting_pct": 85.79088471849866,
-   "precincts": "320 of 373 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 05:03 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:09Z",
+   "as_of": "2026-11-04T05:48:59Z",
    "county_scope": null,
    "tier": null
   },
@@ -3205,7 +2546,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:33 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:28Z",
+   "as_of": "2026-11-04T05:49:48Z",
    "county_scope": null,
    "tier": null
   },
@@ -3216,32 +2557,32 @@
     {
      "name": "Russ Fulcher",
      "party": "R",
-     "votes": 105230
+     "votes": 105565
     },
     {
      "name": "Kaylee Peterson",
      "party": "D",
-     "votes": 55022
+     "votes": 55069
     },
     {
      "name": "Sarah Zabel",
      "party": "I",
-     "votes": 10475
+     "votes": 10492
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 1228
+     "votes": 1237
     }
    ],
-   "margin": -29.2,
-   "reporting_pct": 47.31182795698925,
-   "precincts": "220 of 465 precincts",
+   "margin": -29.3,
+   "reporting_pct": 47.526881720430104,
+   "precincts": "221 of 465 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:43 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:40Z",
+   "as_of": "2026-11-04T05:51:01Z",
    "county_scope": null,
    "tier": null
   },
@@ -3272,146 +2613,230 @@
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:39Z",
+   "as_of": "2026-11-04T05:49:51Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-IL-12",
-   "title": "IL · Illinois · U.S. House District 12",
+   "id": "us-house-IL-03",
+   "title": "IL · Illinois · U.S. House District 3",
    "candidates": [
     {
-     "name": "Mike Bost",
-     "party": "R",
-     "votes": 180029
+     "name": "Delia Ramirez",
+     "party": "D",
+     "votes": 133437
     },
     {
-     "name": "Julie Fortier",
-     "party": "D",
-     "votes": 80210
+     "name": "Angel Oakley",
+     "party": "R",
+     "votes": 43314
     }
    ],
-   "margin": -38.36,
-   "reporting_pct": 86.75742574257426,
-   "precincts": "701 of 808 precincts",
+   "margin": 50.99,
+   "reporting_pct": 65.58265582655827,
+   "precincts": "242 of 369 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:15 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 03:00 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:23Z",
+   "as_of": "2026-11-04T05:51:00Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-KS-04",
-   "title": "KS · Kansas · U.S. House District 4",
+   "id": "us-house-IL-04",
+   "title": "IL · Illinois · U.S. House District 4",
    "candidates": [
     {
-     "name": "Ron Estes",
-     "party": "R",
-     "votes": 138445
+     "name": "Patty Garcia",
+     "party": "D",
+     "votes": 104806
     },
     {
-     "name": "Katy Tyndell",
-     "party": "D",
-     "votes": 113553
+     "name": "Lupe Castillo",
+     "party": "R",
+     "votes": 24388
+    },
+    {
+     "name": "Chris Getty",
+     "party": "I",
+     "votes": 13910
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 6128
+     "votes": 5129
     }
    ],
-   "margin": -9.64,
-   "reporting_pct": 100.0,
-   "precincts": "942 of 942 precincts",
+   "margin": 54.25,
+   "reporting_pct": 88.45070422535211,
+   "precincts": "314 of 355 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:10 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 02:42 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:41Z",
+   "as_of": "2026-11-04T05:50:59Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-KY-01",
-   "title": "KY · Kentucky · U.S. House District 1",
+   "id": "us-house-IL-06",
+   "title": "IL · Illinois · U.S. House District 6",
    "candidates": [
     {
-     "name": "James Comer",
-     "party": "R",
-     "votes": 153992
+     "name": "Sean Casten",
+     "party": "D",
+     "votes": 157210
     },
     {
-     "name": "John Williams",
-     "party": "D",
-     "votes": 73910
+     "name": "Niki Conforti",
+     "party": "R",
+     "votes": 94179
     }
    ],
-   "margin": -35.14,
-   "reporting_pct": 98.80478087649402,
-   "precincts": "496 of 502 precincts",
+   "margin": 25.07,
+   "reporting_pct": 56.477732793522264,
+   "precincts": "279 of 494 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 00:56 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 03:37 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:09Z",
+   "as_of": "2026-11-04T05:51:00Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-LA-05",
-   "title": "LA · Louisiana · U.S. House District 5",
+   "id": "us-house-IL-08",
+   "title": "IL · Illinois · U.S. House District 8",
    "candidates": [
     {
-     "name": "Patricia Moore",
+     "name": "Melissa Bean",
      "party": "D",
-     "votes": 40789
+     "votes": 116249
     },
     {
-     "name": "Gabe Firment",
+     "name": "Jennifer Davis",
      "party": "R",
-     "votes": 39131
-    },
+     "votes": 63187
+    }
+   ],
+   "margin": 29.57,
+   "reporting_pct": 44.0,
+   "precincts": "187 of 425 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 02:31 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:51:00Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-IL-11",
+   "title": "IL · Illinois · U.S. House District 11",
+   "candidates": [
     {
-     "name": "Misti Cordell",
-     "party": "R",
-     "votes": 33366
-    },
-    {
-     "name": "Michael Echols",
-     "party": "R",
-     "votes": 32902
-    },
-    {
-     "name": "Stewart Cathey",
-     "party": "R",
-     "votes": 28160
-    },
-    {
-     "name": "Antonio Wilson",
+     "name": "Bill Foster",
      "party": "D",
-     "votes": 27364
+     "votes": 150318
     },
     {
-     "name": "Dan McKay",
+     "name": "Jeff Walter",
+     "party": "R",
+     "votes": 79644
+    }
+   ],
+   "margin": 30.73,
+   "reporting_pct": 42.79661016949152,
+   "precincts": "202 of 472 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 02:38 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:51:14Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-IL-14",
+   "title": "IL · Illinois · U.S. House District 14",
+   "candidates": [
+    {
+     "name": "Lauren Underwood",
      "party": "D",
-     "votes": 16047
+     "votes": 140132
+    },
+    {
+     "name": "James Marter",
+     "party": "R",
+     "votes": 83592
+    }
+   ],
+   "margin": 25.27,
+   "reporting_pct": 84.92239467849224,
+   "precincts": "383 of 451 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 03:34 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:51:14Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-IL-16",
+   "title": "IL · Illinois · U.S. House District 16",
+   "candidates": [
+    {
+     "name": "Darin LaHood",
+     "party": "R",
+     "votes": 170760
+    },
+    {
+     "name": "Paul Nolley",
+     "party": "D",
+     "votes": 120645
+    }
+   ],
+   "margin": -17.2,
+   "reporting_pct": 86.51026392961877,
+   "precincts": "590 of 682 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 03:01 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:51:14Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-KS-01",
+   "title": "KS · Kansas · U.S. House District 1",
+   "candidates": [
+    {
+     "name": "Tracey Mann",
+     "party": "R",
+     "votes": 145588
+    },
+    {
+     "name": "Lauren Reinhold",
+     "party": "D",
+     "votes": 93538
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 10158
+     "votes": 6654
     }
    ],
-   "margin": 0.73,
-   "reporting_pct": 100.0,
-   "precincts": "791 of 791 precincts",
+   "margin": -21.18,
+   "reporting_pct": 96.50748396293656,
+   "precincts": "1354 of 1403 precincts",
    "modes": null,
    "delta": null,
-   "status": "Too early",
+   "status": "Projected (AP (via NPR), 2026-11-04 04:13 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:26Z",
+   "as_of": "2026-11-04T05:50:38Z",
    "county_scope": null,
    "tier": null
   },
@@ -3422,105 +2847,48 @@
     {
      "name": "Richard Neal",
      "party": "D",
-     "votes": 120903
+     "votes": 121252
     },
     {
      "name": "Nadia Milleron",
      "party": "I",
-     "votes": 61957
+     "votes": 62099
     }
    ],
    "margin": null,
-   "reporting_pct": 59.93485342019544,
-   "precincts": "184 of 307 precincts",
+   "reporting_pct": 60.26058631921824,
+   "precincts": "185 of 307 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 02:38 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:24Z",
+   "as_of": "2026-11-04T05:49:08Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-MA-02",
-   "title": "MA · Massachusetts · U.S. House District 2",
+   "id": "us-house-MA-06",
+   "title": "MA · Massachusetts · U.S. House District 6",
    "candidates": [
     {
-     "name": "James McGovern",
+     "name": "Dan Koh",
      "party": "D",
-     "votes": 0
-    }
-   ],
-   "margin": null,
-   "reporting_pct": 0.0,
-   "precincts": "0 of 257 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:00 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:07Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-MA-03",
-   "title": "MA · Massachusetts · U.S. House District 3",
-   "candidates": [
-    {
-     "name": "Lori Trahan",
-     "party": "D",
-     "votes": 72740
+     "votes": 112550
     },
     {
-     "name": "Gary Grossi",
+     "name": "Micah Jones",
      "party": "R",
-     "votes": 35461
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 2877
+     "votes": 65725
     }
    ],
-   "margin": 33.56,
-   "reporting_pct": 41.96078431372549,
-   "precincts": "107 of 255 precincts",
+   "margin": 26.27,
+   "reporting_pct": 48.9451476793249,
+   "precincts": "116 of 237 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:18 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 03:24 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:03Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-MA-08",
-   "title": "MA · Massachusetts · U.S. House District 8",
-   "candidates": [
-    {
-     "name": "Stephen Lynch",
-     "party": "D",
-     "votes": 134518
-    },
-    {
-     "name": "Robert Burke",
-     "party": "R",
-     "votes": 53264
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 7306
-    }
-   ],
-   "margin": 41.65,
-   "reporting_pct": 37.86764705882353,
-   "precincts": "103 of 272 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:45 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:50Z",
+   "as_of": "2026-11-04T05:49:33Z",
    "county_scope": null,
    "tier": null
   },
@@ -3531,53 +2899,48 @@
     {
      "name": "Bill Keating",
      "party": "D",
-     "votes": 117864
+     "votes": 118667
     },
     {
      "name": "R. Macallister",
      "party": "R",
-     "votes": 72224
+     "votes": 72995
     }
    ],
-   "margin": 24.01,
-   "reporting_pct": 38.306451612903224,
-   "precincts": "95 of 248 precincts",
+   "margin": 23.83,
+   "reporting_pct": 38.70967741935484,
+   "precincts": "96 of 248 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 03:27 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:54Z",
+   "as_of": "2026-11-04T05:49:11Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-MD-08",
-   "title": "MD · Maryland · U.S. House District 8",
+   "id": "us-house-MD-02",
+   "title": "MD · Maryland · U.S. House District 2",
    "candidates": [
     {
-     "name": "Jamie Raskin",
+     "name": "John Olszewski",
      "party": "D",
-     "votes": 197328
+     "votes": 142013
     },
     {
-     "name": "Cheryl Riley",
+     "name": "Dave Wallace",
      "party": "R",
-     "votes": 37467
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 4057
+     "votes": 88976
     }
    ],
-   "margin": 66.93,
-   "reporting_pct": 98.49246231155779,
-   "precincts": "196 of 199 precincts",
+   "margin": 22.96,
+   "reporting_pct": 96.6804979253112,
+   "precincts": "233 of 241 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:15 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 03:53 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:18Z",
+   "as_of": "2026-11-04T05:50:37Z",
    "county_scope": null,
    "tier": null
   },
@@ -3588,22 +2951,22 @@
     {
      "name": "Chellie Pingree",
      "party": "D",
-     "votes": 183316
+     "votes": 186808
     },
     {
      "name": "Ronald Russell",
      "party": "R",
-     "votes": 97594
+     "votes": 98741
     }
    ],
-   "margin": 30.52,
-   "reporting_pct": 74.0506329113924,
-   "precincts": "117 of 158 precincts",
+   "margin": 30.84,
+   "reporting_pct": 74.68354430379746,
+   "precincts": "118 of 158 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 03:18 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:12Z",
+   "as_of": "2026-11-04T05:50:00Z",
    "county_scope": null,
    "tier": null
   },
@@ -3614,27 +2977,27 @@
     {
      "name": "Paul LePage",
      "party": "R",
-     "votes": 125073
+     "votes": 129668
     },
     {
      "name": "Matthew Dunlap",
      "party": "D",
-     "votes": 119066
+     "votes": 127686
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 137
+     "votes": 141
     }
    ],
-   "margin": -2.46,
-   "reporting_pct": 58.31622176591376,
-   "precincts": "284 of 487 precincts",
+   "margin": -0.77,
+   "reporting_pct": 58.521560574948666,
+   "precincts": "285 of 487 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:24Z",
+   "as_of": "2026-11-04T05:49:48Z",
    "county_scope": null,
    "tier": null
   },
@@ -3665,69 +3028,7 @@
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:53Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-MI-02",
-   "title": "MI · Michigan · U.S. House District 2",
-   "candidates": [
-    {
-     "name": "John Moolenaar",
-     "party": "R",
-     "votes": 182082
-    },
-    {
-     "name": "Ben Ambrose",
-     "party": "D",
-     "votes": 108888
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 4564
-    }
-   ],
-   "margin": -24.77,
-   "reporting_pct": 63.25459317585302,
-   "precincts": "241 of 381 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:45 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:28Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-MI-03",
-   "title": "MI · Michigan · U.S. House District 3",
-   "candidates": [
-    {
-     "name": "Hillary Scholten",
-     "party": "D",
-     "votes": 127146
-    },
-    {
-     "name": "Terri DeBoer",
-     "party": "R",
-     "votes": 87095
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 3185
-    }
-   ],
-   "margin": 18.42,
-   "reporting_pct": 56.46551724137931,
-   "precincts": "131 of 232 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:28Z",
+   "as_of": "2026-11-04T05:50:27Z",
    "county_scope": null,
    "tier": null
   },
@@ -3738,27 +3039,58 @@
     {
      "name": "Bill Huizenga",
      "party": "R",
-     "votes": 64968
+     "votes": 65122
     },
     {
      "name": "Sean McCann",
      "party": "D",
-     "votes": 64707
+     "votes": 64931
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 2092
+     "votes": 2102
     }
    ],
-   "margin": -0.2,
+   "margin": -0.14,
    "reporting_pct": 34.22053231939164,
    "precincts": "90 of 263 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:47Z",
+   "as_of": "2026-11-04T05:49:47Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-MI-05",
+   "title": "MI · Michigan · U.S. House District 5",
+   "candidates": [
+    {
+     "name": "Tim Walberg",
+     "party": "R",
+     "votes": 134548
+    },
+    {
+     "name": "Christian Vukasovich",
+     "party": "D",
+     "votes": 79055
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 4859
+    }
+   ],
+   "margin": -25.4,
+   "reporting_pct": 51.757188498402556,
+   "precincts": "162 of 313 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 04:11 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:53Z",
    "county_scope": null,
    "tier": null
   },
@@ -3769,27 +3101,58 @@
     {
      "name": "Debbie Dingell",
      "party": "D",
-     "votes": 178960
+     "votes": 183850
     },
     {
      "name": "Heather Smiley",
      "party": "R",
-     "votes": 76368
+     "votes": 77838
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 5979
+     "votes": 6096
     }
    ],
-   "margin": 39.26,
-   "reporting_pct": 26.991150442477878,
-   "precincts": "61 of 226 precincts",
+   "margin": 39.59,
+   "reporting_pct": 31.858407079646017,
+   "precincts": "72 of 226 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 03:32 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:37Z",
+   "as_of": "2026-11-04T05:50:48Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-MI-07",
+   "title": "MI · Michigan · U.S. House District 7",
+   "candidates": [
+    {
+     "name": "Tom Barrett",
+     "party": "R",
+     "votes": 165183
+    },
+    {
+     "name": "William Lawrence",
+     "party": "D",
+     "votes": 150102
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 4060
+    }
+   ],
+   "margin": -4.72,
+   "reporting_pct": 38.867924528301884,
+   "precincts": "103 of 265 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Too early",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:50:54Z",
    "county_scope": null,
    "tier": null
   },
@@ -3820,69 +3183,7 @@
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:40Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-MI-10",
-   "title": "MI · Michigan · U.S. House District 10",
-   "candidates": [
-    {
-     "name": "Christina Hines",
-     "party": "D",
-     "votes": 95191
-    },
-    {
-     "name": "Michael Bouchard",
-     "party": "R",
-     "votes": 89961
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 4784
-    }
-   ],
-   "margin": 2.75,
-   "reporting_pct": 13.953488372093023,
-   "precincts": "30 of 215 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:06Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-MI-13",
-   "title": "MI · Michigan · U.S. House District 13",
-   "candidates": [
-    {
-     "name": "Donavan McKinney",
-     "party": "D",
-     "votes": 85075
-    },
-    {
-     "name": "T.P. Nykoriak",
-     "party": "R",
-     "votes": 17404
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 3171
-    }
-   ],
-   "margin": 64.05,
-   "reporting_pct": 6.896551724137931,
-   "precincts": "26 of 377 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:33 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:32Z",
+   "as_of": "2026-11-04T05:50:53Z",
    "county_scope": null,
    "tier": null
   },
@@ -3893,27 +3194,125 @@
     {
      "name": "Brad Finstad",
      "party": "R",
-     "votes": 141416
+     "votes": 144439
     },
     {
      "name": "Jake Johnson",
      "party": "D",
-     "votes": 139403
+     "votes": 142454
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 329
+     "votes": 336
     }
    ],
-   "margin": -0.72,
-   "reporting_pct": 84.26666666666667,
-   "precincts": "632 of 750 precincts",
+   "margin": -0.69,
+   "reporting_pct": 85.46666666666667,
+   "precincts": "641 of 750 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:23Z",
+   "as_of": "2026-11-04T05:50:57Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-MN-04",
+   "title": "MN · Minnesota · U.S. House District 4",
+   "candidates": [
+    {
+     "name": "Betty McCollum",
+     "party": "D",
+     "votes": 219425
+    },
+    {
+     "name": "Paul Wikstrom",
+     "party": "R",
+     "votes": 83110
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 418
+    }
+   ],
+   "margin": 45.0,
+   "reporting_pct": 88.67924528301887,
+   "precincts": "188 of 212 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 05:06 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:37Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-MN-05",
+   "title": "MN · Minnesota · U.S. House District 5",
+   "candidates": [
+    {
+     "name": "Ilhan Omar",
+     "party": "D",
+     "votes": 261920
+    },
+    {
+     "name": "John Nagel",
+     "party": "R",
+     "votes": 55698
+    },
+    {
+     "name": "DeVelle Jackson",
+     "party": "I",
+     "votes": 24064
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 928
+    }
+   ],
+   "margin": 60.19,
+   "reporting_pct": 99.53917050691244,
+   "precincts": "216 of 217 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 05:04 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:34Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-MN-06",
+   "title": "MN · Minnesota · U.S. House District 6",
+   "candidates": [
+    {
+     "name": "Tom Emmer",
+     "party": "R",
+     "votes": 169984
+    },
+    {
+     "name": "Doug Chapin",
+     "party": "D",
+     "votes": 141278
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 352
+    }
+   ],
+   "margin": -9.21,
+   "reporting_pct": 84.42028985507247,
+   "precincts": "233 of 276 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Too early",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:38Z",
    "county_scope": null,
    "tier": null
   },
@@ -3924,58 +3323,89 @@
     {
      "name": "Michelle Fischbach",
      "party": "R",
-     "votes": 196479
+     "votes": 202517
     },
     {
      "name": "Erik Osberg",
      "party": "D",
-     "votes": 107098
+     "votes": 110550
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 294
+     "votes": 301
     }
    ],
-   "margin": -29.41,
-   "reporting_pct": 91.78598342125095,
-   "precincts": "1218 of 1327 precincts",
+   "margin": -29.35,
+   "reporting_pct": 93.82064807837227,
+   "precincts": "1245 of 1327 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:08 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:42Z",
+   "as_of": "2026-11-04T05:50:14Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-MO-03",
-   "title": "MO · Missouri · U.S. House District 3",
+   "id": "us-house-MN-08",
+   "title": "MN · Minnesota · U.S. House District 8",
    "candidates": [
     {
-     "name": "Bob Onder",
+     "name": "Pete Stauber",
      "party": "R",
-     "votes": 149239
+     "votes": 158939
     },
     {
-     "name": "Bethany Mann",
+     "name": "Trina Swanson",
      "party": "D",
-     "votes": 125271
+     "votes": 144968
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 7700
+     "votes": 281
     }
    ],
-   "margin": -8.49,
-   "reporting_pct": 95.87020648967551,
-   "precincts": "325 of 339 precincts",
+   "margin": -4.59,
+   "reporting_pct": 78.8968824940048,
+   "precincts": "658 of 834 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:02 UTC)",
+   "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:25Z",
+   "as_of": "2026-11-04T05:49:37Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-MO-04",
+   "title": "MO · Missouri · U.S. House District 4",
+   "candidates": [
+    {
+     "name": "Mark Alford",
+     "party": "R",
+     "votes": 150944
+    },
+    {
+     "name": "Jordan Herrera",
+     "party": "D",
+     "votes": 88423
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 7183
+    }
+   ],
+   "margin": -25.36,
+   "reporting_pct": 92.3076923076923,
+   "precincts": "324 of 351 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 02:40 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:00Z",
    "county_scope": null,
    "tier": null
   },
@@ -4006,7 +3436,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 02:36 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:06Z",
+   "as_of": "2026-11-04T05:49:55Z",
    "county_scope": null,
    "tier": null
   },
@@ -4037,7 +3467,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 03:05 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:52Z",
+   "as_of": "2026-11-04T05:50:39Z",
    "county_scope": null,
    "tier": null
   },
@@ -4048,27 +3478,27 @@
     {
      "name": "Bennie Thompson",
      "party": "D",
-     "votes": 150527
+     "votes": 158844
     },
     {
      "name": "Ron Eller",
      "party": "R",
-     "votes": 69839
+     "votes": 72199
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 5412
+     "votes": 5652
     }
    ],
-   "margin": 35.74,
-   "reporting_pct": 93.48591549295774,
-   "precincts": "531 of 568 precincts",
+   "margin": 36.61,
+   "reporting_pct": 97.1830985915493,
+   "precincts": "552 of 568 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 02:45 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:41Z",
+   "as_of": "2026-11-04T05:50:55Z",
    "county_scope": null,
    "tier": null
   },
@@ -4079,58 +3509,27 @@
     {
      "name": "Michael Guest",
      "party": "R",
-     "votes": 143371
+     "votes": 143548
     },
     {
      "name": "Michael Chiaradio",
      "party": "D",
-     "votes": 101090
+     "votes": 101841
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 3114
+     "votes": 3127
     }
    ],
-   "margin": -17.08,
-   "reporting_pct": 99.56043956043956,
-   "precincts": "453 of 455 precincts",
+   "margin": -16.78,
+   "reporting_pct": 99.78021978021978,
+   "precincts": "454 of 455 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 03:21 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:18Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-MT-01",
-   "title": "MT · Montana · U.S. House District 1",
-   "candidates": [
-    {
-     "name": "Sam Forstag",
-     "party": "D",
-     "votes": 71002
-    },
-    {
-     "name": "Aaron Flint",
-     "party": "R",
-     "votes": 58882
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 3636
-    }
-   ],
-   "margin": 9.08,
-   "reporting_pct": 49.13294797687861,
-   "precincts": "170 of 346 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:40Z",
+   "as_of": "2026-11-04T05:50:37Z",
    "county_scope": null,
    "tier": null
   },
@@ -4141,7 +3540,7 @@
     {
      "name": "Troy Downing",
      "party": "R",
-     "votes": 64101
+     "votes": 64102
     },
     {
      "name": "Brian Miller",
@@ -4166,7 +3565,38 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:18 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:43Z",
+   "as_of": "2026-11-04T05:51:00Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-NC-07",
+   "title": "NC · North Carolina · U.S. House District 7",
+   "candidates": [
+    {
+     "name": "David Rouzer",
+     "party": "R",
+     "votes": 159606
+    },
+    {
+     "name": "Kimberly Hardy",
+     "party": "D",
+     "votes": 157417
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 3129
+    }
+   ],
+   "margin": -0.68,
+   "reporting_pct": 98.36065573770492,
+   "precincts": "180 of 183 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Too early",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:07Z",
    "county_scope": null,
    "tier": null
   },
@@ -4197,7 +3627,38 @@
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:31Z",
+   "as_of": "2026-11-04T05:50:49Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-NE-02",
+   "title": "NE · Nebraska · U.S. House District 2",
+   "candidates": [
+    {
+     "name": "Denise Powell",
+     "party": "D",
+     "votes": 124433
+    },
+    {
+     "name": "Brinker Harding",
+     "party": "R",
+     "votes": 86525
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 5312
+    }
+   ],
+   "margin": 17.53,
+   "reporting_pct": 78.33935018050542,
+   "precincts": "217 of 277 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 04:57 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:50:39Z",
    "county_scope": null,
    "tier": null
   },
@@ -4228,7 +3689,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:08 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:32Z",
+   "as_of": "2026-11-04T05:49:36Z",
    "county_scope": null,
    "tier": null
   },
@@ -4254,7 +3715,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 02:21 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:37Z",
+   "as_of": "2026-11-04T05:50:17Z",
    "county_scope": null,
    "tier": null
   },
@@ -4285,152 +3746,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:05 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:42Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-NJ-07",
-   "title": "NJ · New Jersey · U.S. House District 7",
-   "candidates": [
-    {
-     "name": "Rebecca Bennett",
-     "party": "D",
-     "votes": 186422
-    },
-    {
-     "name": "Thomas Kean",
-     "party": "R",
-     "votes": 135037
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 4999
-    }
-   ],
-   "margin": 15.74,
-   "reporting_pct": 94.25113464447806,
-   "precincts": "623 of 661 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:48 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:35Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-NJ-08",
-   "title": "NJ · New Jersey · U.S. House District 8",
-   "candidates": [
-    {
-     "name": "Rob Menendez",
-     "party": "D",
-     "votes": 106817
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 8645
-    },
-    {
-     "name": "Craig Honts",
-     "party": "O",
-     "votes": 5092
-    }
-   ],
-   "margin": null,
-   "reporting_pct": 79.72972972972973,
-   "precincts": "354 of 444 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:11 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:35Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-NJ-10",
-   "title": "NJ · New Jersey · U.S. House District 10",
-   "candidates": [
-    {
-     "name": "LaMonica McIver",
-     "party": "D",
-     "votes": 146699
-    },
-    {
-     "name": "Carmen Bucco",
-     "party": "R",
-     "votes": 27192
-    }
-   ],
-   "margin": 68.73,
-   "reporting_pct": 88.80733944954129,
-   "precincts": "484 of 545 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:22 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:35Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-NJ-12",
-   "title": "NJ · New Jersey · U.S. House District 12",
-   "candidates": [
-    {
-     "name": "Adam Hamawy",
-     "party": "D",
-     "votes": 160586
-    },
-    {
-     "name": "Gregg Mele",
-     "party": "R",
-     "votes": 64797
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 3429
-    }
-   ],
-   "margin": 41.86,
-   "reporting_pct": 92.90780141843972,
-   "precincts": "524 of 564 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:26 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:35Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-NM-01",
-   "title": "NM · New Mexico · U.S. House District 1",
-   "candidates": [
-    {
-     "name": "Melanie Stansbury",
-     "party": "D",
-     "votes": 175003
-    },
-    {
-     "name": "Ndidiamaka Okpareke",
-     "party": "R",
-     "votes": 101005
-    }
-   ],
-   "margin": 26.81,
-   "reporting_pct": 96.65809768637533,
-   "precincts": "752 of 778 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 05:07 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:02Z",
+   "as_of": "2026-11-04T05:49:34Z",
    "county_scope": null,
    "tier": null
   },
@@ -4456,100 +3772,193 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 05:12 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:28Z",
+   "as_of": "2026-11-04T05:49:34Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-NY-22",
-   "title": "NY · New York · U.S. House District 22",
+   "id": "us-house-NY-02",
+   "title": "NY · New York · U.S. House District 2",
    "candidates": [
     {
-     "name": "John Mannion",
-     "party": "D",
-     "votes": 155048
+     "name": "Andrew Garbarino",
+     "party": "R",
+     "votes": 125338
     },
     {
-     "name": "Kailee Buller",
-     "party": "R",
-     "votes": 112187
+     "name": "Patrick Halpin",
+     "party": "D",
+     "votes": 119079
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 205
+     "votes": 203
     }
    ],
-   "margin": 16.03,
-   "reporting_pct": 66.86131386861314,
-   "precincts": "458 of 685 precincts",
+   "margin": -2.56,
+   "reporting_pct": 77.7988614800759,
+   "precincts": "410 of 527 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:55 UTC)",
+   "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:48Z",
+   "as_of": "2026-11-04T05:49:01Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-NY-23",
-   "title": "NY · New York · U.S. House District 23",
+   "id": "us-house-NY-03",
+   "title": "NY · New York · U.S. House District 3",
    "candidates": [
     {
-     "name": "Nicholas Langworthy",
-     "party": "R",
-     "votes": 181807
+     "name": "Thomas Suozzi",
+     "party": "D",
+     "votes": 144174
     },
     {
-     "name": "Aaron Gies",
-     "party": "D",
-     "votes": 119749
+     "name": "Michael LiPetri",
+     "party": "R",
+     "votes": 117001
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 151
+     "votes": 700
     }
    ],
-   "margin": -20.57,
-   "reporting_pct": 97.35915492957747,
-   "precincts": "553 of 568 precincts",
+   "margin": 10.38,
+   "reporting_pct": 59.719789842381786,
+   "precincts": "341 of 571 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:49 UTC)",
+   "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:28Z",
+   "as_of": "2026-11-04T05:50:39Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-OH-05",
-   "title": "OH · Ohio · U.S. House District 5",
+   "id": "us-house-NY-17",
+   "title": "NY · New York · U.S. House District 17",
    "candidates": [
     {
-     "name": "Bob Latta",
-     "party": "R",
-     "votes": 163382
+     "name": "Cait Conley",
+     "party": "D",
+     "votes": 126388
     },
     {
-     "name": "Brian Shaver",
-     "party": "D",
-     "votes": 128142
+     "name": "Mike Lawler",
+     "party": "R",
+     "votes": 116129
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 9577
+     "votes": 260
     }
    ],
-   "margin": -11.7,
-   "reporting_pct": 97.8369384359401,
-   "precincts": "588 of 601 precincts",
+   "margin": 4.23,
+   "reporting_pct": 57.7319587628866,
+   "precincts": "392 of 679 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:56 UTC)",
+   "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:33Z",
+   "as_of": "2026-11-04T05:50:46Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-NY-18",
+   "title": "NY · New York · U.S. House District 18",
+   "candidates": [
+    {
+     "name": "Pat Ryan",
+     "party": "D",
+     "votes": 168846
+    },
+    {
+     "name": "Jackie Auringer",
+     "party": "R",
+     "votes": 99522
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 194
+    }
+   ],
+   "margin": 25.81,
+   "reporting_pct": 89.50086058519794,
+   "precincts": "520 of 581 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 02:37 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:50:45Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-NY-24",
+   "title": "NY · New York · U.S. House District 24",
+   "candidates": [
+    {
+     "name": "Claudia Tenney",
+     "party": "R",
+     "votes": 171460
+    },
+    {
+     "name": "Alissa Ellman",
+     "party": "D",
+     "votes": 112261
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 142
+    }
+   ],
+   "margin": -20.85,
+   "reporting_pct": 95.78606158833063,
+   "precincts": "591 of 617 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 04:11 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:20Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-NY-26",
+   "title": "NY · New York · U.S. House District 26",
+   "candidates": [
+    {
+     "name": "Timothy Kennedy",
+     "party": "D",
+     "votes": 158733
+    },
+    {
+     "name": "Dennis Hannon",
+     "party": "R",
+     "votes": 83531
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 349
+    }
+   ],
+   "margin": 31.0,
+   "reporting_pct": 83.52272727272727,
+   "precincts": "441 of 528 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 02:53 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:56Z",
    "county_scope": null,
    "tier": null
   },
@@ -4575,7 +3984,7 @@
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:38Z",
+   "as_of": "2026-11-04T05:49:30Z",
    "county_scope": null,
    "tier": null
   },
@@ -4601,69 +4010,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 00:52 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:46Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-OH-15",
-   "title": "OH · Ohio · U.S. House District 15",
-   "candidates": [
-    {
-     "name": "Don Leonard",
-     "party": "D",
-     "votes": 149287
-    },
-    {
-     "name": "Mike Carey",
-     "party": "R",
-     "votes": 130225
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 8135
-    }
-   ],
-   "margin": 6.63,
-   "reporting_pct": 97.58812615955473,
-   "precincts": "526 of 539 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:52 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:28Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-OR-01",
-   "title": "OR · Oregon · U.S. House District 1",
-   "candidates": [
-    {
-     "name": "Suzanne Bonamici",
-     "party": "D",
-     "votes": 133257
-    },
-    {
-     "name": "Barbara Kahl",
-     "party": "R",
-     "votes": 55178
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 256
-    }
-   ],
-   "margin": 41.38,
-   "reporting_pct": 58.71559633027523,
-   "precincts": "128 of 218 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:22 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:07Z",
+   "as_of": "2026-11-04T05:49:55Z",
    "county_scope": null,
    "tier": null
   },
@@ -4674,27 +4021,27 @@
     {
      "name": "Cliff Bentz",
      "party": "R",
-     "votes": 160639
+     "votes": 160762
     },
     {
      "name": "Chris Beck",
      "party": "D",
-     "votes": 100002
+     "votes": 100065
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 351
+     "votes": 352
     }
    ],
-   "margin": -23.23,
-   "reporting_pct": 80.54054054054055,
-   "precincts": "298 of 370 precincts",
+   "margin": -23.24,
+   "reporting_pct": 80.27027027027027,
+   "precincts": "297 of 370 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 05:32 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:46Z",
+   "as_of": "2026-11-04T05:51:05Z",
    "county_scope": null,
    "tier": null
   },
@@ -4725,38 +4072,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:12 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:41Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-OR-04",
-   "title": "OR · Oregon · U.S. House District 4",
-   "candidates": [
-    {
-     "name": "Val Hoyle",
-     "party": "D",
-     "votes": 144430
-    },
-    {
-     "name": "Monique DeSpain",
-     "party": "R",
-     "votes": 112827
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 7960
-    }
-   ],
-   "margin": 11.92,
-   "reporting_pct": 80.21390374331551,
-   "precincts": "150 of 187 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Too early",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:31Z",
+   "as_of": "2026-11-04T05:49:25Z",
    "county_scope": null,
    "tier": null
   },
@@ -4787,7 +4103,7 @@
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:32Z",
+   "as_of": "2026-11-04T05:50:12Z",
    "county_scope": null,
    "tier": null
   },
@@ -4818,173 +4134,7 @@
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:45:29Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-PA-01",
-   "title": "PA · Pennsylvania · U.S. House District 1",
-   "candidates": [
-    {
-     "name": "Bob Harvie",
-     "party": "D",
-     "votes": 184272
-    },
-    {
-     "name": "Brian Fitzpatrick",
-     "party": "R",
-     "votes": 165238
-    }
-   ],
-   "margin": 5.45,
-   "reporting_pct": 95.82172701949861,
-   "precincts": "344 of 359 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 05:37 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:39Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-PA-04",
-   "title": "PA · Pennsylvania · U.S. House District 4",
-   "candidates": [
-    {
-     "name": "Madeleine Dean",
-     "party": "D",
-     "votes": 213835
-    },
-    {
-     "name": "Aurora Stuski",
-     "party": "R",
-     "votes": 106585
-    }
-   ],
-   "margin": 33.47,
-   "reporting_pct": 86.75324675324676,
-   "precincts": "334 of 385 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:48 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:37Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-PA-05",
-   "title": "PA · Pennsylvania · U.S. House District 5",
-   "candidates": [
-    {
-     "name": "Mary Scanlon",
-     "party": "D",
-     "votes": 210602
-    },
-    {
-     "name": "Nick Manganaro",
-     "party": "R",
-     "votes": 82370
-    }
-   ],
-   "margin": 43.77,
-   "reporting_pct": 92.95238095238095,
-   "precincts": "488 of 525 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:44 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:46Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-PA-15",
-   "title": "PA · Pennsylvania · U.S. House District 15",
-   "candidates": [
-    {
-     "name": "Glenn Thompson",
-     "party": "R",
-     "votes": 170953
-    },
-    {
-     "name": "Ray Bilger",
-     "party": "D",
-     "votes": 96404
-    }
-   ],
-   "margin": -27.88,
-   "reporting_pct": 92.3896499238965,
-   "precincts": "607 of 657 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:28 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:46Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-RI-01",
-   "title": "RI · Rhode Island · U.S. House District 1",
-   "candidates": [
-    {
-     "name": "Gabriel Amo",
-     "party": "D",
-     "votes": 109860
-    },
-    {
-     "name": "Kellie Keenan",
-     "party": "R",
-     "votes": 44528
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 6326
-    }
-   ],
-   "margin": 40.65,
-   "reporting_pct": 90.27777777777777,
-   "precincts": "195 of 216 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:32 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:31Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-RI-02",
-   "title": "RI · Rhode Island · U.S. House District 2",
-   "candidates": [
-    {
-     "name": "Seth Magaziner",
-     "party": "D",
-     "votes": 119134
-    },
-    {
-     "name": "Victor Mellor",
-     "party": "R",
-     "votes": 73353
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 506
-    }
-   ],
-   "margin": 23.72,
-   "reporting_pct": 90.49586776859505,
-   "precincts": "219 of 242 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:36 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:34Z",
+   "as_of": "2026-11-04T05:50:47Z",
    "county_scope": null,
    "tier": null
   },
@@ -4995,74 +4145,183 @@
     {
      "name": "Marty Jackley",
      "party": "R",
-     "votes": 147373
+     "votes": 152232
     },
     {
      "name": "Nicole Gronli",
      "party": "D",
-     "votes": 79002
+     "votes": 81799
     }
    ],
-   "margin": -30.2,
-   "reporting_pct": 72.72727272727273,
-   "precincts": "488 of 671 precincts",
+   "margin": -30.1,
+   "reporting_pct": 73.91952309985096,
+   "precincts": "496 of 671 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:03 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:10Z",
+   "as_of": "2026-11-04T05:50:38Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-TX-05",
-   "title": "TX · Texas · U.S. House District 5",
+   "id": "us-house-TX-02",
+   "title": "TX · Texas · U.S. House District 2",
    "candidates": [
     {
-     "name": "Lance Gooden",
+     "name": "Steve Toth",
      "party": "R",
-     "votes": 115201
+     "votes": 109933
     },
     {
-     "name": "Chelsey Hockett",
+     "name": "Shaun Finnie",
      "party": "D",
-     "votes": 106861
+     "votes": 109919
     }
    ],
-   "margin": -3.76,
-   "reporting_pct": 81.93832599118943,
-   "precincts": "186 of 227 precincts",
+   "margin": -0.01,
+   "reporting_pct": 75.3012048192771,
+   "precincts": "125 of 166 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:47Z",
+   "as_of": "2026-11-04T05:48:14Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-TX-13",
-   "title": "TX · Texas · U.S. House District 13",
+   "id": "us-house-TX-07",
+   "title": "TX · Texas · U.S. House District 7",
    "candidates": [
     {
-     "name": "Ronny Jackson",
-     "party": "R",
-     "votes": 153190
+     "name": "Lizzie Pannill Fletcher",
+     "party": "D",
+     "votes": 135757
     },
     {
-     "name": "Mark Nair",
-     "party": "D",
-     "votes": 79827
+     "name": "Alexander Hale",
+     "party": "R",
+     "votes": 49498
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 2955
     }
    ],
-   "margin": -31.48,
-   "reporting_pct": 90.20100502512562,
-   "precincts": "359 of 398 precincts",
+   "margin": 45.83,
+   "reporting_pct": 82.183908045977,
+   "precincts": "143 of 174 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:58 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 02:26 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:50Z",
+   "as_of": "2026-11-04T05:48:49Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-TX-08",
+   "title": "TX · Texas · U.S. House District 8",
+   "candidates": [
+    {
+     "name": "Jessica Hart Steinmann",
+     "party": "R",
+     "votes": 121206
+    },
+    {
+     "name": "Laura Jones",
+     "party": "D",
+     "votes": 102479
+    }
+   ],
+   "margin": -8.37,
+   "reporting_pct": 77.32558139534883,
+   "precincts": "133 of 172 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Too early",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:15Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-TX-09",
+   "title": "TX · Texas · U.S. House District 9",
+   "candidates": [
+    {
+     "name": "Leticia Gutierrez",
+     "party": "D",
+     "votes": 75552
+    },
+    {
+     "name": "Alex Mealer",
+     "party": "R",
+     "votes": 55211
+    }
+   ],
+   "margin": 15.56,
+   "reporting_pct": 63.1578947368421,
+   "precincts": "120 of 190 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Too early",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:49:39Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-TX-10",
+   "title": "TX · Texas · U.S. House District 10",
+   "candidates": [
+    {
+     "name": "Chris Gober",
+     "party": "R",
+     "votes": 146867
+    },
+    {
+     "name": "Caitlin Rourk",
+     "party": "D",
+     "votes": 131464
+    }
+   ],
+   "margin": -5.53,
+   "reporting_pct": 88.85350318471338,
+   "precincts": "279 of 314 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Too early",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:48:15Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-TX-11",
+   "title": "TX · Texas · U.S. House District 11",
+   "candidates": [
+    {
+     "name": "August Pfluger",
+     "party": "R",
+     "votes": 128100
+    },
+    {
+     "name": "Claire Reynolds",
+     "party": "D",
+     "votes": 85250
+    }
+   ],
+   "margin": -20.08,
+   "reporting_pct": 80.76923076923077,
+   "precincts": "231 of 286 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 05:36 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T05:48:15Z",
    "county_scope": null,
    "tier": null
   },
@@ -5082,44 +4341,44 @@
     }
    ],
    "margin": -7.61,
-   "reporting_pct": 86.5979381443299,
-   "precincts": "252 of 291 precincts",
+   "reporting_pct": 87.97250859106529,
+   "precincts": "256 of 291 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:57Z",
+   "as_of": "2026-11-04T05:50:27Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-TX-26",
-   "title": "TX · Texas · U.S. House District 26",
+   "id": "us-house-TX-23",
+   "title": "TX · Texas · U.S. House District 23",
    "candidates": [
     {
-     "name": "Brandon Gill",
-     "party": "R",
-     "votes": 165101
+     "name": "Katy Padilla Stout",
+     "party": "D",
+     "votes": 114884
     },
     {
-     "name": "Steven Shook",
-     "party": "D",
-     "votes": 133346
+     "name": "Brandon Herrera",
+     "party": "R",
+     "votes": 98487
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 3567
+     "votes": 8299
     }
    ],
-   "margin": -10.51,
-   "reporting_pct": 85.58951965065502,
-   "precincts": "196 of 229 precincts",
+   "margin": 7.4,
+   "reporting_pct": 82.36842105263158,
+   "precincts": "313 of 380 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 05:47 UTC)",
+   "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:47:37Z",
+   "as_of": "2026-11-04T05:49:26Z",
    "county_scope": null,
    "tier": null
   },
@@ -5139,137 +4398,96 @@
     }
    ],
    "margin": -2.85,
-   "reporting_pct": 95.04643962848297,
-   "precincts": "307 of 323 precincts",
+   "reporting_pct": 95.3560371517028,
+   "precincts": "308 of 323 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:08Z",
+   "as_of": "2026-11-04T05:50:18Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-UT-02",
-   "title": "UT · Utah · U.S. House District 2",
+   "id": "us-house-TX-32",
+   "title": "TX · Texas · U.S. House District 32",
    "candidates": [
     {
-     "name": "Blake Moore",
+     "name": "Jace Yarbrough",
      "party": "R",
-     "votes": 89516
+     "votes": 123244
     },
     {
-     "name": "Peter Crosby",
+     "name": "Dan Barrios",
      "party": "D",
-     "votes": 78781
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 12377
+     "votes": 119018
     }
    ],
-   "margin": -5.94,
-   "reporting_pct": 63.62530413625304,
-   "precincts": "523 of 822 precincts",
+   "margin": -1.74,
+   "reporting_pct": 84.18604651162791,
+   "precincts": "181 of 215 precincts",
    "modes": null,
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:06Z",
+   "as_of": "2026-11-04T05:48:46Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-UT-04",
-   "title": "UT · Utah · U.S. House District 4",
+   "id": "us-house-TX-37",
+   "title": "TX · Texas · U.S. House District 37",
    "candidates": [
     {
-     "name": "Mike Kennedy",
-     "party": "R",
-     "votes": 77054
-    },
-    {
-     "name": "Jonny Larsen",
+     "name": "Greg Casar",
      "party": "D",
-     "votes": 58932
+     "votes": 233338
     },
     {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 9371
+     "name": "Lauren Peña",
+     "party": "R",
+     "votes": 42142
     }
    ],
-   "margin": -12.47,
-   "reporting_pct": 48.90510948905109,
-   "precincts": "402 of 822 precincts",
+   "margin": 69.4,
+   "reporting_pct": 80.35714285714286,
+   "precincts": "135 of 168 precincts",
    "modes": null,
    "delta": null,
-   "status": "Too early",
+   "status": "Projected (AP (via NPR), 2026-11-04 03:56 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:21Z",
+   "as_of": "2026-11-04T05:48:17Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-VA-02",
-   "title": "VA · Virginia · U.S. House District 2",
+   "id": "us-house-VT-AL",
+   "title": "VT · Vermont · U.S. House District 1",
    "candidates": [
     {
-     "name": "Elaine Luria",
+     "name": "Becca Balint",
      "party": "D",
-     "votes": 164602
+     "votes": 198226
     },
     {
-     "name": "Jen Kiggans",
+     "name": "Gerald Malloy",
      "party": "R",
-     "votes": 144116
+     "votes": 93656
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 7443
+     "votes": 11927
     }
    ],
-   "margin": 6.48,
-   "reporting_pct": 100.0,
-   "precincts": "222 of 222 precincts",
+   "margin": 34.42,
+   "reporting_pct": 98.93992932862191,
+   "precincts": "280 of 283 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:47 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 00:41 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:30Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-VA-07",
-   "title": "VA · Virginia · U.S. House District 7",
-   "candidates": [
-    {
-     "name": "Eugene Vindman",
-     "party": "D",
-     "votes": 191361
-    },
-    {
-     "name": "Doug Ollivant",
-     "party": "R",
-     "votes": 121015
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 8177
-    }
-   ],
-   "margin": 21.95,
-   "reporting_pct": 100.0,
-   "precincts": "192 of 192 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:40 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:14Z",
+   "as_of": "2026-11-04T05:51:04Z",
    "county_scope": null,
    "tier": null
   },
@@ -5289,34 +4507,13 @@
     }
    ],
    "margin": 4.59,
-   "reporting_pct": 96.60574412532637,
-   "precincts": "370 of 383 precincts",
+   "reporting_pct": 95.03916449086162,
+   "precincts": "364 of 383 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 05:48 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:24Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-WI-02",
-   "title": "WI · Wisconsin · U.S. House District 2",
-   "candidates": [
-    {
-     "name": "Mark Pocan",
-     "party": "D",
-     "votes": 286195
-    }
-   ],
-   "margin": null,
-   "reporting_pct": 81.83962264150944,
-   "precincts": "347 of 424 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:00 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:27Z",
+   "as_of": "2026-11-04T05:49:22Z",
    "county_scope": null,
    "tier": null
   },
@@ -5347,7 +4544,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 05:48 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:40Z",
+   "as_of": "2026-11-04T05:51:07Z",
    "county_scope": null,
    "tier": null
   },
@@ -5358,53 +4555,27 @@
     {
      "name": "Glenn Grothman",
      "party": "R",
-     "votes": 169900
+     "votes": 170515
     },
     {
      "name": "Brad Smith",
      "party": "D",
-     "votes": 140231
+     "votes": 140534
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 12555
+     "votes": 12587
     }
    ],
-   "margin": -9.19,
-   "reporting_pct": 94.14758269720102,
-   "precincts": "370 of 393 precincts",
+   "margin": -9.26,
+   "reporting_pct": 94.65648854961832,
+   "precincts": "372 of 393 precincts",
    "modes": null,
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 03:35 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:14Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-WI-07",
-   "title": "WI · Wisconsin · U.S. House District 7",
-   "candidates": [
-    {
-     "name": "Michael Alfonso",
-     "party": "R",
-     "votes": 183900
-    },
-    {
-     "name": "Fred Clark",
-     "party": "D",
-     "votes": 144598
-    }
-   ],
-   "margin": -11.96,
-   "reporting_pct": 95.09658246656761,
-   "precincts": "640 of 673 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:02 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:46:55Z",
+   "as_of": "2026-11-04T05:50:51Z",
    "county_scope": null,
    "tier": null
   },
@@ -5440,7 +4611,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:40 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T05:48:12Z",
+   "as_of": "2026-11-04T05:50:37Z",
    "county_scope": null,
    "tier": null
   }
