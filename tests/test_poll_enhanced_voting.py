@@ -377,3 +377,19 @@ def test_fetch_functions_build_urls_and_respect_interval():
     finally:
         _t.sleep = orig
     assert len(sleeps) == 1 and 119 < sleeps[0] <= 120  # second hit on the same host waits; a different host does not
+
+
+def test_county_portion_mode_uses_seat_ids_and_county():
+    import poll_enhanced_voting as pev
+    payload = {"data": [{"id": "b1", "name": [{"languageId": "en", "text": "State Representative 28th District"}], "voteTotal": 10, "contestType": "Candidate",
+                         "reportingStatus": {"reportingUnits": 1, "totalUnits": 5, "asOf": "2026-11-04T02:00:00Z"},
+                         "summaryResults": {"ballotOptions": [{"name": [{"languageId": "en", "text": "Sherry A. Berecz (Dem)"}], "nativeId": "c1", "voteCount": 7, "party": {"abbreviation": "DEM", "name": "Democratic"}},
+                                                              {"name": [{"languageId": "en", "text": "Jamie Thompson (Rep)"}], "nativeId": "c2", "voteCount": 3, "party": {"abbreviation": "REP", "name": "Republican"}}]}},
+                        {"id": "b2", "name": [{"languageId": "en", "text": "County Commissioner District 3"}], "voteTotal": 1, "contestType": "Candidate", "reportingStatus": {},
+                         "summaryResults": {"ballotOptions": [{"name": [{"languageId": "en", "text": "A"}], "voteCount": 1}]}}]}
+    recs = pev.parse_ballot_items(payload, "MI", "enr_monroe_ev", "t", county="Monroe")
+    seat = [r for r in recs if r["contest_id"] == "mi-hd-028"]
+    assert len(seat) == 2 and all(r["county"] == "Monroe" and r["unit"] == "county" and r["county_scope"] == "county_portion" for r in seat)
+    assert seat[0]["party"] == "D" and seat[0]["votes"] == 7
+    other = [r for r in recs if r["contest_id"].startswith("ev:MI:")]
+    assert len(other) == 1 and other[0]["county"] == "Monroe"

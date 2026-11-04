@@ -27,8 +27,10 @@ MACOMB = os.path.join(DATA, "contests", "macomb_2026.json")
 PDF_SOURCE = "macomb_clerk_unofficial_summary_pdf"
 CLARITY_SOURCE = "macomb_clarity_enr"  # browser capture of the Clerk's Clarity ENR (tools/ingest_clarity_bundle.py); county rows only
 SOURCE_LABEL = {PDF_SOURCE: "Macomb Clerk summary PDF", CLARITY_SOURCE: "Macomb Clerk Clarity ENR (browser capture)", "manual_results": "manual entry",
-                "enr_wayne_totalvote": "Wayne County Clerk ENR (TotalVote)", "enr_oakland_clarity": "Oakland County Clerk Clarity ENR (browser capture)"}
-COUNTY_FEEDS = ("enr_wayne_totalvote", "enr_oakland_clarity")  # polled county feeds whose records carry `county` + a statewide seat contest_id
+                "enr_wayne_totalvote": "Wayne County Clerk ENR (TotalVote)", "enr_oakland_clarity": "Oakland County Clerk Clarity ENR (browser capture)",
+                "enr_monroe_ev": "Monroe County Clerk ENR (Enhanced Voting)", "enr_stclair_ev": "St. Clair County Clerk ENR (Enhanced Voting)",
+                "enr_genesee_clarity": "Genesee County Clerk Clarity ENR (browser capture)"}
+COUNTY_FEEDS = ("enr_wayne_totalvote", "enr_oakland_clarity", "enr_monroe_ev", "enr_stclair_ev", "enr_genesee_clarity")  # polled county feeds whose records carry `county` + a statewide seat contest_id
 SEAT_RE = re.compile(r"^mi-(hd|sd)-0*(\d{1,3})$")
 MACOMB_LEG_RE = re.compile(r"^macomb-(hd|sd)0*(\d{1,3})$")
 TOTAL_UNIT_RE = re.compile(r"^(?:(?:[a-z. ]+ )?county )?totals?$|^total votes(?: cast)?$|^district totals?$", re.I)

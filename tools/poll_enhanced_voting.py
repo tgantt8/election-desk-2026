@@ -236,12 +236,15 @@ def _votes_by_mode(opt):
 
 # --------------------------------------------------------------------------- parse
 
-def parse_ballot_items(payload, state, source_id, fetched_at, snapshot_id=None, election=None, source_url=None):
+def parse_ballot_items(payload, state, source_id, fetched_at, snapshot_id=None, election=None, source_url=None, county=None):
     """Ballot-items payload (dict, or raw bytes/str) -> list of results-layer records, one per ballot option per ballot item.
 
     `election` (the election object) supplies asOf, isOfficialResults and primary/runoff stage. Without it, as_of falls back to
     the item's own reportingStatus.asOf and is_official is False (conservative: UNOFFICIAL until certified).
-    `unit` is always "state": counts are the contest totals as published by the state-level feed, not a county/precinct split.
+    `unit` is "state" for a state-level feed. With `county` set (a county clerk's Enhanced Voting site, e.g. Monroe, St. Clair),
+    unit is "county", every record carries `county`, and state legislative contests get the desk's seat ids (mi-hd-NNN /
+    mi-sd-NN via poll_totalvote.contest_id_for) so tools/mi_legislature.py can sum the county portions; other contests keep
+    the ev:<ST>:<id> id and county_scope "county_portion", and never reach the national board.
     Records contain no status/call/projection field; `vendor_is_winner` is the vendor's raw isWinner display flag, informational only.
     """
     if isinstance(payload, (bytes, bytearray)):
@@ -260,6 +263,11 @@ def parse_ballot_items(payload, state, source_id, fetched_at, snapshot_id=None, 
         name = _text(it.get("name"))
         options = ((it.get("summaryResults") or {}).get("ballotOptions")) or []
         cid = map_contest_id(name, state, bid)
+        if county:
+            from poll_totalvote import contest_id_for
+            seat = contest_id_for(name)
+            if seat and seat.startswith("mi-"):
+                cid = seat
         if stage and not cid.startswith("ev:"):
             pc = _item_party_code(it, options)
             cid = f"{cid}-{stage}" + (f"-{pc}" if pc else "")
@@ -275,7 +283,8 @@ def parse_ballot_items(payload, state, source_id, fetched_at, snapshot_id=None, 
                 "contest_name": name,
                 "contest_type": ctype,
                 "ballot_item_id": bid,
-                "unit": "state",
+                "unit": "county" if county else "state",
+                **({"county": county, "county_scope": "county_portion"} if county else {}),
                 "candidate": _text(opt.get("name")),
                 "candidate_id": opt.get("nativeId"),
                 "is_write_in": bool(opt.get("isWriteIn")),
@@ -386,7 +395,7 @@ def run(source, dry_run=False, session=None, root=None, state_file=None, out_dir
         n_items = len(payload.get("data") or [])
         partial = isinstance(total, int) and total > n_items
         try:
-            recs = parse_ballot_items(payload, st, sid, None, election=el, source_url=url)
+            recs = parse_ballot_items(payload, st, sid, None, election=el, source_url=url, county=source.get("county"))
             parse_status = "ok_partial" if partial else "ok"
             err = None
         except Exception as e:  # noqa: BLE001
