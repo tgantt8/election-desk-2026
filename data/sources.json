@@ -2745,6 +2745,43 @@
    "active": false,
    "office": "state_senate",
    "notes": "Refresh: a Code session reads the page through the workbench and appends a new snapshot of label + date + link rows to data/ratings/ratings_onpoint_mi_<chamber>.jsonl, or a person enters label + date + link through desk -> Ops -> Rating capture -> manual-entry (layer ratings, rater 'OnPoint Politics', race = the seat's contest id)."
+  },
+  {
+   "id": "results_ap_via_npr",
+   "layer": "results",
+   "name": "AP race calls and AP-tabulated counts as published by NPR's results app (apps.npr.org)",
+   "url": "https://apps.npr.org/2026-election-results/",
+   "format": "json",
+   "machine_readable": true,
+   "terms_note": "NPR (an AP member) publishes its results app as a static site; the front end reads data/senate.json, data/gov.json, data/house.json and data/states/<ST>.json. apps.npr.org/robots.txt: 'User-agent: * Disallow:' (nothing disallowed). The desk reads the page's own data files, never AP's licensed API. Attribute every number 'AP via NPR, as of <updated>' and every call 'AP (via NPR), <winnerDateTime>'. Counts are media-tabulated and UNOFFICIAL; calls go to the calls layer only when NPR shows raceCallStatus Called / winner X, and are never derived from totals here.",
+   "rate_limit": "1 pass / 3 min (three files); back off on 403/429/5xx",
+   "expected_cadence_min": 30,
+   "election_night_cadence_min": 3,
+   "coverage": "All 35 Senate, 36 Governor and 435 House races: candidates, votes, advance votes, reporting units, EEVP, AP race-call status and time",
+   "status": "VERIFIED_PARTIAL",
+   "status_reason": "Read from the operator's browser 2026-11-03 20:30 ET (NC Senate shows called=true, winnerDateTime 2026-11-04T01:23:59Z). Runner reachability tested the same evening (reach workflow).",
+   "verified_at": "2026-11-03",
+   "poller": "npr_ap",
+   "decision_needed": null,
+   "last_success_at": null,
+   "last_error": "",
+   "active": true,
+   "notes": " 2026-11-03 20:35 ET: added during election night — the only machine-readable source of AP calls the desk can read without a license."
+  },
+  {
+   "id": "calls_ap_via_npr",
+   "layer": "calls",
+   "name": "AP race calls (via NPR results app) — written by poll_npr_ap",
+   "url": "https://apps.npr.org/2026-election-results/",
+   "format": "json",
+   "machine_readable": true,
+   "terms_note": "See results_ap_via_npr. One append-only call record per (contest, outlet, winnerDateTime); a call NPR stops showing appends a 'retracted' record.",
+   "rate_limit": "with results_ap_via_npr",
+   "status": "VERIFIED_PARTIAL",
+   "verified_at": "2026-11-03",
+   "poller": "none",
+   "active": true,
+   "notes": "Records are produced by the results_ap_via_npr pass (poller npr_ap); this row documents the calls-layer source."
   }
  ]
 }

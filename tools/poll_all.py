@@ -22,6 +22,7 @@ IMPLEMENTED = {
     "votehub_polls": ("poll_votehub", lambda m, s, st: m.run(s["url"], s["id"], st)),
     "cook_ratings": ("poll_ratings", lambda m, s, st: 1 if m.run(s)["status"] == "error" else 0),
     "ie_ratings": ("poll_ratings", lambda m, s, st: 1 if m.run(s)["status"] == "error" else 0),
+    "npr_ap": ("poll_npr_ap", lambda m, s, st: 1 if m.run(state_file=st)["status"] == "error" else 0),
     "nc_s3": ("poll_nc_s3", lambda m, s, st: 1 if m.run(s, state_file=st)["status"] == "error" else 0),
     "ev_nc_s3": ("poll_early_vote", lambda m, s, st: 1 if m.run(s)["status"] == "error" else 0),
     "ev_fl_publicstats": ("poll_early_vote", lambda m, s, st: 1 if m.run(s)["status"] == "error" else 0),
