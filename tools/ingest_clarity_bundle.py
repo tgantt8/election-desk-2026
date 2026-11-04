@@ -121,17 +121,30 @@ def decode_bundle(path: str) -> tuple[bytes, dict]:
     return gz, doc
 
 
-def bundle_to_records(doc: dict, source_id: str, snapshot_id: str | None, fetched_at: str) -> list[dict]:
+def bundle_to_records(doc: dict, source_id: str, snapshot_id: str | None, fetched_at: str, county: str | None = None) -> list[dict]:
+    """county=None (or "Macomb"): Macomb contest ids (macomb-hd58, ...). Any other county: the records are that county's PORTION of
+    statewide seats — ids mi-hd-NNN / mi-sd-NN / us-house-MI-NN (tools/poll_totalvote.contest_id_for) with a `county` field, which
+    tools/mi_legislature.py sums county by county; contests that map to nothing (local offices, proposals) are skipped."""
     as_of = clarity_timestamp_to_iso(doc.get("timestamp")) or fetched_at
     pr = doc.get("precinct_reporting") or {}
     scope = {c["id"]: c.get("county_scope") for c in load_json(os.path.join(DATA, "contests", "macomb_2026.json"), {"contests": []})["contests"]}
+    portion = bool(county) and county.lower() != "macomb"
+    if portion:
+        from poll_totalvote import contest_id_for
     recs = []
     for c in doc.get("contests", []):
-        cid = compact_contest_id({"title": c.get("text")})
+        if portion:
+            cid = contest_id_for(c.get("text") or "")
+            if not cid:
+                continue
+        else:
+            cid = compact_contest_id({"title": c.get("text")})
         multi = bool(re.search(r"State Senator|State Representative|Representative in Congress|Governor|United States Senator|Secretary of State|Attorney General", c.get("text") or ""))
         base = {"layer": "results", "contest_id": cid, "contest_name": c.get("text"), "source_id": source_id, "snapshot_id": snapshot_id,
                 "as_of": as_of, "unofficial": True, "clarity_key": c.get("key"), "clarity_ver": doc.get("ver"),
-                "county_scope": scope.get(cid) or ("macomb_portion" if multi else "macomb_only")}
+                "county_scope": "county_portion" if portion else (scope.get(cid) or ("macomb_portion" if multi else "macomb_only"))}
+        if portion:
+            base["county"] = county
         for ch in c.get("choices", []):
             party_raw = ch.get("party")
             wi = bool(WRITE_IN_RX.search(ch.get("text") or ""))
@@ -157,7 +170,7 @@ def bundle_to_records(doc: dict, source_id: str, snapshot_id: str | None, fetche
     return recs
 
 
-def run(bundle_path: str, source_id: str, state_file: str, dry_run: bool = False) -> int:
+def run(bundle_path: str, source_id: str, state_file: str, dry_run: bool = False, county: str | None = None) -> int:
     gz, doc = decode_bundle(bundle_path)
     state = load_json(state_file, {}) if os.path.exists(state_file) else {}
     ver, zsha = doc.get("ver"), doc.get("zip_sha256")
@@ -172,7 +185,7 @@ def run(bundle_path: str, source_id: str, state_file: str, dry_run: bool = False
     else:
         snap = record_snapshot(source_id, "results", gz, "ok", keep_raw=True,
                                note=f"browser capture; ver {ver}; detailxml.zip sha256 {zsha} ({doc.get('zip_bytes')} bytes); timestamp {doc.get('timestamp')}")
-    recs = bundle_to_records(doc, source_id, snap["id"], snap["fetched_at"])
+    recs = bundle_to_records(doc, source_id, snap["id"], snap["fetched_at"], county=county)
     if not dry_run:
         out = os.path.join(DATA, "results", f"{source_id}.jsonl")
         for r in recs:
@@ -193,9 +206,10 @@ def main(argv=None):
     ap.add_argument("--source-id", default="macomb_clarity_enr")
     ap.add_argument("--state-file", default=None)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--county", default=None, help="for a county other than Macomb: records become that county's portion of statewide seats (mi-hd-NNN, mi-sd-NN, us-house-MI-NN)")
     a = ap.parse_args(argv)
     st = a.state_file or os.path.join(DATA, "results", f".state_{a.source_id}_browser.json")
-    return run(a.bundle, a.source_id, st, a.dry_run)
+    return run(a.bundle, a.source_id, st, a.dry_run, county=a.county)
 
 
 if __name__ == "__main__":

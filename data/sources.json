@@ -2812,6 +2812,24 @@
     }
    },
    "notes": " 2026-11-03 9:45 PM ET: added during election night; feeds the Wayne portion of mi-hd-027/028/029/031 and mi-sd-12 seat cards automatically (mi_legislature.COUNTY_FEEDS)."
+  },
+  {
+   "id": "enr_oakland_clarity",
+   "layer": "results",
+   "name": "Oakland County Clerk — Clarity ENR (election 127284), browser capture",
+   "url": "https://results.enr.clarityelections.com/MI/Oakland/127284/web.345435/#/summary",
+   "format": "json",
+   "machine_readable": true,
+   "terms_note": "Same Clarity layout as Macomb; WAF-challenged for scripts, read through the operator's browser with tools/browser/clarity_capture_compact.js (CLARITY_BASE set to this election) and ingested with --county Oakland, so records are Oakland's portion of statewide seats (mi-hd-NNN, mi-sd-NN, us-house-MI-NN). Attribute 'Oakland County Clerk, unofficial results, as of <Clarity timestamp>'. UNOFFICIAL.",
+   "rate_limit": "browser capture every ~10 min while counting",
+   "status": "VERIFIED_PARTIAL",
+   "status_reason": "Election id 127284 found on elections.oaklandcountymi.gov ('Unofficial Election Results' → oakgov.info/results) 2026-11-03 9:25 PM ET; Clarity answered 502 on current_ver.txt at that time.",
+   "verified_at": "2026-11-03",
+   "poller": "browser_capture",
+   "active": true,
+   "last_success_at": null,
+   "last_error": "",
+   "notes": " 2026-11-03 9:50 PM ET: added during election night; fills Oakland portions of mi-sd-09/13, mi-hd-049/051/052/054/055/057/068/072."
   }
  ]
 }
