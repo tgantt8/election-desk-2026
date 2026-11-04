@@ -1,8 +1,8 @@
 {
- "built_at": "2026-11-04T01:02:54Z",
- "latest_snapshot_at": "2026-11-04T01:02:36Z",
+ "built_at": "2026-11-04T01:05:54Z",
+ "latest_snapshot_at": "2026-11-04T01:05:36Z",
  "expected_cadence_min": 60,
- "snapshot_count": 182,
+ "snapshot_count": 183,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -559,7 +559,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:02:33Z",
+   "last_success_at": "2026-11-04T01:05:32Z",
    "last_error": "",
    "health": "green"
   },
@@ -832,7 +832,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:02:34Z",
+   "last_success_at": "2026-11-04T01:05:34Z",
    "last_error": "",
    "health": "green"
   },
@@ -975,7 +975,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:02:36Z",
+   "last_success_at": "2026-11-04T01:05:36Z",
    "last_error": "",
    "health": "green"
   },
@@ -1170,7 +1170,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:02:37Z",
+   "last_success_at": "2026-11-04T01:05:37Z",
    "last_error": "",
    "health": "green"
   },
@@ -1196,7 +1196,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:02:38Z",
+   "last_success_at": "2026-11-04T01:05:38Z",
    "last_error": "",
    "health": "green"
   },
@@ -1249,7 +1249,7 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": null,
-   "last_error": "2026-11-04T01:02:39Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_error": "2026-11-04T01:05:39Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
    "health": "gray"
   },
   {
@@ -1261,7 +1261,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:02:40Z",
+   "last_success_at": "2026-11-04T01:05:40Z",
    "last_error": "",
    "health": "green"
   },
@@ -1300,7 +1300,7 @@
    "status": "VERIFIED",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T01:02:42Z",
+   "last_success_at": "2026-11-04T01:05:42Z",
    "last_error": "",
    "health": "green"
   },
