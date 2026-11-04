@@ -12954,7 +12954,7 @@
     "margin": -1.1,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": "2026-11-04T02:31:34Z",
+    "as_of": "2026-11-04T02:39:20Z",
     "counties": [
      {
       "county": "Macomb",
@@ -12998,7 +12998,7 @@
       "area_share_pct": 72.37,
       "via": "Oakland County Clerk Clarity ENR (browser capture)",
       "source": "enr_oakland_clarity",
-      "as_of": "2026-11-04T02:31:34Z",
+      "as_of": "2026-11-04T02:39:20Z",
       "candidates": [
        {
         "name": "Michael Webber",
@@ -13280,18 +13280,18 @@
      {
       "name": "Sean Carlson",
       "party": "D",
-      "votes": 52810
+      "votes": 53165
      },
      {
       "name": "Ryan Berman",
       "party": "R",
-      "votes": 49751
+      "votes": 50153
      }
     ],
-    "margin": 2.98,
+    "margin": 2.92,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": "2026-11-04T02:31:34Z",
+    "as_of": "2026-11-04T02:39:20Z",
     "counties": [
      {
       "county": "Oakland",
@@ -13300,17 +13300,17 @@
       "area_share_pct": 100.0,
       "via": "Oakland County Clerk Clarity ENR (browser capture)",
       "source": "enr_oakland_clarity",
-      "as_of": "2026-11-04T02:31:34Z",
+      "as_of": "2026-11-04T02:39:20Z",
       "candidates": [
        {
         "name": "Sean Carlson",
         "party": "D",
-        "votes": 52810
+        "votes": 53165
        },
        {
         "name": "Ryan Berman",
         "party": "R",
-        "votes": 49751
+        "votes": 50153
        }
       ],
       "results_url": "https://oakgov.info/results",
@@ -14623,14 +14623,30 @@
     ],
     "title": "MI House 49 · State Representative, 49th District",
     "counties_total": 2,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
+    "counties_entered": 1,
+    "entered_label": "1 of 2 counties entered — partial sum of entered counties only",
     "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "candidates": [
+     {
+      "name": "Dan Pelchat",
+      "party": "D",
+      "votes": 9054
+     },
+     {
+      "name": "Ann M. Bollin",
+      "party": "R",
+      "votes": 8620
+     },
+     {
+      "name": "Trevor Step",
+      "party": "L",
+      "votes": 308
+     }
+    ],
+    "margin": 2.41,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T02:39:20Z",
     "counties": [
      {
       "county": "Livingston",
@@ -14649,19 +14665,37 @@
      {
       "county": "Oakland",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 28.88,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Oakland County Clerk Clarity ENR (browser capture)",
+      "source": "enr_oakland_clarity",
+      "as_of": "2026-11-04T02:39:20Z",
+      "candidates": [
+       {
+        "name": "Dan Pelchat",
+        "party": "D",
+        "votes": 9054
+       },
+       {
+        "name": "Ann M. Bollin",
+        "party": "R",
+        "votes": 8620
+       },
+       {
+        "name": "Trevor Step",
+        "party": "L",
+        "votes": 308
+       }
+      ],
       "results_url": "https://oakgov.info/results",
       "results_url_status": "CONFIRMED",
       "sos_listed_url": null,
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Oakland County Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": "CONFIRMED"
    },
    {
@@ -14675,31 +14709,55 @@
     ],
     "title": "MI House 51 · State Representative, 51st District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "1 of 1 counties entered",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Matt Maddock",
+      "party": "R",
+      "votes": 25889
+     },
+     {
+      "name": "Stacey McDuffie",
+      "party": "D",
+      "votes": 19568
+     }
+    ],
+    "margin": -13.91,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T02:39:20Z",
     "counties": [
      {
       "county": "Oakland",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 100.0,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Oakland County Clerk Clarity ENR (browser capture)",
+      "source": "enr_oakland_clarity",
+      "as_of": "2026-11-04T02:39:20Z",
+      "candidates": [
+       {
+        "name": "Matt Maddock",
+        "party": "R",
+        "votes": 25889
+       },
+       {
+        "name": "Stacey McDuffie",
+        "party": "D",
+        "votes": 19568
+       }
+      ],
       "results_url": "https://oakgov.info/results",
       "results_url_status": "CONFIRMED",
       "sos_listed_url": null,
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Oakland County Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": "CONFIRMED"
    },
    {
@@ -14713,31 +14771,55 @@
     ],
     "title": "MI House 52 · State Representative, 52nd District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "1 of 1 counties entered",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Mike Harris",
+      "party": "R",
+      "votes": 18127
+     },
+     {
+      "name": "Brendan P. Leddy",
+      "party": "D",
+      "votes": 10663
+     }
+    ],
+    "margin": -25.93,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T02:39:20Z",
     "counties": [
      {
       "county": "Oakland",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 100.0,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Oakland County Clerk Clarity ENR (browser capture)",
+      "source": "enr_oakland_clarity",
+      "as_of": "2026-11-04T02:39:20Z",
+      "candidates": [
+       {
+        "name": "Mike Harris",
+        "party": "R",
+        "votes": 18127
+       },
+       {
+        "name": "Brendan P. Leddy",
+        "party": "D",
+        "votes": 10663
+       }
+      ],
       "results_url": "https://oakgov.info/results",
       "results_url_status": "CONFIRMED",
       "sos_listed_url": null,
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Oakland County Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": "CONFIRMED"
    },
    {
@@ -14751,31 +14833,55 @@
     ],
     "title": "MI House 54 · State Representative, 54th District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "1 of 1 counties entered",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Sarah Pounds",
+      "party": "D",
+      "votes": 13792
+     },
+     {
+      "name": "Roman Gaskey",
+      "party": "R",
+      "votes": 12989
+     }
+    ],
+    "margin": 3.0,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T02:39:20Z",
     "counties": [
      {
       "county": "Oakland",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 100.0,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Oakland County Clerk Clarity ENR (browser capture)",
+      "source": "enr_oakland_clarity",
+      "as_of": "2026-11-04T02:39:20Z",
+      "candidates": [
+       {
+        "name": "Sarah Pounds",
+        "party": "D",
+        "votes": 13792
+       },
+       {
+        "name": "Roman Gaskey",
+        "party": "R",
+        "votes": 12989
+       }
+      ],
       "results_url": "https://oakgov.info/results",
       "results_url_status": "CONFIRMED",
       "sos_listed_url": null,
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Oakland County Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": "CONFIRMED"
    },
    {
@@ -14789,31 +14895,55 @@
     ],
     "title": "MI House 55 · State Representative, 55th District",
     "counties_total": 1,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
-    "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "counties_entered": 1,
+    "entered_label": "1 of 1 counties entered",
+    "complete_counties": true,
+    "candidates": [
+     {
+      "name": "Mark Tisdel",
+      "party": "R",
+      "votes": 12820
+     },
+     {
+      "name": "Alex Hawkins",
+      "party": "D",
+      "votes": 10785
+     }
+    ],
+    "margin": -8.62,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T02:39:20Z",
     "counties": [
      {
       "county": "Oakland",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 100.0,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Oakland County Clerk Clarity ENR (browser capture)",
+      "source": "enr_oakland_clarity",
+      "as_of": "2026-11-04T02:39:20Z",
+      "candidates": [
+       {
+        "name": "Mark Tisdel",
+        "party": "R",
+        "votes": 12820
+       },
+       {
+        "name": "Alex Hawkins",
+        "party": "D",
+        "votes": 10785
+       }
+      ],
       "results_url": "https://oakgov.info/results",
       "results_url_status": "CONFIRMED",
       "sos_listed_url": null,
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Oakland County Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": "CONFIRMED"
    },
    {
@@ -14828,25 +14958,25 @@
     ],
     "title": "MI House 57 · State Representative, 57th District",
     "counties_total": 2,
-    "counties_entered": 1,
-    "entered_label": "1 of 2 counties entered — partial sum of entered counties only",
-    "complete_counties": false,
+    "counties_entered": 2,
+    "entered_label": "2 of 2 counties entered",
+    "complete_counties": true,
     "candidates": [
      {
       "name": "Tom Turner",
       "party": "D",
-      "votes": 0
+      "votes": 3581
      },
      {
       "name": "Thomas E. Kuhn",
       "party": "R",
-      "votes": 0
+      "votes": 3481
      }
     ],
-    "margin": null,
+    "margin": 1.42,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": "2026-11-04T02:28:32Z",
+    "as_of": "2026-11-04T02:39:20Z",
     "counties": [
      {
       "county": "Macomb",
@@ -14876,12 +15006,23 @@
      {
       "county": "Oakland",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 33.01,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Oakland County Clerk Clarity ENR (browser capture)",
+      "source": "enr_oakland_clarity",
+      "as_of": "2026-11-04T02:39:20Z",
+      "candidates": [
+       {
+        "name": "Tom Turner",
+        "party": "D",
+        "votes": 3581
+       },
+       {
+        "name": "Thomas E. Kuhn",
+        "party": "R",
+        "votes": 3481
+       }
+      ],
       "results_url": "https://oakgov.info/results",
       "results_url_status": "CONFIRMED",
       "sos_listed_url": null,
@@ -14889,7 +15030,8 @@
      }
     ],
     "sources": [
-     "Macomb Clerk Clarity ENR (browser capture)"
+     "Macomb Clerk Clarity ENR (browser capture)",
+     "Oakland County Clerk Clarity ENR (browser capture)"
     ],
     "county_pages": "CONFIRMED"
    },
@@ -15459,14 +15601,35 @@
     ],
     "title": "MI House 68 · State Representative, 68th District",
     "counties_total": 2,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
+    "counties_entered": 1,
+    "entered_label": "1 of 2 counties entered — partial sum of entered counties only",
     "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "candidates": [
+     {
+      "name": "David W. Martin",
+      "party": "R",
+      "votes": 1510
+     },
+     {
+      "name": "Matt Schlinker",
+      "party": "D",
+      "votes": 851
+     },
+     {
+      "name": "Deanna L Martin",
+      "party": "L",
+      "votes": 53
+     },
+     {
+      "name": "Joe McHugh",
+      "party": "I",
+      "votes": 28
+     }
+    ],
+    "margin": -26.99,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T02:39:20Z",
     "counties": [
      {
       "county": "Genesee",
@@ -15485,19 +15648,42 @@
      {
       "county": "Oakland",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 24.23,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Oakland County Clerk Clarity ENR (browser capture)",
+      "source": "enr_oakland_clarity",
+      "as_of": "2026-11-04T02:39:20Z",
+      "candidates": [
+       {
+        "name": "David W. Martin",
+        "party": "R",
+        "votes": 1510
+       },
+       {
+        "name": "Matt Schlinker",
+        "party": "D",
+        "votes": 851
+       },
+       {
+        "name": "Deanna L Martin",
+        "party": "L",
+        "votes": 53
+       },
+       {
+        "name": "Joe McHugh",
+        "party": "I",
+        "votes": 28
+       }
+      ],
       "results_url": "https://oakgov.info/results",
       "results_url_status": "CONFIRMED",
       "sos_listed_url": null,
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Oakland County Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": "CONFIRMED"
    },
    {
@@ -15511,14 +15697,25 @@
     ],
     "title": "MI House 72 · State Representative, 72nd District",
     "counties_total": 3,
-    "counties_entered": 0,
-    "entered_label": "no results entered",
+    "counties_entered": 1,
+    "entered_label": "1 of 3 counties entered — partial sum of entered counties only",
     "complete_counties": false,
-    "candidates": null,
-    "margin": null,
+    "candidates": [
+     {
+      "name": "Mike Mueller",
+      "party": "R",
+      "votes": 5682
+     },
+     {
+      "name": "Thomas Ryan",
+      "party": "D",
+      "votes": 3668
+     }
+    ],
+    "margin": -21.54,
     "status": "Too early",
     "called_for_party": null,
-    "as_of": null,
+    "as_of": "2026-11-04T02:39:20Z",
     "counties": [
      {
       "county": "Genesee",
@@ -15551,19 +15748,32 @@
      {
       "county": "Oakland",
       "tracked": true,
-      "entered": false,
+      "entered": true,
       "area_share_pct": 41.45,
-      "via": null,
-      "source": null,
-      "as_of": null,
-      "candidates": null,
+      "via": "Oakland County Clerk Clarity ENR (browser capture)",
+      "source": "enr_oakland_clarity",
+      "as_of": "2026-11-04T02:39:20Z",
+      "candidates": [
+       {
+        "name": "Mike Mueller",
+        "party": "R",
+        "votes": 5682
+       },
+       {
+        "name": "Thomas Ryan",
+        "party": "D",
+        "votes": 3668
+       }
+      ],
       "results_url": "https://oakgov.info/results",
       "results_url_status": "CONFIRMED",
       "sos_listed_url": null,
       "portion_contest_id": null
      }
     ],
-    "sources": [],
+    "sources": [
+     "Oakland County Clerk Clarity ENR (browser capture)"
+    ],
     "county_pages": "CONFIRMED"
    },
    {

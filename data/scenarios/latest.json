@@ -1,6 +1,6 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-11-04T02:41:36Z",
+ "built_at": "2026-11-04T02:42:25Z",
  "disclaimer": "Scenarios layer: model estimates built from the polls and ratings layers. Not a call, not a result, never written to results or calls.",
  "n_sims": 10000,
  "seed": 20261103,
@@ -831,11 +831,11 @@
    "state": "TX",
    "region": "South",
    "holder_party": "R",
-   "mu": 2.69,
+   "mu": 2.7,
    "s_race": 3.2,
    "basis": "polls+rating",
    "poll_margin": 2.9,
-   "n_polls": 26,
+   "n_polls": 27,
    "rating_label": "Toss-up",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-20",
@@ -1055,11 +1055,11 @@
    "state": "AZ",
    "region": "West",
    "holder_party": "D",
-   "mu": 6.14,
-   "s_race": 3.88,
+   "mu": 6.32,
+   "s_race": 3.59,
    "basis": "polls+rating",
-   "poll_margin": 7.0,
-   "n_polls": 5,
+   "poll_margin": 7.1,
+   "n_polls": 6,
    "rating_label": "Lean D",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -1899,7 +1899,7 @@
    "s_race": 3.2,
    "basis": "polls+rating",
    "poll_margin": -2.4,
-   "n_polls": 24,
+   "n_polls": 25,
    "rating_label": "Lean R",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -2322,7 +2322,7 @@
   }
  ],
  "excluded": [],
- "inputs_hash": "9d29cf8aca23",
+ "inputs_hash": "c51939b6b96c",
  "house_baselines": {
   "districts_with_2024_on_2026_lines_baseline": 0,
   "districts_with_public_rating": 13,
@@ -2776,10 +2776,10 @@
      "margin_p10_p50_p90": [
       -2.9,
       2.7,
-      8.2
+      8.3
      ],
      "basis": "polls+rating",
-     "mu": 2.69,
+     "mu": 2.7,
      "s_race": 3.2
     },
     {
@@ -2891,16 +2891,16 @@
      "race": "gov-AZ",
      "office": "governor",
      "state": "AZ",
-     "p_dem": 0.892,
-     "margin_mean": 6.1,
+     "p_dem": 0.909,
+     "margin_mean": 6.3,
      "margin_p10_p50_p90": [
-      -0.3,
-      6.1,
-      12.3
+      0.3,
+      6.3,
+      12.2
      ],
      "basis": "polls+rating",
-     "mu": 6.14,
-     "s_race": 3.88
+     "mu": 6.32,
+     "s_race": 3.59
     },
     {
      "race": "gov-AR",
@@ -3600,7 +3600,7 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.75,
+    "p_dem_control_51": 0.751,
     "p_dem_50_tie_vp_r": 0.094,
     "expected_dem_caucus": 52.1,
     "dem_caucus_p10_p50_p90": [
@@ -3617,13 +3617,13 @@
      "45": 0.0066,
      "46": 0.0143,
      "47": 0.0233,
-     "48": 0.045,
-     "49": 0.0633,
-     "50": 0.0939,
-     "51": 0.1253,
+     "48": 0.0449,
+     "49": 0.0634,
+     "50": 0.0936,
+     "51": 0.1256,
      "52": 0.1488,
-     "53": 0.1601,
-     "54": 0.1447,
+     "53": 0.16,
+     "54": 0.1448,
      "55": 0.1019,
      "56": 0.0476,
      "57": 0.0161,
@@ -3651,13 +3651,13 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.101
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 21.29,
+    "expected_dem_wins": 21.31,
     "dem_wins_p10_p50_p90": [
      18,
      21,
@@ -4116,10 +4116,10 @@
      "margin_p10_p50_p90": [
       0.1,
       5.7,
-      11.2
+      11.3
      ],
      "basis": "polls+rating",
-     "mu": 2.69,
+     "mu": 2.7,
      "s_race": 3.2
     },
     {
@@ -4231,16 +4231,16 @@
      "race": "gov-AZ",
      "office": "governor",
      "state": "AZ",
-     "p_dem": 0.969,
-     "margin_mean": 9.1,
+     "p_dem": 0.978,
+     "margin_mean": 9.3,
      "margin_p10_p50_p90": [
-      2.7,
-      9.1,
-      15.3
+      3.3,
+      9.3,
+      15.2
      ],
      "basis": "polls+rating",
-     "mu": 6.14,
-     "s_race": 3.88
+     "mu": 6.32,
+     "s_race": 3.59
     },
     {
      "race": "gov-AR",
@@ -4955,8 +4955,8 @@
      "48": 0.0063,
      "49": 0.013,
      "50": 0.0212,
-     "51": 0.0521,
-     "52": 0.0888,
+     "51": 0.052,
+     "52": 0.0889,
      "53": 0.139,
      "54": 0.1904,
      "55": 0.2044,
@@ -4988,13 +4988,13 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.101
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 24.11,
+    "expected_dem_wins": 24.12,
     "dem_wins_p10_p50_p90": [
      20,
      24,
@@ -5448,15 +5448,15 @@
      "race": "us-senate-TX",
      "office": "senate",
      "state": "TX",
-     "p_dem": 0.467,
+     "p_dem": 0.468,
      "margin_mean": -0.3,
      "margin_p10_p50_p90": [
       -5.9,
       -0.3,
-      5.2
+      5.3
      ],
      "basis": "polls+rating",
-     "mu": 2.69,
+     "mu": 2.7,
      "s_race": 3.2
     },
     {
@@ -5568,16 +5568,16 @@
      "race": "gov-AZ",
      "office": "governor",
      "state": "AZ",
-     "p_dem": 0.736,
-     "margin_mean": 3.1,
+     "p_dem": 0.76,
+     "margin_mean": 3.3,
      "margin_p10_p50_p90": [
-      -3.3,
-      3.1,
-      9.3
+      -2.7,
+      3.3,
+      9.2
      ],
      "basis": "polls+rating",
-     "mu": 6.14,
-     "s_race": 3.88
+     "mu": 6.32,
+     "s_race": 3.59
     },
     {
      "race": "gov-AR",
@@ -6290,16 +6290,16 @@
      "41": 0.0019,
      "42": 0.0045,
      "43": 0.011,
-     "44": 0.0268,
-     "45": 0.0426,
-     "46": 0.071,
-     "47": 0.0941,
-     "48": 0.1195,
-     "49": 0.1294,
-     "50": 0.1264,
-     "51": 0.1193,
-     "52": 0.1043,
-     "53": 0.0735,
+     "44": 0.0267,
+     "45": 0.0427,
+     "46": 0.0709,
+     "47": 0.0942,
+     "48": 0.1193,
+     "49": 0.1295,
+     "50": 0.1262,
+     "51": 0.1196,
+     "52": 0.1042,
+     "53": 0.0736,
      "54": 0.0447,
      "55": 0.0215,
      "56": 0.0063,
@@ -6327,13 +6327,13 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.101
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 18.49,
+    "expected_dem_wins": 18.52,
     "dem_wins_p10_p50_p90": [
      15,
      19,
@@ -6787,15 +6787,15 @@
      "race": "us-senate-TX",
      "office": "senate",
      "state": "TX",
-     "p_dem": 0.719,
-     "margin_mean": 2.5,
+     "p_dem": 0.72,
+     "margin_mean": 2.6,
      "margin_p10_p50_p90": [
       -3.0,
       2.5,
       8.1
      ],
      "basis": "polls+rating",
-     "mu": 2.69,
+     "mu": 2.7,
      "s_race": 3.2
     },
     {
@@ -6907,16 +6907,16 @@
      "race": "gov-AZ",
      "office": "governor",
      "state": "AZ",
-     "p_dem": 0.887,
-     "margin_mean": 5.9,
+     "p_dem": 0.904,
+     "margin_mean": 6.1,
      "margin_p10_p50_p90": [
-      -0.4,
-      5.9,
-      12.2
+      0.1,
+      6.1,
+      12.0
      ],
      "basis": "polls+rating",
-     "mu": 6.14,
-     "s_race": 3.88
+     "mu": 6.32,
+     "s_race": 3.59
     },
     {
      "race": "gov-AR",
@@ -7617,7 +7617,7 @@
     },
     "seats_up": 35,
     "p_dem_control_51": 0.733,
-    "p_dem_50_tie_vp_r": 0.1,
+    "p_dem_50_tie_vp_r": 0.099,
     "expected_dem_caucus": 51.98,
     "dem_caucus_p10_p50_p90": [
      48,
@@ -7631,17 +7631,17 @@
      "43": 0.0006,
      "44": 0.0023,
      "45": 0.0077,
-     "46": 0.0158,
-     "47": 0.026,
+     "46": 0.0157,
+     "47": 0.0261,
      "48": 0.0486,
      "49": 0.066,
-     "50": 0.0995,
-     "51": 0.1273,
+     "50": 0.0992,
+     "51": 0.1275,
      "52": 0.1493,
      "53": 0.1578,
      "54": 0.1395,
      "55": 0.0947,
-     "56": 0.0445,
+     "56": 0.0446,
      "57": 0.0147,
      "58": 0.0042,
      "59": 0.0007,
@@ -7667,13 +7667,13 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.101
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 21.15,
+    "expected_dem_wins": 21.17,
     "dem_wins_p10_p50_p90": [
      17,
      21,
@@ -8135,7 +8135,7 @@
       6.9
      ],
      "basis": "polls+rating",
-     "mu": 2.69,
+     "mu": 2.7,
      "s_race": 3.2
     },
     {
@@ -8247,16 +8247,16 @@
      "race": "gov-AZ",
      "office": "governor",
      "state": "AZ",
-     "p_dem": 0.833,
-     "margin_mean": 4.7,
+     "p_dem": 0.851,
+     "margin_mean": 4.9,
      "margin_p10_p50_p90": [
-      -1.6,
-      4.8,
-      11.0
+      -1.1,
+      4.9,
+      10.8
      ],
      "basis": "polls+rating",
-     "mu": 6.14,
-     "s_race": 3.88
+     "mu": 6.32,
+     "s_race": 3.59
     },
     {
      "race": "gov-AR",
@@ -8956,7 +8956,7 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.588,
+    "p_dem_control_51": 0.589,
     "p_dem_50_tie_vp_r": 0.123,
     "expected_dem_caucus": 50.96,
     "dem_caucus_p10_p50_p90": [
@@ -8970,16 +8970,16 @@
      "42": 0.0009,
      "43": 0.003,
      "44": 0.0073,
-     "45": 0.0165,
-     "46": 0.032,
+     "45": 0.0164,
+     "46": 0.0321,
      "47": 0.0496,
      "48": 0.0766,
-     "49": 0.1018,
-     "50": 0.1231,
-     "51": 0.138,
-     "52": 0.1419,
-     "53": 0.1282,
-     "54": 0.0931,
+     "49": 0.1017,
+     "50": 0.1229,
+     "51": 0.1382,
+     "52": 0.1418,
+     "53": 0.1283,
+     "54": 0.0932,
      "55": 0.0569,
      "56": 0.0225,
      "57": 0.0057,
@@ -9007,13 +9007,13 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.101
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 20.04,
+    "expected_dem_wins": 20.06,
     "dem_wins_p10_p50_p90": [
      16,
      20,
