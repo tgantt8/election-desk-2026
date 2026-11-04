@@ -2825,11 +2825,11 @@
    "status": "VERIFIED_PARTIAL",
    "status_reason": "Election id 127284 found on elections.oaklandcountymi.gov ('Unofficial Election Results' → oakgov.info/results) 2026-11-03 9:25 PM ET; Clarity answered 502 on current_ver.txt at that time.",
    "verified_at": "2026-11-03",
-   "poller": "browser_capture",
+   "poller": "manual",
    "active": true,
    "last_success_at": null,
    "last_error": "",
-   "notes": " 2026-11-03 9:50 PM ET: added during election night; fills Oakland portions of mi-sd-09/13, mi-hd-049/051/052/054/055/057/068/072."
+   "notes": " 2026-11-03 9:50 PM ET: added during election night; fills Oakland portions of mi-sd-09/13, mi-hd-049/051/052/054/055/057/068/072. poller 'manual' here means browser capture + tools/push_capture.sh, not hand-typed numbers."
   }
  ]
 }
