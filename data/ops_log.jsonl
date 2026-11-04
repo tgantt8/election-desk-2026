@@ -582,3 +582,11 @@
 {"at": "2026-11-04T04:29:10Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-11-04T04:29:14Z", "errors": [], "event": "npr_ap_pull", "new_calls": 1, "result_rows": 553, "retractions": 0, "source_id": "results_ap_via_npr"}
 {"at": "2026-11-04T04:29:15Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
+{"at": "2026-11-04T04:32:01Z", "ballot_items": 145, "election": "nov2026", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 291, "snapshot": "enr_id_ev:2026-11-04T04:32:01Z:fffd76e2670e", "source_id": "enr_id_ev", "total_record_count": 145}
+{"at": "2026-11-04T04:32:03Z", "ballot_items": 32, "election": "2026-November-General", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 113, "snapshot": "enr_va_ev:2026-11-04T04:32:03Z:c19881ab06a8", "source_id": "enr_va_ev", "total_record_count": 32}
+{"at": "2026-11-04T04:32:06Z", "ballot_items": 135, "election": "General11032026", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 290, "snapshot": "enr_ut_ev:2026-11-04T04:32:06Z:09f51a7b8c4d", "source_id": "enr_ut_ev", "total_record_count": 135}
+{"at": "2026-11-04T04:32:08Z", "ballot_items": 173, "election": "20261103", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 468, "snapshot": "enr_wa_ev:2026-11-04T04:32:08Z:416076565174", "source_id": "enr_wa_ev", "total_record_count": 173}
+{"at": "2026-11-04T04:32:09Z", "event": "nc_s3_unchanged", "source_id": "enr_nc_s3_results"}
+{"at": "2026-11-04T04:32:10Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-11-04T04:32:13Z", "errors": [], "event": "npr_ap_pull", "new_calls": 3, "result_rows": 665, "retractions": 0, "source_id": "results_ap_via_npr"}
+{"at": "2026-11-04T04:32:15Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
