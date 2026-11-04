@@ -312,8 +312,13 @@ function renderMacomb() {
   const c = res?.macomb_detail?.[sel.value || contests[0]];
   table($("macomb-table"), [{h:"Precinct",f:x=>x.unit},{h:"Mode",f:x=>x.mode},{h:"Candidate",f:x=>x.candidate},{h:"Votes",num:true,f:x=>fmt.n(x.votes)},{h:"Complete",f:x=>x.complete?"✓":""}], c?.rows||[], "No precinct rows yet.");
   $("macomb-timeline").innerHTML = (res?.macomb_snapshots||[]).slice(-30).reverse().map(s=>`${fmt.t(s.fetched_at)} · ${s.parse_status} · <span class="mono">${(s.raw_hash||"").slice(0,10)}</span>`).join("<br>") || '<span class="muted">No snapshots.</span>';
-  const an = S.data.anomalies?.records || [];
-  $("anomalies").innerHTML = an.length ? an.map(a=>`<div class="flag"><strong>${a.type}</strong> — ${a.contest ? a.contest + " · " : ""}${a.unit} <span class="status">${a.status}</span><div class="small">${a.detail}</div><div class="small muted">${fmt.t(a.at)}</div></div>`).join("") : '<p class="muted">No open flags.</p>';
+  // append-only queue: a later row with the same (type, contest, unit, detail) and status "closed" closes the earlier open flag
+  const raw = S.data.anomalies?.records || [];
+  const closed = new Set(raw.filter(a=>a.status==="closed").map(a=>[a.type,a.contest,a.unit,a.detail].join("|")));
+  const an = raw.filter(a=>a.status!=="closed" && !closed.has([a.type,a.contest,a.unit,a.detail].join("|")));
+  const closedRows = raw.filter(a=>a.status==="closed");
+  $("anomalies").innerHTML = (an.length ? an.map(a=>`<div class="flag"><strong>${a.type}</strong> — ${a.contest ? a.contest + " · " : ""}${a.unit} <span class="status">${a.status}</span><div class="small">${a.detail}</div><div class="small muted">${fmt.t(a.at)}</div></div>`).join("") : '<p class="muted">No open flags.</p>')
+    + (closedRows.length ? `<p class="small muted">${closedRows.length} flag(s) closed — ${closedRows.map(a=>`${a.contest} ${a.unit}: ${a.resolution||""}`).join(" · ")}</p>` : "");
 }
 function renderOps() {
   const m = S.data.meta;
