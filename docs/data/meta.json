@@ -1,8 +1,8 @@
 {
- "built_at": "2026-11-04T02:05:57Z",
- "latest_snapshot_at": "2026-11-04T02:05:37Z",
+ "built_at": "2026-11-04T02:07:19Z",
+ "latest_snapshot_at": "2026-11-04T02:07:04Z",
  "expected_cadence_min": 60,
- "snapshot_count": 228,
+ "snapshot_count": 229,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -1248,9 +1248,9 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "clarity",
    "decision_needed": null,
-   "last_success_at": null,
-   "last_error": "2026-11-04T02:05:42Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
-   "health": "gray"
+   "last_success_at": "2026-11-04T02:07:04Z",
+   "last_error": "",
+   "health": "green"
   },
   {
    "id": "macomb_clerk_unofficial_summary_pdf",
@@ -1472,6 +1472,32 @@
    "last_success_at": "2026-11-02T20:21:07Z",
    "last_error": "",
    "health": "green"
+  },
+  {
+   "id": "results_ap_via_npr",
+   "name": "AP race calls and AP-tabulated counts as published by NPR's results app (apps.npr.org)",
+   "layer": "results",
+   "url": "https://apps.npr.org/2026-election-results/",
+   "terms_note": "NPR (an AP member) publishes its results app as a static site; the front end reads data/senate.json, data/gov.json, data/house.json and data/states/<ST>.json. apps.npr.org/robots.txt: 'User-agent: * Disallow:' (nothing disallowed). The desk reads the page's own data files, never AP's licensed API. Attribute every number 'AP via NPR, as of <updated>' and every call 'AP (via NPR), <winnerDateTime>'. Counts are media-tabulated and UNOFFICIAL; calls go to the calls layer only when NPR shows raceCallStatus Called / winner X, and are never derived from totals here.",
+   "status": "VERIFIED_PARTIAL",
+   "poller": "npr_ap",
+   "decision_needed": null,
+   "last_success_at": null,
+   "last_error": "",
+   "health": "gray"
+  },
+  {
+   "id": "calls_ap_via_npr",
+   "name": "AP race calls (via NPR results app) — written by poll_npr_ap",
+   "layer": "calls",
+   "url": "https://apps.npr.org/2026-election-results/",
+   "terms_note": "See results_ap_via_npr. One append-only call record per (contest, outlet, winnerDateTime); a call NPR stops showing appends a 'retracted' record.",
+   "status": "VERIFIED_PARTIAL",
+   "poller": "none",
+   "decision_needed": null,
+   "last_success_at": null,
+   "last_error": "",
+   "health": "gray"
   }
  ],
  "disclaimer": "All figures UNOFFICIAL until certified. Every record carries its source and timestamp."

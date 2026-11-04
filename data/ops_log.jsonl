@@ -328,3 +328,4 @@
 {"at": "2026-11-04T02:05:37Z", "ballot_items": 32, "election": "2026-November-General", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 113, "snapshot": "enr_va_ev:2026-11-04T02:05:37Z:f6673286b786", "source_id": "enr_va_ev", "total_record_count": 32}
 {"at": "2026-11-04T02:05:41Z", "event": "nc_s3_unchanged", "source_id": "enr_nc_s3_results"}
 {"at": "2026-11-04T02:05:42Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-11-04T02:07:04Z", "ballots_cast": 16598, "contests": 30, "event": "clarity_browser_pull", "records": 1636, "snapshot": "macomb_clarity_enr:2026-11-04T02:07:04Z:f1c5d92e78f0", "source_id": "macomb_clarity_enr", "timestamp": "11/3/2026 8:59:28 PM EST", "ver": "383972"}
