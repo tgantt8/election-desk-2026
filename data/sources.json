@@ -2339,8 +2339,8 @@
    "verified_at": "2026-10-29",
    "poller": "clarity",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T05:16:31Z",
-   "last_error": "2026-11-04T07:59:08Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_success_at": "2026-11-04T08:01:45Z",
+   "last_error": "",
    "active": true
   },
   {
@@ -2827,7 +2827,7 @@
    "verified_at": "2026-11-03",
    "poller": "manual",
    "active": true,
-   "last_success_at": "2026-11-04T05:16:31Z",
+   "last_success_at": "2026-11-04T08:01:46Z",
    "last_error": "",
    "notes": " 2026-11-03 9:50 PM ET: added during election night; fills Oakland portions of mi-sd-09/13, mi-hd-049/051/052/054/055/057/068/072. poller 'manual' here means browser capture + tools/push_capture.sh, not hand-typed numbers."
   },
@@ -2906,7 +2906,7 @@
    "poller": "manual",
    "active": true,
    "notes": " browser capture + tools/push_capture.sh, not hand-typed.",
-   "last_success_at": "2026-11-04T05:16:32Z",
+   "last_success_at": "2026-11-04T08:01:47Z",
    "last_error": ""
   }
  ]
