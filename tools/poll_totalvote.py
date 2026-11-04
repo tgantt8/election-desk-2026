@@ -26,14 +26,14 @@ from ingest_clarity_bundle import clarity_timestamp_to_iso  # noqa: E402  ("11/3
 PARTY = {"DEM": "D", "REP": "R", "LIB": "L", "GRN": "G", "UST": "U", "NLP": "N", "WC": "W", "WCP": "W", "NPA": "I", "NON": None, "IND": "I"}
 HEADERS = {"User-Agent": USER_AGENT}
 _RX_UPDATED = re.compile(r"Results Last Updated:?\s*</?[^>]*>?\s*([0-9/]+\s+[0-9:]+\s*[AP]M\s*[A-Z]{2,4})", re.I)
-_RX_DIST = re.compile(r"(\d+)(?:st|nd|rd|th)\s+District", re.I)
+_RX_DIST = re.compile(r"(?:(\d+)(?:st|nd|rd|th)\s+District|District\s+(\d+))", re.I)  # "28th District" and Wayne's "District 12"
 _RX_PREC = re.compile(r"Precincts Reported:\s*([\d,]+)\s*/\s*([\d,]+)")
 
 
 def contest_id_for(title: str, state="mi") -> str | None:
     t = title.strip()
     m = _RX_DIST.search(t)
-    n = int(m.group(1)) if m else None
+    n = int(m.group(1) or m.group(2)) if m else None
     if re.match(r"^(State Representative|Representative in State Legislature)", t, re.I) and n:
         return f"mi-hd-{n:03d}"
     if re.match(r"^State Senator", t, re.I) and n:
