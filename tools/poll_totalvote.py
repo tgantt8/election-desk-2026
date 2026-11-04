@@ -47,37 +47,36 @@ def contest_id_for(title: str, state="mi") -> str | None:
     return None
 
 
-def parse_page(html: str) -> tuple[str | None, list[dict]]:
-    """Returns (last_updated_text, contests[{title, precincts_reporting, precincts_total, candidates[{name, party_raw, votes}]}])."""
-    from bs4 import BeautifulSoup
+_RX_TAGS = re.compile(r"<[^>]+>")
+_RX_CAND = re.compile(r'display-results-box-d">\s*<h1>\s*(.*?)\s*</h1>\s*<h2 class="([A-Za-z]*)">(.*?)</h2>.*?display-results-box-f">\s*<h1>\s*([\d,]*)\s*</h1>', re.S)
 
-    soup = BeautifulSoup(html, "html.parser")
-    text = soup.get_text(" ", strip=True)
+
+def _clean(x: str) -> str:
+    return re.sub(r"\s+", " ", _RX_TAGS.sub(" ", x)).strip()
+
+
+def parse_page(html: str) -> tuple[str | None, list[dict]]:
+    """Returns (last_updated_text, contests[{title, precincts_reporting, precincts_total, candidates[{name, party_raw, party_name, votes}]}]).
+    Regex over the server-rendered markup (no third-party parser on the runner): each contest starts at a
+    display-results-box-wrapper div; its candidate rows follow until the next wrapper."""
+    text = _clean(html)
     m = re.search(r"Results Last Updated:?\s*([0-9]{1,2}/[0-9]{1,2}/[0-9]{4}\s+[0-9]{1,2}:[0-9]{2}:[0-9]{2}\s*[AP]M\s*[A-Z]{2,4})", text)
     updated = m.group(1).strip() if m else None
     out = []
-    for wrap in soup.select("div.display-results-box-wrapper"):
-        h1 = wrap.select_one(".display-results-box-a h1")
-        if not h1:
+    parts = html.split('<div class="display-results-box-wrapper">')[1:]
+    for part in parts:
+        hm = re.search(r"<h1>(.*?)</h1>", part, re.S)
+        if not hm:
             continue
-        title = re.sub(r"\s+", " ", h1.get_text(" ", strip=True)).split(" - ")[0].strip()
-        pr = wrap.select_one(".precinct-fully")
-        pm = _RX_PREC.search(pr.get_text(" ", strip=True)) if pr else None
-        block = wrap.parent  # candidate rows are siblings of the wrapper inside the parent div
+        title = _clean(hm.group(1)).split(" - ")[0].strip()
+        pm = _RX_PREC.search(_clean(part))
         cands = []
-        for grp in block.select("div.section.group"):
-            d = grp.select_one(".display-results-box-d")
-            f = grp.select_one(".display-results-box-f h1")
-            if not d or not f:
-                continue
-            name_el, party_el = d.select_one("h1"), d.select_one("h2")
-            name = re.sub(r"\s+", " ", name_el.get_text(" ", strip=True)) if name_el else ""
-            party_raw = (party_el.get("class") or [None])[0] if party_el else None
-            party_name = party_el.get_text(" ", strip=True) if party_el else ""
-            v = f.get_text(" ", strip=True).replace(",", "")
+        for name, party_raw, party_name, v in _RX_CAND.findall(part):
+            name = _clean(name)
             if not name:
                 continue
-            cands.append({"name": name, "party_raw": party_raw, "party_name": party_name, "votes": int(v) if v.isdigit() else None})
+            v = v.replace(",", "").strip()
+            cands.append({"name": name, "party_raw": party_raw or None, "party_name": _clean(party_name), "votes": int(v) if v.isdigit() else None})
         out.append({"title": title, "precincts_reporting": int(pm.group(1).replace(",", "")) if pm else None,
                     "precincts_total": int(pm.group(2).replace(",", "")) if pm else None, "candidates": cands})
     return updated, out
