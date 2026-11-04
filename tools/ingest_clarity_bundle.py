@@ -159,7 +159,8 @@ def bundle_to_records(doc: dict, source_id: str, snapshot_id: str | None, fetche
                     recs.append({**common, "unit": "county", "mode": mode, "votes": v})
             for pname, by_vt in (ch.get("precincts") or {}).items():
                 info = pr.get(pname) or {}
-                complete = bool(info.get("percentReporting") and info.get("ballotsCast"))
+                # Clarity percentReporting codes seen live Nov 3: 1 = not reporting, 2 = partial, 4 = complete (matches precinctsReported)
+                complete = info.get("percentReporting") == 4
                 tot = 0
                 for vt, v in by_vt.items():
                     mode = MODE_OF.get(vt)
