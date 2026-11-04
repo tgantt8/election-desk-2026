@@ -424,27 +424,27 @@
     {
      "name": "Brad Little",
      "party": "R",
-     "votes": 385769
+     "votes": 386014
     },
     {
      "name": "Terri Pickens",
      "party": "D",
-     "votes": 218176
+     "votes": 218247
     },
     {
      "name": "John R. Stegner",
      "party": "I",
-     "votes": 51674
+     "votes": 51703
     },
     {
      "name": "Paul Sand",
      "party": "L",
-     "votes": 10925
+     "votes": 10931
     },
     {
      "name": "Pro-Life",
      "party": "other",
-     "votes": 8998
+     "votes": 9002
     },
     {
      "name": "Jacob Burnett",
@@ -452,14 +452,14 @@
      "votes": 267
     }
    ],
-   "margin": -24.8,
+   "margin": -24.81,
    "reporting_pct": null,
    "precincts": null,
    "modes": null,
-   "delta": -0.0,
+   "delta": -0.01,
    "status": "Projected (AP (via NPR), 2026-11-04 05:36 UTC)",
    "source": "enr_id_ev",
-   "as_of": "2026-11-04T10:42:56.1543003Z",
+   "as_of": "2026-11-04T10:50:00.1818199Z",
    "county_scope": null,
    "tier": null
   },
@@ -470,22 +470,22 @@
     {
      "name": "Jim Risch",
      "party": "R",
-     "votes": 380326
+     "votes": 380577
     },
     {
      "name": "Todd Achilles",
      "party": "I",
-     "votes": 226729
+     "votes": 226804
     },
     {
      "name": "Natalie M Fleming",
      "party": "I",
-     "votes": 46646
+     "votes": 46663
     },
     {
      "name": "Matt Loesby",
      "party": "L",
-     "votes": 19407
+     "votes": 19420
     }
    ],
    "margin": null,
@@ -495,7 +495,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 06:31 UTC)",
    "source": "enr_id_ev",
-   "as_of": "2026-11-04T10:42:56.1543003Z",
+   "as_of": "2026-11-04T10:50:00.1818199Z",
    "county_scope": null,
    "tier": null
   },
@@ -1871,147 +1871,59 @@
    "tier": null
   },
   {
-   "id": "us-house-ID-02",
-   "title": "ID · Idaho · U.S. House District 2",
+   "id": "us-senate-NE",
+   "title": "NE · Nebraska · U.S. Senate",
    "candidates": [
     {
-     "name": "Mike Simpson",
+     "name": "Pete Ricketts",
      "party": "R",
-     "votes": 156600
+     "votes": 367378
     },
     {
-     "name": "Ellie Gilbreath",
+     "name": "Dan Osborn",
+     "party": "NP",
+     "votes": 319810
+    }
+   ],
+   "margin": null,
+   "reporting_pct": 89.86384266263238,
+   "precincts": "1188 of 1322 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 08:27 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-04T10:48:49Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-senate-TX",
+   "title": "TX · Texas · U.S. Senate",
+   "candidates": [
+    {
+     "name": "James Talarico",
      "party": "D",
-     "votes": 123284
+     "votes": 5263139
+    },
+    {
+     "name": "Ken Paxton",
+     "party": "R",
+     "votes": 4140129
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 24252
+     "votes": 181831
     }
    ],
-   "margin": -10.95,
-   "reporting_pct": 90.7869481765835,
-   "precincts": "473 of 521 precincts",
+   "margin": 11.72,
+   "reporting_pct": 94.47474747474747,
+   "precincts": "9353 of 9900 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 08:49 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 04:03 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T10:44:42Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-TX-04",
-   "title": "TX · Texas · U.S. House District 4",
-   "candidates": [
-    {
-     "name": "Pat Fallon",
-     "party": "R",
-     "votes": 171652
-    },
-    {
-     "name": "Jason Pearce",
-     "party": "D",
-     "votes": 134563
-    }
-   ],
-   "margin": -12.11,
-   "reporting_pct": 98.81422924901186,
-   "precincts": "250 of 253 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 05:44 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T10:45:10Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-TX-13",
-   "title": "TX · Texas · U.S. House District 13",
-   "candidates": [
-    {
-     "name": "Ronny Jackson",
-     "party": "R",
-     "votes": 158134
-    },
-    {
-     "name": "Mark Nair",
-     "party": "D",
-     "votes": 84197
-    }
-   ],
-   "margin": -30.51,
-   "reporting_pct": 98.74371859296483,
-   "precincts": "393 of 398 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:58 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T10:45:11Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-TX-26",
-   "title": "TX · Texas · U.S. House District 26",
-   "candidates": [
-    {
-     "name": "Brandon Gill",
-     "party": "R",
-     "votes": 182648
-    },
-    {
-     "name": "Steven Shook",
-     "party": "D",
-     "votes": 147944
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 4308
-    }
-   ],
-   "margin": -10.36,
-   "reporting_pct": 98.68995633187772,
-   "precincts": "226 of 229 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 05:47 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T10:45:04Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-VT-AL",
-   "title": "VT · Vermont · U.S. House District 1",
-   "candidates": [
-    {
-     "name": "Becca Balint",
-     "party": "D",
-     "votes": 198668
-    },
-    {
-     "name": "Gerald Malloy",
-     "party": "R",
-     "votes": 94012
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 11958
-    }
-   ],
-   "margin": 34.35,
-   "reporting_pct": 100.0,
-   "precincts": "283 of 283 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 00:41 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T10:44:31Z",
+   "as_of": "2026-11-04T10:48:44Z",
    "county_scope": null,
    "tier": null
   }
