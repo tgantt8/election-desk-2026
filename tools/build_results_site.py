@@ -111,6 +111,9 @@ def build(replay_2024=False):
         for cid, crec, prec in contest_snapshots(recs, per_contest=src.startswith("manual_")):
             if str(cid).startswith("mi-"):
                 continue  # statewide legislative seats: county-portion entries, carded by mil.seat_cards below
+            if re.match(r"^us-(senate|house)-[A-Z]{2}", str(cid)):  # per-county rows (e.g. NC S3 Senate) must not be summed into the statewide card
+                crec = [r for r in crec if r.get("unit") != "county"] or crec
+                prec = [r for r in prec if r.get("unit") != "county"]
             card = card_from_records(crec[0].get("contest_name") or cid, cid, crec, prec, calls, src, scope.get(cid))
             card["tier"] = tier.get(cid)
             if str(cid).startswith("macomb-"):
