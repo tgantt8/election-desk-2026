@@ -45,10 +45,14 @@ function staleCheck() {
 // ---------- chambers ----------
 function chamberBar(title, total, called, sim, marks, note) {
   const seg = (n, cls) => n > 0 ? `<div class="seg ${cls}" style="width:${(100*n/total).toFixed(2)}%"></div>` : "";
-  const d = called.d||0, r = called.r||0, i = called.i||0, sd = sim?.d||0, sr = sim?.r||0;
+  const d = called.d||0, r = called.r||0, i = called.i||0;
+  // sim = the simulator's expected 2026 wins for ALL races; once calls arrive, only the not-yet-called remainder is hatched
+  const c26 = called.calls2026 || {d:0, r:0};
+  let sd = Math.max(0, (sim?.d||0) - (c26.d||0)), sr = Math.max(0, (sim?.r||0) - (c26.r||0));
+  const room = Math.max(0, total - d - r - i); if (sd + sr > room) { const k = room / (sd + sr); sd = Math.floor(sd*k); sr = Math.floor(sr*k); }
   const unc = Math.max(0, total - d - r - i - sd - sr);
   return `<div class="chamber"><div class="label"><span><strong>${title}</strong> <span class="muted small">${note||""}</span></span>
-    <span class="mono">D ${d}${i?` (+${i} I)`:""} · R ${r} · uncalled ${unc}${sd+sr?` · sim D ${sd} / R ${sr}`:""}</span></div>
+    <span class="mono">D ${d}${i?` (+${i} I)`:""} · R ${r} · uncalled ${unc}${sd+sr?` · sim (uncalled) D ${sd} / R ${sr}`:""}</span></div>
     <div class="bar">${seg(d,"d")}${seg(i,"i")}${seg(sd,"dsim")}<div class="seg" style="flex:1"></div>${seg(sr,"rsim")}${seg(r,"r")}
     ${marks.map(m=>`<div class="mark" style="left:${(100*m.at/total).toFixed(2)}%"></div>`).join("")}</div>
     <div class="marks">${marks.map((m,i)=>`<span style="left:${(100*m.at/total).toFixed(2)}%;top:${i%2?12:0}px">${m.label}</span>`).join("")}</div></div>`;
@@ -60,10 +64,10 @@ function renderChambers() {
   const sim = S.data.contests?.sim_chambers || null; // expected 2026 wins (polls-as-is preset); hatched = simulated, never a call
   // Seats not up in 2026 carry over: show them as "called" for the party holding them (holdovers), labeled.
   const hold = c.senate.holdovers || {d:0,r:0,i:0};
-  const sen = { d: hold.d + (res.senate?.d||0), r: hold.r + (res.senate?.r||0), i: hold.i + (res.senate?.i||0) };
+  const sen = { d: hold.d + (res.senate?.d||0), r: hold.r + (res.senate?.r||0), i: hold.i + (res.senate?.i||0), calls2026: res.senate };
   el.innerHTML = chamberBar("Senate", 100, sen, sim?.senate, [{at:50,label:"50 · VP tiebreak "+c.senate.vp_tiebreak_party},{at:51,label:"51 = majority"}],
       `holdovers ${hold.d}D/${hold.r}R/${hold.i}I + 2026 calls; independents shown with caucus`)
-    + chamberBar("House", 435, { d: res.house?.d||0, r: res.house?.r||0, i: res.house?.i||0 }, sim?.house, [{at:218,label:"218"}], "all 435 seats up");
+    + chamberBar("House", 435, { d: res.house?.d||0, r: res.house?.r||0, i: res.house?.i||0, calls2026: res.house }, sim?.house, [{at:218,label:"218"}], "all 435 seats up");
   $("chambers-src").innerHTML = `Starting balance (pre-election): Senate ${c.senate.republican}R / ${c.senate.democrat}D / ${c.senate.independent}I (caucus D), ${c.senate.vacancies} vacant — ${c.senate.source.name}, retrieved ${fmt.t(c.senate.source.retrieved_at)}. House ${c.house.republican}R / ${c.house.democrat}D / ${c.house.independent}I, ${c.house.vacancies} vacant (${c.house.vacant_seats.map(v=>v.district).join(", ")}) — ${c.house.source.name}, retrieved ${fmt.t(c.house.source.retrieved_at)}. Calls: ${S.data.calls?.records?.length||0} recorded, each attributed to its outlet and time. UNOFFICIAL.`;
 }
 
