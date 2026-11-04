@@ -56,6 +56,18 @@ time for that, so three collectors were added live and the loop was hardened:
   `sources.json` killed the loop at 9:11 PM (run 41747944255). Restarted 9:13 PM. `election-night.yml` now starts every pass
   from `origin/main` (`fetch` + `reset --hard`) and pushes without rebasing; a raced push is simply redone next pass.
   `tools/push_capture.sh` does the same from the sandbox side. `.gitattributes` marks `*.jsonl` `merge=union` as a backstop.
+- **County portions for the statewide seats, 9:40–10:00 PM:** Oakland (Clarity 127284, browser capture, `enr_oakland_clarity`,
+  ingested `--county Oakland`), Genesee (Clarity 127354, `enr_genesee_clarity`), Wayne (Clerk's TotalVote HTML, poller
+  `totalvote`, `enr_wayne_totalvote`, runner-reachable), Monroe and St. Clair (county clerks on Enhanced Voting, poller
+  `enhanced_voting` with `ev.county`, `enr_monroe_ev` / `enr_stclair_ev`). `mi_legislature.COUNTY_FEEDS` lists the polled
+  county feeds whose rows carry `county`; seat cards take the newest portion per county from any of them, hand entry
+  included. Oakland and Genesee name House seats "Representative in State Legislature NNth District"; Wayne's Senate page
+  says "State Senator District 12" — both handled by `poll_totalvote.contest_id_for`, which every county feed uses.
+  Clarity's precinct `percentReporting` codes seen live: 1 not reporting, 2 partial, 4 complete (only 4 marks a precinct
+  complete for the anomaly rules; two false `complete_changed` flags from before that fix are closed in `data/anomalies.jsonl`).
+- **Browser capture → file:** with the Downloads folder connected, `window.__capFile("<county>")` saves the capture to
+  Downloads (the pane writes a GUID `.tmp`; the content is intact), a device shell renames it `desk_<County>_<ver>.json`,
+  it is staged into the sandbox and pushed with `tools/push_capture.sh <source>[@<County>]=<file>`. No numbers are retyped.
 - Code pushes to `main` resumed for these changes; the Nov 2 freeze tag stays where it was as the record of the dry-run build.
 
 ## Failure modes
