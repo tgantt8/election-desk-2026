@@ -359,3 +359,4 @@
 {"at": "2026-11-04T02:35:17Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-11-04T02:35:21Z", "errors": [], "event": "npr_ap_pull", "new_calls": 13, "result_rows": 962, "retractions": 0, "source_id": "results_ap_via_npr"}
 {"at": "2026-11-04T02:35:22Z", "errors": ["REP: No module named 'bs4'", "SEN: No module named 'bs4'"], "event": "totalvote_failed", "source_id": "enr_wayne_totalvote"}
+{"at": "2026-11-04T02:39:07Z", "ballots_cast": 469909, "contests": 19, "event": "clarity_browser_pull", "records": 7955, "snapshot": "enr_oakland_clarity:2026-11-04T02:39:07Z:caee49597108", "source_id": "enr_oakland_clarity", "timestamp": "11/3/2026 9:31:34 PM EST", "ver": "384291"}

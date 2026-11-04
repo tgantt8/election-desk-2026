@@ -1,8 +1,8 @@
 {
- "built_at": "2026-11-04T02:35:35Z",
- "latest_snapshot_at": "2026-11-04T02:35:21Z",
+ "built_at": "2026-11-04T02:39:18Z",
+ "latest_snapshot_at": "2026-11-04T02:39:07Z",
  "expected_cadence_min": 60,
- "snapshot_count": 263,
+ "snapshot_count": 264,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -1511,6 +1511,19 @@
    "last_success_at": null,
    "last_error": "2026-11-04T02:35:22Z REP: No module named 'bs4'; SEN: No module named 'bs4'",
    "health": "gray"
+  },
+  {
+   "id": "enr_oakland_clarity",
+   "name": "Oakland County Clerk — Clarity ENR (election 127284), browser capture",
+   "layer": "results",
+   "url": "https://results.enr.clarityelections.com/MI/Oakland/127284/web.345435/#/summary",
+   "terms_note": "Same Clarity layout as Macomb; WAF-challenged for scripts, read through the operator's browser with tools/browser/clarity_capture_compact.js (CLARITY_BASE set to this election) and ingested with --county Oakland, so records are Oakland's portion of statewide seats (mi-hd-NNN, mi-sd-NN, us-house-MI-NN). Attribute 'Oakland County Clerk, unofficial results, as of <Clarity timestamp>'. UNOFFICIAL.",
+   "status": "VERIFIED_PARTIAL",
+   "poller": "manual",
+   "decision_needed": null,
+   "last_success_at": "2026-11-04T02:39:07Z",
+   "last_error": "",
+   "health": "green"
   }
  ],
  "disclaimer": "All figures UNOFFICIAL until certified. Every record carries its source and timestamp."
