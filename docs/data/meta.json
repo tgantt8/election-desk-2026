@@ -1,8 +1,8 @@
 {
- "built_at": "2026-11-04T13:37:12Z",
- "latest_snapshot_at": "2026-11-04T13:36:31Z",
+ "built_at": "2026-11-04T13:40:12Z",
+ "latest_snapshot_at": "2026-11-04T13:39:31Z",
  "expected_cadence_min": 60,
- "snapshot_count": 1265,
+ "snapshot_count": 1270,
  "sources": [
   {
    "id": "polls_votehub_api",
@@ -559,7 +559,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T13:36:19Z",
+   "last_success_at": "2026-11-04T13:39:19Z",
    "last_error": "",
    "health": "green"
   },
@@ -832,7 +832,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T13:36:21Z",
+   "last_success_at": "2026-11-04T13:39:21Z",
    "last_error": "",
    "health": "green"
   },
@@ -975,7 +975,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T13:36:23Z",
+   "last_success_at": "2026-11-04T13:39:23Z",
    "last_error": "",
    "health": "green"
   },
@@ -1170,7 +1170,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T13:36:24Z",
+   "last_success_at": "2026-11-04T13:39:24Z",
    "last_error": "",
    "health": "green"
   },
@@ -1196,7 +1196,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T13:36:25Z",
+   "last_success_at": "2026-11-04T13:39:26Z",
    "last_error": "",
    "health": "green"
   },
@@ -1222,7 +1222,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "nc_s3",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T13:36:27Z",
+   "last_success_at": "2026-11-04T13:39:27Z",
    "last_error": "",
    "health": "green"
   },
@@ -1249,7 +1249,7 @@
    "poller": "clarity",
    "decision_needed": null,
    "last_success_at": "2026-11-04T08:01:45Z",
-   "last_error": "2026-11-04T13:36:28Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
+   "last_error": "2026-11-04T13:39:28Z challenge: HTTP 202 empty body (WAF JavaScript challenge)",
    "health": "green"
   },
   {
@@ -1261,7 +1261,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T13:36:29Z",
+   "last_success_at": "2026-11-04T13:39:29Z",
    "last_error": "",
    "health": "green"
   },
@@ -1300,7 +1300,7 @@
    "status": "VERIFIED",
    "poller": "pdf_hash",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T13:36:30Z",
+   "last_success_at": "2026-11-04T13:39:30Z",
    "last_error": "",
    "health": "green"
   },
@@ -1482,7 +1482,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "npr_ap",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T13:36:31Z",
+   "last_success_at": "2026-11-04T13:39:31Z",
    "last_error": "",
    "health": "green"
   },
@@ -1508,7 +1508,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "totalvote",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T13:36:33Z",
+   "last_success_at": "2026-11-04T13:39:33Z",
    "last_error": "",
    "health": "green"
   },
@@ -1534,7 +1534,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T13:36:34Z",
+   "last_success_at": "2026-11-04T13:39:34Z",
    "last_error": "",
    "health": "green"
   },
@@ -1547,7 +1547,7 @@
    "status": "VERIFIED_PARTIAL",
    "poller": "enhanced_voting",
    "decision_needed": null,
-   "last_success_at": "2026-11-04T13:36:54Z",
+   "last_success_at": "2026-11-04T13:39:54Z",
    "last_error": "",
    "health": "green"
   },

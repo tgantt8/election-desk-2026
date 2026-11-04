@@ -1145,7 +1145,7 @@
    "delta": 0.0,
    "status": "Too early",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:35:20.7743892Z",
+   "as_of": "2026-11-04T13:38:17.2770526Z",
    "county_scope": null,
    "tier": null
   },
@@ -1186,7 +1186,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 04:47 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:35:20.7743892Z",
+   "as_of": "2026-11-04T13:38:17.2770526Z",
    "county_scope": null,
    "tier": null
   },
@@ -1227,7 +1227,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:08 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:35:20.7743892Z",
+   "as_of": "2026-11-04T13:38:17.2770526Z",
    "county_scope": null,
    "tier": null
   },
@@ -1263,7 +1263,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:33 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:35:20.7743892Z",
+   "as_of": "2026-11-04T13:38:17.2770526Z",
    "county_scope": null,
    "tier": null
   },
@@ -1299,7 +1299,7 @@
    "delta": 0.0,
    "status": "Too early",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:35:20.7743892Z",
+   "as_of": "2026-11-04T13:38:17.2770526Z",
    "county_scope": null,
    "tier": null
   },
@@ -1320,17 +1320,17 @@
     {
      "name": "Write-In",
      "party": "",
-     "votes": 608
+     "votes": 607
     }
    ],
    "margin": -11.24,
    "reporting_pct": null,
    "precincts": null,
    "modes": null,
-   "delta": 0.0,
+   "delta": -0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 02:10 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:35:20.7743892Z",
+   "as_of": "2026-11-04T13:38:17.2770526Z",
    "county_scope": null,
    "tier": null
   },
@@ -1381,7 +1381,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:40 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:35:20.7743892Z",
+   "as_of": "2026-11-04T13:38:17.2770526Z",
    "county_scope": null,
    "tier": null
   },
@@ -1422,7 +1422,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:05 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:35:20.7743892Z",
+   "as_of": "2026-11-04T13:38:17.2770526Z",
    "county_scope": null,
    "tier": null
   },
@@ -1453,7 +1453,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:29 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:35:20.7743892Z",
+   "as_of": "2026-11-04T13:38:17.2770526Z",
    "county_scope": null,
    "tier": null
   },
@@ -1489,7 +1489,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:03 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:35:20.7743892Z",
+   "as_of": "2026-11-04T13:38:17.2770526Z",
    "county_scope": null,
    "tier": null
   },
@@ -1525,7 +1525,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 02:10 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:35:20.7743892Z",
+   "as_of": "2026-11-04T13:38:17.2770526Z",
    "county_scope": null,
    "tier": null
   },
@@ -1556,7 +1556,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 00:00 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-04T13:35:20.7743892Z",
+   "as_of": "2026-11-04T13:38:17.2770526Z",
    "county_scope": null,
    "tier": null
   },
@@ -1902,69 +1902,38 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 04:43 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T13:34:44Z",
+   "as_of": "2026-11-04T13:35:34Z",
    "county_scope": null,
    "tier": null
   },
   {
-   "id": "us-house-MI-12",
-   "title": "MI · Michigan · U.S. House District 12",
+   "id": "us-house-IN-09",
+   "title": "IN · Indiana · U.S. House District 9",
    "candidates": [
     {
-     "name": "Rashida Tlaib",
-     "party": "D",
-     "votes": 244652
+     "name": "Erin Houchin",
+     "party": "R",
+     "votes": 120835
     },
     {
-     "name": "James Hooper",
-     "party": "R",
-     "votes": 67451
+     "name": "Brad Meyer",
+     "party": "D",
+     "votes": 96890
     },
     {
      "name": "Other (AP aggregate)",
      "party": "O",
-     "votes": 9107
+     "votes": 5472
     }
    ],
-   "margin": 55.17,
-   "reporting_pct": 100.0,
-   "precincts": "348 of 348 precincts",
+   "margin": -10.73,
+   "reporting_pct": 96.30281690140845,
+   "precincts": "547 of 568 precincts",
    "modes": null,
    "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:55 UTC)",
+   "status": "Projected (AP (via NPR), 2026-11-04 04:50 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T13:34:32Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-OK-04",
-   "title": "OK · Oklahoma · U.S. House District 4",
-   "candidates": [
-    {
-     "name": "Tom Cole",
-     "party": "R",
-     "votes": 118512
-    },
-    {
-     "name": "Mitchell Jacob",
-     "party": "D",
-     "votes": 80799
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 5975
-    }
-   ],
-   "margin": -18.37,
-   "reporting_pct": 93.33333333333333,
-   "precincts": "336 of 360 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:19 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T13:32:50Z",
+   "as_of": "2026-11-04T13:35:57Z",
    "county_scope": null,
    "tier": null
   },
@@ -1995,7 +1964,7 @@
    "delta": null,
    "status": "Projected (AP (via NPR), 2026-11-04 00:41 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-04T13:32:47Z",
+   "as_of": "2026-11-04T13:36:47Z",
    "county_scope": null,
    "tier": null
   }
