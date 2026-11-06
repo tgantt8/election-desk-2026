@@ -1,6 +1,6 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-11-06T00:12:34Z",
+ "built_at": "2026-11-06T07:24:30Z",
  "disclaimer": "Scenarios layer: model estimates built from the polls and ratings layers. Not a call, not a result, never written to results or calls.",
  "n_sims": 10000,
  "seed": 20261103,
@@ -9078,27 +9078,27 @@
    },
    "California": {
     "Democratic": {
-     "value": 4735832,
-     "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-04",
-     "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
-    },
-    "Republican": {
-     "value": 2523760,
-     "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-04",
-     "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
-    }
-   },
-   "Colorado": {
-    "Democratic": {
-     "value": 779415,
+     "value": 5254508,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-11-05",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 647621,
+     "value": 2690305,
+     "metric": "Total early votes (mail returned + in person)",
+     "as_of": "2026-11-05",
+     "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
+    }
+   },
+   "Colorado": {
+    "Democratic": {
+     "value": 783927,
+     "metric": "Total early votes (mail returned + in person)",
+     "as_of": "2026-11-05",
+     "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
+    },
+    "Republican": {
+     "value": 650466,
      "metric": "Total early votes (mail returned + in person)",
      "as_of": "2026-11-05",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
@@ -9162,15 +9162,15 @@
    },
    "Iowa": {
     "Democratic": {
-     "value": 224625,
+     "value": 226708,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-03",
+     "as_of": "2026-11-05",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 171130,
+     "value": 173649,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-03",
+     "as_of": "2026-11-05",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
