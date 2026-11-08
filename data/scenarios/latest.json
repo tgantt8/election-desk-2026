@@ -1,6 +1,6 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-11-07T22:43:12Z",
+ "built_at": "2026-11-08T02:25:58Z",
  "disclaimer": "Scenarios layer: model estimates built from the polls and ratings layers. Not a call, not a result, never written to results or calls.",
  "n_sims": 10000,
  "seed": 20261103,
@@ -243,11 +243,11 @@
    "state": "IA",
    "region": "Midwest",
    "holder_party": "R",
-   "mu": -0.09,
+   "mu": -0.18,
    "s_race": 3.2,
    "basis": "polls+rating",
-   "poll_margin": -0.1,
-   "n_polls": 17,
+   "poll_margin": -0.2,
+   "n_polls": 15,
    "rating_label": "Toss-up",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-20",
@@ -355,11 +355,11 @@
    "state": "ME",
    "region": "Northeast",
    "holder_party": "R",
-   "mu": 3.78,
+   "mu": 3.76,
    "s_race": 3.2,
    "basis": "polls+rating",
    "poll_margin": 4.2,
-   "n_polls": 18,
+   "n_polls": 17,
    "rating_label": "Toss-up",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-20",
@@ -1391,11 +1391,11 @@
    "state": "ME",
    "region": "Northeast",
    "holder_party": "D",
-   "mu": 10.56,
+   "mu": 10.59,
    "s_race": 3.2,
    "basis": "polls+rating",
    "poll_margin": 10.0,
-   "n_polls": 16,
+   "n_polls": 15,
    "rating_label": "Solid D",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -1559,11 +1559,11 @@
    "state": "NV",
    "region": "West",
    "holder_party": "R",
-   "mu": -2.22,
-   "s_race": 4.86,
+   "mu": -0.6,
+   "s_race": 5.85,
    "basis": "polls+rating",
-   "poll_margin": -3.7,
-   "n_polls": 3,
+   "poll_margin": -1.2,
+   "n_polls": 2,
    "rating_label": "Toss-up",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -2322,7 +2322,7 @@
   }
  ],
  "excluded": [],
- "inputs_hash": "9d29cf8aca23",
+ "inputs_hash": "9fc702a9742b",
  "house_baselines": {
   "districts_with_2024_on_2026_lines_baseline": 0,
   "districts_with_public_rating": 13,
@@ -2456,15 +2456,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.5,
-     "margin_mean": -0.0,
+     "p_dem": 0.492,
+     "margin_mean": -0.1,
      "margin_p10_p50_p90": [
-      -5.6,
-      0.0,
-      5.4
+      -5.7,
+      -0.1,
+      5.3
      ],
      "basis": "polls+rating",
-     "mu": -0.09,
+     "mu": -0.18,
      "s_race": 3.2
     },
     {
@@ -2516,15 +2516,15 @@
      "race": "us-senate-ME",
      "office": "senate",
      "state": "ME",
-     "p_dem": 0.808,
+     "p_dem": 0.806,
      "margin_mean": 3.8,
      "margin_p10_p50_p90": [
       -1.8,
-      3.8,
+      3.7,
       9.4
      ],
      "basis": "polls+rating",
-     "mu": 3.78,
+     "mu": 3.76,
      "s_race": 3.2
     },
     {
@@ -3079,7 +3079,7 @@
       16.1
      ],
      "basis": "polls+rating",
-     "mu": 10.56,
+     "mu": 10.59,
      "s_race": 3.2
     },
     {
@@ -3161,16 +3161,16 @@
      "race": "gov-NV",
      "office": "governor",
      "state": "NV",
-     "p_dem": 0.348,
-     "margin_mean": -2.2,
+     "p_dem": 0.47,
+     "margin_mean": -0.6,
      "margin_p10_p50_p90": [
-      -9.4,
-      -2.1,
-      5.2
+      -9.0,
+      -0.5,
+      7.9
      ],
      "basis": "polls+rating",
-     "mu": -2.22,
-     "s_race": 4.86
+     "mu": -0.6,
+     "s_race": 5.85
     },
     {
      "race": "gov-NH",
@@ -3600,9 +3600,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.75,
-    "p_dem_50_tie_vp_r": 0.094,
-    "expected_dem_caucus": 52.1,
+    "p_dem_control_51": 0.749,
+    "p_dem_50_tie_vp_r": 0.095,
+    "expected_dem_caucus": 52.09,
     "dem_caucus_p10_p50_p90": [
      49,
      52,
@@ -3614,28 +3614,28 @@
      "42": 0.0002,
      "43": 0.0006,
      "44": 0.0022,
-     "45": 0.0066,
-     "46": 0.0143,
+     "45": 0.0067,
+     "46": 0.0144,
      "47": 0.0233,
      "48": 0.045,
      "49": 0.0633,
-     "50": 0.0939,
-     "51": 0.1253,
-     "52": 0.1488,
+     "50": 0.0953,
+     "51": 0.1254,
+     "52": 0.1494,
      "53": 0.1601,
-     "54": 0.1447,
-     "55": 0.1019,
-     "56": 0.0476,
-     "57": 0.0161,
-     "58": 0.0048,
+     "54": 0.1433,
+     "55": 0.1012,
+     "56": 0.0474,
+     "57": 0.0162,
+     "58": 0.0047,
      "59": 0.0008,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 18.1,
+    "expected_dem_wins_of_seats_up": 18.09,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.117
+      "share": 0.116
      },
      {
       "race": "us-senate-MN",
@@ -3651,13 +3651,13 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.101
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 21.29,
+    "expected_dem_wins": 21.41,
     "dem_wins_p10_p50_p90": [
      18,
      21,
@@ -3796,15 +3796,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.753,
-     "margin_mean": 3.0,
+     "p_dem": 0.745,
+     "margin_mean": 2.9,
      "margin_p10_p50_p90": [
-      -2.6,
-      3.0,
-      8.4
+      -2.7,
+      2.9,
+      8.3
      ],
      "basis": "polls+rating",
-     "mu": -0.09,
+     "mu": -0.18,
      "s_race": 3.2
     },
     {
@@ -3860,11 +3860,11 @@
      "margin_mean": 6.8,
      "margin_p10_p50_p90": [
       1.2,
-      6.8,
+      6.7,
       12.4
      ],
      "basis": "polls+rating",
-     "mu": 3.78,
+     "mu": 3.76,
      "s_race": 3.2
     },
     {
@@ -4419,7 +4419,7 @@
       19.1
      ],
      "basis": "polls+rating",
-     "mu": 10.56,
+     "mu": 10.59,
      "s_race": 3.2
     },
     {
@@ -4501,16 +4501,16 @@
      "race": "gov-NV",
      "office": "governor",
      "state": "NV",
-     "p_dem": 0.556,
-     "margin_mean": 0.8,
+     "p_dem": 0.643,
+     "margin_mean": 2.4,
      "margin_p10_p50_p90": [
-      -6.4,
-      0.9,
-      8.2
+      -6.0,
+      2.5,
+      10.9
      ],
      "basis": "polls+rating",
-     "mu": -2.22,
-     "s_race": 4.86
+     "mu": -0.6,
+     "s_race": 5.85
     },
     {
      "race": "gov-NH",
@@ -4940,9 +4940,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.956,
+    "p_dem_control_51": 0.955,
     "p_dem_50_tie_vp_r": 0.021,
-    "expected_dem_caucus": 54.29,
+    "expected_dem_caucus": 54.28,
     "dem_caucus_p10_p50_p90": [
      52,
      54,
@@ -4953,26 +4953,26 @@
      "46": 0.0012,
      "47": 0.0023,
      "48": 0.0063,
-     "49": 0.013,
-     "50": 0.0212,
-     "51": 0.0521,
-     "52": 0.0888,
-     "53": 0.139,
-     "54": 0.1904,
-     "55": 0.2044,
-     "56": 0.1479,
-     "57": 0.0813,
-     "58": 0.034,
-     "59": 0.0116,
-     "60": 0.0043,
+     "49": 0.0131,
+     "50": 0.0213,
+     "51": 0.0529,
+     "52": 0.0894,
+     "53": 0.1399,
+     "54": 0.1898,
+     "55": 0.2026,
+     "56": 0.1482,
+     "57": 0.081,
+     "58": 0.0339,
+     "59": 0.0117,
+     "60": 0.0042,
      "61": 0.0015,
      "63": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 20.29,
+    "expected_dem_wins_of_seats_up": 20.28,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.117
+      "share": 0.116
      },
      {
       "race": "us-senate-MN",
@@ -4988,13 +4988,13 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.101
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 24.11,
+    "expected_dem_wins": 24.2,
     "dem_wins_p10_p50_p90": [
      20,
      24,
@@ -5133,15 +5133,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.243,
-     "margin_mean": -3.0,
+     "p_dem": 0.237,
+     "margin_mean": -3.1,
      "margin_p10_p50_p90": [
-      -8.6,
-      -3.0,
-      2.4
+      -8.7,
+      -3.1,
+      2.3
      ],
      "basis": "polls+rating",
-     "mu": -0.09,
+     "mu": -0.18,
      "s_race": 3.2
     },
     {
@@ -5193,15 +5193,15 @@
      "race": "us-senate-ME",
      "office": "senate",
      "state": "ME",
-     "p_dem": 0.571,
+     "p_dem": 0.569,
      "margin_mean": 0.8,
      "margin_p10_p50_p90": [
       -4.8,
-      0.8,
+      0.7,
       6.4
      ],
      "basis": "polls+rating",
-     "mu": 3.78,
+     "mu": 3.76,
      "s_race": 3.2
     },
     {
@@ -5756,7 +5756,7 @@
       13.1
      ],
      "basis": "polls+rating",
-     "mu": 10.56,
+     "mu": 10.59,
      "s_race": 3.2
     },
     {
@@ -5838,16 +5838,16 @@
      "race": "gov-NV",
      "office": "governor",
      "state": "NV",
-     "p_dem": 0.182,
-     "margin_mean": -5.2,
+     "p_dem": 0.293,
+     "margin_mean": -3.6,
      "margin_p10_p50_p90": [
-      -12.4,
-      -5.1,
-      2.2
+      -12.0,
+      -3.5,
+      4.9
      ],
      "basis": "polls+rating",
-     "mu": -2.22,
-     "s_race": 4.86
+     "mu": -0.6,
+     "s_race": 5.85
     },
     {
      "race": "gov-NH",
@@ -6277,9 +6277,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.372,
-    "p_dem_50_tie_vp_r": 0.126,
-    "expected_dem_caucus": 49.44,
+    "p_dem_control_51": 0.37,
+    "p_dem_50_tie_vp_r": 0.127,
+    "expected_dem_caucus": 49.43,
     "dem_caucus_p10_p50_p90": [
      46,
      49,
@@ -6290,28 +6290,28 @@
      "41": 0.0019,
      "42": 0.0045,
      "43": 0.011,
-     "44": 0.0268,
-     "45": 0.0426,
-     "46": 0.071,
-     "47": 0.0941,
-     "48": 0.1195,
-     "49": 0.1294,
-     "50": 0.1264,
-     "51": 0.1193,
-     "52": 0.1043,
-     "53": 0.0735,
-     "54": 0.0447,
-     "55": 0.0215,
+     "44": 0.0269,
+     "45": 0.0429,
+     "46": 0.0708,
+     "47": 0.0946,
+     "48": 0.1196,
+     "49": 0.1295,
+     "50": 0.1267,
+     "51": 0.1196,
+     "52": 0.104,
+     "53": 0.0732,
+     "54": 0.0442,
+     "55": 0.0211,
      "56": 0.0063,
      "57": 0.0014,
      "58": 0.0006,
      "59": 0.0001
     },
-    "expected_dem_wins_of_seats_up": 15.44,
+    "expected_dem_wins_of_seats_up": 15.43,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.117
+      "share": 0.116
      },
      {
       "race": "us-senate-MN",
@@ -6327,13 +6327,13 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.101
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 18.49,
+    "expected_dem_wins": 18.6,
     "dem_wins_p10_p50_p90": [
      15,
      19,
@@ -6472,15 +6472,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.485,
-     "margin_mean": -0.2,
+     "p_dem": 0.477,
+     "margin_mean": -0.3,
      "margin_p10_p50_p90": [
-      -5.7,
-      -0.1,
-      5.3
+      -5.8,
+      -0.2,
+      5.2
      ],
      "basis": "polls+rating",
-     "mu": -0.09,
+     "mu": -0.18,
      "s_race": 3.2
     },
     {
@@ -6535,12 +6535,12 @@
      "p_dem": 0.798,
      "margin_mean": 3.6,
      "margin_p10_p50_p90": [
-      -1.9,
+      -2.0,
       3.6,
       9.2
      ],
      "basis": "polls+rating",
-     "mu": 3.78,
+     "mu": 3.76,
      "s_race": 3.2
     },
     {
@@ -7088,14 +7088,14 @@
      "office": "governor",
      "state": "ME",
      "p_dem": 0.992,
-     "margin_mean": 10.3,
+     "margin_mean": 10.4,
      "margin_p10_p50_p90": [
       4.8,
-      10.3,
-      15.9
+      10.4,
+      16.0
      ],
      "basis": "polls+rating",
-     "mu": 10.56,
+     "mu": 10.59,
      "s_race": 3.2
     },
     {
@@ -7177,16 +7177,16 @@
      "race": "gov-NV",
      "office": "governor",
      "state": "NV",
-     "p_dem": 0.338,
-     "margin_mean": -2.3,
+     "p_dem": 0.461,
+     "margin_mean": -0.7,
      "margin_p10_p50_p90": [
-      -9.6,
-      -2.3,
-      5.0
+      -9.1,
+      -0.7,
+      7.7
      ],
      "basis": "polls+rating",
-     "mu": -2.22,
-     "s_race": 4.86
+     "mu": -0.6,
+     "s_race": 5.85
     },
     {
      "race": "gov-NH",
@@ -7616,9 +7616,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.733,
+    "p_dem_control_51": 0.731,
     "p_dem_50_tie_vp_r": 0.1,
-    "expected_dem_caucus": 51.98,
+    "expected_dem_caucus": 51.97,
     "dem_caucus_p10_p50_p90": [
      48,
      52,
@@ -7631,27 +7631,27 @@
      "43": 0.0006,
      "44": 0.0023,
      "45": 0.0077,
-     "46": 0.0158,
-     "47": 0.026,
-     "48": 0.0486,
-     "49": 0.066,
-     "50": 0.0995,
-     "51": 0.1273,
-     "52": 0.1493,
-     "53": 0.1578,
-     "54": 0.1395,
-     "55": 0.0947,
-     "56": 0.0445,
-     "57": 0.0147,
-     "58": 0.0042,
+     "46": 0.0159,
+     "47": 0.0261,
+     "48": 0.0488,
+     "49": 0.0666,
+     "50": 0.1,
+     "51": 0.1265,
+     "52": 0.1506,
+     "53": 0.1573,
+     "54": 0.1389,
+     "55": 0.0939,
+     "56": 0.0446,
+     "57": 0.0148,
+     "58": 0.0039,
      "59": 0.0007,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 17.98,
+    "expected_dem_wins_of_seats_up": 17.97,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.117
+      "share": 0.116
      },
      {
       "race": "us-senate-MN",
@@ -7667,13 +7667,13 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.101
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 21.15,
+    "expected_dem_wins": 21.27,
     "dem_wins_p10_p50_p90": [
      17,
      21,
@@ -7812,15 +7812,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.376,
-     "margin_mean": -1.4,
+     "p_dem": 0.369,
+     "margin_mean": -1.5,
      "margin_p10_p50_p90": [
-      -6.9,
-      -1.3,
-      4.1
+      -7.0,
+      -1.4,
+      4.0
      ],
      "basis": "polls+rating",
-     "mu": -0.09,
+     "mu": -0.18,
      "s_race": 3.2
     },
     {
@@ -7872,15 +7872,15 @@
      "race": "us-senate-ME",
      "office": "senate",
      "state": "ME",
-     "p_dem": 0.713,
+     "p_dem": 0.712,
      "margin_mean": 2.4,
      "margin_p10_p50_p90": [
       -3.1,
       2.4,
-      8.1
+      8.0
      ],
      "basis": "polls+rating",
-     "mu": 3.78,
+     "mu": 3.76,
      "s_race": 3.2
     },
     {
@@ -8430,12 +8430,12 @@
      "p_dem": 0.984,
      "margin_mean": 9.2,
      "margin_p10_p50_p90": [
-      3.6,
-      9.1,
+      3.7,
+      9.2,
       14.8
      ],
      "basis": "polls+rating",
-     "mu": 10.56,
+     "mu": 10.59,
      "s_race": 3.2
     },
     {
@@ -8517,16 +8517,16 @@
      "race": "gov-NV",
      "office": "governor",
      "state": "NV",
-     "p_dem": 0.267,
-     "margin_mean": -3.5,
+     "p_dem": 0.389,
+     "margin_mean": -1.9,
      "margin_p10_p50_p90": [
-      -10.8,
-      -3.5,
-      3.8
+      -10.3,
+      -1.9,
+      6.5
      ],
      "basis": "polls+rating",
-     "mu": -2.22,
-     "s_race": 4.86
+     "mu": -0.6,
+     "s_race": 5.85
     },
     {
      "race": "gov-NH",
@@ -8956,9 +8956,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.588,
+    "p_dem_control_51": 0.587,
     "p_dem_50_tie_vp_r": 0.123,
-    "expected_dem_caucus": 50.96,
+    "expected_dem_caucus": 50.95,
     "dem_caucus_p10_p50_p90": [
      47,
      51,
@@ -8970,28 +8970,28 @@
      "42": 0.0009,
      "43": 0.003,
      "44": 0.0073,
-     "45": 0.0165,
-     "46": 0.032,
-     "47": 0.0496,
-     "48": 0.0766,
-     "49": 0.1018,
-     "50": 0.1231,
-     "51": 0.138,
-     "52": 0.1419,
-     "53": 0.1282,
+     "45": 0.0167,
+     "46": 0.0318,
+     "47": 0.05,
+     "48": 0.0767,
+     "49": 0.1022,
+     "50": 0.1235,
+     "51": 0.1386,
+     "52": 0.1421,
+     "53": 0.1266,
      "54": 0.0931,
-     "55": 0.0569,
-     "56": 0.0225,
-     "57": 0.0057,
+     "55": 0.0565,
+     "56": 0.0226,
+     "57": 0.0055,
      "58": 0.0018,
      "59": 0.0001,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 16.96,
+    "expected_dem_wins_of_seats_up": 16.95,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.117
+      "share": 0.116
      },
      {
       "race": "us-senate-MN",
@@ -9007,13 +9007,13 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.101
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 20.04,
+    "expected_dem_wins": 20.17,
     "dem_wins_p10_p50_p90": [
      16,
      20,
@@ -9028,7 +9028,7 @@
  },
  "what_has_to_be_true": {
   "target": "Democratic caucus of 51 (the Vice President is Republican, so 50 is not control)",
-  "shift_needed": -1.99,
+  "shift_needed": -1.98,
   "p_at_shift": 0.5
  },
  "early_vote_context": {

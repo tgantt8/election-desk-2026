@@ -75,7 +75,7 @@
     "note": "expected 2026 wins, polls-as-is preset"
    },
    "house": null,
-   "built_at": "2026-11-07T22:43:12Z"
+   "built_at": "2026-11-08T02:25:58Z"
   }
  },
  "senate_2026": [
@@ -579,10 +579,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.5,
+   "sim_p_dem": 0.492,
    "sim_basis": "polls+rating",
-   "poll_margin": -0.1,
-   "poll_n": 17
+   "poll_margin": -0.2,
+   "poll_n": 15
   },
   {
    "id": "us-senate-KS",
@@ -795,10 +795,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.808,
+   "sim_p_dem": 0.806,
    "sim_basis": "polls+rating",
    "poll_margin": 4.2,
-   "poll_n": 18
+   "poll_n": 17
   },
   {
    "id": "us-senate-MA",
@@ -2834,7 +2834,7 @@
    "sim_p_dem": 0.993,
    "sim_basis": "polls+rating",
    "poll_margin": 10.0,
-   "poll_n": 16
+   "poll_n": 15
   },
   {
    "id": "gov-MD",
@@ -3148,10 +3148,10 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.348,
+   "sim_p_dem": 0.47,
    "sim_basis": "polls+rating",
-   "poll_margin": -3.7,
-   "poll_n": 3
+   "poll_margin": -1.2,
+   "poll_n": 2
   },
   {
    "id": "gov-NH",
@@ -4831,7 +4831,7 @@
    "note": "expected 2026 wins, polls-as-is preset"
   },
   "house": null,
-  "built_at": "2026-11-07T22:43:12Z"
+  "built_at": "2026-11-08T02:25:58Z"
  },
  "mi_legislature": {
   "_layer": "contests",
