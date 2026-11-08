@@ -2369,3 +2369,12 @@
 {"at": "2026-11-08T02:25:10Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-11-08T02:25:13Z", "errors": [], "event": "npr_ap_pull", "new_calls": 0, "result_rows": 204, "retractions": 0, "source_id": "results_ap_via_npr"}
 {"at": "2026-11-08T02:25:15Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
+{"at": "2026-11-08T09:27:46Z", "changes": 0, "entries": 35, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_senate:2026-11-08T09:27:46Z:e3c797af9587", "source_id": "ratings_ie_senate", "stored": 0}
+{"at": "2026-11-08T09:27:48Z", "changes": 0, "entries": 36, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_governor:2026-11-08T09:27:48Z:f6267a0bcfa4", "source_id": "ratings_ie_governor", "stored": 0}
+{"at": "2026-11-08T09:27:49Z", "changes": 0, "entries": 435, "event": "ratings_pull", "link_only_skipped": 422, "page_date": "2026-10-29", "snapshot": "ratings_ie_house:2026-11-08T09:27:49Z:765c036cfc08", "source_id": "ratings_ie_house", "stored": 0}
+{"at": "2026-11-08T09:27:52Z", "event": "early_vote_pull", "records": 1020, "snapshot": "ev_fl_publicstats:2026-11-08T09:27:52Z:5bc269f1311a", "source_id": "ev_fl_publicstats"}
+{"at": "2026-11-08T09:28:00Z", "ballot_items": 135, "election": "General11032026", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 290, "snapshot": "enr_ut_ev:2026-11-08T09:28:00Z:2729fa417d7d", "source_id": "enr_ut_ev", "total_record_count": 135}
+{"at": "2026-11-08T09:28:02Z", "event": "nc_s3_unchanged", "source_id": "enr_nc_s3_results"}
+{"at": "2026-11-08T09:28:03Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-11-08T09:28:07Z", "errors": [], "event": "npr_ap_pull", "new_calls": 0, "result_rows": 43, "retractions": 0, "source_id": "results_ap_via_npr"}
+{"at": "2026-11-08T09:28:09Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
