@@ -1,6 +1,6 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-11-10T23:15:59Z",
+ "built_at": "2026-11-11T03:01:26Z",
  "disclaimer": "Scenarios layer: model estimates built from the polls and ratings layers. Not a call, not a result, never written to results or calls.",
  "n_sims": 10000,
  "seed": 20261103,
@@ -47,11 +47,11 @@
    "state": "AK",
    "region": "West",
    "holder_party": "R",
-   "mu": 1.12,
-   "s_race": 3.59,
+   "mu": 0.93,
+   "s_race": 3.88,
    "basis": "polls+rating",
-   "poll_margin": 1.5,
-   "n_polls": 6,
+   "poll_margin": 1.3,
+   "n_polls": 5,
    "rating_label": "Toss-up",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-20",
@@ -831,11 +831,11 @@
    "state": "TX",
    "region": "South",
    "holder_party": "R",
-   "mu": 2.69,
+   "mu": 2.68,
    "s_race": 3.2,
    "basis": "polls+rating",
    "poll_margin": 2.9,
-   "n_polls": 25,
+   "n_polls": 24,
    "rating_label": "Toss-up",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-20",
@@ -1027,11 +1027,11 @@
    "state": "AK",
    "region": "West",
    "holder_party": "R",
-   "mu": 7.34,
-   "s_race": 3.38,
+   "mu": 7.23,
+   "s_race": 3.59,
    "basis": "polls+rating",
    "poll_margin": 8.3,
-   "n_polls": 7,
+   "n_polls": 6,
    "rating_label": "Lean D",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -1727,11 +1727,11 @@
    "state": "OR",
    "region": "West",
    "holder_party": "D",
-   "mu": 2.45,
-   "s_race": 5.85,
-   "basis": "polls+rating",
-   "poll_margin": 0.9,
-   "n_polls": 2,
+   "mu": 4.0,
+   "s_race": 6.0,
+   "basis": "rating",
+   "poll_margin": null,
+   "n_polls": 1,
    "rating_label": "Lean D",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -1895,11 +1895,11 @@
    "state": "TX",
    "region": "South",
    "holder_party": "R",
-   "mu": -2.52,
+   "mu": -2.53,
    "s_race": 3.2,
    "basis": "polls+rating",
    "poll_margin": -2.4,
-   "n_polls": 24,
+   "n_polls": 23,
    "rating_label": "Lean R",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -2322,7 +2322,7 @@
   }
  ],
  "excluded": [],
- "inputs_hash": "2f898345f2e6",
+ "inputs_hash": "8537face864e",
  "house_baselines": {
   "districts_with_2024_on_2026_lines_baseline": 0,
   "districts_with_public_rating": 13,
@@ -2351,16 +2351,16 @@
      "race": "us-senate-AK",
      "office": "senate",
      "state": "AK",
-     "p_dem": 0.601,
-     "margin_mean": 1.1,
+     "p_dem": 0.581,
+     "margin_mean": 0.9,
      "margin_p10_p50_p90": [
-      -4.8,
-      1.2,
-      6.9
+      -5.2,
+      1.0,
+      7.0
      ],
      "basis": "polls+rating",
-     "mu": 1.12,
-     "s_race": 3.59
+     "mu": 0.93,
+     "s_race": 3.88
     },
     {
      "race": "us-senate-AR",
@@ -2771,15 +2771,15 @@
      "race": "us-senate-TX",
      "office": "senate",
      "state": "TX",
-     "p_dem": 0.732,
+     "p_dem": 0.731,
      "margin_mean": 2.7,
      "margin_p10_p50_p90": [
       -2.9,
-      2.7,
+      2.6,
       8.2
      ],
      "basis": "polls+rating",
-     "mu": 2.69,
+     "mu": 2.68,
      "s_race": 3.2
     },
     {
@@ -2876,16 +2876,16 @@
      "race": "gov-AK",
      "office": "governor",
      "state": "AK",
-     "p_dem": 0.952,
-     "margin_mean": 7.3,
+     "p_dem": 0.942,
+     "margin_mean": 7.2,
      "margin_p10_p50_p90": [
-      1.6,
-      7.3,
-      12.9
+      1.3,
+      7.2,
+      13.0
      ],
      "basis": "polls+rating",
-     "mu": 7.34,
-     "s_race": 3.38
+     "mu": 7.23,
+     "s_race": 3.59
     },
     {
      "race": "gov-AZ",
@@ -3251,16 +3251,16 @@
      "race": "gov-OR",
      "office": "governor",
      "state": "OR",
-     "p_dem": 0.651,
-     "margin_mean": 2.6,
+     "p_dem": 0.731,
+     "margin_mean": 4.1,
      "margin_p10_p50_p90": [
-      -5.7,
-      2.5,
-      10.8
+      -4.4,
+      4.1,
+      12.5
      ],
-     "basis": "polls+rating",
-     "mu": 2.45,
-     "s_race": 5.85
+     "basis": "rating",
+     "mu": 4.0,
+     "s_race": 6.0
     },
     {
      "race": "gov-PA",
@@ -3341,7 +3341,7 @@
      "race": "gov-TX",
      "office": "governor",
      "state": "TX",
-     "p_dem": 0.272,
+     "p_dem": 0.271,
      "margin_mean": -2.6,
      "margin_p10_p50_p90": [
       -8.2,
@@ -3349,7 +3349,7 @@
       3.0
      ],
      "basis": "polls+rating",
-     "mu": -2.52,
+     "mu": -2.53,
      "s_race": 3.2
     },
     {
@@ -3600,9 +3600,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.75,
-    "p_dem_50_tie_vp_r": 0.096,
-    "expected_dem_caucus": 52.09,
+    "p_dem_control_51": 0.748,
+    "p_dem_50_tie_vp_r": 0.097,
+    "expected_dem_caucus": 52.07,
     "dem_caucus_p10_p50_p90": [
      49,
      52,
@@ -3614,50 +3614,50 @@
      "42": 0.0002,
      "43": 0.0005,
      "44": 0.0022,
-     "45": 0.0066,
+     "45": 0.0067,
      "46": 0.0144,
-     "47": 0.0223,
-     "48": 0.0445,
-     "49": 0.063,
-     "50": 0.0964,
-     "51": 0.126,
-     "52": 0.151,
-     "53": 0.1596,
-     "54": 0.1456,
-     "55": 0.0991,
-     "56": 0.0469,
-     "57": 0.0159,
-     "58": 0.0045,
-     "59": 0.0008,
+     "47": 0.0224,
+     "48": 0.0449,
+     "49": 0.0634,
+     "50": 0.0974,
+     "51": 0.1279,
+     "52": 0.1503,
+     "53": 0.1606,
+     "54": 0.1446,
+     "55": 0.0976,
+     "56": 0.0458,
+     "57": 0.0157,
+     "58": 0.0042,
+     "59": 0.0007,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 18.09,
+    "expected_dem_wins_of_seats_up": 18.07,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.117
+      "share": 0.118
      },
      {
       "race": "us-senate-MN",
       "share": 0.111
      },
      {
-      "race": "us-senate-AK",
-      "share": 0.11
-     },
-     {
       "race": "us-senate-KS",
-      "share": 0.107
+      "share": 0.108
      },
      {
       "race": "us-senate-ME",
       "share": 0.104
+     },
+     {
+      "race": "us-senate-AK",
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 21.41,
+    "expected_dem_wins": 21.48,
     "dem_wins_p10_p50_p90": [
      18,
      21,
@@ -3691,16 +3691,16 @@
      "race": "us-senate-AK",
      "office": "senate",
      "state": "AK",
-     "p_dem": 0.818,
-     "margin_mean": 4.1,
+     "p_dem": 0.796,
+     "margin_mean": 3.9,
      "margin_p10_p50_p90": [
-      -1.8,
-      4.2,
-      9.9
+      -2.2,
+      4.0,
+      10.0
      ],
      "basis": "polls+rating",
-     "mu": 1.12,
-     "s_race": 3.59
+     "mu": 0.93,
+     "s_race": 3.88
     },
     {
      "race": "us-senate-AR",
@@ -4115,11 +4115,11 @@
      "margin_mean": 5.7,
      "margin_p10_p50_p90": [
       0.1,
-      5.7,
+      5.6,
       11.2
      ],
      "basis": "polls+rating",
-     "mu": 2.69,
+     "mu": 2.68,
      "s_race": 3.2
     },
     {
@@ -4216,16 +4216,16 @@
      "race": "gov-AK",
      "office": "governor",
      "state": "AK",
-     "p_dem": 0.991,
-     "margin_mean": 10.3,
+     "p_dem": 0.987,
+     "margin_mean": 10.2,
      "margin_p10_p50_p90": [
-      4.6,
-      10.3,
-      15.9
+      4.3,
+      10.2,
+      16.0
      ],
      "basis": "polls+rating",
-     "mu": 7.34,
-     "s_race": 3.38
+     "mu": 7.23,
+     "s_race": 3.59
     },
     {
      "race": "gov-AZ",
@@ -4591,16 +4591,16 @@
      "race": "gov-OR",
      "office": "governor",
      "state": "OR",
-     "p_dem": 0.804,
-     "margin_mean": 5.6,
+     "p_dem": 0.859,
+     "margin_mean": 7.1,
      "margin_p10_p50_p90": [
-      -2.7,
-      5.5,
-      13.8
+      -1.4,
+      7.1,
+      15.5
      ],
-     "basis": "polls+rating",
-     "mu": 2.45,
-     "s_race": 5.85
+     "basis": "rating",
+     "mu": 4.0,
+     "s_race": 6.0
     },
     {
      "race": "gov-PA",
@@ -4689,7 +4689,7 @@
       6.0
      ],
      "basis": "polls+rating",
-     "mu": -2.52,
+     "mu": -2.53,
      "s_race": 3.2
     },
     {
@@ -4942,7 +4942,7 @@
     "seats_up": 35,
     "p_dem_control_51": 0.955,
     "p_dem_50_tie_vp_r": 0.022,
-    "expected_dem_caucus": 54.26,
+    "expected_dem_caucus": 54.24,
     "dem_caucus_p10_p50_p90": [
      52,
      54,
@@ -4952,51 +4952,51 @@
      "45": 0.0005,
      "46": 0.0012,
      "47": 0.0023,
-     "48": 0.006,
-     "49": 0.0127,
+     "48": 0.0061,
+     "49": 0.0131,
      "50": 0.0221,
-     "51": 0.0525,
-     "52": 0.0917,
-     "53": 0.1421,
-     "54": 0.1918,
-     "55": 0.2014,
-     "56": 0.1457,
-     "57": 0.0794,
-     "58": 0.0331,
+     "51": 0.0539,
+     "52": 0.093,
+     "53": 0.1446,
+     "54": 0.1907,
+     "55": 0.2006,
+     "56": 0.1433,
+     "57": 0.0787,
+     "58": 0.0324,
      "59": 0.0117,
      "60": 0.0042,
      "61": 0.0014,
      "63": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 20.26,
+    "expected_dem_wins_of_seats_up": 20.24,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.117
+      "share": 0.118
      },
      {
       "race": "us-senate-MN",
       "share": 0.111
      },
      {
-      "race": "us-senate-AK",
-      "share": 0.11
-     },
-     {
       "race": "us-senate-KS",
-      "share": 0.107
+      "share": 0.108
      },
      {
       "race": "us-senate-ME",
       "share": 0.104
+     },
+     {
+      "race": "us-senate-AK",
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 24.2,
+    "expected_dem_wins": 24.25,
     "dem_wins_p10_p50_p90": [
-     20,
+     21,
      24,
      28
     ]
@@ -5028,16 +5028,16 @@
      "race": "us-senate-AK",
      "office": "senate",
      "state": "AK",
-     "p_dem": 0.339,
-     "margin_mean": -1.9,
+     "p_dem": 0.332,
+     "margin_mean": -2.1,
      "margin_p10_p50_p90": [
-      -7.8,
-      -1.8,
-      3.9
+      -8.2,
+      -2.0,
+      4.0
      ],
      "basis": "polls+rating",
-     "mu": 1.12,
-     "s_race": 3.59
+     "mu": 0.93,
+     "s_race": 3.88
     },
     {
      "race": "us-senate-AR",
@@ -5448,15 +5448,15 @@
      "race": "us-senate-TX",
      "office": "senate",
      "state": "TX",
-     "p_dem": 0.467,
+     "p_dem": 0.466,
      "margin_mean": -0.3,
      "margin_p10_p50_p90": [
       -5.9,
-      -0.3,
+      -0.4,
       5.2
      ],
      "basis": "polls+rating",
-     "mu": 2.69,
+     "mu": 2.68,
      "s_race": 3.2
     },
     {
@@ -5553,16 +5553,16 @@
      "race": "gov-AK",
      "office": "governor",
      "state": "AK",
-     "p_dem": 0.832,
-     "margin_mean": 4.3,
+     "p_dem": 0.816,
+     "margin_mean": 4.2,
      "margin_p10_p50_p90": [
-      -1.4,
-      4.3,
-      9.9
+      -1.7,
+      4.2,
+      10.0
      ],
      "basis": "polls+rating",
-     "mu": 7.34,
-     "s_race": 3.38
+     "mu": 7.23,
+     "s_race": 3.59
     },
     {
      "race": "gov-AZ",
@@ -5928,16 +5928,16 @@
      "race": "gov-OR",
      "office": "governor",
      "state": "OR",
-     "p_dem": 0.469,
-     "margin_mean": -0.4,
+     "p_dem": 0.568,
+     "margin_mean": 1.1,
      "margin_p10_p50_p90": [
-      -8.7,
-      -0.5,
-      7.8
+      -7.4,
+      1.1,
+      9.5
      ],
-     "basis": "polls+rating",
-     "mu": 2.45,
-     "s_race": 5.85
+     "basis": "rating",
+     "mu": 4.0,
+     "s_race": 6.0
     },
     {
      "race": "gov-PA",
@@ -6026,7 +6026,7 @@
       -0.0
      ],
      "basis": "polls+rating",
-     "mu": -2.52,
+     "mu": -2.53,
      "s_race": 3.2
     },
     {
@@ -6277,9 +6277,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.373,
-    "p_dem_50_tie_vp_r": 0.129,
-    "expected_dem_caucus": 49.45,
+    "p_dem_control_51": 0.371,
+    "p_dem_50_tie_vp_r": 0.13,
+    "expected_dem_caucus": 49.44,
     "dem_caucus_p10_p50_p90": [
      46,
      50,
@@ -6289,51 +6289,51 @@
      "40": 0.0011,
      "41": 0.0019,
      "42": 0.0044,
-     "43": 0.011,
-     "44": 0.0262,
-     "45": 0.0423,
-     "46": 0.0693,
-     "47": 0.094,
-     "48": 0.1189,
+     "43": 0.0109,
+     "44": 0.0259,
+     "45": 0.0424,
+     "46": 0.0696,
+     "47": 0.0935,
+     "48": 0.1197,
      "49": 0.1295,
-     "50": 0.1286,
-     "51": 0.1207,
-     "52": 0.1055,
-     "53": 0.0724,
-     "54": 0.045,
-     "55": 0.0208,
-     "56": 0.0063,
+     "50": 0.1302,
+     "51": 0.1214,
+     "52": 0.1046,
+     "53": 0.0715,
+     "54": 0.0453,
+     "55": 0.02,
+     "56": 0.006,
      "57": 0.0014,
      "58": 0.0006,
      "59": 0.0001
     },
-    "expected_dem_wins_of_seats_up": 15.45,
+    "expected_dem_wins_of_seats_up": 15.44,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.117
+      "share": 0.118
      },
      {
       "race": "us-senate-MN",
       "share": 0.111
      },
      {
-      "race": "us-senate-AK",
-      "share": 0.11
-     },
-     {
       "race": "us-senate-KS",
-      "share": 0.107
+      "share": 0.108
      },
      {
       "race": "us-senate-ME",
       "share": 0.104
+     },
+     {
+      "race": "us-senate-AK",
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 18.6,
+    "expected_dem_wins": 18.69,
     "dem_wins_p10_p50_p90": [
      15,
      19,
@@ -6367,16 +6367,16 @@
      "race": "us-senate-AK",
      "office": "senate",
      "state": "AK",
-     "p_dem": 0.589,
-     "margin_mean": 1.0,
+     "p_dem": 0.567,
+     "margin_mean": 0.8,
      "margin_p10_p50_p90": [
-      -4.9,
-      1.0,
-      6.8
+      -5.4,
+      0.8,
+      6.9
      ],
      "basis": "polls+rating",
-     "mu": 1.12,
-     "s_race": 3.59
+     "mu": 0.93,
+     "s_race": 3.88
     },
     {
      "race": "us-senate-AR",
@@ -6787,7 +6787,7 @@
      "race": "us-senate-TX",
      "office": "senate",
      "state": "TX",
-     "p_dem": 0.719,
+     "p_dem": 0.717,
      "margin_mean": 2.5,
      "margin_p10_p50_p90": [
       -3.0,
@@ -6795,7 +6795,7 @@
       8.1
      ],
      "basis": "polls+rating",
-     "mu": 2.69,
+     "mu": 2.68,
      "s_race": 3.2
     },
     {
@@ -6892,16 +6892,16 @@
      "race": "gov-AK",
      "office": "governor",
      "state": "AK",
-     "p_dem": 0.947,
-     "margin_mean": 7.2,
+     "p_dem": 0.937,
+     "margin_mean": 7.0,
      "margin_p10_p50_p90": [
-      1.5,
-      7.2,
-      12.8
+      1.1,
+      7.1,
+      12.9
      ],
      "basis": "polls+rating",
-     "mu": 7.34,
-     "s_race": 3.38
+     "mu": 7.23,
+     "s_race": 3.59
     },
     {
      "race": "gov-AZ",
@@ -7267,16 +7267,16 @@
      "race": "gov-OR",
      "office": "governor",
      "state": "OR",
-     "p_dem": 0.643,
-     "margin_mean": 2.4,
+     "p_dem": 0.724,
+     "margin_mean": 4.0,
      "margin_p10_p50_p90": [
-      -5.9,
-      2.4,
-      10.6
+      -4.5,
+      4.0,
+      12.4
      ],
-     "basis": "polls+rating",
-     "mu": 2.45,
-     "s_race": 5.85
+     "basis": "rating",
+     "mu": 4.0,
+     "s_race": 6.0
     },
     {
      "race": "gov-PA",
@@ -7365,7 +7365,7 @@
       2.8
      ],
      "basis": "polls+rating",
-     "mu": -2.52,
+     "mu": -2.53,
      "s_race": 3.2
     },
     {
@@ -7616,9 +7616,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.733,
-    "p_dem_50_tie_vp_r": 0.101,
-    "expected_dem_caucus": 51.97,
+    "p_dem_control_51": 0.73,
+    "p_dem_50_tie_vp_r": 0.102,
+    "expected_dem_caucus": 51.94,
     "dem_caucus_p10_p50_p90": [
      48,
      52,
@@ -7630,52 +7630,52 @@
      "42": 0.0003,
      "43": 0.0005,
      "44": 0.0023,
-     "45": 0.0074,
-     "46": 0.0159,
-     "47": 0.0251,
-     "48": 0.0488,
-     "49": 0.0664,
-     "50": 0.1005,
-     "51": 0.1273,
-     "52": 0.152,
-     "53": 0.1573,
-     "54": 0.1414,
-     "55": 0.0912,
-     "56": 0.0441,
-     "57": 0.0146,
-     "58": 0.0037,
+     "45": 0.0075,
+     "46": 0.0157,
+     "47": 0.0257,
+     "48": 0.049,
+     "49": 0.0673,
+     "50": 0.1017,
+     "51": 0.1278,
+     "52": 0.1524,
+     "53": 0.1585,
+     "54": 0.1398,
+     "55": 0.0894,
+     "56": 0.0431,
+     "57": 0.0144,
+     "58": 0.0034,
      "59": 0.0007,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 17.97,
+    "expected_dem_wins_of_seats_up": 17.94,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.117
+      "share": 0.118
      },
      {
       "race": "us-senate-MN",
       "share": 0.111
      },
      {
-      "race": "us-senate-AK",
-      "share": 0.11
-     },
-     {
       "race": "us-senate-KS",
-      "share": 0.107
+      "share": 0.108
      },
      {
       "race": "us-senate-ME",
       "share": 0.104
+     },
+     {
+      "race": "us-senate-AK",
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 21.27,
+    "expected_dem_wins": 21.34,
     "dem_wins_p10_p50_p90": [
-     17,
+     18,
      21,
      25
     ]
@@ -7707,16 +7707,16 @@
      "race": "us-senate-AK",
      "office": "senate",
      "state": "AK",
-     "p_dem": 0.484,
-     "margin_mean": -0.2,
+     "p_dem": 0.469,
+     "margin_mean": -0.4,
      "margin_p10_p50_p90": [
-      -6.1,
-      -0.2,
-      5.6
+      -6.6,
+      -0.4,
+      5.7
      ],
      "basis": "polls+rating",
-     "mu": 1.12,
-     "s_race": 3.59
+     "mu": 0.93,
+     "s_race": 3.88
     },
     {
      "race": "us-senate-AR",
@@ -8127,7 +8127,7 @@
      "race": "us-senate-TX",
      "office": "senate",
      "state": "TX",
-     "p_dem": 0.624,
+     "p_dem": 0.623,
      "margin_mean": 1.4,
      "margin_p10_p50_p90": [
       -4.2,
@@ -8135,7 +8135,7 @@
       6.9
      ],
      "basis": "polls+rating",
-     "mu": 2.69,
+     "mu": 2.68,
      "s_race": 3.2
     },
     {
@@ -8232,16 +8232,16 @@
      "race": "gov-AK",
      "office": "governor",
      "state": "AK",
-     "p_dem": 0.911,
-     "margin_mean": 6.0,
+     "p_dem": 0.899,
+     "margin_mean": 5.9,
      "margin_p10_p50_p90": [
-      0.3,
-      6.0,
-      11.6
+      -0.0,
+      5.9,
+      11.7
      ],
      "basis": "polls+rating",
-     "mu": 7.34,
-     "s_race": 3.38
+     "mu": 7.23,
+     "s_race": 3.59
     },
     {
      "race": "gov-AZ",
@@ -8607,16 +8607,16 @@
      "race": "gov-OR",
      "office": "governor",
      "state": "OR",
-     "p_dem": 0.575,
-     "margin_mean": 1.2,
+     "p_dem": 0.661,
+     "margin_mean": 2.8,
      "margin_p10_p50_p90": [
-      -7.1,
-      1.2,
-      9.5
+      -5.7,
+      2.8,
+      11.2
      ],
-     "basis": "polls+rating",
-     "mu": 2.45,
-     "s_race": 5.85
+     "basis": "rating",
+     "mu": 4.0,
+     "s_race": 6.0
     },
     {
      "race": "gov-PA",
@@ -8698,14 +8698,14 @@
      "office": "governor",
      "state": "TX",
      "p_dem": 0.182,
-     "margin_mean": -3.9,
+     "margin_mean": -4.0,
      "margin_p10_p50_p90": [
       -9.5,
       -3.9,
       1.6
      ],
      "basis": "polls+rating",
-     "mu": -2.52,
+     "mu": -2.53,
      "s_race": 3.2
     },
     {
@@ -8956,9 +8956,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.589,
-    "p_dem_50_tie_vp_r": 0.124,
-    "expected_dem_caucus": 50.96,
+    "p_dem_control_51": 0.587,
+    "p_dem_50_tie_vp_r": 0.125,
+    "expected_dem_caucus": 50.94,
     "dem_caucus_p10_p50_p90": [
      47,
      51,
@@ -8970,50 +8970,50 @@
      "42": 0.0009,
      "43": 0.0028,
      "44": 0.0069,
-     "45": 0.0168,
-     "46": 0.0314,
+     "45": 0.0166,
+     "46": 0.0318,
      "47": 0.0494,
-     "48": 0.0762,
-     "49": 0.1018,
-     "50": 0.1239,
-     "51": 0.1403,
-     "52": 0.1419,
-     "53": 0.1276,
-     "54": 0.0935,
-     "55": 0.0565,
-     "56": 0.022,
-     "57": 0.0053,
-     "58": 0.0017,
+     "48": 0.0763,
+     "49": 0.1029,
+     "50": 0.1246,
+     "51": 0.1414,
+     "52": 0.1412,
+     "53": 0.1289,
+     "54": 0.0919,
+     "55": 0.055,
+     "56": 0.0216,
+     "57": 0.0052,
+     "58": 0.0015,
      "59": 0.0001,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 16.96,
+    "expected_dem_wins_of_seats_up": 16.94,
     "tipping_point": [
      {
       "race": "us-senate-TX",
-      "share": 0.117
+      "share": 0.118
      },
      {
       "race": "us-senate-MN",
       "share": 0.111
      },
      {
-      "race": "us-senate-AK",
-      "share": 0.11
-     },
-     {
       "race": "us-senate-KS",
-      "share": 0.107
+      "share": 0.108
      },
      {
       "race": "us-senate-ME",
       "share": 0.104
+     },
+     {
+      "race": "us-senate-AK",
+      "share": 0.102
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 20.17,
+    "expected_dem_wins": 20.24,
     "dem_wins_p10_p50_p90": [
      16,
      20,
@@ -9028,7 +9028,7 @@
  },
  "what_has_to_be_true": {
   "target": "Democratic caucus of 51 (the Vice President is Republican, so 50 is not control)",
-  "shift_needed": -1.99,
+  "shift_needed": -1.97,
   "p_at_shift": 0.5
  },
  "early_vote_context": {
