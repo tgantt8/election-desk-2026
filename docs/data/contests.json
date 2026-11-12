@@ -75,7 +75,7 @@
     "note": "expected 2026 wins, polls-as-is preset"
    },
    "house": null,
-   "built_at": "2026-11-11T18:40:46Z"
+   "built_at": "2026-11-12T01:03:30Z"
   }
  },
  "senate_2026": [
@@ -3756,10 +3756,9 @@
     "date": "2026-10-27",
     "url": "https://www.cookpolitical.com/ratings/governor-race-ratings"
    },
-   "sim_p_dem": 0.02,
-   "sim_basis": "polls+rating",
-   "poll_margin": -11.8,
-   "poll_n": 2
+   "sim_p_dem": 0.012,
+   "sim_basis": "rating",
+   "poll_margin": null
   },
   {
    "id": "gov-TX",
@@ -4830,7 +4829,7 @@
    "note": "expected 2026 wins, polls-as-is preset"
   },
   "house": null,
-  "built_at": "2026-11-11T18:40:46Z"
+  "built_at": "2026-11-12T01:03:30Z"
  },
  "mi_legislature": {
   "_layer": "contests",

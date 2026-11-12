@@ -1,6 +1,6 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-11-11T18:40:46Z",
+ "built_at": "2026-11-12T01:03:30Z",
  "disclaimer": "Scenarios layer: model estimates built from the polls and ratings layers. Not a call, not a result, never written to results or calls.",
  "n_sims": 10000,
  "seed": 20261103,
@@ -1867,11 +1867,11 @@
    "state": "TN",
    "region": "South",
    "holder_party": "R",
-   "mu": -13.4,
-   "s_race": 5.85,
-   "basis": "polls+rating",
-   "poll_margin": -11.8,
-   "n_polls": 2,
+   "mu": -15.0,
+   "s_race": 6.0,
+   "basis": "rating",
+   "poll_margin": null,
+   "n_polls": 1,
    "rating_label": "Solid R",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -2322,7 +2322,7 @@
   }
  ],
  "excluded": [],
- "inputs_hash": "8537face864e",
+ "inputs_hash": "f4b7097ce6a4",
  "house_baselines": {
   "districts_with_2024_on_2026_lines_baseline": 0,
   "districts_with_public_rating": 13,
@@ -3326,16 +3326,16 @@
      "race": "gov-TN",
      "office": "governor",
      "state": "TN",
-     "p_dem": 0.02,
-     "margin_mean": -13.4,
+     "p_dem": 0.012,
+     "margin_mean": -15.0,
      "margin_p10_p50_p90": [
-      -21.8,
-      -13.4,
-      -5.1
+      -23.6,
+      -15.0,
+      -6.6
      ],
-     "basis": "polls+rating",
-     "mu": -13.4,
-     "s_race": 5.85
+     "basis": "rating",
+     "mu": -15.0,
+     "s_race": 6.0
     },
     {
      "race": "gov-TX",
@@ -3657,7 +3657,7 @@
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 21.48,
+    "expected_dem_wins": 21.47,
     "dem_wins_p10_p50_p90": [
      18,
      21,
@@ -4666,16 +4666,16 @@
      "race": "gov-TN",
      "office": "governor",
      "state": "TN",
-     "p_dem": 0.058,
-     "margin_mean": -10.4,
+     "p_dem": 0.037,
+     "margin_mean": -12.0,
      "margin_p10_p50_p90": [
-      -18.8,
-      -10.4,
-      -2.1
+      -20.6,
+      -12.0,
+      -3.6
      ],
-     "basis": "polls+rating",
-     "mu": -13.4,
-     "s_race": 5.85
+     "basis": "rating",
+     "mu": -15.0,
+     "s_race": 6.0
     },
     {
      "race": "gov-TX",
@@ -4994,7 +4994,7 @@
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 24.25,
+    "expected_dem_wins": 24.23,
     "dem_wins_p10_p50_p90": [
      21,
      24,
@@ -6003,16 +6003,16 @@
      "race": "gov-TN",
      "office": "governor",
      "state": "TN",
-     "p_dem": 0.005,
-     "margin_mean": -16.4,
+     "p_dem": 0.003,
+     "margin_mean": -18.0,
      "margin_p10_p50_p90": [
-      -24.8,
-      -16.4,
-      -8.1
+      -26.6,
+      -18.0,
+      -9.6
      ],
-     "basis": "polls+rating",
-     "mu": -13.4,
-     "s_race": 5.85
+     "basis": "rating",
+     "mu": -15.0,
+     "s_race": 6.0
     },
     {
      "race": "gov-TX",
@@ -6333,7 +6333,7 @@
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 18.69,
+    "expected_dem_wins": 18.68,
     "dem_wins_p10_p50_p90": [
      15,
      19,
@@ -7342,16 +7342,16 @@
      "race": "gov-TN",
      "office": "governor",
      "state": "TN",
-     "p_dem": 0.019,
-     "margin_mean": -13.6,
+     "p_dem": 0.011,
+     "margin_mean": -15.2,
      "margin_p10_p50_p90": [
-      -22.0,
-      -13.5,
-      -5.3
+      -23.8,
+      -15.1,
+      -6.7
      ],
-     "basis": "polls+rating",
-     "mu": -13.4,
-     "s_race": 5.85
+     "basis": "rating",
+     "mu": -15.0,
+     "s_race": 6.0
     },
     {
      "race": "gov-TX",
@@ -7673,7 +7673,7 @@
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 21.34,
+    "expected_dem_wins": 21.33,
     "dem_wins_p10_p50_p90": [
      18,
      21,
@@ -8682,16 +8682,16 @@
      "race": "gov-TN",
      "office": "governor",
      "state": "TN",
-     "p_dem": 0.012,
-     "margin_mean": -14.8,
+     "p_dem": 0.007,
+     "margin_mean": -16.4,
      "margin_p10_p50_p90": [
-      -23.2,
-      -14.7,
-      -6.5
+      -25.0,
+      -16.3,
+      -7.9
      ],
-     "basis": "polls+rating",
-     "mu": -13.4,
-     "s_race": 5.85
+     "basis": "rating",
+     "mu": -15.0,
+     "s_race": 6.0
     },
     {
      "race": "gov-TX",
@@ -9092,15 +9092,15 @@
    },
    "Colorado": {
     "Democratic": {
-     "value": 784366,
+     "value": 785003,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-07",
+     "as_of": "2026-11-11",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 650741,
+     "value": 651169,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-07",
+     "as_of": "2026-11-11",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
@@ -9316,15 +9316,15 @@
    },
    "Oregon": {
     "Democratic": {
-     "value": 796431,
+     "value": 798614,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-11",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     },
     "Republican": {
-     "value": 585475,
+     "value": 586509,
      "metric": "Total early votes (mail returned + in person)",
-     "as_of": "2026-11-06",
+     "as_of": "2026-11-11",
      "source": "University of Florida Election Lab, 2026 Early Voting (US.csv)"
     }
    },
