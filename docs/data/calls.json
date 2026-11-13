@@ -8346,6 +8346,23 @@
    "source_id": "calls_ap_via_npr",
    "status": "Projected",
    "url": "https://apps.npr.org/2026-election-results/data/house.json"
+  },
+  {
+   "ap_race_id": "17559",
+   "basis": "AP race call as published by NPR's results app",
+   "called_at": "2026-11-12T22:43:59.625Z",
+   "called_for": "Cindy Holscher",
+   "called_for_party": "D",
+   "contest": "gov-KS",
+   "entered_at": "2026-11-13T03:24:44Z",
+   "entered_by": "poll_npr_ap",
+   "flipped_seat": false,
+   "layer": "calls",
+   "outlet": "AP (via NPR)",
+   "previous_party": "D",
+   "source_id": "calls_ap_via_npr",
+   "status": "Projected",
+   "url": "https://apps.npr.org/2026-election-results/data/gov.json"
   }
  ]
 }
