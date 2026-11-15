@@ -1155,7 +1155,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-05 16:59 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-14T22:53:39.4022223Z",
+   "as_of": "2026-11-15T16:44:57.7898177Z",
    "county_scope": null,
    "tier": null
   },
@@ -1193,10 +1193,10 @@
    "reporting_pct": null,
    "precincts": null,
    "modes": null,
-   "delta": 0.01,
+   "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 04:47 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-14T22:53:39.4022223Z",
+   "as_of": "2026-11-15T16:44:57.7898177Z",
    "county_scope": null,
    "tier": null
   },
@@ -1237,7 +1237,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:08 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-14T22:53:39.4022223Z",
+   "as_of": "2026-11-15T16:44:57.7898177Z",
    "county_scope": null,
    "tier": null
   },
@@ -1273,7 +1273,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:33 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-14T22:53:39.4022223Z",
+   "as_of": "2026-11-15T16:44:57.7898177Z",
    "county_scope": null,
    "tier": null
   },
@@ -1309,7 +1309,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-05 16:59 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-14T22:53:39.4022223Z",
+   "as_of": "2026-11-15T16:44:57.7898177Z",
    "county_scope": null,
    "tier": null
   },
@@ -1340,7 +1340,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 02:10 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-14T22:53:39.4022223Z",
+   "as_of": "2026-11-15T16:44:57.7898177Z",
    "county_scope": null,
    "tier": null
   },
@@ -1391,7 +1391,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:40 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-14T22:53:39.4022223Z",
+   "as_of": "2026-11-15T16:44:57.7898177Z",
    "county_scope": null,
    "tier": null
   },
@@ -1432,7 +1432,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:05 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-14T22:53:39.4022223Z",
+   "as_of": "2026-11-15T16:44:57.7898177Z",
    "county_scope": null,
    "tier": null
   },
@@ -1463,7 +1463,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:29 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-14T22:53:39.4022223Z",
+   "as_of": "2026-11-15T16:44:57.7898177Z",
    "county_scope": null,
    "tier": null
   },
@@ -1499,7 +1499,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 01:03 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-14T22:53:39.4022223Z",
+   "as_of": "2026-11-15T16:44:57.7898177Z",
    "county_scope": null,
    "tier": null
   },
@@ -1535,7 +1535,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 02:10 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-14T22:53:39.4022223Z",
+   "as_of": "2026-11-15T16:44:57.7898177Z",
    "county_scope": null,
    "tier": null
   },
@@ -1566,7 +1566,7 @@
    "delta": 0.0,
    "status": "Projected (AP (via NPR), 2026-11-04 00:00 UTC)",
    "source": "enr_va_ev",
-   "as_of": "2026-11-14T22:53:39.4022223Z",
+   "as_of": "2026-11-15T16:44:57.7898177Z",
    "county_scope": null,
    "tier": null
   },
@@ -1912,406 +1912,7 @@
    "delta": null,
    "status": "Too early",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-15T01:47:13Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-IL-01",
-   "title": "IL · Illinois · U.S. House District 1",
-   "candidates": [
-    {
-     "name": "Jonathan Jackson",
-     "party": "D",
-     "votes": 174747
-    },
-    {
-     "name": "Christian Maxwell",
-     "party": "R",
-     "votes": 66191
-    }
-   ],
-   "margin": 45.06,
-   "reporting_pct": 100.0,
-   "precincts": "422 of 422 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:58 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:19:47Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-IL-02",
-   "title": "IL · Illinois · U.S. House District 2",
-   "candidates": [
-    {
-     "name": "Donna Miller",
-     "party": "D",
-     "votes": 163398
-    },
-    {
-     "name": "Michael Noack",
-     "party": "R",
-     "votes": 60272
-    }
-   ],
-   "margin": 46.11,
-   "reporting_pct": 97.74859287054409,
-   "precincts": "521 of 533 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:55 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:19:44Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-IL-03",
-   "title": "IL · Illinois · U.S. House District 3",
-   "candidates": [
-    {
-     "name": "Delia Ramirez",
-     "party": "D",
-     "votes": 158032
-    },
-    {
-     "name": "Angel Oakley",
-     "party": "R",
-     "votes": 45869
-    }
-   ],
-   "margin": 55.01,
-   "reporting_pct": 99.7289972899729,
-   "precincts": "368 of 369 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:00 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:19:45Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-IL-04",
-   "title": "IL · Illinois · U.S. House District 4",
-   "candidates": [
-    {
-     "name": "Patty Garcia",
-     "party": "D",
-     "votes": 116181
-    },
-    {
-     "name": "Lupe Castillo",
-     "party": "R",
-     "votes": 25832
-    },
-    {
-     "name": "Chris Getty",
-     "party": "I",
-     "votes": 14919
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 5964
-    }
-   ],
-   "margin": 55.46,
-   "reporting_pct": 99.71830985915493,
-   "precincts": "354 of 355 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:42 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:19:45Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-IL-05",
-   "title": "IL · Illinois · U.S. House District 5",
-   "candidates": [
-    {
-     "name": "Mike Quigley",
-     "party": "D",
-     "votes": 214886
-    },
-    {
-     "name": "Tommy Hanson",
-     "party": "R",
-     "votes": 63413
-    }
-   ],
-   "margin": 54.43,
-   "reporting_pct": 100.0,
-   "precincts": "438 of 438 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:09 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:19:45Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-IL-06",
-   "title": "IL · Illinois · U.S. House District 6",
-   "candidates": [
-    {
-     "name": "Sean Casten",
-     "party": "D",
-     "votes": 168705
-    },
-    {
-     "name": "Niki Conforti",
-     "party": "R",
-     "votes": 99294
-    }
-   ],
-   "margin": 25.9,
-   "reporting_pct": 99.79757085020243,
-   "precincts": "493 of 494 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 03:37 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:19:49Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-IL-07",
-   "title": "IL · Illinois · U.S. House District 7",
-   "candidates": [
-    {
-     "name": "La Shawn Ford",
-     "party": "D",
-     "votes": 186263
-    },
-    {
-     "name": "Chad Koppie",
-     "party": "R",
-     "votes": 22250
-    }
-   ],
-   "margin": 78.66,
-   "reporting_pct": 100.0,
-   "precincts": "394 of 394 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:54 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:19:44Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-IL-08",
-   "title": "IL · Illinois · U.S. House District 8",
-   "candidates": [
-    {
-     "name": "Melissa Bean",
-     "party": "D",
-     "votes": 138733
-    },
-    {
-     "name": "Jennifer Davis",
-     "party": "R",
-     "votes": 76887
-    }
-   ],
-   "margin": 28.68,
-   "reporting_pct": 99.76470588235294,
-   "precincts": "424 of 425 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 02:31 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:19:45Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-IL-09",
-   "title": "IL · Illinois · U.S. House District 9",
-   "candidates": [
-    {
-     "name": "Daniel Biss",
-     "party": "D",
-     "votes": 202040
-    },
-    {
-     "name": "John Elleson",
-     "party": "R",
-     "votes": 60728
-    }
-   ],
-   "margin": 53.78,
-   "reporting_pct": 100.0,
-   "precincts": "436 of 436 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 01:50 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:19:47Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-WA-01",
-   "title": "WA · Washington · U.S. House District 1",
-   "candidates": [
-    {
-     "name": "Suzan DelBene",
-     "party": "D",
-     "votes": 198059
-    },
-    {
-     "name": "Mary Silva",
-     "party": "R",
-     "votes": 94721
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 907
-    }
-   ],
-   "margin": 35.19,
-   "reporting_pct": 98.64636209813875,
-   "precincts": "583 of 591 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:38 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:23:44Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-WA-05",
-   "title": "WA · Washington · U.S. House District 5",
-   "candidates": [
-    {
-     "name": "Michael Baumgartner",
-     "party": "R",
-     "votes": 164742
-    },
-    {
-     "name": "Carmela Conroy",
-     "party": "D",
-     "votes": 151062
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 1151
-    }
-   ],
-   "margin": -4.32,
-   "reporting_pct": 95.0479233226837,
-   "precincts": "595 of 626 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-10 01:36 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-15T00:53:35Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-WA-07",
-   "title": "WA · Washington · U.S. House District 7",
-   "candidates": [
-    {
-     "name": "Pramila Jayapal",
-     "party": "D",
-     "votes": 323297
-    },
-    {
-     "name": "Nirav Sheth",
-     "party": "R",
-     "votes": 44516
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 1331
-    }
-   ],
-   "margin": 75.52,
-   "reporting_pct": 98.13874788494078,
-   "precincts": "580 of 591 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:17 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:23:38Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-WA-08",
-   "title": "WA · Washington · U.S. House District 8",
-   "candidates": [
-    {
-     "name": "Kim Schrier",
-     "party": "D",
-     "votes": 193482
-    },
-    {
-     "name": "Spencer Meline",
-     "party": "R",
-     "votes": 144885
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 922
-    }
-   ],
-   "margin": 14.32,
-   "reporting_pct": 98.14814814814815,
-   "precincts": "583 of 594 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:54 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:23:42Z",
-   "county_scope": null,
-   "tier": null
-  },
-  {
-   "id": "us-house-WA-09",
-   "title": "WA · Washington · U.S. House District 9",
-   "candidates": [
-    {
-     "name": "Adam Smith",
-     "party": "D",
-     "votes": 189326
-    },
-    {
-     "name": "Doug Basler",
-     "party": "R",
-     "votes": 59174
-    },
-    {
-     "name": "Other (AP aggregate)",
-     "party": "O",
-     "votes": 1785
-    }
-   ],
-   "margin": 52.0,
-   "reporting_pct": 98.1198589894242,
-   "precincts": "835 of 851 precincts",
-   "modes": null,
-   "delta": null,
-   "status": "Projected (AP (via NPR), 2026-11-04 04:17 UTC)",
-   "source": "results_ap_via_npr",
-   "as_of": "2026-11-14T23:23:43Z",
+   "as_of": "2026-11-15T13:29:38Z",
    "county_scope": null,
    "tier": null
   }
