@@ -75,7 +75,7 @@
     "note": "expected 2026 wins, polls-as-is preset"
    },
    "house": null,
-   "built_at": "2026-11-14T23:00:16Z"
+   "built_at": "2026-11-15T02:39:20Z"
   }
  },
  "senate_2026": [
@@ -795,10 +795,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.804,
+   "sim_p_dem": 0.803,
    "sim_basis": "polls+rating",
    "poll_margin": 4.2,
-   "poll_n": 16
+   "poll_n": 15
   },
   {
    "id": "us-senate-MA",
@@ -1094,10 +1094,10 @@
     "date": "2026-10-20",
     "url": "https://www.cookpolitical.com/ratings/senate-race-ratings"
    },
-   "sim_p_dem": 0.0,
+   "sim_p_dem": 0.001,
    "sim_basis": "polls+rating",
-   "poll_margin": -16.8,
-   "poll_n": 5
+   "poll_margin": -16.5,
+   "poll_n": 4
   },
   {
    "id": "us-senate-NE",
@@ -1374,7 +1374,7 @@
    "sim_p_dem": 0.994,
    "sim_basis": "polls+rating",
    "poll_margin": 11.6,
-   "poll_n": 14
+   "poll_n": 13
   },
   {
    "id": "us-senate-OK",
@@ -4829,7 +4829,7 @@
    "note": "expected 2026 wins, polls-as-is preset"
   },
   "house": null,
-  "built_at": "2026-11-14T23:00:16Z"
+  "built_at": "2026-11-15T02:39:20Z"
  },
  "mi_legislature": {
   "_layer": "contests",
