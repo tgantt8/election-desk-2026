@@ -2722,3 +2722,12 @@
 {"at": "2026-11-17T02:55:02Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-11-17T02:55:06Z", "errors": [], "event": "npr_ap_pull", "new_calls": 2, "result_rows": 418, "retractions": 0, "source_id": "results_ap_via_npr"}
 {"at": "2026-11-17T02:55:08Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
+{"at": "2026-11-17T11:44:54Z", "changes": 0, "entries": 35, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_senate:2026-11-17T11:44:54Z:e3c797af9587", "source_id": "ratings_ie_senate", "stored": 0}
+{"at": "2026-11-17T11:44:55Z", "changes": 0, "entries": 36, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_governor:2026-11-17T11:44:55Z:f6267a0bcfa4", "source_id": "ratings_ie_governor", "stored": 0}
+{"at": "2026-11-17T11:44:56Z", "changes": 0, "entries": 435, "event": "ratings_pull", "link_only_skipped": 422, "page_date": "2026-10-29", "snapshot": "ratings_ie_house:2026-11-17T11:44:56Z:db3b05b79dad", "source_id": "ratings_ie_house", "stored": 0}
+{"at": "2026-11-17T11:45:05Z", "ballot_items": 32, "election": "2026-November-General", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 115, "snapshot": "enr_va_ev:2026-11-17T11:45:05Z:330ccbfd260c", "source_id": "enr_va_ev", "total_record_count": 32}
+{"at": "2026-11-17T11:45:07Z", "ballot_items": 135, "election": "General11032026", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 290, "snapshot": "enr_ut_ev:2026-11-17T11:45:07Z:1fe3609bff9d", "source_id": "enr_ut_ev", "total_record_count": 135}
+{"at": "2026-11-17T11:45:10Z", "event": "nc_s3_unchanged", "source_id": "enr_nc_s3_results"}
+{"at": "2026-11-17T11:45:11Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-11-17T11:45:14Z", "errors": [], "event": "npr_ap_pull", "new_calls": 0, "result_rows": 16, "retractions": 0, "source_id": "results_ap_via_npr"}
+{"at": "2026-11-17T11:45:16Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
