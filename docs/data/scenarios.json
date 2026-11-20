@@ -1,6 +1,6 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-11-19T18:41:17Z",
+ "built_at": "2026-11-20T01:16:16Z",
  "disclaimer": "Scenarios layer: model estimates built from the polls and ratings layers. Not a call, not a result, never written to results or calls.",
  "n_sims": 10000,
  "seed": 20261103,
@@ -243,11 +243,11 @@
    "state": "IA",
    "region": "Midwest",
    "holder_party": "R",
-   "mu": -0.18,
+   "mu": -0.26,
    "s_race": 3.2,
    "basis": "polls+rating",
-   "poll_margin": -0.2,
-   "n_polls": 14,
+   "poll_margin": -0.3,
+   "n_polls": 13,
    "rating_label": "Toss-up",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-20",
@@ -411,11 +411,11 @@
    "state": "MI",
    "region": "Midwest",
    "holder_party": "D",
-   "mu": 4.84,
+   "mu": 4.82,
    "s_race": 3.2,
    "basis": "polls+rating",
    "poll_margin": 5.3,
-   "n_polls": 21,
+   "n_polls": 20,
    "rating_label": "Toss-up",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-20",
@@ -1111,11 +1111,11 @@
    "state": "CA",
    "region": "West",
    "holder_party": "D",
-   "mu": 22.27,
-   "s_race": 3.59,
+   "mu": 21.53,
+   "s_race": 4.27,
    "basis": "polls+rating",
-   "poll_margin": 24.7,
-   "n_polls": 6,
+   "poll_margin": 24.8,
+   "n_polls": 4,
    "rating_label": "Solid D",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -1475,11 +1475,11 @@
    "state": "MI",
    "region": "Midwest",
    "holder_party": "D",
-   "mu": 7.97,
+   "mu": 7.85,
    "s_race": 3.2,
    "basis": "polls+rating",
-   "poll_margin": 8.5,
-   "n_polls": 15,
+   "poll_margin": 8.4,
+   "n_polls": 14,
    "rating_label": "Lean D",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -1643,11 +1643,11 @@
    "state": "NY",
    "region": "Northeast",
    "holder_party": "D",
-   "mu": 15.07,
-   "s_race": 3.88,
+   "mu": 14.73,
+   "s_race": 4.27,
    "basis": "polls+rating",
-   "poll_margin": 15.1,
-   "n_polls": 5,
+   "poll_margin": 14.6,
+   "n_polls": 4,
    "rating_label": "Solid D",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-27",
@@ -2322,7 +2322,7 @@
   }
  ],
  "excluded": [],
- "inputs_hash": "0e0757fd071e",
+ "inputs_hash": "473805d5b01f",
  "house_baselines": {
   "districts_with_2024_on_2026_lines_baseline": 0,
   "districts_with_public_rating": 13,
@@ -2456,15 +2456,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.492,
-     "margin_mean": -0.1,
+     "p_dem": 0.484,
+     "margin_mean": -0.2,
      "margin_p10_p50_p90": [
-      -5.7,
-      -0.1,
-      5.3
+      -5.8,
+      -0.2,
+      5.2
      ],
      "basis": "polls+rating",
-     "mu": -0.18,
+     "mu": -0.26,
      "s_race": 3.2
     },
     {
@@ -2546,15 +2546,15 @@
      "race": "us-senate-MI",
      "office": "senate",
      "state": "MI",
-     "p_dem": 0.868,
-     "margin_mean": 4.9,
+     "p_dem": 0.867,
+     "margin_mean": 4.8,
      "margin_p10_p50_p90": [
       -0.8,
       4.9,
       10.4
      ],
      "basis": "polls+rating",
-     "mu": 4.84,
+     "mu": 4.82,
      "s_race": 3.2
     },
     {
@@ -2922,15 +2922,15 @@
      "office": "governor",
      "state": "CA",
      "p_dem": 1.0,
-     "margin_mean": 22.3,
+     "margin_mean": 21.6,
      "margin_p10_p50_p90": [
-      16.4,
-      22.3,
-      28.3
+      15.0,
+      21.5,
+      28.2
      ],
      "basis": "polls+rating",
-     "mu": 22.27,
-     "s_race": 3.59
+     "mu": 21.53,
+     "s_race": 4.27
     },
     {
      "race": "gov-CO",
@@ -3116,15 +3116,15 @@
      "race": "gov-MI",
      "office": "governor",
      "state": "MI",
-     "p_dem": 0.968,
-     "margin_mean": 8.0,
+     "p_dem": 0.966,
+     "margin_mean": 7.9,
      "margin_p10_p50_p90": [
-      2.5,
-      8.0,
-      13.5
+      2.3,
+      7.8,
+      13.4
      ],
      "basis": "polls+rating",
-     "mu": 7.97,
+     "mu": 7.85,
      "s_race": 3.2
     },
     {
@@ -3206,16 +3206,16 @@
      "race": "gov-NY",
      "office": "governor",
      "state": "NY",
-     "p_dem": 0.999,
-     "margin_mean": 15.0,
+     "p_dem": 0.998,
+     "margin_mean": 14.7,
      "margin_p10_p50_p90": [
-      8.8,
-      15.0,
-      21.2
+      8.1,
+      14.7,
+      21.3
      ],
      "basis": "polls+rating",
-     "mu": 15.07,
-     "s_race": 3.88
+     "mu": 14.73,
+     "s_race": 4.27
     },
     {
      "race": "gov-OH",
@@ -3600,9 +3600,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.746,
+    "p_dem_control_51": 0.745,
     "p_dem_50_tie_vp_r": 0.099,
-    "expected_dem_caucus": 52.05,
+    "expected_dem_caucus": 52.04,
     "dem_caucus_p10_p50_p90": [
      49,
      52,
@@ -3615,23 +3615,23 @@
      "43": 0.0004,
      "44": 0.0023,
      "45": 0.0069,
-     "46": 0.0138,
-     "47": 0.0222,
-     "48": 0.0458,
-     "49": 0.0633,
-     "50": 0.0989,
+     "46": 0.0139,
+     "47": 0.0223,
+     "48": 0.0464,
+     "49": 0.0632,
+     "50": 0.0994,
      "51": 0.1299,
-     "52": 0.1516,
-     "53": 0.1604,
-     "54": 0.1427,
-     "55": 0.0954,
-     "56": 0.0452,
+     "52": 0.1522,
+     "53": 0.1605,
+     "54": 0.1415,
+     "55": 0.0949,
+     "56": 0.045,
      "57": 0.0156,
      "58": 0.0042,
      "59": 0.0007,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 18.05,
+    "expected_dem_wins_of_seats_up": 18.04,
     "tipping_point": [
      {
       "race": "us-senate-TX",
@@ -3647,11 +3647,11 @@
      },
      {
       "race": "us-senate-IA",
-      "share": 0.101
+      "share": 0.102
      },
      {
       "race": "us-senate-MN",
-      "share": 0.101
+      "share": 0.1
      }
     ]
    },
@@ -3796,15 +3796,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.745,
-     "margin_mean": 2.9,
+     "p_dem": 0.739,
+     "margin_mean": 2.8,
      "margin_p10_p50_p90": [
-      -2.7,
-      2.9,
-      8.3
+      -2.8,
+      2.8,
+      8.2
      ],
      "basis": "polls+rating",
-     "mu": -0.18,
+     "mu": -0.26,
      "s_race": 3.2
     },
     {
@@ -3887,14 +3887,14 @@
      "office": "senate",
      "state": "MI",
      "p_dem": 0.964,
-     "margin_mean": 7.9,
+     "margin_mean": 7.8,
      "margin_p10_p50_p90": [
       2.2,
       7.9,
       13.4
      ],
      "basis": "polls+rating",
-     "mu": 4.84,
+     "mu": 4.82,
      "s_race": 3.2
     },
     {
@@ -4262,15 +4262,15 @@
      "office": "governor",
      "state": "CA",
      "p_dem": 1.0,
-     "margin_mean": 25.3,
+     "margin_mean": 24.6,
      "margin_p10_p50_p90": [
-      19.4,
-      25.3,
-      31.3
+      18.0,
+      24.5,
+      31.2
      ],
      "basis": "polls+rating",
-     "mu": 22.27,
-     "s_race": 3.59
+     "mu": 21.53,
+     "s_race": 4.27
     },
     {
      "race": "gov-CO",
@@ -4456,15 +4456,15 @@
      "race": "gov-MI",
      "office": "governor",
      "state": "MI",
-     "p_dem": 0.995,
-     "margin_mean": 11.0,
+     "p_dem": 0.994,
+     "margin_mean": 10.9,
      "margin_p10_p50_p90": [
-      5.5,
-      11.0,
-      16.5
+      5.3,
+      10.8,
+      16.4
      ],
      "basis": "polls+rating",
-     "mu": 7.97,
+     "mu": 7.85,
      "s_race": 3.2
     },
     {
@@ -4547,15 +4547,15 @@
      "office": "governor",
      "state": "NY",
      "p_dem": 1.0,
-     "margin_mean": 18.0,
+     "margin_mean": 17.7,
      "margin_p10_p50_p90": [
-      11.8,
-      18.0,
-      24.2
+      11.1,
+      17.7,
+      24.3
      ],
      "basis": "polls+rating",
-     "mu": 15.07,
-     "s_race": 3.88
+     "mu": 14.73,
+     "s_race": 4.27
     },
     {
      "race": "gov-OH",
@@ -4942,7 +4942,7 @@
     "seats_up": 35,
     "p_dem_control_51": 0.953,
     "p_dem_50_tie_vp_r": 0.023,
-    "expected_dem_caucus": 54.21,
+    "expected_dem_caucus": 54.2,
     "dem_caucus_p10_p50_p90": [
      51,
      54,
@@ -4952,23 +4952,23 @@
      "45": 0.0005,
      "46": 0.0011,
      "47": 0.0027,
-     "48": 0.0059,
-     "49": 0.0136,
-     "50": 0.0228,
-     "51": 0.0554,
-     "52": 0.0944,
+     "48": 0.0061,
+     "49": 0.0135,
+     "50": 0.0233,
+     "51": 0.0552,
+     "52": 0.0958,
      "53": 0.1461,
-     "54": 0.1906,
-     "55": 0.1979,
-     "56": 0.1414,
-     "57": 0.0779,
-     "58": 0.0322,
-     "59": 0.0117,
+     "54": 0.1901,
+     "55": 0.197,
+     "56": 0.1411,
+     "57": 0.0778,
+     "58": 0.0323,
+     "59": 0.0116,
      "60": 0.0039,
      "61": 0.0017,
      "63": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 20.21,
+    "expected_dem_wins_of_seats_up": 20.2,
     "tipping_point": [
      {
       "race": "us-senate-TX",
@@ -4984,11 +4984,11 @@
      },
      {
       "race": "us-senate-IA",
-      "share": 0.101
+      "share": 0.102
      },
      {
       "race": "us-senate-MN",
-      "share": 0.101
+      "share": 0.1
      }
     ]
    },
@@ -5133,15 +5133,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.237,
-     "margin_mean": -3.1,
+     "p_dem": 0.232,
+     "margin_mean": -3.2,
      "margin_p10_p50_p90": [
-      -8.7,
-      -3.1,
-      2.3
+      -8.8,
+      -3.2,
+      2.2
      ],
      "basis": "polls+rating",
-     "mu": -0.18,
+     "mu": -0.26,
      "s_race": 3.2
     },
     {
@@ -5223,15 +5223,15 @@
      "race": "us-senate-MI",
      "office": "senate",
      "state": "MI",
-     "p_dem": 0.67,
-     "margin_mean": 1.9,
+     "p_dem": 0.668,
+     "margin_mean": 1.8,
      "margin_p10_p50_p90": [
       -3.8,
       1.9,
       7.4
      ],
      "basis": "polls+rating",
-     "mu": 4.84,
+     "mu": 4.82,
      "s_race": 3.2
     },
     {
@@ -5599,15 +5599,15 @@
      "office": "governor",
      "state": "CA",
      "p_dem": 1.0,
-     "margin_mean": 19.3,
+     "margin_mean": 18.6,
      "margin_p10_p50_p90": [
-      13.4,
-      19.3,
-      25.3
+      12.0,
+      18.5,
+      25.2
      ],
      "basis": "polls+rating",
-     "mu": 22.27,
-     "s_race": 3.59
+     "mu": 21.53,
+     "s_race": 4.27
     },
     {
      "race": "gov-CO",
@@ -5793,15 +5793,15 @@
      "race": "gov-MI",
      "office": "governor",
      "state": "MI",
-     "p_dem": 0.878,
-     "margin_mean": 5.0,
+     "p_dem": 0.873,
+     "margin_mean": 4.9,
      "margin_p10_p50_p90": [
-      -0.5,
-      5.0,
-      10.5
+      -0.7,
+      4.8,
+      10.4
      ],
      "basis": "polls+rating",
-     "mu": 7.97,
+     "mu": 7.85,
      "s_race": 3.2
     },
     {
@@ -5883,16 +5883,16 @@
      "race": "gov-NY",
      "office": "governor",
      "state": "NY",
-     "p_dem": 0.993,
-     "margin_mean": 12.0,
+     "p_dem": 0.988,
+     "margin_mean": 11.7,
      "margin_p10_p50_p90": [
-      5.8,
-      12.0,
-      18.2
+      5.1,
+      11.7,
+      18.3
      ],
      "basis": "polls+rating",
-     "mu": 15.07,
-     "s_race": 3.88
+     "mu": 14.73,
+     "s_race": 4.27
     },
     {
      "race": "gov-OH",
@@ -6277,9 +6277,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.369,
+    "p_dem_control_51": 0.367,
     "p_dem_50_tie_vp_r": 0.134,
-    "expected_dem_caucus": 49.45,
+    "expected_dem_caucus": 49.44,
     "dem_caucus_p10_p50_p90": [
      46,
      50,
@@ -6290,24 +6290,24 @@
      "41": 0.002,
      "42": 0.0046,
      "43": 0.0101,
-     "44": 0.0253,
-     "45": 0.0421,
-     "46": 0.0686,
-     "47": 0.0947,
-     "48": 0.1201,
-     "49": 0.1291,
-     "50": 0.1337,
-     "51": 0.1202,
-     "52": 0.105,
-     "53": 0.0716,
-     "54": 0.0443,
-     "55": 0.0199,
+     "44": 0.0254,
+     "45": 0.042,
+     "46": 0.0691,
+     "47": 0.0946,
+     "48": 0.1205,
+     "49": 0.1294,
+     "50": 0.1339,
+     "51": 0.1196,
+     "52": 0.1056,
+     "53": 0.0708,
+     "54": 0.0442,
+     "55": 0.0195,
      "56": 0.0056,
      "57": 0.0014,
      "58": 0.0006,
      "59": 0.0001
     },
-    "expected_dem_wins_of_seats_up": 15.45,
+    "expected_dem_wins_of_seats_up": 15.44,
     "tipping_point": [
      {
       "race": "us-senate-TX",
@@ -6323,17 +6323,17 @@
      },
      {
       "race": "us-senate-IA",
-      "share": 0.101
+      "share": 0.102
      },
      {
       "race": "us-senate-MN",
-      "share": 0.101
+      "share": 0.1
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 18.68,
+    "expected_dem_wins": 18.67,
     "dem_wins_p10_p50_p90": [
      15,
      19,
@@ -6472,15 +6472,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.477,
-     "margin_mean": -0.3,
+     "p_dem": 0.47,
+     "margin_mean": -0.4,
      "margin_p10_p50_p90": [
-      -5.8,
-      -0.2,
-      5.2
+      -5.9,
+      -0.3,
+      5.1
      ],
      "basis": "polls+rating",
-     "mu": -0.18,
+     "mu": -0.26,
      "s_race": 3.2
     },
     {
@@ -6562,15 +6562,15 @@
      "race": "us-senate-MI",
      "office": "senate",
      "state": "MI",
-     "p_dem": 0.86,
+     "p_dem": 0.858,
      "margin_mean": 4.7,
      "margin_p10_p50_p90": [
       -0.9,
-      4.8,
+      4.7,
       10.2
      ],
      "basis": "polls+rating",
-     "mu": 4.84,
+     "mu": 4.82,
      "s_race": 3.2
     },
     {
@@ -6938,15 +6938,15 @@
      "office": "governor",
      "state": "CA",
      "p_dem": 1.0,
-     "margin_mean": 22.2,
+     "margin_mean": 21.4,
      "margin_p10_p50_p90": [
-      16.3,
-      22.1,
+      14.8,
+      21.4,
       28.1
      ],
      "basis": "polls+rating",
-     "mu": 22.27,
-     "s_race": 3.59
+     "mu": 21.53,
+     "s_race": 4.27
     },
     {
      "race": "gov-CO",
@@ -7132,15 +7132,15 @@
      "race": "gov-MI",
      "office": "governor",
      "state": "MI",
-     "p_dem": 0.965,
-     "margin_mean": 7.8,
+     "p_dem": 0.963,
+     "margin_mean": 7.7,
      "margin_p10_p50_p90": [
-      2.3,
-      7.8,
-      13.3
+      2.2,
+      7.7,
+      13.2
      ],
      "basis": "polls+rating",
-     "mu": 7.97,
+     "mu": 7.85,
      "s_race": 3.2
     },
     {
@@ -7222,16 +7222,16 @@
      "race": "gov-NY",
      "office": "governor",
      "state": "NY",
-     "p_dem": 0.999,
-     "margin_mean": 14.9,
+     "p_dem": 0.997,
+     "margin_mean": 14.6,
      "margin_p10_p50_p90": [
-      8.7,
-      14.9,
-      21.0
+      7.9,
+      14.6,
+      21.1
      ],
      "basis": "polls+rating",
-     "mu": 15.07,
-     "s_race": 3.88
+     "mu": 14.73,
+     "s_race": 4.27
     },
     {
      "race": "gov-OH",
@@ -7616,9 +7616,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.73,
+    "p_dem_control_51": 0.728,
     "p_dem_50_tie_vp_r": 0.102,
-    "expected_dem_caucus": 51.93,
+    "expected_dem_caucus": 51.92,
     "dem_caucus_p10_p50_p90": [
      48,
      52,
@@ -7632,22 +7632,22 @@
      "44": 0.0023,
      "45": 0.008,
      "46": 0.0153,
-     "47": 0.0255,
+     "47": 0.0259,
      "48": 0.0491,
-     "49": 0.0672,
-     "50": 0.1018,
+     "49": 0.0677,
+     "50": 0.1024,
      "51": 0.1291,
-     "52": 0.1573,
-     "53": 0.1565,
-     "54": 0.1381,
-     "55": 0.0875,
-     "56": 0.0427,
-     "57": 0.0143,
+     "52": 0.1572,
+     "53": 0.1567,
+     "54": 0.1375,
+     "55": 0.0868,
+     "56": 0.0425,
+     "57": 0.0142,
      "58": 0.0033,
      "59": 0.0007,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 17.93,
+    "expected_dem_wins_of_seats_up": 17.92,
     "tipping_point": [
      {
       "race": "us-senate-TX",
@@ -7663,11 +7663,11 @@
      },
      {
       "race": "us-senate-IA",
-      "share": 0.101
+      "share": 0.102
      },
      {
       "race": "us-senate-MN",
-      "share": 0.101
+      "share": 0.1
      }
     ]
    },
@@ -7812,15 +7812,15 @@
      "race": "us-senate-IA",
      "office": "senate",
      "state": "IA",
-     "p_dem": 0.369,
+     "p_dem": 0.362,
      "margin_mean": -1.5,
      "margin_p10_p50_p90": [
-      -7.0,
-      -1.4,
-      4.0
+      -7.1,
+      -1.5,
+      3.9
      ],
      "basis": "polls+rating",
-     "mu": -0.18,
+     "mu": -0.26,
      "s_race": 3.2
     },
     {
@@ -7902,7 +7902,7 @@
      "race": "us-senate-MI",
      "office": "senate",
      "state": "MI",
-     "p_dem": 0.791,
+     "p_dem": 0.789,
      "margin_mean": 3.5,
      "margin_p10_p50_p90": [
       -2.1,
@@ -7910,7 +7910,7 @@
       9.0
      ],
      "basis": "polls+rating",
-     "mu": 4.84,
+     "mu": 4.82,
      "s_race": 3.2
     },
     {
@@ -8278,15 +8278,15 @@
      "office": "governor",
      "state": "CA",
      "p_dem": 1.0,
-     "margin_mean": 21.0,
+     "margin_mean": 20.2,
      "margin_p10_p50_p90": [
-      15.1,
-      20.9,
+      13.7,
+      20.2,
       26.9
      ],
      "basis": "polls+rating",
-     "mu": 22.27,
-     "s_race": 3.59
+     "mu": 21.53,
+     "s_race": 4.27
     },
     {
      "race": "gov-CO",
@@ -8472,15 +8472,15 @@
      "race": "gov-MI",
      "office": "governor",
      "state": "MI",
-     "p_dem": 0.942,
-     "margin_mean": 6.7,
+     "p_dem": 0.938,
+     "margin_mean": 6.5,
      "margin_p10_p50_p90": [
-      1.1,
-      6.6,
-      12.2
+      1.0,
+      6.5,
+      12.0
      ],
      "basis": "polls+rating",
-     "mu": 7.97,
+     "mu": 7.85,
      "s_race": 3.2
     },
     {
@@ -8562,16 +8562,16 @@
      "race": "gov-NY",
      "office": "governor",
      "state": "NY",
-     "p_dem": 0.997,
-     "margin_mean": 13.7,
+     "p_dem": 0.995,
+     "margin_mean": 13.4,
      "margin_p10_p50_p90": [
-      7.5,
-      13.7,
+      6.7,
+      13.4,
       19.9
      ],
      "basis": "polls+rating",
-     "mu": 15.07,
-     "s_race": 3.88
+     "mu": 14.73,
+     "s_race": 4.27
     },
     {
      "race": "gov-OH",
@@ -8956,8 +8956,8 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.585,
-    "p_dem_50_tie_vp_r": 0.128,
+    "p_dem_control_51": 0.583,
+    "p_dem_50_tie_vp_r": 0.129,
     "expected_dem_caucus": 50.93,
     "dem_caucus_p10_p50_p90": [
      47,
@@ -8969,20 +8969,20 @@
      "41": 0.0006,
      "42": 0.0008,
      "43": 0.0028,
-     "44": 0.0071,
-     "45": 0.0171,
+     "44": 0.0073,
+     "45": 0.0169,
      "46": 0.0308,
-     "47": 0.0483,
-     "48": 0.077,
-     "49": 0.1024,
-     "50": 0.1281,
-     "51": 0.1438,
-     "52": 0.1403,
-     "53": 0.1274,
-     "54": 0.0912,
-     "55": 0.0537,
-     "56": 0.0214,
-     "57": 0.0052,
+     "47": 0.0489,
+     "48": 0.0769,
+     "49": 0.1025,
+     "50": 0.1294,
+     "51": 0.1432,
+     "52": 0.1407,
+     "53": 0.1264,
+     "54": 0.0911,
+     "55": 0.0534,
+     "56": 0.0212,
+     "57": 0.0051,
      "58": 0.0015,
      "59": 0.0001,
      "60": 0.0002
@@ -9003,17 +9003,17 @@
      },
      {
       "race": "us-senate-IA",
-      "share": 0.101
+      "share": 0.102
      },
      {
       "race": "us-senate-MN",
-      "share": 0.101
+      "share": 0.1
      }
     ]
    },
    "governors": {
     "races": 36,
-    "expected_dem_wins": 20.23,
+    "expected_dem_wins": 20.22,
     "dem_wins_p10_p50_p90": [
      16,
      20,
@@ -9028,7 +9028,7 @@
  },
  "what_has_to_be_true": {
   "target": "Democratic caucus of 51 (the Vice President is Republican, so 50 is not control)",
-  "shift_needed": -1.96,
+  "shift_needed": -1.95,
   "p_at_shift": 0.5
  },
  "early_vote_context": {
