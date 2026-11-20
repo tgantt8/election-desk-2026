@@ -2819,3 +2819,11 @@
 {"at": "2026-11-20T01:15:25Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-11-20T01:15:29Z", "errors": [], "event": "npr_ap_pull", "new_calls": 0, "result_rows": 185, "retractions": 0, "source_id": "results_ap_via_npr"}
 {"at": "2026-11-20T01:15:31Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
+{"added": 263, "at": "2026-11-20T09:10:56Z", "event": "votehub_pull", "in_feed": 6122, "mapped": 2758, "snapshot": "polls_votehub_api:2026-11-20T09:10:56Z:35a69a94d460", "source_id": "polls_votehub_api"}
+{"at": "2026-11-20T09:10:58Z", "changes": 0, "entries": 35, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_senate:2026-11-20T09:10:58Z:e3c797af9587", "source_id": "ratings_ie_senate", "stored": 0}
+{"at": "2026-11-20T09:10:59Z", "changes": 0, "entries": 36, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_governor:2026-11-20T09:10:59Z:f6267a0bcfa4", "source_id": "ratings_ie_governor", "stored": 0}
+{"at": "2026-11-20T09:11:00Z", "changes": 0, "entries": 435, "event": "ratings_pull", "link_only_skipped": 422, "page_date": "2026-10-29", "snapshot": "ratings_ie_house:2026-11-20T09:11:00Z:db3b05b79dad", "source_id": "ratings_ie_house", "stored": 0}
+{"at": "2026-11-20T09:11:12Z", "ballot_items": 135, "election": "General11032026", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 290, "snapshot": "enr_ut_ev:2026-11-20T09:11:12Z:b1933b8c2d64", "source_id": "enr_ut_ev", "total_record_count": 135}
+{"at": "2026-11-20T09:11:14Z", "event": "nc_s3_unchanged", "source_id": "enr_nc_s3_results"}
+{"at": "2026-11-20T09:11:19Z", "errors": [], "event": "npr_ap_pull", "new_calls": 0, "result_rows": 0, "retractions": 0, "source_id": "results_ap_via_npr"}
+{"at": "2026-11-20T09:11:21Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
