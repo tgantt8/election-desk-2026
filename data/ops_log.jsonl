@@ -2837,3 +2837,15 @@
 {"at": "2026-11-20T18:01:07Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-11-20T18:01:11Z", "errors": [], "event": "npr_ap_pull", "new_calls": 0, "result_rows": 201, "retractions": 0, "source_id": "results_ap_via_npr"}
 {"at": "2026-11-20T18:01:12Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
+{"added": 263, "at": "2026-11-20T23:58:36Z", "event": "votehub_pull", "in_feed": 6123, "mapped": 2759, "snapshot": "polls_votehub_api:2026-11-20T23:58:36Z:3a5ed82e1cf5", "source_id": "polls_votehub_api"}
+{"at": "2026-11-20T23:58:38Z", "changes": 0, "entries": 35, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_senate:2026-11-20T23:58:38Z:e3c797af9587", "source_id": "ratings_ie_senate", "stored": 0}
+{"at": "2026-11-20T23:58:39Z", "changes": 0, "entries": 36, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_governor:2026-11-20T23:58:39Z:f6267a0bcfa4", "source_id": "ratings_ie_governor", "stored": 0}
+{"at": "2026-11-20T23:58:40Z", "changes": 0, "entries": 435, "event": "ratings_pull", "link_only_skipped": 422, "page_date": "2026-10-29", "snapshot": "ratings_ie_house:2026-11-20T23:58:40Z:db3b05b79dad", "source_id": "ratings_ie_house", "stored": 0}
+{"at": "2026-11-20T23:58:49Z", "ballot_items": 145, "election": "nov2026", "event": "enhanced_voting_pull", "is_official": true, "parse_status": "ok", "records": 292, "snapshot": "enr_id_ev:2026-11-20T23:58:49Z:3b80bb946a5e", "source_id": "enr_id_ev", "total_record_count": 145}
+{"at": "2026-11-20T23:58:51Z", "ballot_items": 32, "election": "2026-November-General", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 115, "snapshot": "enr_va_ev:2026-11-20T23:58:51Z:0774d6d4c18f", "source_id": "enr_va_ev", "total_record_count": 32}
+{"at": "2026-11-20T23:58:54Z", "ballot_items": 135, "election": "General11032026", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 290, "snapshot": "enr_ut_ev:2026-11-20T23:58:53Z:4f1d4e675865", "source_id": "enr_ut_ev", "total_record_count": 135}
+{"at": "2026-11-20T23:58:56Z", "ballot_items": 173, "election": "20261103", "event": "enhanced_voting_pull", "is_official": false, "parse_status": "ok", "records": 468, "snapshot": "enr_wa_ev:2026-11-20T23:58:56Z:e200016f03e3", "source_id": "enr_wa_ev", "total_record_count": 173}
+{"at": "2026-11-20T23:58:57Z", "event": "nc_s3_unchanged", "source_id": "enr_nc_s3_results"}
+{"at": "2026-11-20T23:58:58Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-11-20T23:59:02Z", "errors": [], "event": "npr_ap_pull", "new_calls": 1, "result_rows": 273, "retractions": 0, "source_id": "results_ap_via_npr"}
+{"at": "2026-11-20T23:59:04Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
