@@ -663,7 +663,7 @@
    "precincts": null,
    "modes": null,
    "delta": -0.0,
-   "status": "Too early",
+   "status": "Projected (AP (via NPR), 2026-11-22 17:44 UTC)",
    "source": "enr_nc_s3_results",
    "as_of": "2026-11-14T00:05:43Z",
    "county_scope": null,
@@ -1904,10 +1904,67 @@
    "reporting_pct": 100.0,
    "precincts": "230 of 230 precincts",
    "modes": null,
-   "delta": -0.0,
-   "status": "Too early",
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-22 17:44 UTC)",
    "source": "results_ap_via_npr",
-   "as_of": "2026-11-21T23:02:31Z",
+   "as_of": "2026-11-22T17:44:07Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-NC-08",
+   "title": "NC · North Carolina · U.S. House District 8",
+   "candidates": [
+    {
+     "name": "Mark Harris",
+     "party": "R",
+     "votes": 147683
+    },
+    {
+     "name": "Colby Watson",
+     "party": "D",
+     "votes": 142659
+    },
+    {
+     "name": "Other (AP aggregate)",
+     "party": "O",
+     "votes": 2909
+    }
+   ],
+   "margin": -1.71,
+   "reporting_pct": 99.48186528497409,
+   "precincts": "192 of 193 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-06 21:34 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-22T21:01:55Z",
+   "county_scope": null,
+   "tier": null
+  },
+  {
+   "id": "us-house-PA-04",
+   "title": "PA · Pennsylvania · U.S. House District 4",
+   "candidates": [
+    {
+     "name": "Madeleine Dean",
+     "party": "D",
+     "votes": 234207
+    },
+    {
+     "name": "Aurora Stuski",
+     "party": "R",
+     "votes": 114006
+    }
+   ],
+   "margin": 34.52,
+   "reporting_pct": 98.96103896103897,
+   "precincts": "381 of 385 precincts",
+   "modes": null,
+   "delta": null,
+   "status": "Projected (AP (via NPR), 2026-11-04 01:48 UTC)",
+   "source": "results_ap_via_npr",
+   "as_of": "2026-11-22T21:26:50Z",
    "county_scope": null,
    "tier": null
   }
@@ -5415,7 +5472,7 @@
    "i": 0
   },
   "house": {
-   "d": 257,
+   "d": 258,
    "r": 173,
    "i": 0
   }
