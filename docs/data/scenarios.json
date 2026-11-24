@@ -1,6 +1,6 @@
 {
  "_layer": "scenarios",
- "built_at": "2026-11-23T12:30:23Z",
+ "built_at": "2026-11-24T00:22:41Z",
  "disclaimer": "Scenarios layer: model estimates built from the polls and ratings layers. Not a call, not a result, never written to results or calls.",
  "n_sims": 10000,
  "seed": 20261103,
@@ -271,11 +271,11 @@
    "state": "KS",
    "region": "Midwest",
    "holder_party": "R",
-   "mu": 3.81,
-   "s_race": 3.38,
+   "mu": 3.68,
+   "s_race": 3.59,
    "basis": "polls+rating",
    "poll_margin": 4.9,
-   "n_polls": 7,
+   "n_polls": 6,
    "rating_label": "Toss-up",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-20",
@@ -495,11 +495,11 @@
    "state": "MT",
    "region": "West",
    "holder_party": "R",
-   "mu": -16.0,
-   "s_race": 4.27,
+   "mu": -15.18,
+   "s_race": 4.86,
    "basis": "polls+rating",
-   "poll_margin": -16.5,
-   "n_polls": 4,
+   "poll_margin": -15.3,
+   "n_polls": 3,
    "rating_label": "Solid R",
    "rating_rater": "Cook Political Report",
    "rating_date": "2026-10-20",
@@ -2322,7 +2322,7 @@
   }
  ],
  "excluded": [],
- "inputs_hash": "48ccac20b295",
+ "inputs_hash": "71cc98280b0e",
  "house_baselines": {
   "districts_with_2024_on_2026_lines_baseline": 0,
   "districts_with_public_rating": 13,
@@ -2471,16 +2471,16 @@
      "race": "us-senate-KS",
      "office": "senate",
      "state": "KS",
-     "p_dem": 0.805,
-     "margin_mean": 3.8,
+     "p_dem": 0.788,
+     "margin_mean": 3.6,
      "margin_p10_p50_p90": [
-      -1.8,
-      3.8,
-      9.5
+      -2.2,
+      3.7,
+      9.6
      ],
      "basis": "polls+rating",
-     "mu": 3.81,
-     "s_race": 3.38
+     "mu": 3.68,
+     "s_race": 3.59
     },
     {
      "race": "us-senate-KY",
@@ -2591,16 +2591,16 @@
      "race": "us-senate-MT",
      "office": "senate",
      "state": "MT",
-     "p_dem": 0.001,
-     "margin_mean": -16.0,
+     "p_dem": 0.003,
+     "margin_mean": -15.2,
      "margin_p10_p50_p90": [
-      -22.7,
-      -15.9,
-      -9.5
+      -22.5,
+      -15.1,
+      -8.0
      ],
      "basis": "polls+rating",
-     "mu": -16.0,
-     "s_race": 4.27
+     "mu": -15.18,
+     "s_race": 4.86
     },
     {
      "race": "us-senate-NE",
@@ -3600,9 +3600,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.739,
+    "p_dem_control_51": 0.737,
     "p_dem_50_tie_vp_r": 0.101,
-    "expected_dem_caucus": 52.01,
+    "expected_dem_caucus": 51.99,
     "dem_caucus_p10_p50_p90": [
      49,
      52,
@@ -3616,22 +3616,22 @@
      "44": 0.0026,
      "45": 0.0074,
      "46": 0.0143,
-     "47": 0.025,
-     "48": 0.0467,
-     "49": 0.063,
-     "50": 0.1012,
-     "51": 0.1296,
-     "52": 0.151,
-     "53": 0.1589,
-     "54": 0.1399,
-     "55": 0.094,
-     "56": 0.0447,
-     "57": 0.0155,
-     "58": 0.0042,
-     "59": 0.0007,
+     "47": 0.0254,
+     "48": 0.0473,
+     "49": 0.0642,
+     "50": 0.1009,
+     "51": 0.1307,
+     "52": 0.1515,
+     "53": 0.1577,
+     "54": 0.1381,
+     "55": 0.0936,
+     "56": 0.0442,
+     "57": 0.0159,
+     "58": 0.0041,
+     "59": 0.0008,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 18.01,
+    "expected_dem_wins_of_seats_up": 17.99,
     "tipping_point": [
      {
       "race": "us-senate-TX",
@@ -3639,15 +3639,15 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.104
-     },
-     {
-      "race": "us-senate-KS",
       "share": 0.103
      },
      {
       "race": "us-senate-IA",
       "share": 0.102
+     },
+     {
+      "race": "us-senate-KS",
+      "share": 0.101
      },
      {
       "race": "us-senate-MN",
@@ -3811,16 +3811,16 @@
      "race": "us-senate-KS",
      "office": "senate",
      "state": "KS",
-     "p_dem": 0.938,
-     "margin_mean": 6.8,
+     "p_dem": 0.927,
+     "margin_mean": 6.6,
      "margin_p10_p50_p90": [
-      1.2,
-      6.8,
-      12.5
+      0.8,
+      6.7,
+      12.6
      ],
      "basis": "polls+rating",
-     "mu": 3.81,
-     "s_race": 3.38
+     "mu": 3.68,
+     "s_race": 3.59
     },
     {
      "race": "us-senate-KY",
@@ -3931,16 +3931,16 @@
      "race": "us-senate-MT",
      "office": "senate",
      "state": "MT",
-     "p_dem": 0.006,
-     "margin_mean": -13.0,
+     "p_dem": 0.015,
+     "margin_mean": -12.2,
      "margin_p10_p50_p90": [
-      -19.7,
-      -12.9,
-      -6.5
+      -19.5,
+      -12.1,
+      -5.0
      ],
      "basis": "polls+rating",
-     "mu": -16.0,
-     "s_race": 4.27
+     "mu": -15.18,
+     "s_race": 4.86
     },
     {
      "race": "us-senate-NE",
@@ -4940,8 +4940,8 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.952,
-    "p_dem_50_tie_vp_r": 0.024,
+    "p_dem_control_51": 0.95,
+    "p_dem_50_tie_vp_r": 0.025,
     "expected_dem_caucus": 54.19,
     "dem_caucus_p10_p50_p90": [
      51,
@@ -4952,20 +4952,21 @@
      "45": 0.0007,
      "46": 0.0012,
      "47": 0.0028,
-     "48": 0.0061,
-     "49": 0.0139,
-     "50": 0.0235,
-     "51": 0.0568,
-     "52": 0.0964,
-     "53": 0.1447,
-     "54": 0.1901,
-     "55": 0.1962,
-     "56": 0.1403,
-     "57": 0.0777,
-     "58": 0.0322,
-     "59": 0.0116,
+     "48": 0.0064,
+     "49": 0.0138,
+     "50": 0.0248,
+     "51": 0.0578,
+     "52": 0.0961,
+     "53": 0.1442,
+     "54": 0.188,
+     "55": 0.1957,
+     "56": 0.1394,
+     "57": 0.0778,
+     "58": 0.0334,
+     "59": 0.0118,
      "60": 0.0039,
-     "61": 0.0017,
+     "61": 0.0019,
+     "62": 0.0001,
      "63": 0.0002
     },
     "expected_dem_wins_of_seats_up": 20.19,
@@ -4976,15 +4977,15 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.104
-     },
-     {
-      "race": "us-senate-KS",
       "share": 0.103
      },
      {
       "race": "us-senate-IA",
       "share": 0.102
+     },
+     {
+      "race": "us-senate-KS",
+      "share": 0.101
      },
      {
       "race": "us-senate-MN",
@@ -5148,16 +5149,16 @@
      "race": "us-senate-KS",
      "office": "senate",
      "state": "KS",
-     "p_dem": 0.566,
-     "margin_mean": 0.8,
+     "p_dem": 0.553,
+     "margin_mean": 0.6,
      "margin_p10_p50_p90": [
-      -4.8,
-      0.8,
-      6.5
+      -5.2,
+      0.7,
+      6.6
      ],
      "basis": "polls+rating",
-     "mu": 3.81,
-     "s_race": 3.38
+     "mu": 3.68,
+     "s_race": 3.59
     },
     {
      "race": "us-senate-KY",
@@ -5268,16 +5269,16 @@
      "race": "us-senate-MT",
      "office": "senate",
      "state": "MT",
-     "p_dem": 0.0,
-     "margin_mean": -19.0,
+     "p_dem": 0.001,
+     "margin_mean": -18.2,
      "margin_p10_p50_p90": [
-      -25.7,
-      -18.9,
-      -12.5
+      -25.5,
+      -18.1,
+      -11.0
      ],
      "basis": "polls+rating",
-     "mu": -16.0,
-     "s_race": 4.27
+     "mu": -15.18,
+     "s_race": 4.86
     },
     {
      "race": "us-senate-NE",
@@ -6277,9 +6278,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.361,
-    "p_dem_50_tie_vp_r": 0.131,
-    "expected_dem_caucus": 49.38,
+    "p_dem_control_51": 0.358,
+    "p_dem_50_tie_vp_r": 0.133,
+    "expected_dem_caucus": 49.37,
     "dem_caucus_p10_p50_p90": [
      46,
      49,
@@ -6289,25 +6290,25 @@
      "40": 0.001,
      "41": 0.0022,
      "42": 0.0046,
-     "43": 0.0109,
-     "44": 0.0282,
-     "45": 0.0422,
-     "46": 0.073,
-     "47": 0.0962,
-     "48": 0.1215,
-     "49": 0.1275,
-     "50": 0.1314,
-     "51": 0.1183,
-     "52": 0.1031,
-     "53": 0.0698,
-     "54": 0.0429,
-     "55": 0.0196,
-     "56": 0.0055,
+     "43": 0.0108,
+     "44": 0.0281,
+     "45": 0.0424,
+     "46": 0.0732,
+     "47": 0.0965,
+     "48": 0.1221,
+     "49": 0.1285,
+     "50": 0.1325,
+     "51": 0.1172,
+     "52": 0.1027,
+     "53": 0.0695,
+     "54": 0.0418,
+     "55": 0.0192,
+     "56": 0.0056,
      "57": 0.0014,
      "58": 0.0006,
      "59": 0.0001
     },
-    "expected_dem_wins_of_seats_up": 15.38,
+    "expected_dem_wins_of_seats_up": 15.37,
     "tipping_point": [
      {
       "race": "us-senate-TX",
@@ -6315,15 +6316,15 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.104
-     },
-     {
-      "race": "us-senate-KS",
       "share": 0.103
      },
      {
       "race": "us-senate-IA",
       "share": 0.102
+     },
+     {
+      "race": "us-senate-KS",
+      "share": 0.101
      },
      {
       "race": "us-senate-MN",
@@ -6487,16 +6488,16 @@
      "race": "us-senate-KS",
      "office": "senate",
      "state": "KS",
-     "p_dem": 0.795,
-     "margin_mean": 3.6,
+     "p_dem": 0.778,
+     "margin_mean": 3.5,
      "margin_p10_p50_p90": [
-      -2.0,
-      3.6,
-      9.3
+      -2.3,
+      3.5,
+      9.4
      ],
      "basis": "polls+rating",
-     "mu": 3.81,
-     "s_race": 3.38
+     "mu": 3.68,
+     "s_race": 3.59
     },
     {
      "race": "us-senate-KY",
@@ -6607,16 +6608,16 @@
      "race": "us-senate-MT",
      "office": "senate",
      "state": "MT",
-     "p_dem": 0.001,
-     "margin_mean": -16.1,
+     "p_dem": 0.003,
+     "margin_mean": -15.3,
      "margin_p10_p50_p90": [
-      -22.8,
-      -16.0,
-      -9.6
+      -22.6,
+      -15.2,
+      -8.2
      ],
      "basis": "polls+rating",
-     "mu": -16.0,
-     "s_race": 4.27
+     "mu": -15.18,
+     "s_race": 4.86
     },
     {
      "race": "us-senate-NE",
@@ -7616,9 +7617,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.722,
-    "p_dem_50_tie_vp_r": 0.103,
-    "expected_dem_caucus": 51.88,
+    "p_dem_control_51": 0.719,
+    "p_dem_50_tie_vp_r": 0.104,
+    "expected_dem_caucus": 51.87,
     "dem_caucus_p10_p50_p90": [
      48,
      52,
@@ -7631,23 +7632,23 @@
      "43": 0.0008,
      "44": 0.0027,
      "45": 0.0083,
-     "46": 0.0158,
-     "47": 0.0283,
-     "48": 0.0488,
-     "49": 0.0692,
-     "50": 0.1032,
-     "51": 0.1294,
-     "52": 0.1548,
-     "53": 0.1561,
-     "54": 0.135,
-     "55": 0.0863,
-     "56": 0.0424,
-     "57": 0.0141,
-     "58": 0.0033,
-     "59": 0.0007,
+     "46": 0.0159,
+     "47": 0.0288,
+     "48": 0.0496,
+     "49": 0.0702,
+     "50": 0.1038,
+     "51": 0.1299,
+     "52": 0.1538,
+     "53": 0.1551,
+     "54": 0.1339,
+     "55": 0.0857,
+     "56": 0.0423,
+     "57": 0.0144,
+     "58": 0.0032,
+     "59": 0.0008,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 17.88,
+    "expected_dem_wins_of_seats_up": 17.87,
     "tipping_point": [
      {
       "race": "us-senate-TX",
@@ -7655,15 +7656,15 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.104
-     },
-     {
-      "race": "us-senate-KS",
       "share": 0.103
      },
      {
       "race": "us-senate-IA",
       "share": 0.102
+     },
+     {
+      "race": "us-senate-KS",
+      "share": 0.101
      },
      {
       "race": "us-senate-MN",
@@ -7827,16 +7828,16 @@
      "race": "us-senate-KS",
      "office": "senate",
      "state": "KS",
-     "p_dem": 0.709,
-     "margin_mean": 2.4,
+     "p_dem": 0.692,
+     "margin_mean": 2.3,
      "margin_p10_p50_p90": [
-      -3.2,
-      2.5,
+      -3.5,
+      2.3,
       8.2
      ],
      "basis": "polls+rating",
-     "mu": 3.81,
-     "s_race": 3.38
+     "mu": 3.68,
+     "s_race": 3.59
     },
     {
      "race": "us-senate-KY",
@@ -7947,16 +7948,16 @@
      "race": "us-senate-MT",
      "office": "senate",
      "state": "MT",
-     "p_dem": 0.0,
-     "margin_mean": -17.3,
+     "p_dem": 0.002,
+     "margin_mean": -16.5,
      "margin_p10_p50_p90": [
-      -24.0,
-      -17.2,
-      -10.8
+      -23.8,
+      -16.4,
+      -9.4
      ],
      "basis": "polls+rating",
-     "mu": -16.0,
-     "s_race": 4.27
+     "mu": -15.18,
+     "s_race": 4.86
     },
     {
      "race": "us-senate-NE",
@@ -8956,9 +8957,9 @@
      "i": 2
     },
     "seats_up": 35,
-    "p_dem_control_51": 0.576,
-    "p_dem_50_tie_vp_r": 0.129,
-    "expected_dem_caucus": 50.88,
+    "p_dem_control_51": 0.573,
+    "p_dem_50_tie_vp_r": 0.13,
+    "expected_dem_caucus": 50.87,
     "dem_caucus_p10_p50_p90": [
      47,
      51,
@@ -8971,23 +8972,23 @@
      "43": 0.0028,
      "44": 0.0073,
      "45": 0.0191,
-     "46": 0.0312,
-     "47": 0.0517,
-     "48": 0.0776,
-     "49": 0.1034,
-     "50": 0.1291,
-     "51": 0.1412,
-     "52": 0.1386,
-     "53": 0.1259,
-     "54": 0.0897,
-     "55": 0.0529,
-     "56": 0.0208,
-     "57": 0.0051,
+     "46": 0.0316,
+     "47": 0.0518,
+     "48": 0.0787,
+     "49": 0.1044,
+     "50": 0.1296,
+     "51": 0.1409,
+     "52": 0.1381,
+     "53": 0.1252,
+     "54": 0.0887,
+     "55": 0.0524,
+     "56": 0.0205,
+     "57": 0.0053,
      "58": 0.0015,
      "59": 0.0001,
      "60": 0.0002
     },
-    "expected_dem_wins_of_seats_up": 16.88,
+    "expected_dem_wins_of_seats_up": 16.87,
     "tipping_point": [
      {
       "race": "us-senate-TX",
@@ -8995,15 +8996,15 @@
      },
      {
       "race": "us-senate-ME",
-      "share": 0.104
-     },
-     {
-      "race": "us-senate-KS",
       "share": 0.103
      },
      {
       "race": "us-senate-IA",
       "share": 0.102
+     },
+     {
+      "race": "us-senate-KS",
+      "share": 0.101
      },
      {
       "race": "us-senate-MN",
@@ -9028,7 +9029,7 @@
  },
  "what_has_to_be_true": {
   "target": "Democratic caucus of 51 (the Vice President is Republican, so 50 is not control)",
-  "shift_needed": -1.9,
+  "shift_needed": -1.87,
   "p_at_shift": 0.5
  },
  "early_vote_context": {
