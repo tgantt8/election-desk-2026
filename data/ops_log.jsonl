@@ -3003,3 +3003,11 @@
 {"at": "2026-11-27T18:55:34Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
 {"at": "2026-11-27T18:55:38Z", "errors": [], "event": "npr_ap_pull", "new_calls": 0, "result_rows": 145, "retractions": 0, "source_id": "results_ap_via_npr"}
 {"at": "2026-11-27T18:55:39Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
+{"at": "2026-11-28T01:56:43Z", "error": "500 Server Error: Internal Server Error for url: https://api.votehub.com/polls", "event": "votehub_fetch_failed", "source_id": "polls_votehub_api"}
+{"at": "2026-11-28T01:56:44Z", "changes": 0, "entries": 35, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_senate:2026-11-28T01:56:44Z:e3c797af9587", "source_id": "ratings_ie_senate", "stored": 0}
+{"at": "2026-11-28T01:56:46Z", "changes": 0, "entries": 36, "event": "ratings_pull", "link_only_skipped": 0, "page_date": "2026-10-29", "snapshot": "ratings_ie_governor:2026-11-28T01:56:46Z:f6267a0bcfa4", "source_id": "ratings_ie_governor", "stored": 0}
+{"at": "2026-11-28T01:56:47Z", "changes": 0, "entries": 435, "event": "ratings_pull", "link_only_skipped": 422, "page_date": "2026-10-29", "snapshot": "ratings_ie_house:2026-11-28T01:56:47Z:db3b05b79dad", "source_id": "ratings_ie_house", "stored": 0}
+{"at": "2026-11-28T01:57:00Z", "event": "nc_s3_unchanged", "source_id": "enr_nc_s3_results"}
+{"at": "2026-11-28T01:57:01Z", "error": "challenge: HTTP 202 empty body (WAF JavaScript challenge)", "event": "clarity_version_failed", "source_id": "macomb_clarity_enr"}
+{"at": "2026-11-28T01:57:05Z", "errors": [], "event": "npr_ap_pull", "new_calls": 0, "result_rows": 79, "retractions": 0, "source_id": "results_ap_via_npr"}
+{"at": "2026-11-28T01:57:07Z", "errors": [], "event": "totalvote_pull", "records": 0, "source_id": "enr_wayne_totalvote"}
